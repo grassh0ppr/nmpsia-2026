@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority. "
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification on Search Console -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Home | New Mexico Public Schools Insurance Authority</title>
+
+    <!-- Swiper styles -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="styles/footer.css?v=2" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- components -->
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+    <style>
+      body.homepage-test {
+        background-image: url("images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+          linear-gradient(
+            135deg,
+            rgba(102, 126, 234, 0.3) 0%,
+            rgba(118, 75, 162, 0.3) 100%
+          );
+        background-position: 75% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+      }
+
+      body.homepage-test::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* background-color: rgba(102, 126, 234, 0.7); */
+        background-image: linear-gradient(
+          135deg,
+          rgba(102, 126, 234, 0.3) 0%,
+          rgba(118, 75, 162, 0.3) 100%
+        );
+        z-index: -1;
+      }
+    </style>
+  </head>
+
+  <body class="homepage-test">
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <div class="promo-banner">
+      <a href="./mobile-app.html">📱 Get the NMPSIA Mobile App!</a>
+    </div>
+
+    <main>
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="home-hero-section">
+          <div class="hero-heading-container">
+            <h1 class="hero-title">
+              Welcome to the New Mexico Public Schools Insurance Authority
+            </h1>
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="hero-logo"
+            />
+          </div>
+          <p class="hero-subtitle">
+            Your trusted partner for comprehensive insurance solutions serving
+            New Mexico's public schools. Access benefits, resources, and support
+            designed specifically for our educational community.
+          </p>
+          <a href="#news-container" class="quick-action-btn"
+            >Get the Latest News</a
+          >
+        </section>
+
+        <!-- Quick Actions Grid -->
+        <section class="quick-actions-grid">
+          <!-- Urgent Notice -->
+          <div class="quick-action-card urgent">
+            <div class="quick-action-header">
+              <div class="quick-action-icon">
+                <i class="bx bx-error-alt"></i>
+              </div>
+              <h3 class="quick-action-title">
+                PowerSchool Breach Notification
+              </h3>
+            </div>
+            <p class="quick-action-description">
+              Important security notice regarding the recent PowerSchool data
+              breach. Please review the notification for affected individuals.
+            </p>
+            <a
+              href="/PDFs/poms-risk-docs/PowerSchool_Letter_Jan_2025.pdf"
+              target="_blank"
+              class="quick-action-btn"
+            >
+              View Notice
+            </a>
+          </div>
+
+          <!-- Program Guide -->
+          <div class="quick-action-card important">
+            <div class="quick-action-header">
+              <div class="quick-action-icon">
+                <i class="bx bx-clipboard"></i>
+              </div>
+              <h3 class="quick-action-title">2025 Program Guide</h3>
+            </div>
+            <p class="quick-action-description">
+              Comprehensive guide to your 2025 benefits, coverage options, and
+              enrollment information.
+            </p>
+            <a href="./benefits.html#programGuide" class="quick-action-btn">
+              View Guide
+            </a>
+          </div>
+
+          <!-- Medical Plans Comparison -->
+          <div class="quick-action-card info">
+            <div class="quick-action-header">
+              <div class="quick-action-icon">
+                <i class="bx bx-line-chart"></i>
+              </div>
+              <h3 class="quick-action-title">Compare Medical Plans</h3>
+            </div>
+            <p class="quick-action-description">
+              Side-by-side comparison of available medical plans to help you
+              make informed decisions.
+            </p>
+            <a href="./benefits.html#comparisonChart" class="quick-action-btn">
+              Compare Plans
+            </a>
+          </div>
+
+          <!-- Annual Notifications -->
+          <div class="quick-action-card important">
+            <div class="quick-action-header">
+              <div class="quick-action-icon"><i class="bx bx-bell"></i></div>
+              <h3 class="quick-action-title">Annual Employee Notifications</h3>
+            </div>
+            <p class="quick-action-description">
+              Important compliance notices, benefits summaries, and required
+              annual information.
+            </p>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#employeeNotifications"
+              class="quick-action-btn"
+            >
+              View Notifications
+            </a>
+          </div>
+
+          <!-- Biometric Screening -->
+          <div class="quick-action-card info">
+            <div class="quick-action-header">
+              <div class="quick-action-icon"><i class="bx bx-dna"></i></div>
+              <h3 class="quick-action-title">Biometric Screening Initiative</h3>
+            </div>
+            <p class="quick-action-description">
+              Free at-home health screenings available to covered employees and
+              dependents.
+            </p>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#biometricScreeningModal"
+              class="quick-action-btn"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="quick-action-card info">
+            <div class="quick-action-header">
+              <div class="quick-action-icon"><i class="bx bx-news"></i></div>
+              <h3 class="quick-action-title">Seasonal Newsletter</h3>
+            </div>
+            <p class="quick-action-description">
+              Latest wellness tips, benefits updates, and community news from
+              NMPSIA.
+            </p>
+            <a
+              href="/pdfs/WINTER_2025_NEWSLETTER.pdf"
+              target="_blank"
+              class="quick-action-btn"
+            >
+              Read Newsletter
+            </a>
+          </div>
+
+          <!-- STOPit System -->
+          <div class="quick-action-card important">
+            <div class="quick-action-header">
+              <div class="quick-action-icon"><i class="bx bx-shield"></i></div>
+              <h3 class="quick-action-title">STOPit Anonymous Reporting</h3>
+            </div>
+            <p class="quick-action-description">
+              Report concerns anonymously through our secure reporting system.
+            </p>
+            <a
+              href="https://www.stopitsolutions.com/nmpsia"
+              target="_blank"
+              class="quick-action-btn"
+            >
+              Report Issue
+            </a>
+          </div>
+
+          <!-- Premium Credit Programs -->
+          <div class="quick-action-card info">
+            <div class="quick-action-header">
+              <div class="quick-action-icon"><i class="bx bx-dollar"></i></div>
+              <h3 class="quick-action-title">Premium Credit Programs</h3>
+            </div>
+            <p class="quick-action-description">
+              Learn about premium credit and deductible programs for misconduct
+              claims.
+            </p>
+            <a
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#pomModal"
+              class="quick-action-btn"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <!-- BCBSNM EPO Discontinuation -->
+          <div class="quick-action-card urgent">
+            <div class="quick-action-header">
+              <div class="quick-action-icon">
+                <i class="bx bx-info-circle"></i>
+              </div>
+              <h3 class="quick-action-title">
+                Discontinuation of BCBSNM EPO Plan
+              </h3>
+            </div>
+            <p class="quick-action-description">
+              Please review the important notification for affected individuals
+              on the Blue Cross Blue Shield EPO Plan.
+            </p>
+            <a
+              href="https://nmpsia.com/pdfs/open-enrollment-2026/Discontinuation_of_BCBS_EPO_Employer.pdf"
+              target="_blank"
+              class="quick-action-btn"
+            >
+              View Announcement
+            </a>
+          </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+          <h2 class="featured-title">Need Help?</h2>
+          <p class="featured-description">
+            Our team is here to support you with any questions about your
+            benefits, enrollment, or insurance coverage.
+          </p>
+          <a href="./contact-us.html" class="featured-btn">Contact Us</a>
+        </section>
+
+        <!-- News Section -->
+        <section class="news-section">
+          <div class="news-header">
+            <div>
+              <h2 class="news-title">Happening Now</h2>
+              <p class="news-subtitle">
+                Latest updates and important announcements
+              </p>
+            </div>
+            <div class="news-header-buttons">
+              <a href="wellness.html#health-kits-news" class="quick-action-btn"
+                >Wellness Monthly News</a
+              >
+              <a href="download-center.html" class="quick-action-btn"
+                >Monthly Public Meetings</a
+              >
+            </div>
+          </div>
+
+          <div class="swiper news-swiper" id="news-container">
+            <div class="swiper-wrapper" id="news-wrapper">
+              <!-- News cards will be dynamically populated by JavaScript -->
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Modal for Poms & Assoc. Premium Credit and Deductible Programs for Sexual/Ethical Misconduct Claims -->
+    <div
+      class="modal fade"
+      id="pomModal"
+      tabindex="-1"
+      aria-labelledby="pomModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pomModalLabel">
+              NMPSIA Premium Credit and Deductible Programs for Sexual/Ethical
+              Misconduct Claims
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-12 mb-4">
+                <h6 class="mb-3 lead">
+                  Watch the Premium Credit Explainer Webinar
+                </h6>
+                <div style="padding: 56.25% 0 0 0; position: relative">
+                  <iframe
+                    src="https://player.vimeo.com/video/1098596281?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    style="
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                    "
+                    title="Premium Credit Explainer Webinars (Combined)"
+                  >
+                  </iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+
+              <div class="col-12">
+                <h6 class="mb-3 lead">
+                  <i class="bx bx-file-doc me-2"></i>
+                  Related Documents & Resources
+                </h6>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h6 class="card-title text-primary">
+                          <i class="bx bx-link-external me-2"></i>
+                          HB 128 (2021) Legislation
+                        </h6>
+                        <p class="card-text small text-muted mb-3">
+                          The full bill establishing the Premium Credit and
+                          Deductible Programs for Sexual/Ethical Misconduct
+                          Claims.
+                        </p>
+                        <div class="d-grid gap-2">
+                          <a
+                            href="https://www.nmlegis.gov/Sessions/21%20Regular/final/HB0128.pdf"
+                            target="_blank"
+                            class="btn btn-outline-primary btn-sm"
+                          >
+                            <i class="bx bx-external-link me-1"></i>
+                            View Full Bill
+                          </a>
+                          <a
+                            href="/pdfs/poms-risk-docs/HB_128_2021.pdf"
+                            target="_blank"
+                            class="btn btn-outline-secondary btn-sm"
+                          >
+                            <i class="bx bxs-download me-1"></i>
+                            Download PDF
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h6 class="card-title text-primary">
+                          <i class="bx bx-book-open me-2"></i>
+                          New Mexico Statutes
+                        </h6>
+                        <p class="card-text small text-muted mb-3">
+                          Reference the official New Mexico Statutes Annotated
+                          (NMSA) section 22-10A-1.
+                        </p>
+                        <div class="d-grid">
+                          <a
+                            href="https://nmonesource.com/nmos/nmsa-unanno/en/item/18522/index.do#22-10A-1"
+                            target="_blank"
+                            class="btn btn-outline-primary btn-sm"
+                          >
+                            <i class="bx bx-external-link me-1"></i>
+                            View Statute
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h6 class="card-title text-primary">
+                          <i class="bx bx-file-blank me-2"></i>
+                          Contractor Assurance Sample
+                        </h6>
+                        <p class="card-text small text-muted mb-3">
+                          Sample contractor assurance document for Premium
+                          Credit and Deductible Programs.
+                        </p>
+                        <div class="d-grid">
+                          <a
+                            href="/pdfs/poms-risk-docs/Contractor Assurance Sample_Final.docx"
+                            target="_blank"
+                            class="btn btn-outline-primary btn-sm"
+                          >
+                            <i class="bx bxs-download me-1"></i>
+                            Download DOCX
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                      <div class="card-body">
+                        <h6 class="card-title text-primary">
+                          <i class="bx bx-file-blank me-2"></i>
+                          Affidavit of Conduct Sample
+                        </h6>
+                        <p class="card-text small text-muted mb-3">
+                          Sample affidavit of conduct document for Premium
+                          Credit and Deductible Programs.
+                        </p>
+                        <div class="d-grid">
+                          <a
+                            href="/pdfs/poms-risk-docs/Affidavit of Conduct Sample_Final.docx"
+                            target="_blank"
+                            class="btn btn-outline-primary btn-sm"
+                          >
+                            <i class="bx bxs-download me-1"></i>
+                            Download DOCX
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Annual Employee Notifications Modal -->
+    <div
+      class="modal fade"
+      id="employeeNotifications"
+      tabindex="-1"
+      aria-labelledby="employeeNotificationsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="employeeNotificationsLabel">
+              📢 Annual Employee Notifications
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body list-of-pdfs">
+            <h4>Summary of Benefits and Coverage</h4>
+            <ul>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/annual_notifications/NMPSIA_2025_SBC_for_BCBS_High_Option.pdf"
+                  target="_blank"
+                  >BlueCross BlueShield High Option</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/annual_notifications/NMPSIA_2025_SBC_for_BCBS_Low_Option.pdf"
+                  target="_blank"
+                  >BlueCross BlueShield Low Option</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/annual_notifications/NMPSIA_2025_SBC_for_BluePreferred_EPO_Plan.pdf"
+                  target="_blank"
+                  >BlueCross BlueShield BluePreferred EPO Plan</a
+                >
+              </li>
+
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/annual_notifications/NMPSIA_2025_SBC_for_PRES_High_Option.pdf"
+                  target="_blank"
+                  >Presbyterian High Option</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/annual_notifications/NMPSIA_2025_SBC_for_PRES_Low_Option.pdf"
+                  target="_blank"
+                  >Presbyterian Low Option</a
+                >
+              </li>
+            </ul>
+            <h4>Benefits/Wellness Resources</h4>
+            <ul>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/2024_New_Hire_Deck_General_Presentation.pdf"
+                  target="_blank"
+                  >Benefits Orientation Printable Version</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-movie-play"></i>
+                <a
+                  href="/movies/2024_New_Hire_Deck_General_Presentation.mp4"
+                  target="_blank"
+                  >Benefits Orientation Presentation</a
+                >
+              </li>
+            </ul>
+            <h4>Compliance Notices</h4>
+            <ul>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/annual_notifications/COMPLY_04581_NMPSIA_Important_Compliance_Notices_and_Information_for_Enrollment_2024.pdf"
+                  target="_blank"
+                  >Compliance Notices and Information for Enrollment 2024</a
+                >
+              </li>
+            </ul>
+            <h4>Balance Billing Notification</h4>
+            <ul>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="pdfs/Balance_Billing_Notice_01012025.pdf"
+                  target="_blank"
+                  >Balance Billing Notice</a
+                >
+              </li>
+            </ul>
+            <h4>Need Help With Health Insurance Issues</h4>
+            <ul>
+              <li>
+                <b>Step 1:</b> Contact the phone numbers on the back of your
+                Health Carrier Insurance ID card for assistance.
+              </li>
+              <li>
+                <b>Step 2:</b> Follow the Health Carrier's internal resolution
+                processes.
+              </li>
+              <li>
+                <b>Step 3:</b> If not resolved through the Health Carrier's
+                resolution processes, contact NM OSI – MHCB
+              </li>
+            </ul>
+            <a href="/pdfs/MHCB_Flyer_2023_24_Final.pdf" target="_blank"
+              >MHCB Flyer 2023-2024</a
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Biometric screening modal -->
+    <div
+      class="modal fade"
+      id="biometricScreeningModal"
+      tabindex="-1"
+      aria-labelledby="biometricScreeningModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="biometricScreeningModalLabel">
+              🧪 Biometric Screening Initiative
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="" style="font-weight: 400">
+              If your busy schedule has made it hard to prioritize your health,
+              you're not alone. NMPSIA is now offering a no-cost benefit that
+              lets you complete a health checkup on your time, from the comfort
+              of your home! The best part is that it's available at no cost to
+              covered employees, spouses and dependents (18+) enrolled in a
+              NMPSIA Medical plan. The kit measures Total Cholesterol, HDL, LDL,
+              Triglycerides, A1C and Glucose with a quick finger prick. Follow
+              the link under your carrier to receive easy to follow directions
+              to order your kit TODAY!
+            </p>
+            <ul id="biometrics" class="ps-0 content-list">
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdf-to-html/home-test-kit-promo_WF/index.html"
+                  target="_blank"
+                  >Presbyterian Health - Wellness Screenings at No Cost to
+                  You</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdf-to-html/catapult-virtualcheckup-promo_wf/index.html"
+                  target="_blank"
+                  >BlueCross BlueShield - Catapult VirtualCheckup Home Clinic</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar functionality -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <!-- Swiper  -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- for happening now news content -->
+    <script src="./scripts/homepage-news.js?v=3.5"></script>
+
+    <!-- <script src="./js/main.js"></script> -->
+
+    <script>
+      // Initialize smooth scroll polyfill
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof SmoothScroll !== "undefined") {
+          var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 300,
+            speedAsDuration: true,
+            offset: 150,
+          });
+        }
+      });
+
+      // Modified news rendering for Swiper carousel
+      function renderNewsCards() {
+        const newsWrapper = document.getElementById("news-wrapper");
+        let newsHTML = "";
+
+        // Show all news items
+        const displayNews = homepageNews;
+
+        for (let i = 0; i < displayNews.length; i++) {
+          const newsItem = displayNews[i];
+          const dateText =
+            newsItem.date.day && newsItem.date.month
+              ? `${newsItem.date.month} ${newsItem.date.day}`
+              : "Ongoing";
+
+          newsHTML += `
+            <div class="swiper-slide">
+              <div class="news-card">
+                <div class="news-date">${dateText}</div>
+                <h3 class="news-card-title">${newsItem.title}</h3>
+                <p class="news-card-description">${newsItem.description}</p>
+                <a href="${newsItem.linkHref}" 
+                   ${
+                     newsItem.modalTrigger
+                       ? 'data-bs-toggle="modal" data-bs-target="' +
+                         newsItem.linkHref +
+                         '"'
+                       : 'target="_blank"'
+                   }
+                   class="news-card-link">
+                  ${newsItem.linkText} <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+          `;
+        }
+
+        newsWrapper.innerHTML = newsHTML;
+      }
+
+      // Call the rendering function and initialize Swiper after DOM is ready
+      function initializeNewsSwiper() {
+        // Wait for homepageNews to be available
+        if (typeof homepageNews === "undefined") {
+          setTimeout(initializeNewsSwiper, 100);
+          return;
+        }
+
+        renderNewsCards();
+
+        // Initialize Swiper after content is rendered (using requestAnimationFrame for smooth initialization)
+        requestAnimationFrame(function () {
+          if (typeof Swiper !== "undefined") {
+            const newsSwiper = new Swiper(".news-swiper", {
+              speed: 600,
+              spaceBetween: 30,
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              loop: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              },
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              breakpoints: {
+                768: {
+                  slidesPerView: 2,
+                  slidesPerGroup: 2,
+                  spaceBetween: 20,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  slidesPerGroup: 3,
+                  spaceBetween: 30,
+                },
+              },
+            });
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", initializeNewsSwiper);
+    </script>
+  </body>
+</html>
