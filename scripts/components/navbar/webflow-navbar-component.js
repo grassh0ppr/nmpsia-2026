@@ -32,12 +32,17 @@ class WebflowNavbar extends HTMLElement {
                 <a href="./plan.html" class="dropdown-link w-dropdown-link"
                     >NMPSIA &ndash; The Authority</a
                   >
+                  <a href="./board-login.html" class="dropdown-link w-dropdown-link">NMPSIA &ndash; Board Login</a>
+
                   <a href="./benefits.html" class="dropdown-link w-dropdown-link"
                     >NMPSIA &ndash; Benefits Division</a
                   >
                   <a href="./wellness.html" class="dropdown-link w-dropdown-link"
                     >NMPSIA &ndash; Wellness Programs Division</a
                   >
+                  <a href="./behavioral-health.html" class="dropdown-link w-dropdown-link"
+                  >NMPSIA &ndash; Behavioral Health Resources</a
+                >
                   <a href="./risk.html" class="dropdown-link w-dropdown-link"
                     >NMPSIA &ndash; Risk Division</a
                   >
@@ -61,15 +66,8 @@ class WebflowNavbar extends HTMLElement {
                   <div>Employers</div>
                 </div>
                 <nav class="dropdown-list w-dropdown-list">
-               
-                <a href="https://nmpsiaonline.nmpsia.com/" class="dropdown-link w-dropdown-link" target="_blank"
-                >Online Benefits Portal Login</a
-              >
                   <a href="./support.html" class="dropdown-link w-dropdown-link"
                     >Request NMPSIA Support</a
-                  >
-                  <a href="./update-contacts.html" class="dropdown-link w-dropdown-link"
-                    >Update Employer Contacts</a
                   >
                   <a href="./employer-trainings.html" class="dropdown-link w-dropdown-link"
                     >Training Tutorials and Videos</a
@@ -80,21 +78,13 @@ class WebflowNavbar extends HTMLElement {
                   <a href="./benefits.html" class="dropdown-link w-dropdown-link"
                     >Carrier Benefits Information</a
                   >
-                  <a href="./wellness.html" class="dropdown-link w-dropdown-link"
-                    >Wellness and Well Being</a
-                  >
                   <a href="./premiums-er.html" class="dropdown-link w-dropdown-link"
                     >Benefit Premiums</a
                   >
                   <a href="./info.html" class="dropdown-link w-dropdown-link"
                     >Vital Program Information</a
                   >
-                  <a href="./covid-19.html" class="dropdown-link w-dropdown-link"
-                    >COVID-19 Information</a
-                  >
-                  <a href="./behavioral-health.html" class="dropdown-link w-dropdown-link"
-                    >Behavioral Health Resources</a
-                  >
+                 
                 
                 </nav>
               </div>
@@ -104,10 +94,6 @@ class WebflowNavbar extends HTMLElement {
                   <div>Employees</div>
                 </div>
                 <nav class="dropdown-list w-dropdown-list">
-               
-                <a href="https://nmpsiaonline.nmpsia.com/" class="dropdown-link w-dropdown-link" target="_blank"
-                >Online Benefits Portal Login</a
-              >
                   <a href="./enrollment-tutorials.html" class="dropdown-link w-dropdown-link"
                     >Employee Enrollment Tutorials</a
                   >
@@ -117,27 +103,15 @@ class WebflowNavbar extends HTMLElement {
                   <a href="./benefits.html" class="dropdown-link w-dropdown-link"
                     >Carrier Benefits Information</a
                   >
-                  <a href="./wellness.html" class="dropdown-link w-dropdown-link"
-                    >Wellness and Well Being</a
-                  >
                   <a href="./premiums.html" class="dropdown-link w-dropdown-link"
                     >Benefit Premiums</a
-                  >
-                  <a href="./benefits.html#comparisonChart" class="dropdown-link w-dropdown-link"
-                    >Medical Plan Comparison Chart</a
-                  >
-                  <a href="./covid-19.html" class="dropdown-link w-dropdown-link"
-                    >COVID-19 Information</a
-                  >
-                  <a href="./behavioral-health.html" class="dropdown-link w-dropdown-link"
-                    >Behavioral Health Resources</a
                   >
                
                 </nav>
               </div>
               <a href="./about.html" class="navlink w-nav-link">About</a>
               <a href="./contact-us.html" class="navlink w-nav-link">Contact</a>
-              <a href="./board-login.html" class="navlink w-nav-link">Board Login</a>
+              <a href="https://nmpsiaonline.nmpsia.com/" class="navlink w-nav-link">Benefits Portal Login</a>
               <a href="#" class="search-toggle navlink w-nav-link" id="searchToggle">
                 <i class="bx bx-search" style="color: #fff;font-size: 1.2rem;"></i>
               </a>
