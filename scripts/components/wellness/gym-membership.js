@@ -16,12 +16,6 @@ class GymMembership extends HTMLElement {
       <ul class="content-list">
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a href="/pdfs/Blue_365_Discount_Program.pdf" target="_blank"
-            >Blue 365 Discount Program</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
           <a target="_blank" href="/pdfs/NM Fitness Program.pdf"
             >Fitness Program Membership</a
           >

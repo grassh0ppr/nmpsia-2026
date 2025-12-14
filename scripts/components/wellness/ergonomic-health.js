@@ -25,20 +25,6 @@ class ErgonomicHealth extends HTMLElement {
             <li>
               <i class="bx bxs-file-pdf"></i>
               <a
-                href="/pdfs/Keys to Mastering Your Mobility.pdf"
-                target="_blank"
-                >Keys to Mastering Your Mobility 10/26/2022 - PDF</a
-              >
-            </li>
-            <li>
-              <i class="bx bxs-file-pdf"></i>
-              <a href="https://www.surveymonkey.com/r/L6KN9ND" target="_blank"
-                >Mastering Your Mobility - 10/26/2022 Recorded Webinar</a
-              >
-            </li>
-            <li>
-              <i class="bx bxs-file-pdf"></i>
-              <a
                 href="/pdfs/Guide_to_an_Ergonomically_Correct_Workstation_NM_INTERACTIVE.pdf"
                 target="_blank"
                 >POMS - Guide to an Ergonomically Correct Workstation</a

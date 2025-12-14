@@ -39,15 +39,6 @@ class WellnessByCarrier extends HTMLElement {
           <i class="bx bxs-file-pdf"></i>
           <a
             target="_blank"
-            href="/pdfs/NM Group  Retail Social Media Overview Member Flier Spanish.pdf"
-          >
-            El lado social de tu seguro m&eacute;dico</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
             href="/pdfs/NM-Group-QIP-Adult-Wellness-Member-Guidelines.pdf"
           >
             Adult Wellness Guidelines - Making Preventative Care a
@@ -64,26 +55,7 @@ class WellnessByCarrier extends HTMLElement {
             Healthy Tomorrow</a
           >
         </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/NM-SP-Group-QIP-Adult-Wellness-Member-Guidelines.pdf"
-          >
-            Gu&iacute;a para el bienestar de los adultos - Dele prioidad a
-            la atenci&oacute;n m&eacute;dica preventiva</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/NM-SP-Group-QIP-Childrens-Wellness-Member-Guidelines.pdf"
-          >
-            Gu&iacute;a para el bienestar de los ni&ntilde;os - C&oacute;mo
-            sentar las bases para un futuro saludable</a
-          >
-        </li>
+       
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a
@@ -93,16 +65,7 @@ class WellnessByCarrier extends HTMLElement {
             BlueResource - Take Action Against a Silent Killer</a
           >
         </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/NM_SP_BlueResource_Screening_for_Cervical_Cancer_Member_Flier.pdf"
-          >
-            BlueResource (en espa&ntilde;ol) - C&oacute;mo protegerse contra
-            un asesino silencioso</a
-          >
-        </li>
+       
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a target="_blank" href="/pdfs/BCBS_Flu_Season_2024.pdf">
@@ -122,13 +85,7 @@ class WellnessByCarrier extends HTMLElement {
             Presbyterian Wellness at Work Login</a
           >
         </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="/pdfs/Talkspace_Flyer_Updated_2024.pdf">
-            Talkspace Messaging Therapy - A new solution for emotional
-            well-being</a
-          >
-        </li>
+       
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a

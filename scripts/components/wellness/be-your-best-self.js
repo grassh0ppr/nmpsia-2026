@@ -13,18 +13,37 @@ class BeYourBestSelf extends HTMLElement {
     />
   </div>
   <h3 class="sub-heading">Resources</h3>
-  <ul class="content-list">
-    <li>
-      <i class="bx bx-video"></i>
-      <a
-        href="https://players.brightcove.net/3467683097001/default_default/index.html?videoId=6369062878112"
-        target="_blank"
-        >Living Longer, Living Well - Unlocking the Secrets to a Lasting
-        Healthspan</a
-      >
-    </li>
-  </ul>
             <div class="accordion be-your-best-self" id="accordionBeYourBest">
+            <!-- Webinars -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWebinars" aria-expanded="false" aria-controls="collapseWebinars">
+                  Webinars
+                </button>
+              </h2>
+              <div id="collapseWebinars" class="accordion-collapse collapse" data-bs-parent="#accordionBeYourBest">
+                <div class="accordion-body">
+                  <div class="accordion-banner"></div>
+                  <ul class="content-list">
+                    <li>
+                      <i class="bx bx-video"></i>
+                      <a
+                        href="https://players.brightcove.net/3467683097001/default_default/index.html?videoId=6369062878112"
+                        target="_blank"
+                        >Living Longer, Living Well - Unlocking the Secrets to a Lasting
+                        Healthspan</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bx-video"></i>
+                      <a href="https://players.brightcove.net/3467683097001/default_default/index.html?videoId=6374539171112"
+                        target="_blank">Video - Understanding Ageless Mobility</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -37,11 +56,19 @@ class BeYourBestSelf extends HTMLElement {
                   <div class="accordion-banner"></div>
                   <ul class="content-list">
                     <li>
-                      <i class="bx bx-video"></i>
-                      <a href="https://players.brightcove.net/3467683097001/default_default/index.html?videoId=6374539171112"
-                        target="_blank">Video - Understanding Ageless Mobility</a>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="/pdfs/Keys to Mastering Your Mobility.pdf"
+                        target="_blank"
+                        >Keys to Mastering Your Mobility - PDF</a
+                      >
                     </li>
-                    
+                  <li>
+                    <i class="bx bxs-file-pdf"></i>
+                    <a href="https://www.surveymonkey.com/r/L6KN9ND" target="_blank"
+                      >Mastering Your Mobility - Recorded Webinar</a
+                    >
+                  </li>
                    
                   </ul>
                 </div>

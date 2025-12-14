@@ -36,15 +36,6 @@ class WeightMgmt extends HTMLElement {
             >5 Sneaky Ways to Stay Active</a
           >
         </li>
-
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/Wondr_Digital_Flyer_New_Year_Option_4_NMPSIA.pdf"
-            >Wondr &ndash; Skills-based weight-loss program</a
-          >
-        </li>
       </ul>
       <h3 class="sub-heading">Presbyterian Health Plan</h3>
       <ul class="content-list">
@@ -97,25 +88,6 @@ class WeightMgmt extends HTMLElement {
             href="/pdfs/2024_GM_Achieve_your_health_goals_NMPSIA_Flyer.pdf"
             >Good Measures - Achieve your health goals and feel your
             best!</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/2024_fitness_pass_flyer_corrected.pdf"
-            >Enroll in the 2024 Fitness Pass Program</a
-          >
-        </li>
-      </ul>
-      <h3 class="sub-heading">Additional Weight Management Resources</h3>
-      <ul class="content-list">
-        <li>
-          <i class="bx bx-video"></i>
-          <a
-            target="_blank"
-            href="https://files.hesapps.com/walktober_2022/wal-video-nmpsia-compressed.mp4"
-            ><em>Walktober</em> 2022 Informational Video</a
           >
         </li>
       </ul>

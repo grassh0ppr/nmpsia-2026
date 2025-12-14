@@ -14,28 +14,14 @@ class HypertensionMgmt extends HTMLElement {
       </div>
       <h3 class="sub-heading">Blue Cross Blue Shield of New Mexico</h3>
       <ul class="content-list">
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            href="pdfs/Flyer-Print-WONDR-New-Year-Option-2-NMPSIA.pdf"
-            target="_blank"
-            >Wondr Health Program 2023</a
-          >
-        </li>
+       
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a href="/pdfs/Less_ChoLESterol_is_Better.pdf" target="_blank"
             >Less Cho<em>LES</em>terol is Better</a
           >
         </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/NMPSIA_Naturally_Slim_Rebrand_Callout.pdf"
-            >Naturally Slim™ Rebrands to Wondr Health™</a
-          >
-        </li>
+      
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a
@@ -51,31 +37,7 @@ class HypertensionMgmt extends HTMLElement {
           >
         </li>
       </ul>
-      <h3 class="sub-heading">Presbyterian Health Plan</h3>
-      <ul class="content-list">
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="/pdfs/2021_Wellness_Engagement.pdf"
-            >2021 Wellness Engagement Programs</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/NMPSIA_Health_Poster_MARCH_2021.pdf"
-            >March 2021 Health Observance Poster</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/June_2021_Health_Observance_Poster.pdf"
-            >June 2021 Health Observance Poster</a
-          >
-        </li>
-      </ul>
+    
         `;
   }
 }
