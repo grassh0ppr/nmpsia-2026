@@ -38,6 +38,27 @@ class TeleHealthVirtual extends HTMLElement {
         </li>
       </ul>
 
+      <h3 class="sub-heading">Virtual Dental Care</h3>
+      <ul class="content-list">
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a
+            target="_blank"
+            href="/pdfs/carriers/blueCare_dental/BlueCare Dental Teledentistry Member Flier.pdf"
+            >BlueCare Dental Teledentistry Services</a
+          >
+        </li>
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a
+            target="_blank"
+            href="/pdfs/2024 Teledentistry Rebrand final.pdf"
+            >Teledentistry Services from Dental.com</a
+          >
+        </li>
+      </ul>
+      
+
       <h3 class="sub-heading">Presbyterian Members</h3>
       <ul class="content-list">
         <li>

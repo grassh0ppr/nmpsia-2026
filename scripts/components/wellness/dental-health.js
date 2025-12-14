@@ -202,14 +202,6 @@ class DentalHealth extends HTMLElement {
             >BlueCare Dental PPO Member Information</a
           >
         </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/carriers/blueCare_dental/BlueCare Dental Teledentistry Member Flier.pdf"
-            >BlueCare Dental Teledentistry Services</a
-          >
-        </li>
       </ul>
 
       <h3 class="sub-heading">United Concordia Members</h3>
@@ -221,14 +213,6 @@ class DentalHealth extends HTMLElement {
             href="https://www.unitedconcordia.com/benefits/clients-corner/New-Mexico-Public-School-Client-Corner-Dental-Benefits"
             target="_blank"
             >United Concordia Website</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/2024 Teledentistry Rebrand final.pdf"
-            >Teledentistry Services from Dental.com</a
           >
         </li>
 
