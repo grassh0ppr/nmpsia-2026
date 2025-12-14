@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Our Plan | New Mexico Public Schools Insurance Authority</title>
+
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+
+    <!-- components -->
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- components -->
+    <script src="./scripts/components/board-members-component.js?v=1"></script>
+    <script src="./scripts/components/board-meeting-minutes.js?v=2.9"></script>
+    <script src="./scripts/components/board-meeting-packets.js?v=2.4"></script>
+    <script src="./scripts/components/rules-component.js"></script>
+    <script src="./scripts/components/stat-reporting-component.js"></script>
+    <script src="./scripts/components/carrier-contacts-component.js"></script>
+    <script src="./scripts/components/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/alert-banner/alert-banner.js"></script>
+
+    <style>
+      .show {
+        display: block;
+      }
+
+      #alertModal {
+        z-index: 10000;
+      }
+    </style>
+  </head>
+
+  <body class="modern-body">
+    <!-- <navbar-component></navbar-component> -->
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <!-- <alert-banner
+      message="We're currently working on launching a comprehensive website redesign to deliver a WCAG 2.1 AA compliant, fully mobile-responsive, and enhanced user experience. You may notice temporary styling variations as we transition to our improved platform, unveiled January 1, 2026."
+      class="alert-banner"
+    ></alert-banner> -->
+
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          NMPSIA - The Authority
+        </li>
+      </ol>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button
+      class="sidebar-toggle"
+      id="sidebarToggle"
+      aria-label="Toggle navigation menu"
+    >
+      <i class="bx bx-menu"></i>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar-layout">
+      <aside class="benefits-sidebar" id="benefitsSidebar">
+        <div class="sidebar-header">
+          <h3><i class="bx bx-menu"></i> Quick Navigation</h3>
+          <button
+            class="close-sidebar"
+            id="closeSidebar"
+            aria-label="Close navigation menu"
+          >
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#overview" class="nav-item active" data-section="overview">
+            <i class="bx bx-home"></i>
+            <span>Overview</span>
+          </a>
+          <a href="#boardmembers" class="nav-item" data-section="boardmembers">
+            <i class="bx bx-group"></i>
+            <span>NMPSIA Board Members</span>
+          </a>
+          <a href="#boardMinutes" class="nav-item" data-section="boardMinutes">
+            <i class="bx bx-file-blank"></i>
+            <span>NMPSIA Board Meeting Minutes</span>
+          </a>
+          <a href="#boardPackets" class="nav-item" data-section="boardPackets">
+            <i class="bx bx-folder"></i>
+            <span>NMPSIA Board Meeting Packets</span>
+          </a>
+          <a
+            href="#anniAuditReports"
+            class="nav-item"
+            data-section="anniAuditReports"
+          >
+            <i class="bx bxs-file-pdf"></i>
+            <span>NMPSIA Annual Audit Reports</span>
+          </a>
+          <a
+            href="/pdfs/NMPSIA_Enabling_Statute_2017-05.pdf"
+            target="_blank"
+            class="nav-item"
+          >
+            <i class="bx bx-book"></i>
+            <span>NMPSIA State Statutes</span>
+          </a>
+          <a href="#rules" class="nav-item" data-section="rules">
+            <i class="bx bx-list-check"></i>
+            <span>NMPSIA Rules and Regulations</span>
+          </a>
+          <a
+            href="#assocCarrCons"
+            class="nav-item"
+            data-section="assocCarrCons"
+          >
+            <i class="bx bx-phone"></i>
+            <span>Carrier Contacts</span>
+          </a>
+          <a href="./district-contacts.html" target="_blank" class="nav-item">
+            <i class="bx bx-building"></i>
+            <span>NMPSIA Participating Employer Contact Database</span>
+          </a>
+          <a href="./procurements.html" class="nav-item">
+            <i class="bx bx-clipboard"></i>
+            <span>NMPSIA Active Procurements</span>
+          </a>
+          <a href="#statReports" class="nav-item" data-section="statReports">
+            <i class="bx bx-bar-chart-alt-2"></i>
+            <span>NMPSIA Statistical Reports</span>
+          </a>
+          <a href="#IPRArequest" class="nav-item" data-section="IPRArequest">
+            <i class="bx bx-envelope"></i>
+            <span>NMPSIA IPRA Request</span>
+          </a>
+          <a href="./employer-trainings.html" target="_blank" class="nav-item">
+            <i class="bx bx-video"></i>
+            <span>NMPSIA Training Tutorials & Videos</span>
+          </a>
+        </nav>
+      </aside>
+      <main class="benefits-main" data-default-section="overview">
+        <!-- Hero Section -->
+        <section class="benefits-hero-section">
+          <div class="benefits-hero-content">
+            <h1 class="benefits-hero-title">NMPSIA - The Authority</h1>
+            <p class="benefits-hero-subtitle">
+              The New Mexico Public Schools Insurance Authority (NMPSIA) was
+              created by the NM Legislature in 1986 to serve as a purchasing
+              agency for public school districts, post-secondary educational
+              entities and charter schools. Through NMPSIA, member schools are
+              afforded the opportunity to offer quality employee benefit and
+              risk coverages.
+            </p>
+            <p class="benefits-hero-subtitle">
+              Learn more about us by selecting any of the topics on the left, or
+              select a category at the top of the screen to find what you're
+              looking for.
+            </p>
+          </div>
+          <div class="benefits-hero-logo">
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="benefits-logo"
+            />
+          </div>
+        </section>
+
+        <!-- OVERVIEW (invisible anchor for navigation, content is in hero section above) -->
+        <div
+          id="overview"
+          class="content-section"
+          style="
+            height: 0;
+            padding: 0;
+            margin: 0;
+            border: none;
+            box-shadow: none;
+            background: transparent;
+            overflow: hidden;
+          "
+        ></div>
+
+        <!-- BOARD MEMBERS TBL -->
+        <div id="boardmembers" class="content-section">
+          <board-members-component></board-members-component>
+        </div>
+        <!-- BOARD MEETING MINUTES -->
+        <div id="boardMinutes" class="content-section">
+          <board-meeting-minutes></board-meeting-minutes>
+        </div>
+        <!-- BOARD MEETING PACKETS -->
+        <div id="boardPackets" class="content-section">
+          <board-meeting-packets></board-meeting-packets>
+        </div>
+        <!-- ANNUAL AUDIT REPORTS -->
+        <div id="anniAuditReports" class="content-section">
+          <div class="heading-and-element-flexbox">
+            <h2 class="display-4">NMPSIA Annual Audit Reports</h2>
+            <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
+          </div>
+          <hr />
+          <ul class="content-list grid-layout">
+            <li>
+              <i class="bx bx-link-external"></i>
+              <a
+                href="https://www.osa-app.org/auditReportSearchDetail.aspx?id=FA79CDD2-DDE1-448A-B788-C095BA94CCA9&type="
+                target="_blank"
+              >
+                FY23 Audit Report</a
+              >
+            </li>
+            <li>
+              <i class="bx bx-link-external"></i>
+              <a
+                href="https://www.osa-app.org/auditReportSearchDetail.aspx?id=12512D62-632E-476D-9F17-25DD24B5B129&type="
+                target="_blank"
+              >
+                FY22 Audit Report</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                target="_blank"
+                href="/pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2021_Audit_FINAL.pdf"
+              >
+                FY21 Audit Report</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                target="_blank"
+                href="/pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2020_Audit_Final.pdf"
+              >
+                FY20 Audit Report</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2019_Final.pdf"
+                target="_blank"
+              >
+                FY19 Audit Report</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- RULES AND REGULATIONS -->
+        <div id="rules" class="content-section">
+          <rules-component></rules-component>
+        </div>
+        <!-- ASSOCIATED CARRIER CONTACTS -->
+        <div id="assocCarrCons" class="content-section">
+          <carrier-contacts></carrier-contacts>
+        </div>
+        <!-- STATISTICAL REPORTING -->
+        <div id="statReports" class="content-section">
+          <stat-reporting-component></stat-reporting-component>
+        </div>
+
+        <!-- IPRA REQUEST -->
+        <div id="IPRArequest" class="content-section">
+          <div class="heading-and-element-flexbox">
+            <h2 class="display-4">
+              Request Inspection of Public Records - New Mexico Inspection of
+              Public Records Act, NMSA 1978, §§ 14-2-1 et seq. ("IPRA")
+            </h2>
+            <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
+          </div>
+          <h3 class="sub-heading">Citizens Right to Inspect Public Records</h3>
+          <p>
+            The Inspection of Public Records Act (IPRA) is intended to provide
+            the public with access to information about governmental affairs.
+            Open government - that is, the public's access to government actions
+            - is a crucial aspect of a functioning democracy. Section 14-2-1 of
+            IPRA establishes the right of citizens to access virtually all
+            public records relating to government affairs, with few exceptions.
+            It is the responsibility of a public body to make public records
+            available for inspection.
+          </p>
+          <h3 class="sub-heading">
+            Procedures to Request Inspection of Public Records
+          </h3>
+          <p>
+            To inspect public records of the New Mexico Public Schools Insurance
+            Authority (NMPSIA), you may submit a request to inspect public
+            records via email or in writing (including facsimile) to NMPSIA's
+            designated "Records Custodian." The procedures and penalties
+            described in the Inspection of Public Records Act apply only to
+            written and email requests. A written or email request to inspect
+            public records shall provide the name, address and telephone number
+            of the person seeking access to inspect public records. The contact
+            information for NMPSIA's Records Custodian is:
+          </p>
+          <p class="ms-5">
+            <strong>
+              Dominique Williams <br />Public Records Custodian<br />410 Old
+              Taos Highway<br />
+              Santa Fe, NM 87501<br />Phone: 800-548-3724, ext. 1002<br />Fax:
+              505-983-8670</strong
+            >
+          </p>
+          <br />
+          <!-- <a id="sendIPRAReq" href="#" class="mt-3 btn btn-primary"
+                              >Send IPRA Request</a
+                          > -->
+          <!-- button to trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary mb-5 ms-5"
+            data-bs-toggle="modal"
+            data-bs-target="#ipraModal"
+          >
+            Send IPRA Request
+          </button>
+
+          <p>
+            An appointment to inspect public records is permitted during the New
+            Mexico Public Schools Insurance Authority Offce's regular business
+            hours, which are from 8:00am to 12:00 noon, and 1:00pm to 5:00pm,
+            Monday through Friday (except for legal holidays recognized by the
+            state).
+          </p>
+          <h4>Requesting Copies of Public Records</h4>
+          <p class="pb-3">
+            You may request copies of public records, for which a reasonable fee
+            will be charged at the rate of $.50 per page. Payment of this fee is
+            required in advance. You will be provided with a receipt. NMPSIA is
+            required to provide a copy of a public record in electronic format
+            if the public record is available in electronic format and an
+            electronic copy is specifically requested.
+          </p>
+        </div>
+      </main>
+    </div>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="ipraModal"
+      tabindex="-1"
+      aria-labelledby="ipraModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ipraModalLabel">IPRA Request Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3" action="/nmpsiaapi/Api/EmailServer/SendIPRA">
+              <div class="col-md-6">
+                <label for="recipient-name" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="col-md-6">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="col-md-6">
+                <label for="address" class="form-label">Address:</label>
+                <input type="text" class="form-control" id="address" />
+              </div>
+
+              <div class="col-md-6">
+                <label for="city" class="form-label">City:</label>
+                <input type="text" class="form-control" id="city" />
+              </div>
+              <div class="col-md-4">
+                <label for="state" class="form-label">State:</label>
+                <select id="state" class="form-select">
+                  <option selected>Choose...</option>
+                  <option value="" selected="selected">Select a State</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="message-text" class="form-label">Zip Code:</label>
+                <input type="text" class="form-control" id="zipCode" />
+              </div>
+              <div class="col-md-6">
+                <label for="message-text" class="form-label">Phone:</label>
+                <input type="text" class="form-control" id="phone" />
+              </div>
+              <div class="col-12">
+                <label for="message-text" class="form-label">Subject:</label>
+                <input type="text" class="form-control" id="subject" />
+                <!-- <textarea type="text" class="form-control" id="subject" rows="2"></textarea> -->
+              </div>
+              <div class="col-12">
+                <label for="message-text" class="form-label">Request:</label>
+                <textarea
+                  class="form-control"
+                  name="request"
+                  id="request"
+                ></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <!-- <button id="sendMsgBtn" type="button" class="btn btn-primary" onclick="onsendmessage">
+                     Send message
+                 </button>-->
+            <button
+              id="sendMsgButton"
+              class="btn btn-primary g-recaptcha"
+              data-sitekey="6LcRUNQkAAAAAJOBzr_XmWa_iteWWSD8QBteJeA2"
+              data-callback="sendMessage"
+              data-action="submit"
+              data-bs-dismiss="modal"
+            >
+              Send message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- alert modal -->
+    <div
+      class="modal fade"
+      id="alertModal"
+      tabindex="-1"
+      aria-labelledby="alertModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="alertModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="result"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar functionality -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/sidebar-navigation.js"></script>
+    <!-- sendmessage -->
+    <script>
+      function sendMessage(token) {
+        var sname = document.getElementById("name").value;
+        var saddress = document.getElementById("address").value;
+        var scity = document.getElementById("city").value;
+        var sstate = document.getElementById("state").value;
+        var szipcode = document.getElementById("zipCode").value;
+        var sphone = document.getElementById("phone").value;
+        var semail = document.getElementById("email").value;
+        var ssubject = document.getElementById("subject").value;
+        var srequest = document.getElementById("request").value;
+
+        var params = {
+          name: sname,
+          address: saddress,
+          city: scity,
+          state: sstate,
+          zipcode: szipcode,
+          phone: sphone,
+          email: semail,
+          subject: ssubject,
+          request: srequest,
+          t: token,
+        };
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/nmpsiaapi/Api/EmailServer/SendIPRA", true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=utf8");
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+              var res = xhr.responseText;
+
+              console.log(res);
+              document.getElementById("alertModalLabel").innerHTML =
+                "Submitted ✅";
+              // document.getElementById("result").innerHTML = res;
+              document.getElementById("result").innerHTML =
+                "We received your request and will be in touch!";
+
+              document.querySelector("#ipraModal").classList.remove("show");
+              document.querySelector("#ipraModal").classList.add("hide");
+
+              document.querySelector("#alertModal").classList.remove("hide");
+              document.querySelector("#alertModal").classList.add("show");
+            } else {
+              var res = xhr.statusText;
+              console.error("Error:", res);
+              document.getElementById("alertModalLabel").innerHTML =
+                "Whoops, something went wrong. ⛔";
+              document.getElementById("result").innerHTML =
+                "Sorry, there was an error submitting your request!";
+              document.querySelector("#ipraModal").classList.remove("show");
+              document.querySelector("#ipraModal").classList.add("hide");
+              document.querySelector("#alertModal").classList.remove("hide");
+              document.querySelector("#alertModal").classList.add("show");
+            }
+          }
+        };
+        xhr.send(JSON.stringify(params));
+        document.getElementById("sendMsgButton").disabled = true;
+      }
+
+      var dismissButton = document.querySelector("#alertModal .btn-close");
+      var closeButton = document.querySelector("#alertModal .btn-secondary");
+
+      dismissButton.addEventListener("click", function () {
+        document.querySelector("#alertModal").classList.remove("show");
+        document.querySelector("#alertModal").classList.add("hide");
+      });
+
+      closeButton.addEventListener("click", function () {
+        document.querySelector("#alertModal").classList.remove("show");
+        document.querySelector("#alertModal").classList.add("hide");
+      });
+    </script>
+
+    <!-- <script src="/JavaScript/mobileSidenav.js"></script> -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </body>
+</html>

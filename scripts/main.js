@@ -1,6 +1,6 @@
 // Get references to the links and sections
 const links = document.querySelectorAll("aside a, .grid-layout a");
-const sections = document.querySelectorAll(".section");
+const sections = document.querySelectorAll(".section, .content-section");
 const mainElement = document.querySelector("main");
 const defaultSection = mainElement.dataset.defaultSection || "overview";
 

@@ -28,51 +28,11 @@ class ReproductiveHealth extends HTMLElement {
           <i class="bx bxs-file-pdf"></i>
           <a
             target="_blank"
-            href="/pdfs/wellness/NM_Ovia_Health_All_Ovia_Apps_Member_Posters.pdf"
-            >Ovia Health - Support for Reproductive Health, Fertility, and
-            Menopause</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/wellness/Emotions_and_Relationships.pdf"
-            >Navigating Emotions and Relationships During Pregnancy</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/wellness/Exercise_During_Pregnancy.pdf"
-            >Healthy, Safe Exercise During Pregnancy</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/wellness/Dos_and_Donts_of_Pregnancy.pdf"
-            >The Do's and Don'ts of Pregnancy</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
             href="/pdfs/wellness/DDNM_Pregnancy_RC_2024_057_DDNM_MKT_ENGLISH.pdf"
             >Delta Dental - Staying Healthy for baby</a
           >
         </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/wellness/DDNM_Pregnancy_RC_2024_057_DDNM_MKT_SPANISH.pdf"
-            >Delta Dental - Manténgase Saludable para el Bebé</a
-          >
-        </li>
+     
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a
