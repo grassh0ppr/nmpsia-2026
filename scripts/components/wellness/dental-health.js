@@ -22,84 +22,102 @@ class DentalHealth extends HTMLElement {
             >Delta Dental Website</a
           >
         </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            href="/PDFs/The_Risks_of_Oral_Piercings_DDNM.pdf"
-            target="_blank"
-            >The Risks of Oral Piercings</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            href="/pdfs/Healthy-Lunches-School-Fuel-for-Kids-Rack-Card_1.pdf"
-            target="_blank"
-            >Healthy School Lunches</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            href="/pdfs/Maintaining-Your-Childhood-Smile-Delta.pdf"
-            target="_blank"
-            >Maintaining Your Childhood Smile</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/Delta_Dental_Info_2024_2025/DDNM Generic Pre-Treatment Flyer 2024-124-DDNM-MKT.pdf"
-            >Pre-treatment Estimate</a
-          >
-        </li>
+       <li>
+       <i class="bx bx-folder"></i>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#deltadentalArchivedLinksModal">Archived Links</a>
+       </li>
 
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/FLI_6492_DNLD_Cardiovascular_Flyer.pdf"
-            >The Connection Between Periodontitis (gum disease) and
-            Cardiovascular Disease</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/Delta_Dental_Info_2024_2025/DDNM Mobile App Flyer ENGLISH 2024-017-DDNM-MKT.pdf"
-            >Delta Dental Mobile App</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/pdfs/Delta_Dental_Info_2024_2025/DDNM Member Portal Flyer ENGLISH 2024-016-DDNM-MKT.pdf"
-            >Delta Dental Member Portal</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            target="_blank"
-            href="/PDFs/DDNM Toothbrush care RC 2024-061-DDNM-MKT.pdf"
-            >The Truths About Toothbrushes</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="/PDFs/Fillings_101_DDNM.pdf"
-            >Fillings 101</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a href="pdfs/DDNM Avoiding-Oral-Cancer Flyer.pdf" target="_blank"
-            >Avoiding Oral Cancer</a
-          >
-        </li>
+      <div class="modal fade" id="deltadentalArchivedLinksModal" tabindex="-1" aria-labelledby="deltadentalArchivedLinksModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="deltadentalArchivedLinksModalLabel">Archived Links</h5>
+            </div>
+            <div class="modal-body">
+              <ul class="content-list">
+              <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/PDFs/The_Risks_of_Oral_Piercings_DDNM.pdf"
+                target="_blank"
+                >The Risks of Oral Piercings</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Healthy-Lunches-School-Fuel-for-Kids-Rack-Card_1.pdf"
+                target="_blank"
+                >Healthy School Lunches</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Maintaining-Your-Childhood-Smile-Delta.pdf"
+                target="_blank"
+                >Maintaining Your Childhood Smile</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                target="_blank"
+                href="/pdfs/Delta_Dental_Info_2024_2025/DDNM Generic Pre-Treatment Flyer 2024-124-DDNM-MKT.pdf"
+                >Pre-treatment Estimate</a
+              >
+            </li>
+    
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                target="_blank"
+                href="/pdfs/FLI_6492_DNLD_Cardiovascular_Flyer.pdf"
+                >The Connection Between Periodontitis (gum disease) and
+                Cardiovascular Disease</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                target="_blank"
+                href="/pdfs/Delta_Dental_Info_2024_2025/DDNM Mobile App Flyer ENGLISH 2024-017-DDNM-MKT.pdf"
+                >Delta Dental Mobile App</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                target="_blank"
+                href="/pdfs/Delta_Dental_Info_2024_2025/DDNM Member Portal Flyer ENGLISH 2024-016-DDNM-MKT.pdf"
+                >Delta Dental Member Portal</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                target="_blank"
+                href="/PDFs/DDNM Toothbrush care RC 2024-061-DDNM-MKT.pdf"
+                >The Truths About Toothbrushes</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a target="_blank" href="/PDFs/Fillings_101_DDNM.pdf"
+                >Fillings 101</a
+              >
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a href="pdfs/DDNM Avoiding-Oral-Cancer Flyer.pdf" target="_blank"
+                >Avoiding Oral Cancer</a
+              >
+            </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
         <!-- new links here -->
         <li>
           <i class="bx bx-link-external"></i>
@@ -321,65 +339,6 @@ class DentalHealth extends HTMLElement {
                       >February 2025</a
                     >
                   </li>
-                  <li>
-                    <i class="bx bxs-file-pdf"></i>
-                    <a
-                      href="/pdfs/wellness/december_2024/WC_News_Dec2024.pdf"
-                      target="_blank"
-                      >December 2024</a
-                    >
-                  </li>
-                  <li>
-                    <i class="bx bxs-file-pdf"></i>
-                    <a
-                      href="/pdfs/wellness/november_2024/WC_News_Nov2024.pdf"
-                      target="_blank"
-                      >November 2024</a
-                    >
-                  </li>
-                  <li>
-                    <i class="bx bxs-file-pdf"></i>
-                    <a href="/pdfs/WC_News_Oct2024.pdf" target="_blank"
-                      >October 2024</a
-                    >
-                  </li>
-                  <li>
-                    <i class="bx bxs-file-pdf"></i>
-                    <a
-                      href="/pdfs/wellness/september_2024/WC_News_Sept2024_UCCI.pdf"
-                      target="_blank"
-                      >September 2024</a
-                    >
-                  </li>
-                  <li>
-                    <i class="bx bxs-file-pdf"></i>
-                    <a
-                      href="/pdfs/wellness/august_2024/WC_News_Aug2024.pdf"
-                      target="_blank"
-                      >August 2024</a
-                    >
-                  </li>
-                  <li>
-                  <i class="bx bxs-file-pdf"></i>
-                  <a
-                    href="PDFs/2024_May_Wellness/WC_News_May2024.pdf"
-                    target="_blank"
-                    >May 2024</a
-                  >
-                </li>
-                  <li>
-                    <i class="bx bxs-file-pdf"></i>
-                    <a href="PDFs/WC_News_April2024.pdf" target="_blank"
-                      >April 2024</a
-                    >
-                  </li>
-                 
-                  
-                  
-                  
-                  
-                  
-                  
                 </ul>
               </div>
               <div class="modal-footer">
