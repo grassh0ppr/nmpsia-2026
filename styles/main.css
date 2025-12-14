@@ -498,10 +498,7 @@
 }
 
 /* ===== BODY STYLES ===== */
-body.modern-body,
-body.contacts-modern,
-body.enrollment-modern,
-body.benefits-modern {
+body.modern-body {
   background: linear-gradient(
     135deg,
     rgba(102, 126, 234, 0.9) 0%,
@@ -658,6 +655,16 @@ body.benefits-modern {
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 2.5rem;
   margin: 2rem 0;
+}
+
+/* Hide empty content sections */
+.content-section:empty {
+  display: none;
+}
+
+/* Hide content sections that only contain whitespace */
+.content-section:not(:has(*)) {
+  display: none;
 }
 
 /* Ensure all content lists within sections have no bullets */
