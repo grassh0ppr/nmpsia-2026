@@ -514,7 +514,8 @@ body.modern-body {
 
 /* Minimal list styling to match modern icon list appearance */
 /* Remove bullets from all content lists */
-.content-list {
+.content-list,
+.grid-layout-docs {
   list-style: none;
   padding-left: 0;
 }

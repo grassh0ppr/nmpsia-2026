@@ -41,14 +41,13 @@ class FindAProvider extends HTMLElement {
     ];
 
     const ul = document.createElement("ul");
-    ul.classList.add("grid-layout-docs");
+    ul.classList.add("content-list", "grid-layout");
     links.forEach((link) => {
       const li = document.createElement("li");
       const i = document.createElement("i");
       i.className = "bx bx-link-external";
       const a = document.createElement("a");
       a.href = link.url;
-      a.className = "sidenav-link";
       a.target = "_blank";
       a.textContent = link.text;
       li.appendChild(i);
