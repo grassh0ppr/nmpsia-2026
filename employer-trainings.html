@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Access comprehensive training resources and tutorials for New Mexico Public Schools Insurance Authority employers"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      Employer Trainings | New Mexico Public Schools Insurance Authority
+    </title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+
+    <!-- components -->
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+
+    <style>
+      /* Training-specific styles */
+      .training-category-card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 2rem;
+      }
+
+      .training-category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .training-category-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #ecf0f1;
+      }
+
+      .training-category-header i {
+        font-size: 2.5rem;
+        color: #667eea;
+      }
+
+      .training-category-header h3 {
+        margin: 0;
+        font-weight: 600;
+        color: #2c3e50;
+        font-size: 1.5rem;
+      }
+
+      .training-subsection {
+        margin-bottom: 2rem;
+      }
+
+      .training-subsection:last-child {
+        margin-bottom: 0;
+      }
+
+      .subsection-title {
+        color: #667eea;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 1.5rem 0 1rem 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .subsection-title:first-child {
+        margin-top: 0;
+      }
+
+      .training-links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.25rem;
+        align-items: stretch;
+        grid-auto-rows: 1fr;
+        margin-top: 1rem;
+      }
+
+      .training-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #495057;
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef;
+        height: 100%;
+        min-height: 110px;
+      }
+
+      .training-link:hover {
+        background: #e9ecef;
+        color: #667eea;
+        text-decoration: none;
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .training-link i {
+        font-size: 1.5rem;
+        color: #667eea;
+        min-width: 1.5rem;
+      }
+
+      .training-link-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .training-link-title {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+      }
+
+      .training-link-description {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin: 0;
+      }
+
+      .year-badge {
+        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-left: auto;
+      }
+
+      /* Sidebar Navigation */
+      .training-sidebar {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 2rem;
+        height: fit-content;
+      }
+
+      .sidebar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar-nav li {
+        margin-bottom: 0.5rem;
+      }
+
+      .sidebar-nav a {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        color: #495057;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+      }
+
+      .sidebar-nav a:hover {
+        background: #f8f9fa;
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .sidebar-nav a i {
+        font-size: 1.2rem;
+        min-width: 1.2rem;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .training-links-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .training-category-card {
+          padding: 1.5rem;
+        }
+
+        .training-category-header {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="modern-body">
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Employer Trainings
+        </li>
+      </ol>
+    </div>
+
+    <main>
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1 class="hero-title">Employer Training Resources</h1>
+            <p class="hero-subtitle">
+              Comprehensive training materials, presentations, and tutorials to
+              help you navigate NMPSIA benefits and systems effectively.
+            </p>
+          </div>
+          <div class="hero-logo">
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="logo"
+            />
+          </div>
+        </section>
+
+        <div class="row">
+          <!-- Sidebar Navigation -->
+          <div class="col-lg-3">
+            <div class="training-sidebar">
+              <h4 class="mb-3">
+                <i class="bx bx-menu me-2"></i>Quick Navigation
+              </h4>
+              <nav>
+                <ul class="sidebar-nav">
+                  <li>
+                    <a href="#benefits-wellness"
+                      ><i class="bx bx-heart"></i>Benefits/Wellness</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#training-library"
+                      ><i class="bx bx-library"></i>Training Library</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-lg-9">
+            <!-- Benefits/Wellness Presentations -->
+            <section id="benefits-wellness" class="training-category-card">
+              <div class="training-category-header">
+                <i class="bx bx-heart"></i>
+                <h3>NMPSIA Benefits/Wellness Presentations</h3>
+              </div>
+
+              <!-- Spring Budget Workshops -->
+              <div class="training-subsection">
+                <h4 class="subsection-title">
+                  <i class="bx bx-calendar"></i>
+                  Spring Budget Workshops
+                </h4>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="training-links-grid">
+                      <a
+                        href="trainings/regional/2025/2025_Spring_Budget_Presentation.pdf"
+                        target="_blank"
+                        class="training-link"
+                      >
+                        <i class="bx bxs-file-pdf"></i>
+                        <div class="training-link-content">
+                          <div class="training-link-title">
+                            2025 Spring Budget Presentation
+                          </div>
+                          <div class="training-link-description">
+                            Latest budget workshop materials
+                          </div>
+                        </div>
+                        <span class="year-badge">2025</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="training-links-grid">
+                      <a
+                        href="/pdfs/2024_Spring_Budget_Workshop/FY25 Benefits and Risk Rate Increases.pdf"
+                        target="_blank"
+                        class="training-link"
+                      >
+                        <i class="bx bxs-file-pdf"></i>
+                        <div class="training-link-content">
+                          <div class="training-link-title">
+                            FY25 Benefits and Risk Rate Increases
+                          </div>
+                          <div class="training-link-description">
+                            Rate increase information
+                          </div>
+                        </div>
+                        <span class="year-badge">2024</span>
+                      </a>
+                      <a
+                        href="/pdfs/2024_Spring_Budget_Workshop/2024 Risk NMPSIA Spring Budget 3.20.24 - Final.pdf"
+                        target="_blank"
+                        class="training-link"
+                      >
+                        <i class="bx bxs-file-pdf"></i>
+                        <div class="training-link-content">
+                          <div class="training-link-title">
+                            2024 Risk NMPSIA Spring Budget
+                          </div>
+                          <div class="training-link-description">
+                            Risk management presentation
+                          </div>
+                        </div>
+                        <span class="year-badge">2024</span>
+                      </a>
+                      <a
+                        href="/pdfs/2024_Spring_Budget_Workshop/2024 Benefits NMPSIA Spring Budget March 21, 2024.pdf"
+                        target="_blank"
+                        class="training-link"
+                      >
+                        <i class="bx bxs-file-pdf"></i>
+                        <div class="training-link-content">
+                          <div class="training-link-title">
+                            2024 Benefits NMPSIA Spring Budget
+                          </div>
+                          <div class="training-link-description">
+                            Benefits presentation
+                          </div>
+                        </div>
+                        <span class="year-badge">2024</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="training-links-grid">
+                      <a
+                        href="/pdfs/2023-Risk-NMPSIA-Spring-Budget-April-12-2023.pdf"
+                        target="_blank"
+                        class="training-link"
+                      >
+                        <i class="bx bxs-file-pdf"></i>
+                        <div class="training-link-content">
+                          <div class="training-link-title">
+                            2023 Risk NMPSIA Spring Budget
+                          </div>
+                          <div class="training-link-description">
+                            Risk workshop materials
+                          </div>
+                        </div>
+                        <span class="year-badge">2023</span>
+                      </a>
+                      <a
+                        href="/pdfs/2023-Benefits-NMPSIA-Spring-Budget-April-12-2023.pdf"
+                        target="_blank"
+                        class="training-link"
+                      >
+                        <i class="bx bxs-file-pdf"></i>
+                        <div class="training-link-content">
+                          <div class="training-link-title">
+                            2023 Benefits NMPSIA Spring Budget
+                          </div>
+                          <div class="training-link-description">
+                            Benefits workshop materials
+                          </div>
+                        </div>
+                        <span class="year-badge">2023</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Regional Benefits Trainings -->
+              <div class="training-subsection">
+                <h4 class="subsection-title">
+                  <i class="bx bx-map"></i>
+                  Regional Benefits Trainings
+                </h4>
+
+                <div class="training-links-grid">
+                  <a
+                    href="trainings/regional/2025/Regional_Training_2025.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2025 Regional Training Presentation
+                      </div>
+                      <div class="training-link-description">
+                        Latest regional training materials
+                      </div>
+                    </div>
+                    <span class="year-badge">2025</span>
+                  </a>
+                  <a
+                    href="trainings/regional/2025/virtual regional training latest.mp4"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-movie-play"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2025 Virtual Regional Training
+                      </div>
+                      <div class="training-link-description">
+                        Video presentation
+                      </div>
+                    </div>
+                    <span class="year-badge">2025</span>
+                  </a>
+
+                  <a
+                    href="/PDFs/2024_NMPSIA_Regional_Training_virtual.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2024 Regional Training Presentation
+                      </div>
+                      <div class="training-link-description">
+                        Full presentation slides
+                      </div>
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </a>
+                  <a
+                    href="/movies/session_1_becoming_a_go_to_resource_for_your_staff_1080p.mp4"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-movie-play"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        Session I - Becoming a Go-To Resource
+                      </div>
+                      <div class="training-link-description">
+                        Video training session
+                      </div>
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </a>
+                  <a
+                    href="/movies/session_2_online_system_101_1080p.mp4"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-movie-play"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        Session II - Online System 101
+                      </div>
+                      <div class="training-link-description">
+                        System training video
+                      </div>
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </a>
+
+                  <a
+                    href="/PDFs/Regional-2023-Presentations-Combined-Slides.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2023 Regional Training Presentation
+                      </div>
+                      <div class="training-link-description">
+                        Combined presentation slides
+                      </div>
+                    </div>
+                    <span class="year-badge">2023</span>
+                  </a>
+                  <a
+                    href="/movies/1-Welcome-Martha-Quintana.mp4"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-movie-play"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        Part I - Welcome! - Martha Quintana
+                      </div>
+                      <div class="training-link-description">
+                        Welcome presentation
+                      </div>
+                    </div>
+                    <span class="year-badge">2023</span>
+                  </a>
+                  <a
+                    href="/movies/2-Benefits-Enrollment-Kathy-Payanes.mp4"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-movie-play"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        Part II - Benefits Enrollment
+                      </div>
+                      <div class="training-link-description">
+                        Enrollment training
+                      </div>
+                    </div>
+                    <span class="year-badge">2023</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Benefits Orientation -->
+              <div class="training-subsection">
+                <h4 class="subsection-title">
+                  <i class="bx bx-user-plus"></i>
+                  Benefits Orientation
+                </h4>
+
+                <div class="training-links-grid">
+                  <a
+                    href="/pdfs/2024_New_Hire_Deck_General_Presentation.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2024 Benefits Orientation
+                      </div>
+                      <div class="training-link-description">
+                        Printable presentation for new hires
+                      </div>
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </a>
+                  <a
+                    href="/movies/2024_New_Hire_Deck_General_Presentation.mp4"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-movie-play"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2024 Benefits Orientation Video
+                      </div>
+                      <div class="training-link-description">
+                        Video presentation for new hires
+                      </div>
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Open/Switch Enrollment -->
+              <div class="training-subsection">
+                <h4 class="subsection-title">
+                  <i class="bx bx-refresh"></i>
+                  Open/Switch Enrollment
+                </h4>
+
+                <div class="training-links-grid">
+                  <a
+                    href="/pdfs/NMPSIA_py2025_OpenSwitch_Presentation.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2024 Open/Switch Enrollment
+                      </div>
+                      <div class="training-link-description">
+                        Printable presentation
+                      </div>
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </a>
+                  <a
+                    href="/movies/NMPSIA_OPEN_SWITCH_Enrollment_Recorded_Presentation_final.mp4"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-movie-play"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        2024 Open/Switch Enrollment Video
+                      </div>
+                      <div class="training-link-description">
+                        Video presentation
+                      </div>
+                    </div>
+                    <span class="year-badge">2024</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- Training Library -->
+            <section id="training-library" class="training-category-card">
+              <div class="training-category-header">
+                <i class="bx bx-library"></i>
+                <h3>NMPSIA Training Library</h3>
+              </div>
+
+              <p class="lead mb-4">
+                <span class="fw-bold"
+                  >The New Mexico Public Schools Insurance Authority
+                  (NMPSIA)</span
+                >
+                has a variety of employer trainings and tutorials available to
+                you!
+              </p>
+
+              <!-- Training Topics Grid -->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="training-links-grid">
+                    <a
+                      href="/pdfs/Accurate_and_Timely_Reporting_Presentation_2024_READER.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-time"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          Accurate and Timely Reporting
+                        </div>
+                        <div class="training-link-description">
+                          Presentation and resources
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/pdfs/Back_to_Basics_Training_Presentation_2024_READER.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-home"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">Back to Basics</div>
+                        <div class="training-link-description">
+                          Fundamental training materials
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/pdfs/Qualifying_Events_Presentation_Deck_2024_READER.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-calendar-event"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          Employee Qualifying Events
+                        </div>
+                        <div class="training-link-description">
+                          Event management training
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/pdfs/EOI_and_Life_Claims-Presentation-edit.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-certification"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          Evidence of Insurability (EOI)
+                        </div>
+                        <div class="training-link-description">
+                          EOI and life claims training
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="training-links-grid">
+                    <a
+                      href="/pdfs/Completing_NMPSIA_Forms_Presentation_2024_READER.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-edit"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          How to Fill Out Forms
+                        </div>
+                        <div class="training-link-description">
+                          Form completion training
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/pdfs/International_Employee_Benefits_Enrollment.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-globe"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          International Employee Benefits
+                        </div>
+                        <div class="training-link-description">
+                          International enrollment guide
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/pdfs/Leave_Of_Absence_Presentation_2024_READER.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-calendar-minus"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          Leave of Absence (LOA)
+                        </div>
+                        <div class="training-link-description">
+                          LOA reporting training
+                        </div>
+                      </div>
+                    </a>
+                    <a
+                      href="/pdfs/Premium_Billing_Bill_Reconciliation_Presentation_2024_READER.pdf"
+                      target="_blank"
+                      class="training-link"
+                    >
+                      <i class="bx bx-credit-card"></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          Premium Billing & Reconciliation
+                        </div>
+                        <div class="training-link-description">
+                          Billing training materials
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Online System Training -->
+              <div class="training-subsection">
+                <h4 class="subsection-title">
+                  <i class="bx bx-laptop"></i>
+                  Employer Online Enrollment Training
+                </h4>
+
+                <div class="training-links-grid">
+                  <a
+                    href="/pdfs/Online Benefit System Introductory Guide.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        Online Benefits System Guide
+                      </div>
+                      <div class="training-link-description">
+                        Introductory guide to the system
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="/PDFs/enrollmentTraining/Employer_NEW_HIRE_BASIC_LIFE_(single)_FINAL.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        New Hire Basic Life - Single Entry
+                      </div>
+                      <div class="training-link-description">
+                        Single employee enrollment
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="/PDFs/enrollmentTraining/Employer_NEW_HIRE_Basic_Life_Only_(batch)_FINAL.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        New Hire Basic Life - Batch Entry
+                      </div>
+                      <div class="training-link-description">
+                        Multiple employee enrollment
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="PDFs/enrollmentTraining/Employer_Send_Feedback_FINAL.pdf"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="bx bxs-file-pdf"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">
+                        Send Feedback on Employee
+                      </div>
+                      <div class="training-link-description">
+                        Employee feedback process
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar functionality -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

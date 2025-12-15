@@ -90,20 +90,22 @@ main {
 main.no-sidenav {
   margin: 0 auto;
   margin-top: 3rem;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
 }
 
 /* New form container */
 .new-form-container {
   margin: 0 auto;
   margin-top: 64px;
-  background-color: #ffffffe1;
+  background-color: #ffffff !important;
+  background: #ffffff !important;
   padding: 2rem;
   border-radius: 12px;
   max-width: 1200px;
   min-height: 60vh;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
 }
 
 /* Enhanced form styling */

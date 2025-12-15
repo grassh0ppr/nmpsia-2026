@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Download meeting materials and documents from the New Mexico Public Schools Insurance Authority"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      Download Center | New Mexico Public Schools Insurance Authority
+    </title>
+
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- components in semi alphabetical order -->
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+    <!-- commented out while testing locally -->
+    <script>
+      if (
+        localStorage.getItem("userName") == undefined ||
+        localStorage.getItem("userName") == null ||
+        localStorage.getItem("userName") == ""
+      ) {
+        window.location.href = "board-login.html";
+      }
+
+      document.querySelector(".welcome").innerHTML =
+        "<strong>" +
+        "</strong> Welcome to the NMPSIA Committee and Board Meeting download page!";
+      if (localStorage.getItem("needChangePwdFlg") == 1) {
+        document
+          .querySelector(".welcome")
+          .append(
+            '<p style="color:red;margin-top:-10px">We suggest you change your password.</p>'
+          );
+      }
+    </script>
+
+    <style>
+      /* Download Center Modern Styles */
+      body.download-center-modern {
+        background-image: url("/images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+          linear-gradient(
+            135deg,
+            rgba(102, 126, 234, 0.3) 0%,
+            rgba(118, 75, 162, 0.3) 100%
+          );
+        background-position: 75% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+      }
+
+      body.download-center-modern::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(102, 126, 234, 0.3);
+        z-index: -1;
+      }
+
+      /* Download Center Layout */
+      .download-center-layout {
+        display: flex;
+        gap: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1rem;
+      }
+
+      /* Sidebar Styles */
+      .download-sidebar {
+        width: 320px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 1.5rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        height: fit-content;
+        position: sticky;
+        top: 2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .download-sidebar h3 {
+        color: #2c3e50;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        border-bottom: 2px solid #667eea;
+        padding-bottom: 0.5rem;
+      }
+
+      /* Accordion Styles */
+      .download-sidebar .accordion-item {
+        margin-bottom: 0.5rem;
+        border: none;
+        background: transparent;
+      }
+
+      .download-sidebar .accordion-button {
+        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+      }
+
+      .download-sidebar .accordion-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+      }
+
+      .download-sidebar .accordion-button:not(.collapsed) {
+        background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      }
+
+      .download-sidebar .accordion-button::after {
+        filter: brightness(0) invert(1);
+      }
+
+      .download-sidebar .accordion-body {
+        background: rgba(102, 126, 234, 0.1);
+        border: 1px solid rgba(102, 126, 234, 0.2);
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        padding: 0.75rem;
+      }
+
+      .download-sidebar .accordion-body a {
+        display: block;
+        color: #2c3e50;
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        margin: 0.25rem 0;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+
+      .download-sidebar .accordion-body a:hover {
+        background: rgba(102, 126, 234, 0.2);
+        color: #667eea;
+        transform: translateX(5px);
+      }
+
+      /* Main Content */
+      .download-main {
+        flex: 1;
+        min-width: 0;
+      }
+
+      /* Hero Section */
+      .download-hero-section {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 3rem 2rem;
+        margin: 2rem 0;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .download-hero-content {
+        flex: 1;
+        text-align: left;
+      }
+
+      .download-hero-logo {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .download-hero-title {
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+      }
+
+      .download-hero-subtitle {
+        font-size: 1.3rem;
+        color: #7f8c8d;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .download-logo {
+        max-height: 120px;
+        width: auto;
+        margin: 1rem 0;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+      }
+
+      /* Meeting Sections */
+      .section {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 2.5rem;
+        margin: 2rem 0;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .section h3 {
+        color: #2c3e50;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        border-bottom: 3px solid #667eea;
+        padding-bottom: 0.5rem;
+      }
+
+      /* Meeting Cards */
+      .meeting {
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 1.5rem 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .meeting:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+
+      .meeting .sub-heading {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .meeting .date {
+        color: #667eea;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        display: block;
+      }
+
+      .meeting .content-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .meeting .content-list li {
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .meeting .content-list li i {
+        color: #667eea;
+        font-size: 1.2rem;
+        width: 20px;
+        text-align: center;
+      }
+
+      .meeting .content-list li a {
+        color: #2c3e50;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        padding: 0.5rem 0.75rem;
+        border-radius: 8px;
+        background: rgba(102, 126, 234, 0.1);
+      }
+
+      .meeting .content-list li a:hover {
+        color: #667eea;
+        background: rgba(102, 126, 234, 0.2);
+        transform: translateX(5px);
+      }
+
+      /* Additional Info */
+      .additional-info {
+        background: rgba(102, 126, 234, 0.1);
+        border: 1px solid rgba(102, 126, 234, 0.3);
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      .additional-info .sub-heading {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      /* Sidebar Toggle Button */
+      /* .sidebar-toggle {
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 20px;
+        z-index: 1000;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .sidebar-toggle:hover {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      } */
+
+      /* Sidebar Overlay */
+      .sidebar-overlay {
+        /* display: none; */
+        /* position: fixed; */
+        /* top: 0; */
+        /* left: 0; */
+        /* width: 100%; */
+        /* height: 100%; */
+        /* background: rgba(0, 0, 0, 0.5); */
+        z-index: 999;
+        /* backdrop-filter: blur(5px); */
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .download-center-layout {
+          flex-direction: column;
+        }
+
+        .download-sidebar {
+          width: 100%;
+          position: relative;
+          top: 0;
+          order: 2;
+        }
+
+        .download-main {
+          order: 1;
+        }
+
+        .sidebar-toggle {
+          display: block;
+        }
+
+        .download-sidebar {
+          transform: translateX(-100%);
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          width: 320px;
+          z-index: 1001;
+          overflow-y: auto;
+        }
+
+        .download-sidebar.open {
+          transform: translateX(0);
+        }
+
+        .sidebar-overlay.open {
+          display: block;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .download-hero-section {
+          flex-direction: column;
+          text-align: center;
+          padding: 2rem 1.5rem;
+        }
+
+        .download-hero-title {
+          font-size: 2.5rem;
+        }
+
+        .download-hero-subtitle {
+          font-size: 1.1rem;
+        }
+
+        .download-logo {
+          max-height: 80px;
+        }
+
+        .section {
+          padding: 1.5rem;
+        }
+
+        .meeting {
+          padding: 1.5rem;
+        }
+
+        .download-sidebar {
+          width: 280px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="modern-bg">
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Download Center
+        </li>
+      </ol>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button
+      class="sidebar-toggle"
+      id="sidebarToggle"
+      aria-label="Toggle navigation menu"
+    >
+      <i class="bx bx-menu"></i>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="download-center-layout">
+      <!-- Side Navigation -->
+      <aside class="download-sidebar" id="downloadSidebar">
+        <h3><i class="bx bx-calendar me-2"></i>Meeting Files</h3>
+
+        <!-- 2025 Accordion -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2025"
+            aria-expanded="true"
+            aria-controls="accordion-2025"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2025 Meeting Files
+          </button>
+          <div
+            id="accordion-2025"
+            class="accordion-collapse collapse show"
+            aria-labelledby="heading-2025"
+          >
+            <div class="accordion-body">
+              <a href="#202512" data-section="202512">December</a>
+              <a href="#202511" data-section="202511">November</a>
+              <a href="#202510" data-section="202510">October</a>
+              <a href="#202509" data-section="202509">September</a>
+              <a href="#202507" data-section="202507">July</a>
+              <a href="#202506" data-section="202506">June</a>
+              <a href="#202505" data-section="202505">May</a>
+              <a href="#202504" data-section="202504">April</a>
+              <a href="#202503" data-section="202503">March</a>
+              <a href="#202502" data-section="202502">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2024 Accordion -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2024"
+            aria-expanded="false"
+            aria-controls="accordion-2024"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2024 Meeting Files
+          </button>
+          <div
+            id="accordion-2024"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-2024"
+          >
+            <div class="accordion-body">
+              <a href="#202412" data-section="202412">December</a>
+              <a href="#202411" data-section="202411">November</a>
+              <a href="#202410" data-section="202410">October</a>
+              <a href="#202409" data-section="202409">September</a>
+              <a href="#202408" data-section="202408">August</a>
+              <a href="#202407" data-section="202407">July</a>
+              <a href="#202406" data-section="202406">June</a>
+              <a href="#202405" data-section="202405">May</a>
+              <a href="#202404" data-section="202404">April</a>
+              <a href="#202403" data-section="202403">March</a>
+              <a href="#202402" data-section="202402">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2023 Accordion -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2023"
+            aria-expanded="false"
+            aria-controls="accordion-2023"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2023 Meeting Files
+          </button>
+          <div
+            id="accordion-2023"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-2023"
+          >
+            <div class="accordion-body">
+              <a href="#202312" data-section="202312">December</a>
+              <a href="#202311" data-section="202311">November</a>
+              <a href="#202310" data-section="202310">October</a>
+              <a href="#202309" data-section="202309">September</a>
+              <a href="#202308" data-section="202308">August</a>
+              <a href="#202307" data-section="202307">July</a>
+              <a href="#202306" data-section="202306">June</a>
+              <a href="#202305" data-section="202305">May</a>
+              <a href="#202304" data-section="202304">April</a>
+              <a href="#202303" data-section="202303">March</a>
+              <a href="#202302" data-section="202302">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2022 meeting files accordion -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2022"
+            aria-expanded="false"
+            aria-controls="accordion-2022"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2022 Meeting Files
+          </button>
+          <div
+            id="accordion-2022"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-2022"
+          >
+            <div class="accordion-body">
+              <a href="#202212" data-section="202212">December</a>
+              <a href="#202211" data-section="202211">November</a>
+              <a href="#202210" data-section="202210">October</a>
+              <a href="#202209" data-section="202209">September</a>
+              <a href="#202208" data-section="202208">August</a>
+              <a href="#202207" data-section="202207">July</a>
+              <a href="#202206" data-section="202206">June</a>
+              <a href="#202205" data-section="202205">May</a>
+              <a href="#202204" data-section="202204">April</a>
+              <a href="#202203" data-section="202203">March</a>
+              <a href="#202202" data-section="202202">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2021 Meeting files -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2021"
+            aria-expanded="false"
+            aria-controls="accordion-2021"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2021 Meeting Files
+          </button>
+          <div
+            id="accordion-2021"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-2021"
+          >
+            <div class="accordion-body">
+              <a href="#202112" data-section="202112">December</a>
+              <a href="#202111" data-section="202111">November</a>
+              <a href="#202110" data-section="202110">October</a>
+              <a href="#202109" data-section="202109">September</a>
+              <a href="#202108" data-section="202108">August</a>
+              <a href="#202107" data-section="202107">July</a>
+              <a href="#202106" data-section="202106">June</a>
+              <a href="#202105" data-section="202105">May</a>
+              <a href="#202104" data-section="202104">April</a>
+              <a href="#202103" data-section="202103">March</a>
+              <a href="#202102" data-section="202102">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2020 Meeting files -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2020"
+            aria-expanded="false"
+            aria-controls="accordion-2020"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2020 Meeting Files
+          </button>
+          <div
+            id="accordion-2020"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-2020"
+          >
+            <div class="accordion-body">
+              <a href="#202012" data-section="202012">December</a>
+              <a href="#202011" data-section="202011">November</a>
+              <a href="#202010" data-section="202010">October</a>
+              <a href="#202009" data-section="202009">September</a>
+              <a href="#202008" data-section="202008">August</a>
+              <a href="#202006" data-section="202006">June</a>
+              <a href="#202005" data-section="202005">May</a>
+              <a href="#202004" data-section="202004">April</a>
+              <a href="#202003" data-section="202003">March</a>
+              <a href="#202002" data-section="202002">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2019 Meeting files -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2019"
+            aria-expanded="false"
+            aria-controls="accordion-2019"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2019 Meeting Files
+          </button>
+          <div
+            id="accordion-2019"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-2019"
+          >
+            <div class="accordion-body">
+              <a href="#201912" data-section="201912">December</a>
+              <a href="#201911" data-section="201911">November</a>
+              <a href="#201910" data-section="201910">October</a>
+              <a href="#201909" data-section="201909">September</a>
+              <a href="#201908" data-section="201908">August</a>
+              <a href="#201906" data-section="201906">June</a>
+              <a href="#201905" data-section="201905">May</a>
+              <a href="#201904" data-section="201904">April</a>
+              <a href="#201903" data-section="201903">March</a>
+              <a href="#201902" data-section="201902">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2018 Meeting files -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2018"
+            aria-expanded="false"
+            aria-controls="accordion-2018"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2018 Meeting Files
+          </button>
+          <div
+            id="accordion-2018"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading-2018"
+          >
+            <div class="accordion-body">
+              <a href="#201812" data-section="201812">December</a>
+              <a href="#201811" data-section="201811">November</a>
+              <a href="#201810" data-section="201810">October</a>
+              <a href="#201809" data-section="201809">September</a>
+              <a href="#201808" data-section="201808">August</a>
+              <a href="#201807" data-section="201807">July</a>
+              <a href="#201806" data-section="201806">June</a>
+              <a href="#201805" data-section="201805">May</a>
+              <a href="#201804" data-section="201804">April</a>
+              <a href="#201803" data-section="201803">March</a>
+              <a href="#201802" data-section="201802">February</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="download-main" data-default-section="202512">
+        <!-- Hero Section -->
+        <section class="download-hero-section">
+          <div class="download-hero-content">
+            <h1 class="download-hero-title">Download Center</h1>
+            <p class="download-hero-subtitle">
+              Access meeting materials, agendas, and packets from NMPSIA board
+              and committee meetings
+            </p>
+          </div>
+          <div class="download-hero-logo">
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="download-logo"
+            />
+          </div>
+        </section>
+
+        <!-- SELECTED MEETING FILES -->
+        <!-- these are like containers for the main content; they all have a matching id in the aside -->
+        <!-- 2025 -->
+        <div id="202512" class="section mt-3"></div>
+        <div id="202511" class="section mt-3"></div>
+        <div id="202510" class="section mt-3"></div>
+        <div id="202509" class="section mt-3"></div>
+        <div id="202507" class="section mt-3"></div>
+        <div id="202506" class="section mt-3"></div>
+        <div id="202505" class="section mt-3"></div>
+        <div id="202504" class="section mt-3"></div>
+        <div id="202503" class="section mt-3"></div>
+        <div id="202502" class="section mt-3"></div>
+        <!-- 2024 -->
+        <div id="202412" class="section mt-3"></div>
+        <div id="202411" class="section mt-3"></div>
+        <div id="202410" class="section mt-3"></div>
+        <div id="202409" class="section mt-3"></div>
+        <div id="202408" class="section mt-3"></div>
+        <div id="202407" class="section mt-3"></div>
+        <div id="202406" class="section mt-3"></div>
+        <div id="202405" class="section mt-3"></div>
+        <div id="202404" class="section mt-3"></div>
+        <div id="202403" class="section mt-3"></div>
+        <div id="202402" class="section mt-3"></div>
+
+        <!-- 2023 -->
+        <div id="202312" class="section mt-3"></div>
+        <div id="202311" class="section mt-3"></div>
+        <div id="202310" class="section mt-3"></div>
+        <div id="202309" class="section mt-3"></div>
+        <div id="202308" class="section mt-3"></div>
+        <div id="202307" class="section mt-3"></div>
+        <div id="202306" class="section mt-3"></div>
+        <div id="202305" class="section mt-3"></div>
+        <div id="202304" class="section mt-3"></div>
+        <div id="202303" class="section mt-3"></div>
+        <div id="202302" class="section mt-3"></div>
+
+        <!-- 2022 -->
+        <div id="202212" class="section mt-3"></div>
+        <div id="202211" class="section mt-3"></div>
+        <div id="202210" class="section mt-3"></div>
+        <div id="202209" class="section mt-3"></div>
+        <div id="202208" class="section mt-3"></div>
+        <div id="202207" class="section mt-3"></div>
+        <div id="202206" class="section mt-3"></div>
+        <div id="202205" class="section mt-3"></div>
+        <div id="202204" class="section mt-3"></div>
+        <div id="202203" class="section mt-3"></div>
+        <div id="202202" class="section mt-3"></div>
+
+        <!-- 2021 -->
+        <div id="202112" class="section mt-3"></div>
+        <div id="202111" class="section mt-3"></div>
+        <div id="202110" class="section mt-3"></div>
+        <div id="202109" class="section mt-3"></div>
+        <div id="202108" class="section mt-3"></div>
+        <div id="202107" class="section mt-3"></div>
+        <div id="202106" class="section mt-3"></div>
+        <div id="202105" class="section mt-3"></div>
+        <div id="202104" class="section mt-3"></div>
+        <div id="202103" class="section mt-3"></div>
+        <div id="202102" class="section mt-3"></div>
+        <!-- 2020 -->
+        <div id="202012" class="section mt-3"></div>
+        <div id="202011" class="section mt-3"></div>
+        <div id="202010" class="section mt-3"></div>
+        <div id="202009" class="section mt-3"></div>
+        <div id="202008" class="section mt-3"></div>
+        <!-- no july -->
+        <div id="202006" class="section mt-3"></div>
+        <div id="202005" class="section mt-3"></div>
+        <div id="202004" class="section mt-3"></div>
+        <div id="202003" class="section mt-3"></div>
+        <div id="202002" class="section mt-3"></div>
+
+        <!-- 2019 -->
+        <div id="201912" class="section mt-3"></div>
+        <div id="201911" class="section mt-3"></div>
+        <div id="201910" class="section mt-3"></div>
+        <div id="201909" class="section mt-3"></div>
+        <div id="201908" class="section mt-3"></div>
+        <div id="201906" class="section mt-3"></div>
+        <div id="201905" class="section mt-3"></div>
+        <div id="201904" class="section mt-3"></div>
+        <div id="201903" class="section mt-3"></div>
+        <div id="201902" class="section mt-3"></div>
+
+        <!-- 2018 -->
+        <div id="201812" class="section mt-3"></div>
+        <div id="201811" class="section mt-3"></div>
+        <div id="201810" class="section mt-3"></div>
+        <div id="201809" class="section mt-3"></div>
+        <div id="201808" class="section mt-3"></div>
+        <div id="201807" class="section mt-3"></div>
+        <div id="201806" class="section mt-3"></div>
+        <div id="201805" class="section mt-3"></div>
+        <div id="201804" class="section mt-3"></div>
+        <div id="201803" class="section mt-3"></div>
+        <div id="201802" class="section mt-3"></div>
+      </main>
+    </div>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar functionality -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <!-- <script src="./js/main.js"></script> -->
+    <script type="module" src="./scripts/downloadCenter.js?v=2.6"></script>
+    <script src="./scripts/sidebar-navigation.js"></script>
+
+    <!-- Download Center specific JavaScript -->
+    <script>
+      // Download Center specific functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to show section (preserve existing functionality)
+        function showSection(sectionId) {
+          // Hide all sections
+          document.querySelectorAll(".section").forEach((section) => {
+            section.style.display = "none";
+          });
+
+          // Show the selected section
+          const selectedSection = document.getElementById(sectionId);
+          if (selectedSection) {
+            selectedSection.style.display = "block";
+          }
+        }
+
+        // Initialize with default section
+        const defaultSection =
+          document.querySelector("main").dataset.defaultSection;
+        if (defaultSection) {
+          showSection(defaultSection);
+        }
+
+        // Override the default sidebar navigation for download center
+        // since it has different behavior (showing/hiding sections vs scrolling)
+        const downloadSidebar = document.getElementById("downloadSidebar");
+        if (downloadSidebar) {
+          // Remove any existing event listeners by cloning the element
+          const newSidebar = downloadSidebar.cloneNode(true);
+          downloadSidebar.parentNode.replaceChild(newSidebar, downloadSidebar);
+
+          // Add custom event listeners for download center
+          document
+            .querySelectorAll("#downloadSidebar .accordion-body a")
+            .forEach((item) => {
+              item.addEventListener("click", (event) => {
+                event.preventDefault();
+                const sectionId = item.dataset.section.toLowerCase();
+                window.location.hash = sectionId;
+                showSection(sectionId);
+
+                // Close sidebar on mobile
+                if (window.innerWidth <= 1024) {
+                  document
+                    .getElementById("downloadSidebar")
+                    .classList.remove("open");
+                  document
+                    .getElementById("sidebarOverlay")
+                    .classList.remove("open");
+                }
+              });
+            });
+        }
+      });
+    </script>
+  </body>
+</html>

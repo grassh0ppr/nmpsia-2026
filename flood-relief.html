@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      Flash Flood Relief Request | New Mexico Public Schools Insurance Authority
+    </title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <!-- components -->
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+  </head>
+
+  <body class="modern-body">
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <!-- Modern breadcrumb -->
+    <nav class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 pt-2 breadcrumb">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item">
+          <a href="./natural-disaster-aid.html">Natural disaster aid</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Flood Relief Request
+        </li>
+      </ol>
+    </nav>
+
+    <main class="container">
+      <!-- Hero section with modern styling -->
+      <div class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">Flash Flooding Emergency Response Request</h1>
+          <p class="hero-subtitle">
+            Submit your request for flood relief assistance through NMPSIA's
+            emergency response program.
+          </p>
+        </div>
+        <div class="hero-logo">
+          <img
+            src="images/NMPSIA-Logo-transparent-2023.png"
+            alt="NMPSIA logo"
+          />
+        </div>
+      </div>
+
+      <!-- Content section with important documents -->
+      <div class="content-section">
+        <h3>Important Documents</h3>
+
+        <div class="highlight-box">
+          <h4>
+            <i class="bx bx-info-circle me-2"></i>For displaced members in
+            Chaves County
+          </h4>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex gap-2 align-items-center">
+              <i class="bx bxs-file-pdf text-white"></i>
+              <a
+                href="PDFs/Flooding_Emergency_Order_Chavez_County_Letter_to_Members_11_2024.pdf"
+                target="_blank"
+                class="text-white text-decoration-none fw-bold"
+                >Read: NMPSIA Notice Regarding Flash Flood Emergency Order</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-info" role="alert">
+          <i class="bx bx-info-circle me-2"></i>
+          <strong>Required Fields:</strong> All fields marked with an asterisk
+          (*) are required.
+        </div>
+      </div>
+
+      <!-- Form section with modern styling -->
+      <div class="new-form-container">
+        <div class="main-section-header">
+          <img
+            src="images/NMPSIA-Logo-transparent-2023.png"
+            class="logo"
+            alt="NMPSIA logo"
+          />
+          <h2>Emergency Relief Request Form</h2>
+        </div>
+
+        <form id="myForm" class="row g-3" novalidate>
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              name="first"
+              required
+              placeholder="Enter your first name"
+              aria-describedby="firstNameHelp"
+            />
+            <div id="firstNameHelp" class="form-text">
+              Please enter your legal first name
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              name="last"
+              required
+              placeholder="Enter your last name"
+              aria-describedby="lastNameHelp"
+            />
+            <div id="lastNameHelp" class="form-text">
+              Please enter your legal last name
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="inputSsn" class="form-label"
+              >Last four digits of Employee SSN</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              placeholder="XXXX"
+              maxlength="4"
+              size="4"
+              id="inputSsn"
+              required
+              pattern="[0-9]{4}"
+              aria-describedby="ssnHelp"
+            />
+            <div id="ssnHelp" class="form-text">
+              Enter only the last 4 digits of your Social Security Number
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="schoolID" class="form-label">Employer ID</label>
+            <select
+              name="schoolID"
+              class="form-select"
+              id="schoolID"
+              required
+              aria-describedby="employerHelp"
+            >
+              <option value="" selected="selected">Select your district</option>
+              <option value="309">
+                309 - Academy for Technology and the Classics
+              </option>
+              <option value="393">393 - Ace Leadership High School</option>
+              <option value="444">444 - Aces Technical Charter School</option>
+              <option value="97">097 - AFT New Mexico</option>
+              <option value="46">046 - Alamogordo Public Schools</option>
+              <option value="351">351 - Albuquerque Bilingual Academy</option>
+              <option value="345">345 - Albuquerque Charter Academy</option>
+              <option value="439">
+                439 - Albuquerque Collegiate Charter School
+              </option>
+              <option value="354">
+                354 - Albuquerque Institute for Math &amp; Science
+              </option>
+              <option value="396">
+                396 - Albuquerque School of Excellence
+              </option>
+              <option value="389">
+                389 - Albuquerque Sign Language Academy
+              </option>
+              <option value="371">371 - Albuquerque Talent Development</option>
+              <option value="349">349 - Aldo Leopold Charter School</option>
+              <option value="364">364 - Alice King Community School</option>
+              <option value="337">337 - Alma D Arte Charter High School</option>
+              <option value="440">440 - Altura Preparatory School</option>
+              <option value="304">304 - Amy Biehl Charter High School</option>
+              <option value="314">314 - Anansi Charter School</option>
+              <option value="30">030 - Animas Public Schools</option>
+              <option value="22">022 - Artesia Public Schools</option>
+              <option value="64">064 - Aztec Municipal Schools</option>
+              <option value="87">087 - Belen Consolidated Schools</option>
+              <option value="61">061 - Bernalillo Public Schools</option>
+              <option value="66">066 - Bloomfield Municipal Schools</option>
+              <option value="40">040 - Capitan Municipal Schools</option>
+              <option value="20">020 - Carlsbad Municipal Schools</option>
+              <option value="37">037 - Carrizozo Municipal Schools</option>
+              <option value="67">
+                067 - Central Consolidated School District
+              </option>
+              <option value="343">343 - Cesar Chavez Community School</option>
+              <option value="53">053 - Chama Valley Independent Schools</option>
+              <option value="357">
+                357 - Christine Duncan's Heritage Academy
+              </option>
+              <option value="382">382 - Cien Aguas International School</option>
+              <option value="8">008 - Cimarron Municipal Schools</option>
+              <option value="84">084 - Clayton Municipal Schools</option>
+              <option value="48">048 - Cloudcroft Municipal Schools</option>
+              <option value="113">113 - Clovis Municipal Schools</option>
+              <option value="24">024 - Cobre Consolidated Schools</option>
+              <option value="373">
+                373 - Cooperative Educational Services
+              </option>
+              <option value="417">417 - Coral Community Charter School</option>
+              <option value="38">038 - Corona Public Schools</option>
+              <option value="381">381 - Corrales International School</option>
+              <option value="378">
+                378 - Cottonwood Classical Preparatory School
+              </option>
+              <option value="317">
+                317 - Cottonwood Valley Charter School
+              </option>
+              <option value="62">062 - Cuba Independent Schools</option>
+              <option value="358">
+                358 - Deming Cesar Chavez Charter High School
+              </option>
+              <option value="42">042 - Deming Public Schools</option>
+              <option value="85">085 - Des Moines Municipal Schools</option>
+              <option value="6">006 - Dexter Consolidated Schools</option>
+              <option value="326">
+                326 - Digital Arts and Technology Academy
+              </option>
+              <option value="114">114 - Dora Consolidated Schools</option>
+              <option value="430">430 - Dream Dine Charter School</option>
+              <option value="54">054 - Dulce Independent Schools</option>
+              <option value="431">
+                431 - Dzil Ditl'ooi School of Empowerment, Action, &
+                Perseverance
+              </option>
+              <option value="306">306 - East Mountain High School</option>
+              <option value="329">329 - El Camino Real Academy</option>
+              <option value="58">058 - Elida Municipal Schools</option>
+              <option value="140">140 - ENMU Portales</option>
+              <option value="141">141 - ENMU Roswell</option>
+              <option value="55">055 - Espanola Public Schools</option>
+              <option value="80">080 - Estancia Municipal Schools</option>
+              <option value="418">
+                418 - Estancia Valley Classical Academy
+              </option>
+              <option value="32">032 - Eunice Municipal Schools</option>
+              <option value="429">429 - Explore Academy</option>
+              <option value="447">447 - Explore Academy Las Cruces</option>
+              <option value="125">125 - Farmington Municipal Schools</option>
+              <option value="59">059 - Floyd Municipal Schools</option>
+              <option value="16">016 - Fort Sumner Municipal Schools</option>
+              <option value="19">019 - Gadsen Independent Schools</option>
+              <option value="88">088 - Grants/Cibola County Schools</option>
+              <option value="5">005 - Hagerman Municipal Schools</option>
+              <option value="18">018 - Hatch Valley Public Schools</option>
+              <option value="424">424 - Health Leadership High School</option>
+              <option value="33">033 - Hobbs Municipal Schools</option>
+              <option value="39">039 - Hondo Valley Public Schools</option>
+              <option value="335">335 - Horizon Academy West</option>
+              <option value="50">050 - House Municipal Schools</option>
+              <option value="441">441 - Hozho Academy</option>
+              <option value="410">410 - J. Paul Taylor Academy</option>
+              <option value="34">034 - Jal Public Schools</option>
+              <option value="328">328 - Jefferson Montessori Academy</option>
+              <option value="56">056 - Jemez Mountain Public Schools</option>
+              <option value="63">063 - Jemez Valley Public Schools</option>
+              <option value="332">332 - La Academia de Esperanza</option>
+              <option value="338">338 - La Academia Dolores Huerta</option>
+              <option value="412">
+                412 - La Tierra Montessori School of the Arts and Sciences
+              </option>
+              <option value="7">007 - Lake Arthur Municipal Schools</option>
+              <option value="17">017 - Las Cruces Public Schools</option>
+              <option value="372">
+                372 - Las Montanas Charter High School
+              </option>
+              <option value="69">069 - Las Vegas City Schools</option>
+              <option value="323">323 - Lea Regional Educational #7</option>
+              <option value="51">051 - Logan Municipal Schools</option>
+              <option value="29">029 - Lordsburg Municipal Schools</option>
+              <option value="41">041 - Los Alamos Public Schools</option>
+              <option value="376">376 - Los Alamos Schools Credit Union</option>
+              <option value="86">086 - Los Lunas Schools</option>
+              <option value="325">325 - Los Puentes Charter School</option>
+              <option value="21">021 - Loving Municipal Schools</option>
+              <option value="31">
+                031 - Lovington Municipal School District
+              </option>
+              <option value="94">094 - Luna Community College</option>
+              <option value="75">075 - Magdalena Municipal Schools</option>
+              <option value="312">312 - Mark Armijo Academy</option>
+              <option value="11">011 - Maxwell Municipal Schools</option>
+              <option value="421">421 - McCurdy Charter School</option>
+              <option value="380">
+                380 - Media Arts Collaborative Charter School
+              </option>
+              <option value="14">014 - Melrose municipal Schools</option>
+              <option value="78">078 - Mesa Vista Consolidated Schools</option>
+              <option value="104">104 - Mesalands Community College</option>
+              <option value="386">386 - Middle College High School</option>
+              <option value="420">
+                420 - Mission Achievement and Success Charter School
+              </option>
+              <option value="303">303 - Monte Del Sol Charter School</option>
+              <option value="344">
+                344 - Montessori of the Rio Grande Charter School
+              </option>
+              <option value="44">044 - Mora Independent School District</option>
+              <option value="324">324 - Moreno Valley High School</option>
+              <option value="81">
+                081 - Moriarty-Edgewood School District
+              </option>
+              <option value="362">362 - Mosaic Academy</option>
+              <option value="28">028 - Mosquero Municipal Schools</option>
+              <option value="353">
+                353 - Mountain Mahogany Community School
+              </option>
+              <option value="82">082 - Mountainair Public Schools</option>
+              <option value="363">
+                363 - Native American Community Academy
+              </option>
+              <option value="92">092 - NEA</option>
+              <option value="435">
+                435 - New Mexico Association of School Business Officials
+              </option>
+              <option value="423">423 - New Mexico Connections Academy</option>
+              <option value="399">399 - New Mexico International School</option>
+              <option value="103">103 - New Mexico Junior College</option>
+              <option value="395">395 - New Mexico School for the Arts</option>
+              <option value="108">108 - New Mexico Tech</option>
+              <option value="407">407 - New Mexico Tech Retirees</option>
+              <option value="91">091 - NM Activities Association</option>
+              <option value="374">
+                374 - NM Coalition of Educational Leaders
+              </option>
+              <option value="375">375 - NM School Board Association</option>
+              <option value="105">105 - NM School for the Deaf</option>
+              <option value="90">090 - NMPSIA</option>
+              <option value="336">336 - North Valley Academy</option>
+              <option value="98">098 - Northern New Mexico College</option>
+              <option value="436">436 - Pecos Connections Academy</option>
+              <option value="70">70 - Pecos Independent School District</option>
+              <option value="322">322 - Pecos Valley Rec #8</option>
+              <option value="77">
+                077 - Penasco Independent School District
+              </option>
+              <option value="72">072 - Pojoaque Valley School District</option>
+              <option value="116">116 - Portales Municipal Schools</option>
+              <option value="318">
+                318 - Public Academy for Performing Arts
+              </option>
+              <option value="426">
+                426 - Public Charter Schools of New Mexico
+              </option>
+              <option value="379">
+                379 - Quay Schools Federal Credit Union
+              </option>
+              <option value="3">003 - Quemado Independent Schools</option>
+              <option value="79">
+                079 - Questa Independent School District
+              </option>
+              <option value="443">
+                443 - Raices del Saber Xinachtli Community School
+              </option>
+              <option value="9">009 - Raton Public Schools</option>
+              <option value="143">143 - Rec #2</option>
+              <option value="320">320 - Red River Valley Charter School</option>
+              <option value="142">142 - Regional Educational Center #6</option>
+              <option value="2">002 - Reserve Independent Schools</option>
+              <option value="368">
+                368 - Rio Gallinas School for Ecology and the Arts
+              </option>
+              <option value="120">120 - Rio Rancho Public Schools</option>
+              <option value="319">
+                319 - Robert F. Kennedy Charter School
+              </option>
+              <option value="315">
+                315 - Roots and Wings Community School
+              </option>
+              <option value="4">
+                004 - Roswell Independent School District
+              </option>
+              <option value="27">027 - Roy Municipal Schools</option>
+              <option value="36">036 - Ruidoso Municipal Schools</option>
+              <option value="301">
+                301 - San Diego Riverside Charter School
+              </option>
+              <option value="52">052 - San Jon Municipal Schools</option>
+              <option value="433">
+                433 - Sandoval Academy of Bilingual Education
+              </option>
+              <option value="106">106 - Santa Fe Community College</option>
+              <option value="71">071 - Santa Fe Public Schools</option>
+              <option value="25">025 - Santa Rosa Consolidated Schools</option>
+              <option value="388">388 - School of Dreams Academy</option>
+              <option value="316">316 - Sidney Gutierrez Middle School</option>
+              <option value="437">437 - Siembra Leadership High School</option>
+              <option value="23">023 - Silver Consolidated Schools</option>
+              <option value="438">
+                438 - Six Directions Indigenous School
+              </option>
+              <option value="74">074 - Socorro Consolidated Schools</option>
+              <option value="442">
+                442 - Solare Collegiate Charter School
+              </option>
+              <option value="302">302 - South Valley Academy</option>
+              <option value="390">390 - South Valley Preparatory School</option>
+              <option value="416">
+                416 - Aeronautics, Mathematics & Science Academy
+              </option>
+              <option value="347">
+                347 - Southwest Preparatory Learning Center
+              </option>
+              <option value="311">
+                311 - Southwest Secondary Learning Center
+              </option>
+              <option value="10">010 - Springer Municipal Schools</option>
+              <option value="384">384 - Taos Academy</option>
+              <option value="305">305 - Taos Charter School</option>
+              <option value="397">
+                397 - Taos Integrated School of the Arts
+              </option>
+              <option value="428">428 - Taos International School</option>
+              <option value="76">076 - Taos Municipal Schools</option>
+              <option value="35">35 - Tatum Municipal Schools</option>
+              <option value="432">
+                432 - Technology Leadership High School
+              </option>
+              <option value="13">013 - Texico Municipal Schools</option>
+              <option value="394">394 - The Ask Academy</option>
+              <option value="398">398 - The Great Academy</option>
+              <option value="383">383 - The International School</option>
+              <option value="392">392 - The Masters Program</option>
+              <option value="352">
+                352 - The Montessori Elementary &amp; Middle School
+              </option>
+              <option value="415">
+                415 - The New America School - Las Cruces
+              </option>
+              <option value="385">
+                385 - The New America Scholarships New Mexico
+              </option>
+              <option value="391">391 - Tierra Adentro of New Mexico</option>
+              <option value="355">
+                355 - Tierra Encantada Charter High School
+              </option>
+              <option value="73">
+                073 - Truth or Consequences Municipal School
+              </option>
+              <option value="49">049 - Tucumcari Public Schools</option>
+              <option value="47">
+                047 - Tularosa Municipal School District
+              </option>
+              <option value="313">313 - Turquoise Trail Charter Schools</option>
+              <option value="310">
+                310 - Twenty First Century Public Academy
+              </option>
+              <option value="26">026 - Vaughn Municipal Schools</option>
+              <option value="367">
+                367 - Vista Grande Charter High School
+              </option>
+              <option value="445">445 - Voz Collegiate</option>
+              <option value="45">045 - Wagon Mound Public Schools</option>
+              <option value="334">334 - Walatowa High Charter School</option>
+              <option value="68">068 - West Las Vegas School District</option>
+              <option value="96">096 - Western NM University</option>
+              <option value="413">
+                413 - William W. and Josephine Dorn Community Charter School
+              </option>
+              <option value="89">089 - Zuni Public Schools</option>
+            </select>
+            <div id="employerHelp" class="form-text">
+              Select your school district or employer
+            </div>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip code</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputZip"
+              name="zip"
+              required
+              placeholder="XXXXX"
+              pattern="[0-9]{5}"
+              maxlength="5"
+              aria-describedby="zipHelp"
+            />
+            <div id="zipHelp" class="form-text">
+              Enter your 5-digit zip code
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="alert alert-warning" role="alert">
+              <i class="bx bx-shield-check me-2"></i>
+              <strong>Important Notice:</strong> Under no circumstances should
+              an individual seek any such relief if he or she does not qualify
+              for relief. Any application for such benefits which knowingly
+              relies on false information is subject to denial of coverage and
+              may be in violation of state statutes.
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="gridCheck"
+                required
+              />
+              <label class="form-check-label" for="gridCheck">
+                By my electronic signature, I acknowledge that I have read,
+                understand, and agree to the policies and requirements outlined
+                above.
+              </label>
+            </div>
+          </div>
+
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg">
+              <i class="bx bx-send me-2"></i>
+              Submit Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Modals -->
+    <div
+      class="modal fade"
+      id="successModal"
+      tabindex="-1"
+      aria-labelledby="successModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="successModalLabel">Success</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="result"></p>
+            Your form has been successfully submitted!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="errorModal"
+      tabindex="-1"
+      aria-labelledby="errorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="errorModalLabel">Error</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="errResult"></p>
+            There was an error submitting your form. Please try again.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loading" style="display: none">Submitting...</div>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <script src="./scripts/main.js"></script>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Client-side validation
+          if (!validateForm()) {
+            return; // Stop submission if validation fails
+          }
+
+          sendMessage();
+
+          function validateForm() {
+            const firstName = document.getElementById("firstName").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            const ssn = document.getElementById("inputSsn").value.trim();
+            const schoolID = document.getElementById("schoolID").value;
+            const zip = document.getElementById("inputZip").value.trim();
+            const checkbox = document.getElementById("gridCheck").checked;
+
+            let errorMessage = "";
+            let missingFields = [];
+
+            // Check each required field
+            if (!firstName) {
+              missingFields.push("First name");
+            }
+            if (!lastName) {
+              missingFields.push("Last name");
+            }
+            if (!ssn) {
+              missingFields.push("Last four digits of SSN");
+            } else if (!/^\d{4}$/.test(ssn)) {
+              errorMessage = "SSN must be exactly 4 digits";
+            }
+            if (!schoolID) {
+              missingFields.push("Employer ID");
+            }
+            if (!zip) {
+              missingFields.push("Zip code");
+            } else if (!/^\d{5}$/.test(zip)) {
+              errorMessage = "Zip code must be exactly 5 digits";
+            }
+            if (!checkbox) {
+              missingFields.push("Electronic signature agreement");
+            }
+
+            // If there are missing fields, show error
+            if (missingFields.length > 0) {
+              errorMessage = `Please complete the following required fields: ${missingFields.join(
+                ", "
+              )}`;
+            }
+
+            // If there's an error, show it and return false
+            if (errorMessage) {
+              new bootstrap.Modal(document.getElementById("errorModal")).show();
+              document.getElementById("errResult").innerHTML = errorMessage;
+              return false;
+            }
+
+            return true; // Form is valid
+          }
+
+          function sendMessage() {
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const dist_id = document.getElementById("schoolID").value;
+            const ssn = document.getElementById("inputSsn").value;
+            const zip = document.getElementById("inputZip").value;
+
+            const params = {
+              first: firstName,
+              last: lastName,
+              distid: dist_id,
+              ssn: ssn,
+              zip: zip,
+            };
+
+            // loading indicator shows...
+            document.querySelector(".loading").style.display = "block";
+            window.scrollTo(0, 0);
+            document.body.style.overflow = "hidden";
+
+            // POST request to api endpoint for FLOOD RELIEF FORM
+            fetch("/nmpsiaapi/api/EmailServer/floodRelief", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json;charset=utf-8",
+              },
+              body: JSON.stringify(params),
+            })
+              .then((response) => response.json())
+              .then((res) => {
+                console.log(res);
+                //loading indicator goes away
+                document.querySelector(".loading").style.display = "none";
+                document.body.style.overflow = "auto";
+
+                // SUCCESS!
+                if (res === "Send success!") {
+                  console.log("success");
+                  new bootstrap.Modal(
+                    document.getElementById("successModal")
+                  ).show();
+                  document.getElementById("result").innerHTML =
+                    "Your request has been recorded and forwarded for processing!";
+
+                  clearVal();
+                }
+                // INVALID ZIP
+                else if (res === "Zip Not Match!") {
+                  console.log("invalid zip!");
+                  new bootstrap.Modal(
+                    document.getElementById("errorModal")
+                  ).show();
+                  document.getElementById("errResult").innerHTML =
+                    "Your zip code is not in the affected area! If you feel you are eligible for assistance, please contact your employer's benefits office to confirm enrollment and/or provide additional information.";
+                  clearVal();
+                }
+                // NOT IN OUR RECORDS
+                else if (res === "Not match!") {
+                  console.log("who?");
+                  new bootstrap.Modal(
+                    document.getElementById("errorModal")
+                  ).show();
+
+                  document.getElementById("errResult").innerHTML =
+                    "Sorry, your information is not in our system! Please contact your benefits rep for assistance.";
+
+                  clearVal();
+                }
+                // cannot process req
+                else {
+                  console.log("nah");
+                  console.log(zip);
+                  console.log(ssn);
+                  document.getElementById("errResult").innerHTML =
+                    "Could not process request";
+                  new bootstrap.Modal(
+                    document.getElementById("errorModal")
+                  ).show();
+                }
+              });
+          }
+
+          function clearVal() {
+            document.getElementById("firstName").value = "";
+            document.getElementById("lastName").value = "";
+            document.getElementById("inputSsn").value = "";
+            document.getElementById("inputZip").value = "";
+            document.getElementById("gridCheck").checked = false;
+          }
+        });
+    </script>
+  </body>
+</html>

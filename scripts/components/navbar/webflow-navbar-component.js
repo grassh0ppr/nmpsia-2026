@@ -55,7 +55,7 @@ class WebflowNavbar extends HTMLElement {
                   <a href="./natural-disaster-aid.html" class="dropdown-link w-dropdown-link"
                     >Disaster Aid Request Form</a
                   >
-                  <a href="./machine-readable-files.html" class="dropdown-link w-dropdown-link"
+                  <a href="./transparency-rule.html" class="dropdown-link w-dropdown-link"
                     >Transparency Rule</a
                   >
                 </nav>

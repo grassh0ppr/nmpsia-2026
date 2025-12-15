@@ -649,6 +649,7 @@ body.modern-body {
 /* ===== CONTENT SECTIONS ===== */
 .content-section,
 .covid-content-section,
+.contacts-content-section,
 .main-content {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
@@ -2401,4 +2402,98 @@ body.modern-body {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 0;
+}
+
+/* ===== BIG LINKS CONTAINER (Natural Disaster Aid Page) ===== */
+.big-links-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  padding: 1rem 0;
+}
+
+.big-box-link {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2.5rem 2rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  min-height: 200px;
+}
+
+.big-box-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+.big-box-link i {
+  font-size: 4rem;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.big-box-link:hover i {
+  color: #eef3ff;
+  transform: scale(1.1);
+}
+
+.big-box-link span {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.big-box-link:hover span {
+  color: #eef3ff;
+}
+
+/* Responsive adjustments for big links */
+@media (max-width: 768px) {
+  .big-links-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .big-box-link {
+    padding: 2rem 1.5rem;
+    min-height: 180px;
+  }
+
+  .big-box-link i {
+    font-size: 3rem;
+  }
+
+  .big-box-link span {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .big-box-link {
+    padding: 1.5rem 1rem;
+    min-height: 160px;
+  }
+
+  .big-box-link i {
+    font-size: 2.5rem;
+  }
+
+  .big-box-link span {
+    font-size: 1rem;
+  }
 }
