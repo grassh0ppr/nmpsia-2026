@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      Contact NMPSIA | New Mexico Public Schools Insurance Authority
+    </title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <!-- components -->
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+    <script src="./scripts/components/alert-banner/alert-banner.js"></script>
+    <style>
+      body {
+        background-image: linear-gradient(180deg, #4169a9c2 0%, #ffffffa8 100%),
+          url("https://nmpsia.com/images/banner5.jpg");
+        background-attachment: fixed;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+      }
+    </style>
+  </head>
+
+  <body class="modern-body">
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <alert-banner
+      message="We're currently working on launching a comprehensive website redesign to deliver a WCAG 2.1 AA compliant, fully mobile-responsive, and enhanced user experience. You may notice temporary styling variations as we transition to our improved platform, unveiled January 1, 2026."
+      class="alert-banner"
+    ></alert-banner>
+
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Contact NMPSIA
+        </li>
+      </ol>
+    </div>
+    <main class="container new-form-container p-3">
+      <div class="main-section-header justify-content-between">
+        <h2 class="display-5">Reach out to us</h2>
+        <img
+          src="images/NMPSIA-Logo-transparent-2023.png"
+          class="logo"
+          alt="NMPSIA logo"
+        />
+      </div>
+      <p>
+        Requests can be directed to us through the form below. All fields are
+        required to submit the form.
+      </p>
+      <p>
+        If you need to authorize a release of health information, please use the
+        <span class="d-inline-flex align-items-center"
+          ><i class="bx bx-file"></i>
+          <a href="./auth-release-health-info.html"
+            >Release of Health Information Authorization Form.</a
+          ></span
+        >
+      </p>
+      <form>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <label for="contactType" class="form-label bold"
+              >Who would you like to contact?</label
+            >
+            <select
+              class="form-select"
+              name="contactType"
+              id="contactType"
+              aria-label="Who to contact"
+              required
+            >
+              <option selected>Choose one...</option>
+              <option value="1">
+                New Mexico Public Schools Insurance Authority
+              </option>
+              <option value="2">
+                NMPSIA Eligibility Administrative Office: Erisa Administrative
+                Services, Inc.
+              </option>
+            </select>
+          </div>
+        </div>
+        <p class="my-3 bold">What may we assist you with?</p>
+
+        <div id="NMPSIA">
+          <p>
+            Contact New Mexico Public Schools Insurance Authority, please make a
+            selection below and they will reach out to you:
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Benefit and Other Questions"
+              id="benefitsNQuestions"
+              name="chkNMPSIA"
+            />
+            <label class="form-check-label" for="benefitsNQuestions">
+              Benefit and Other Questions
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Risk Question"
+              id="riskQuestion"
+              name="chkNMPSIA"
+            />
+            <label class="form-check-label" for="riskQuestion">
+              Risk Questions
+            </label>
+          </div>
+        </div>
+
+        <div id="Erisa">
+          <p>
+            Contact NMPSIA Eligibility Administrative Office: Erisa
+            Administrative Services, Inc., please make a selection below and
+            they will reach out to you:
+          </p>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Enrollment"
+              id="enrollCheck"
+              name="chkErisa"
+            />
+            <label class="form-check-label" for="enrollCheck">
+              Enrollment
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="eligibilityCheck"
+              value="Eligibility"
+              name="chkErisa"
+            />
+            <label class="form-check-label" for="eligibilityCheck">
+              Eligibility
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Premium Billing"
+              id="billingCheck"
+              name="chkErisa"
+            />
+            <label class="form-check-label" for="billingCheck">
+              Premium billing
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="collectPremiumCheck"
+              name="chkErisa"
+              value="Premium Collection"
+            />
+            <label class="form-check-label" for="collectPremiumCheck">
+              Premium collection
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="COBRA Continuation for medical, dental or vision"
+              id="cobraCheck"
+              name="chkErisa"
+            />
+            <label class="form-check-label" for="cobraCheck">
+              COBRA Continuation for medical, dental, or vision
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="retireeLifeCheck"
+              name="chkErisa"
+              value="Retiree Life Continuation"
+            />
+            <label class="form-check-label" for="retireeLifeCheck">
+              Retiree life continuation
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="Other"
+              id="otherCheck"
+              name="chkErisa"
+            />
+            <label class="form-check-label" for="otherCheck"> Other </label>
+          </div>
+        </div>
+
+        <!-- who may we respond to about this inquiry? -->
+        <div class="mb-3">
+          <label
+            class="form-label mb-0"
+            for="txtinquiry"
+            style="font-weight: 700"
+          >
+            Who may we respond to about this inquiry?
+            <!-- <span style="color: red">*</span> -->
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="txtinquiry"
+            aria-describedby="nameInput"
+          />
+          <div id="nameInput" class="form-text">Please provide your name.</div>
+        </div>
+        <!-- provide employer's name -->
+        <p class="mb-0 mt-4 bold">Please provide your employer's name:</p>
+        <input
+          type="text"
+          class="form-control"
+          id="employerName"
+          aria-describedby="employerNameInput"
+        />
+        <div id="employerNameInput" class="form-text">
+          Please provide name of the school district or charter you work for.
+        </div>
+        <!-- what is your inquiry -->
+        <div class="my-3">
+          <label for="txtExplanation" class="form-label bold mb-0">
+            What is your inquiry?
+          </label>
+          <textarea
+            class="form-control"
+            id="txtExplanation"
+            rows="3"
+            aria-describedby="explainInput"
+          ></textarea>
+          <div id="explainInput" class="form-text">
+            Please provide a brief explanation.
+          </div>
+        </div>
+
+        <!-- Please provide your email address and a good phone number -->
+        <div class="mb-3">
+          <p for="purposeOfRequest" class="bold mb-0">
+            Please provide your email address and a good phone number
+          </p>
+          <div class="form-text" id="phoneInput">
+            Please provide <em><b>BOTH</b></em> a phone number and an email
+            address.
+          </div>
+          <label class="form-check-label" for="txtemail">Email </label>
+          <input
+            type="email"
+            value=""
+            class="form-control"
+            id="txtemail"
+            aria-describedby="emailInput"
+          />
+
+          <label class="form-check-label" for="txtphone">Phone </label>
+          <input
+            type="text"
+            value=""
+            class="form-control"
+            id="txtphone"
+            aria-describedby="phoneInput"
+          />
+        </div>
+
+        <!-- enter the random number below -->
+        <div class="mb-3">
+          <p class="mb-1 mt-1">
+            Enter the four-digit number code below and click
+            <strong>Submit</strong> to send your message.
+          </p>
+          <div class="form-text mb-3" id="randomNum">0537</div>
+          <input type="number" id="number" class="form-control" />
+        </div>
+
+        <!-- SUBMIT -->
+        <button type="button" class="btn btn-primary" id="sub">Submit</button>
+      </form>
+    </main>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="alertModal"
+      tabindex="-1"
+      aria-labelledby="alertModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Message:</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="result"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- submit fail modal -->
+    <div
+      class="modal fade"
+      id="failModal"
+      tabindex="-1"
+      aria-labelledby="alertModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Message:</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="err"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loading">Submitting...</div>
+
+    <!-- Contact Form script -->
+    <script>
+      function rand(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+
+      // it only needs to be appended to the page on refresh
+      document
+        .querySelector("#randomNum")
+        .addEventListener("click", function () {
+          document.querySelector("#randomNum").innerText = randnum = rand(
+            1000,
+            9999
+          );
+        });
+      let randnum = rand(1000, 9999);
+      document.getElementById("randomNum").innerHTML = randnum;
+
+      document.querySelector("#sub").addEventListener("click", function () {
+        if (document.querySelector("#number").value != randnum) {
+          document.querySelector("#number").value = "";
+          document.querySelector("#randomNum").innerText = randnum = rand(
+            1000,
+            9999
+          );
+        } else {
+          sendMessage();
+        }
+      });
+
+      document
+        .getElementById("contactType")
+        .addEventListener("change", function (e) {
+          console.log(e.target.value);
+          if (e.target.value === "1") {
+            document.querySelector("#NMPSIA").style.display = "block";
+            document.querySelector("#Erisa").style.display = "none";
+          } else if (e.target.value === "2") {
+            document.querySelector("#Erisa").style.display = "block";
+            document.querySelector("#NMPSIA").style.display = "none";
+          } else {
+            // Hide both if "Choose one..." is selected
+            document.querySelector("#NMPSIA").style.display = "none";
+            document.querySelector("#Erisa").style.display = "none";
+          }
+        });
+
+      function sendMessage() {
+        let contactType = document.querySelector("#contactType").value;
+        let assist = chkValStr(contactType);
+        let inquiry = document.querySelector("#txtinquiry").value;
+        let explanation = document.querySelector("#txtExplanation").value;
+        let phone = document.querySelector("#txtphone").value;
+        let email = document.querySelector("#txtemail").value;
+        let employer = document.querySelector("#employerName").value;
+
+        if (assist == "") {
+          alert("What may we assist you with?");
+          return false;
+        }
+        if (inquiry == "") {
+          alert("Who may we respond to about this inquiry?");
+          return false;
+        }
+        if (employer == "") {
+          alert(
+            "Please provide the name of the school or charter you work for."
+          );
+          return false;
+        }
+        if (explanation == "") {
+          alert("Please provide a brief explanation.");
+          return false;
+        }
+        if (phone == "" || email == "") {
+          document.querySelector("div.form-text#phoneInput").style.color =
+            "red";
+          alert("Please provide phone number AND email address");
+          return false;
+        }
+        let params = {
+          contactType: contactType,
+          assist: assist,
+          phone: phone,
+          email: email,
+          inquiry: inquiry,
+          employer: employer,
+          explanation: explanation,
+        };
+        document.querySelector(".loading").style.display = "block";
+        window.scrollTo(0, 0);
+        document.querySelector("body").style.overflow = "hidden";
+
+        let requestData = JSON.stringify(params);
+        fetch("/nmpsiaapi/api/EmailServer/contactus", {
+          method: "POST",
+          body: requestData,
+          headers: {
+            "Content-Type": "application/json;charset=utf8",
+          },
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            document.querySelector(".loading").style.display = "none";
+            document.querySelector("body").style.overflow = "auto";
+            document.querySelector("#result").innerHTML = res;
+            var successModal = new bootstrap.Modal(
+              document.getElementById("alertModal")
+            );
+            successModal.show();
+            // document.querySelector('#alertModal').show();
+            // document.querySelector('#alertModal').style.display = 'block';
+            // alert('Submit success! We will be in touch.')
+
+            clearVal();
+          })
+          .catch((error) => {
+            console.log("Error: ", error);
+            document.querySelector("#err").innerHTML = error;
+            var myModal = new bootstrap.Modal(
+              document.getElementById("failModal")
+            );
+            myModal.show();
+          });
+      }
+
+      function clearVal() {
+        document.querySelector("#txtinquiry").value = "";
+        document.querySelector("#txtExplanation").value = "";
+        document.querySelector("#txtphone").value = "";
+        document.querySelector("#txtemail").value = "";
+        document.querySelector("#number").value = "";
+        document.querySelector("#employerName").value = "";
+        document.querySelector("#randomNum").innerText = randnum = rand(
+          1000,
+          9999
+        );
+        document
+          .querySelectorAll('input[name="chkNMPSIA"]')
+          .forEach(function (input) {
+            input.setAttribute("checked", false);
+          });
+        document
+          .querySelectorAll('input[name="chkErisa"]')
+          .forEach(function (input) {
+            input.setAttribute("checked", false);
+          });
+      }
+
+      function chkValStr(contactType) {
+        let chkval = "";
+        let i = 0;
+        if (contactType == "1") {
+          document
+            .querySelectorAll('input[name="chkNMPSIA"]:checked')
+            .forEach(function (input) {
+              if (i == 0) {
+                i++;
+                chkval = input.value;
+              } else {
+                i++;
+                chkval += ", " + input.value;
+              }
+            });
+        } else {
+          document
+            .querySelectorAll('input[name="chkErisa"]:checked')
+            .forEach(function (input) {
+              if (i == 0) {
+                i++;
+                chkval = input.value;
+              } else {
+                i++;
+                chkval += ", " + input.value;
+              }
+            });
+        }
+        return chkval;
+      }
+    </script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
