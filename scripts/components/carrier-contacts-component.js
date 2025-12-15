@@ -1,6 +1,6 @@
 class CarrierContacts extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = /*html*/ `
+  connectedCallback() {
+    this.innerHTML = /*html*/ `
           
           <div class="heading-and-element-flexbox">
             <h2 class="display-4">Carrier Contacts</h2>
@@ -138,14 +138,14 @@ class CarrierContacts extends HTMLElement {
                   <td class="carrier-td">
                     <a href="https://surgeryplus.com/" target="_blank">
                       <img class="carrierImg"
-                        src="/images/lantern_logo.png" width="200px"
+                        src="/images/carriers/lantern_logo.png" width="200px"
                         alt="Lantern logo" />
                         </a>
                         <br>
                         <span class="text-danger" style="text-decoration: none;">Formerly:</span>
                         <br>
                         <img class="carrierImg"
-                        src="/images/surgery_plus_screenshot.png" width="100px"
+                        src="/images/carriers/surgery_plus_screenshot.png" width="100px"
                         alt="Surgery Plus logo" />
                   </td>
                   <td>n/a</td>
@@ -170,7 +170,7 @@ class CarrierContacts extends HTMLElement {
                 <tr>
                   <td class="carrier-td">
                     <a href="https://www.caremark.com/" target="_blank">
-                      <img class="carrierImg" src="images/CVS_Caremark_logo.jpg" width="200px" alt="cvs logo" />
+                      <img class="carrierImg" src="images/carriers/CVS_Caremark_logo.jpg" width="200px" alt="cvs logo" />
                     </a>
                   </td>
                   <td>RxBIN 004336<br />RxPCN ADV <br />RxGRP RX22AS</td>
@@ -235,7 +235,7 @@ class CarrierContacts extends HTMLElement {
                   <td class="carrier-td">
                     <a href="https://www.unitedconcordia.com/benefits/clients-corner/New-Mexico-Public-School-Client-Corner-Dental-Benefits"
                       target="_blank">
-                      <img class="carrierImg" src="images/UCD_logo_2024.jpg" width="180"
+                      <img class="carrierImg" src="images/carriers/UCD_logo_2024.jpg" width="180"
                         alt="UNITED CONCORDIA dental logo" />
                     </a>
                   </td>
@@ -295,7 +295,7 @@ class CarrierContacts extends HTMLElement {
           </div>
         
           `;
-    }
+  }
 }
 
 customElements.define("carrier-contacts", CarrierContacts);
