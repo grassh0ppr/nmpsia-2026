@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      Release of Health Info Authorization | New Mexico Public Schools Insurance
+      Authority
+    </title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="styles/auth-form.css" />
+
+    <!-- components -->
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+
+    <!-- RECAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <style>
+      #loading {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <webflow-navbar-component></webflow-navbar-component>
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Authorization for Release of Health Information
+        </li>
+      </ol>
+    </div>
+
+    <main class="container new-form-container p-3">
+      <div class="main-section-header">
+        <img
+          src="images/NMPSIA-Logo-transparent-2023.png"
+          class="logo"
+          alt="NMPSIA logo"
+        />
+        <h2>Authorization for Release of Health Information</h2>
+      </div>
+
+      <form id="healthInfoForm" method="post" enctype="multipart/form-data">
+        <!-- INTRO SECTION -->
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <label for="policyHolderName" class="form-label"
+              >Policy holder name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="policyHolderName"
+              name="policyHolderName"
+            />
+          </div>
+
+          <div class="col-12 col-md-6 mb-3">
+            <label for="patientName" class="form-label">Patient name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="patientName"
+              name="patientName"
+            />
+          </div>
+        </div>
+        <!-- <p class="my-3"><strong>I, <span id="patientNameInline"></span> (patient name), hereby authorize New Mexico
+                    Public Schools
+                    Insurance
+                    Authority the
+                    use or disclosure of my health information as described in this authorization.</strong>
+            </p> -->
+        <!-- SECTION A AUTHORIZED ENTITY & CARRIERS -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="authorizedEntity" class="form-label">
+              &nbsp;Who may we respond to about this authorization?:
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="authorizedEntity"
+              placeholder="Email address"
+              name="authorizedEntity"
+              required
+            />
+          </div>
+        </div>
+        <!-- CARRIERS SELECTION -->
+        <p class="mb-4 mt-2">
+          A. &nbsp;Specific organization(s) authorized to provide the
+          information <strong>(please select all that apply):</strong>
+        </p>
+        <div class="row mb-3">
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="carrier-checkbox form-check-input"
+                id="checkBCBS"
+                name="carrierSelection"
+                value="BlueCross BlueShield"
+              />
+              <label for="checkBCBS" class="form-label"
+                >BlueCross BlueShield</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="carrier-checkbox form-check-input"
+                id="checkPresbyterian"
+                value="Presbyterian"
+                name="carrierSelection"
+              />
+              <label for="checkPresbyterian" class="form-label"
+                >Presbyterian</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="carrier-checkbox form-check-input"
+                id="checkCVS"
+                value="CVS"
+                name="carrierSelection"
+              />
+              <label for="checkCVS" class="form-label">CVS</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="carrier-checkbox form-check-input"
+                id="checkDavis"
+                value="Davis Vision"
+                name="carrierSelection"
+              />
+              <label for="checkDavis" class="form-label">Davis Vision</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="carrier-checkbox form-check-input"
+                id="checkBCBSDental"
+                value="BCBS Dental"
+                name="carrierSelection"
+              />
+              <label for="checkBCBSDental" class="form-label"
+                >BCBS Dental</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="carrier-checkbox form-check-input"
+                id="checkDeltaDental"
+                value="Delta Dental"
+                name="carrierSelection"
+              />
+              <label for="checkDeltaDental" class="form-label"
+                >Delta Dental</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="carrier-checkbox form-check-input"
+                id="checkUnitedConcordia"
+                value="United Concordia"
+                name="carrierSelection"
+              />
+              <label for="checkUnitedConcordia" class="form-label"
+                >United Concordia</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- PROVIDER NAME -->
+        <div class="row mb-3">
+          <div class="col-12 col-md-6">
+            <label for="providerName" class="form-label"
+              >Name of provider:
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="providerName"
+              name="providerName"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label class="form-label">Network selection:</label>
+              <div>
+                <input
+                  type="radio"
+                  id="inNetwork"
+                  name="In-network"
+                  value="true"
+                  class="form-check-input"
+                  required
+                />
+                <label for="inNetwork" class="form-check-label"
+                  >In network</label
+                >
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="outNetwork"
+                  name="In-network"
+                  value="false"
+                  class="form-check-input"
+                  required
+                />
+                <label for="outNetwork" class="form-check-label"
+                  >Out of network</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PROVIDER PHONE & EMAIL -->
+        <div class="row mb-3">
+          <div class="col-12 col-md-6">
+            <label for="providerPhone" class="form-label"
+              >Provider phone number:</label
+            >
+            <input
+              type="tel"
+              class="form-control"
+              id="providerPhone"
+              name="providerPhone"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="providerEmail" class="form-label"
+              >Provider email:</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="providerEmail"
+              name="providerEmail"
+            />
+          </div>
+        </div>
+
+        <!-- SECTION B CLAIM DETAILS -->
+        <div class="mb-3">
+          <label for="claimDetails" class="form-label">
+            B. &nbsp;Information Regarding Your Claim- Please provide detailed
+            information of what your issue is. Include date of service and names
+            of prescriptions or procedures you would like reviewed.
+          </label>
+          <textarea
+            class="form-control"
+            id="claimDetails"
+            rows="3"
+            name="claimDetails"
+          ></textarea>
+
+          <!-- SUPPORTING DOCUMENTS -->
+          <p class="mb-1 mt-1">Please include any supporting documents</p>
+          <input
+            type="file"
+            name="supportingDocs"
+            id="supportingDocs"
+            multiple
+          />
+          <div id="fileList"></div>
+        </div>
+
+        <!-- SECTION C PURPOSE OF REQUEST -->
+        <div class="mb-3">
+          <label for="purposeOfReq" class="form-label">
+            C. &nbsp;Please describe the purpose of your request (e.g.,
+            "assistance with claim," "prescription cost reduction," etc.) and
+            specify the desired outcome.
+          </label>
+          <textarea
+            class="form-control"
+            id="purposeOfReq"
+            rows="3"
+            name="purposeOfReq"
+          ></textarea>
+        </div>
+
+        <!-- SECTION D RIGHT TO REVOKE -->
+        <div class="mb-3">
+          <p class="mb-1 mt-1">
+            D. &nbsp;Right to revoke. I understand that I have the right to
+            revoke this authorization at any time by notifying NMPSIA in writing
+            at 410 Old Taos Highway, Santa Fe, NM 87501. I understand that the
+            revocation is only effective after it is received and logged by
+            NMPSIA. I understand that any use or disclosure made prior to the
+            revocation under this authorization will not be affected by a
+            revocation.
+          </p>
+          <input
+            class="ms-4"
+            type="checkbox"
+            name="rightToRevoke"
+            id="rightToRevoke"
+          />
+          <label for="rightToRevoke" class="form-label"
+            >I agree to the above statement</label
+          >
+        </div>
+
+        <!-- SECTION E DISCLOSURE -->
+        <div class="mb-3">
+          <p class="mb-1 mt-1">
+            E. &nbsp;I understand that after this information is disclosed,
+            federal law might not protect it and the recipient might redisclose
+            it. I understand that I am entitled to receive a copy of this
+            authorization. I understand that this authorization will expire when
+            my inquiry or appeal has been acted upon by NMPSIA.
+          </p>
+          <input
+            class="ms-4"
+            type="checkbox"
+            name="understandDisclosureAndCopy"
+            id="understandDisclosureAndCopy"
+          />
+          <label for="understandDisclosureAndCopy" class="form-label"
+            >I agree to the above statement</label
+          >
+        </div>
+
+        <hr />
+        <!-- SECTION F | PERSONAL REPRESENTATIVE -->
+        <div class="mb-3">
+          <p class="mb-1 mt-1">
+            F. &nbsp;Personal representative section: If a personal
+            representative executes this form, that Representative warrants that
+            he or she has authority to sign this form.
+          </p>
+          <div class="row">
+            <div class="col-12 col-md-6 mb-3">
+              <label for="personalRepName" class="form-label"
+                >Representative name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="personalRepName"
+                name="personalRepName"
+              />
+            </div>
+
+            <div class="col-12 col-md-6 mb-3">
+              <label for="personalRepContactInfo" class="form-label"
+                >Representative phone/email</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="personalRepContactInfo"
+                name="personalRepContactInfo"
+              />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- SIGNATURES -->
+        <div class="row">
+          <div class="mb-3 col-8">
+            <label for="signaturePatient" class="form-label"
+              >Signature of patient (18+)</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="signaturePatient"
+              name="signaturePatient"
+              required
+            />
+          </div>
+          <div class="mb-3 col-4">
+            <label for="patientSigDate" class="form-label">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="patientSigDate"
+              name="patientSigDate"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-8">
+            <label for="signaturePolicyholder" class="form-label"
+              >Signature of policyholder</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="signaturePolicyholder"
+              name="signaturePolicyholder"
+            />
+          </div>
+          <div class="mb-3 col-4">
+            <label for="policyholderSigDate" class="form-label">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="policyholderSigDate"
+              name="policyholderSigDate"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 col-8">
+            <label for="signaturePersonalRep" class="form-label">
+              Signature of personal representative (if patient is under 18)
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="signaturePersonalRep"
+              name="signaturePersonalRep"
+            />
+          </div>
+          <div class="mb-3 col-4">
+            <label for="personalRepSigDate" class="form-label">Date</label>
+            <input
+              type="date"
+              class="form-control"
+              id="personalRepSigDate"
+              name="personalRepSigDate"
+            />
+          </div>
+        </div>
+        <!-- <div id="downloadLink" style="display: none" class="my-3">
+                <a id="pdfDownload" href="#" class="btn btn-outline-primary" download="Authorization_Form.pdf">Download
+                    PDF</a>
+            </div> -->
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LfpXjcrAAAAACotrwzfqsS_CjW4Hjsqh9iWMAXe"
+        ></div>
+        <!-- next button to trigger confirmation section -->
+        <button type="button" class="btn btn-primary" id="reviewBtn">
+          Review and Submit
+        </button>
+      </form>
+
+      <div id="confirmationSection" style="display: none">
+        <h3 class="mb-2 text-center">Review your submission</h3>
+        <p class="text-center">
+          Please confirm the information below is correct.
+        </p>
+        <div id="reviewYourStuff" class="my-3"></div>
+        <p>
+          By signing electronically, I (Patient, Policy Holder and/or Personal
+          Representative) confirm that I am the individual identified in this
+          document and that I have read, understood, and agree to the terms and
+          conditions outlined herein. My electronic signature is equivalent to
+          my handwritten signature and is intended to have the same legal effect
+          as a physical signature. I understand that I am providing consent to
+          use my electronic signature in connection with this document and that
+          I have the right to withdraw my consent at any time.
+        </p>
+        <p>
+          If I am signing on behalf of another person/entity represented in this
+          form, I certify that I am legally authorized to do so.
+        </p>
+
+        <button class="btn btn-secondary" type="button" id="goBack">
+          Go back
+        </button>
+        <button class="btn btn-primary" type="button" id="submitBtn">
+          Confirm
+        </button>
+        <!-- <div class="loading">Submitting...</div> -->
+        <span class="py-3" id="loading"
+          ><img src="images/loading.gif" alt="loading icon"
+        /></span>
+      </div>
+
+      <div id="thankYouDriveThru" class="my-5" style="display: none">
+        <h3 class="mb-3">Thank you for your submission!</h3>
+        <p>
+          A PDF copy of your form will automatically download to your machine.
+        </p>
+
+        <a href="index.html">Homepage</a>
+      </div>
+    </main>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <!-- jsPDF cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/health-info.js"></script>
+  </body>
+</html>
