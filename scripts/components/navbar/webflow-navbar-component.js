@@ -30,7 +30,7 @@ class WebflowNavbar extends HTMLElement {
                 </div>
                 <nav class="dropdown-list w-dropdown-list">
                 <a href="./plan.html" class="dropdown-link w-dropdown-link"
-                    >NMPSIA &ndash; The Authority</a
+                    >NMPSIA &ndash; About the Authority</a
                   >
                   <a href="./board-login.html" class="dropdown-link w-dropdown-link">NMPSIA &ndash; Board Login</a>
 
@@ -109,7 +109,6 @@ class WebflowNavbar extends HTMLElement {
                
                 </nav>
               </div>
-              <a href="./about.html" class="navlink w-nav-link">About</a>
               <a href="./contact-us.html" class="navlink w-nav-link">Contact</a>
               <a href="https://nmpsiaonline.nmpsia.com/" class="navlink w-nav-link">Benefits Portal Login</a>
               <a href="#" class="search-toggle navlink w-nav-link" id="searchToggle">

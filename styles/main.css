@@ -703,7 +703,7 @@ body.modern-body {
 }
 
 .content-section i.bx {
-  color: #667eea;
+  color: #e6eafd;
   font-size: 20px;
   line-height: 1.4;
 }
@@ -790,7 +790,7 @@ body.modern-body {
 .resources-grid,
 .tutorials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
 }
