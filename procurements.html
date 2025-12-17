@@ -47,7 +47,6 @@
     />
 
     <!-- custom stylesheets -->
-    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/queries.css" />
 
@@ -69,12 +68,12 @@
   <body class="modern-body">
     <webflow-navbar-component></webflow-navbar-component>
 
-    <div class="modern-breadcrumb" aria-label="breadcrumb">
-      <ol class="ms-4 breadcrumb">
+    <nav class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 pt-2 breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Procurements</li>
       </ol>
-    </div>
+    </nav>
 
     <!-- Sidebar Toggle Button -->
     <button
@@ -88,11 +87,10 @@
     <!-- Sidebar Overlay -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <div class="sidebar-layout">
-      <!-- Side Navigation -->
+    <div class="sidebar-layout modern-bg">
       <aside class="benefits-sidebar" id="benefitsSidebar">
         <div class="sidebar-header">
-          <h3><i class="bx bx-menu"></i> Quick Navigation</h3>
+          <h3><i class="bx bx-file-blank"></i> Quick Navigation</h3>
           <button
             class="close-sidebar"
             id="closeSidebar"
@@ -102,52 +100,62 @@
           </button>
         </div>
         <nav class="sidebar-nav">
-          <a href="#all-procurements" class="nav-item">
+          <a
+            href="#all-procurements"
+            data-section="all-procurements"
+            class="nav-item"
+          >
             <i class="bx bx-file"></i>
             <span>Procurement Notices</span>
           </a>
-          <a href="#active-procurements" class="nav-item">
+          <a
+            href="#active-procurements"
+            data-section="active-procurements"
+            class="nav-item"
+          >
             <i class="bx bx-check-circle"></i>
             <span>Active Procurements</span>
           </a>
-          <a href="#closed-procurements" class="nav-item">
+          <a
+            href="#closed-procurements"
+            data-section="closed-procurements"
+            class="nav-item"
+          >
             <i class="bx bx-x-circle"></i>
             <span>Closed Procurements</span>
           </a>
         </nav>
       </aside>
-
-      <!-- Main Content -->
-      <main class="benefits-main">
+      <main data-default-section="active-procurements" class="benefits-main">
         <!-- NMPSIA PROCUREMENT NOTICES -->
-        <section id="all-procurements" class="content-section">
+        <div id="all-procurements" class="content-section">
           <div class="heading-and-element-flexbox">
-            <h2>Procurement Notices</h2>
+            <h2 class="display-4">Procurement Notices</h2>
             <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
           </div>
           <hr />
           <all-procurements></all-procurements>
-        </section>
+        </div>
 
         <!-- ACTIVE PROCUREMENTS -->
-        <section id="active-procurements" class="content-section">
+        <div id="active-procurements" class="content-section">
           <div class="heading-and-element-flexbox">
-            <h2>Active Procurements</h2>
+            <h2 class="display-4">Active Procurements</h2>
             <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
           </div>
           <hr />
           <active-procurements></active-procurements>
-        </section>
+        </div>
 
         <!-- CLOSED PROCUREMENTS -->
-        <section id="closed-procurements" class="content-section">
+        <div id="closed-procurements" class="content-section">
           <div class="heading-and-element-flexbox">
-            <h2>Closed Procurements</h2>
+            <h2 class="display-4">Closed Procurements</h2>
             <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
           </div>
           <hr />
           <closed-procurements></closed-procurements>
-        </section>
+        </div>
       </main>
     </div>
     <footer-sitemap></footer-sitemap>

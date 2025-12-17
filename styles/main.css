@@ -2178,6 +2178,62 @@ body.modern-body {
   opacity: 0.7;
 }
 
+/* ===== TABLE STYLES FOR CONTENT SECTIONS ===== */
+.content-section .table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+.content-section .table thead {
+  background-color: #f8f9fa;
+}
+
+.content-section .table thead th {
+  background-color: #667eea;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.content-section .table tbody td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+}
+
+.content-section .table tbody tr:nth-of-type(even) {
+  background-color: #f8f9fa;
+}
+
+.content-section .table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.content-section .table.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.content-section .table.table-bordered th,
+.content-section .table.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+/* Responsive table styling */
+@media (max-width: 768px) {
+  .content-section .table {
+    font-size: 0.9rem;
+  }
+
+  .content-section .table thead th,
+  .content-section .table tbody td {
+    padding: 0.5rem;
+  }
+}
+
 /* ===== WELLNESS PAGE SPECIFIC STYLES ===== */
 
 /* Improve logo placement in section headers */

@@ -63,15 +63,7 @@ class CybersecurityInfo extends HTMLElement {
         >Incident Response Playbook - Ransomware</a
       >
     </li>
-    <li>
-      <i class="bx bxs-file-pdf"></i>
-      <a
-        href="/pdfs/poms-risk-docs/2024 NMTIE Poms Cyber Presentation 11-13-24.pdf"
-        target="_blank"
-        >Cyber Insurance Coverage in Schools - 2024 NMTIE
-        Presentation</a
-      >
-    </li>
+    
   </ul>
     `;
   }

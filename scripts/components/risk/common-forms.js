@@ -73,14 +73,7 @@ class CommonForms extends HTMLElement {
           >Windshield Report</a
         >
       </li>
-      <li>
-        <i class="bx bxs-file-pdf"></i>
-        <a
-          href="/pdfs/poms-risk-docs/25_26_Cyber_Claim_Reporting_Instructions.pdf"
-          target="_blank"
-          >Cyber Claim Reporting Instructions</a
-        >
-      </li>
+    
     </ul>
     `;
   }
