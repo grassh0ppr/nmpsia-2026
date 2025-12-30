@@ -91,11 +91,15 @@
         </div>
         <hr />
         <div class="container" style="min-height: 50vh">
-          <script
-            async
-            src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
-          ></script>
-          <div class="gcse-searchresults-only"></div>
+          <div class="search-results-container">
+            <div class="search-results-header">
+              <p id="resultsCount" class="results-count"></p>
+              <p class="search-query-display">
+                Search results for: <strong id="searchQuery"></strong>
+              </p>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+          </div>
         </div>
       </div>
     </main>
@@ -126,12 +130,8 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- Google Custom Search -->
-    <script
-      type="text/javascript"
-      src="https://www.googleapis.com/customsearch/v1?key=AIzaSyCDbFzMjun66xtEwWIfFT1qfGlVbZqqyWU&amp;cx=001401955290738420360:436zvnzy-9o&amp;q=program&amp;callback=hndlr"
-    ></script>
-
+    <!-- Custom Search Engine -->
+    <script src="./scripts/search-engine.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
