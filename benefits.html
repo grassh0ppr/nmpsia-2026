@@ -70,6 +70,7 @@
     <script src="./scripts/components/carriers/delta-component.js?v=1.1"></script>
     <script src="./scripts/components/carriers/ucdental-component.js"></script>
     <script src="./scripts/components/carriers/davis-component.js?v=1.1"></script>
+    <script src="./scripts/components/docs-forms-component.js"></script>
     <script src="./scripts/components/find-a-provider.js?v=1.3"></script>
     <script src="./scripts/components/footer/footer-sitemap.js"></script>
     <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
@@ -118,6 +119,24 @@
           <a href="#overview" class="nav-item">
             <i class="bx bx-home-alt"></i>
             <span>Overview</span>
+          </a>
+          <!-- notice of privacy practices -->
+          <a
+            href="./pdfs/HIPAA_Notice_of_Privacy_Practices_1_2026.pdf"
+            target="_blank"
+            class="nav-item"
+          >
+            <i class="bx bxs-file-pdf"></i>
+            <span>Notice of Privacy Practices</span>
+          </a>
+          <!-- Important Employee Benefit Program Notices -->
+          <a
+            href="./pdfs/Important-Employee-Benefit-Program-Notices-2023.pdf"
+            target="_blank"
+            class="nav-item"
+          >
+            <i class="bx bxs-file-pdf"></i>
+            <span>Important Employee Benefit Program Notices</span>
           </a>
           <a href="#carriers" class="nav-item">
             <i class="bx bx-building-house"></i>
@@ -933,6 +952,11 @@
               <h4>Options for Continuing Life Insurance</h4>
               <p>Information about continuing life insurance coverage</p>
             </a>
+          </div>
+
+          <!-- Important Documents and Forms -->
+          <div class="content-subsection mt-4">
+            <docs-forms-component></docs-forms-component>
           </div>
 
           <!-- Applying for Life & LTD Section -->
