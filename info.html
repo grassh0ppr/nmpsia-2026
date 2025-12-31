@@ -116,46 +116,16 @@
           </button>
         </div>
         <nav class="sidebar-nav">
-          <a
-            href="#assocCarrCons"
-            class="nav-item active"
-            data-section="assocCarrCons"
-          >
-            <i class="bx bx-phone"></i>
-            <span>Carrier Contacts</span>
-          </a>
-          <a href="#docsForms" class="nav-item" data-section="docsForms">
-            <i class="bx bxs-file-pdf"></i>
-            <span>Important Documents and Forms</span>
-          </a>
-          <a href="#findProvider" class="nav-item" data-section="findProvider">
-            <i class="bx bx-search"></i>
-            <span>Find a Provider by Carrier</span>
-          </a>
           <a href="#statReports" class="nav-item" data-section="statReports">
             <i class="bx bx-bar-chart-alt-2"></i>
             <span>NMPSIA Statistical Reporting</span>
           </a>
-          <a href="./risk.html" class="nav-item" target="_blank">
-            <i class="bx bx-shield"></i>
-            <span>Risk Division</span>
-          </a>
+
           <a href="./district-contacts.html" class="nav-item" target="_blank">
             <i class="bx bx-building"></i>
             <span>NMPSIA Participating Employer Contact Database</span>
           </a>
-          <a
-            href="#domPartnerCoverage"
-            class="nav-item"
-            data-section="domPartnerCoverage"
-          >
-            <i class="bx bx-group"></i>
-            <span>Employer Domestic Partner Coverage</span>
-          </a>
-          <a href="./employer-trainings.html" class="nav-item" target="_blank">
-            <i class="bx bx-video"></i>
-            <span>NMPSIA Training Tutorials and Videos</span>
-          </a>
+
           <a href="#acaNotice" class="nav-item" data-section="acaNotice">
             <i class="bx bx-info-circle"></i>
             <span>Mandatory ACA Notice for New Hires</span>
@@ -163,57 +133,14 @@
         </nav>
       </aside>
       <main class="benefits-main" data-default-section="assocCarrCons">
-        <!-- ASSOCIATED CARRIER CONTACTS -->
-        <div id="assocCarrCons" class="content-section">
-          <carrier-contacts></carrier-contacts>
-        </div>
-
-        <!-- IMPORTANT DOCUMENTS AND FORMS -->
-        <div id="docsForms" class="content-section">
-          <docs-forms-component></docs-forms-component>
-        </div>
-
-        <!-- FIND A PROVIDER BY CARRIER -->
-        <div id="findProvider" class="content-section">
-          <find-a-provider></find-a-provider>
-        </div>
-
         <!-- STATISTICAL REPORTING -->
         <div id="statReports" class="content-section">
-          <stat-reporting-component></stat-reporting-component>
-        </div>
-
-        <!-- EMPLOYER DOM PARTNER COVERAGE -->
-        <div id="domPartnerCoverage" class="content-section">
           <div class="heading-and-element-flexbox">
-            <h2 class="display-4">Employer Domestic Partner Coverage</h2>
+            <h2 class="display-4">NMPSIA Statistical Reports</h2>
             <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
           </div>
-          <ul class="content-list grid-layout">
-            <li>
-              <i class="bx bxs-file-pdf"></i>
-              <a href="/pdfs/Domestic_Partner_Resolution_Te.pdf" target="_blank"
-                >Domestic Partner Resolution Template</a
-              >
-            </li>
-            <li>
-              <i class="bx bxs-file-pdf"></i>
-              <a
-                href="/pdfs/Updated_Fillable_Affidavit_for_Domestic_Partnership_4.9.19.pdf"
-                target="_blank"
-                >Affidavit for Domestic Partner</a
-              >
-            </li>
-            <li>
-              <i class="bx bxs-file-pdf"></i>
-              <a
-                href="/pdfs/Updated_Fillable_Termination_of_Domestic_Partnership_4.9.19.pdf"
-                target="_blank"
-                >Affidavit for Termination of Domestic<br />
-                Partnership</a
-              >
-            </li>
-          </ul>
+          <hr />
+          <stat-reporting-component></stat-reporting-component>
         </div>
 
         <!-- MANDATORY ACA NOTICE FOR NEW HIRES -->

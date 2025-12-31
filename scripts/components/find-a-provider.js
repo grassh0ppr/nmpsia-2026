@@ -1,7 +1,6 @@
 class FindAProvider extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
-            <h3 class="display-5">Find a Provider</h3>
             <div id="links-container"></div>
             <p>
                 If you need assistance, contact the carrier

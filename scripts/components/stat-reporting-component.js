@@ -1,11 +1,8 @@
 class StatReporting extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = /*html*/ `
-        <div class="heading-and-element-flexbox">
-                    <h2 class="display-4">NMPSIA Statistical Reports</h2>
-                    <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo">
-                </div>
-                <hr>
+  connectedCallback() {
+    this.innerHTML = /*html*/ `
+       
+              
                 <ul class="content-list with-descriptions">
                     <li>
                         <span>
@@ -46,7 +43,7 @@ class StatReporting extends HTMLElement {
                     </li>
                 </ul>
         `;
-    }
+  }
 }
 
-customElements.define('stat-reporting-component', StatReporting);
+customElements.define("stat-reporting-component", StatReporting);
