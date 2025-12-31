@@ -367,82 +367,99 @@ const monthlyNewsKits = {
   ],
 };
 
-const accordion = document.getElementById("accordion2024");
+// Function to initialize the wellness news accordion
+function initializeWellnessNewsAccordion() {
+  const accordion = document.getElementById("accordion2024");
+  
+  // Only initialize if accordion exists and hasn't been initialized yet
+  if (!accordion || accordion.innerHTML.trim() !== "") {
+    return;
+  }
 
-let accordionContent = ``; // Initialize the accordion content as an empty string
+  let accordionContent = ``; // Initialize the accordion content as an empty string
 
-Object.keys(monthlyNewsKits).forEach((month, index) => {
-  const collapseId = `collapse${index + 1}`;
+  Object.keys(monthlyNewsKits).forEach((month, index) => {
+    const collapseId = `collapse${index + 1}`;
 
-  // generate the list of files with appropriate icons
-  const fileList = monthlyNewsKits[month]
-    .map((file) => {
-      // Determine icon based on file extension
-      let iconClass = "bx bxs-file"; // default icon
-      const fileExtension = file.url.split(".").pop().toLowerCase();
+    // generate the list of files with appropriate icons
+    const fileList = monthlyNewsKits[month]
+      .map((file) => {
+        // Determine icon based on file extension
+        let iconClass = "bx bxs-file"; // default icon
+        const fileExtension = file.url.split(".").pop().toLowerCase();
 
-      switch (fileExtension) {
-        case "pdf":
-          iconClass = "bx bxs-file-pdf";
-          break;
-        case "docx":
-        case "doc":
-          iconClass = "bx bxs-file-doc";
-          break;
-        case "xlsx":
-        case "xls":
-          iconClass = "bx bxs-file-xls";
-          break;
-        case "pptx":
-        case "ppt":
-          iconClass = "bx bxs-file-ppt";
-          break;
-        case "jpg":
-        case "jpeg":
-        case "png":
-        case "gif":
-          iconClass = "bx bxs-file-image";
-          break;
-        case "zip":
-        case "rar":
-          iconClass = "bx bxs-file-archive";
-          break;
-        case "txt":
-          iconClass = "bx bxs-file-txt";
-          break;
-        case "html":
-        case "htm":
-          iconClass = "bx bxs-file-html";
-          break;
-        default:
-          iconClass = "bx bxs-file-blank";
-      }
+        switch (fileExtension) {
+          case "pdf":
+            iconClass = "bx bxs-file-pdf";
+            break;
+          case "docx":
+          case "doc":
+            iconClass = "bx bxs-file-doc";
+            break;
+          case "xlsx":
+          case "xls":
+            iconClass = "bx bxs-file-xls";
+            break;
+          case "pptx":
+          case "ppt":
+            iconClass = "bx bxs-file-ppt";
+            break;
+          case "jpg":
+          case "jpeg":
+          case "png":
+          case "gif":
+            iconClass = "bx bxs-file-image";
+            break;
+          case "zip":
+          case "rar":
+            iconClass = "bx bxs-file-archive";
+            break;
+          case "txt":
+            iconClass = "bx bxs-file-txt";
+            break;
+          case "html":
+          case "htm":
+            iconClass = "bx bxs-file-html";
+            break;
+          default:
+            iconClass = "bx bxs-file-blank";
+        }
 
-      return `<li class="d-flex gap-1 align-items-start"><i class="${iconClass}"></i> <a href="${file.url}" target="_blank">${file.name}</a></li>`;
-    })
-    .join("");
+        return `<li class="d-flex gap-1 align-items-start"><i class="${iconClass}"></i> <a href="${file.url}" target="_blank">${file.name}</a></li>`;
+      })
+      .join("");
 
-  // create the accordion item with template literals
-  accordionContent += `
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading${index + 1}">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
-                    ${month}
-                </button>
-            </h2>
-            <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="heading${
-    index + 1
-  }" data-bs-parent="#accordion2024">
-                <div class="accordion-body">
-                    <ul class="content-list">
-                        ${fileList}
-                    </ul>
-                </div>
-            </div>
-        </div>
-    `;
-});
+    // create the accordion item with template literals
+    accordionContent += `
+          <div class="accordion-item">
+              <h2 class="accordion-header" id="heading${index + 1}">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
+                      ${month}
+                  </button>
+              </h2>
+              <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="heading${
+      index + 1
+    }" data-bs-parent="#accordion2024">
+                  <div class="accordion-body">
+                      <ul class="content-list">
+                          ${fileList}
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      `;
+  });
 
-accordion.innerHTML = accordionContent;
+  accordion.innerHTML = accordionContent;
+}
+
+// Try to initialize immediately (for wellness.html)
+// If DOM is ready, initialize; otherwise wait for DOMContentLoaded
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializeWellnessNewsAccordion);
+} else {
+  // DOM is already ready, try to initialize
+  initializeWellnessNewsAccordion();
+}
 
 // accordion 2025 innerhtml?
