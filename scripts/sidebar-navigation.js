@@ -24,6 +24,8 @@ class SidebarNavigation {
       sectionsSelector: ".content-section",
       scrollOffset: 100,
       mobileBreakpoint: 1000,
+      hideMode: false, // When true, shows/hides sections instead of scrolling
+      defaultSection: null, // Default section to show in hide mode
       ...options,
     };
 
@@ -45,6 +47,11 @@ class SidebarNavigation {
       return;
     }
 
+    // Initialize hide mode if enabled
+    if (this.config.hideMode) {
+      this.initializeHideMode();
+    }
+
     this.setupEventListeners();
     this.handleInitialHash();
     this.setupIOSFixes();
@@ -59,6 +66,7 @@ class SidebarNavigation {
       overlay: document.getElementById(this.config.overlayId),
       sidebarLinks: document.querySelectorAll(this.config.sidebarLinksSelector),
       sections: document.querySelectorAll(this.config.sectionsSelector),
+      main: document.querySelector("main[data-default-section]"),
     };
   }
 
@@ -113,12 +121,19 @@ class SidebarNavigation {
 
         // Check if this is a same-page anchor link (starts with #)
         if (href && href.startsWith("#")) {
-          // This is a same-page anchor link - handle with smooth scrolling
+          // This is a same-page anchor link
           e.preventDefault();
           e.stopPropagation();
 
           const targetId = href.substring(1);
-          this.scrollToSection(targetId);
+
+          // Use hide mode if enabled, otherwise scroll
+          if (this.config.hideMode) {
+            this.showSection(targetId);
+          } else {
+            this.scrollToSection(targetId);
+          }
+
           this.updateActiveLink(link);
 
           // Update URL hash
@@ -139,37 +154,39 @@ class SidebarNavigation {
       });
     });
 
-    // Scroll spy
-    let scrollTimeout;
-    const handleScrollSpy = () => {
-      if (scrollTimeout) return;
+    // Scroll spy (only if not in hide mode)
+    if (!this.config.hideMode) {
+      let scrollTimeout;
+      const handleScrollSpy = () => {
+        if (scrollTimeout) return;
 
-      scrollTimeout = setTimeout(
-        () => {
-          const scrollPosition = window.scrollY + 150;
+        scrollTimeout = setTimeout(
+          () => {
+            const scrollPosition = window.scrollY + 150;
 
-          this.elements.sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute("id");
+            this.elements.sections.forEach((section) => {
+              const sectionTop = section.offsetTop;
+              const sectionHeight = section.offsetHeight;
+              const sectionId = section.getAttribute("id");
 
-            if (
-              scrollPosition >= sectionTop &&
-              scrollPosition < sectionTop + sectionHeight
-            ) {
-              const correspondingLink = document.querySelector(
-                `${this.config.sidebarLinksSelector}[href="#${sectionId}"]`
-              );
-              this.updateActiveLink(correspondingLink);
-            }
-          });
-          scrollTimeout = null;
-        },
-        this.isIOS ? 100 : 16
-      ); // Throttle more on iOS
-    };
+              if (
+                scrollPosition >= sectionTop &&
+                scrollPosition < sectionTop + sectionHeight
+              ) {
+                const correspondingLink = document.querySelector(
+                  `${this.config.sidebarLinksSelector}[href="#${sectionId}"]`
+                );
+                this.updateActiveLink(correspondingLink);
+              }
+            });
+            scrollTimeout = null;
+          },
+          this.isIOS ? 100 : 16
+        ); // Throttle more on iOS
+      };
 
-    window.addEventListener("scroll", handleScrollSpy, { passive: true });
+      window.addEventListener("scroll", handleScrollSpy, { passive: true });
+    }
 
     // Hash changes
     window.addEventListener("hashchange", () => {
@@ -178,7 +195,11 @@ class SidebarNavigation {
         `${this.config.sidebarLinksSelector}[href="#${targetId}"]`
       );
       if (targetLink) {
-        this.scrollToSection(targetId);
+        if (this.config.hideMode) {
+          this.showSection(targetId);
+        } else {
+          this.scrollToSection(targetId);
+        }
         this.updateActiveLink(targetLink);
       }
     });
@@ -284,20 +305,78 @@ class SidebarNavigation {
   }
 
   handleInitialHash() {
-    if (window.location.hash) {
-      const targetId = window.location.hash.substring(1);
+    if (this.config.hideMode) {
+      // In hide mode, show default section or section from hash
+      const targetId = window.location.hash
+        ? window.location.hash.substring(1)
+        : this.config.defaultSection || "overview";
+
       const targetLink = document.querySelector(
         `${this.config.sidebarLinksSelector}[href="#${targetId}"]`
       );
-      if (targetLink) {
-        setTimeout(
-          () => {
-            this.scrollToSection(targetId);
+
+      if (targetLink || targetId) {
+        setTimeout(() => {
+          this.showSection(targetId);
+          if (targetLink) {
             this.updateActiveLink(targetLink);
-          },
-          this.isIOS ? 200 : 100
-        );
+          }
+        }, 50);
       }
+    } else {
+      // Original scroll behavior
+      if (window.location.hash) {
+        const targetId = window.location.hash.substring(1);
+        const targetLink = document.querySelector(
+          `${this.config.sidebarLinksSelector}[href="#${targetId}"]`
+        );
+        if (targetLink) {
+          setTimeout(
+            () => {
+              this.scrollToSection(targetId);
+              this.updateActiveLink(targetLink);
+            },
+            this.isIOS ? 200 : 100
+          );
+        }
+      }
+    }
+  }
+
+  initializeHideMode() {
+    // Hide all sections initially
+    this.elements.sections.forEach((section) => {
+      section.classList.add("wellness-section-hidden");
+    });
+
+    // Get default section from data attribute or config
+    if (!this.config.defaultSection && this.elements.main) {
+      this.config.defaultSection = this.elements.main.getAttribute(
+        "data-default-section"
+      );
+    }
+  }
+
+  showSection(sectionId) {
+    // Hide all sections first (batch DOM updates)
+    this.elements.sections.forEach((section) => {
+      section.classList.remove("wellness-section-visible");
+      section.classList.add("wellness-section-hidden");
+    });
+
+    // Show the target section with fade-in
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+      // Use requestAnimationFrame to batch the show operation
+      requestAnimationFrame(() => {
+        // Remove hidden class first
+        targetSection.classList.remove("wellness-section-hidden");
+
+        // Then trigger fade-in animation on next frame for smooth transition
+        requestAnimationFrame(() => {
+          targetSection.classList.add("wellness-section-visible");
+        });
+      });
     }
   }
 
@@ -335,8 +414,17 @@ class SidebarNavigation {
 // Auto-initialize with default configuration
 // This will work for most pages with the standard benefits-sidebar setup
 document.addEventListener("DOMContentLoaded", () => {
-  // Check if we have the standard benefits sidebar
-  if (document.getElementById("benefitsSidebar")) {
+  // Check if we're on the wellness page (has data-default-section on main)
+  const wellnessMain = document.querySelector("main[data-default-section]");
+  if (wellnessMain && document.getElementById("benefitsSidebar")) {
+    const defaultSection = wellnessMain.getAttribute("data-default-section");
+    new SidebarNavigation({
+      hideMode: true,
+      defaultSection: defaultSection,
+    });
+  }
+  // Check if we have the standard benefits sidebar (not wellness page)
+  else if (document.getElementById("benefitsSidebar")) {
     new SidebarNavigation();
   }
 

@@ -2342,6 +2342,27 @@ body.modern-body {
 
 /* ===== WELLNESS PAGE SPECIFIC STYLES ===== */
 
+/* Fade-in animation for wellness sections */
+.content-section.wellness-section-hidden {
+  display: none !important;
+}
+
+.content-section.wellness-section-visible {
+  display: block !important;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Improve logo placement in section headers */
 .heading-and-element-flexbox {
   display: flex;
