@@ -153,6 +153,10 @@ class ApplyingLifeLTD extends HTMLElement {
                       class="bx bxs-file-pdf"></i> Life Claim Packet</a>
                 </li>
                 <li>
+                  <a class="dropdown-item" target="_blank" href="/pdfs/NMPSIA_Filing_a_Life_Claim.pdf"><i
+                      class="bx bxs-file-pdf"></i> Filing a Life Claim</a>
+                </li>
+                <li>
                   <a class="dropdown-item" target="_blank" href="https://www.standard.com/eforms/9178_645549.pdf"><i
                       class="bx bxs-file-pdf"></i> Portability
                     Application</a>
@@ -198,11 +202,20 @@ class ApplyingLifeLTD extends HTMLElement {
                       class="bx bxs-file-pdf"></i> Beneficiary Questions</a>
                 </li>
                 <li>
+                  <a class="dropdown-item" target="_blank" href="/pdfs/BeneficiaryDesignationQuestion.pdf"><i
+                      class="bx bxs-file-pdf"></i> Beneficiary Questions and Answers</a>
+                </li>
+                <li>
                   <a class="dropdown-item" target="_blank"
                     href="/pdfs/Options_for_Continuing_Life_Insurance_8.2020-1.pdf"><i class="bx bxs-file-pdf"></i>
                     Options for Continuing
                     Life Insurance</a>
-                </li>
+                </li>  
+                <li>
+                  <a class="dropdown-item" target="_blank"
+                    href="/pdfs/Options_for_Continuing_Life_Insurance_Due_to_Retirement_8.2020-1.pdf"><i class="bx bxs-file-pdf"></i>
+                    Options for Continuing Life Insurance Due to Retirement</a>
+                </li>              
                 <li>
                   <a class="dropdown-item" target="_blank" href="https://www.standard.com/eforms/18955_645549.pdf"><i
                       class="bx bxs-file-pdf"></i> Travel Assistance and
@@ -248,4 +261,4 @@ class ApplyingLifeLTD extends HTMLElement {
   }
 }
 
-customElements.define('applying-life-ltd-info', ApplyingLifeLTD);
+customElements.define("applying-life-ltd-info", ApplyingLifeLTD);
