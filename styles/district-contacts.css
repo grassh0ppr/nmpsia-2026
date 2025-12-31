@@ -505,6 +505,36 @@ body.contacts-modern .no-results {
   font-style: italic;
 }
 
+body.contacts-modern .no-results .retry-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: none;
+  background: #204f9a;
+  color: white;
+}
+
+body.contacts-modern .no-results .retry-button:hover:not(:disabled) {
+  background: #163465;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(32, 79, 154, 0.3);
+}
+
+body.contacts-modern .no-results .retry-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+body.contacts-modern .no-results .retry-button .bx-spin {
+  animation: spin 1s linear infinite;
+}
+
 /* ========================================
    ANIMATIONS
    ======================================== */

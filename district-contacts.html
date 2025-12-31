@@ -321,8 +321,41 @@
       // Show error message
       function showError(message) {
         const noResults = document.getElementById("noResults");
-        noResults.querySelector("h3").textContent = "Error";
-        noResults.querySelector("p").textContent = message;
+        const icon = noResults.querySelector("i");
+        const heading = noResults.querySelector("h3");
+        const paragraph = noResults.querySelector("p");
+
+        // Update icon to error icon
+        if (icon) {
+          icon.className = "bx bx-error-circle";
+          icon.style.fontSize = "3rem";
+          icon.style.color = "#dc3545";
+        }
+
+        heading.textContent = "Error";
+        paragraph.textContent = message;
+
+        // Add retry button if it doesn't exist
+        let retryButton = noResults.querySelector(".retry-button");
+        if (!retryButton) {
+          retryButton = document.createElement("button");
+          retryButton.className = "btn btn-primary retry-button mt-3";
+          retryButton.innerHTML = '<i class="bx bx-refresh"></i> Retry';
+          retryButton.onclick = function () {
+            retryButton.disabled = true;
+            retryButton.innerHTML =
+              '<i class="bx bx-loader-alt bx-spin"></i> Retrying...';
+            noResults.style.display = "none";
+            document.getElementById("loadingState").style.display = "flex";
+            fetchDistrictContacts();
+          };
+          noResults.appendChild(retryButton);
+        } else {
+          retryButton.disabled = false;
+          retryButton.innerHTML = '<i class="bx bx-refresh"></i> Retry';
+          retryButton.style.display = "inline-flex";
+        }
+
         noResults.style.display = "block";
       }
 
@@ -373,6 +406,8 @@
             filteredDistricts = [...allDistricts];
 
             hideLoading();
+            // Hide error state if it was showing
+            document.getElementById("noResults").style.display = "none";
             renderDistricts();
             updateStats();
           } else {
@@ -407,9 +442,26 @@
       function renderDistricts() {
         const grid = document.getElementById("districtsGrid");
         const noResults = document.getElementById("noResults");
+        const icon = noResults.querySelector("i");
+        const heading = noResults.querySelector("h3");
+        const paragraph = noResults.querySelector("p");
+        const retryButton = noResults.querySelector(".retry-button");
 
         if (filteredDistricts.length === 0) {
           grid.style.display = "none";
+          // Reset to "no results" state (not error state)
+          if (icon) {
+            icon.className = "bx bx-search";
+            icon.style.fontSize = "3rem";
+            icon.style.color = "#6c757d";
+          }
+          heading.textContent = "No districts found";
+          paragraph.textContent =
+            "Try adjusting your search terms or browse all districts below.";
+          // Hide retry button for search results, not errors
+          if (retryButton) {
+            retryButton.style.display = "none";
+          }
           noResults.style.display = "block";
           return;
         }
