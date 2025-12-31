@@ -704,7 +704,7 @@ body.modern-body {
 }
 
 .content-section i.bx {
-  color: #e6eafd;
+  /* color: #e6eafd; */
   font-size: 20px;
   line-height: 1.4;
 }
@@ -789,7 +789,8 @@ body.modern-body {
 .carrier-cards,
 .plans-grid,
 .resources-grid,
-.tutorials-grid {
+.tutorials-grid,
+.all-carriers-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1.5rem;
@@ -810,7 +811,8 @@ body.modern-body {
 .benefits-stat-card,
 .carrier-card,
 .plan-card,
-.tutorial-card {
+.tutorial-card,
+.carrier-grid-card {
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -827,7 +829,8 @@ body.modern-body {
 .benefits-stat-card:hover,
 .carrier-card:hover,
 .plan-card:hover,
-.tutorial-card:hover {
+.tutorial-card:hover,
+.carrier-grid-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
@@ -878,6 +881,53 @@ body.modern-body {
 .carrier-card,
 .plan-card {
   padding: 1.5rem;
+}
+
+/* Carrier Grid Card Styles */
+.carrier-grid-card {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.carrier-grid-card:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+.carrier-grid-logo {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.carrier-grid-logo img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.carrier-grid-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0.5rem 0 0.25rem 0;
+}
+
+.carrier-grid-type {
+  font-size: 0.9rem;
+  color: #667eea;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .resource-card {
@@ -1457,7 +1507,7 @@ body.modern-body {
 
 /* ===== MODAL STYLES ===== */
 .modal-xl {
-  max-width: 90%;
+  max-width: 1200px;
 }
 
 .modal-content {

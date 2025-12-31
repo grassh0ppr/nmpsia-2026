@@ -66,6 +66,33 @@
     margin-bottom: 0.5rem;
   }
 
+  .all-carriers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+  }
+
+  .carrier-grid-card {
+    padding: 1.5rem 1rem;
+    min-height: 180px;
+  }
+
+  .carrier-grid-logo {
+    height: 60px;
+    margin-bottom: 0.75rem;
+  }
+
+  .carrier-grid-logo img {
+    max-height: 60px;
+  }
+
+  .carrier-grid-name {
+    font-size: 1rem;
+  }
+
+  .carrier-grid-type {
+    font-size: 0.85rem;
+  }
+
   .hero-btn-container {
     flex-direction: column;
     align-items: center;
