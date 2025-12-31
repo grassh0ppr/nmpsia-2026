@@ -36,6 +36,18 @@ class DentalHealth extends HTMLElement {
             <div class="modal-body">
               <ul class="content-list">
               <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a href="/pdfs/Delta_Dental_Info_2024_2025/DDNM PCS Flyer 2024-006-DDNM-MKT.pdf"
+            target="_blank">
+            Preventative Care Security</a>
+        </li>
+        <li>
+        <i class="bx bxs-file-pdf"></i>
+        <a href="/pdfs/DDNM Toothbrush care RC 2024-061-DDNM-MKT.pdf" target="_blank"> Delta Dental -
+          Toothbrush
+          Truths</a>
+      </li>
+              <li>
               <i class="bx bxs-file-pdf"></i>
               <a
                 href="/PDFs/The_Risks_of_Oral_Piercings_DDNM.pdf"

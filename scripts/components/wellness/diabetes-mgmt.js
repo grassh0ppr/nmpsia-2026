@@ -34,6 +34,28 @@ class DiabetesMgmt extends HTMLElement {
           >
         </li>
       </ul>
+      <h3 class="sub-heading">United Concordia</h3>
+      <ul class="content-list">
+      <li>
+      <i class="bx bxs-file-pdf"></i>
+      <a target="_blank" href="PDFs/Diabetes_and_Gum_Disease.pdf">
+        Diabetes and
+        Your Oral
+        Health</a>
+    </li>
+    <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/pdfs/Smile_for_HealthWellness 2023 New Logo.pdf">
+            Smile for Health&reg;
+            Wellness</a>
+        </li>
+        <li>
+        <i class="bx bxs-file-pdf"></i>
+        <a target="_blank" href="https://nmpsia.com/pdfs/UCDental_Value_of_Going_infographic-2022.pdf">
+          The Value of Going to the
+          Dentist</a>
+      </li>
+      </ul>
       
         `;
   }
