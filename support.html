@@ -74,6 +74,18 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        overflow: hidden;
+      }
+      .support-card > div {
+        flex: 1;
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+      .support-card a {
+        word-break: break-all;
+        display: inline-block;
+        max-width: 100%;
       }
       .support-card:hover {
         transform: translateY(-4px);
@@ -195,7 +207,7 @@
             </section>
 
             <!-- Gallery -->
-            <section class="content-section">
+            <!-- <section class="content-section">
               <h3><i class="bx bx-image-alt me-2"></i>Recent Events</h3>
               <div class="support-gallery mt-3">
                 <div
@@ -242,7 +254,7 @@
                   style="background-image: url('images/support_bcbs.jpg')"
                 ></div>
               </div>
-            </section>
+            </section> -->
           </div>
 
           <div class="col-lg-4">

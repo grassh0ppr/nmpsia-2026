@@ -48,36 +48,30 @@ class StopItContent extends HTMLElement {
 
   <h3 class="sub-heading">Helpful Resources</h3>
 
-  <div>
-    <div
-      class="my-5 mb-5"
-      style="padding: 56.25% 0 0 0; position: relative"
-    >
+  <div class="video-grid">
+    <div class="video-container">
       <iframe
         src="https://player.vimeo.com/video/1005921288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-        frameborder="0"
         allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
         title="Recognizing and Reporting Sexual Abuse in Schools - High School"
       >
       </iframe>
     </div>
 
-    <div class="my-5" style="padding: 56.25% 0 0 0; position: relative">
+    <div class="video-container">
       <iframe
         src="https://player.vimeo.com/video/1005921357?badge=0&autopause=0&player_id=0&app_id=58479"
         allow="autoplay; fullscreen; picture-in-picture"
         allowfullscreen
-        frameborder="0"
       >
       </iframe>
     </div>
 
-    <div class="my-5" style="padding: 56.25% 0 0 0; position: relative">
+    <div class="video-container">
       <iframe
         src="https://player.vimeo.com/video/1005921234?badge=0&autopause=0&player_id=0&app_id=58479"
         allow="autoplay; fullscreen; picture-in-picture"
         allowfullscreen
-        frameborder="0"
       >
       </iframe>
     </div>
