@@ -109,6 +109,4 @@ class DocsForms extends HTMLElement {
   }
 }
 
-customElements.define('docs-forms-component', DocsForms);
-
-
+customElements.define("docs-forms-component", DocsForms);
