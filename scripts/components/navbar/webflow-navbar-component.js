@@ -78,7 +78,7 @@ class WebflowNavbar extends HTMLElement {
                   <a href="./benefits.html" class="dropdown-link w-dropdown-link"
                     >Carrier Benefits Information</a
                   >
-                  <a href="./premiums-er.html" class="dropdown-link w-dropdown-link"
+                  <a href="./premiums.html" class="dropdown-link w-dropdown-link"
                     >Benefit Premiums</a
                   >
                   <a href="./info.html" class="dropdown-link w-dropdown-link"
