@@ -33,22 +33,6 @@ class DocsForms extends HTMLElement {
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a
-            href="/pdfs/Schedule_B_for_Birth_Registration_2013-01-17.pdf"
-            target="_blank"
-            >Schedule B for Birth Registration</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
-            href="/pdfs/Schedule_C_for_Marriage_Registration_2013-01-17.pdf"
-            target="_blank"
-            >Schedule C for Marriage Registration</a
-          >
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a
             href="/pdfs/Sample_Loss_of_Coverage_Notice_Form.pdf"
             target="_blank"
           >
