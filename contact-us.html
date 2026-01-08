@@ -72,6 +72,619 @@
         background-repeat: no-repeat;
         overflow-x: hidden;
       }
+
+      /* Enhanced Contact Form Styles */
+      .new-form-container {
+        background: rgba(255, 255, 255, 0.98) !important;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      /* Improved header section */
+      .new-form-container .main-section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 3px solid #667eea;
+      }
+
+      .new-form-container .main-section-header h2 {
+        flex: 1;
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        letter-spacing: -0.02em;
+      }
+
+      .new-form-container .main-section-header .logo {
+        width: 160px;
+        height: auto;
+        flex-shrink: 0;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+      }
+
+      /* Improved intro text */
+      .new-form-container > p {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #495057;
+        margin-bottom: 1.25rem;
+      }
+
+      .new-form-container > p a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      .new-form-container > p a:hover {
+        color: #764ba2;
+        text-decoration: underline;
+      }
+
+      .new-form-container > p i {
+        color: #667eea;
+        margin-right: 0.5rem;
+      }
+
+      /* Form section grouping */
+      .new-form-container form {
+        margin-top: 2.5rem;
+      }
+
+      /* Enhanced form sections */
+      .form-section {
+        background: #f8f9fa;
+        border-radius: 12px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+      }
+
+      .form-section:hover {
+        border-color: #667eea;
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+      }
+
+      .form-section-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+        border-bottom: 2px solid #dee2e6;
+      }
+
+      .form-section-description {
+        color: #6c757d;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      /* Contact type selector */
+      .new-form-container .form-label.bold {
+        font-weight: 700;
+        font-size: 1.05rem;
+        color: #2c3e50;
+        margin-bottom: 0.75rem;
+        display: block;
+      }
+
+      .new-form-container .form-select {
+        font-size: 1rem;
+        padding: 0.875rem 1rem;
+      }
+
+      /* Assist section styling */
+      #NMPSIA,
+      #Erisa {
+        display: none; /* Hidden by default, shown via JavaScript based on dropdown selection */
+        background: #ffffff;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        border: 1px solid #e9ecef;
+        border-left: 4px solid #667eea;
+      }
+
+      #NMPSIA p,
+      #Erisa p {
+        color: #495057;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 1.25rem;
+        font-weight: 500;
+      }
+
+      /* Improved checkbox layout */
+      #NMPSIA .form-check,
+      #Erisa .form-check {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.875rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+        border: 1px solid #e9ecef;
+        transition: all 0.2s ease;
+        gap: 0.75rem;
+        min-height: 48px;
+        box-sizing: border-box;
+      }
+
+      #NMPSIA .form-check:hover,
+      #Erisa .form-check:hover {
+        background: #f8f9fa;
+        border-color: #667eea;
+        transform: translateX(4px);
+      }
+
+      #NMPSIA .form-check-input,
+      #Erisa .form-check-input {
+        margin: 0;
+        cursor: pointer;
+        width: 1.25rem;
+        height: 1.25rem;
+        flex-shrink: 0;
+        align-self: center;
+      }
+
+      #NMPSIA .form-check-label,
+      #Erisa .form-check-label {
+        flex: 1;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #2c3e50;
+        font-weight: 500;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      /* Form field improvements */
+      .new-form-container .form-control,
+      .new-form-container .form-select {
+        border: 2px solid #dee2e6;
+        border-radius: 8px;
+        padding: 0.875rem 1rem;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background-color: #ffffff;
+      }
+
+      .new-form-container .form-control:focus,
+      .new-form-container .form-select:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.15);
+        outline: none;
+        background-color: #ffffff;
+      }
+
+      .new-form-container .form-control:hover,
+      .new-form-container .form-select:hover {
+        border-color: #adb5bd;
+      }
+
+      .new-form-container .form-text {
+        font-size: 0.875rem;
+        color: #6c757d;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+      }
+
+      /* Field group styling */
+      .new-form-container .mb-3 {
+        margin-bottom: 1.75rem !important;
+      }
+
+      .new-form-container .mt-4 {
+        margin-top: 2rem !important;
+      }
+
+      .new-form-container .my-3 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #2c3e50;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e9ecef;
+      }
+
+      /* Textarea styling */
+      .new-form-container textarea.form-control {
+        min-height: 120px;
+        resize: vertical;
+        font-family: inherit;
+      }
+
+      /* Email and phone section */
+      .contact-info-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+
+      .contact-info-group .form-check-label {
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      /* Random number section */
+      #randomNum {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        display: inline-block;
+        margin: 1rem 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+        min-width: 120px;
+        letter-spacing: 0.1em;
+      }
+
+      #randomNum:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+      }
+
+      /* Submit button enhancements */
+      .new-form-container .btn-primary {
+        margin-top: 2rem;
+        padding: 1rem 3rem;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        border-radius: 8px;
+        min-width: 200px;
+      }
+
+      .new-form-container .btn-primary i {
+        font-size: 1.2rem;
+        vertical-align: middle;
+      }
+
+      /* Quick Contact Guide Section */
+      .contact-guide-section {
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 16px;
+        padding: 2.5rem;
+        margin: 2.5rem 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .contact-guide-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 3px solid #667eea;
+      }
+
+      .contact-guide-icon {
+        font-size: 2.5rem;
+        color: #667eea;
+        flex-shrink: 0;
+      }
+
+      .contact-guide-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      .contact-guide-intro {
+        font-size: 1.1rem;
+        color: #495057;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-guide-important-note {
+        background: #fff3cd;
+        border-left: 4px solid #dc3545;
+        padding: 1rem 1.25rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        font-size: 1rem;
+        color: #856404;
+      }
+
+      .contact-guide-important-note i {
+        font-size: 1.5rem;
+        color: #dc3545;
+        flex-shrink: 0;
+        margin-top: 0.125rem;
+      }
+
+      .contact-guide-important-note strong {
+        color: #721c24;
+        font-weight: 700;
+      }
+
+      .contact-guide-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      /* Desktop: 2x2 grid */
+      @media (min-width: 992px) {
+        .contact-guide-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+        }
+      }
+
+      /* Large desktop: 4 across for very wide screens */
+      @media (min-width: 1440px) {
+        .contact-guide-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1.75rem;
+        }
+      }
+
+      .contact-guide-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 12px;
+        padding: 2rem;
+        color: #ffffff;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Dark overlay for better contrast */
+      .contact-guide-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.15);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .contact-guide-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .contact-guide-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      }
+
+      .contact-guide-card-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.2;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-guide-card-subtitle {
+        font-size: 0.95rem;
+        color: #ffffff;
+        margin: 0 0 1.25rem 0;
+        font-weight: 600;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-guide-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem 0;
+        flex: 1;
+      }
+
+      .contact-guide-list li {
+        padding: 0.5rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #ffffff;
+        font-weight: 500;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-guide-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        font-size: 1.5rem;
+        color: #ffffff;
+        line-height: 1.2;
+        font-weight: 700;
+      }
+
+      .contact-guide-card-note {
+        margin: 1rem 0 0 0;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: #ffffff;
+        font-weight: 500;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-guide-card-note strong {
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      .contact-guide-footer-note {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 1.25rem 1.5rem;
+        border-left: 4px solid #667eea;
+        margin-top: 1.5rem;
+      }
+
+      .contact-guide-footer-note p {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #495057;
+        line-height: 1.6;
+      }
+
+      .contact-guide-footer-note a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      .contact-guide-footer-note a:hover {
+        color: #764ba2;
+        text-decoration: underline;
+      }
+
+      /* Card color variations - Darkened for better contrast */
+      .employer-card {
+        background: linear-gradient(135deg, #1e7e59 0%, #138572 100%);
+        box-shadow: 0 4px 15px rgba(30, 126, 52, 0.4);
+      }
+
+      .employer-card:hover {
+        box-shadow: 0 8px 25px rgba(30, 126, 52, 0.5);
+      }
+
+      .erisa-card {
+        background: linear-gradient(135deg, #4e5ba2 0%, #5a3d7a 100%);
+        box-shadow: 0 4px 15px rgba(78, 91, 162, 0.4);
+      }
+
+      .erisa-card:hover {
+        box-shadow: 0 8px 25px rgba(78, 91, 162, 0.5);
+      }
+
+      .carrier-card {
+        background: linear-gradient(135deg, #c2185b 0%, #b71c1c 100%);
+        box-shadow: 0 4px 15px rgba(194, 24, 91, 0.4);
+      }
+
+      .carrier-card:hover {
+        box-shadow: 0 8px 25px rgba(194, 24, 91, 0.5);
+      }
+
+      .nmpsia-card {
+        background: linear-gradient(135deg, #1976d2 0%, #0277bd 100%);
+        box-shadow: 0 4px 15px rgba(25, 118, 210, 0.4);
+      }
+
+      .nmpsia-card:hover {
+        box-shadow: 0 8px 25px rgba(25, 118, 210, 0.5);
+      }
+
+      /* Responsive improvements */
+      @media (max-width: 768px) {
+        .new-form-container .main-section-header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 1.5rem;
+        }
+
+        .new-form-container .main-section-header h2 {
+          font-size: 2rem;
+        }
+
+        .new-form-container .main-section-header .logo {
+          width: 140px;
+        }
+
+        .contact-info-group {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        #NMPSIA .form-check,
+        #Erisa .form-check {
+          padding: 0.75rem;
+        }
+
+        .contact-guide-section {
+          padding: 1.5rem;
+          margin: 2rem 0;
+        }
+
+        .contact-guide-header {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.75rem;
+        }
+
+        .contact-guide-icon {
+          font-size: 2rem;
+        }
+
+        .contact-guide-title {
+          font-size: 1.5rem;
+        }
+
+        .contact-guide-grid {
+          grid-template-columns: 1fr;
+          gap: 1.25rem;
+        }
+
+        .contact-guide-card {
+          padding: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .new-form-container {
+          padding: 1.5rem 1rem;
+        }
+
+        .new-form-container .main-section-header h2 {
+          font-size: 1.75rem;
+        }
+
+        .form-section {
+          padding: 1.5rem 1rem;
+        }
+
+        #randomNum {
+          font-size: 1.5rem;
+          padding: 0.875rem 1.5rem;
+        }
+      }
     </style>
   </head>
 
@@ -113,240 +726,382 @@
           ></span
         >
       </p>
+
+      <!-- Quick Contact Guide Section -->
+      <div class="contact-guide-section">
+        <div class="contact-guide-header">
+          <i class="bx bx-phone-call contact-guide-icon"></i>
+          <h2 class="contact-guide-title">
+            Who You Gonna Call? Your Quick Contact Guide
+          </h2>
+        </div>
+
+        <p class="contact-guide-intro">
+          Not sure who to contact? Use this guide to find the right department
+          for your inquiry.
+        </p>
+
+        <div class="contact-guide-important-note">
+          <i class="bx bx-error-circle"></i>
+          <strong>Important note:</strong> The <strong>EMPLOYER</strong> is
+          always your first point of contact.
+        </div>
+
+        <div class="contact-guide-grid">
+          <!-- Employer Section -->
+          <div class="contact-guide-card employer-card">
+            <h3 class="contact-guide-card-title">Employer</h3>
+            <ul class="contact-guide-list">
+              <li>All general inquiries</li>
+              <li>Enrollment questions</li>
+              <li>Benefit questions</li>
+              <li>Eligibility verification</li>
+              <li>Premium payment issues</li>
+              <li>Forms and documentation</li>
+            </ul>
+            <p class="contact-guide-card-note">
+              <strong>Always contact your employer first</strong> before
+              reaching out to other departments.
+            </p>
+          </div>
+
+          <!-- Erisa Section -->
+          <div class="contact-guide-card erisa-card">
+            <h3 class="contact-guide-card-title">Erisa</h3>
+            <p class="contact-guide-card-subtitle">
+              NMPSIA Eligibility Administrative Office
+            </p>
+            <ul class="contact-guide-list">
+              <li>Enrollment issues</li>
+              <li>Eligibility questions</li>
+              <li>Premium billing</li>
+              <li>Premium collection</li>
+              <li>COBRA Continuation (medical, dental, or vision)</li>
+              <li>Retiree life continuation</li>
+              <li>Other administrative inquiries</li>
+            </ul>
+          </div>
+
+          <!-- Carrier Section -->
+          <div class="contact-guide-card carrier-card">
+            <h3 class="contact-guide-card-title">Carrier</h3>
+            <p class="contact-guide-card-subtitle">Insurance Providers</p>
+            <ul class="contact-guide-list">
+              <li>Claim submissions</li>
+              <li>Claim status inquiries</li>
+              <li>Provider network questions</li>
+              <li>Coverage benefits clarification</li>
+              <li>ID card requests</li>
+              <li>Pre-authorization requests</li>
+              <li>Plan-specific questions</li>
+            </ul>
+          </div>
+
+          <!-- NMPSIA Section -->
+          <div class="contact-guide-card nmpsia-card">
+            <h3 class="contact-guide-card-title">NMPSIA</h3>
+            <p class="contact-guide-card-subtitle">
+              New Mexico Public Schools Insurance Authority
+            </p>
+            <ul class="contact-guide-list">
+              <li>Benefit questions</li>
+              <li>Risk questions</li>
+              <li>Program information</li>
+              <li>Policy inquiries</li>
+              <li>General NMPSIA information</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-guide-footer-note">
+          <p>
+            <strong>Retirement & Pension Questions:</strong> For questions about
+            retirement benefits or pension, please contact your employer's Human
+            Resources department or visit the
+            <a href="./plan.html">NMPSIA Plan page</a> for additional resources.
+          </p>
+        </div>
+      </div>
+
       <form>
-        <div class="row">
-          <div class="col-12 col-md-6 mb-3">
-            <label for="contactType" class="form-label bold"
-              >Who would you like to contact?</label
-            >
-            <select
-              class="form-select"
-              name="contactType"
-              id="contactType"
-              aria-label="Who to contact"
-              required
-            >
-              <option selected>Choose one...</option>
-              <option value="1">
-                New Mexico Public Schools Insurance Authority
-              </option>
-              <option value="2">
-                NMPSIA Eligibility Administrative Office: Erisa Administrative
-                Services, Inc.
-              </option>
-            </select>
-          </div>
-        </div>
-        <p class="my-3 bold">What may we assist you with?</p>
-
-        <div id="NMPSIA">
-          <p>
-            Contact New Mexico Public Schools Insurance Authority, please make a
-            selection below and they will reach out to you:
-          </p>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="Benefit and Other Questions"
-              id="benefitsNQuestions"
-              name="chkNMPSIA"
-            />
-            <label class="form-check-label" for="benefitsNQuestions">
-              Benefit and Other Questions
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="Risk Question"
-              id="riskQuestion"
-              name="chkNMPSIA"
-            />
-            <label class="form-check-label" for="riskQuestion">
-              Risk Questions
-            </label>
-          </div>
-        </div>
-
-        <div id="Erisa">
-          <p>
-            Contact NMPSIA Eligibility Administrative Office: Erisa
-            Administrative Services, Inc., please make a selection below and
-            they will reach out to you:
-          </p>
-
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="Enrollment"
-              id="enrollCheck"
-              name="chkErisa"
-            />
-            <label class="form-check-label" for="enrollCheck">
-              Enrollment
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="eligibilityCheck"
-              value="Eligibility"
-              name="chkErisa"
-            />
-            <label class="form-check-label" for="eligibilityCheck">
-              Eligibility
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="Premium Billing"
-              id="billingCheck"
-              name="chkErisa"
-            />
-            <label class="form-check-label" for="billingCheck">
-              Premium billing
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="collectPremiumCheck"
-              name="chkErisa"
-              value="Premium Collection"
-            />
-            <label class="form-check-label" for="collectPremiumCheck">
-              Premium collection
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="COBRA Continuation for medical, dental or vision"
-              id="cobraCheck"
-              name="chkErisa"
-            />
-            <label class="form-check-label" for="cobraCheck">
-              COBRA Continuation for medical, dental, or vision
-            </label>
-          </div>
-
-          <div class="form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="retireeLifeCheck"
-              name="chkErisa"
-              value="Retiree Life Continuation"
-            />
-            <label class="form-check-label" for="retireeLifeCheck">
-              Retiree life continuation
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value="Other"
-              id="otherCheck"
-              name="chkErisa"
-            />
-            <label class="form-check-label" for="otherCheck"> Other </label>
-          </div>
-        </div>
-
-        <!-- who may we respond to about this inquiry? -->
-        <div class="mb-3">
-          <label
-            class="form-label mb-0"
-            for="txtinquiry"
-            style="font-weight: 700"
+        <div class="form-section">
+          <label for="contactType" class="form-label bold"
+            >Who would you like to contact?</label
           >
-            Who may we respond to about this inquiry?
-            <!-- <span style="color: red">*</span> -->
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="txtinquiry"
-            aria-describedby="nameInput"
-          />
-          <div id="nameInput" class="form-text">Please provide your name.</div>
+          <select
+            class="form-select"
+            name="contactType"
+            id="contactType"
+            aria-label="Who to contact"
+            required
+          >
+            <option selected>Choose one...</option>
+            <option value="1">
+              New Mexico Public Schools Insurance Authority
+            </option>
+            <option value="2">
+              NMPSIA Eligibility Administrative Office: Erisa Administrative
+              Services, Inc.
+            </option>
+          </select>
         </div>
-        <!-- provide employer's name -->
-        <p class="mb-0 mt-4 bold">Please provide your employer's name:</p>
-        <input
-          type="text"
-          class="form-control"
-          id="employerName"
-          aria-describedby="employerNameInput"
-        />
-        <div id="employerNameInput" class="form-text">
-          Please provide name of the school district or charter you work for.
-        </div>
-        <!-- what is your inquiry -->
-        <div class="my-3">
-          <label for="txtExplanation" class="form-label bold mb-0">
-            What is your inquiry?
-          </label>
-          <textarea
-            class="form-control"
-            id="txtExplanation"
-            rows="3"
-            aria-describedby="explainInput"
-          ></textarea>
-          <div id="explainInput" class="form-text">
-            Please provide a brief explanation.
+
+        <div class="form-section">
+          <h3 class="form-section-title">What may we assist you with?</h3>
+
+          <div id="NMPSIA">
+            <p class="form-section-description">
+              Contact New Mexico Public Schools Insurance Authority, please make
+              a selection below and they will reach out to you:
+            </p>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Benefit and Other Questions"
+                id="benefitsNQuestions"
+                name="chkNMPSIA"
+              />
+              <label class="form-check-label" for="benefitsNQuestions">
+                Benefit and Other Questions
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Risk Question"
+                id="riskQuestion"
+                name="chkNMPSIA"
+              />
+              <label class="form-check-label" for="riskQuestion">
+                Risk Questions
+              </label>
+            </div>
+          </div>
+
+          <div id="Erisa">
+            <p class="form-section-description">
+              Contact NMPSIA Eligibility Administrative Office: Erisa
+              Administrative Services, Inc., please make a selection below and
+              they will reach out to you:
+            </p>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Enrollment"
+                id="enrollCheck"
+                name="chkErisa"
+              />
+              <label class="form-check-label" for="enrollCheck">
+                Enrollment
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="eligibilityCheck"
+                value="Eligibility"
+                name="chkErisa"
+              />
+              <label class="form-check-label" for="eligibilityCheck">
+                Eligibility
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Premium Billing"
+                id="billingCheck"
+                name="chkErisa"
+              />
+              <label class="form-check-label" for="billingCheck">
+                Premium billing
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="collectPremiumCheck"
+                name="chkErisa"
+                value="Premium Collection"
+              />
+              <label class="form-check-label" for="collectPremiumCheck">
+                Premium collection
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="COBRA Continuation for medical, dental or vision"
+                id="cobraCheck"
+                name="chkErisa"
+              />
+              <label class="form-check-label" for="cobraCheck">
+                COBRA Continuation for medical, dental, or vision
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="retireeLifeCheck"
+                name="chkErisa"
+                value="Retiree Life Continuation"
+              />
+              <label class="form-check-label" for="retireeLifeCheck">
+                Retiree life continuation
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="Other"
+                id="otherCheck"
+                name="chkErisa"
+              />
+              <label class="form-check-label" for="otherCheck"> Other </label>
+            </div>
           </div>
         </div>
 
-        <!-- Please provide your email address and a good phone number -->
-        <div class="mb-3">
-          <p for="purposeOfRequest" class="bold mb-0">
-            Please provide your email address and a good phone number
-          </p>
-          <div class="form-text" id="phoneInput">
-            Please provide <em><b>BOTH</b></em> a phone number and an email
+        <!-- Contact information section -->
+        <div class="form-section">
+          <h3 class="form-section-title">Contact Information</h3>
+
+          <div class="mb-3">
+            <label class="form-label" for="txtinquiry" style="font-weight: 700">
+              Who may we respond to about this inquiry?
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="txtinquiry"
+              aria-describedby="nameInput"
+              placeholder="Enter your full name"
+            />
+            <div id="nameInput" class="form-text">
+              Please provide your name.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="employerName" class="form-label bold">
+              Please provide your employer's name:
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              id="employerName"
+              aria-describedby="employerNameInput"
+              placeholder="School district or charter name"
+            />
+            <div id="employerNameInput" class="form-text">
+              Please provide name of the school district or charter you work
+              for.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="txtExplanation" class="form-label bold">
+              What is your inquiry?
+            </label>
+            <textarea
+              class="form-control"
+              id="txtExplanation"
+              rows="5"
+              aria-describedby="explainInput"
+              placeholder="Please provide a brief explanation of your inquiry..."
+            ></textarea>
+            <div id="explainInput" class="form-text">
+              Please provide a brief explanation.
+            </div>
+          </div>
+        </div>
+
+        <!-- Email and phone section -->
+        <div class="form-section">
+          <h3 class="form-section-title">Contact Details</h3>
+          <p class="form-section-description">
+            Please provide <strong>both</strong> a phone number and an email
             address.
-          </div>
-          <label class="form-check-label" for="txtemail">Email </label>
-          <input
-            type="email"
-            value=""
-            class="form-control"
-            id="txtemail"
-            aria-describedby="emailInput"
-          />
+          </p>
 
-          <label class="form-check-label" for="txtphone">Phone </label>
-          <input
-            type="text"
-            value=""
-            class="form-control"
-            id="txtphone"
-            aria-describedby="phoneInput"
-          />
+          <div class="contact-info-group">
+            <div>
+              <label class="form-check-label" for="txtemail"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                value=""
+                class="form-control"
+                id="txtemail"
+                aria-describedby="emailInput"
+                placeholder="your.email@example.com"
+              />
+              <div id="emailInput" class="form-text">
+                Please provide a valid email address.
+              </div>
+            </div>
+
+            <div>
+              <label class="form-check-label" for="txtphone"
+                >Phone Number</label
+              >
+              <input
+                type="text"
+                value=""
+                class="form-control"
+                id="txtphone"
+                aria-describedby="phoneInput"
+                placeholder="(505) 123-4567"
+              />
+              <div class="form-text" id="phoneInput">
+                Please provide a phone number where we can reach you.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- enter the random number below -->
-        <div class="mb-3">
-          <p class="mb-1 mt-1">
+        <!-- Verification section -->
+        <div class="form-section">
+          <h3 class="form-section-title">Verification</h3>
+          <p class="form-section-description">
             Enter the four-digit number code below and click
             <strong>Submit</strong> to send your message.
           </p>
-          <div class="form-text mb-3" id="randomNum">0537</div>
-          <input type="number" id="number" class="form-control" />
+          <div class="d-flex flex-column align-items-start gap-3">
+            <div>
+              <label for="number" class="form-label bold mb-2">
+                Verification Code
+              </label>
+              <div id="randomNum" class="mb-3">0537</div>
+              <input
+                type="number"
+                id="number"
+                class="form-control"
+                placeholder="Enter code"
+                style="max-width: 200px"
+              />
+            </div>
+          </div>
         </div>
 
-        <!-- SUBMIT -->
-        <button type="button" class="btn btn-primary" id="sub">Submit</button>
+        <!-- Submit button -->
+        <div class="d-flex justify-content-center mt-4 mb-3">
+          <button type="button" class="btn btn-primary btn-lg" id="sub">
+            <i class="bx bx-send me-2"></i>Submit Message
+          </button>
+        </div>
       </form>
     </main>
 
@@ -455,6 +1210,10 @@
           sendMessage();
         }
       });
+
+      // Initialize: Hide both sections on page load
+      document.querySelector("#NMPSIA").style.display = "none";
+      document.querySelector("#Erisa").style.display = "none";
 
       document
         .getElementById("contactType")
