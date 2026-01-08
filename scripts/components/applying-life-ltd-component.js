@@ -65,12 +65,12 @@ class ApplyingLifeLTD extends HTMLElement {
                 </p> -->
               </div>
               <!-- no indentation on the following p, back to normal -->
-              <p style="color: crimson">
+              <p class="note-highlight" style="color: crimson">
                 <b>Note</b>: The late enrollment process is available anytime of the year. A tutorial can be found <a
                   href="https://players.brightcove.net/1079186452001/default_default/index.html?videoId=6301863152001"
                   target="_blank">here</a>.
               </p>
-              <p>
+              <p class="info-box">
                 <i class="bx bx-info-circle"></i>
                 <b>What is evidence of insurability?</b> <br />
                 EOI is a statement or proof of a person's physical condition

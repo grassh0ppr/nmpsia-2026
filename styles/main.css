@@ -2908,3 +2908,395 @@ body.modern-body {
     font-size: 0.9rem;
   }
 }
+
+/* ===== APPLYING LIFE & LTD COMPONENT STYLES ===== */
+/* Enhanced styling for the Applying for Life & LTD Coverage component */
+
+/* Main accordion container styling */
+#applyingLifeLtdProcess {
+  margin-top: 1.5rem;
+}
+
+#applyingLifeLtdProcess .accordion-item {
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+#applyingLifeLtdProcess .accordion-item:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.15);
+}
+
+#applyingLifeLtdProcess .accordion-header {
+  border-bottom: none;
+}
+
+#applyingLifeLtdProcess .accordion-button {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.1) 0%,
+    rgba(118, 75, 162, 0.1) 100%
+  );
+  border: none;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+#applyingLifeLtdProcess .accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+#applyingLifeLtdProcess .accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+#applyingLifeLtdProcess .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+  border-color: transparent;
+}
+
+#applyingLifeLtdProcess .accordion-button:hover:not(.collapsed) {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
+#applyingLifeLtdProcess .accordion-body {
+  padding: 2rem 1.5rem;
+  background: #fff;
+  line-height: 1.7;
+}
+
+/* Heading styles within accordion */
+#applyingLifeLtdProcess .accordion-body h5 {
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Instruction paragraphs - Blue background */
+.instructionsBlue {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.08) 0%,
+    rgba(118, 75, 162, 0.08) 100%
+  );
+  border-left: 4px solid #667eea;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: #495057;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Step instructions container with indentation */
+.indent--1 {
+  margin-left: 1.5rem;
+  padding-left: 2rem;
+  border-left: 3px solid #e9ecef;
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.indent--1 p {
+  margin-bottom: 1.25rem;
+  color: #495057;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  position: relative;
+}
+
+/* Step labels - Grey badge style */
+.instructionsGrey {
+  display: inline-block;
+  background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(108, 117, 125, 0.3);
+}
+
+/* Note section styling */
+#applyingLifeLtdProcess .accordion-body .note-highlight,
+#applyingLifeLtdProcess .accordion-body p.note-highlight {
+  background: #fff5f5;
+  border-left: 4px solid #dc3545;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  color: #721c24;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.1);
+}
+
+#applyingLifeLtdProcess .accordion-body .note-highlight b,
+#applyingLifeLtdProcess .accordion-body p.note-highlight b {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+#applyingLifeLtdProcess .accordion-body .note-highlight a,
+#applyingLifeLtdProcess .accordion-body p.note-highlight a {
+  color: #dc3545;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+#applyingLifeLtdProcess .accordion-body .note-highlight a:hover,
+#applyingLifeLtdProcess .accordion-body p.note-highlight a:hover {
+  color: #c82333;
+}
+
+/* Info box styling */
+#applyingLifeLtdProcess .accordion-body .info-box,
+#applyingLifeLtdProcess .accordion-body p.info-box {
+  background: linear-gradient(
+    135deg,
+    rgba(52, 152, 219, 0.08) 0%,
+    rgba(41, 128, 185, 0.08) 100%
+  );
+  border-left: 4px solid #3498db;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  color: #495057;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+#applyingLifeLtdProcess .accordion-body .info-box .bx-info-circle,
+#applyingLifeLtdProcess .accordion-body p.info-box .bx-info-circle {
+  color: #3498db;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+#applyingLifeLtdProcess .accordion-body .info-box b,
+#applyingLifeLtdProcess .accordion-body p.info-box b {
+  color: #2c3e50;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Grid layout for document links */
+.grid-layout-docs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.grid-layout-docs li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-layout-docs li:hover {
+  border-color: #667eea;
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.05) 0%,
+    rgba(118, 75, 162, 0.05) 100%
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.grid-layout-docs li .bxs-file-pdf {
+  color: #dc3545;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.grid-layout-docs li:hover .bxs-file-pdf {
+  transform: scale(1.1);
+}
+
+.grid-layout-docs li a {
+  color: #495057;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  flex: 1;
+  transition: color 0.3s ease;
+}
+
+.grid-layout-docs li:hover a {
+  color: #667eea;
+}
+
+/* Accordion body list items (for certificates, claims, etc.) */
+#applyingLifeLtdProcess .accordion-body ul:not(.grid-layout-docs) {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#applyingLifeLtdProcess .accordion-body ul:not(.grid-layout-docs) li {
+  margin-bottom: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+#applyingLifeLtdProcess .accordion-body ul:not(.grid-layout-docs) li:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.08) 0%,
+    rgba(118, 75, 162, 0.08) 100%
+  );
+  border-left-color: #667eea;
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#applyingLifeLtdProcess .accordion-body ul:not(.grid-layout-docs) li .bx,
+#applyingLifeLtdProcess
+  .accordion-body
+  ul:not(.grid-layout-docs)
+  li
+  .bxs-file-pdf {
+  color: #667eea;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+#applyingLifeLtdProcess .accordion-body ul:not(.grid-layout-docs) li:hover .bx,
+#applyingLifeLtdProcess
+  .accordion-body
+  ul:not(.grid-layout-docs)
+  li:hover
+  .bxs-file-pdf {
+  transform: scale(1.1);
+}
+
+#applyingLifeLtdProcess .accordion-body ul:not(.grid-layout-docs) li a {
+  color: #495057;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+#applyingLifeLtdProcess .accordion-body ul:not(.grid-layout-docs) li a:hover {
+  color: #667eea;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #applyingLifeLtdProcess .accordion-button {
+    font-size: 1.1rem;
+    padding: 1rem 1.25rem;
+  }
+
+  #applyingLifeLtdProcess .accordion-body {
+    padding: 1.5rem 1.25rem;
+  }
+
+  #applyingLifeLtdProcess .accordion-body h5 {
+    font-size: 1.25rem;
+  }
+
+  .instructionsBlue,
+  #applyingLifeLtdProcess .accordion-body .note-highlight,
+  #applyingLifeLtdProcess .accordion-body p.note-highlight,
+  #applyingLifeLtdProcess .accordion-body .info-box,
+  #applyingLifeLtdProcess .accordion-body p.info-box {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .indent--1 {
+    margin-left: 0.75rem;
+    padding-left: 1.25rem;
+  }
+
+  .indent--1 p {
+    font-size: 1rem;
+  }
+
+  .instructionsGrey {
+    font-size: 0.875rem;
+    padding: 0.4rem 0.875rem;
+  }
+
+  .grid-layout-docs {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .grid-layout-docs li {
+    padding: 0.875rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #applyingLifeLtdProcess .accordion-button {
+    font-size: 1rem;
+    padding: 0.875rem 1rem;
+  }
+
+  #applyingLifeLtdProcess .accordion-body {
+    padding: 1.25rem 1rem;
+  }
+
+  .instructionsBlue,
+  #applyingLifeLtdProcess .accordion-body .note-highlight,
+  #applyingLifeLtdProcess .accordion-body p.note-highlight,
+  #applyingLifeLtdProcess .accordion-body .info-box,
+  #applyingLifeLtdProcess .accordion-body p.info-box {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .indent--1 {
+    margin-left: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .grid-layout-docs li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
