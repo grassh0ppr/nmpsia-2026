@@ -13,12 +13,12 @@ class DeltaDental extends HTMLElement {
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Delta/NMPSIA - Delta Dental of NM - OE Fall Presentation - October 2024 (002).pdf"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment Slideshow Presentation</a>
+            target="_blank">Open/Switch Enrollment Slideshow Presentation</a>
         </li>
         <li>
           <i class="bx bxs-movie-play"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Delta/2024 NMPSIA OE video.FINAL.mp4"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment Recorded Presentation</a>
+            target="_blank">Open/Switch Enrollment Recorded Presentation</a>
         </li>
         
         <h4 class="mt-4 mb-3">Member Information</h4>

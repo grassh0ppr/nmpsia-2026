@@ -14,13 +14,13 @@ class LanternBenefits extends HTMLElement {
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Surgery_Plus/SurgeryPlus Overview l NMPSIA_2024.8.22vf2.pdf"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment
+            target="_blank">Open/Switch Enrollment
             Slideshow Presentation</a>
         </li>
         <li>
           <i class="bx bxs-movie-play"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Surgery_Plus/Recording of SurgeryPlus Overview.mp4"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment Recorded
+            target="_blank">Open/Switch Enrollment Recorded
             Presentation</a>
         </li>
       </ul>

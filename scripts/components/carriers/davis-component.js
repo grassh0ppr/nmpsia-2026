@@ -12,12 +12,12 @@ class DavisVision extends HTMLElement {
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Davis/NMPSIA OE Deck_2024 Final.pdf"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment Slideshow Presentation</a>
+            target="_blank">Open/Switch Enrollment Slideshow Presentation</a>
         </li>
         <li>
           <i class="bx bxs-movie-play"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Davis/NMPSIA 2025 Davis Vision 2025.mp4"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment Recorded Presentation</a>
+            target="_blank">Open/Switch Enrollment Recorded Presentation</a>
         </li>
        
         <h4 class="mt-4 mb-3">Member Information</h4>

@@ -16,13 +16,13 @@ class PresbyterianHealthPlan extends HTMLElement {
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Presbyterian/PHP2024 NMPSIA Open Switch Meetings 2 with voice.pdf"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment
+            target="_blank">Open/Switch Enrollment
             Slideshow Presentation</a>
         </li>
         <li>
           <i class="bx bxs-movie-play"></i>
           <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Presbyterian/PHP2024 NMPSIA Open Switch Meetings 2 with voice.mp4"
-            class="sidenav-link" target="_blank">Open/Switch Enrollment Recorded
+            target="_blank">Open/Switch Enrollment Recorded
             Presentation</a>
         </li>
         <h4 class="mt-4 mb-3">2024 Open Enrollment Presentations</h4>
