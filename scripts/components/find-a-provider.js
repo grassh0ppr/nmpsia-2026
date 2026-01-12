@@ -3,8 +3,8 @@ class FindAProvider extends HTMLElement {
     this.innerHTML = /*html*/ `
             <div id="links-container"></div>
             <p>
-                If you need assistance, contact the carrier
-                <a href="https://nmpsia.com/benefits.html#assocCarrCons" target="_blank">HERE</a>.
+                If you need assistance, 
+                <a href="./benefits.html#assocCarrCons">contact the carrier</a>.
             </p>
         `;
     this.renderLinks();
