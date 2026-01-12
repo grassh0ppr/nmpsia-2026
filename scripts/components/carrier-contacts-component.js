@@ -189,7 +189,7 @@ class CarrierContacts extends HTMLElement {
                   <td></td>
                 </tr>
   
-                 <!-- BCBS Dental ROW -->
+                 <!-- BlueCare Dental ROW -->
                 <tr>
                  <td class="carrier-td">
                  <a href="https://www.bcbsnm.com/nmpsia/benefits/dental" target="_blank">
