@@ -2,7 +2,8 @@
 /* Extracted from general.css for specific form styling */
 
 /* Basic body and container styles */
-body {
+/* Note: Background styles are now handled by modern-body class in main.css */
+body:not(.modern-body) {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #101331;
