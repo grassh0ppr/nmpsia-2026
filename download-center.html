@@ -280,12 +280,20 @@
         padding-bottom: 0.5rem;
       }
 
+      /* Meetings Grid Container */
+      .meetings-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+      }
+
       /* Meeting Cards */
       .meeting {
         background: rgba(255, 255, 255, 0.8);
         border-radius: 15px;
         padding: 2rem;
-        margin: 1.5rem 0;
+        margin: 0;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.3);
         transition: all 0.3s ease;
@@ -437,6 +445,12 @@
 
         .sidebar-overlay.open {
           display: block;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .meetings-grid {
+          grid-template-columns: 1fr;
         }
       }
 

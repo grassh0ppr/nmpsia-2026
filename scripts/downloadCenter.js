@@ -54,7 +54,7 @@ function generateMeetingHTML(monthId, committee, data) {
     <div class="meeting">
       <h4 class="sub-heading">${committee} Meeting</h4>
       <span class="date">${monthId.slice(4)}/${date}</span>
-      <ul class="content-list grid-layout mt-1">
+      <ul class="content-list mt-1">
         ${documentsHTML || "<li>No documents available yet.</li>"}
       </ul>
     </div>
@@ -82,10 +82,15 @@ function renderMeetings(monthId) {
 
   const { monthTitle, committees, info } = meetings[monthId];
   let html = `<h3 class="display-5">${monthTitle}</h3>`;
+  
+  // Wrap meetings in a grid container
+  html += `<div class="meetings-grid">`;
 
   for (const [committee, data] of Object.entries(committees)) {
     html += generateMeetingHTML(monthId, committee, data);
   }
+  
+  html += `</div>`;
 
   // Conditionally render additional info if it exists
   if (info && info.length > 0) {
