@@ -1,5 +1,63 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "January 2026": [
+    {
+      name: "New Year, New You - BCBSNM",
+      url: "/wellness/january_2026/New Year, New You BCBSNM.pdf",
+    },
+    {
+      name: "NMPSIA January 2026 Newsletter",
+      url: "/wellness/january_2026/NMPSIA January 2026 Newsletter.pdf",
+    },
+    {
+      name: "Trending in Nutrition - BCBSNM",
+      url: "/wellness/january_2026/Trending in Nutrition BCBSNM.pdf",
+    },
+    {
+      name: "TSG Monthly Webinar - The Energy Trifecta",
+      url: "/wellness/january_2026/TSG Well-Being 2026 Webinars_01 (1).pdf",
+    },
+    {
+      name: "Weaving Wellbeing into Our Lives - BCBSNM",
+      url: "/wellness/january_2026/Weaving Wellbeing into Our Lives BCBSNM.pdf",
+    },
+    {
+      name: "Well-Balanced January Newsletter",
+      url: "/wellness/january_2026/Well-Balanced-Jan-26.pdf",
+    },
+    {
+      name: "Wellness at Work Portal Login Step-by-Step Flyer",
+      url: "/wellness/january_2026/Wellness at Work Portal Login Step-by-Step Flyer.pdf",
+    },
+    {
+      name: "Wellness at Work Rewards Flyer - Fiscal Year",
+      url: "/wellness/january_2026/Wellness at Work Rewards Flyer -Fiscal Year.pdf",
+    },
+    {
+      name: "Wellness Communication - January 2026",
+      url: "/wellness/january_2026/Wellness Communication (January 2026).pdf",
+    },
+    {
+      name: "January 2026 Cooking Show",
+      url: "/wellness/january_2026/01_Cooking Show_January 2026.pdf",
+    },
+    {
+      name: "January 2026 Observance",
+      url: "/wellness/january_2026/01_January Observance_2026.pdf",
+    },
+    {
+      name: "January Well-Balanced Newsletter",
+      url: "/wellness/january_2026/January well-balanced newsletter.pdf",
+    },
+    {
+      name: "Life on Mindfulness 2025",
+      url: "/wellness/january_2026/Life on Mindfulness - 2025 - NMPSIA.pdf",
+    },
+    {
+      name: "Mindfulness for Better Sleep - NMPSIA",
+      url: "/wellness/january_2026/Mindfulness for Better Sleep - NMPSIA.pdf",
+    },
+  ],
   "December 2025": [
     {
       name: "2025 December Event Calendar",
