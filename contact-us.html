@@ -73,11 +73,104 @@
         overflow-x: hidden;
       }
 
+      /* Consistent max-width for all sections */
+      .hero-intro-section,
+      .contact-guide-section,
+      .new-form-container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* Hero Intro Section */
+      .hero-intro-section {
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 16px;
+        padding: 2.5rem;
+        margin: 2.5rem auto;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .hero-intro-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .hero-intro-content {
+        flex: 1;
+      }
+
+      .hero-intro-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #2c3e50;
+        margin: 0 0 0.75rem 0;
+        line-height: 1.2;
+      }
+
+      .hero-intro-subtitle {
+        font-size: 1.1rem;
+        color: #495057;
+        line-height: 1.7;
+        margin: 0;
+      }
+
+      .hero-intro-logo {
+        width: 160px;
+        height: auto;
+        flex-shrink: 0;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+      }
+
       /* Enhanced Contact Form Styles */
       .new-form-container {
         background: rgba(255, 255, 255, 0.98) !important;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 3rem 2.5rem;
+        border-radius: 16px;
+      }
+
+      @media (max-width: 768px) {
+        .new-form-container {
+          padding: 2rem 1.5rem;
+        }
+
+        .hero-intro-section {
+          padding: 2rem 1.5rem;
+        }
+
+        .hero-intro-header {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 1.5rem;
+        }
+
+        .hero-intro-title {
+          font-size: 2rem;
+        }
+
+        .hero-intro-logo {
+          width: 140px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .new-form-container {
+          padding: 1.5rem 1rem;
+        }
+
+        .hero-intro-section {
+          padding: 1.5rem 1rem;
+        }
+
+        .hero-intro-title {
+          font-size: 1.75rem;
+        }
       }
 
       /* Improved header section */
@@ -366,7 +459,7 @@
         background: rgba(255, 255, 255, 0.98);
         border-radius: 16px;
         padding: 2.5rem;
-        margin: 2.5rem 0;
+        margin: 2.5rem auto;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.3);
       }
@@ -640,7 +733,7 @@
 
         .contact-guide-section {
           padding: 1.5rem;
-          margin: 2rem 0;
+          margin: 2rem auto;
         }
 
         .contact-guide-header {
@@ -704,30 +797,28 @@
         </li>
       </ol>
     </div>
-    <main class="container new-form-container p-3">
-      <div class="main-section-header justify-content-between">
-        <h2 class="display-5">Reach out to us</h2>
-        <img
-          src="images/NMPSIA-Logo-transparent-2023.png"
-          class="logo"
-          alt="NMPSIA logo"
-        />
+    
+    <!-- Hero Intro Section -->
+    <div class="container">
+      <div class="hero-intro-section">
+        <div class="hero-intro-header">
+          <div class="hero-intro-content">
+            <h2 class="hero-intro-title">Reach out to us!</h2>
+            <p class="hero-intro-subtitle">
+              Requests can be directed to us through the form below.
+            </p>
+          </div>
+          <img
+            src="images/NMPSIA-Logo-transparent-2023.png"
+            class="hero-intro-logo"
+            alt="NMPSIA logo"
+          />
+        </div>
       </div>
-      <p>
-        Requests can be directed to us through the form below. All fields are
-        required to submit the form.
-      </p>
-      <p>
-        If you need to authorize a release of health information, please use the
-        <span class="d-inline-flex align-items-center"
-          ><i class="bx bx-file"></i>
-          <a href="./auth-release-health-info.html"
-            >Release of Health Information Authorization Form.</a
-          ></span
-        >
-      </p>
+    </div>
 
-      <!-- Quick Contact Guide Section -->
+    <!-- Quick Contact Guide Section -->
+    <div class="container">
       <div class="contact-guide-section">
         <div class="contact-guide-header">
           <i class="bx bx-phone-call contact-guide-icon"></i>
@@ -822,6 +913,21 @@
           </p>
         </div>
       </div>
+    </div>
+
+    <main class="container new-form-container p-5">
+      <p>
+        All fields are required to submit the form.
+      </p>
+      <p>
+        If you need to authorize a release of health information, please use the
+        <span class="d-inline-flex align-items-center"
+          ><i class="bx bx-file"></i>
+          <a href="./auth-release-health-info.html"
+            >Release of Health Information Authorization Form.</a
+          ></span
+        >
+      </p>
 
       <form>
         <div class="form-section">
