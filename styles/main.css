@@ -4,18 +4,35 @@
 
 /* ===== UTILITY CLASSES ===== */
 .modern-bg {
-  background: linear-gradient(
-    135deg,
-    rgba(102, 126, 234, 0.9) 0%,
-    rgba(118, 75, 162, 0.9) 100%
-  );
+  background-image: url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+    linear-gradient(
+      135deg,
+      rgba(102, 126, 234, 0.3) 0%,
+      rgba(118, 75, 162, 0.3) 100%
+    );
+  background-position: 75% 50%;
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
   position: relative;
   z-index: 1;
 }
 
-/* Removed heavy pseudo-element overlay */
+.modern-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.3) 0%,
+    rgba(118, 75, 162, 0.3) 100%
+  );
+  z-index: -1;
+}
 
 .glass-card {
   background: rgba(255, 255, 255, 0.95);
@@ -514,18 +531,35 @@
 
 /* ===== BODY STYLES ===== */
 body.modern-body {
-  background: linear-gradient(
-    135deg,
-    rgba(102, 126, 234, 0.9) 0%,
-    rgba(118, 75, 162, 0.9) 100%
-  );
+  background-image: url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+    linear-gradient(
+      135deg,
+      rgba(102, 126, 234, 0.3) 0%,
+      rgba(118, 75, 162, 0.3) 100%
+    );
+  background-position: 75% 50%;
+  background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   min-height: 100vh;
   position: relative;
   z-index: 1;
 }
 
-/* Removed heavy pseudo-element overlays for better performance */
+body.modern-body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    135deg,
+    rgba(102, 126, 234, 0.3) 0%,
+    rgba(118, 75, 162, 0.3) 100%
+  );
+  z-index: -1;
+}
 
 /* Minimal list styling to match modern icon list appearance */
 /* Remove bullets from all content lists */
