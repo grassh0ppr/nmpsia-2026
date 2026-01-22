@@ -18,7 +18,6 @@ class FooterSitemap extends HTMLElement {
               <li><a href="benefits.html">NMPSIA Benefits Division</a></li>
               <li><a href="risk.html">NMPSIA Risk Division</a></li>
               <li><a href="wellness.html">NMPSIA Wellness Programs</a></li>
-              <li><a href="covid-19.html">COVID-19 Information</a></li>
               <li><a href="plan.html">2025 Program Guide</a></li>
               <li><a href="benefits.html#compare">Compare plans</a></li>
               <li><a href="accessibility.html">Accessibility statement</a></li>
