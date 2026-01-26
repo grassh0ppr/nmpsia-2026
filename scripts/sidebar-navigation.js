@@ -349,6 +349,14 @@ class SidebarNavigation {
       section.classList.add("wellness-section-hidden");
     });
 
+    // Hide hero sections initially (they'll show only for overview)
+    const heroSections = document.querySelectorAll(
+      ".benefits-hero-section, .hero-section"
+    );
+    heroSections.forEach((hero) => {
+      hero.classList.add("wellness-section-hidden");
+    });
+
     // Get default section from data attribute or config
     if (!this.config.defaultSection && this.elements.main) {
       this.config.defaultSection = this.elements.main.getAttribute(
@@ -364,19 +372,54 @@ class SidebarNavigation {
       section.classList.add("wellness-section-hidden");
     });
 
-    // Show the target section with fade-in
-    const targetSection = document.getElementById(sectionId);
-    if (targetSection) {
-      // Use requestAnimationFrame to batch the show operation
-      requestAnimationFrame(() => {
-        // Remove hidden class first
-        targetSection.classList.remove("wellness-section-hidden");
+    // Hide hero sections (they only show for overview)
+    const heroSections = document.querySelectorAll(
+      ".benefits-hero-section, .hero-section"
+    );
+    heroSections.forEach((hero) => {
+      hero.classList.remove("wellness-section-visible");
+      hero.classList.add("wellness-section-hidden");
+    });
 
-        // Then trigger fade-in animation on next frame for smooth transition
+    // If showing overview, show hero sections (but not the invisible anchor)
+    if (sectionId === "overview" || sectionId === "overview-risk") {
+      heroSections.forEach((hero) => {
         requestAnimationFrame(() => {
-          targetSection.classList.add("wellness-section-visible");
+          hero.classList.remove("wellness-section-hidden");
+          requestAnimationFrame(() => {
+            hero.classList.add("wellness-section-visible");
+          });
         });
       });
+      
+      // For overview (plan.html), don't show the invisible anchor
+      // For overview-risk (risk.html), show the content section
+      if (sectionId === "overview-risk") {
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+          requestAnimationFrame(() => {
+            targetSection.classList.remove("wellness-section-hidden");
+            requestAnimationFrame(() => {
+              targetSection.classList.add("wellness-section-visible");
+            });
+          });
+        }
+      }
+    } else {
+      // Show the target section with fade-in (non-overview sections)
+      const targetSection = document.getElementById(sectionId);
+      if (targetSection) {
+        // Use requestAnimationFrame to batch the show operation
+        requestAnimationFrame(() => {
+          // Remove hidden class first
+          targetSection.classList.remove("wellness-section-hidden");
+
+          // Then trigger fade-in animation on next frame for smooth transition
+          requestAnimationFrame(() => {
+            targetSection.classList.add("wellness-section-visible");
+          });
+        });
+      }
     }
   }
 
@@ -414,16 +457,16 @@ class SidebarNavigation {
 // Auto-initialize with default configuration
 // This will work for most pages with the standard benefits-sidebar setup
 document.addEventListener("DOMContentLoaded", () => {
-  // Check if we're on the wellness page (has data-default-section on main)
-  const wellnessMain = document.querySelector("main[data-default-section]");
-  if (wellnessMain && document.getElementById("benefitsSidebar")) {
-    const defaultSection = wellnessMain.getAttribute("data-default-section");
+  // Check if we're on a page with data-default-section on main (wellness, plan, risk, etc.)
+  const mainWithDefault = document.querySelector("main[data-default-section]");
+  if (mainWithDefault && document.getElementById("benefitsSidebar")) {
+    const defaultSection = mainWithDefault.getAttribute("data-default-section");
     new SidebarNavigation({
       hideMode: true,
       defaultSection: defaultSection,
     });
   }
-  // Check if we have the standard benefits sidebar (not wellness page)
+  // Check if we have the standard benefits sidebar (not hideMode page)
   else if (document.getElementById("benefitsSidebar")) {
     new SidebarNavigation();
   }

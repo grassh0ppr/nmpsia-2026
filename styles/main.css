@@ -2616,12 +2616,48 @@ body.modern-body::after {
 /* ===== WELLNESS PAGE SPECIFIC STYLES ===== */
 
 /* Fade-in animation for wellness sections */
-.content-section.wellness-section-hidden {
+.content-section.wellness-section-hidden,
+.benefits-hero-section.wellness-section-hidden,
+.hero-section.wellness-section-hidden {
   display: none !important;
 }
 
+/* Content sections should use block display */
 .content-section.wellness-section-visible {
   display: block !important;
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Ensure direct children of content sections are block-level and stack vertically */
+/* But exclude grid layouts, flex layouts, and other special containers */
+.content-section.wellness-section-visible > section:not(.hero-section):not(.benefits-hero-section):not(.stats-grid),
+.content-section.wellness-section-visible > div:not(.content-list):not(.stats-grid):not(.links-grid):not(.quick-actions-grid) {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+/* Exception: hero sections should remain flex */
+.content-section.wellness-section-visible > .hero-section,
+.content-section.wellness-section-visible > .benefits-hero-section {
+  display: flex !important;
+}
+
+/* Exception: stats-grid should remain grid */
+.content-section.wellness-section-visible > .stats-grid {
+  display: grid !important;
+}
+
+/* Exception: grid-layout lists should remain grid - this is critical! */
+.content-section.wellness-section-visible .content-list.grid-layout {
+  display: grid !important;
+  width: 100% !important;
+}
+
+/* Hero sections should use flex display */
+.benefits-hero-section.wellness-section-visible,
+.hero-section.wellness-section-visible {
+  display: flex !important;
   animation: fadeIn 0.4s ease-out;
 }
 
@@ -2698,11 +2734,12 @@ body.modern-body::after {
 /* Enhanced grid layout for wellness overview */
 .content-list.grid-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   list-style: none;
   padding: 0;
   margin: 2rem 0;
+  width: 100%;
 }
 
 .content-list.grid-layout li {
@@ -2773,6 +2810,12 @@ body.modern-body::after {
 }
 
 /* Responsive grid adjustments */
+@media (min-width: 1200px) {
+  .content-list.grid-layout {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
   .content-list.grid-layout {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
