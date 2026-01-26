@@ -64,50 +64,6 @@
 
     <style>
       /* Premiums-specific styles */
-      .user-type-toggle {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 2rem;
-        margin: 2rem 0;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        text-align: center;
-      }
-
-      .toggle-buttons {
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-        margin-top: 1.5rem;
-      }
-
-      .toggle-btn {
-        padding: 1rem 2rem;
-        border: 2px solid #667eea;
-        background: white;
-        color: #667eea;
-        border-radius: 15px;
-        font-weight: 600;
-        font-size: 1.1rem;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        min-width: 150px;
-      }
-
-      .toggle-btn:hover {
-        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
-        color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-      }
-
-      .toggle-btn.active {
-        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
-        color: white;
-        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
-      }
-
       /* Premium Rates Grid */
       .premium-rates-grid {
         display: grid;
@@ -231,35 +187,9 @@
         margin-bottom: 0;
       }
 
-      /* Hide sections based on user type */
-      .employer-only {
-        display: none;
-      }
-
-      .employee-only {
-        display: block;
-      }
-
-      body.employer-view .employer-only {
-        display: block;
-      }
-
-      body.employer-view .employee-only {
-        display: none;
-      }
 
       /* Responsive adjustments */
       @media (max-width: 768px) {
-        .toggle-buttons {
-          flex-direction: column;
-          align-items: center;
-        }
-
-        .toggle-btn {
-          width: 100%;
-          max-width: 250px;
-        }
-
         .premium-rates-grid,
         .tools-grid {
           grid-template-columns: 1fr;
@@ -314,7 +244,7 @@
             <i class="bx bxs-calculator"></i>
             <span>Tools & Calculators</span>
           </a>
-          <a href="#domestic-partner" class="nav-item employer-only">
+          <a href="#domestic-partner" class="nav-item">
             <i class="bx bxs-user-detail"></i>
             <span>Domestic Partner Tables</span>
           </a>
@@ -341,16 +271,6 @@
           </div>
         </section>
 
-        <!-- User Type Toggle -->
-        <div class="user-type-toggle">
-          <h3>I am an:</h3>
-          <div class="toggle-buttons">
-            <button class="toggle-btn active" data-type="employee">
-              Employee
-            </button>
-            <button class="toggle-btn" data-type="employer">Employer</button>
-          </div>
-        </div>
 
         <!-- Premium Rates Section -->
         <section id="premium-rates" class="content-section">
@@ -478,7 +398,7 @@
             <a
               href="https://nmpsia.com/PDFs/HB533%20Employer%20Contributions%20Effective%207-1-2023.pdf"
               target="_blank"
-              class="tool-card employer-only"
+              class="tool-card"
             >
               <i class="bx bxs-file-doc"></i>
               <h4>HB533 Employer Contributions</h4>
@@ -487,8 +407,8 @@
           </div>
         </section>
 
-        <!-- Domestic Partner Imputed Income Tables (Employer Only) -->
-        <section id="domestic-partner" class="content-section employer-only">
+        <!-- Domestic Partner Imputed Income Tables -->
+        <section id="domestic-partner" class="content-section">
           <h3>
             <i class="bx bxs-user-detail me-2"></i>Domestic Partner Imputed
             Income Tables
@@ -538,52 +458,5 @@
 
     <script src="./js/main.js"></script>
     <script src="./scripts/sidebar-navigation.js"></script>
-
-    <!-- Premiums page specific JavaScript -->
-    <script>
-      // Premiums page specific functionality (user type toggle)
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggleButtons = document.querySelectorAll(".toggle-btn");
-        const body = document.body;
-
-        // Set default view to employee
-        body.classList.add("employee-view");
-
-        // User type toggle functionality
-        toggleButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const userType = this.dataset.type;
-
-            // Update button states
-            toggleButtons.forEach((btn) => btn.classList.remove("active"));
-            this.classList.add("active");
-
-            // Update body class
-            body.classList.remove("employee-view", "employer-view");
-            body.classList.add(userType + "-view");
-
-            // Update navigation
-            updateNavigation(userType);
-          });
-        });
-
-        function updateNavigation(userType) {
-          // Show/hide employer-only nav items
-          const employerNavItems = document.querySelectorAll(
-            '.nav-item[href="#domestic-partner"]'
-          );
-          employerNavItems.forEach((item) => {
-            if (userType === "employer") {
-              item.style.display = "flex";
-            } else {
-              item.style.display = "none";
-            }
-          });
-        }
-
-        // Initialize navigation
-        updateNavigation("employee");
-      });
-    </script>
   </body>
 </html>
