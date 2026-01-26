@@ -51,6 +51,10 @@ class CVSCaremark extends HTMLElement {
           <i class="bx bxs-file-pdf"></i>
           <a target="_blank" href="/pdfs/2023_7_106-58684Et_Generics.pdf"> Generic medications - same quality, better price!</a>
         </li>
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/pdfs/106_70915A_NMPSIA_CVS_PA_Step_Therapy.pdf"> Step Therapy Prescriptions – Understanding the Prior Authorization Process</a>
+        </li>
       
         <li>
           <i class="bx bxs-file-pdf"></i>
