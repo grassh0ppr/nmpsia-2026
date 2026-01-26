@@ -4,7 +4,7 @@ class FindAProvider extends HTMLElement {
             <div id="links-container"></div>
             <p>
                 If you need assistance, 
-                <a href="./benefits.html#assocCarrCons">contact the carrier</a>.
+                <a href="./benefits.html#carriers">contact the carrier</a>.
             </p>
         `;
     this.renderLinks();
