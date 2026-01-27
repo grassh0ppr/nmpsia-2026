@@ -75,6 +75,10 @@
     <script src="./scripts/components/footer/footer-sitemap.js"></script>
     <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
     <script src="./scripts/components/stat-reporting-component.js"></script>
+    <!-- Carrier data and grid component -->
+    <script src="./scripts/carriers-data.js"></script>
+    <script src="./scripts/components/carriers-grid-component.js"></script>
+    <script src="./scripts/enhance-carrier-modals.js"></script>
   </head>
 
   <body class="modern-body">
@@ -116,11 +120,10 @@
           </button>
         </div>
         <nav class="sidebar-nav">
-          <!-- <a href="#overview" class="nav-item">
-            <i class="bx bx-home-alt"></i>
-            <span>Overview</span>
-          </a> -->
-          <!-- notice of privacy practices -->
+          <a href="#carriers-grid" class="nav-item">
+            <i class="bx bx-building-house"></i>
+            <span>All Carriers</span>
+          </a>
           <a
             href="./pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf"
             target="_blank"
@@ -129,7 +132,6 @@
             <i class="bx bxs-file-pdf"></i>
             <span>Notice of Privacy Practices</span>
           </a>
-          <!-- Important Employee Benefit Program Notices -->
           <a
             href="./pdfs/Important-Employee-Benefit-Program-Notices-2023.pdf"
             target="_blank"
@@ -138,48 +140,6 @@
             <i class="bx bxs-file-pdf"></i>
             <span>Important Employee Benefit Program Notices</span>
           </a>
-          <a href="#carriers" class="nav-item">
-            <i class="bx bx-building-house"></i>
-            <span>Carrier Contacts</span>
-          </a>
-          <!-- <a href="./pdfs/2025_Program_Guide_wcag_remed.pdf" class="nav-item">
-            <i class="bx bx-book-open"></i>
-            <span>2025 Program Guide</span>
-          </a>
-          <a href="./pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf" class="nav-item">
-            <i class="bx bx-bar-chart-alt-2"></i>
-            <span>Plan Comparison</span>
-          </a> -->
-          <!-- all carriers -->
-          <a href="#all-carriers" class="nav-item">
-            <i class="bx bx-building-house"></i>
-            <span>All Carriers</span>
-          </a>
-          <a href="#medical" class="nav-item">
-            <i class="bx bx-plus-medical"></i>
-            <span>Medical Plans</span>
-          </a>
-          <a href="#dental" class="nav-item">
-            <i class="fa-solid fa-tooth"></i>
-            <span>Dental Plans</span>
-          </a>
-          <a href="#vision" class="nav-item">
-            <i class="bx bx-glasses-alt"></i>
-            <span>Vision Plans</span>
-          </a>
-          <a href="#pharmacy" class="nav-item">
-            <i class="bx bxs-capsule"></i>
-            <span>Pharmacy</span>
-          </a>
-          <a href="#life-disability" class="nav-item">
-            <i class="bx bxs-shield"></i>
-            <span>Life & Disability</span>
-          </a>
-          <a href="#providers" class="nav-item">
-            <i class="bx bx-search-alt"></i>
-            <span>Find Providers</span>
-          </a>
-
           <a href="#resources" class="nav-item">
             <i class="bx bx-file"></i>
             <span>Resources</span>
@@ -240,179 +200,35 @@
           </div>
         </section> -->
 
-        <!-- All Carriers Grid Section -->
-        <section id="all-carriers" class="content-section">
-          <h3><i class="bx bx-building-house me-2"></i>All Carriers</h3>
+        <!-- Centralized Carriers Grid Section -->
+        <section id="carriers-grid" class="content-section">
+          <h3><i class="bx bx-building-house me-2"></i>Benefits Information</h3>
           <p>
-            Click on any carrier below to view detailed information, resources,
-            and benefits.
+            Explore your benefit options and access important resources from our trusted carriers. 
+            Use the search and filters below to find specific information quickly.
           </p>
-
-          <div class="all-carriers-grid">
-            <!-- Blue Cross Blue Shield Medical -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#bcbsMedicalModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img
-                  src="images/carriers/logo10.png"
-                  alt="Blue Cross Blue Shield"
-                />
-              </div>
-              <h4 class="carrier-grid-name">Blue Cross Blue Shield</h4>
-              <p class="carrier-grid-type">Medical</p>
-            </div>
-
-            <!-- Presbyterian Health Plan -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#presMedicalModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img src="images/carriers/logo6.png" alt="Presbyterian" />
-              </div>
-              <h4 class="carrier-grid-name">Presbyterian Health Plan</h4>
-              <p class="carrier-grid-type">Medical</p>
-            </div>
-
-            <!-- Lantern -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#lanternModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img src="images/lantern_logo.png" alt="Lantern" />
-              </div>
-              <h4 class="carrier-grid-name">Lantern</h4>
-              <p class="carrier-grid-type">Medical</p>
-            </div>
-
-            <!-- CVS Caremark -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#cvsCaremarkModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img src="images/CVS_Caremark_logo.jpg" alt="CVS Caremark" />
-              </div>
-              <h4 class="carrier-grid-name">CVS Caremark</h4>
-              <p class="carrier-grid-type">Pharmacy</p>
-            </div>
-
-            <!-- BlueCare Dental -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#bcbsDentalModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img
-                  src="images/carriers/BlueCare DentalSM.png"
-                  alt="BlueCare Dental"
-                />
-              </div>
-              <h4 class="carrier-grid-name">BlueCare Dental</h4>
-              <p class="carrier-grid-type">Dental</p>
-            </div>
-
-            <!-- Delta Dental -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#deltaDentalModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img src="images/carriers/logo1.png" alt="Delta Dental" />
-              </div>
-              <h4 class="carrier-grid-name">Delta Dental</h4>
-              <p class="carrier-grid-type">Dental</p>
-            </div>
-
-            <!-- United Concordia Dental -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#ucDentalModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img src="images/UCD_logo_2024.jpg" alt="United Concordia" />
-              </div>
-              <h4 class="carrier-grid-name">United Concordia</h4>
-              <p class="carrier-grid-type">Dental</p>
-            </div>
-
-            <!-- Davis Vision -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#davisVisionModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img src="images/carriers/logo2.png" alt="Davis Vision" />
-              </div>
-              <h4 class="carrier-grid-name">Davis Vision</h4>
-              <p class="carrier-grid-type">Vision</p>
-            </div>
-
-            <!-- The Standard -->
-            <div
-              class="carrier-grid-card"
-              data-bs-toggle="modal"
-              data-bs-target="#standardLifeModal"
-              role="button"
-              tabindex="0"
-            >
-              <div class="carrier-grid-logo">
-                <img src="images/carriers/logo5.png" alt="The Standard" />
-              </div>
-              <h4 class="carrier-grid-name">The Standard</h4>
-              <p class="carrier-grid-type">Life & Disability</p>
-            </div>
-          </div>
+          
+          <carriers-grid></carriers-grid>
         </section>
 
-        <!-- Carrier Contacts Section -->
-        <section id="carriers" class="content-section">
+        <!-- Administrative Services Section -->
+        <section id="admin-services" class="content-section">
+          <h3><i class="bx bx-cog me-2"></i>Administrative Services</h3>
+          <p>
+            Contact information for administrative services and support.
+          </p>
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <h3><i class="bx bx-building-house me-2"></i>Carrier Contacts</h3>
             <a
               href="/pdfs/carriers/carrier_contacts_chart_2025.pdf"
               class="btn btn-primary"
               target="_blank"
             >
-              Download PDF
+              Download Carrier Contacts PDF
             </a>
           </div>
-          <p>
-            Contact information for all benefit carriers and administrative
-            services.
-          </p>
 
           <div class="carriers-grid">
-            <!-- Administrative Services -->
             <div class="carrier-category">
-              <h4><i class="bx bx-cog me-2"></i>Administrative Services</h4>
               <div class="carrier-cards">
                 <div class="carrier-card">
                   <div class="carrier-header">
@@ -452,240 +268,6 @@
                       target="_blank"
                     >
                       <i class="bx bx-link-external"></i>nmpsiaonline.nmpsia.com
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Medical Carriers -->
-            <div class="carrier-category">
-              <h4><i class="bx bx-plus-medical me-2"></i>Medical Carriers</h4>
-              <div class="carrier-cards">
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img
-                      src="images/carriers/logo10.png"
-                      alt="Blue Cross Blue Shield"
-                    />
-                    <h5>Blue Cross Blue Shield</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p>
-                      <strong>Group #:</strong> N05501 (High), N05502 (Low),
-                      213895 (EPO)
-                    </p>
-                    <a href="tel:18889667742" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-888-966-7742
-                    </a>
-                    <a
-                      href="https://www.bcbsnm.com/nmpsia/"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img src="images/carriers/logo6.png" alt="Presbyterian" />
-                    <h5>Presbyterian Health Plan</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p><strong>Group #:</strong> A0000035</p>
-                    <a href="tel:18882757737" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-888-275-7737
-                    </a>
-                    <a
-                      href="https://www.phs.org/health-plans/employer-plans/new-mexico-public-schools-insurance-authority"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img src="images/lantern_logo.png" alt="Lantern" />
-                    <h5>Lantern</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p><strong>Formerly known as Surgery Plus</strong></p>
-                    <p>Group #: n/a</p>
-                    <a href="tel:18552043922" class="carrier-phone">
-                      <i class="bx bx-phone"></i>855-204-3922
-                    </a>
-                    <a
-                      href="https://surgeryplus.com/"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Prescription Drugs -->
-            <div class="carrier-category">
-              <h4><i class="bx bxs-capsule me-2"></i>Prescription Drugs</h4>
-              <div class="carrier-cards">
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img
-                      src="images/CVS_Caremark_logo.jpg"
-                      alt="CVS Caremark"
-                    />
-                    <h5>CVS Caremark</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p>
-                      <strong>RxBIN:</strong> 004336<br />
-                      <strong>RxPCN:</strong> ADV<br />
-                      <strong>RxGRP:</strong> RX22AS
-                    </p>
-                    <a href="tel:18777870652" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-877-787-0652
-                    </a>
-                    <a
-                      href="https://www.caremark.com/"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Dental Carriers -->
-            <div class="carrier-category">
-              <h4><i class="fa-solid fa-tooth me-2"></i>Dental Carriers</h4>
-              <div class="carrier-cards">
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img
-                      src="images/carriers/logo10.png"
-                      alt="BlueCare Dental"
-                    />
-                    <h5>BlueCare Dental</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p><strong>Effective 1/1/2025</strong></p>
-                    <p>319228 – Low | 319225 – High</p>
-                    <a href="tel:18777235697" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-877-723-5697
-                    </a>
-                    <a
-                      href="https://www.bcbsnm.com/nmpsia/benefits/dental"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img src="images/carriers/logo1.png" alt="Delta Dental" />
-                    <h5>Delta Dental</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p><strong>Group #:</strong> 8564 – Low | 8565 – High</p>
-                    <a href="tel:18773959420" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-877-395-9420
-                    </a>
-                    <a
-                      href="https://www.deltadentalnm.com/member/nmpsia-members/"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img
-                      src="images/UCD_logo_2024.jpg"
-                      alt="United Concordia"
-                    />
-                    <h5>United Concordia Dental</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p>
-                      <strong>Group #:</strong> 812022 (refer to ID card or
-                      subgroup #)
-                    </p>
-                    <a href="tel:18888980370" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-888-898-0370
-                    </a>
-                    <a
-                      href="https://www.unitedconcordia.com/benefits/clients-corner/New-Mexico-Public-School-Client-Corner-Dental-Benefits"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Vision -->
-            <div class="carrier-category">
-              <h4><i class="bx bx-glasses-alt me-2"></i>Vision</h4>
-              <div class="carrier-cards">
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img src="images/carriers/logo2.png" alt="Davis Vision" />
-                    <h5>Davis Vision</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p><strong>Group #:</strong> 3066</p>
-                    <a href="tel:18009995431" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-800-999-5431
-                    </a>
-                    <a
-                      href="https://www.davisvision.com/member"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Life and Disability -->
-            <div class="carrier-category">
-              <h4><i class="bx bxs-shield me-2"></i>Life and Disability</h4>
-              <div class="carrier-cards">
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img src="images/carriers/logo5.png" alt="The Standard" />
-                    <h5>The Standard</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <p><strong>Group #:</strong> 645549</p>
-                    <a href="tel:18886099763" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-888-609-9763 Ext. 0957
-                    </a>
-                    <a
-                      href="./TheStandard.html"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
                     </a>
                   </div>
                 </div>
@@ -761,274 +343,6 @@
           </div>
         </section> -->
 
-        <!-- Medical Plans Section -->
-        <section id="medical" class="content-section">
-          <h3><i class="bx bx-plus-medical me-2"></i>Medical Plans</h3>
-          <p>
-            Comprehensive medical coverage options through multiple carriers.
-          </p>
-
-          <div class="plans-grid">
-            <div class="plan-card">
-              <div class="plan-header">
-                <img
-                  src="images/carriers/logo10.png"
-                  alt="Blue Cross Blue Shield"
-                />
-                <h4>Blue Cross Blue Shield</h4>
-              </div>
-              <div class="plan-details">
-                <p>
-                  Comprehensive medical coverage with extensive provider
-                  network.
-                </p>
-                <ul>
-                  <li>High and Low deductible options</li>
-                  <li>EPO plan available</li>
-                  <li>Nationwide coverage</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#bcbsMedicalModal"
-                  >Learn more about BCBS</a
-                >
-              </div>
-            </div>
-
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/carriers/logo6.png" alt="Presbyterian" />
-                <h4>Presbyterian Health Plan</h4>
-              </div>
-              <div class="plan-details">
-                <p>Regional health plan with strong local provider network.</p>
-                <ul>
-                  <li>Comprehensive coverage</li>
-                  <li>Local provider network</li>
-                  <li>Integrated care system</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#presMedicalModal"
-                  >Learn more about Presbyterian</a
-                >
-              </div>
-            </div>
-
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/lantern_logo.png" alt="Lantern" />
-                <h4>Lantern (formerly SurgeryPlus)</h4>
-              </div>
-              <div class="plan-details">
-                <p>Specialized surgical and medical procedure coverage.</p>
-                <ul>
-                  <li>Surgical procedure coverage</li>
-                  <li>Cost containment solutions</li>
-                  <li>Enhanced benefits for specific procedures</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#lanternModal"
-                  >Learn more about Lantern</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Dental Plans Section -->
-        <section id="dental" class="content-section">
-          <h3><i class="fa-solid fa-tooth me-2"></i>Dental Plans</h3>
-          <p>
-            Comprehensive dental coverage options through multiple carriers.
-          </p>
-
-          <div class="plans-grid">
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/carriers/logo10.png" alt="BlueCare Dental" />
-                <h4>BlueCare Dental</h4>
-              </div>
-              <div class="plan-details">
-                <p>
-                  Comprehensive dental coverage with extensive provider network.
-                </p>
-                <ul>
-                  <li>High and Low option plans</li>
-                  <li>Nationwide coverage</li>
-                  <li>Enhanced benefits available</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#bcbsDentalModal"
-                  >Learn more about BlueCare Dental</a
-                >
-              </div>
-            </div>
-
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/carriers/logo1.png" alt="Delta Dental" />
-                <h4>Delta Dental</h4>
-              </div>
-              <div class="plan-details">
-                <p>
-                  Leading dental benefits provider with comprehensive coverage.
-                </p>
-                <ul>
-                  <li>Preventive care focus</li>
-                  <li>Teledentistry services</li>
-                  <li>Student vision program</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#deltaDentalModal"
-                  >Learn more about Delta Dental</a
-                >
-              </div>
-            </div>
-
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/UCD_logo_2024.jpg" alt="United Concordia" />
-                <h4>United Concordia Dental</h4>
-              </div>
-              <div class="plan-details">
-                <p>Comprehensive dental benefits with wellness programs.</p>
-                <ul>
-                  <li>Wellness programs included</li>
-                  <li>College tuition benefits</li>
-                  <li>Teledentistry services</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#ucDentalModal"
-                  >Learn more about United Concordia</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Vision Plans Section -->
-        <section id="vision" class="content-section">
-          <h3><i class="bx bx-glasses-alt me-2"></i>Vision Plans</h3>
-          <p>Comprehensive vision coverage and eye care services.</p>
-
-          <div class="plans-grid">
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/carriers/logo2.png" alt="Davis Vision" />
-                <h4>Davis Vision</h4>
-              </div>
-              <div class="plan-details">
-                <p>
-                  Comprehensive vision care with extensive provider network.
-                </p>
-                <ul>
-                  <li>Eye exams and eyewear</li>
-                  <li>Student vision program</li>
-                  <li>Hearing benefit included</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#davisVisionModal"
-                  >Learn more about Davis Vision</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Pharmacy Section -->
-        <section id="pharmacy" class="content-section">
-          <h3><i class="bx bxs-capsule me-2"></i>Pharmacy Benefits</h3>
-          <p>Comprehensive prescription drug coverage and pharmacy services.</p>
-
-          <div class="plans-grid">
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/CVS_Caremark_logo.jpg" alt="CVS Caremark" />
-                <h4>CVS Caremark</h4>
-              </div>
-              <div class="plan-details">
-                <p>
-                  Leading pharmacy benefit manager with comprehensive services.
-                </p>
-                <ul>
-                  <li>Mail-order pharmacy</li>
-                  <li>Specialty medications</li>
-                  <li>Digital tools and apps</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#cvsCaremarkModal"
-                  >Learn more about CVS Caremark</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Life & Disability Section -->
-        <section id="life-disability" class="content-section">
-          <h3><i class="bx bxs-shield me-2"></i>Life & Disability Insurance</h3>
-          <p>
-            Comprehensive life insurance and disability coverage through The
-            Standard.
-          </p>
-
-          <div class="plans-grid">
-            <div class="plan-card">
-              <div class="plan-header">
-                <img src="images/carriers/logo5.png" alt="The Standard" />
-                <h4>The Standard</h4>
-              </div>
-              <div class="plan-details">
-                <p>Life insurance and long-term disability coverage.</p>
-                <ul>
-                  <li>Life insurance coverage</li>
-                  <li>Long-term disability</li>
-                  <li>Beneficiary designations</li>
-                </ul>
-                <a
-                  href="#"
-                  class="plan-link"
-                  data-bs-toggle="modal"
-                  data-bs-target="#standardLifeModal"
-                  >Learn more about The Standard</a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Find Providers Section -->
-        <section id="providers" class="content-section">
-          <h3><i class="bx bx-search-alt me-2"></i>Find Providers</h3>
-          <p>Locate in-network providers for all your healthcare needs.</p>
-
-          <div id="findProvider">
-            <find-a-provider></find-a-provider>
-          </div>
-        </section>
 
         <!-- Resources Section -->
         <section id="resources" class="content-section">
@@ -1043,9 +357,9 @@
           <!-- Annual Audit Reports -->
           <div class="content-subsection mt-4">
             <h4><i class="bx bx-file me-2"></i>NMPSIA Annual Audit Reports</h4>
-            <ul class="resources-list">
+            <ul class="audit-reports-list">
               <li>
-                <i class="bx bx-link-external"></i>
+                <i class="bx bxs-file-pdf"></i>
                 <a
                   href="https://www.osa-app.org/auditReportSearchDetail.aspx?id=FA79CDD2-DDE1-448A-B788-C095BA94CCA9&type="
                   target="_blank"
@@ -1054,7 +368,7 @@
                 >
               </li>
               <li>
-                <i class="bx bx-link-external"></i>
+                <i class="bx bxs-file-pdf"></i>
                 <a
                   href="https://www.osa-app.org/auditReportSearchDetail.aspx?id=12512D62-632E-476D-9F17-25DD24B5B129&type="
                   target="_blank"
@@ -1094,7 +408,10 @@
 
           <!-- Statistical Reporting -->
           <div class="content-subsection mt-4">
-            <h4><i class="bx bx-chart me-2"></i>NMPSIA Statistical Reports</h4>
+            <div class="heading-and-element-flexbox">
+              <h2 class="display-4">NMPSIA Statistical Reports</h2>
+              <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
+            </div>
             <stat-reporting-component></stat-reporting-component>
           </div>
         </section>
