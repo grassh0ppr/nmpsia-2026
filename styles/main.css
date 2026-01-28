@@ -1239,10 +1239,15 @@ body.modern-body::after {
 }
 
 .btn-visit-website:hover {
-  background: #667eea;
-  color: white;
+  background: #4e4ba2;
+  border-color: #4e4ba2;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(78, 75, 162, 0.3);
+}
+
+.content-section.carriers-grid-section .btn-visit-website:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .no-results-message {
