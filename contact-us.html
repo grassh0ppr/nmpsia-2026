@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -64,7 +64,8 @@
     <script src="./scripts/components/alert-banner/alert-banner.js"></script>
     <style>
       body {
-        background-image: linear-gradient(180deg, #4169a9c2 0%, #ffffffa8 100%),
+        background-image:
+          linear-gradient(180deg, #4169a9c2 0%, #ffffffa8 100%),
           url("https://nmpsia.com/images/banner5.jpg");
         background-attachment: fixed;
         width: 100%;
@@ -797,7 +798,7 @@
         </li>
       </ol>
     </div>
-    
+
     <!-- Hero Intro Section -->
     <div class="container">
       <div class="hero-intro-section">
@@ -851,8 +852,15 @@
               <li>Forms and documentation</li>
             </ul>
             <p class="contact-guide-card-note">
-              <strong>Always contact your employer first</strong> before
-              reaching out to other departments.
+              <strong
+                >Always
+                <a
+                  href="district-contacts.html"
+                  style="color: #d8e2ff; text-decoration: underline"
+                  >contact your employer first</a
+                ></strong
+              >
+              before reaching out to other departments.
             </p>
           </div>
 
@@ -871,6 +879,11 @@
               <li>Retiree life continuation</li>
               <li>Other administrative inquiries</li>
             </ul>
+            <a
+              href="mailto:sf@easitpa.com"
+              style="color: #d8e2ff; text-decoration: underline"
+              >sf@easitpa.com</a
+            >
           </div>
 
           <!-- Carrier Section -->
@@ -886,6 +899,11 @@
               <li>Pre-authorization requests</li>
               <li>Plan-specific questions</li>
             </ul>
+            <a
+              href="plan.html#carriers"
+              style="color: #d8e2ff; text-decoration: underline"
+              >Carrier contact information</a
+            >
           </div>
 
           <!-- NMPSIA Section -->
@@ -906,19 +924,23 @@
 
         <div class="contact-guide-footer-note">
           <p>
-            <strong>Retirement & Pension Questions:</strong> For questions about
-            retirement benefits or pension, please contact your employer's Human
-            Resources department or visit the
-            <a href="./plan.html">NMPSIA Plan page</a> for additional resources.
+            <strong>Retirement & Pension Questions:</strong>For questions
+            regarding retirement benefits or pension, please contact your
+            employer or New Mexico Retiree Health Care
+            <a href="tel:18002332576">1-800-233-2576</a> or New Mexico
+            Educational Retirement Board
+            <a href="tel:18006631919">1-800-663-1919</a>.
           </p>
         </div>
       </div>
     </div>
 
     <main class="container new-form-container p-5">
-      <p>
-        All fields are required to submit the form.
-      </p>
+      <div class="contact-guide-header">
+        <i class="bx bx-phone-call contact-guide-icon"></i>
+        <h2 class="contact-guide-title">Contact Form</h2>
+      </div>
+      <p>All fields are required to submit the form.</p>
       <p>
         If you need to authorize a release of health information, please use the
         <span class="d-inline-flex align-items-center"
@@ -952,7 +974,7 @@
           </select>
         </div>
 
-        <div class="form-section">
+        <div class="form-section" id="assistSection" style="display: none">
           <h3 class="form-section-title">What may we assist you with?</h3>
 
           <div id="NMPSIA">
@@ -1299,7 +1321,7 @@
         .addEventListener("click", function () {
           document.querySelector("#randomNum").innerText = randnum = rand(
             1000,
-            9999
+            9999,
           );
         });
       let randnum = rand(1000, 9999);
@@ -1310,29 +1332,46 @@
           document.querySelector("#number").value = "";
           document.querySelector("#randomNum").innerText = randnum = rand(
             1000,
-            9999
+            9999,
           );
         } else {
           sendMessage();
         }
       });
 
-      // Initialize: Hide both sections on page load
+      // Initialize: Hide both sections and the assist section on page load
+      const assistSection = document.querySelector("#assistSection");
       document.querySelector("#NMPSIA").style.display = "none";
       document.querySelector("#Erisa").style.display = "none";
+      if (assistSection) {
+        assistSection.style.display = "none";
+      }
 
       document
         .getElementById("contactType")
         .addEventListener("change", function (e) {
           console.log(e.target.value);
+          const assistSection = document.querySelector("#assistSection");
+
           if (e.target.value === "1") {
+            // Show assist section and NMPSIA options
+            if (assistSection) {
+              assistSection.style.display = "block";
+            }
             document.querySelector("#NMPSIA").style.display = "block";
             document.querySelector("#Erisa").style.display = "none";
           } else if (e.target.value === "2") {
+            // Show assist section and Erisa options
+            if (assistSection) {
+              assistSection.style.display = "block";
+            }
             document.querySelector("#Erisa").style.display = "block";
             document.querySelector("#NMPSIA").style.display = "none";
           } else {
-            // Hide both if "Choose one..." is selected
+            // Hide everything if "Choose one..." is selected
+            if (assistSection) {
+              assistSection.style.display = "none";
+            }
             document.querySelector("#NMPSIA").style.display = "none";
             document.querySelector("#Erisa").style.display = "none";
           }
@@ -1357,7 +1396,7 @@
         }
         if (employer == "") {
           alert(
-            "Please provide the name of the school or charter you work for."
+            "Please provide the name of the school or charter you work for.",
           );
           return false;
         }
@@ -1398,7 +1437,7 @@
             document.querySelector("body").style.overflow = "auto";
             document.querySelector("#result").innerHTML = res;
             var successModal = new bootstrap.Modal(
-              document.getElementById("alertModal")
+              document.getElementById("alertModal"),
             );
             successModal.show();
             // document.querySelector('#alertModal').show();
@@ -1411,7 +1450,7 @@
             console.log("Error: ", error);
             document.querySelector("#err").innerHTML = error;
             var myModal = new bootstrap.Modal(
-              document.getElementById("failModal")
+              document.getElementById("failModal"),
             );
             myModal.show();
           });
@@ -1426,7 +1465,7 @@
         document.querySelector("#employerName").value = "";
         document.querySelector("#randomNum").innerText = randnum = rand(
           1000,
-          9999
+          9999,
         );
         document
           .querySelectorAll('input[name="chkNMPSIA"]')

@@ -4,7 +4,8 @@
 
 /* ===== UTILITY CLASSES ===== */
 .modern-bg {
-  background-image: url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+  background-image:
+    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
     linear-gradient(
       135deg,
       rgba(102, 126, 234, 0.3) 0%,
@@ -53,7 +54,9 @@
 }
 
 .hover-lift {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   will-change: transform;
 }
 
@@ -119,7 +122,9 @@
   border-radius: 15px;
   padding: 2rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
@@ -272,7 +277,9 @@
   border-radius: 15px;
   padding: 1.5rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   border: 1px solid #ecf0f1;
   will-change: transform;
 }
@@ -431,11 +438,8 @@
 }
 
 .promo-banner {
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
     linear-gradient(87deg, #667eea 15.29%, #764ba2 86.5%);
   color: white;
   text-align: center;
@@ -531,7 +535,8 @@
 
 /* ===== BODY STYLES ===== */
 body.modern-body {
-  background-image: url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+  background-image:
+    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
     linear-gradient(
       135deg,
       rgba(102, 126, 234, 0.3) 0%,
@@ -794,16 +799,74 @@ body.modern-body::after {
 /* Risk logos - evenly justify */
 .risk-logos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
+  flex-wrap: nowrap;
+  gap: 1rem;
   margin: 2rem 0;
+}
+
+.risk-logos a,
+.risk-logo-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.risk-logos a {
+  cursor: pointer;
+}
+
+.risk-logos a:hover {
+  transform: translateY(-2px);
+  background-color: rgba(102, 126, 234, 0.05);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
 .risk-logos img {
   height: 45px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.risk-logos a:hover img {
+  opacity: 0.85;
+}
+
+/* Basic phases list styling */
+.basic-phases {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.basic-phases li {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0c3b69;
+}
+
+.basic-phase-number {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0c3b69;
+  background-color: #e6eafd;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
 }
 
 /* Video container styling for Helpful Resources */
@@ -919,7 +982,9 @@ body.modern-body::after {
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
   will-change: transform;
 }
@@ -1642,7 +1707,9 @@ body.modern-body::after {
   color: #495057;
   text-decoration: none;
   border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   font-weight: 500;
   min-height: 48px;
   cursor: pointer;
@@ -1907,7 +1974,9 @@ body.modern-body::after {
 }
 
 .benefits-sidebar {
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 .sidebar-header .close-sidebar {
@@ -2020,6 +2089,59 @@ body.modern-body::after {
 .modal-body .content-list i {
   color: #667eea;
   margin-right: 0.5rem;
+}
+
+/* ===== STANDARD LIFE MODAL: OPEN ENROLLMENT RESOURCES ===== */
+#standardLifeModal .resources-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+#standardLifeModal .resources-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#standardLifeModal .resources-list li:hover {
+  border-color: #204f9a;
+  background: linear-gradient(
+    135deg,
+    rgba(32, 79, 154, 0.06) 0%,
+    rgba(102, 126, 234, 0.06) 100%
+  );
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(32, 79, 154, 0.12);
+}
+
+#standardLifeModal .resources-list i.bx {
+  color: #204f9a;
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+#standardLifeModal .resources-list a {
+  color: #222f68;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#standardLifeModal .resources-list a:hover {
+  color: #204f9a;
+  text-decoration: underline;
 }
 
 /* Custom scrollbar for modal */
@@ -2950,8 +3072,12 @@ body.modern-body::after {
 
 /* Ensure direct children of content sections are block-level and stack vertically */
 /* But exclude grid layouts, flex layouts, and other special containers */
-.content-section.wellness-section-visible > section:not(.hero-section):not(.benefits-hero-section):not(.stats-grid),
-.content-section.wellness-section-visible > div:not(.content-list):not(.stats-grid):not(.links-grid):not(.quick-actions-grid) {
+.content-section.wellness-section-visible
+  > section:not(.hero-section):not(.benefits-hero-section):not(.stats-grid),
+.content-section.wellness-section-visible
+  > div:not(.content-list):not(.stats-grid):not(.links-grid):not(
+    .quick-actions-grid
+  ) {
   display: block !important;
   width: 100% !important;
   box-sizing: border-box;
@@ -3763,7 +3889,7 @@ body.modern-body::after {
 }
 
 .grid-layout-docs li .bxs-file-pdf {
-  color: #dc3545;
+  color: #204f9a;
   font-size: 1.5rem;
   flex-shrink: 0;
   transition: transform 0.3s ease;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -323,31 +323,26 @@
               class="section-logo"
             />
           </div>
-          <div class="risk-logos container">
+          <div class="risk-logos">
             <a href="https://www.pomsassoc.com/" target="_blank">
-              <img
-                src="/images/Logo_POMS.png"
-                style="height: 45px"
-                alt="POMS logo"
-              />
+              <img src="/images/Logo_POMS.png" alt="POMS logo" />
             </a>
             <a href="https://www.ccmsi.com/" target="_blank">
-              <img
-                src="/images/Logo_CCMSI.png"
-                style="height: 45px"
-                alt="CCMSI logo"
-              />
+              <img src="/images/Logo_CCMSI.png" alt="CCMSI logo" />
             </a>
-            <img
-              src="/images/Logo_Myers_Stevens_Toohey.png"
-              style="height: 45px"
-              alt="Myers Stevens Toohey logo"
-            />
-            <a href="https://www.embarksafety.com/" target="_blank">
+            <div class="risk-logo-wrapper">
               <img
-                src="/images/Embark-Logo.jpg"
-                style="height: 45px"
-                alt="Embark logo"
+                src="/images/Logo_Myers_Stevens_Toohey.png"
+                alt="Myers Stevens Toohey logo"
+              />
+            </div>
+            <a href="https://www.embarksafety.com/" target="_blank">
+              <img src="/images/Embark-Logo.jpg" alt="Embark logo" />
+            </a>
+            <a href="https://www.lightspeedsystems.com/" target="_blank">
+              <img
+                src="/images/lightspeed_systems_logo.svg"
+                alt="Lightspeed systems logo"
               />
             </a>
           </div>
@@ -360,9 +355,15 @@
             three basic phases:
           </p>
           <ul class="basic-phases">
-            <li>1. Pre-loss activities</li>
-            <li>2. Actual loss activities</li>
-            <li>3. Post-loss activities</li>
+            <li>
+              <span class="basic-phase-number">1.</span> Pre-loss activities
+            </li>
+            <li>
+              <span class="basic-phase-number">2.</span> Actual loss activities
+            </li>
+            <li>
+              <span class="basic-phase-number">3.</span> Post-loss activities
+            </li>
           </ul>
           <p>
             All of the Risk Contractors are dedicated to assist you immediately
@@ -1200,7 +1201,14 @@
                   <iframe
                     src="https://player.vimeo.com/video/1098596281?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                     frameborder="0"
-                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    allow="
+                      autoplay;
+                      fullscreen;
+                      picture-in-picture;
+                      clipboard-write;
+                      encrypted-media;
+                      web-share;
+                    "
                     style="
                       position: absolute;
                       top: 0;
@@ -1447,7 +1455,7 @@
         const filteredResults = searchData.filter(
           (item) =>
             item.title.toLowerCase().includes(query) ||
-            item.description.toLowerCase().includes(query)
+            item.description.toLowerCase().includes(query),
         );
 
         if (filteredResults.length === 0) {
@@ -1463,7 +1471,7 @@
               <h5>${highlightText(item.title, query)}</h5>
               <p>${highlightText(item.description, query)}</p>
             </div>
-          `
+          `,
             )
             .join("");
         }
@@ -1503,7 +1511,7 @@
           const sidebarLinks = document.querySelectorAll("aside a");
           sidebarLinks.forEach((link) => link.classList.remove("active"));
           const activeLink = document.querySelector(
-            `aside a[href="#${sectionId}"]`
+            `aside a[href="#${sectionId}"]`,
           );
           if (activeLink) activeLink.classList.add("active");
         }
@@ -1514,7 +1522,7 @@
       // Quick Actions Dashboard Toggle
       const dashboardToggle = document.getElementById("dashboardToggle");
       const quickActionsContent = document.getElementById(
-        "quickActionsContent"
+        "quickActionsContent",
       );
 
       if (dashboardToggle && quickActionsContent) {
@@ -1593,7 +1601,7 @@
                 behavior: "smooth",
               });
             },
-            true
+            true,
           ); // Use capture phase for highest priority
 
           // Initial check
