@@ -2,25 +2,25 @@ class StopItContent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
     <div class="heading-and-element-flexbox">
-    <h2 class="display-4">STOPit Anonymous Reporting</h2>
+    <h2 class="display-4">Lightspeed STOPit</h2>
     <img
-      src="https://7878808.fs1.hubspotusercontent-na1.net/hub/7878808/hubfs/stop-it-logo-purple%20newest%2082022.png?width=300&name=stop-it-logo-purple%20newest%2082022.png"
-      alt="STOPit logo"
-      style="width: 80px"
+      src="images/lightspeed_systems_logo.svg"
+      alt="Lightspeed Systems logo"
+      style="width: 400px"
     />
   </div>
   <hr />
   <h3 class="sub-heading">
-    NMPSIA and STOPit introduce a fully funded Safety and Wellness
+    NMPSIA and Lightspeed STOPit introduce a fully funded Safety and Wellness
     Program to support New Mexico School Districts
   </h3>
   <p>
-    NMPSIA is partnering with STOPit Solutions to provide their
+    NMPSIA is partnering with Lightspeed STOPit to provide their
     best-in-class Anonymous Reporting System (ARS), SEL & Wellness
     Center, and other services to NMPSIA Member School Districts.
   </p>
   <p>
-    Since 2014, our partner STOPit Solutions has been offering safety &
+    Since 2014, our partner Lightspeed STOPit has been offering safety &
     wellness solutions that are deployed in more than 1600 districts
     including more than 25 in New Mexico. Their solutions are focused on
     the physical and mental wellbeing of students, staff, and families.
@@ -32,17 +32,17 @@ class StopItContent extends HTMLElement {
   </p>
 
   <p>
-    When incidents do occur, STOPit helps you maintain an electronic
+    When incidents do occur, Lightspeed STOPit helps you maintain an electronic
     record of your positive interventions, available as a legal defense
     in the event of a lawsuit alleging failure to act.
   </p>
 
   <div class="text-center my-2 mb-4">
     <a
-      href="https://www.stopitsolutions.com/nmpsia"
+      href="https://www.lightspeedsystems.com/products/lightspeed-stopit/"
       target="_blank"
       class="btn btn-primary my-4 mx-auto"
-      >NMPSIA / STOPit Program Sign Up</a
+      >NMPSIA / Lightspeed STOPit Program Sign Up</a
     >
   </div>
 
@@ -86,7 +86,7 @@ class StopItContent extends HTMLElement {
       <img
         class="flyer-img"
         src="/images/NMPSIA_School_Safety_Partnership_Program_Page_1.png"
-        alt="STOPit ARS flyer"
+        alt="Lightspeed STOPit ARS flyer"
       />
     </a>
   </div>

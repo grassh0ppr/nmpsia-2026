@@ -56,6 +56,20 @@ class SidebarNavigation {
     this.handleInitialHash();
     this.setupIOSFixes();
     this.initializeToggleButtonState();
+
+    // Ensure sidenav-link handlers work even after custom elements load
+    if (this.config.hideMode) {
+      // Wait for custom elements to be defined
+      if (window.customElements) {
+        customElements.whenDefined("property-liability").then(() => {
+          // Re-setup event listeners after custom elements are loaded
+          this.setupSidenavLinkHandlers();
+        });
+        customElements.whenDefined("workers-comp").then(() => {
+          this.setupSidenavLinkHandlers();
+        });
+      }
+    }
   }
 
   getElements() {
@@ -154,6 +168,12 @@ class SidebarNavigation {
       });
     });
 
+    // Handle sidenav-link elements that are not in the sidebar (e.g., in content sections)
+    // These need to work with hideMode navigation
+    if (this.config.hideMode) {
+      this.setupSidenavLinkHandlers();
+    }
+
     // Scroll spy (only if not in hide mode)
     if (!this.config.hideMode) {
       let scrollTimeout;
@@ -174,14 +194,14 @@ class SidebarNavigation {
                 scrollPosition < sectionTop + sectionHeight
               ) {
                 const correspondingLink = document.querySelector(
-                  `${this.config.sidebarLinksSelector}[href="#${sectionId}"]`
+                  `${this.config.sidebarLinksSelector}[href="#${sectionId}"]`,
                 );
                 this.updateActiveLink(correspondingLink);
               }
             });
             scrollTimeout = null;
           },
-          this.isIOS ? 100 : 16
+          this.isIOS ? 100 : 16,
         ); // Throttle more on iOS
       };
 
@@ -192,7 +212,7 @@ class SidebarNavigation {
     window.addEventListener("hashchange", () => {
       const targetId = window.location.hash.substring(1);
       const targetLink = document.querySelector(
-        `${this.config.sidebarLinksSelector}[href="#${targetId}"]`
+        `${this.config.sidebarLinksSelector}[href="#${targetId}"]`,
       );
       if (targetLink) {
         if (this.config.hideMode) {
@@ -312,7 +332,7 @@ class SidebarNavigation {
         : this.config.defaultSection || "overview";
 
       const targetLink = document.querySelector(
-        `${this.config.sidebarLinksSelector}[href="#${targetId}"]`
+        `${this.config.sidebarLinksSelector}[href="#${targetId}"]`,
       );
 
       if (targetLink || targetId) {
@@ -328,7 +348,7 @@ class SidebarNavigation {
       if (window.location.hash) {
         const targetId = window.location.hash.substring(1);
         const targetLink = document.querySelector(
-          `${this.config.sidebarLinksSelector}[href="#${targetId}"]`
+          `${this.config.sidebarLinksSelector}[href="#${targetId}"]`,
         );
         if (targetLink) {
           setTimeout(
@@ -336,7 +356,7 @@ class SidebarNavigation {
               this.scrollToSection(targetId);
               this.updateActiveLink(targetLink);
             },
-            this.isIOS ? 200 : 100
+            this.isIOS ? 200 : 100,
           );
         }
       }
@@ -351,7 +371,7 @@ class SidebarNavigation {
 
     // Hide hero sections initially (they'll show only for overview)
     const heroSections = document.querySelectorAll(
-      ".benefits-hero-section, .hero-section"
+      ".benefits-hero-section, .hero-section",
     );
     heroSections.forEach((hero) => {
       hero.classList.add("wellness-section-hidden");
@@ -360,7 +380,7 @@ class SidebarNavigation {
     // Get default section from data attribute or config
     if (!this.config.defaultSection && this.elements.main) {
       this.config.defaultSection = this.elements.main.getAttribute(
-        "data-default-section"
+        "data-default-section",
       );
     }
   }
@@ -374,7 +394,7 @@ class SidebarNavigation {
 
     // Hide hero sections (they only show for overview)
     const heroSections = document.querySelectorAll(
-      ".benefits-hero-section, .hero-section"
+      ".benefits-hero-section, .hero-section",
     );
     heroSections.forEach((hero) => {
       hero.classList.remove("wellness-section-visible");
@@ -391,7 +411,7 @@ class SidebarNavigation {
           });
         });
       });
-      
+
       // For overview (plan.html), don't show the invisible anchor
       // For overview-risk (risk.html), show the content section
       if (sectionId === "overview-risk") {
@@ -438,6 +458,52 @@ class SidebarNavigation {
       // Fix for iOS Safari touch events
       document.addEventListener("touchstart", () => {}, { passive: true });
     }
+  }
+
+  setupSidenavLinkHandlers() {
+    // Use capture phase to ensure we catch the event before other handlers
+    // Remove any existing listener first to avoid duplicates
+    if (this._sidenavLinkHandler) {
+      document.removeEventListener("click", this._sidenavLinkHandler, true);
+    }
+
+    this._sidenavLinkHandler = (e) => {
+      const link = e.target.closest(".sidenav-link");
+      if (link) {
+        const href = link.getAttribute("href");
+
+        // Only handle hash links (same-page navigation)
+        if (href && href.startsWith("#") && !href.startsWith("#!")) {
+          const targetId = href.substring(1);
+          const targetSection = document.getElementById(targetId);
+
+          // Only prevent default if the target section exists and is a content-section
+          if (
+            targetSection &&
+            targetSection.classList.contains("content-section")
+          ) {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+
+            this.showSection(targetId);
+
+            // Update URL hash
+            window.location.hash = targetId;
+
+            // Update active link in sidebar if there's a corresponding link
+            const sidebarLink = document.querySelector(
+              `${this.config.sidebarLinksSelector}[href="#${targetId}"]`,
+            );
+            if (sidebarLink) {
+              this.updateActiveLink(sidebarLink);
+            }
+          }
+        }
+      }
+    };
+
+    document.addEventListener("click", this._sidenavLinkHandler, true);
   }
 
   initializeToggleButtonState() {

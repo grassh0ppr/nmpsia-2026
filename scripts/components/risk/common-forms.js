@@ -8,72 +8,74 @@ class CommonForms extends HTMLElement {
     
     <ul class="content-list grid-layout">
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a
           href="/pdfs/poms-risk-docs/workers-comp/Supervisors_WC_GrabNGo_Kit/Internal_First_Report_of_Injury_Customizable_Template.docx"
           target="_blank"
-          >Employer First Report of Injury or Illness</a
         >
+          <i class="bx bxs-file-pdf"></i>
+          <span>Employer First Report of Injury or Illness</span>
+        </a>
       </li>
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a
           href="/pdfs/poms-risk-docs/General_Products_Liability.pdf"
           target="_blank"
         >
-          General Products Liability Form</a
-        >
+          <i class="bx bxs-file-pdf"></i>
+          <span>General Products Liability Form</span>
+        </a>
       </li>
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a href="/pdfs/Notice_of_Accident_Form.pdf" target="_blank">
-          Notice of Accident or Occupational Disease</a
-        >
+          <i class="bx bxs-file-pdf"></i>
+          <span>Notice of Accident or Occupational Disease</span>
+        </a>
       </li>
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a
           href="/pdfs/poms-risk-docs/NOA-2_Employees_Choice.pdf"
           target="_blank"
         >
-          Alternative Notice of Accident (NOA-2 Employee's Choice)</a
-        >
+          <i class="bx bxs-file-pdf"></i>
+          <span>Alternative Notice of Accident (NOA-2 Employee's Choice)</span>
+        </a>
       </li>
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a
           href="/pdfs/poms-risk-docs/Loss_Report_Property.pdf"
           target="_blank"
-          >Property Loss Report</a
         >
+          <i class="bx bxs-file-pdf"></i>
+          <span>Property Loss Report</span>
+        </a>
       </li>
-
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a
           href="pdfs/poms-risk-docs/Student_Incident_Report.pdf"
           target="_blank"
-          >Student Accident Report</a
         >
+          <i class="bx bxs-file-pdf"></i>
+          <span>Student Accident Report</span>
+        </a>
       </li>
-
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a
           href="/pdfs/poms-risk-docs/Vehicle_Accident_Report.pdf"
           target="_blank"
-          >Vehicle Accident Report</a
         >
+          <i class="bx bxs-file-pdf"></i>
+          <span>Vehicle Accident Report</span>
+        </a>
       </li>
       <li>
-        <i class="bx bxs-file-pdf"></i>
         <a
           href="/pdfs/poms-risk-docs/Windshield_Only_Report.pdf"
           target="_blank"
-          >Windshield Report</a
         >
+          <i class="bx bxs-file-pdf"></i>
+          <span>Windshield Report</span>
+        </a>
       </li>
-    
     </ul>
     `;
   }

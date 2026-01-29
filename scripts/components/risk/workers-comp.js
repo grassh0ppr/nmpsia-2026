@@ -1,6 +1,9 @@
 class WorkersComp extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
+    <a href="#claimsRisk" class="go-back sidenav-link"
+      ><i class="bx bxs-chevron-left"></i> <span>Go back</span></a
+    >
     <div class="header-flex">
             <h3
               class="display-5"

@@ -3295,6 +3295,38 @@ body.modern-body::after {
   transition: color 0.3s ease;
   width: 100%;
   display: block;
+  pointer-events: auto;
+}
+
+/* Make ALL grid-layout links fill the entire li - move padding from li to link */
+.content-list.grid-layout li:has(> a) {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-list.grid-layout li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  width: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.content-list.grid-layout li > a i {
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.content-list.grid-layout li > a span {
+  width: 100%;
+}
+
+/* For links that have icons as siblings (old structure), keep them working */
+.content-list.grid-layout li:not(:has(> a)) {
+  padding: 1.5rem;
 }
 
 .content-list.grid-layout li:hover a {
