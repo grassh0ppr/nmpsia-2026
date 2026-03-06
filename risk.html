@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -709,10 +709,8 @@
           <p>
             Schedule a system training session with our customer specialists:
             <br />
-            <a
-              href="https://form.jotform.com/embarksafety/NMPSIA"
-              target="_blank"
-              >https://form.jotform.com/embarksafety/NMPSIA</a
+            <a href="https://meetings.hubspot.com/emily-crooks" target="_blank"
+              >https://meetings.hubspot.com/emily-crooks</a
             >
           </p>
           <p>For assistance contact:</p>
@@ -727,15 +725,14 @@
                 </td>
               </tr>
               <tr>
-                <td>Office: <a href="tel:14079000025">(407) 900-0025</a></td>
-              </tr>
-              <tr>
                 <td>
-                  Direct Phone: <a href="tel:14077772220">(407) 777-2220</a>
+                  Office: <a href="tel:14075367233">(407) 536-7233 ext. 219</a>
                 </td>
               </tr>
               <tr>
-                <td>Fax: <a href="tel:18773477745">(877) 347-7745</a></td>
+                <td>
+                  Direct Phone: <a href="tel:14072700568">(407) 270-0568</a>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -1479,7 +1476,7 @@
         const filteredResults = searchData.filter(
           (item) =>
             item.title.toLowerCase().includes(query) ||
-            item.description.toLowerCase().includes(query),
+            item.description.toLowerCase().includes(query)
         );
 
         if (filteredResults.length === 0) {
@@ -1495,7 +1492,7 @@
               <h5>${highlightText(item.title, query)}</h5>
               <p>${highlightText(item.description, query)}</p>
             </div>
-          `,
+          `
             )
             .join("");
         }
@@ -1535,7 +1532,7 @@
           const sidebarLinks = document.querySelectorAll("aside a");
           sidebarLinks.forEach((link) => link.classList.remove("active"));
           const activeLink = document.querySelector(
-            `aside a[href="#${sectionId}"]`,
+            `aside a[href="#${sectionId}"]`
           );
           if (activeLink) activeLink.classList.add("active");
         }
@@ -1546,7 +1543,7 @@
       // Quick Actions Dashboard Toggle
       const dashboardToggle = document.getElementById("dashboardToggle");
       const quickActionsContent = document.getElementById(
-        "quickActionsContent",
+        "quickActionsContent"
       );
 
       if (dashboardToggle && quickActionsContent) {
@@ -1625,7 +1622,7 @@
                 behavior: "smooth",
               });
             },
-            true,
+            true
           ); // Use capture phase for highest priority
 
           // Initial check
