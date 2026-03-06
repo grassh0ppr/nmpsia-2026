@@ -58,6 +58,18 @@ class CVSCaremark extends HTMLElement {
       
         <li>
           <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/pdfs/04_2026_PDL_SC_ACSF.pdf">Performance Drug List - Standard Control for Clients with Advanced Control Specialty Formulary April 2026</a>
+        </li>
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/pdfs/SCF_ACSF_1500_1555_April_2026.pdf">Changes to your plan's pharmacy drug list effective April 1, 2026</a>
+        </li>
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/pdfs/04_2026_Advanced_Control_Specialty_Formulary.pdf">Advanced Control Specialty Formulary April 2026</a>
+        </li>
+        <li>
+          <i class="bx bxs-file-pdf"></i>
           <a target="_blank" href="https://nmpsia.com/pdfs/cvs_formularies/SCF_ACSF_1500_1555_January_2026.pdf">Changes to your plan's pharmacy drug list effective January 1, 2026</a>
         </li>
         <li>
