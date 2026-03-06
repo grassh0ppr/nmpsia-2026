@@ -11,6 +11,18 @@ class AllProcurements extends HTMLElement {
         </thead>
         <tbody>
           <tr>
+            <td>&mdash;</td>
+            <td>RFP# 342-2026-02</td>
+            <td>
+              <a
+                href="/docs/342_2026_02_RFP_Workplace_Ergonomic_Training_and_Consulting_Services.pdf"
+                target="_blank"
+                >RFP# 342-2026-02 RFP: Workplace Ergonomic Training and Consulting
+                Services Q & A</a
+              >
+            </td>
+          </tr>
+          <tr>
             <td>11/03/2025</td>
             <td>RFP# 342-2026-01</td>
             <td>

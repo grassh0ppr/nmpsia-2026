@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -54,8 +54,8 @@
     />
 
     <!-- custom stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- components in alphabetical order -->
     <script src="./scripts/components/find-a-provider.js?v=1.3"></script>
@@ -1476,7 +1476,7 @@
         const filteredResults = searchData.filter(
           (item) =>
             item.title.toLowerCase().includes(query) ||
-            item.description.toLowerCase().includes(query)
+            item.description.toLowerCase().includes(query),
         );
 
         if (filteredResults.length === 0) {
@@ -1492,7 +1492,7 @@
               <h5>${highlightText(item.title, query)}</h5>
               <p>${highlightText(item.description, query)}</p>
             </div>
-          `
+          `,
             )
             .join("");
         }
@@ -1532,7 +1532,7 @@
           const sidebarLinks = document.querySelectorAll("aside a");
           sidebarLinks.forEach((link) => link.classList.remove("active"));
           const activeLink = document.querySelector(
-            `aside a[href="#${sectionId}"]`
+            `aside a[href="#${sectionId}"]`,
           );
           if (activeLink) activeLink.classList.add("active");
         }
@@ -1543,7 +1543,7 @@
       // Quick Actions Dashboard Toggle
       const dashboardToggle = document.getElementById("dashboardToggle");
       const quickActionsContent = document.getElementById(
-        "quickActionsContent"
+        "quickActionsContent",
       );
 
       if (dashboardToggle && quickActionsContent) {
@@ -1622,7 +1622,7 @@
                 behavior: "smooth",
               });
             },
-            true
+            true,
           ); // Use capture phase for highest priority
 
           // Initial check

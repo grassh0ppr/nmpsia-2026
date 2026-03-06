@@ -15,135 +15,66 @@ const homepageNews = [
     linkText: "Log into Well onTarget",
   },
 
-  // notice of public meetings - DECEMBER MEETINGS
-  // {
-  //   date: {
-  //     day: "26",
-  //     month: "Nov",
-  //   },
-  //   title: "Notice of Public Meetings December 3 & 4, 2025",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
-  //   linkHref:
-  //     "https://nmpsia.com/nmpsiadownload/202512/notice_of_public_meetings.pdf",
-  //   linkText: "View notice",
-  // },
-  // BAC Meeting
-  // {
-  //   date: {
-  //     day: "03",
-  //     month: "Dec",
-  //   },
-  //   title: "Benefits Advisory Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202512/BAC_meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
-  // RAC meeting
-  // {
-  //   date: {
-  //     day: "03",
-  //     month: "Dec",
-  //   },
-  //   title: "Risk Advisory Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202512/RAC_Meeting_Agenda.pdf",
-  //   linkText: "View agenda",
-  // },
-
-  // IFR meeting
-  // {
-  //   date: {
-  //     day: "04",
-  //     month: "Dec",
-  //   },
-  //   title: "Internal Fiscal Review Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202512/IFR_Meeting_Agenda.pdf",
-  //   linkText: "View agenda",
-  // },
-
-  // Board meeting
-  // {
-  //   date: {
-  //     day: "04",
-  //     month: "Dec",
-  //   },
-  //   title: "Board of Directors Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202512/Board_Meeting_Agenda_r.pdf",
-  //   linkText: "View agenda",
-  // },
-
-  // BCBS Webinar - Trending in Nutrition
+  // notice of public meetings - MARCH 2026
   {
     date: {
-      day: "20",
-      month: "Jan",
+      day: "27",
+      month: "Feb",
     },
-    title: "BCBS Health Education Webinar - Trending in Nutrition",
+    title: "Notice of Public Meetings March 4 & 5, 2026",
     description:
-      "Tuesday, January 20, 2026. Explore the latest trends in nutrition and learn how to make informed choices for your health and wellness.",
-    linkHref: "/wellness/january_2026/Trending in Nutrition BCBSNM.pdf",
-    linkText: "Register",
-  },
-
-  // TSG Monthly Webinar - The Energy Trifecta
-  {
-    date: {
-      day: "21",
-      month: "Jan",
-    },
-    title: "TSG Monthly Webinar: The Energy Trifecta: Eat, Move, Sleep, Repeat",
-    description:
-      "Wednesday, January 21, 2026. Discover how the interconnected elements of nutrition, movement, and sleep work together to optimize your energy levels and overall well-being.",
-    linkHref: "/wellness/january_2026/TSG Well-Being 2026 Webinars_01 (1).pdf",
-    linkText: "Register",
-  },
-
-  // TSG Monthly Cooking Show - Nourish Your Immunity
-  {
-    date: {
-      day: "22",
-      month: "Jan",
-    },
-    title:
-      "TSG Monthly Cooking Show: Nourish Your Immunity, Energize Your Year",
-    description:
-      "Thursday, January 22, 2026. Learn how to prepare immune-boosting recipes that will help you start the year strong and maintain your energy throughout the seasons.",
-    linkHref: "/wellness/january_2026/01_Cooking Show_January 2026.pdf",
-    linkText: "Register",
-  },
-
-  // BCBS Webinar - Weaving Well-Being Into Our Lives
-  {
-    date: {
-      day: "26",
-      month: "Jan",
-    },
-    title: "BCBS Health Education Webinar - Weaving Well-Being Into Our Lives",
-    description:
-      "Monday, January 26, 2026. Learn practical strategies for integrating wellness practices into your daily routine to create a more balanced and fulfilling life.",
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
     linkHref:
-      "/wellness/january_2026/Weaving Wellbeing into Our Lives BCBSNM.pdf",
-    linkText: "Register",
+      "https://nmpsia.com/nmpsiadownload/202603/notice_of_public_meetings.pdf",
+    linkText: "View notice",
   },
-
-  // BCBS Webinar - New Year, New You
+  // BAC Meeting
   {
     date: {
-      day: "28",
-      month: "Jan",
+      day: "04",
+      month: "Mar",
     },
-    title: "BCBS Health Education Webinar - New Year, New You",
+    title: "Benefits Advisory Committee Meeting",
     description:
-      "Wednesday, January 28, 2026. Start the year with intention and discover actionable steps to achieve your health and wellness goals for 2026.",
-    linkHref: "/wellness/january_2026/New Year, New You BCBSNM.pdf",
-    linkText: "Register",
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202603/BAC_Meeting_Agenda.pdf",
+    linkText: "View agenda",
+  },
+  // RAC meeting
+  {
+    date: {
+      day: "04",
+      month: "Mar",
+    },
+    title: "Risk Advisory Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202603/RAC_Meeting_Agenda.pdf",
+    linkText: "View agenda",
+  },
+  // IFR meeting
+  {
+    date: {
+      day: "05",
+      month: "Mar",
+    },
+    title: "Internal Fiscal Review Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202603/IFR_Meeting_Agenda.pdf",
+    linkText: "View agenda",
+  },
+  // Board meeting
+  {
+    date: {
+      day: "05",
+      month: "Mar",
+    },
+    title: "Board of Directors Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202603/Board_Meeting_Agenda.pdf",
+    linkText: "View agenda",
   },
 
   // Kitchen Confidence (4-week email series)
@@ -202,45 +133,6 @@ const homepageNews = [
   },
 ];
 
-// function to render news items to the page
-// function renderNews() {
-//   const newsContainer = document.getElementById("news-container");
-//   let newsHTML = "";
-
-//   for (let i = 0; i < homepageNews.length; i++) {
-//     const newsItem = homepageNews[i];
-//     newsHTML += /*html*/ `
-//       <div class="swiper-slide">
-//         <div class="happHeading">
-//           ${
-//             newsItem.date
-//               ? `<div class="happDate mb-2 text-light">
-// 						<span>${newsItem.date.day}</span>
-// 						<span>${newsItem.date.month}</span>
-// 						</div>`
-//               : `<div class="happDate" style="max-width: 12px"></div>`
-//           }
-//           <div class="happTitle">
-//           <a href="${newsItem.linkHref}" ${
-//       newsItem.modalTrigger
-//         ? 'data-bs-toggle="modal" data-bs-target="' + newsItem.linkHref + '"'
-//         : 'target="_blank"'
-//     }">
-//             <h3>${newsItem.title}</h3>
-//             </a>
-//           </div>
-//         </div>
-//         <div class="lower">
-//             <div class="happContent">${newsItem.description}</div>
-
-//         </div>
-//       </div>
-//     `;
-//   }
-
-//   newsContainer.innerHTML = newsHTML;
-// }
-
-// renderNews();
-
-// Swiper initialization is now handled in index.html
+// News is rendered by index.html: renderNewsCards() populates #news-wrapper
+// with .news-card markup and initializes Swiper on .news-swiper.
+// This file only provides the homepageNews data array.

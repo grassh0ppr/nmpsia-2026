@@ -117,7 +117,7 @@ nmpsia-2026/
 │   ├── sign_in_training.js
 │   └── wellness-news.js
 │
-└── styles/                           # CSS stylesheets
+└── css/                           # CSS stylesheets
     ├── district-contacts.css
     ├── footer.css
     ├── form.css
@@ -142,12 +142,13 @@ nmpsia-2026/
 - **HTML Pages**: Root-level HTML files for different pages of the website
 - **scripts/components/**: Modular JavaScript components organized by feature area (carriers, footer, navbar, procurements, risk, wellness)
 - **scripts/data/**: JSON data files used by the application
-- **styles/**: CSS stylesheets including main styles and Webflow navbar styles
+- **css/**: CSS stylesheets including main styles and Webflow navbar styles
 - **images/**: Image assets used throughout the site
 
 ## Component Organization
 
 Components are organized by functional area:
+
 - **carriers/**: Insurance carrier-specific components
 - **footer/**: Footer navigation and sitemap components
 - **navbar/**: Navigation bar components

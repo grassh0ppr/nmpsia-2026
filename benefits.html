@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -56,9 +56,9 @@
     />
 
     <!-- custom stylesheets -->
-    <link rel="stylesheet" href="styles/footer.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- components -->
     <script src="./scripts/components/applying-life-ltd-component.js"></script>
@@ -201,22 +201,24 @@
         </section> -->
 
         <!-- Centralized Carriers Grid Section -->
-        <section id="carriers-grid" class="content-section carriers-grid-section">
+        <section
+          id="carriers-grid"
+          class="content-section carriers-grid-section"
+        >
           <h3><i class="bx bx-building-house me-2"></i>Benefits Information</h3>
           <p>
-            Explore your benefit options and access important resources from our trusted carriers. 
-            Use the search and filters below to find specific information quickly.
+            Explore your benefit options and access important resources from our
+            trusted carriers. Use the search and filters below to find specific
+            information quickly.
           </p>
-          
+
           <carriers-grid></carriers-grid>
         </section>
 
         <!-- Administrative Services Section -->
         <section id="admin-services" class="content-section">
           <h3><i class="bx bx-cog me-2"></i>Administrative Services</h3>
-          <p>
-            Contact information for administrative services and support.
-          </p>
+          <p>Contact information for administrative services and support.</p>
           <div class="d-flex justify-content-between align-items-center mb-3">
             <a
               href="/pdfs/carriers/carrier_contacts_chart_2025.pdf"
@@ -342,7 +344,6 @@
             </div>
           </div>
         </section> -->
-
 
         <!-- Resources Section -->
         <section id="resources" class="content-section">
@@ -897,7 +898,7 @@
 
               requestAnimationFrame(scrollStep);
             },
-            true
+            true,
           ); // Use capture phase for highest priority
 
           // Initial check

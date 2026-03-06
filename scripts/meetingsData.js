@@ -1,4 +1,48 @@
 export const meetings = {
+  // March 4 & 5, 2026
+  202603: {
+    monthTitle: "March 2026",
+    committees: {
+      BAC: {
+        date: "04",
+        documents: ["agenda"],
+      },
+      RAC: {
+        date: "04",
+        documents: ["agenda"],
+      },
+      IFR: {
+        date: "05",
+        documents: ["agenda"],
+      },
+      Board: {
+        date: "05",
+        documents: ["agenda"],
+      },
+    },
+  },
+  // February 4 & 5, 2026
+  202602: {
+    monthTitle: "February 2026",
+    committees: {
+      BAC: {
+        date: "04",
+        documents: ["agenda", "packet"],
+      },
+      RAC: {
+        date: "04",
+        documents: ["agenda", "packet"],
+      },
+      IFR: {
+        date: "05",
+        documents: ["agenda", "packet"],
+      },
+      Board: {
+        date: "05",
+        documents: ["agenda", "packet"],
+      },
+    },
+  },
   // December 3 & 4
   202512: {
     monthTitle: "December 2025",

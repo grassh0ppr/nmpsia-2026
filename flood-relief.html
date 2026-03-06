@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -53,9 +53,9 @@
     />
 
     <!-- custom stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/queries.css" />
-    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/form.css" />
 
     <!-- components -->
     <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
@@ -729,7 +729,7 @@
             // If there are missing fields, show error
             if (missingFields.length > 0) {
               errorMessage = `Please complete the following required fields: ${missingFields.join(
-                ", "
+                ", ",
               )}`;
             }
 
@@ -782,7 +782,7 @@
                 if (res === "Send success!") {
                   console.log("success");
                   new bootstrap.Modal(
-                    document.getElementById("successModal")
+                    document.getElementById("successModal"),
                   ).show();
                   document.getElementById("result").innerHTML =
                     "Your request has been recorded and forwarded for processing!";
@@ -793,7 +793,7 @@
                 else if (res === "Zip Not Match!") {
                   console.log("invalid zip!");
                   new bootstrap.Modal(
-                    document.getElementById("errorModal")
+                    document.getElementById("errorModal"),
                   ).show();
                   document.getElementById("errResult").innerHTML =
                     "Your zip code is not in the affected area! If you feel you are eligible for assistance, please contact your employer's benefits office to confirm enrollment and/or provide additional information.";
@@ -803,7 +803,7 @@
                 else if (res === "Not match!") {
                   console.log("who?");
                   new bootstrap.Modal(
-                    document.getElementById("errorModal")
+                    document.getElementById("errorModal"),
                   ).show();
 
                   document.getElementById("errResult").innerHTML =
@@ -819,7 +819,7 @@
                   document.getElementById("errResult").innerHTML =
                     "Could not process request";
                   new bootstrap.Modal(
-                    document.getElementById("errorModal")
+                    document.getElementById("errorModal"),
                   ).show();
                 }
               });

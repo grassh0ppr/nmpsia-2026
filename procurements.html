@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -47,8 +47,8 @@
     />
 
     <!-- custom stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- font awesome -->
     <script
@@ -58,9 +58,8 @@
 
     <!-- components in semi alphabetical order -->
     <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
-    <script src="./scripts/components/procurements/active-component.js"></script>
-    <script src="./scripts/components/procurements/all-component.js"></script>
-    <script src="./scripts/components/procurements/closed-component.js"></script>
+    <script src="./scripts/components/procurements/active-component.js?v=1.1"></script>
+    <script src="./scripts/components/procurements/closed-component.js?v="></script>
     <script src="./scripts/components/footer/footer-sitemap.js"></script>
     <script src="./scripts/sidebar-navigation.js"></script>
   </head>
@@ -101,14 +100,6 @@
         </div>
         <nav class="sidebar-nav">
           <a
-            href="#all-procurements"
-            data-section="all-procurements"
-            class="nav-item"
-          >
-            <i class="bx bx-file"></i>
-            <span>Procurement Notices</span>
-          </a>
-          <a
             href="#active-procurements"
             data-section="active-procurements"
             class="nav-item"
@@ -127,16 +118,6 @@
         </nav>
       </aside>
       <main data-default-section="active-procurements" class="benefits-main">
-        <!-- NMPSIA PROCUREMENT NOTICES -->
-        <div id="all-procurements" class="content-section">
-          <div class="heading-and-element-flexbox">
-            <h2 class="display-4">Procurement Notices</h2>
-            <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
-          </div>
-          <hr />
-          <all-procurements></all-procurements>
-        </div>
-
         <!-- ACTIVE PROCUREMENTS -->
         <div id="active-procurements" class="content-section">
           <div class="heading-and-element-flexbox">

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -53,9 +53,9 @@
     />
 
     <!-- custom stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/queries.css" />
-    <link rel="stylesheet" href="styles/district-contacts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/district-contacts.css" />
 
     <!-- components in semi alphabetical order -->
     <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
@@ -363,7 +363,7 @@
       function handleLoadingTimeout() {
         hideLoading();
         showError(
-          "Unable to connect to the server. Please check your internet connection and try again later."
+          "Unable to connect to the server. Please check your internet connection and try again later.",
         );
       }
 
@@ -385,7 +385,7 @@
                 "Content-Type": "application/json;charset=utf-8",
               },
               body: JSON.stringify({}),
-            }
+            },
           );
 
           // Race between the fetch and timeout
@@ -421,18 +421,18 @@
           // Show appropriate error message based on the error type
           if (error.message === "Request timeout") {
             showError(
-              "Request timed out. Please check your internet connection and try again."
+              "Request timed out. Please check your internet connection and try again.",
             );
           } else if (
             error.name === "TypeError" &&
             error.message.includes("fetch")
           ) {
             showError(
-              "Unable to connect to the server. This might be due to network issues or the service being temporarily unavailable."
+              "Unable to connect to the server. This might be due to network issues or the service being temporarily unavailable.",
             );
           } else {
             showError(
-              "Failed to load district information. Please try again later."
+              "Failed to load district information. Please try again later.",
             );
           }
         }
@@ -511,10 +511,10 @@
       function updateContactCounts() {
         allDistricts.forEach((district) => {
           const count = allContacts.filter(
-            (contact) => contact.dist_id === district.dist_id
+            (contact) => contact.dist_id === district.dist_id,
           ).length;
           const countElement = document.getElementById(
-            `contact-count-${district.dist_id}`
+            `contact-count-${district.dist_id}`,
           );
           if (countElement) {
             countElement.textContent = count;
@@ -544,7 +544,7 @@
         const modalBody = document.getElementById("modalBody");
         const modalTitle = document.getElementById("contactDetailsModalLabel");
         const matchedContacts = allContacts.filter(
-          (contact) => contact.dist_id === district.dist_id
+          (contact) => contact.dist_id === district.dist_id,
         );
 
         const districtName =
@@ -573,8 +573,8 @@
                     <button class="copy-btn" onclick="copyToClipboard('${
                       firstContact.address1
                     }, ${firstContact.city}, ${firstContact.state} ${
-            firstContact.zip
-          }', this)" title="Copy physical address">
+                      firstContact.zip
+                    }', this)" title="Copy physical address">
                       <i class="bx bx-copy"></i>
                     </button>
                   </div>
@@ -588,8 +588,8 @@
                   }
                   <div class="contact-field">
                     <span class="contact-value">${firstContact.city}, ${
-            firstContact.state
-          } ${firstContact.zip}</span>
+                      firstContact.state
+                    } ${firstContact.zip}</span>
                   </div>
                 </div>
               </div>
@@ -601,8 +601,8 @@
                     <button class="copy-btn" onclick="copyToClipboard('${
                       firstContact.maddress1
                     }, ${firstContact.mcity}, ${firstContact.mstate} ${
-            firstContact.mzip
-          }', this)" title="Copy mailing address">
+                      firstContact.mzip
+                    }', this)" title="Copy mailing address">
                       <i class="bx bx-copy"></i>
                     </button>
                   </div>
@@ -616,8 +616,8 @@
                   }
                   <div class="contact-field">
                     <span class="contact-value">${firstContact.mcity}, ${
-            firstContact.mstate
-          } ${firstContact.mzip}</span>
+                      firstContact.mstate
+                    } ${firstContact.mzip}</span>
                   </div>
                 </div>
               </div>
@@ -654,7 +654,7 @@
                             <div class="contact-value">
                               <a href="tel:${contact.phone.replace(
                                 /\s/g,
-                                ""
+                                "",
                               )}" class="contact-link">
                                 ${contact.phone}
                               </a>
@@ -682,7 +682,7 @@
                       </div>
                     </div>
                   </div>
-                `
+                `,
                   )
                   .join("")}
               </div>
@@ -692,7 +692,7 @@
 
         // Show the modal
         const modal = new bootstrap.Modal(
-          document.getElementById("contactDetailsModal")
+          document.getElementById("contactDetailsModal"),
         );
         modal.show();
       }
@@ -714,7 +714,7 @@
       // Handle search
       function handleSearch() {
         const searchTerm = normalizeString(
-          document.getElementById("searchInput").value
+          document.getElementById("searchInput").value,
         );
 
         if (searchTerm === "") {

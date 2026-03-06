@@ -15,7 +15,7 @@ class WebflowNavbar extends HTMLElement {
           <div class="nav-container w-container">
             <a href="./index.html" class="brand w-nav-brand">
               <img
-                src="styles/webflow_navbar/images/NMPSIA-logo-white.png"
+                src="css/webflow_navbar/images/NMPSIA-logo-white.png"
                 loading="lazy"
                 width="205"
                 alt="NMPSIA Logo"
@@ -171,19 +171,19 @@ class WebflowNavbar extends HTMLElement {
     // Load Webflow CSS if not already loaded
     if (!document.querySelector('link[href*="webflow-navbar.css"]')) {
       const normalizeCSS = document.createElement("link");
-      normalizeCSS.href = "styles/webflow_navbar/css/normalize.css";
+      normalizeCSS.href = "css/webflow_navbar/css/normalize.css";
       normalizeCSS.rel = "stylesheet";
       normalizeCSS.type = "text/css";
       document.head.appendChild(normalizeCSS);
 
       const webflowCSS = document.createElement("link");
-      webflowCSS.href = "styles/webflow_navbar/css/webflow.css";
+      webflowCSS.href = "css/webflow_navbar/css/webflow.css";
       webflowCSS.rel = "stylesheet";
       webflowCSS.type = "text/css";
       document.head.appendChild(webflowCSS);
 
       const navbarCSS = document.createElement("link");
-      navbarCSS.href = "styles/webflow_navbar/css/webflow-navbar.css";
+      navbarCSS.href = "css/webflow_navbar/css/webflow-navbar.css";
       navbarCSS.rel = "stylesheet";
       navbarCSS.type = "text/css";
       document.head.appendChild(navbarCSS);
@@ -210,7 +210,7 @@ class WebflowNavbar extends HTMLElement {
     // Load Webflow JS if not already loaded
     if (!document.querySelector('script[src*="webflow.js"]')) {
       const webflowScript = document.createElement("script");
-      webflowScript.src = "styles/webflow_navbar/js/webflow.js";
+      webflowScript.src = "css/webflow_navbar/js/webflow.js";
       webflowScript.type = "text/javascript";
       webflowScript.onload = () => {
         this.initializeWebflowComponents();

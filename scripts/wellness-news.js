@@ -1,5 +1,87 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "February 2026": [
+    {
+      name: "Fitness Program Feb 2026 - Waived Enrollment with Points Member Flyer",
+      url: "https://nmpsia.com/wellness/february_2026/Fitness Program Feb 2026 Waived Enrollment with Points Member Flyer.pdf",
+    },
+    {
+      name: "Healthy Heart, Healthy You",
+      url: "https://nmpsia.com/wellness/february_2026/Healthy Heart, Healthy You.pdf",
+    },
+    {
+      name: "Life on Mindfulness 2025 - NMPSIA",
+      url: "https://nmpsia.com/wellness/february_2026/Life on Mindfulness - 2025 - NMPSIA.pdf",
+    },
+    {
+      name: "Mindfulness for Better Sleep - NMPSIA",
+      url: "https://nmpsia.com/wellness/february_2026/Mindfulness for Better Sleep - NMPSIA.pdf",
+    },
+    {
+      name: "NMPSIA February 2026 Newsletter",
+      url: "https://nmpsia.com/wellness/february_2026/NMPSIA February 2026 Newsletter.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Calendar February 2026",
+      url: "https://nmpsia.com/wellness/february_2026/NMPSIA Wellness Calendar February 2026.pdf",
+    },
+    {
+      name: "Presbyterian Fitness Pass",
+      url: "https://nmpsia.com/wellness/february_2026/Presbyterian Fitness Pass.pdf",
+    },
+    {
+      name: "Caring for Your Heart Member Flyer (Spanish)",
+      url: "https://nmpsia.com/wellness/february_2026/SP Caring for Your Heart Member Flyer.pdf",
+    },
+    {
+      name: "Take Charge of Your Health Flyer",
+      url: "https://nmpsia.com/wellness/february_2026/Take Charge of Your Health Flyer_.pdf",
+    },
+    {
+      name: "Take Control of Your Stress",
+      url: "https://nmpsia.com/wellness/february_2026/Take Control of Your Stress.pdf",
+    },
+    {
+      name: "TSG Well-Being 2026 Webinars - February",
+      url: "https://nmpsia.com/wellness/february_2026/TSG Well-Being 2026 Webinars_02.pdf",
+    },
+    {
+      name: "Well-Balanced February 2026 Newsletter",
+      url: "https://nmpsia.com/wellness/february_2026/Well-Balanced-Feb-26-FNL.pdf",
+    },
+    {
+      name: "Wellness Communication - February 2026",
+      url: "https://nmpsia.com/wellness/february_2026/Wellness Communication (February 2026).pdf",
+    },
+    {
+      name: "February 2026 Cooking Show",
+      url: "https://nmpsia.com/wellness/february_2026/02_February Cooking Show_2026.pdf",
+    },
+    {
+      name: "February 2026 Observance (Spanish)",
+      url: "https://nmpsia.com/wellness/february_2026/02_February Observance_2026 SP.pdf",
+    },
+    {
+      name: "February 2026 Observance",
+      url: "https://nmpsia.com/wellness/february_2026/02_February Observance_2026.pdf",
+    },
+    {
+      name: "BAM & Well onTarget Member Overview",
+      url: "https://nmpsia.com/wellness/february_2026/BAM & Well onTarget Member Overview.pdf",
+    },
+    {
+      name: "Be Good to Your Heart Poster",
+      url: "https://nmpsia.com/wellness/february_2026/Be Good to your Heart Poster.pdf",
+    },
+    {
+      name: "Blood Pressure Basics",
+      url: "https://nmpsia.com/wellness/february_2026/Blood Pressure Basics.pdf",
+    },
+    {
+      name: "Caring for Your Heart Member Flyer",
+      url: "https://nmpsia.com/wellness/february_2026/Caring for Your Heart Member Flyer.pdf",
+    },
+  ],
   "January 2026": [
     {
       name: "New Year, New You - BCBSNM",
@@ -428,7 +510,7 @@ const monthlyNewsKits = {
 // Function to initialize the wellness news accordion
 function initializeWellnessNewsAccordion() {
   const accordion = document.getElementById("accordion2024");
-  
+
   // Only initialize if accordion exists and hasn't been initialized yet
   if (!accordion || accordion.innerHTML.trim() !== "") {
     return;
@@ -496,8 +578,8 @@ function initializeWellnessNewsAccordion() {
                   </button>
               </h2>
               <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="heading${
-      index + 1
-    }" data-bs-parent="#accordion2024">
+                index + 1
+              }" data-bs-parent="#accordion2024">
                   <div class="accordion-body">
                       <ul class="content-list">
                           ${fileList}
@@ -514,7 +596,10 @@ function initializeWellnessNewsAccordion() {
 // Try to initialize immediately (for wellness.html)
 // If DOM is ready, initialize; otherwise wait for DOMContentLoaded
 if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initializeWellnessNewsAccordion);
+  document.addEventListener(
+    "DOMContentLoaded",
+    initializeWellnessNewsAccordion,
+  );
 } else {
   // DOM is already ready, try to initialize
   initializeWellnessNewsAccordion();

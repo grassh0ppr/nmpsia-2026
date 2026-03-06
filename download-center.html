@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -49,8 +49,8 @@
     />
 
     <!-- custom stylesheets -->
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/queries.css" />
 
     <!-- font awesome -->
     <script
@@ -62,7 +62,7 @@
     <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
     <script src="./scripts/components/footer/footer-sitemap.js"></script>
     <!-- commented out while testing locally -->
-    <script>
+    <!-- <script>
       if (
         localStorage.getItem("userName") == undefined ||
         localStorage.getItem("userName") == null ||
@@ -81,12 +81,13 @@
             '<p style="color:red;margin-top:-10px">We suggest you change your password.</p>'
           );
       }
-    </script>
+    </script> -->
 
     <style>
       /* Download Center Modern Styles */
       body.download-center-modern {
-        background-image: url("/images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+        background-image:
+          url("/images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
           linear-gradient(
             135deg,
             rgba(102, 126, 234, 0.3) 0%,
@@ -517,21 +518,45 @@
       <aside class="download-sidebar" id="downloadSidebar">
         <h3><i class="bx bx-calendar me-2"></i>Meeting Files</h3>
 
-        <!-- 2025 Accordion -->
+        <!-- 2026 Accordion -->
         <div class="accordion-item">
           <button
             class="accordion-button"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#accordion-2025"
+            data-bs-target="#accordion-2026"
             aria-expanded="true"
+            aria-controls="accordion-2026"
+          >
+            <i class="bx bx-calendar-star me-2"></i>2026 Meeting Files
+          </button>
+          <div
+            id="accordion-2026"
+            class="accordion-collapse collapse show"
+            aria-labelledby="heading-2026"
+          >
+            <div class="accordion-body">
+              <a href="#202603" data-section="202603">March</a>
+              <a href="#202602" data-section="202602">February</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2025 Accordion -->
+        <div class="accordion-item">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#accordion-2025"
+            aria-expanded="false"
             aria-controls="accordion-2025"
           >
             <i class="bx bx-calendar-star me-2"></i>2025 Meeting Files
           </button>
           <div
             id="accordion-2025"
-            class="accordion-collapse collapse show"
+            class="accordion-collapse collapse"
             aria-labelledby="heading-2025"
           >
             <div class="accordion-body">
@@ -780,7 +805,7 @@
       </aside>
 
       <!-- Main Content -->
-      <main class="download-main" data-default-section="202512">
+      <main class="download-main" data-default-section="202603">
         <!-- Hero Section -->
         <section class="download-hero-section">
           <div class="download-hero-content">
@@ -801,6 +826,9 @@
 
         <!-- SELECTED MEETING FILES -->
         <!-- these are like containers for the main content; they all have a matching id in the aside -->
+        <!-- 2026 -->
+        <div id="202603" class="section mt-3"></div>
+        <div id="202602" class="section mt-3"></div>
         <!-- 2025 -->
         <div id="202512" class="section mt-3"></div>
         <div id="202511" class="section mt-3"></div>
@@ -939,7 +967,7 @@
     ></script>
 
     <!-- <script src="./js/main.js"></script> -->
-    <script type="module" src="./scripts/downloadCenter.js?v=2.6"></script>
+    <script type="module" src="./scripts/downloadCenter.js?v=2.7"></script>
     <script src="./scripts/sidebar-navigation.js"></script>
 
     <!-- Download Center specific JavaScript -->
@@ -967,6 +995,15 @@
           showSection(defaultSection);
         }
 
+        // Set active sidenav link to match default section (e.g. March 2026)
+        document
+          .querySelectorAll("#downloadSidebar .accordion-body a")
+          .forEach((a) => a.classList.remove("active"));
+        const defaultLink = document.querySelector(
+          `#downloadSidebar .accordion-body a[data-section="${defaultSection}"]`,
+        );
+        if (defaultLink) defaultLink.classList.add("active");
+
         // Override the default sidebar navigation for download center
         // since it has different behavior (showing/hiding sections vs scrolling)
         const downloadSidebar = document.getElementById("downloadSidebar");
@@ -984,6 +1021,10 @@
                 const sectionId = item.dataset.section.toLowerCase();
                 window.location.hash = sectionId;
                 showSection(sectionId);
+                document
+                  .querySelectorAll("#downloadSidebar .accordion-body a")
+                  .forEach((a) => a.classList.remove("active"));
+                item.classList.add("active");
 
                 // Close sidebar on mobile
                 if (window.innerWidth <= 1024) {

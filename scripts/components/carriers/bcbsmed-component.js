@@ -29,6 +29,70 @@ class BlueCrossMedical extends HTMLElement {
             href="https://account.bcbsnm.com/login/?goto=https://cim.bcbsnm.com/am/oauth2/realms/members/authorize?client_id%3DOAuth-BlueAccessMember20_APP00007045%26code_challenge%3DLCGomBkHF8v8OnA7h5zMX3UQR_wZd8ilRqdGeU4vNYY%26code_challenge_method%3DS256%26prompt%3Dnone%26redirect_uri%3Dhttps://mybam.bcbsnm.com/%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520bam2.0%2520fr:idm:*%26service%3Dhcsc-members-mma-mfa%26state%3DUW82Rw%253D%253D">
             Member Portal Login</a>
         </li>
+
+
+                      <!-- 2026 Summary of Benefits and Coverage -->
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20High%20Option.111025_JS%2011.14.2025.pdf"> 2026
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM High Option</a>
+                      </li>
+
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20Low%20Option.111025_JS%2011.14.2025.pdf"> 2026
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM Low Option</a>
+                      </li>
+                      <!-- 2025 Summary of Benefits and Coverage -->
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_High_Option_final.pdf"> 2025
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM High Option</a>
+                      </li>
+
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_Low_Option_final.pdf"> 2025
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM Low Option</a>
+                      </li>
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BluePreferred_EPO_Plan_final.pdf">
+                          2025 NMPSIA Summary of Benefits
+                          and Coverage BluePreferred EPO Option</a>
+                      </li>
+                      <!-- 2024 SUMMARY OF BENEFITS AND COVERAGE -->
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BCBS_High_Option_Final.pdf"> 2024
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM High Option</a>
+                      </li>
+
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BCBS_Low_Option_Final.pdf"> 2024
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM Low Option</a>
+                      </li>
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BluePreferred_EPO_Plan_Final.pdf">
+                          2024 NMPSIA Summary of Benefits
+                          and Coverage BluePreferred EPO Option</a>
+                      </li>
+                     
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/pdfs/BCBSNM_San_Juan_IPA_Contracting_Update.pdf">
+                          BCBSNM San Juan IPA Contracting
+                          Update</a>
+                      </li>
+                   
         <li>
           <i class="bx bx-link-external"></i>
           <a target="_blank" href="https://www.bcbsnm.com/nmpsia/benefits"> Blue
