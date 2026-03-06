@@ -8,6 +8,28 @@ class BoardMeetingPackets extends HTMLElement {
     <hr>
     <p>Information about NMPSIA Board Meeting Packets is displayed here.</p>
     <div class="accordion" id="accordionBMP">
+        <!-- PACKETS 2026 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingBMP2026">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseBMP2026" aria-expanded="true" aria-controls="collapseBMP2026">
+                    2026 Board Meeting Packets
+                </button>
+            </h2>
+            <div id="collapseBMP2026" class="accordion-collapse collapse show"
+                aria-labelledby="headingBMP2026" data-bs-parent="#accordionBMP">
+                <div class="accordion-body">
+                    <ul class="content-list">
+                        <li>
+                            <i class="bx bxs-file-pdf"></i>
+                            <a href="/pdfs/Feb2026BoardPacketR2.pdf"
+                                target="_blank">
+                                February 2026</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <!-- PACKETS 2025 -->
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingBMP2025">

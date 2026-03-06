@@ -7,6 +7,27 @@ class BoardMeetingMinutes extends HTMLElement {
                 </div>
                 <hr>
                 <div class="accordion" id="accordionBMM">
+                 <!-- MINUTES 2026 -->
+                 <div class="accordion-item">
+                 <h2 class="accordion-header">
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                         data-bs-target="#collapseBMM2026" aria-expanded="true" aria-controls="collapseBMM2026">
+                         2026 Board Meeting Minutes
+                     </button>
+                 </h2>
+                 <div id="collapseBMM2026" class="accordion-collapse collapse show"
+                     data-bs-parent="#accordionBMM">
+                     <div class="accordion-body">
+                         <ul class="content-list">
+                             <li>
+                                 <i class="bx bxs-file-pdf"></i>
+                                 <a target="_blank" href="/pdfs/Feb2026BoardMinutesFINAL.pdf">
+                                     February 2026</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
                     <!-- MINUTES 2025 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header">
