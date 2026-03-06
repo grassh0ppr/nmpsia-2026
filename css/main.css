@@ -2241,6 +2241,8 @@ body.modern-body::after {
     flex-direction: column;
     gap: 1rem;
     padding: 0 0.5rem;
+    /* No stacking context so fixed sidebar (z-index 9999) can sit above overlay (9998) */
+    z-index: auto;
   }
 
   .benefits-sidebar {
