@@ -17,6 +17,36 @@ npx serve .
 
 **No build step required**—changes to HTML, CSS, or JS are immediately reflected on refresh.
 
+### Testing on Mobile (iPhone/Android)
+
+To view the local server on your phone, both devices must be on the **same WiFi network**.
+
+1. **Start server bound to all interfaces** (not just localhost):
+   ```bash
+   python3 -m http.server 8000 --bind 0.0.0.0
+   ```
+
+2. **Find your computer's local IP address**:
+
+   | OS | Command |
+   |----|---------|
+   | macOS | `ipconfig getifaddr en0` |
+   | Windows | `ipconfig` (look for "IPv4 Address" under your WiFi adapter) |
+   | Linux | `hostname -I` |
+
+   This returns something like `192.168.1.42`
+
+3. **Open Safari/Chrome on your phone** and go to:
+   ```
+   http://192.168.1.42:8000
+   ```
+   (Replace with your actual IP from step 2)
+
+**Troubleshooting**:
+- **IP changed?** Re-run the IP lookup command if connection stops working
+- **Windows Firewall blocking?** You may get a prompt to allow Python through the firewall - click "Allow"
+- **Still not working?** Make sure both devices are on the same network (not one on cellular)
+
 ## Architecture
 
 ### Web Components Pattern
