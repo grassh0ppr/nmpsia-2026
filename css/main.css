@@ -5,7 +5,7 @@
 /* ===== UTILITY CLASSES ===== */
 .modern-bg {
   background-image:
-    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash-1.webp"),
     linear-gradient(
       135deg,
       rgba(102, 126, 234, 0.3) 0%,
@@ -536,7 +536,7 @@
 /* ===== BODY STYLES ===== */
 body.modern-body {
   background-image:
-    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash\ 1.png"),
+    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash-1.webp"),
     linear-gradient(
       135deg,
       rgba(102, 126, 234, 0.3) 0%,
@@ -564,6 +564,22 @@ body.modern-body::after {
     rgba(118, 75, 162, 0.3) 100%
   );
   z-index: -1;
+}
+
+/* Smaller background image on mobile for faster load */
+@media (max-width: 768px) {
+  body.modern-body,
+  .modern-bg {
+    background-image:
+      url("../images/scott-elkins-3O4GzG_Pjb4-unsplash-1-mobile.webp"),
+      linear-gradient(
+        135deg,
+        rgba(102, 126, 234, 0.3) 0%,
+        rgba(118, 75, 162, 0.3) 100%
+      );
+    /* scroll instead of fixed on mobile for better performance */
+    background-attachment: scroll;
+  }
 }
 
 /* Minimal list styling to match modern icon list appearance */
