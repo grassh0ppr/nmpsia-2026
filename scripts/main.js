@@ -13,14 +13,14 @@ function showSection(sectionId) {
   sections.forEach((section) => {
     section.classList.toggle(
       "active",
-      section.id.toLowerCase() === sectionId.toLowerCase()
+      section.id.toLowerCase() === sectionId.toLowerCase(),
     );
   });
 
   links.forEach((link) => {
     link.classList.toggle(
       "active",
-      link.getAttribute("href").toLowerCase() === `#${sectionId.toLowerCase()}`
+      link.getAttribute("href").toLowerCase() === `#${sectionId.toLowerCase()}`,
     );
   });
 

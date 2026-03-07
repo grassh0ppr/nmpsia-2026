@@ -577,8 +577,6 @@ body.modern-body::after {
         rgba(102, 126, 234, 0.3) 0%,
         rgba(118, 75, 162, 0.3) 100%
       );
-    /* scroll instead of fixed on mobile for better performance */
-    background-attachment: scroll;
   }
 }
 
