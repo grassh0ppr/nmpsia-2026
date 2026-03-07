@@ -4,7 +4,7 @@ class LanternBenefits extends HTMLElement {
       <div class="heading-and-element-flexbox">
         <h2 class="display-4">SurgeryPlus is now Lantern</h2>
         <a href="https://surgeryplus.com/" target="_blank" title="Visit carrier website">
-          <img src="images/lantern_logo.png" style="height: 100px; padding: 8px"
+          <img src="images/lantern_logo.png" style="max-height: 100px; max-width: 100%; width: auto; height: auto; padding: 8px"
             alt="Lantern (SurgeryPlus rebrand) logo" class="my-4 mx-3" />
         </a>
       </div>

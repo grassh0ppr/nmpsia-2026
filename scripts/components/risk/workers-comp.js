@@ -11,7 +11,7 @@ class WorkersComp extends HTMLElement {
             >
               Workers' Compensation
             </h3>
-            <img width="140px" src="images/Logo_CCMSI.png" alt="CCMSI logo" />
+            <img style="max-width: 140px; width: 100%; height: auto;" src="images/Logo_CCMSI.png" alt="CCMSI logo" />
           </div>
 
           <h5 class="mt-4 subheading">

@@ -44,17 +44,51 @@
     transform: translateX(0);
     transition: none !important;
   }
+
+  /* Hero sections: stack on tablets */
+  .hero-section,
+  .contacts-hero-section,
+  .covid-hero-section,
+  .about-hero-section,
+  .benefits-hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .hero-content,
+  .contacts-hero-content,
+  .covid-hero-content,
+  .benefits-hero-content {
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .heading-and-element-flexbox {
-    flex-direction: column-reverse;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 1rem;
   }
 
   .heading-and-element-flexbox h2 {
-    text-align: center;
+    text-align: left;
+    font-size: 1.5rem;
+    flex: 1;
+  }
+
+  .heading-and-element-flexbox img {
+    max-width: 60px;
+    max-height: 60px;
+    order: -1;
   }
   .carrier-card {
     flex-direction: column;
@@ -124,6 +158,56 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /* Claims tables: single column on mobile */
+  .claims-tables-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .claims-tables-wrapper .claims-table {
+    width: 100%;
+  }
+
+  /* Risk logos: wrap on mobile */
+  .risk-logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .risk-logos img {
+    height: 40px;
+  }
+
+  /* Search result badges: larger on mobile for readability */
+  .document-badge {
+    font-size: 0.875rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  /* Filter buttons: tighter on mobile */
+  .filter-buttons {
+    gap: 0.5rem;
+  }
+
+  /* Content list with descriptions: mobile tweaks */
+  .content-list.with-descriptions li {
+    padding: 1rem;
+  }
+
+  .content-list.with-descriptions li span a {
+    font-size: 1rem;
+  }
+
+  .content-list.with-descriptions li p {
+    padding-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
   }
 
   /* Better spacing for mobile */

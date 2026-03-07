@@ -7,7 +7,7 @@ class PresbyterianHealthPlan extends HTMLElement {
         </h2>
         <a href="https://www.phs.org/health-plans/employer-plans/Pages/new-mexico-public-schools-insurance-authority.aspx"
           target="_blank" title="Visit carrier website">
-          <img src="images/carriers/presbyterian-logo-red.svg" style="width: 240px" alt="Pres logo"
+          <img src="images/carriers/presbyterian-logo-red.svg" style="max-width: 240px; width: 100%; height: auto;" alt="Pres logo"
             class="my-4 mx-3" />
         </a>
       </div>

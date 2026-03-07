@@ -17,7 +17,7 @@ class WebflowNavbar extends HTMLElement {
               <img
                 src="css/webflow_navbar/images/NMPSIA-logo-white.png"
                 loading="lazy"
-                width="205"
+                style="max-width: 205px; width: 100%; height: auto;"
                 alt="NMPSIA Logo"
                 class="image"
               />

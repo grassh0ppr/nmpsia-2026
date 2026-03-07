@@ -6,7 +6,7 @@ class StopItContent extends HTMLElement {
     <img
       src="images/lightspeed_systems_logo.svg"
       alt="Lightspeed Systems logo"
-      style="width: 400px"
+      style="max-width: 400px; width: 100%; height: auto;"
     />
   </div>
   <hr />
