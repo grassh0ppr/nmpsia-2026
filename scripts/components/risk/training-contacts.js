@@ -313,7 +313,8 @@ class TrainingContacts extends HTMLElement {
   </div>
 
   <!-- Loss prevention contact list table -->
-  <table class="table table-bordered table-responsive">
+  <div class="table-responsive-wrapper">
+  <table class="table table-bordered">
     <thead>
       <tr>
         <th>Schools</th>
@@ -1105,7 +1106,8 @@ class TrainingContacts extends HTMLElement {
         </td>
       </tr>
     </tbody>
-  </table>    `;
+  </table>
+  </div>    `;
   }
 }
 

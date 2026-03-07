@@ -21,6 +21,7 @@ class OnlineTrainings extends HTMLElement {
     to services in the following key areas:
   </p>
 
+  <div class="table-responsive-wrapper">
   <table class="table table-bordered">
     <tbody>
       <tr>
@@ -35,6 +36,7 @@ class OnlineTrainings extends HTMLElement {
       </tr>
     </tbody>
   </table>
+  </div>
 
   <ul class="content-list">
     <li>

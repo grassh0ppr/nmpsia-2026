@@ -1,6 +1,7 @@
 class ClosedProcurements extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
+      <div class="table-responsive-wrapper">
         <table class="table table-bordered">
           <thead>
             <tr class="table-heading">
@@ -96,6 +97,7 @@ class ClosedProcurements extends HTMLElement {
             </tr>
           </tbody>
         </table>
+      </div>
         `;
   }
 }

@@ -252,6 +252,7 @@ class WorkersComp extends HTMLElement {
             </div>
           </div>
           <!-- table -->
+          <div class="table-responsive-wrapper">
           <table id="ccmsi-wc-contacts" class="table table-striped mt-5 my-2">
             <thead>
               <tr>
@@ -383,6 +384,7 @@ class WorkersComp extends HTMLElement {
               </tr>
             </tbody>
           </table>
+          </div>
     `;
   }
 }

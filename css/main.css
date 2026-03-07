@@ -3045,6 +3045,18 @@ body.modern-body::after {
   border: 1px solid #dee2e6;
 }
 
+/* Responsive table wrapper - allows horizontal scroll on mobile */
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+}
+
+.table-responsive-wrapper .table {
+  margin-bottom: 0;
+}
+
 /* Responsive table styling */
 @media (max-width: 768px) {
   .content-section .table {
@@ -3054,6 +3066,14 @@ body.modern-body::after {
   .content-section .table thead th,
   .content-section .table tbody td {
     padding: 0.5rem;
+  }
+
+  .table-responsive-wrapper {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: calc(100% + 1rem);
   }
 }
 
