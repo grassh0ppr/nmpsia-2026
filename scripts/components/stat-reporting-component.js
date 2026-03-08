@@ -1,7 +1,10 @@
 class StatReporting extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
-       
+    <div class="heading-and-element-flexbox">
+    <h2 class="display-4">NMPSIA Statistical Reports</h2>
+    <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
+  </div>
               
                 <ul class="content-list with-descriptions">
                     <li>

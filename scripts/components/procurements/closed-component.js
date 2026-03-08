@@ -1,6 +1,11 @@
 class ClosedProcurements extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
+      <div class="heading-and-element-flexbox">
+        <h2 class="display-4">Closed Procurements</h2>
+        <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
+      </div>
+      <hr />
       <div class="table-responsive-wrapper">
         <table class="table table-bordered">
           <caption class="visually-hidden">Closed NMPSIA procurement solicitations</caption>

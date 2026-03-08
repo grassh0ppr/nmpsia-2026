@@ -3195,7 +3195,15 @@ body.modern-body::after {
   font-weight: 600;
   padding: 1rem;
   text-align: left;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: none;
+}
+
+.content-section .table thead th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.content-section .table thead th:last-child {
+  border-radius: 0 8px 0 0;
 }
 
 .content-section .table tbody td {
@@ -3219,6 +3227,19 @@ body.modern-body::after {
 .content-section .table.table-bordered th,
 .content-section .table.table-bordered td {
   border: 1px solid #dee2e6;
+}
+
+/* General table header styling */
+.table thead th {
+  border: none;
+}
+
+.table thead th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.table thead th:last-child {
+  border-radius: 0 8px 0 0;
 }
 
 /* Responsive table wrapper - allows horizontal scroll on mobile */
@@ -3435,7 +3456,8 @@ body.modern-body::after {
 .content-list.grid-layout li {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 16px;
   padding: 1.5rem;
@@ -3474,7 +3496,7 @@ body.modern-body::after {
 .content-list.grid-layout li i {
   font-size: 2.5rem;
   color: #667eea;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   transition: all 0.3s ease;
   flex-shrink: 0;
 }
@@ -3498,7 +3520,7 @@ body.modern-body::after {
 
 /* Make ALL grid-layout links fill the entire li - move padding from li to link */
 .content-list.grid-layout li:has(> a) {
-  padding: 0;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -3506,10 +3528,10 @@ body.modern-body::after {
 .content-list.grid-layout li > a {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   flex: 1;
   width: 100%;
-  padding: 1.5rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 

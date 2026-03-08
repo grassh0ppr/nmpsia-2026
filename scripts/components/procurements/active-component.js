@@ -1,6 +1,11 @@
 class ActiveProcurements extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
+      <div class="heading-and-element-flexbox">
+        <h2 class="display-4">Active Procurements</h2>
+        <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
+      </div>
+      <hr />
       <div class="table-responsive-wrapper">
          <table class="table table-bordered">
           <caption class="visually-hidden">Active NMPSIA procurement solicitations with due dates and descriptions</caption>
