@@ -254,6 +254,7 @@ class WorkersComp extends HTMLElement {
           <!-- table -->
           <div class="table-responsive-wrapper">
           <table id="ccmsi-wc-contacts" class="table table-striped mt-5 my-2">
+            <caption class="visually-hidden">CCMSI Workers' Compensation team contact information</caption>
             <thead>
               <tr>
                 <th scope="col">Team Member</th>

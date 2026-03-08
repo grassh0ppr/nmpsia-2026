@@ -315,11 +315,12 @@ class TrainingContacts extends HTMLElement {
   <!-- Loss prevention contact list table -->
   <div class="table-responsive-wrapper">
   <table class="table table-bordered">
+    <caption class="visually-hidden">Loss prevention consultant contact information by school district</caption>
     <thead>
       <tr>
-        <th>Schools</th>
-        <th>Consultant</th>
-        <th>Email</th>
+        <th scope="col">Schools</th>
+        <th scope="col">Consultant</th>
+        <th scope="col">Email</th>
       </tr>
     </thead>
     <tbody>

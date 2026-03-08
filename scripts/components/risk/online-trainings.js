@@ -22,7 +22,7 @@ class OnlineTrainings extends HTMLElement {
   </p>
 
   <div class="table-responsive-wrapper">
-  <table class="table table-bordered">
+  <table class="table table-bordered" role="presentation">
     <tbody>
       <tr>
         <td>Human Resource Management</td>

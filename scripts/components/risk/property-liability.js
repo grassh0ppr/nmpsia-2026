@@ -115,6 +115,7 @@ class PropertyLiability extends HTMLElement {
   <!-- tables for steve and claims adjusters -->
   <div id="stevePlz" class="claims-tables-wrapper d-flex flex-column flex-md-row my-5">
     <table class="table table-striped claims-table">
+      <caption class="visually-hidden">Claims Manager contact information</caption>
       <thead>
         <tr>
           <th scope="col">Steve Vanetsky, Claims Manager</th>
@@ -160,6 +161,7 @@ class PropertyLiability extends HTMLElement {
     </table>
 
     <table class="table table-striped claims-table">
+      <caption class="visually-hidden">Claims Adjusters contact information</caption>
       <thead>
         <tr>
           <th scope="col">Claims Adjusters:</th>

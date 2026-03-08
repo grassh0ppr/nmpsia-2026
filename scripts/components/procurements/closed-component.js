@@ -3,6 +3,7 @@ class ClosedProcurements extends HTMLElement {
     this.innerHTML = /*html*/ `
       <div class="table-responsive-wrapper">
         <table class="table table-bordered">
+          <caption class="visually-hidden">Closed NMPSIA procurement solicitations</caption>
           <thead>
             <tr class="table-heading">
               <th scope="col">Due Date</th>

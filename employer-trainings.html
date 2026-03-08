@@ -124,11 +124,14 @@
 
       .training-links-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
         gap: 1.25rem;
         align-items: stretch;
         grid-auto-rows: 1fr;
         margin-top: 1rem;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
       }
 
       .training-link {
@@ -144,6 +147,8 @@
         border: 1px solid #e9ecef;
         height: 100%;
         min-height: 110px;
+        min-width: 0;
+        overflow-wrap: break-word;
       }
 
       .training-link:hover {
@@ -242,6 +247,8 @@
       @media (max-width: 768px) {
         .training-links-grid {
           grid-template-columns: 1fr;
+          margin-left: 0;
+          margin-right: 0;
         }
 
         .training-category-card {
@@ -252,6 +259,13 @@
           flex-direction: column;
           text-align: center;
           gap: 0.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .training-category-card {
+          padding-left: 1rem;
+          padding-right: 1rem;
         }
       }
     </style>

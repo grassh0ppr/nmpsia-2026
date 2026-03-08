@@ -121,9 +121,25 @@ class CarriersGrid extends HTMLElement {
         // Update active state
         filterButtons.forEach(b => b.classList.remove('active'));
         e.target.classList.add('active');
-        
+
         this.currentFilter = e.target.dataset.filter;
         this.updateDisplay();
+      });
+    });
+
+    // Keyboard support for carrier cards with role="button"
+    this.attachCardKeyboardListeners();
+  }
+
+  attachCardKeyboardListeners() {
+    const carrierCards = this.querySelectorAll('.carrier-info-card[role="button"]');
+    carrierCards.forEach(card => {
+      card.addEventListener('keydown', (e) => {
+        // Activate on Enter or Space key
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          card.click();
+        }
       });
     });
   }
@@ -133,6 +149,8 @@ class CarriersGrid extends HTMLElement {
     const container = this.querySelector('#carriersGridContainer');
     if (container) {
       container.innerHTML = this.renderCarrierCards(filteredCarriers);
+      // Reattach keyboard listeners after re-rendering
+      this.attachCardKeyboardListeners();
     }
   }
 }

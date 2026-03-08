@@ -1,6 +1,7 @@
 class WebflowNavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
+      <a href="#main-content" class="skip-to-main-content">Skip to main content</a>
       <section style="margin-bottom: 0;">
         <div
           data-animation="default"
@@ -156,6 +157,18 @@ class WebflowNavbar extends HTMLElement {
 
     // Initialize search functionality
     this.initializeSearch();
+
+    // Initialize skip link target on the main element
+    this.initializeSkipLink();
+  }
+
+  initializeSkipLink() {
+    // Find the main element and add id for skip link target
+    const mainElement = document.querySelector("main");
+    if (mainElement && !mainElement.id) {
+      mainElement.id = "main-content";
+      mainElement.setAttribute("tabindex", "-1");
+    }
   }
 
   initializeWebflow() {

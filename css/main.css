@@ -2,6 +2,35 @@
 /* Consolidated styles with reduced duplication */
 /* formerly called 'modern-pages.css' */
 
+/* ===== SKIP LINK (WCAG 2.1 Accessibility) ===== */
+.skip-to-main-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 10001;
+  background: #204f9a;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-to-main-content:focus {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  outline: 3px solid #667eea;
+  outline-offset: 2px;
+}
+
 /* ===== UTILITY CLASSES ===== */
 .modern-bg {
   background-image:
@@ -97,7 +126,7 @@
 
 .hero-subtitle {
   font-size: 1.3rem;
-  color: #7f8c8d;
+  color: #5a6268;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -206,7 +235,7 @@
 }
 
 .quick-action-description {
-  color: #7f8c8d;
+  color: #5a6268;
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
@@ -261,7 +290,7 @@
 }
 
 .news-subtitle {
-  color: #7f8c8d;
+  color: #5a6268;
   font-size: 1rem;
   margin: 0;
 }
@@ -310,7 +339,7 @@
 }
 
 .news-card-description {
-  color: #7f8c8d;
+  color: #5a6268;
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -742,7 +771,7 @@ body.modern-body::after {
 .about-hero-subtitle,
 .benefits-hero-subtitle {
   font-size: 1.3rem;
-  color: #7f8c8d;
+  color: #5a6268;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -1408,12 +1437,12 @@ body.modern-body::after {
 .no-results-message {
   text-align: center;
   padding: 3rem 2rem;
-  color: #7f8c8d;
+  color: #5a6268;
 }
 
 .no-results-message i {
   font-size: 3rem;
-  color: #bdc3c7;
+  color: #6b7280;
   margin-bottom: 1rem;
 }
 
@@ -1680,7 +1709,7 @@ body.modern-body::after {
 }
 
 .modern-breadcrumb .breadcrumb-item.active {
-  color: #7f8c8d;
+  color: #5a6268;
 }
 
 /* ===== BENEFITS PAGE SPECIFIC ===== */
@@ -1900,7 +1929,7 @@ body.modern-body::after {
 }
 
 .plan-details p {
-  color: #7f8c8d;
+  color: #5a6268;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
@@ -1983,7 +2012,7 @@ body.modern-body::after {
 
 .program-guide-content p,
 .comparison-content p {
-  color: #7f8c8d;
+  color: #5a6268;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -2277,7 +2306,7 @@ body.modern-body::after {
 }
 
 .tutorial-card p {
-  color: #7f8c8d;
+  color: #5a6268;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -2630,12 +2659,15 @@ body.modern-body::after {
     padding: 1rem;
   }
 
+  /* Place below navbar (like 860px) and style as left-edge tag */
   .sidebar-toggle {
-    top: 70px;
-    left: 10px;
-    width: 45px;
-    height: 45px;
+    top: 140px;
+    left: 0;
+    width: 44px;
+    height: 44px;
     font-size: 1.1rem;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 2px 2px 12px rgba(102, 126, 234, 0.35);
   }
 }
 
@@ -2681,12 +2713,15 @@ body.modern-body::after {
     padding-top: 0;
   }
 
+  /* Keep tag style, below navbar */
   .sidebar-toggle {
-    top: 60px;
-    left: 8px;
+    top: 140px;
+    left: 0;
     width: 40px;
     height: 40px;
     font-size: 1rem;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px 12px rgba(102, 126, 234, 0.35);
   }
 
   .program-guide-card,
@@ -2782,9 +2817,10 @@ body.modern-body::after {
       width: 85vw;
     }
 
+    /* Tag stays below navbar; safe area only for left so it doesn’t sit in notch */
     .sidebar-toggle {
-      top: calc(env(safe-area-inset-top) + 10px);
-      left: calc(env(safe-area-inset-left) + 10px);
+      top: 140px;
+      left: env(safe-area-inset-left);
     }
 
     .benefits-main {
@@ -2799,11 +2835,12 @@ body.modern-body::after {
     }
 
     .sidebar-toggle {
-      top: calc(env(safe-area-inset-top) + 5px);
-      left: calc(env(safe-area-inset-left) + 5px);
+      top: 140px;
+      left: env(safe-area-inset-left);
       width: 40px;
       height: 40px;
       font-size: 1rem;
+      border-radius: 0 10px 10px 0;
     }
   }
 }
@@ -3491,12 +3528,15 @@ body.modern-body::after {
   }
 }
 
-/* ===== REUSABLE LINK CARD STYLES ===== */
+/* ===== REUSABLE LINK CARD STYLES (Quick Links) ===== */
 .links-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 1.5rem;
   margin: 2rem 0;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .link-card {
@@ -3509,6 +3549,8 @@ body.modern-body::after {
   text-decoration: none;
   color: inherit;
   display: block;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .link-card:hover {
@@ -3542,7 +3584,7 @@ body.modern-body::after {
 }
 
 .link-card p {
-  color: #7f8c8d;
+  color: #5a6268;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 0;
@@ -3551,10 +3593,13 @@ body.modern-body::after {
 /* ===== BIG LINKS CONTAINER (Natural Disaster Aid Page) ===== */
 .big-links-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 2rem;
   margin: 3rem 0;
   padding: 1rem 0;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .big-box-link {
@@ -3573,6 +3618,8 @@ body.modern-body::after {
   gap: 1.5rem;
   text-align: center;
   min-height: 200px;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .big-box-link:hover {

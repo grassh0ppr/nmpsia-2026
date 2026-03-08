@@ -3,6 +3,7 @@ class AllProcurements extends HTMLElement {
     this.innerHTML = /* HTML */ `
       <div class="table-responsive-wrapper">
       <table class="table table-bordered">
+        <caption class="visually-hidden">All NMPSIA procurement solicitations with due dates and descriptions</caption>
         <thead>
           <tr class="table-heading">
             <th scope="col">Due Date</th>
