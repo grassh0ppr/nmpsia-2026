@@ -1,0 +1,517 @@
+# PDF links
+
+- ./pdfs/2025_Program_Guide_wcag_remed.pdf
+- ./pdfs/Important-Employee-Benefit-Program-Notices-2023.pdf
+- ./pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf
+- ./pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf
+- /PDFs/2023_OpenSwitch_Enrollment/NMPSIA Virtual Benefits Fair 2023-2024 - Printable.pdf
+- /PDFs/Board_Packet_August_30_2023.pdf
+- /PDFs/DDNM Toothbrush care RC 2024-061-DDNM-MKT.pdf
+- /PDFs/DP_imputed_income_2025/2025-2026 Imputed Income - EE Only and DPs - Effective October 1 2025.pdf
+- /PDFs/DP_imputed_income_2025/2025-2026 Imputed Income - Family and DPs - Effective October 1 2025.pdf
+- /PDFs/DP_imputed_income_2025/2025-2026 Imputed Income - Two Party and DPs - Effective October 1 2025.pdf
+- /PDFs/Fillings_101_DDNM.pdf
+- /PDFs/HB0129.pdf
+- /PDFs/NMPSIA_CVS_Health_Formulary_Updates_Effective_January_2024/01_2024_Advanced_Control_Specialty_Formulary.pdf
+- /PDFs/The_Risks_of_Oral_Piercings_DDNM.pdf
+- /PDFs/enrollmentTraining/Employer_NEW_HIRE_BASIC_LIFE_(single)_FINAL.pdf
+- /PDFs/enrollmentTraining/Employer_NEW_HIRE_Basic_Life_Only_(batch)_FINAL.pdf
+- /PDFs/wellness/virtual/presbyterian/How_to_Schedule_Virtual_Primary_Care_Final.pdf
+- /PDFs/wellness/virtual/presbyterian/How_to_Schedule_Virtual_Urgent_Care_ENG_PQ_020224.pdf
+- /PDFs/wellness/virtual/presbyterian/PMG_VPC_Gen_Flyer_2023_011224_WEB_FINAL.pdf
+- /PDFs/wellness/virtual/presbyterian/Virtual_BH_General_Flyer_ENG_SP_WEB.pdf
+- /PDFs/wellness/virtual/presbyterian/Virtual_Urgent_Care_Gen_Flyer_011724_WEB_FINAL.pdf
+- /pdfs/06_050_combo_rules_regulations_nmpsia_2025.pdf
+- /pdfs/07-2023-Advanced-Control-Specialty-Formulary.pdf
+- /pdfs/07-2023-Medications-Requiring-Authorization-for-Clients-with-ACSF.pdf
+- /pdfs/07-2023-PDL-SC-ACSF.pdf
+- /pdfs/1.1.2021_COBRA_Disability_Monthly_Premium_Rates.pdf
+- /pdfs/1.1.2021_COBRA_Monthly_Premium_Rates.pdf
+- /pdfs/1.1.2021_Rates_24.pdf
+- /pdfs/1.1.2021_Rates_4-Tier.pdf
+- /pdfs/1.1.2021_Rates_80_20.pdf
+- /pdfs/10.1.2020_COBRA_Disability_Monthly_Premium_Rates.pdf
+- /pdfs/10.1.2020_COBRA_Monthly_Premium_Rates.pdf
+- /pdfs/10.1.2020_Rates_24.pdf
+- /pdfs/10.1.2020_Rates_4-Tier.pdf
+- /pdfs/10.1.2020_Rates_80_20.pdf
+- /pdfs/10.1.2021_COBRA_Disability_Monthly_Premium_Rates.pdf
+- /pdfs/10.1.2021_COBRA_Monthly_Premium_Rates.pdf
+- /pdfs/10.1.2021_Premium_Rates.pdf
+- /pdfs/10.1.2021_Premium_Rates_24.pdf
+- /pdfs/10.1.2021_Premium_Rates_80_20.pdf
+- /pdfs/106_70915A_NMPSIA_CVS_PA_Step_Therapy.pdf
+- /pdfs/10_1_2022_COBRA_Disability_Monthly_Premium_Rates.pdf
+- /pdfs/10_1_2022_COBRA_Monthly_Premium_Rates.pdf
+- /pdfs/10_1_2022_Premium_Rates_24.pdf
+- /pdfs/10_1_2022_Premium_Rates_80_20.pdf
+- /pdfs/2014_Incident_Procedure_Recommendations.pdf
+- /pdfs/2019-10_COBRA_Disability_Monthly_Premium_Rates_2.12.19.pdf
+- /pdfs/2019-10_COBRA_Monthly_Premium_Rates_2.12.19.pdf
+- /pdfs/2019-10_Rates_24-PP.pdf
+- /pdfs/2019-10_Rates_4-Tier.pdf
+- /pdfs/2019-10_Rates_80.20.pdf
+- /pdfs/2020 SFHW Member Flyer.pdf
+- /pdfs/2022-ESI_Covid-19_OTC_Test_Reimbursement_Claim_Form.pdf
+- /pdfs/2023 Cost_Feature_Flyer.pdf
+- /pdfs/2023_7_106-58684Et_Generics.pdf
+- /pdfs/2024 NMPSIAPOMS Social Media Threat Guidance for Schools.pdf
+- /pdfs/2024 Teledentistry Rebrand final.pdf
+- /pdfs/2024_GM_Achieve_your_health_goals_NMPSIA_Flyer.pdf
+- /pdfs/2024_New_Hire_Deck_General_Presentation.pdf
+- /pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BCBS_High_Option_Final.pdf
+- /pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BCBS_Low_Option_Final.pdf
+- /pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BluePreferred_EPO_Plan_Final.pdf
+- /pdfs/2024_SBCs/NMPSIA_2024_SBC_for_PRES_High_Option_Final_TH_Update_062124.pdf
+- /pdfs/2024_fitness_pass_flyer_corrected.pdf
+- /pdfs/2025_2026_MOC_L028_General_and_Automobile_Liability_corrected_footer_102425.pdf
+- /pdfs/2025_NMPSIA_Risk_Spring_Budget.pdf
+- /pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_High_Option_final.pdf
+- /pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_Low_Option_final.pdf
+- /pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BluePreferred_EPO_Plan_final.pdf
+- /pdfs/2025_SBCs/NMPSIA_2025_SBC_for_PRES_High_Option_final.pdf
+- /pdfs/2025_Spring_Budget_Packet.pdf
+- /pdfs/2026_Employer_Health_Insurance_Marketplace_Coverage_Options_Notice.pdf
+- /pdfs/3.13.2020_NMPSIA_Announces_No-Cost_Sharing_for_COVID-19_Testing.pdf
+- /pdfs/3.17.2020_NMPSIA_Announces_No-Cost_Sharing_for_COVID-19_Testing_and_Treatment.pdf
+- /pdfs/3.2020_Voluntary_Extension_Ending_Notice(COBRA).pdf
+- /pdfs/3.2020_Voluntary_Extension_Ending_Notice(ER).pdf
+- /pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2019_Final.pdf
+- /pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2020_Audit_Final.pdf
+- /pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2021_Audit_FINAL.pdf
+- /pdfs/476259_0414_NM_Group_Provider_Finder_with_Benefit_Accumulator_PPO_Member_Flier1.pdf
+- /pdfs/5_Sneaky_Ways_to_Stay_Active.pdf
+- /pdfs/7_2023_Board_Meeting_Minutes.pdf
+- /pdfs/7_July_25_2024_Minutes.pdf
+- /pdfs/8_August_14_2024_Special_Board_Meeting_Minutes.pdf
+- /pdfs/9100659-0721_NM_Group_Behavioral_Health_2022_Learn_to_Live_and_WellonTarget_Member_Flier.pdf
+- /pdfs/Accurate_and_Timely_Reporting_Presentation_2024_READER.pdf
+- /pdfs/Advanced_Control_Specialty_Formulary_October_2023.pdf
+- /pdfs/Aetna_Network_Flyer.pdf
+- /pdfs/Any_salary_previously_employee_plus_one_coverage_20_80_Effective_October_1_2022.pdf
+- /pdfs/ApproveMinutes_-_October_2020.pdf
+- /pdfs/Approved_February_2022_NMPSIA_Board_Minutes.pdf
+- /pdfs/Approved_June_2022_Board_Minutes_v2.pdf
+- /pdfs/Approved_March_3_2022_NMPSIA_Board_Minutes.pdf
+- /pdfs/Approved_March_4,%202021_Virtual_Board_Minutes.pdf
+- /pdfs/Approved_Minutes_Oct_3_2024.pdf
+- /pdfs/April 3 2025 Board Minutes.pdf
+- /pdfs/April-4,2019_Board_Minutes.pdf
+- /pdfs/April-9,2020_Virtual_Board_Meeting_Minutes_Signed.pdf
+- /pdfs/April_2021_Approved_Virtual_Board_Minutes.pdf
+- /pdfs/April_2022_Board_Minutes_Final_signed.pdf
+- /pdfs/April_2024_CVS_Formulary/04_2024_Advanced_Control_Specialty_Formulary.pdf
+- /pdfs/April_2024_CVS_Formulary/04_2024_PDL_SC_ACSF.pdf
+- /pdfs/April_2024_CVS_Formulary/SCF_ACSF_Formulary_Announcement_April_2024.pdf
+- /pdfs/April_4_2024_Minutes.pdf
+- /pdfs/August162022_Board_Meeting_Minutes_with_signature.pdf
+- /pdfs/August42022_Special_Board_Meeting_Minutes_with_signature.pdf
+- /pdfs/August_19,_2021_Board_Minutes_-_Final.pdf
+- /pdfs/August_6,_2020_Approved_Board_Minutes.pdf
+- /pdfs/BCBSNM_San_Juan_IPA_Contracting_Update.pdf
+- /pdfs/BCBS_Flu_Season_2024.pdf
+- /pdfs/BCBS_Health_Assesment_2024.pdf
+- /pdfs/Back_to_Basics_Training_Presentation_2024_READER.pdf
+- /pdfs/Behavioral_Health_Services_Option_Final_2022.pdf
+- /pdfs/BeneficiaryDesignationQuestion.pdf
+- /pdfs/Best_Practices_Cleaning_and_Disinfecting_for_Bus_Personnel_Contractors_NMPSIA.pdf
+- /pdfs/Blue_Cross_and_Blue_Shield_of_New_Mexico_Health_Advocacy_Solutions_Take_the_Call_Member_Flier.pdf
+- /pdfs/Board Packet Dec-R.pdf
+- /pdfs/Board-Meeting-Mintues-1282022.pdf
+- /pdfs/Board-Meeting-Mintues-2222023.pdf
+- /pdfs/Board-Meeting-Minutes-322023.pdf
+- /pdfs/Board-Meeting-Minutes-462023.pdf
+- /pdfs/Board-Meeting-Minutes-5-4-23.pdf
+- /pdfs/Board-Meeting-Minutes-682023.pdf
+- /pdfs/Board_Meeting_Min_8302023_final.pdf
+- /pdfs/Board_Meeting_Mintues_07212022_with_signature.pdf
+- /pdfs/Board_Meeting_Minutes_9072023.pdf
+- /pdfs/Board_Meeting_Minutes_Nov_7_2024.pdf
+- /pdfs/Board_Meeting_Packet_972023.pdf
+- /pdfs/Board_Meeting_minutes_02_08_2024.pdf
+- /pdfs/Board_Packet_July_20_2023_FinalR.pdf
+- /pdfs/Board_minutes_july_2025.pdf
+- /pdfs/Board_minutes_june_2025.pdf
+- /pdfs/Board_packet_september_2025.pdf
+- /pdfs/Boundaries_Policy_2018.pdf
+- /pdfs/CCMSI_Workbook_for_NMPSIA_Member_20180823_2.pdf
+- /pdfs/CVS-TDC-Flyer.pdf
+- /pdfs/CVS_Formularies/01-2025 Advanced Control Specialty Formulary.pdf
+- /pdfs/CVS_Formularies/01-2025 PDL SC ACSF.pdf
+- /pdfs/CVS_Formularies/Advanced Control Specialty Formulary, Effective October 1, 2024.pdf
+- /pdfs/CVS_Formularies/Changes to the Standard Control Formulary and Advanced Specialty Formulary, effective October 1, 2024.pdf
+- /pdfs/CVS_Formularies/Performance Drug List- Advanced Speciality Formulary, Effective October 1, 2024.pdf
+- /pdfs/Care_Options_Flyer.pdf
+- /pdfs/Caremark.com-Flyer-with-Mobil-App-QR-Code.pdf
+- /pdfs/Carriers_Important_Benefit_Info/2024 NMPSIA-Benefits-Summary_HIGH OPTION_FLY_R1.pdf
+- /pdfs/Carriers_Important_Benefit_Info/2024 NMPSIA-Benefits-Summary_LOW OPTION_FLY_R1.pdf
+- /pdfs/Carriers_Important_Benefit_Info/College_Tuition_Benefit_Member_Flyer.pdf
+- /pdfs/Claim_Investigaion_Overview.pdf
+- /pdfs/Coaches Training Announce.pdf
+- /pdfs/College_Tuition_Benefit_Member_Flyer_01282022_high.pdf
+- /pdfs/Completing_NMPSIA_Forms_Presentation_2024_READER.pdf
+- /pdfs/Covid_19_Member_Resource_Guide_ASO_proof_1.pdf
+- /pdfs/DDNM Toothbrush care RC 2024-061-DDNM-MKT.pdf
+- /pdfs/DDNM_2024_Teledentistry_Flyer_FINAL.pdf
+- /pdfs/DDNM_Dental_Claim_Form_Accessible_2024_J43024T.pdf
+- /pdfs/Davis_Vision_2023-24/Davis_Vision_Hobbs-Enhanced_Benefits_10.2.2023.pdf
+- /pdfs/Davis_Vision_2023-24/NM Vision Providers 10.2023.pdf
+- /pdfs/December,2019_Approved_Board_Minutes.pdf
+- /pdfs/December_2,_2021_Board_Minutes_Final.pdf
+- /pdfs/December_2020_Approved_Virtual_Board_Minutes.pdf
+- /pdfs/December_7,_2021_Virtual_Board_Minutes_Final.pdf
+- /pdfs/Defensible_Space_Fire_Zones.pdf
+- /pdfs/Delta_Dental_Info_2024_2025/DDNM EBD WITH PCS Flyer 2024-004-DDNM-MKT.pdf
+- /pdfs/Delta_Dental_Info_2024_2025/DDNM Finding an In-Network Dentist ENGLISH 2024-122-DDNM-MKT.pdf
+- /pdfs/Delta_Dental_Info_2024_2025/DDNM Generic Pre-Treatment Flyer 2024-124-DDNM-MKT.pdf
+- /pdfs/Delta_Dental_Info_2024_2025/DDNM Member Portal Flyer ENGLISH 2024-016-DDNM-MKT.pdf
+- /pdfs/Delta_Dental_Info_2024_2025/DDNM Mobile App Flyer ENGLISH 2024-017-DDNM-MKT.pdf
+- /pdfs/Delta_Dental_Info_2024_2025/DDNM PCS Flyer 2024-006-DDNM-MKT.pdf
+- /pdfs/Delta_Dental_Info_2024_2025/DDNM Teledentistry Flyer ENGLISH 2023-002-DDNM-MKT.pdf
+- /pdfs/Delta_Dental_of_NM_Explanation_of_Benefits_Sample_2025.pdf
+- /pdfs/Diabetic Meter Program (2).pdf
+- /pdfs/Disabled_Dep_Questionnaire.pdf
+- /pdfs/DocuSign_November_2021_Board_Minutes.pdf
+- /pdfs/Domestic_Partner_Petition_Template_2024.pdf
+- /pdfs/EOI_and_Life_Claims-Presentation-edit.pdf
+- /pdfs/EXECUTED_2025_2026_MOC_P028_Property_Automobile_Physical_Damage_Crime_Cyber_Coverage_(wcag_checked_100825).pdf
+- /pdfs/Embark_Driver_Services_Program_FAQ.pdf
+- /pdfs/Employers_Guide_Taxation_IncomeReplacementBenefits.pdf
+- /pdfs/End of Covid Cost Sharing.pdf
+- /pdfs/Enrollment_Change_Form_01012026.pdf
+- /pdfs/Executed Board Meeting Mintues 10.6.2022.pdf
+- /pdfs/Executed-Board-Minutes-11-3-2022.pdf
+- /pdfs/Executed_Board_Meeting_Minutes_982022.pdf
+- /pdfs/Express_Scripts_Member_COVID-19_OTC_Test_Information.pdf
+- /pdfs/External Member FAQ- The PrudentRx Copay Program.pdf
+- /pdfs/FLI_6492_DNLD_Cardiovascular_Flyer.pdf
+- /pdfs/Fall_2023_Ergo_Newsletter_NMPSIA_Version.pdf
+- /pdfs/Feb2026BoardMinutesFINAL.pdf
+- /pdfs/Feb2026BoardPacketR2.pdf
+- /pdfs/February,2020_Approved_Board_Minutes.pdf
+- /pdfs/Guide_to_an_Ergonomically_Correct_Workstation_NM_INTERACTIVE.pdf
+- /pdfs/Guidelines_for_technology_and_social_media_use_REVISED3.pdf
+- /pdfs/Health_Coaching_NMPSIA_Flyer.pdf
+- /pdfs/Healthy-Lunches-School-Fuel-for-Kids-Rack-Card_1.pdf
+- /pdfs/Healthy_Choices_Make_a_Big_Difference.pdf
+- /pdfs/Healthy_eating_infographic.pdf
+- /pdfs/Impaired_Dependent_Certification_(revised).pdf
+- /pdfs/International_Employee_Benefits_Enrollment.pdf
+- /pdfs/July_2024_CVS_Formulary/07_2024_Advanced_Control_Specialty_Formulary.pdf
+- /pdfs/July_2024_CVS_Formulary/07_2024_Performance_Drug_List_Standard_Control.pdf
+- /pdfs/July_2024_CVS_Formulary/Formulary_Changes_July_2024.pdf
+- /pdfs/July_29,_2021_Board_Minutes_-_Final.pdf
+- /pdfs/June 6 2024 Minutes.pdf
+- /pdfs/June_25,2020_Approved_Board_Minutes_Signed.pdf
+- /pdfs/June_3,_2021_Virtual_Board_Minutes_Approved.pdf
+- /pdfs/June_4,2020_Approved_Board_Minutes_Signed.pdf
+- /pdfs/KC_Smoothies_and_Sweet_Endings.pdf
+- /pdfs/Keys to Mastering Your Mobility.pdf
+- /pdfs/Kitchen_Safety_Checklist_2023.pdf
+- /pdfs/LIFE-CLAIM-PACKET-2023.pdf
+- /pdfs/LTD-Claim-Packet-2023.pdf
+- /pdfs/Leave_Of_Absence_Presentation_2024_READER.pdf
+- /pdfs/Less_ChoLESterol_is_Better.pdf
+- /pdfs/MD_Live_NMPSIA.pdf
+- /pdfs/Magellan_On_to_Better_Health-Virtual_Care_Solutions_Flyer_FINAL.pdf
+- /pdfs/Maintaining-Your-Childhood-Smile-Delta.pdf
+- /pdfs/March-2019_NMPSIA_Board_Minutes-Approved.pdf
+- /pdfs/March-2019_NMPSIA_Board_Minutes.pdf
+- /pdfs/March-5,2020_Approved_Board_Minutes.pdf
+- /pdfs/March_7_2024_Minutes.pdf
+- /pdfs/May 25 Board Minutes Final.pdf
+- /pdfs/May-7,2020_Approved_Board_Minutes.pdf
+- /pdfs/May_17_2024_Minutes.pdf
+- /pdfs/May_2022_Board_Minutes_Final_signed.pdf
+- /pdfs/May_2_2024_Minutes.pdf
+- /pdfs/May_6,%202021_Approved_Virtual_Board_Minutes.pdf
+- /pdfs/Medications_Requiring_Prior_Auth_October_2023.pdf
+- /pdfs/NM Fitness Program SP.pdf
+- /pdfs/NM Fitness Program.pdf
+- /pdfs/NM Group Retail Social Media Overview Member Flier - English.pdf
+- /pdfs/NM-Group-QIP-Adult-Wellness-Member-Guidelines.pdf
+- /pdfs/NM-Group-QIP-Childrens-Wellness-Member-Guidelines.pdf
+- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20High%20Option.111025_JS%2011.14.2025.pdf
+- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20Low%20Option.111025_JS%2011.14.2025.pdf
+- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20PRES%20High%20Option.111025_JS%2011.14.2025.pdf
+- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20PRES%20Low%20Option.111025%20JS%2011.14.2025.pdf
+- /pdfs/NMPSIA_Board_Minutes_11.7.19.pdf
+- /pdfs/NMPSIA_Board_Minutes_5.2.19.pdf
+- /pdfs/NMPSIA_Board_Minutes_6.27.19.pdf
+- /pdfs/NMPSIA_Board_Minutes_8.8.19.pdf
+- /pdfs/NMPSIA_Board_Minutes_9.10.19.pdf
+- /pdfs/NMPSIA_CVS_Health_Formulary_Updates_Effective_January_2024/01_2024_PDL_SC_ACSF_v2.pdf
+- /pdfs/NMPSIA_CVS_Health_Formulary_Updates_Effective_January_2024/January_2024_Formulary_Updates_SCF_ACSF_1555.pdf
+- /pdfs/NMPSIA_Emergency_Board_Minutes_6.13.19.pdf
+- /pdfs/NMPSIA_Enabling_Statute_2017-05.pdf
+- /pdfs/NMPSIA_Filing_a_Life_Claim.pdf
+- /pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf
+- /pdfs/NMPSIA_Mental_Well-Being_Skill_Builder.pdf
+- /pdfs/NMPSIA_Mobile_app_condensed_presentation_pdf.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/6.50.1-6.50.18 with redline changes.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.1.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.10.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.11.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.12.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.13.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.14.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.15.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.16.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.17.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.18.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.2.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.3.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.4.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.5.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.6.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.7.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.8.pdf
+- /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.9.pdf
+- /pdfs/NMPSIA_School_Safety_Partnership_Program.pdf
+- /pdfs/NMPSIA_Winter_2023_Safety_Newsletter.pdf
+- /pdfs/NMPSIA_py2025_OpenSwitch_Presentation.pdf
+- /pdfs/NMSBA_Boundaries_Policy_July_2018.pdf
+- /pdfs/NM_BlueResource_Screening_for_Cervical_Cancer_Member_Flier.pdf
+- /pdfs/NM_COVID-19_Flier.pdf
+- /pdfs/NM_Group_Well_onTarget_Overview_Flyer.pdf
+- /pdfs/Notice_of_Accident_Form.pdf
+- /pdfs/Nov 2025 Board Minutes Final.pdf
+- /pdfs/November_2025_Board_meeting_packet.pdf
+- /pdfs/November_5,_2020_Virtual_Board_Minutes-Approved.pdf
+- /pdfs/Nutrition_Program_Selection_NoomGMHC.pdf
+- /pdfs/OTC_COVID-19_No_Cost_Home_Test_Kits_Letter_to_Members_1-31-2022-2.pdf
+- /pdfs/OTC_COVID-19_No_Cost_Home_Test_Kits_Memo_to_Members-4.pdf
+- /pdfs/October-3,2019_Board_Meeting_Agenda.pdf
+- /pdfs/October_2021_Approved_Board_Minutes.pdf
+- /pdfs/October_2025_Board_Meeting_Minutes.pdf
+- /pdfs/Online Benefit System Introductory Guide.pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/BCBS_Dental/BCBS Dental.pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/BlueCross_BlueShield/2025 NMPSIA Annual Switch Presentation_Final v1.kj.pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/CVS_Caremark/NMPSIA Virtual Benefits Fair 2024-2025.pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/Davis/NMPSIA OE Deck_2024 Final.pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/Delta/NMPSIA - Delta Dental of NM - OE Fall Presentation - October 2024 (002).pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/Presbyterian/PHP2024 NMPSIA Open Switch Meetings 2 with voice.pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/Surgery_Plus/SurgeryPlus Overview l NMPSIA_2024.8.22vf2.pdf
+- /pdfs/Open_Switch_Enrollment_fPY2025/United_Concordia/NMPSIA OE UCCI - 2025 Final.pdf
+- /pdfs/Options_for_Continuing_Life_Insurance_8.2020-1.pdf
+- /pdfs/Options_for_Continuing_Life_Insurance_Due_to_Retirement_8.2020-1.pdf
+- /pdfs/PED_Medical_Cannabis_in_schools_rule.pdf
+- /pdfs/PHP-Cost_Estimator_12-2021.pdf
+- /pdfs/POMS_Cyber_Security_Message.pdf
+- /pdfs/PRES_Claim_Form.pdf
+- /pdfs/Performance_Drug_list_Advanced_Speciality_Formulary_October_2023.pdf
+- /pdfs/Poms-Summer-2023-Newsletter.pdf
+- /pdfs/Poms_Ergonomics_Program_Sheet.pdf
+- /pdfs/Poms_NMPSIA_Newsletter_Summer2022_r3a.pdf
+- /pdfs/Practicing_Social_Distancing_and_Following_all_Personal_Protective_Equipment_(PPE)_Directives.pdf
+- /pdfs/Pregnancy_Benefits_High_Option_Rev_2019.pdf
+- /pdfs/Premium_Billing_Bill_Reconciliation_Presentation_2024_READER.pdf
+- /pdfs/Presbyterian_Flu_Prevention_2024.pdf
+- /pdfs/Presbyterian_RN_Flyer_2024.pdf
+- /pdfs/Presbyterian_Wellness_at_work_fall_2024.pdf
+- /pdfs/Promotional-Flyer-Support.pdf
+- /pdfs/PrudentRx Member Benefit Fair Flyer.pdf
+- /pdfs/Qualifying_Events_Presentation_Deck_2024_READER.pdf
+- /pdfs/Quick_and_Easy_Stretches_NM.pdf
+- /pdfs/Recipe_Modifications.pdf
+- /pdfs/Retiree_Application_2024_01.pdf
+- /pdfs/SAMPLE_Employer_ACA_Notice_Cover_Letter_2026.pdf
+- /pdfs/SB317_Behavioral_Health_Letter_to_NMPSIA_Members.pdf
+- /pdfs/Sample_Highlighted_ESI_Covid-19_OTC_Test_Reimbursement_Claim_Form.pdf
+- /pdfs/Sample_Loss_of_Coverage_Notice_Form.pdf
+- /pdfs/September_2021_Approved_Minutes.pdf
+- /pdfs/September_3_2020_Minutes_Final_Signed.pdf
+- /pdfs/September_5_2024_Minutes_Executed.pdf
+- /pdfs/Small_Changes_Big_Results_Good_Measures_NMPSIA_Healthy_Weight_Flyer_RD1.pdf
+- /pdfs/Smart_Ways_to_Lower_Your_Risk_for_Stroke.pdf
+- /pdfs/Smile_for_HealthWellness 2023 New Logo.pdf
+- /pdfs/Spanish_202019_nco_factsheet.pdf
+- /pdfs/Strong_Habits_Strong_Brains_all_agencies.pdf
+- /pdfs/Summary_Of_Plan_Description_Davis_2024.pdf
+- /pdfs/Talkspace_Flyer_Updated_2024.pdf
+- /pdfs/Tips_for_Working_from_Home.pdf
+- /pdfs/Toothbrush_flyer_Mar24.pdf
+- /pdfs/Travel_Assistance_Program_Description.pdf
+- /pdfs/UPDATE-End-of-Covid-Cost-Sharing-62023.pdf
+- /pdfs/Updated_Fillable_Affidavit_for_Domestic_Partnership_4.9.19.pdf
+- /pdfs/Updated_Fillable_Termination_of_Domestic_Partnership_4.9.19.pdf
+- /pdfs/Use_of_Facilities_Website.pdf
+- /pdfs/Vehicle_Accident_Report.pdf
+- /pdfs/Video_Visit_Member_Flyer_2016-06-30.pdf
+- /pdfs/VirtualCheckup_Launch-Flyer_9.28.pdf
+- /pdfs/Virtual_Ergonomics.pdf
+- /pdfs/WC-Report-of-Injury-2023.pdf
+- /pdfs/WC_News_Feb2025.pdf
+- /pdfs/WINTER_2025_NEWSLETTER.pdf
+- /pdfs/Ways_to_Love_Your_Heart_Flier.pdf
+- /pdfs/annual_notifications/COMPLY_04581_NMPSIA_Important_Compliance_Notices_and_Information_for_Enrollment_2024.pdf
+- /pdfs/bcbs_galileo_flyer_2025.pdf
+- /pdfs/board_packet_april_2025.pdf
+- /pdfs/board_packet_july_2025.pdf
+- /pdfs/board_packet_june_2025.pdf
+- /pdfs/carriers/blueCare_dental/BlueCare Dental PPO Member Flier.pdf
+- /pdfs/carriers/blueCare_dental/BlueCare Dental Teledentistry Member Flier.pdf
+- /pdfs/carriers/blueCare_dental/Claim form English.pdf
+- /pdfs/carriers/blueCare_dental/Claim form Spanish.pdf
+- /pdfs/carriers/blueCare_dental/Enhanced_benefit_BlueCare.pdf
+- /pdfs/carriers/blueCare_dental/High_Low_option_Highlights.pdf
+- /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_PPO_Member_Flier.pdf
+- /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_Teledentistry_Member_Flier.pdf
+- /pdfs/carriers/carrier_contacts_chart_2025.pdf
+- /pdfs/carriers/davis-vision/Davis_Estimator_Tool_Flyer_2024.pdf
+- /pdfs/carriers/davis-vision/Davis_Vision_2025_OON_Claims_Flyer.pdf
+- /pdfs/davis_vision_nmpsia_summary_of_plan_description.pdf
+- /pdfs/domestic_partner_imputed_income_2024/NMPSIA_2024_2025_Imputed_Income_Family_and_DPs_Effective_October1_2024.pdf
+- /pdfs/domestic_partner_imputed_income_2024/NMPSIA_2024_2025_Imputed_Income_Two_Party_and_DPs_Effective_October1_2024.pdf
+- /pdfs/enrollmentTraining/2024_Open_Enrollment_Tutorial_FINAL_91324.pdf
+- /pdfs/enrollmentTraining/2024_Switch_Enrollment_Tutorial_FINAL_91324.pdf
+- /pdfs/enrollmentTraining/Add_or_Change_Beneficiary.pdf
+- /pdfs/enrollmentTraining/Change_Basic_Information.pdf
+- /pdfs/enrollmentTraining/Employee_NEW_HIRE_ADD_COVERAGE_ADD_DEPENDENT_FINAL_091324.pdf
+- /pdfs/imputed_incomes_2023/2_NMPSIA_2023_2024_Imputed_Income_Two_Party_DPs_Effective_July12023.pdf
+- /pdfs/imputed_incomes_2023/3_NMPSIA_2023_2024_Imputed_Income_Family_DPs_Effective_July_1_2023.pdf
+- /pdfs/imputed_incomes_2023/b_NMPSIA_2023_2024_Imputed_Income_Two_Party_DPs_Effective_October1 2023.pdf
+- /pdfs/imputed_incomes_2023/c_NMPSIA_2023_2024_Imputed_Income_Family_DPs_Effective_October_1_2023.pdf
+- /pdfs/march_2025/WC_News_Mar2025.pdf
+- /pdfs/medical_claim_nm_bcbsmed.pdf
+- /pdfs/medical_claim_nm_spanish_bcbsmed.pdf
+- /pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf
+- /pdfs/pastPackets/2021/April_8_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/August_19_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/December_2_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/February_4_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/July_29_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/June_3_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/March_4_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/May_6_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/November_4_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/October_7_2021_Board_Meeting_Materials.pdf
+- /pdfs/pastPackets/2021/September_2_2021_Board_Meeting_Materials.pdf
+- /pdfs/poms-risk-docs/2025_CISA_NM_No_Cost_Federally_Funded_Cybersecurity_Resources.pdf
+- /pdfs/poms-risk-docs/2025_CISA_No_Cost_Resource_Detail_Presentation.pdf
+- /pdfs/poms-risk-docs/2025_NM_OCS_Recent_Cyber_Threat_Activity_in_New_Mexico.pdf
+- /pdfs/poms-risk-docs/Bus Safety Campaign 2023.pdf
+- /pdfs/poms-risk-docs/General_Products_Liability.pdf
+- /pdfs/poms-risk-docs/HB_128_2021.pdf
+- /pdfs/poms-risk-docs/Loss_Report_Property.pdf
+- /pdfs/poms-risk-docs/NMPSIA-Website-Contact-List-New-8-23-23.pdf
+- /pdfs/poms-risk-docs/NOA-2_Employees_Choice.pdf
+- /pdfs/poms-risk-docs/Poms-Associates-Training-Catalog-Abbreviated-August-2023.pdf
+- /pdfs/poms-risk-docs/Poms_Child-Abuse-Prevention-Flier-NMPSIA-combined.pdf
+- /pdfs/poms-risk-docs/Ransomware_Playbook.pdf
+- /pdfs/poms-risk-docs/Student_Incident_Report.pdf
+- /pdfs/poms-risk-docs/Vehicle_Accident_Report.pdf
+- /pdfs/poms-risk-docs/Windshield_Only_Report.pdf
+- /pdfs/poms-risk-docs/Winter-Weather-Checklist-New.pdf
+- /pdfs/premium-rates-2023/10.1.23 Medical Rates_3-Tier 24PP Final.pdf
+- /pdfs/premium-rates-2023/10.1.23 Medical Rates_3-Tier_80.20 Final.pdf
+- /pdfs/premium-rates-2023/COBRA-102-rates.pdf
+- /pdfs/premium-rates-2023/COBRA-150-rates.pdf
+- /pdfs/premium-rates-2024/10012024_COBRA_Premium_Rates.pdf
+- /pdfs/premium-rates-2024/10012024_Premium_Rates_24_Payroll_Deductions_2.pdf
+- /pdfs/premium-rates-2024/COBRA_Disability_Ext_Premium_Rates_10012024.pdf
+- /pdfs/premium-rates-2025/10-1-2025 COBRA Disability Extension Premium Rates.pdf
+- /pdfs/premium-rates-2025/10-1-2025 COBRA Premium Rates.pdf
+- /pdfs/premium-rates-2025/10_1_2025_Premium_Rates_24_Payroll_Deductions_CORRECTION.pdf
+- /pdfs/risk_volunteer.pdf
+- /pdfs/sample-part-time-resolution-form.pdf
+- /pdfs/super_shake_infographic_printer.pdf
+- /pdfs/wellness/2025_Oral_Wellness_Series_Pregnancy_Flyer.pdf
+- /pdfs/wellness/2025_Pregnancy_Benefit_Flyer.pdf
+- /pdfs/wellness/BH_Maternity_Postpartum_Flyer_NMPSIA.pdf
+- /pdfs/wellness/DDNM_EBD_WITHOUT_PCS_Flyer_2024_005_DDNM_MKT.pdf
+- /pdfs/wellness/DDNM_Pregnancy_RC_2024_057_DDNM_MKT_ENGLISH.pdf
+- /pdfs/wellness/DDNM_Pregnancy_and_Oral_Health_Member_brochure_2024.pdf
+- /pdfs/wellness/Womens_Eye_Health_CST_1411_DVSV.pdf
+- /pdfs/wellness/april_2025/WC_News_Apr2025.pdf
+- /pdfs/wellness/may_2025/Mental_Health_Grocery_List.pdf
+- /pdfs/wellness/may_2025/WA2511269_Well_Balanced_May25_FNL.pdf
+- /pdfs/wellness/may_2025/WC_News_May2025.pdf
+- PDFs/Diabetes_and_Gum_Disease.pdf
+- PDFs/Flooding_Emergency_Order_Chavez_County_Letter_to_Members_11_2024.pdf
+- PDFs/enrollmentTraining/Employer_Send_Feedback_FINAL.pdf
+- PDFs/wildfire-relief/Affect_of_Wildfire_Executive_Order_6172025.pdf
+- PDFs/wildfire-relief/Extension_ Salt_and_South_Fork_EO_Letter_to_Members_111524.pdf
+- PDFs/wildfire-relief/Wildfire_Emergency_Order_Letter_to_Members_06172025.pdf
+- PDFs/wildfire-relief/Wildfire_Emergency_Order_Letter_to_Members_062824.pdf
+- https://nmpsia.com/PDFs/HB533%20Employer%20Contributions%20Effective%207-1-2023.pdf
+- https://nmpsia.com/pdfs/04_2026_Advanced_Control_Specialty_Formulary.pdf
+- https://nmpsia.com/pdfs/04_2026_PDL_SC_ACSF.pdf
+- https://nmpsia.com/pdfs/2025_Program_Guide_wcag_remed.pdf
+- https://nmpsia.com/pdfs/490973.0325 NM Group Behavioral Health Mental Health Hub Core Toolkit Member Flier.pdf
+- https://nmpsia.com/pdfs/Advanced Control Specialty Formulary April 2025.pdf
+- https://nmpsia.com/pdfs/CVS_Letter_to_NMPSIA_Members.pdf
+- https://nmpsia.com/pdfs/Changes to Standard Control Formulary and Advanced Specialty Formulary effective April 2025.pdf
+- https://nmpsia.com/pdfs/College_Tuition_Benefit_Member_Flyer_01282022_high.pdf
+- https://nmpsia.com/pdfs/Davis_Vision_Claim_form_2019.pdf
+- https://nmpsia.com/pdfs/FLI-6592 v1 Member Portal for Members Flyer (13).pdf
+- https://nmpsia.com/pdfs/March 2025 Board Minutes FINAL.pdf
+- https://nmpsia.com/pdfs/NMPSIA_BCBS_EPO_BAAG_05_18_22.pdf
+- https://nmpsia.com/pdfs/Notice_of_Nondiscrimination_and_Accessibility.pdf
+- https://nmpsia.com/pdfs/Performance Drug List- Advanced Specialty Formulary Effective April 2025.pdf
+- https://nmpsia.com/pdfs/SCF_ACSF_1500_1555_April_2026.pdf
+- https://nmpsia.com/pdfs/UCDental_Value_of_Going_infographic-2022.pdf
+- https://nmpsia.com/pdfs/United_Concordia_Claim_Form.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/01_2026_Advanced_Control_Specialty_Formulary.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/01_2026_PDL_SC_ACSF.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/07_2025_Advanced_Control_Specialty_Formulary.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/07_2025_PDL_SC_ACSF.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/10-2025 Advanced Control Specialty Formulary.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/10-2025 PDL SC ACSF.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/SCF_ACSF_1500_1555_JUL_2025.pdf
+- https://nmpsia.com/pdfs/cvs_formularies/SCF_ACSF_1500_1555_January_2026.pdf
+- https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.pdf
+- https://nmpsia.com/pdfs/poms-risk-docs/2025_NM_OCS_No_Cost_Cybersecurity_Services_for_K_12_and_Higher_Education_Institutions.pdf
+- https://nmpsia.com/pdfs/poms-risk-docs/Cyber Insurance Coverage in Schools - NMPED Charter School Conference, June 10, 2025.pdf
+- pdfs/10_1_2022_Premium_Rates.pdf
+- pdfs/2024_SBCs/NMPSIA_2024_SBC_for_PRES_Low_Option_Final_TH_Update_062124.pdf
+- pdfs/2025_SBCs/NMPSIA_2025_SBC_for_PRES_Low_Option_final.pdf
+- pdfs/Any_salary_perviously_family_coverage_20_80_Effective_October_1_2022.pdf
+- pdfs/Any_salary_previously_employee_only_coverage_20_80_Effective_October_1_2022.pdf
+- pdfs/Any_salary_previously_employee_only_coverage_for_10.1.2018.pdf
+- pdfs/Any_salary_previously_employee_plus_one_coverage_for_10.1.2018.pdf
+- pdfs/Any_salary_previously_family_coverage_for_10.1.2018.pdf
+- pdfs/Balance_Billing_Notice_01012025.pdf
+- pdfs/BoardMeetingPacket081424.pdf
+- pdfs/Board_Meeting_Packet_9524_R.pdf
+- pdfs/Board_Member_Enrollment_Application_2024_07.pdf
+- pdfs/Carriers_Important_Benefit_Info/Cost_Feature_Flyer_2023.pdf
+- pdfs/Carriers_Important_Benefit_Info/Network_Flyer Alliance.pdf
+- pdfs/DDNM Avoiding-Oral-Cancer Flyer.pdf
+- pdfs/Davis_Vision_2023-24/Davis Vision 2024 Online Retailers Flyer.pdf
+- pdfs/Employee_Flyer_EOI.pdf
+- pdfs/Employer_Flyer_EOI.pdf
+- pdfs/Imputed_Letter_Effect_01.01.21_final.pdf
+- pdfs/Imputed_Letter_Effect_10.01.21_final.pdf
+- pdfs/July2024BoardPacketRedacted_finalR.pdf
+- pdfs/NMPSA_2020-2021_Imputed_Income-Family_DPs-Effective_January_1_2021.pdf
+- pdfs/NMPSIA-2020-2021_Imputed_Income-EE_Only_DPs-Effective_January_1_2021.pdf
+- pdfs/NMPSIA-2020-2021_Imputed_Income-Two_Party_DPs-20-80_Effective_January_1 2021.pdf
+- pdfs/NMPSIA-2020-2021_Imputed_Income-Two_Party_DPs-Effective_January_1_2021.pdf
+- pdfs/NMPSIA_2019-2020_Imputed_Income-EE_Only.pdf
+- pdfs/NMPSIA_2019-2020_Imputed_Income-EE_Only_DPs.pdf
+- pdfs/NMPSIA_2019-2020_Imputed_Income-Family.pdf
+- pdfs/NMPSIA_2019-2020_Imputed_Income-Family_DPs.pdf
+- pdfs/NMPSIA_2019-2020_Imputed_Income-Two_Party.pdf
+- pdfs/NMPSIA_2019-2020_Imputed_Income-Two_Party_DPs.pdf
+- pdfs/NMPSIA_2020-2021_Imputed_Income-EE_Only_DPs.pdf
+- pdfs/NMPSIA_2020-2021_Imputed_Income-EE_Only_DPs_20-80.pdf
+- pdfs/NMPSIA_2020-2021_Imputed_Income-Family_DPs.pdf
+- pdfs/NMPSIA_2020-2021_Imputed_Income-Two_Party_DPs.pdf
+- pdfs/NMPSIA_2020-2021_Imputed_Income-Two_Party_DPs_20-80.pdf
+- pdfs/NMPSIA_DP_Imputed_Income_2018-10_EE_Only_DPs.pdf
+- pdfs/NMPSIA_DP_Imputed_Income_2018-10_Family_DPs.pdf
+- pdfs/NMPSIA_DP_Imputed_Income_2018-10_Two_Party_DPs.pdf
+- pdfs/NMPSIA_STUDENT_VISION_VOUCHER_FORM_2025-2026.pdf
+- pdfs/Why_Children_Need_Regular_Vision_Screenings_and_Eye_Exams.pdf
+- pdfs/domestic_partner_imputed_income_2024/Imputed_Income_ED_Letter_Effective_10_1_24.pdf
+- pdfs/domestic_partner_imputed_income_2024/NMPSIA_2024_2025_Imputed_Income_EE_Only_and_DPs_Effective_October1_2024.pdf
+- pdfs/imputed_incomes_2023/1_NMPSIA_2023_2024_Imputed_Income_EE_Only_DPs_Effective_July12023.pdf
+- pdfs/imputed_incomes_2023/Imputed Income ED Letter.Effective 10.1.2023.pdf
+- pdfs/imputed_incomes_2023/Imputed Income ED Letter.Effective 7.1.2023.pdf
+- pdfs/imputed_incomes_2023/a_NMPSIA_2023_2024_Imputed_Income_EE_Only_DPs_Effective_October1_2023.pdf
+- pdfs/poms-risk-docs/Student_Incident_Report.pdf
+- pdfs/premium-rates-2023/10.1.23 Medical Rates_3-Tier Final.pdf
+- pdfs/premium-rates-2024/10012024_3_Tier_Premium_Rates_2.pdf
+- pdfs/premium-rates-2025/10_1_2025_3_Tier_Premium_Rates_CORRECTION.pdf
+- pdfs/yourhearingnetwork.pdf
