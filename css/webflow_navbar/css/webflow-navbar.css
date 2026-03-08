@@ -258,8 +258,21 @@
   transform: translateY(-1px);
 }
 
+.search-modal-submit:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.5);
+}
+
 .search-modal-submit:active {
   transform: translateY(0);
+}
+
+/* Hamburger menu focus indicator (WCAG accessibility) */
+.w-nav-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.5);
 }
 
 /* Mobile responsive adjustments */

@@ -23,7 +23,7 @@ class WebflowNavbar extends HTMLElement {
                 class="image"
               />
             </a>
-            <nav role="navigation" class="nav-menu w-nav-menu">
+            <nav role="navigation" class="nav-menu w-nav-menu" id="nav-menu">
               <div data-hover="false" data-delay="100" class="w-dropdown">
                 <div class="navlink w-dropdown-toggle">
                   <div class="w-icon-dropdown-toggle"></div>
@@ -114,9 +114,9 @@ class WebflowNavbar extends HTMLElement {
                 <i class="bx bx-search" style="color: #fff;font-size: 1.2rem;"></i>
               </a>
             </nav>
-            <div class="menu-button w-nav-button">
+            <button class="menu-button w-nav-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
               <div class="w-icon-nav-menu"></div>
-            </div>
+            </button>
           </div>
         </div>
       </section>
@@ -369,7 +369,15 @@ class WebflowNavbar extends HTMLElement {
           mutation.attributeName === "class"
         ) {
           const navMenu = navbar.querySelector(".w-nav-menu");
-          if (navMenu && navMenu.classList.contains("w--open")) {
+          const menuButton = navbar.querySelector(".w-nav-button");
+          const isOpen = navMenu && navMenu.classList.contains("w--open");
+
+          // Update aria-expanded state on hamburger button
+          if (menuButton) {
+            menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          }
+
+          if (isOpen) {
             // Mobile menu is open, re-setup search functionality
             setTimeout(() => {
               this.setupSearchFunctionality();
