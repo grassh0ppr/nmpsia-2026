@@ -73,6 +73,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  /* Carrier Contacts: stack cards vertically on mobile */
+  .carrier-cards {
+    grid-template-columns: 1fr;
+  }
+
   .heading-and-element-flexbox {
     flex-direction: row;
     align-items: center;

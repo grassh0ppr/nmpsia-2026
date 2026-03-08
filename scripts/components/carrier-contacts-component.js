@@ -45,7 +45,7 @@ class CarrierContacts extends HTMLElement {
                 <div class="carrier-card">
                   <div class="carrier-header">
                     <img src="images/carriers/logo11.png" alt="ERISA" />
-                    <h5>ERISA Administrative Services</h5>
+                    <h5>EASI Edu Incorporated</h5>
                   </div>
                   <div class="carrier-details">
                     <p><strong>Eligibility & Enrollment</strong></p>
@@ -54,11 +54,11 @@ class CarrierContacts extends HTMLElement {
                       <i class="bx bx-phone"></i>1-800-233-3164
                     </a>
                     <a
-                      href="https://nmpsiaonline.nmpsia.com"
+                      href="https://www.easitpa.com"
                       class="carrier-website"
                       target="_blank"
                     >
-                      <i class="bx bx-link-external"></i>nmpsiaonline.nmpsia.com
+                      <i class="bx bx-link-external"></i>easitpa.com
                     </a>
                   </div>
                 </div>
