@@ -47,6 +47,17 @@
   color: #fff;
 }
 
+/* Hamburger menu button default state */
+.menu-button {
+  background-color: transparent;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
 @media screen and (max-width: 992px) {
   .navlink {
     width: 100%;
