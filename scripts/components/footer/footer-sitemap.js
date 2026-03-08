@@ -56,7 +56,7 @@ class FooterSitemap extends HTMLElement {
         </div>
         
         <div class="footer-copyright">
-          <p>Copyright 2025 <a href="#" class="copyright-link">Erisa Administrative Services, Inc.</a></p>
+          <p>Copyright 2026 <a href="#" class="copyright-link">EASI Edu Incorporated</a></p>
         </div>
       </footer>
     `;
