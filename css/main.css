@@ -902,6 +902,20 @@ body.modern-body::after {
   max-width: 100%;
 }
 
+.content-section ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.content-section .btn.btn-primary {
+  background: linear-gradient(135deg, #667eeae6 0%, #6c4ba2e6 100%);
+}
+.content-section .btn.btn-primary:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #5d73d6e6 0%, #573778e6 100%);
+}
+
 /* Risk logos - evenly justify */
 .risk-logos {
   display: flex;
@@ -3162,6 +3176,7 @@ body.modern-body::after {
   font-weight: 600;
   transition: all 0.3s ease;
   font-size: 1rem;
+  padding-top: 0.25rem;
 }
 
 .content-section a:hover {
