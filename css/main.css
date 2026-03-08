@@ -1819,10 +1819,10 @@ body.modern-body::after {
 
 .nav-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   /* padding: 1rem 1.25rem; */
-  padding: 0 1rem 0 0.75rem;
+  padding: 0.5rem 1rem 0.5rem 0.75rem;
   color: #495057;
   text-decoration: none;
   border-radius: 10px;
@@ -1834,6 +1834,16 @@ body.modern-body::after {
   cursor: pointer;
   position: relative;
   z-index: 1;
+}
+
+.nav-item span {
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 480px) {
+  .nav-item {
+    align-items: center;
+  }
 }
 
 /* Navbar mobile stacking for dropdown triggers and menus */
@@ -3079,7 +3089,7 @@ body.modern-body::after {
   }
 
   .nav-item {
-    min-height: 44px;
+    min-height: auto;
     padding: 0.75rem 1rem;
     font-size: 1rem;
   }
