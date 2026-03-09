@@ -108,6 +108,8 @@ main.no-sidenav {
   min-height: 60vh;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Enhanced form styling */
@@ -332,6 +334,10 @@ main.no-sidenav {
     margin-top: 32px;
     border-radius: 8px;
     padding: 1rem;
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .new-form-container .main-section-header {
@@ -363,8 +369,10 @@ main.no-sidenav {
 
 @media screen and (max-width: 480px) {
   .new-form-container {
-    margin: 16px;
+    margin: 16px 0;
     padding: 1rem;
+    width: 100%;
+    max-width: 100%;
   }
 
   .new-form-container .main-section-header h2 {

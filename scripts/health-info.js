@@ -207,18 +207,11 @@ async function submitForm() {
       document.getElementById("confirmationSection").style.display = "none";
       document.getElementById("thankYouDriveThru").style.display = "block";
 
-      showStatusMessage(
-        "Your form has been submitted successfully. A PDF copy has been downloaded to your device.",
-        "success"
-      );
+      // Clear the info banner — the success card is the primary indicator now
+      clearStatusMessage();
 
-      const thankYouSection = document.getElementById("thankYouDriveThru");
-      if (thankYouSection) {
-        thankYouSection.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
+      // Scroll to the top so the success card is fully visible
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       let errorMessage =
         "There was an error submitting your form. Please try again in a few moments.";

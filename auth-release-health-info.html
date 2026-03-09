@@ -172,6 +172,33 @@
       body .new-form-container .mb-4 {
         margin-bottom: 2rem;
       }
+
+      /* Success card after submission */
+      .submission-success-card {
+        text-align: center;
+        padding: 3rem 2rem;
+        border: 2px solid #28a745;
+        border-radius: 12px;
+        background-color: #f0faf3;
+      }
+
+      .submission-success-card .success-icon-wrapper {
+        font-size: 4rem;
+        color: #28a745;
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+
+      .submission-success-card h3 {
+        color: #1e7e34;
+        margin-bottom: 1rem;
+      }
+
+      .submission-success-card p {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
 
@@ -645,12 +672,22 @@
       </div>
 
       <div id="thankYouDriveThru" class="my-5" style="display: none">
-        <h3 class="mb-3">Thank you for your submission!</h3>
-        <p>
-          A PDF copy of your form will automatically download to your machine.
-        </p>
-
-        <a href="index.html">Homepage</a>
+        <div class="submission-success-card">
+          <div class="success-icon-wrapper">
+            <i class="bx bxs-check-circle"></i>
+          </div>
+          <h3>Your form has been submitted successfully!</h3>
+          <p>
+            A PDF copy of your authorization form has been downloaded to your
+            device. If the download did not start automatically, please check
+            your browser's download settings.
+          </p>
+          <p class="text-muted" style="font-size: 0.9rem">
+            NMPSIA will review your submission and respond to the contact
+            email provided on your form.
+          </p>
+          <a href="index.html" class="btn btn-primary mt-3">Return to Homepage</a>
+        </div>
       </div>
     </main>
 
