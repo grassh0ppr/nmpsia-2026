@@ -1,6 +1,7 @@
 const reviewBtn = document.getElementById("reviewBtn");
 const goBackBtn = document.getElementById("goBack");
 const submitBtn = document.getElementById("submitBtn");
+const statusMessageEl = document.getElementById("formStatusMessage");
 
 reviewBtn.addEventListener("click", showConfirmation);
 goBackBtn.addEventListener("click", goBack);
@@ -9,10 +10,34 @@ submitBtn.addEventListener("click", submitForm);
 let storedFormData = null;
 let generatedPDFBlob;
 
+function clearStatusMessage() {
+  if (!statusMessageEl) return;
+  statusMessageEl.style.display = "none";
+  statusMessageEl.textContent = "";
+  statusMessageEl.className = "alert";
+}
+
+function showStatusMessage(message, type = "info") {
+  if (!statusMessageEl) {
+    // Fallback for any edge cases where the element is missing
+    window.alert(message);
+    return;
+  }
+  statusMessageEl.textContent = message;
+  statusMessageEl.className = `alert alert-${type} mt-3`;
+  statusMessageEl.style.display = "block";
+  statusMessageEl.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
 async function showConfirmation() {
+  clearStatusMessage();
+
   let recaptchaToken = grecaptcha.getResponse();
   if (!recaptchaToken) {
-    alert("Please complete the reCAPTCHA to proceed.");
+    showStatusMessage(
+      "Please complete the reCAPTCHA at the bottom of the form to proceed.",
+      "warning"
+    );
     return;
   }
   // if patient signature empty, alert user
@@ -20,7 +45,10 @@ async function showConfirmation() {
     !document.getElementById("signaturePatient").value ||
     !document.getElementById("patientSigDate").value
   ) {
-    alert("Please provide the patient's signature and/or date to continue!");
+    showStatusMessage(
+      "Please provide the patient's signature and date to continue.",
+      "warning"
+    );
     return;
   }
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -94,6 +122,8 @@ function getSelectedCarriers() {
 }
 
 function goBack() {
+  clearStatusMessage();
+
   // Display the form and hide the confirmation section
   document.getElementById("healthInfoForm").style.display = "block";
   document.getElementById("confirmationSection").style.display = "none";
@@ -103,6 +133,12 @@ function goBack() {
 }
 
 async function submitForm() {
+  clearStatusMessage();
+  showStatusMessage(
+    "Submitting your form. This may take a few moments, please do not close this page.",
+    "info"
+  );
+
   // Disable go back button and submit button
   goBackBtn.disabled = true;
   submitBtn.disabled = true;
@@ -170,13 +206,47 @@ async function submitForm() {
       // Show thank you message
       document.getElementById("confirmationSection").style.display = "none";
       document.getElementById("thankYouDriveThru").style.display = "block";
+
+      showStatusMessage(
+        "Your form has been submitted successfully. A PDF copy has been downloaded to your device.",
+        "success"
+      );
+
+      const thankYouSection = document.getElementById("thankYouDriveThru");
+      if (thankYouSection) {
+        thankYouSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     } else {
-      alert("There was an error submitting your form. Please try again.");
+      let errorMessage =
+        "There was an error submitting your form. Please try again in a few moments.";
+
+      try {
+        const contentType = response.headers.get("content-type") || "";
+        if (contentType.includes("application/json")) {
+          const data = await response.json();
+          if (data && (data.message || data.Message)) {
+            errorMessage = data.message || data.Message;
+          }
+        } else {
+          const text = await response.text();
+          if (text && text.trim().length && text.trim().length < 300) {
+            errorMessage = text.trim();
+          }
+        }
+      } catch (parseError) {
+        console.error("Error parsing error response:", parseError);
+      }
+
+      showStatusMessage(errorMessage, "danger");
     }
   } catch (error) {
     console.error("Error generating PDF or submitting the form:", error);
-    alert(
-      "There was an error generating the PDF or submitting your form. Please try again."
+    showStatusMessage(
+      "There was an unexpected error generating the PDF or submitting your form. Please try again.",
+      "danger"
     );
   } finally {
     // Re-enable buttons and hide the loading indicator
