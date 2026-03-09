@@ -51,12 +51,10 @@ async function showConfirmation() {
     );
     return;
   }
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  let crumbly = document.getElementById("crumbly");
-  if (crumbly) crumbly.scrollIntoView();
-
   document.getElementById("healthInfoForm").style.display = "none";
   document.getElementById("confirmationSection").style.display = "block";
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
   let formData = new FormData(document.getElementById("healthInfoForm"));
   formData.append("g-recaptcha-response", recaptchaToken);
