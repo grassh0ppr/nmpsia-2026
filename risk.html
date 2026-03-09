@@ -52,13 +52,17 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- custom stylesheets -->
+    <!-- Main styles -->
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <!-- webflow navbar -->
+    <link rel="stylesheet" href="css/webflow_navbar/css/normalize.css" />
+    <link rel="stylesheet" href="css/webflow_navbar/css/webflow.css" />
+    <link rel="stylesheet" href="css/webflow_navbar/css/webflow-navbar.css" />
 
-    <!-- components in alphabetical order -->
-    <script src="./scripts/components/find-a-provider.js?v=1.3"></script>
+    <!-- Components -->
     <script src="./scripts/components/risk/common-forms.js"></script>
     <script src="./scripts/components/risk/cybersecurity-info.js"></script>
     <script src="./scripts/components/risk/property-liability.js"></script>
@@ -75,11 +79,9 @@
     <script src="./scripts/components/footer/footer-sitemap.js"></script>
 
     <!-- data -->
-    <!-- school list -->
     <script src="./scripts/data/schools.js"></script>
 
     <style>
-      /* tryin out these button stylez */
       .content-section .btn.btn-primary {
         background: linear-gradient(135deg, #667eeae6 0%, #6c4ba2e6 100%);
       }
@@ -127,9 +129,9 @@
           </button>
         </div>
         <nav class="sidebar-nav">
-          <!-- Quick Actions -->
+          <!-- Overview -->
           <div class="nav-section">
-            <h4 class="nav-section-title">Quick Actions</h4>
+            <h4 class="nav-section-title">Overview</h4>
             <a
               href="#overview-risk"
               data-section="overview-risk"
@@ -137,10 +139,6 @@
             >
               <i class="bx bx-home-alt"></i>
               <span>About the Risk Division</span>
-            </a>
-            <a href="#claimsRisk" data-section="claimsRisk" class="nav-item">
-              <i class="bx bx-file-blank"></i>
-              <span>Claims</span>
             </a>
             <a
               href="#commonly-used-forms"
@@ -156,12 +154,12 @@
           <div class="nav-section">
             <h4 class="nav-section-title">Core Services</h4>
             <a
-              href="#insuranceDiv"
-              data-section="insuranceDiv"
+              href="#workersComp"
+              data-section="workersComp"
               class="nav-item"
             >
-              <i class="bx bx-shield"></i>
-              <span>Insurance Division</span>
+              <i class="bx bx-hard-hat"></i>
+              <span>Workers' Compensation</span>
             </a>
             <a
               href="#propertyLiability"
@@ -185,9 +183,38 @@
             </a>
           </div>
 
-          <!-- Safety & Training -->
+          <!-- Insurance & Certificates -->
           <div class="nav-section">
-            <h4 class="nav-section-title">Safety & Training</h4>
+            <h4 class="nav-section-title">Insurance & Certificates</h4>
+            <a
+              href="#reqCertIns"
+              data-section="reqCertIns"
+              class="nav-item"
+            >
+              <i class="bx bx-certification"></i>
+              <span>Request a Certificate</span>
+            </a>
+            <a
+              href="#pubUseSkool"
+              data-section="pubUseSkool"
+              class="nav-item"
+            >
+              <i class="bx bx-buildings"></i>
+              <span>Public Use of School Facilities</span>
+            </a>
+            <a
+              href="#memoOfCoverage"
+              data-section="memoOfCoverage"
+              class="nav-item"
+            >
+              <i class="bx bx-file-blank"></i>
+              <span>Memorandum of Coverage</span>
+            </a>
+          </div>
+
+          <!-- Safety & Prevention -->
+          <div class="nav-section">
+            <h4 class="nav-section-title">Safety & Prevention</h4>
             <a
               href="#cyberSecurity"
               data-section="cyberSecurity"
@@ -213,37 +240,34 @@
               <span>General Liability Investigations</span>
             </a>
             <a
+              href="#auditAsses"
+              data-section="auditAsses"
+              class="nav-item"
+            >
+              <i class="bx bx-check-square"></i>
+              <span>Workplace Audits</span>
+            </a>
+          </div>
+
+          <!-- Training -->
+          <div class="nav-section">
+            <h4 class="nav-section-title">Training</h4>
+            <a
               href="#riskTraining"
               data-section="riskTraining"
               class="nav-item"
             >
               <i class="bx bx-book"></i>
-              <span>Training</span>
-            </a>
-            <a href="#auditAsses" data-section="auditAsses" class="nav-item">
-              <i class="bx bx-check-square"></i>
-              <span>Workplace Audits</span>
+              <span>Training Overview</span>
             </a>
           </div>
 
           <!-- Resources -->
           <div class="nav-section">
             <h4 class="nav-section-title">Resources</h4>
-            <a
-              href="#memoOfCoverage"
-              data-section="memoOfCoverage"
-              class="nav-item"
-            >
-              <i class="bx bx-file-blank"></i>
-              <span>Memorandum of Coverage</span>
-            </a>
             <a href="#campaigns" data-section="campaigns" class="nav-item">
               <i class="bx bx-broadcast"></i>
               <span>NMPSIA Campaigns</span>
-            </a>
-            <a href="#riskNews" data-section="riskNews" class="nav-item">
-              <i class="bx bx-news"></i>
-              <span>Risk Newsletters</span>
             </a>
             <a
               href="#riskRefMaterial"
@@ -251,7 +275,7 @@
               class="nav-item"
             >
               <i class="bx bx-library"></i>
-              <span>Risk-Related Reference Materials</span>
+              <span>Reference Materials</span>
             </a>
           </div>
 
@@ -260,38 +284,14 @@
             <h4 class="nav-section-title">External Resources</h4>
             <a href="./district-contacts.html" class="nav-item">
               <i class="bx bx-link-external"></i>
-              <span>NMPSIA Participating Employer Contact Database</span>
+              <span>Employer Contact Database</span>
             </a>
           </div>
         </nav>
       </aside>
+
       <main class="benefits-main" data-default-section="overview-risk">
         <div id="top"></div>
-        <!-- Search Section -->
-        <!-- <div class="search-section">
-          <div class="search-container">
-            <i class="bx bx-search search-icon"></i>
-            <input
-              type="text"
-              id="searchInput"
-              placeholder="Search for forms, contacts, or information..."
-              class="search-input"
-            />
-            <button
-              type="button"
-              id="clearSearch"
-              class="clear-search-btn"
-              style="display: none"
-            >
-              <i class="bx bx-x"></i>
-            </button>
-          </div>
-          <div
-            id="searchResults"
-            class="search-results"
-            style="display: none"
-          ></div>
-        </div> -->
 
         <!-- Hero Section -->
         <section class="benefits-hero-section">
@@ -313,7 +313,11 @@
           </div>
         </section>
 
-        <!-- welcome/overview -->
+        <!-- ============================================ -->
+        <!-- OVERVIEW GROUP                               -->
+        <!-- ============================================ -->
+
+        <!-- ABOUT THE RISK DIVISION -->
         <section id="overview-risk" class="content-section">
           <div class="header-flex">
             <h2 class="display-4">About the Risk Division</h2>
@@ -366,62 +370,7 @@
             and NMPSIA as a public entity pool.
           </p>
 
-          <!-- Quick Actions Dashboard -->
-          <!-- <div class="quick-actions-dashboard mt-5">
-            <div class="dashboard-header">
-              <h3 class="dashboard-title">
-                <i class="bx bx-time me-2"></i>Quick Actions
-              </h3>
-            </div>
-            <div class="quick-actions-content" id="quickActionsContent">
-              <div class="quick-actions-grid">
-                <div class="quick-action-card">
-                  <i class="bx bxs-file-pdf"></i>
-                  <h4>Report a Claim</h4>
-                  <p>
-                    Submit property, liability, or workers' compensation claims
-                  </p>
-                  <a
-                    href="#claimsRisk"
-                    class="btn btn-primary btn-sm sidenav-link"
-                    >Get Started</a
-                  >
-                </div>
-                <div class="quick-action-card">
-                  <i class="bx bxs-download"></i>
-                  <h4>Common Forms</h4>
-                  <p>Access frequently used forms and documents</p>
-                  <a
-                    href="#commonly-used-forms"
-                    class="btn btn-primary btn-sm sidenav-link"
-                    >View Forms</a
-                  >
-                </div>
-                <div class="quick-action-card">
-                  <i class="bx bxs-certification"></i>
-                  <h4>Request Certificate</h4>
-                  <p>Get a certificate of insurance for events or contracts</p>
-                  <a
-                    href="#reqCertIns"
-                    class="btn btn-primary btn-sm sidenav-link"
-                    >Request Now</a
-                  >
-                </div>
-                <div class="quick-action-card">
-                  <i class="bx bxs-phone"></i>
-                  <h4>Emergency Contact</h4>
-                  <p>24/7 emergency contact information</p>
-                  <a
-                    href="#stevePlz"
-                    class="btn btn-primary btn-sm sidenav-link"
-                    >Contact Info</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Premium Credit and Deductible Programs Section -->
+          <!-- Premium Credit and Deductible Programs -->
           <div class="mt-5 p-4 bg-light rounded">
             <div class="row align-items-center">
               <div class="col-md-8">
@@ -463,161 +412,19 @@
           </div>
         </section>
 
-        <!-- ANNUAL RISK PREMIUM INVOICE -->
-        <section
-          id="RiskDivisionCon"
-          class="content-section"
-          style="display: none"
-        >
-          <div class="header-flex">
-            <h2 class="display-4">Annual Risk Premium Invoice</h2>
-            <img
-              src="images/nmpsia_logo_2024.png"
-              alt="NMPSIA logo"
-              class="section-logo"
-            />
-          </div>
-          <p>
-            To obtain a copy of your school or entity's annual Risk Premium
-            Invoice, select the fiscal year that you want the invoice for and
-            enter the District ID number assigned to your school or entity. The
-            name of your organization will be displayed when you click in the
-            Name field. Click Submit to obtain a PDF copy of your risk premium
-            invoice.
-          </p>
-          <p>
-            The District ID number for your Risk Premium Invoice is the same as
-            the District ID number used to obtain your monthly health insurance
-            billing statement.
-          </p>
-
-          <form class="my-5">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Period:
-              </label>
-              <select
-                class="form-select"
-                aria-label="Fiscal year date list"
-                name="datelist"
-                id="datelist"
-              >
-                <option value="2020">FY 2019/2020</option>
-                <option value="2021">FY 2020/2021</option>
-                <option value="2022">FY 2021/2022</option>
-                <option value="2023">FY 2022/2023</option>
-                <option value="2024">FY 2023/2024</option>
-                <option value="2025" selected>FY 2024/2025</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputFile" class="form-label mb-0"
-                >District ID:
-              </label>
-              <br />
-              <!-- <small
-                >To look up your district ID,
-                <a
-                  href="https://nmpsia.com/district-contacts.html"
-                  target="_blank"
-                  >check our database</a
-                >.</small
-              > -->
-              <input
-                type="text"
-                class="form-control"
-                id="District"
-                onblur="getSchoolName()"
-              />
-              <div
-                id="distIDHelp"
-                class="form-number help-block"
-                style="color: red"
-              >
-                Please DO NOT include leading zeroes if your District ID is less
-                than three digits.
-              </div>
-            </div>
-
-            <div class="mb-3">
-              <label class="form-check-label" for="exampleName1">Name: </label>
-              <input type="text" class="form-control" id="Name" />
-            </div>
-            <button
-              style="float: right"
-              id="Submit"
-              class="btn btn-primary mb-4"
-            >
-              Submit
-            </button>
-          </form>
-        </section>
-
-        <!-- CLAIMS -->
-        <section id="claimsRisk" class="content-section">
-          <div class="header-flex">
-            <h2 class="display-4">Claims</h2>
-          </div>
-          <ul class="content-list grid-layout">
-            <li>
-              <a class="sidenav-link" href="#propertyLiability">
-                <i class="bx bx-info-circle"></i>
-                <span>Property and Liability</span>
-              </a>
-            </li>
-            <li>
-              <a class="sidenav-link" href="#workersComp">
-                <i class="bx bx-info-circle"></i>
-                <span>Workers' Compensation</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-
-        <!-- COMMON FORMS -->
+        <!-- COMMONLY USED FORMS -->
         <section id="commonly-used-forms" class="content-section">
           <common-forms></common-forms>
         </section>
 
-        <!-- INSURANCE DIVISION -->
-        <section id="insuranceDiv" class="content-section">
-          <div class="heading-and-element-flexbox">
-            <h2 class="display-4">Insurance Division</h2>
-          </div>
-          <ul class="content-list grid-layout">
-            <li>
-              <a class="sidenav-link" href="#reqCertIns">
-                <i class="bx bxs-file-pdf"></i>
-                <span
-                  >Poms Portal to Request a Certificate, Report a New Location
-                  or Report a Construction Project</span
-                >
-              </a>
-            </li>
-            <li>
-              <a class="sidenav-link" href="#pubUseSkool">
-                <i class="bx bxs-file-pdf"></i>
-                <span>Public Use of School Facilities</span>
-              </a>
-            </li>
-          </ul>
-          <public-use-schools
-            id="pubUseSkool"
-            class="mt-5"
-          ></public-use-schools>
-          <request-certificate
-            id="reqCertIns"
-            class="mt-5"
-          ></request-certificate>
-        </section>
+        <!-- ============================================ -->
+        <!-- CORE SERVICES GROUP                          -->
+        <!-- ============================================ -->
 
-        <!-- INSURANCE DIVISION > REQUEST FOR CERTIFICATE -->
-        <!-- <section id="reqCertIns" class="content-section">
-          <a href="#insuranceDiv" class="go-back sidenav-link"
-            ><i class="bx bxs-chevron-left"></i> <span>Go back</span></a
-          >
-          <request-certificate></request-certificate>
-        </section> -->
+        <!-- WORKERS' COMPENSATION -->
+        <section id="workersComp" class="content-section">
+          <workers-comp></workers-comp>
+        </section>
 
         <!-- PROPERTY AND LIABILITY CLAIMS -->
         <section id="propertyLiability" class="content-section">
@@ -676,12 +483,67 @@
           <stop-it-content></stop-it-content>
         </section>
 
+        <!-- ============================================ -->
+        <!-- INSURANCE & CERTIFICATES GROUP               -->
+        <!-- ============================================ -->
+
+        <!-- REQUEST FOR CERTIFICATE -->
+        <section id="reqCertIns" class="content-section">
+          <request-certificate></request-certificate>
+        </section>
+
+        <!-- PUBLIC USE OF SCHOOL FACILITIES -->
+        <section id="pubUseSkool" class="content-section">
+          <public-use-schools></public-use-schools>
+        </section>
+
+        <!-- MEMORANDUM OF COVERAGE -->
+        <section id="memoOfCoverage" class="content-section">
+          <div class="header-flex">
+            <h2 class="display-4">Memorandum of Coverage</h2>
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="section-logo"
+            />
+          </div>
+          <ul class="content-list grid-layout">
+            <li>
+              <a
+                href="/pdfs/2025_2026_MOC_L028_General_and_Automobile_Liability_corrected_footer_102425.pdf"
+                class="sidenav-link"
+                target="_blank"
+              >
+                <i class="bx bxs-file-pdf"></i>
+                <span>General and Auto Liability</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="/pdfs/EXECUTED_2025_2026_MOC_P028_Property_Automobile_Physical_Damage_Crime_Cyber_Coverage_(wcag_checked_100825).pdf"
+                class="sidenav-link"
+                target="_blank"
+              >
+                <i class="bx bxs-file-pdf"></i>
+                <span
+                  >Property, Automobile Physical Damage, Crime &amp; Cyber
+                  Coverage</span
+                >
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- SAFETY & PREVENTION GROUP                    -->
+        <!-- ============================================ -->
+
         <!-- CYBERSECURITY -->
         <section id="cyberSecurity" class="content-section">
           <cybersecurity-info></cybersecurity-info>
         </section>
 
-        <!-- Driving Monitoring Services -->
+        <!-- DRIVING MONITORING SERVICES -->
         <section id="drivingMonitoring" class="content-section">
           <div class="header-flex">
             <h2 class="display-4">Driving Monitoring Services</h2>
@@ -714,7 +576,6 @@
             >
           </p>
           <p>For assistance contact:</p>
-          <!-- CONTACTS TABLE -->
           <table class="table table-bordered table-striped">
             <tbody>
               <tr>
@@ -823,11 +684,6 @@
           </div>
         </section>
 
-        <!-- TRAINING -->
-        <section id="riskTraining" class="content-section">
-          <risk-training></risk-training>
-        </section>
-
         <!-- WORKPLACE AUDITS -->
         <section id="auditAsses" class="content-section">
           <div class="header-flex">
@@ -861,7 +717,6 @@
               special education staff, student nutrition staff, transportation
               staff, and office staff
             </li>
-
             <li>Human Resources Audits</li>
           </ul>
 
@@ -892,44 +747,35 @@
           </table>
         </section>
 
-        <!-- MEMORANDUM OF COVERAGE -->
-        <section id="memoOfCoverage" class="content-section">
-          <div class="header-flex">
-            <h2 class="display-4">Memorandum of Coverage</h2>
-            <img
-              src="images/nmpsia_logo_2024.png"
-              alt="NMPSIA logo"
-              class="section-logo"
-            />
-          </div>
-          <ul class="content-list grid-layout">
-            <li>
-              <a
-                href="/pdfs/2025_2026_MOC_L028_General_and_Automobile_Liability_corrected_footer_102425.pdf"
-                class="sidenav-link"
-                target="_blank"
-              >
-                <i class="bx bxs-file-pdf"></i>
-                <span>General and Auto Liability</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="/pdfs/EXECUTED_2025_2026_MOC_P028_Property_Automobile_Physical_Damage_Crime_Cyber_Coverage_(wcag_checked_100825).pdf"
-                class="sidenav-link"
-                target="_blank"
-              >
-                <i class="bx bxs-file-pdf"></i>
-                <span
-                  >Property, Automobile Physical Damage, Crime &amp; Cyber
-                  Coverage</span
-                >
-              </a>
-            </li>
-          </ul>
+        <!-- ============================================ -->
+        <!-- TRAINING GROUP                               -->
+        <!-- ============================================ -->
+
+        <!-- TRAINING HUB -->
+        <section id="riskTraining" class="content-section">
+          <risk-training></risk-training>
         </section>
 
-        <!-- NMPSIA CAMPAIGNS  -->
+        <!-- TRAINING - IN PERSON COURSES -->
+        <section id="inPersonTraining" class="content-section">
+          <in-person-trainings></in-person-trainings>
+        </section>
+
+        <!-- TRAINING - ONLINE TRAINING -->
+        <section id="onlineTraining" class="content-section">
+          <online-trainings></online-trainings>
+        </section>
+
+        <!-- TRAINING - CONTACT LIST -->
+        <section id="trainingContacts" class="content-section">
+          <training-contacts></training-contacts>
+        </section>
+
+        <!-- ============================================ -->
+        <!-- RESOURCES GROUP                              -->
+        <!-- ============================================ -->
+
+        <!-- NMPSIA CAMPAIGNS -->
         <section id="campaigns" class="content-section">
           <div class="heading-and-element-flexbox">
             <h2 class="display-4">Campaigns</h2>
@@ -1003,53 +849,6 @@
           </div>
         </section>
 
-        <!-- RISK NEWSLETTERS -->
-        <section id="riskNews" class="content-section">
-          <h3 class="sub-heading">
-            Poms <span class="italic">Safety First</span> Newsletter
-          </h3>
-          <div class="content-images">
-            <div>
-              <a
-                href="/pdfs/NMPSIA_Winter_2023_Safety_Newsletter.pdf"
-                target="_blank"
-                class="sidenav-link"
-              >
-                <img
-                  src="images/NMPSIA_Winter_2023_Safety_Newsletter_Page_01.png"
-                  alt="Poms Newsletter Summer 2023"
-                />
-              </a>
-              <p class="mb-4">Winter 2023</p>
-            </div>
-            <div>
-              <a
-                href="/pdfs/Poms-Summer-2023-Newsletter.pdf"
-                target="_blank"
-                class="sidenav-link"
-              >
-                <img
-                  src="images/Poms-Summer-2023-Newsletter_Page_01.png"
-                  alt="Poms Newsletter Summer 2023"
-                />
-              </a>
-              <p class="mb-4">Summer 2023</p>
-            </div>
-            <div>
-              <a
-                href="/pdfs/Poms_NMPSIA_Newsletter_Summer2022_r3a.pdf"
-                target="_blank"
-                class="sidenav-link"
-              >
-                <img
-                  src="images/Poms_NMPSIA_Newsletter_Summer2022_page_1.png"
-                  alt="Poms Newsletter Summer 2022"
-                />
-              </a>
-              <p class="mb-4">Summer 2022</p>
-            </div>
-          </div>
-        </section>
 
         <!-- RISK-RELATED REFERENCE MATERIAL -->
         <section id="riskRefMaterial" class="content-section">
@@ -1132,7 +931,7 @@
           </ul>
         </section>
 
-        <!-- RISK-RELATED REFERENCE MATERIAL > BOUNDARIES POLICY -->
+        <!-- BOUNDARIES POLICY (sub-section of Reference Materials) -->
         <section id="boundariesPolicy" class="content-section">
           <a href="#riskRefMaterial" class="go-back sidenav-link"
             ><i class="bx bxs-chevron-left"></i> <span>Go back</span></a
@@ -1165,32 +964,91 @@
           </ul>
         </section>
 
-        <!-- TRAINING - IN PERSON COURSES -->
-        <section id="inPersonTraining" class="content-section">
-          <!-- <a href="#riskTraining" class="go-back sidenav-link"
-            ><i class="bx bxs-chevron-left"></i> <span>Go back</span></a
-          > -->
-          <in-person-trainings></in-person-trainings>
-        </section>
+        <!-- ANNUAL RISK PREMIUM INVOICE (hidden - kept for future use) -->
+        <section
+          id="RiskDivisionCon"
+          class="content-section"
+          style="display: none"
+        >
+          <div class="header-flex">
+            <h2 class="display-4">Annual Risk Premium Invoice</h2>
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="section-logo"
+            />
+          </div>
+          <p>
+            To obtain a copy of your school or entity's annual Risk Premium
+            Invoice, select the fiscal year that you want the invoice for and
+            enter the District ID number assigned to your school or entity. The
+            name of your organization will be displayed when you click in the
+            Name field. Click Submit to obtain a PDF copy of your risk premium
+            invoice.
+          </p>
+          <p>
+            The District ID number for your Risk Premium Invoice is the same as
+            the District ID number used to obtain your monthly health insurance
+            billing statement.
+          </p>
 
-        <!-- TRAINING - ONLINE TRAINING -->
-        <section id="onlineTraining" class="content-section">
-          <online-trainings></online-trainings>
-        </section>
+          <form class="my-5">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Period:
+              </label>
+              <select
+                class="form-select"
+                aria-label="Fiscal year date list"
+                name="datelist"
+                id="datelist"
+              >
+                <option value="2020">FY 2019/2020</option>
+                <option value="2021">FY 2020/2021</option>
+                <option value="2022">FY 2021/2022</option>
+                <option value="2023">FY 2022/2023</option>
+                <option value="2024">FY 2023/2024</option>
+                <option value="2025" selected>FY 2024/2025</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputFile" class="form-label mb-0"
+                >District ID:
+              </label>
+              <br />
+              <input
+                type="text"
+                class="form-control"
+                id="District"
+                onblur="getSchoolName()"
+              />
+              <div
+                id="distIDHelp"
+                class="form-number help-block"
+                style="color: red"
+              >
+                Please DO NOT include leading zeroes if your District ID is less
+                than three digits.
+              </div>
+            </div>
 
-        <!-- TRAINING - CONTACT LIST -->
-        <section id="trainingContacts" class="content-section">
-          <training-contacts></training-contacts>
-        </section>
-
-        <!-- CLAIMS - WORKERS COMP -->
-        <section id="workersComp" class="content-section">
-          <workers-comp></workers-comp>
+            <div class="mb-3">
+              <label class="form-check-label" for="exampleName1">Name: </label>
+              <input type="text" class="form-control" id="Name" />
+            </div>
+            <button
+              style="float: right"
+              id="Submit"
+              class="btn btn-primary mb-4"
+            >
+              Submit
+            </button>
+          </form>
         </section>
       </main>
     </div>
 
-    <!-- Modal for Poms & Assoc. Premium Credit and Deductible Programs for Sexual/Ethical Misconduct Claims -->
+    <!-- Modal for Poms & Assoc. Premium Credit and Deductible Programs -->
     <div
       class="modal fade"
       id="pomModal"
@@ -1358,7 +1216,6 @@
       src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
     ></script>
 
-    <!-- <script src="./js/main.js"></script> -->
     <script src="./scripts/sidebar-navigation.js"></script>
 
     <!-- Back to Top Button -->
@@ -1402,160 +1259,8 @@
     </style>
 
     <script>
-      // Search functionality
-      const searchInput = document.getElementById("searchInput");
-      const searchResults = document.getElementById("searchResults");
-      const clearSearchBtn = document.getElementById("clearSearch");
-
-      // Search data - you can expand this with more content
-      const searchData = [
-        {
-          title: "Report a Claim",
-          section: "claimsRisk",
-          description:
-            "Submit property, liability, or workers compensation claims",
-        },
-        {
-          title: "Common Forms",
-          section: "commonForms",
-          description: "Access frequently used forms and documents",
-        },
-        {
-          title: "Request Certificate of Insurance",
-          section: "reqCertIns",
-          description: "Get a certificate of insurance for events or contracts",
-        },
-        {
-          title: "Emergency Contact",
-          section: "stevePlz",
-          description: "24/7 emergency contact information",
-        },
-        {
-          title: "Workers Compensation",
-          section: "workersComp",
-          description: "Workers compensation claims and forms",
-        },
-        {
-          title: "Property & Liability",
-          section: "propertyLiability",
-          description: "Property and liability claims information",
-        },
-        {
-          title: "Cybersecurity",
-          section: "cyberSecurity",
-          description: "Cybersecurity information and resources",
-        },
-        {
-          title: "Training",
-          section: "riskTraining",
-          description: "Training courses and resources",
-        },
-        {
-          title: "Lightspeed STOPit",
-          section: "STOPit",
-          description: "Anonymous reporting system",
-        },
-        {
-          title: "Student Accident Insurance",
-          section: "studAccident",
-          description: "Student accident insurance information",
-        },
-      ];
-
-      searchInput.addEventListener("input", function () {
-        const query = this.value.toLowerCase().trim();
-
-        if (query.length === 0) {
-          searchResults.style.display = "none";
-          clearSearchBtn.style.display = "none";
-          return;
-        }
-
-        clearSearchBtn.style.display = "block";
-
-        const filteredResults = searchData.filter(
-          (item) =>
-            item.title.toLowerCase().includes(query) ||
-            item.description.toLowerCase().includes(query),
-        );
-
-        if (filteredResults.length === 0) {
-          searchResults.innerHTML =
-            '<div class="search-result-item"><p>No results found</p></div>';
-        } else {
-          searchResults.innerHTML = filteredResults
-            .map(
-              (item) => `
-            <div class="search-result-item" onclick="navigateToSection('${
-              item.section
-            }')">
-              <h5>${highlightText(item.title, query)}</h5>
-              <p>${highlightText(item.description, query)}</p>
-            </div>
-          `,
-            )
-            .join("");
-        }
-
-        searchResults.style.display = "block";
-      });
-
-      clearSearchBtn.addEventListener("click", function () {
-        searchInput.value = "";
-        searchResults.style.display = "none";
-        this.style.display = "none";
-      });
-
-      function highlightText(text, query) {
-        if (!query) return text;
-        const regex = new RegExp(`(${query})`, "gi");
-        return text.replace(regex, '<span class="search-highlight">$1</span>');
-      }
-
-      function navigateToSection(sectionId) {
-        // Hide search results
-        searchResults.style.display = "none";
-        searchInput.value = "";
-        clearSearchBtn.style.display = "none";
-
-        // Navigate to section
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-
-          // Update active section if using section navigation
-          const allSections = document.querySelectorAll(".section");
-          allSections.forEach((s) => s.classList.remove("active"));
-          section.classList.add("active");
-
-          // Update sidebar active state
-          const sidebarLinks = document.querySelectorAll("aside a");
-          sidebarLinks.forEach((link) => link.classList.remove("active"));
-          const activeLink = document.querySelector(
-            `aside a[href="#${sectionId}"]`,
-          );
-          if (activeLink) activeLink.classList.add("active");
-        }
-      }
-
-      // this is all not technically supposed to be commented out but otherwise it screws with the code
-
-      // Quick Actions Dashboard Toggle
-      const dashboardToggle = document.getElementById("dashboardToggle");
-      const quickActionsContent = document.getElementById(
-        "quickActionsContent",
-      );
-
-      if (dashboardToggle && quickActionsContent) {
-        dashboardToggle.addEventListener("click", function () {
-          quickActionsContent.classList.toggle("collapsed");
-          dashboardToggle.classList.toggle("collapsed");
-        });
-      }
-
       // Risk page specific functionality
       document.addEventListener("DOMContentLoaded", function () {
-        // Check if sidebar is scrollable and add visual indicator
         const sidebarNav = document.querySelector(".sidebar-nav");
         if (sidebarNav) {
           function checkScrollable() {
@@ -1566,11 +1271,9 @@
             }
           }
 
-          // Check on load and resize
           checkScrollable();
           window.addEventListener("resize", checkScrollable);
 
-          // Check when sidebar opens/closes
           const sidebar = document.getElementById("benefitsSidebar");
           if (sidebar) {
             const observer = new MutationObserver(checkScrollable);
@@ -1583,17 +1286,15 @@
       });
     </script>
 
-    <!-- ISOLATED Back to Top Script - Runs after everything else -->
+    <!-- Back to Top Script -->
     <script>
       (function () {
         "use strict";
 
-        // Wait for everything to load
         document.addEventListener("DOMContentLoaded", function () {
           const btn = document.getElementById("backToTopBtn");
           if (!btn) return;
 
-          // Show/hide based on 100vh scroll
           function checkScroll() {
             if (window.pageYOffset >= window.innerHeight) {
               btn.style.display = "flex";
@@ -1602,13 +1303,11 @@
             }
           }
 
-          // Scroll listener with high priority
           window.addEventListener("scroll", checkScroll, {
             passive: true,
             capture: true,
           });
 
-          // Click handler that bypasses ALL other scripts
           btn.addEventListener(
             "click",
             function (e) {
@@ -1616,16 +1315,14 @@
               e.stopPropagation();
               e.stopImmediatePropagation();
 
-              // Direct scroll to top - no delays, no conflicts
               window.scrollTo({
                 top: 0,
                 behavior: "smooth",
               });
             },
             true,
-          ); // Use capture phase for highest priority
+          );
 
-          // Initial check
           checkScroll();
         });
       })();

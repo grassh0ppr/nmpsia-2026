@@ -90,11 +90,6 @@ class PublicUseSchools extends HTMLElement {
       >Sample Site Use Agreement</a
     >
   </p>
-  <p>
-    <a target="_blank" href="/pdfs/Use_of_Facilities_Website.pdf"
-      >Use of School Facilities by Private Persons</a
-    >
-  </p>
     `;
   }
 }
