@@ -1,9 +1,9 @@
 class CybersecurityInfo extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
-    <div class="heading-and-element-flexbox">
+    <div class="header-flex">
     <h2 class="display-4">Cybersecurity Information</h2>
-   
+    <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" class="section-logo" />
   </div>
   <hr />
   <ul class="content-list grid-layout">

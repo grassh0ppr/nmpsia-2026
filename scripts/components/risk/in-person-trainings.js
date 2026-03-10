@@ -3,16 +3,11 @@ class InPersonTrainings extends HTMLElement {
     this.innerHTML = /*html*/ `
     
     <div class="header-flex">
-    <h2 class="matchd-content-heading ps-0" style="margin: 0">
-      In-Person Training Courses
-    </h2>
-    <img
-      src="images/Logo_POMS.png"
-      alt="poms logo"
-      class="carrier-logo"
-    />
+      <h2 class="display-4">In-Person Training Courses</h2>
+      <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" class="section-logo" />
+    </div>
   </div>
-  <h4 class="py-3">Loss Prevention Courses</h4>
+  <h3 class="">Loss Prevention Courses</h3>
   <p>
     Contact: Larry Vigil, Sr. Manager, Risk Services -
     <a href="mailto:lvigil@pomsassoc.com">lvigil@pomsassoc.com</a>
