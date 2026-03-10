@@ -34,7 +34,7 @@
 /* ===== UTILITY CLASSES ===== */
 .modern-bg {
   background-image:
-    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash-1.webp"),
+    url("../images/scott-elkins-bg.jpg"),
     linear-gradient(
       135deg,
       rgba(102, 126, 234, 0.3) 0%,
@@ -565,7 +565,7 @@
 /* ===== BODY STYLES ===== */
 body.modern-body {
   background-image:
-    url("../images/scott-elkins-3O4GzG_Pjb4-unsplash-1.webp"),
+    url("../images/scott-elkins-bg.jpg"),
     linear-gradient(
       135deg,
       rgba(102, 126, 234, 0.3) 0%,
@@ -600,7 +600,7 @@ body.modern-body::after {
   body.modern-body,
   .modern-bg {
     background-image:
-      url("../images/scott-elkins-3O4GzG_Pjb4-unsplash-1-mobile.webp"),
+      url("../images/scott-elkins-bg-mobile.jpg"),
       linear-gradient(
         135deg,
         rgba(102, 126, 234, 0.3) 0%,
@@ -844,7 +844,7 @@ body.modern-body::after {
   font-weight: 700;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
-  border-bottom: 3px solid #667eea;
+  border-bottom: 1px solid #44508689;
   padding-bottom: 0.5rem;
 }
 
