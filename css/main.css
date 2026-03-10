@@ -1891,6 +1891,29 @@ body.modern-body::after {
   text-align: center;
 }
 
+/* ===== NAV SECTION GROUPINGS (used on risk page sidebar) ===== */
+.nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.nav-section + .nav-section {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.nav-section-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #667eea;
+  margin: 0 0 0.25rem 0.75rem;
+  padding: 0;
+}
+
 .benefits-main {
   flex: 1;
   min-width: 0;
