@@ -3160,11 +3160,13 @@ body.modern-body::after {
   margin-left: 1rem;
 }
 
-.carrier-logo {
+.content-section img.carrier-logo {
   max-height: 60px;
   width: auto;
   object-fit: contain;
   margin-left: 1rem;
+  max-width: 250px;
+  min-width: 0;
 }
 
 /* Responsive image sizing for risk page */
@@ -3174,7 +3176,7 @@ body.modern-body::after {
     margin-left: 0.5rem;
   }
 
-  .carrier-logo {
+  .content-section img.carrier-logo {
     max-height: 50px;
     margin-left: 0.5rem;
   }
@@ -3186,7 +3188,7 @@ body.modern-body::after {
     margin-left: 0.25rem;
   }
 
-  .carrier-logo {
+  .content-section img.carrier-logo {
     max-height: 40px;
     margin-left: 0.25rem;
   }
@@ -3206,7 +3208,6 @@ body.modern-body::after {
   color: #586ed0;
   text-decoration: underline;
 }
-
 
 /* ===== TABLE STYLES FOR CONTENT SECTIONS ===== */
 .content-section .table {
