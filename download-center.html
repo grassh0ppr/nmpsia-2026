@@ -62,7 +62,7 @@
     <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
     <script src="./scripts/components/footer/footer-sitemap.js"></script>
     <!-- commented out while testing locally -->
-    <!-- <script>
+    <script>
       if (
         localStorage.getItem("userName") == undefined ||
         localStorage.getItem("userName") == null ||
@@ -78,10 +78,10 @@
         document
           .querySelector(".welcome")
           .append(
-            '<p style="color:red;margin-top:-10px">We suggest you change your password.</p>'
+            '<p style="color:red;margin-top:-10px">We suggest you change your password.</p>',
           );
       }
-    </script> -->
+    </script>
 
     <style>
       /* Download Center Layout */
