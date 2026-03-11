@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NMPSIA Spring 2026 Newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NMPSIA Spring 2026 Newsletter with benefits information, wellness resources, and risk management tips."
+    />
+
+    <!-- Same hero background as rest of site (image + gradient) -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="preload"
+      as="image"
+      href="images/scott-elkins-bg.jpg"
+      media="(min-width: 769px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="images/scott-elkins-bg-mobile.jpg"
+      media="(max-width: 768px)"
+    />
+
+    <style>
+      /* Newsletter-specific overrides; body background comes from main.css via .modern-body */
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        color: #222;
+      }
+
+      .newsletter-page {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 1.5rem 1rem 3rem;
+        background-color: #fff;
+      }
+
+      @media (min-width: 768px) {
+        .newsletter-page {
+          padding: 2.5rem 2rem 4rem;
+        }
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 700;
+        color: #273038;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.3;
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-top: 0;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin: 0.4rem 0;
+      }
+
+      a {
+        color: #006a9c;
+      }
+
+      a:hover,
+      a:focus-visible {
+        text-decoration: underline;
+      }
+
+      .newsletter-header {
+        border-bottom: 4px solid #e3f0da;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .newsletter-kicker {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.85rem;
+        color: #75818a;
+      }
+
+      .newsletter-meta {
+        font-size: 0.9rem;
+        color: #555;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+        margin: 0.5rem 0 1rem;
+      }
+
+      .download-link {
+        display: inline-block;
+        padding: 0.6rem 1rem;
+        background-color: #6dbf57;
+        color: #fff;
+        border-radius: 999px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.95rem;
+        margin-top: 0.75rem;
+      }
+
+      .download-link:hover,
+      .download-link:focus-visible {
+        background-color: #5aa347;
+        text-decoration: none;
+      }
+
+      .newsletter-section {
+        margin-top: 2rem;
+      }
+
+      .newsletter-section:first-of-type {
+        margin-top: 1.5rem;
+      }
+
+      .newsletter-intro-list ul {
+        padding-left: 1.25rem;
+      }
+
+      .newsletter-intro-list li + li {
+        margin-top: 0.2rem;
+      }
+
+      .callout,
+      .reminder,
+      .highlight-box {
+        border-radius: 0.5rem;
+        padding: 1rem 1.25rem;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .callout {
+        background-color: #f5f9ff;
+        border-left: 4px solid #4b86c6;
+      }
+
+      .reminder {
+        background-color: #fff8d9;
+        border-left: 4px solid #f0b429;
+      }
+
+      .highlight-box {
+        background-color: #f4fbf0;
+        border-left: 4px solid #6dbf57;
+      }
+
+      /* Table contrast: dark text on light backgrounds for WCAG AA */
+      .highlight-box table {
+        background-color: #fff;
+      }
+      .highlight-box table caption {
+        color: #1a1a1a;
+      }
+      .highlight-box table th,
+      .highlight-box table td {
+        color: #1a1a1a;
+        border-color: #c5cdd4;
+      }
+      .highlight-box table thead th {
+        background-color: #e8edf1;
+        color: #1a1a1a;
+      }
+      .highlight-box table tbody th {
+        background-color: #f5f7fa;
+        color: #1a1a1a;
+      }
+      .highlight-box table tbody td {
+        background-color: #fff;
+        color: #1a1a1a;
+      }
+      .highlight-box table caption {
+        color: #eaeaea;
+      }
+      .highlight-box .small-text {
+        color: #eaeaea;
+      }
+
+      .callout h2,
+      .callout h3,
+      .highlight-box h2,
+      .highlight-box h3 {
+        margin-top: 0;
+      }
+
+      .two-column,
+      .three-column {
+        display: grid;
+        gap: 1.25rem;
+        margin-top: 1rem;
+      }
+
+      .two-column {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      .three-column {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      @media (min-width: 900px) {
+        .two-column {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        .three-column {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+      }
+
+      ul,
+      ol {
+        padding-left: 1.25rem;
+      }
+
+      ul li + li,
+      ol li + li {
+        margin-top: 0.15rem;
+      }
+
+      .subheading {
+        font-weight: 700;
+        margin-top: 0.6rem;
+      }
+
+      .small-text {
+        font-size: 0.88rem;
+      }
+
+      .page-number {
+        text-align: right;
+        font-size: 0.8rem;
+        color: #7b8790;
+        margin-top: 2rem;
+        border-top: 1px solid #e0e4e8;
+        padding-top: 0.5rem;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        margin: 0.75rem 0 0.5rem;
+      }
+
+      th,
+      td {
+        border: 1px solid #dde2e7;
+        padding: 0.4rem 0.5rem;
+        vertical-align: top;
+      }
+
+      th {
+        background-color: #f5f7fa;
+        font-weight: 600;
+      }
+
+      caption {
+        text-align: left;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+      }
+
+      .section-label {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.8rem;
+        color: #7b8790;
+        margin-bottom: 0.25rem;
+      }
+    </style>
+  </head>
+  <body class="modern-body">
+    <main class="newsletter-page" aria-labelledby="newsletter-title">
+      <header class="newsletter-header">
+        <p class="newsletter-kicker">Newsletter &middot; Spring 2026</p>
+        <h1 id="newsletter-title">NMPSIA Spring 2026 Newsletter</h1>
+
+        <div class="newsletter-meta">
+          <span>New Mexico Public Schools Insurance Authority</span>
+          <span>NMPSIA.com</span>
+        </div>
+
+        <a
+          class="download-link"
+          href="/pdfs/Spring_2026_Newsletter_reduced.pdf"
+        >
+          Download the Spring 2026 newsletter (PDF)
+        </a>
+
+        <p class="small-text" style="margin-top: 0.75rem">
+          This accessible HTML version presents the same information as the
+          printed newsletter in a screen reader and mobile‑friendly format.
+        </p>
+      </header>
+
+      <!-- What's Inside / Page 1 content summary -->
+      <section
+        class="newsletter-section newsletter-intro-list"
+        aria-labelledby="whats-inside-heading"
+      >
+        <h2 id="whats-inside-heading">What&rsquo;s Inside</h2>
+        <ul>
+          <li>
+            <a href="#benefits-101-heading"
+              ><strong>Benefits 101: Preventive Care: Be in the Know</strong></a
+            >
+            (page 2)
+          </li>
+          <li>
+            <a href="#rural-living-heading"
+              ><strong>Rural Living? Try Primary Virtual Care</strong></a
+            >
+            (page 2)
+          </li>
+          <li>
+            <a href="#debunk-heading"
+              ><strong>Debunk Preventive Care Misconceptions</strong></a
+            >
+            (page 2)
+          </li>
+          <li>
+            <a href="#retirees-heading"
+              ><strong>Benefits‑related Tips for Soon‑To‑Be Retirees</strong></a
+            >
+            (page 2)
+          </li>
+          <li>
+            <a href="#rewards-heading"
+              ><strong>Turn Everyday Healthy Choices into Rewards</strong></a
+            >
+            (page 2)
+          </li>
+          <li>
+            <a href="#wellness-spotlight-heading"
+              ><strong
+                >Wellness Spotlight: Handle Life &amp; Healthcare with
+                Wabi‑Sabi</strong
+              ></a
+            >
+            (page 3)
+          </li>
+          <li>
+            <a href="#raffle-heading"
+              ><strong>Surprise Spring Raffle: Enter to Win!</strong></a
+            >
+            (page 3)
+          </li>
+          <li>
+            <a href="#recipe-heading"
+              ><strong>Recipe: Arugula, Watermelon and Feta Salad</strong></a
+            >
+            (page 3)
+          </li>
+          <li>
+            <a href="#risk-resource-heading"
+              ><strong
+                >Risk Resource: Practice Self‑Care at Your Desk</strong
+              ></a
+            >
+            (page 4)
+          </li>
+        </ul>
+
+        <aside class="callout" aria-labelledby="mark-calendar-heading">
+          <h2 id="mark-calendar-heading">Mark Your Calendar</h2>
+          <p>
+            <strong>Spring into Motion is coming! Register April 1st!</strong>
+          </p>
+          <p>
+            This 4‑week Step &amp; Activity Challenge is a fun, energizing way
+            to boost your motivation, enjoy the fresh spring vibes, and maybe
+            even win some awesome prizes.
+          </p>
+        </aside>
+
+        <section
+          class="reminder"
+          aria-label="NMPSIA reminder about qualifying events"
+        >
+          <p>
+            <strong>NMPSIA Reminder:</strong>
+            Qualifying Event rules are very important to know so you can act
+            within enrollment deadlines. Meeting these deadlines can be the
+            difference between coverage and no coverage for yourself and your
+            dependents. Take some time to read the
+            <a href="/pdfs/PROGRAM_GUIDE_PLACEHOLDER.pdf">program guide</a>
+            and save it or bookmark the web page.
+          </p>
+        </section>
+
+        <p class="small-text">
+          We would love to feature your photo in the next NMPSIA newsletter! You
+          can submit landscape photos taken in New Mexico for a chance to win
+          prizes and have your photo featured. Email your pictures to
+          <a href="mailto:KAYLYNN.ROYBAL@PSIA.NM.GOV"
+            >KAYLYNN.ROYBAL@PSIA.NM.GOV</a
+          >.
+        </p>
+
+        <p class="page-number" aria-hidden="true">Page 1</p>
+      </section>
+
+      <!-- Benefits Corner - Page 2 -->
+      <section
+        class="newsletter-section"
+        aria-labelledby="benefits-corner-heading"
+      >
+        <p class="section-label">Benefits Corner</p>
+        <h2 id="benefits-corner-heading">
+          Benefits 101: Preventive Care &amp; More
+        </h2>
+
+        <article aria-labelledby="benefits-101-heading">
+          <h3 id="benefits-101-heading">
+            Benefits 101: Preventive Care &mdash; Be in the Know
+          </h3>
+          <p>
+            Preventive care is covered at 100% when you use an in‑network
+            provider and receive services billed as preventive. Whether you are
+            on the High Option or Low Option medical plan, preventive care is
+            covered when you follow the rules for in‑network preventive visits.
+          </p>
+
+          <div class="two-column">
+            <div>
+              <p class="subheading">To do this week</p>
+              <ul>
+                <li>
+                  Check the calendar. If it&rsquo;s been more than a year since
+                  your last physical, it might be time to schedule.
+                </li>
+                <li>
+                  Find a provider. Stay in‑network so your preventive care is
+                  covered under the plan.
+                </li>
+                <li>
+                  Ask questions. Confirm which screenings are right for you
+                  based on age and health history.
+                </li>
+              </ul>
+
+              <p class="subheading">What is considered preventive?</p>
+              <ul>
+                <li>Annual physicals</li>
+                <li>Routine labs</li>
+                <li>Mammograms and colonoscopies</li>
+                <li>Well‑woman exams</li>
+                <li>Vaccines</li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="subheading">Be specific when scheduling</p>
+              <p>
+                When calling, clearly state that you want to schedule a
+                preventive visit. For example: “I am calling to schedule my
+                preventive care exam.”
+              </p>
+              <p class="subheading">Know the &ldquo;new concern&rdquo; rule</p>
+              <p>
+                If you raise new problems or concerns during a preventive visit,
+                the provider may bill additional services that are not
+                considered preventive. Those extra services can be subject to
+                your plan&rsquo;s deductible, copay, or coinsurance.
+              </p>
+            </div>
+          </div>
+
+          <div class="highlight-box">
+            <p class="subheading">If your visit is not preventive</p>
+            <p>
+              When you see a provider for a specific concern rather than a
+              routine preventive screening, you should expect to pay according
+              to your medical plan benefits.
+            </p>
+
+            <table>
+              <caption>
+                Example cost sharing when a visit is not preventive
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Type of visit</th>
+                  <th scope="col">High Option plan</th>
+                  <th scope="col">Low Option plan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Telehealth / virtual &mdash; non‑urgent</th>
+                  <td>Copay according to your plan</td>
+                  <td>Copay according to your plan</td>
+                </tr>
+                <tr>
+                  <th scope="row">Primary care</th>
+                  <td>Office visit copay</td>
+                  <td>Office visit copay or deductible/coinsurance</td>
+                </tr>
+                <tr>
+                  <th scope="row">Specialist / outpatient services</th>
+                  <td>Specialist copay / coinsurance</td>
+                  <td>Deductible and coinsurance may apply</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <p class="small-text">
+              For full details, refer to your plan documents or contact your
+              carrier directly.
+            </p>
+          </div>
+        </article>
+
+        <article aria-labelledby="rural-living-heading">
+          <h3 id="rural-living-heading">
+            Rural Living? Try Primary Virtual Care
+          </h3>
+          <p>
+            If you live in a rural area, it can be challenging to access primary
+            care. Virtual primary care connects you with providers by phone,
+            tablet, or computer for routine visits, follow‑up care, and
+            non‑urgent needs.
+          </p>
+          <ul>
+            <li>Shorter wait times compared with in‑person visits.</li>
+            <li>Flexible appointment options that fit your schedule.</li>
+            <li>Ability to manage many conditions from home.</li>
+          </ul>
+          <p>
+            Check with your carrier to confirm which virtual primary care
+            options are available under your NMPSIA plan.
+          </p>
+        </article>
+
+        <article aria-labelledby="debunk-heading">
+          <h3 id="debunk-heading">
+            Debunk Preventive Screenings Misconceptions
+          </h3>
+          <p class="subheading">
+            “Screenings aren&rsquo;t necessary unless I have symptoms.”
+          </p>
+          <p>
+            Reality: Screenings are designed to catch problems before symptoms
+            appear. Skipping them may mean missing early, treatable conditions.
+          </p>
+
+          <p class="subheading">
+            “It&rsquo;s too complicated to figure out where to go or how to get
+            care.”
+          </p>
+          <p>
+            Reality: Carriers offer websites, nurse lines, patient navigators,
+            call centers, and online portals to help you find care and schedule
+            visits. You don&rsquo;t have to figure it out alone.
+          </p>
+
+          <p class="subheading">
+            “Medical care, even with low copays, is too expensive.”
+          </p>
+          <p>
+            Reality: Avoiding routine care can lead to higher long‑term costs if
+            unmanaged conditions become emergencies. Preventive care can save
+            time and money over the long run.
+          </p>
+        </article>
+
+        <article aria-labelledby="retirees-heading">
+          <h3 id="retirees-heading">
+            Benefits‑Related Tips for Soon‑To‑Be Retirees
+          </h3>
+          <p>
+            NMPSIA coordinates with the New Mexico Retiree Health Care Authority
+            (NMRHCA) to support a smooth transition into retirement. Before your
+            retirement date, review your options for retiree coverage and be
+            aware of important deadlines.
+          </p>
+          <p>
+            The timing of your retirement affects when premiums are deducted and
+            when your retiree coverage begins. Contact NMRHCA and NMPSIA early
+            to make informed decisions about your benefits.
+          </p>
+        </article>
+
+        <article aria-labelledby="rewards-heading">
+          <h3 id="rewards-heading">
+            Turn Everyday Healthy Choices into Rewards
+          </h3>
+          <p>
+            Many NMPSIA medical plans include wellness programs that reward you
+            for healthy actions such as preventive screenings, completing health
+            assessments, or participating in fitness challenges.
+          </p>
+          <ul>
+            <li>Earn points for eligible activities.</li>
+            <li>Redeem rewards such as gift cards or wellness items.</li>
+            <li>
+              Track your progress through your carrier&rsquo;s member portal.
+            </li>
+          </ul>
+          <p>
+            Log in to your carrier&rsquo;s wellness portal or contact customer
+            service to learn which rewards are available with your plan.
+          </p>
+        </article>
+
+        <p class="page-number" aria-hidden="true">Page 2</p>
+      </section>
+
+      <!-- Wellness Spotlight - Page 3 -->
+      <section
+        class="newsletter-section"
+        aria-labelledby="wellness-spotlight-heading"
+      >
+        <p class="section-label">Wellness Spotlight</p>
+        <h2 id="wellness-spotlight-heading">
+          Wabi‑Sabi: A Simple Way to Handle Real‑Life Imperfections
+        </h2>
+
+        <article aria-labelledby="wabi-sabi-intro-heading">
+          <h3 id="wabi-sabi-intro-heading">What Is Wabi‑Sabi?</h3>
+          <p>
+            In everyday life, Wabi‑Sabi means noticing that things don&rsquo;t
+            have to be perfect to be valuable or meaningful. In health and
+            wellness, it encourages you to build strong habits while accepting
+            that progress won&rsquo;t look flawless every day.
+          </p>
+          <p>
+            Healthcare isn&rsquo;t perfect. Appointments get rescheduled, and
+            plans change. Wabi‑Sabi teaches you to keep going anyway and to see
+            small steps as wins rather than failures.
+          </p>
+          <p>
+            Here are three practical ways to bring a Wabi‑Sabi mindset into your
+            health and well‑being.
+          </p>
+        </article>
+
+        <div
+          class="three-column"
+          aria-label="Three Wabi-Sabi inspired health strategies"
+        >
+          <article aria-labelledby="navigate-healthcare-heading">
+            <h3 id="navigate-healthcare-heading">1. Navigate Healthcare</h3>
+            <ul>
+              <li>
+                Accept that the process may not be seamless, but preventive
+                visits and screenings are still worth it.
+              </li>
+              <li>
+                Stay engaged even when it feels clunky; your health is worth the
+                effort.
+              </li>
+              <li>
+                Ask for help early from HR, wellness ambassadors, or member
+                services.
+              </li>
+            </ul>
+          </article>
+
+          <article aria-labelledby="seek-preventive-heading">
+            <h3 id="seek-preventive-heading">2. Seek Preventive Care</h3>
+            <p>
+              Don&rsquo;t wait for a perfect reason to make an appointment.
+              Preventive screenings can uncover concerns before they become
+              serious. Making time now helps protect your health for the future.
+            </p>
+          </article>
+
+          <article aria-labelledby="self-led-heading">
+            <h3 id="self-led-heading">
+              3. Self‑Led Disease Prevention through Nutrition &amp; Exercise
+            </h3>
+            <p>
+              Simple meals and regular movement can support long‑term health.
+              Small changes like adding more fruits and vegetables, walking more
+              often, or stretching regularly all contribute to your well‑being.
+            </p>
+          </article>
+        </div>
+
+        <aside class="callout" aria-labelledby="raffle-heading">
+          <h3 id="raffle-heading">
+            Surprise Spring Raffle &mdash; Enter to Win!
+          </h3>
+          <p>
+            Send NMPSIA your favorite New Mexico landscape photo for a chance to
+            win a Wellness Journey Kit and to have your photo featured in a
+            future newsletter.
+          </p>
+          <p class="subheading">How to Enter</p>
+          <ul>
+            <li>Take the photo yourself; it must be taken in New Mexico.</li>
+            <li>Include your name and where the photo was taken.</li>
+            <li>
+              Email your photo with the subject line
+              <strong>Surprise Spring Raffle</strong> to
+              <a href="mailto:kaylynn.roybal@psia.nm.gov"
+                >kaylynn.roybal@psia.nm.gov</a
+              >.
+            </li>
+          </ul>
+          <p class="small-text">
+            The winning photo will be announced in the Summer newsletter.
+            Additional details and deadlines appear in the printed newsletter.
+          </p>
+        </aside>
+
+        <article aria-labelledby="recipe-heading">
+          <h2 id="recipe-heading">
+            Recipe: Arugula, Watermelon and Feta Salad
+          </h2>
+
+          <div class="two-column">
+            <div>
+              <h3>For the Vinaigrette</h3>
+              <ul>
+                <li>1/4 cup freshly squeezed orange juice</li>
+                <li>1/4 cup freshly squeezed lemon juice (about 2 lemons)</li>
+                <li>1/4 cup minced shallots (about 1 large)</li>
+                <li>1 tablespoon honey</li>
+                <li>1/2 cup good olive oil</li>
+                <li>1 teaspoon kosher salt</li>
+                <li>1/2 teaspoon freshly ground black pepper</li>
+              </ul>
+            </div>
+            <div>
+              <h3>For the Salad</h3>
+              <ul>
+                <li>6 cups baby arugula, washed and spun dry</li>
+                <li>
+                  1 1/8 pounds seedless watermelon, rind removed and cut into
+                  1‑inch cubes
+                </li>
+                <li>10 ounces good feta cheese, 1/2‑inch diced or crumbled</li>
+                <li>1 cup (4 ounces) whole fresh mint leaves, julienned</li>
+              </ul>
+            </div>
+          </div>
+
+          <h3>Directions</h3>
+          <ol>
+            <li>
+              <strong>Make the vinaigrette:</strong>
+              In a small bowl, whisk together the orange juice, lemon juice,
+              shallots, honey, salt, and pepper. Slowly whisk in the olive oil
+              until combined, or shake together in a jar.
+            </li>
+            <li>
+              <strong>Assemble the salad:</strong>
+              In a large bowl, place the arugula, watermelon, feta, and mint.
+              Drizzle with enough vinaigrette to coat lightly and toss gently.
+            </li>
+          </ol>
+          <p>
+            <strong>Serving tip:</strong>
+            Serve immediately. The vinaigrette can also be used as a marinade if
+            you have leftovers.
+          </p>
+        </article>
+
+        <p class="page-number" aria-hidden="true">Page 3</p>
+      </section>
+
+      <!-- Risk Resource - Page 4 -->
+      <section
+        class="newsletter-section"
+        aria-labelledby="risk-resource-heading"
+      >
+        <p class="section-label">Risk Resource</p>
+        <h2 id="risk-resource-heading">
+          Practice Self‑Care by Taking Time to Stretch
+        </h2>
+
+        <article aria-labelledby="stretch-intro-heading">
+          <h3 id="stretch-intro-heading">Why Stretching Matters at Work</h3>
+          <p>
+            Spring is a time of renewal, and it can also be a good time to build
+            new workplace habits. One of the healthiest things you can do
+            throughout your workday is set a reminder to stand up and stretch
+            regularly, ideally every 30 minutes.
+          </p>
+          <p>
+            Stretching helps reduce fatigue, improve posture, support better
+            balance, and promote circulation. It may also relieve muscle tension
+            and contribute to overall well‑being.
+          </p>
+          <p class="small-text">
+            Before starting a stretching routine, check with your physician or
+            healthcare provider, especially if you have past or current injuries
+            or pain.
+          </p>
+        </article>
+
+        <div class="two-column" aria-label="Examples of workplace stretches">
+          <article aria-labelledby="hamstring-heading">
+            <h3 id="hamstring-heading">Hamstring Stretch</h3>
+            <p class="subheading">Movement</p>
+            <p>
+              Place the straight leg in front of you and bend at the waist,
+              keeping your back straight. Do not round the back.
+            </p>
+            <p class="subheading">Tip</p>
+            <p>
+              Point your toes toward the ceiling or sky and feel the stretch
+              along the back of the straight leg.
+            </p>
+          </article>
+
+          <article aria-labelledby="hip-flexor-heading">
+            <h3 id="hip-flexor-heading">Hip Flexor Stretch</h3>
+            <p class="subheading">Movement</p>
+            <p>
+              Step forward with the leg and bend the front knee, keeping the
+              opposite leg straight behind you.
+            </p>
+            <p class="subheading">Tip</p>
+            <p>
+              Bend the front knee until you feel a stretch in the front of the
+              hip on the back leg. You may need to slightly arch your lower
+              back.
+            </p>
+          </article>
+        </div>
+
+        <div
+          class="two-column"
+          aria-label="Additional stretches and safety notes"
+        >
+          <article aria-labelledby="chin-tuck-heading">
+            <h3 id="chin-tuck-heading">Chin Tucks</h3>
+            <p class="subheading">Movement</p>
+            <p>
+              Gently draw your head straight backward, as if making a double
+              chin, while keeping your eyes focused on something in front of
+              you.
+            </p>
+            <p class="subheading">Tip</p>
+            <p>
+              Do not look down as you do this exercise, and avoid bending your
+              neck forward.
+            </p>
+
+            <h3>Chest / Pec Stretch</h3>
+            <p class="subheading">Movement</p>
+            <p>
+              Open your arms wide away from the body to feel a stretch across
+              the chest.
+            </p>
+            <p class="subheading">Tip</p>
+            <p>Keep your palms open and bend your elbows slightly.</p>
+          </article>
+
+          <article aria-labelledby="trainings-heading">
+            <h3 id="trainings-heading">Training Opportunities</h3>
+            <p>
+              A full list of available trainings is offered through
+              NMPSIA&rsquo;s risk management partners. Topics may include:
+            </p>
+            <ul>
+              <li>Diversity, Equity, and Inclusion Practices</li>
+              <li>Confidentiality of Student Records (FERPA)</li>
+              <li>Hazing Prevention in K‑12 Environments</li>
+              <li>Playground Maintenance and Inspection</li>
+              <li>Sexual Harassment Prevention</li>
+              <li>Bloodborne Pathogen Exposure Prevention</li>
+              <li>Cybersecurity Awareness</li>
+              <li>And more workplace safety and inclusion topics</li>
+            </ul>
+            <p class="small-text">
+              Contact your district or NMPSIA risk representative for a complete
+              list of trainings and scheduling information.
+            </p>
+          </article>
+        </div>
+
+        <p class="page-number" aria-hidden="true">Page 4</p>
+      </section>
+    </main>
+  </body>
+</html>
