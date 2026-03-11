@@ -14,8 +14,8 @@
 - /PDFs/HB0129.pdf
 - /PDFs/NMPSIA_CVS_Health_Formulary_Updates_Effective_January_2024/01_2024_Advanced_Control_Specialty_Formulary.pdf
 - /PDFs/The_Risks_of_Oral_Piercings_DDNM.pdf
-- /PDFs/enrollmentTraining/Employer_NEW_HIRE_BASIC_LIFE_(single)_FINAL.pdf
-- /PDFs/enrollmentTraining/Employer_NEW_HIRE_Basic_Life_Only_(batch)_FINAL.pdf
+- /PDFs/enrollmentTraining/Employer*NEW_HIRE_BASIC_LIFE*(single)\_FINAL.pdf
+- /PDFs/enrollmentTraining/Employer*NEW_HIRE_Basic_Life_Only*(batch)\_FINAL.pdf
 - /PDFs/wellness/virtual/presbyterian/How_to_Schedule_Virtual_Primary_Care_Final.pdf
 - /PDFs/wellness/virtual/presbyterian/How_to_Schedule_Virtual_Urgent_Care_ENG_PQ_020224.pdf
 - /PDFs/wellness/virtual/presbyterian/PMG_VPC_Gen_Flyer_2023_011224_WEB_FINAL.pdf
@@ -89,7 +89,7 @@
 - /pdfs/Advanced_Control_Specialty_Formulary_October_2023.pdf
 - /pdfs/Aetna_Network_Flyer.pdf
 - /pdfs/Any_salary_previously_employee_plus_one_coverage_20_80_Effective_October_1_2022.pdf
-- /pdfs/ApproveMinutes_-_October_2020.pdf
+- /pdfs/ApproveMinutes\_-_October_2020.pdf
 - /pdfs/Approved_February_2022_NMPSIA_Board_Minutes.pdf
 - /pdfs/Approved_June_2022_Board_Minutes_v2.pdf
 - /pdfs/Approved_March_3_2022_NMPSIA_Board_Minutes.pdf
@@ -106,8 +106,8 @@
 - /pdfs/April_4_2024_Minutes.pdf
 - /pdfs/August162022_Board_Meeting_Minutes_with_signature.pdf
 - /pdfs/August42022_Special_Board_Meeting_Minutes_with_signature.pdf
-- /pdfs/August_19,_2021_Board_Minutes_-_Final.pdf
-- /pdfs/August_6,_2020_Approved_Board_Minutes.pdf
+- /pdfs/August*19,\_2021_Board_Minutes*-\_Final.pdf
+- /pdfs/August_6,\_2020_Approved_Board_Minutes.pdf
 - /pdfs/BCBSNM_San_Juan_IPA_Contracting_Update.pdf
 - /pdfs/BCBS_Flu_Season_2024.pdf
 - /pdfs/BCBS_Health_Assesment_2024.pdf
@@ -157,9 +157,9 @@
 - /pdfs/Davis_Vision_2023-24/Davis_Vision_Hobbs-Enhanced_Benefits_10.2.2023.pdf
 - /pdfs/Davis_Vision_2023-24/NM Vision Providers 10.2023.pdf
 - /pdfs/December,2019_Approved_Board_Minutes.pdf
-- /pdfs/December_2,_2021_Board_Minutes_Final.pdf
+- /pdfs/December_2,\_2021_Board_Minutes_Final.pdf
 - /pdfs/December_2020_Approved_Virtual_Board_Minutes.pdf
-- /pdfs/December_7,_2021_Virtual_Board_Minutes_Final.pdf
+- /pdfs/December_7,\_2021_Virtual_Board_Minutes_Final.pdf
 - /pdfs/Defensible_Space_Fire_Zones.pdf
 - /pdfs/Delta_Dental_Info_2024_2025/DDNM EBD WITH PCS Flyer 2024-004-DDNM-MKT.pdf
 - /pdfs/Delta_Dental_Info_2024_2025/DDNM Finding an In-Network Dentist ENGLISH 2024-122-DDNM-MKT.pdf
@@ -174,7 +174,7 @@
 - /pdfs/DocuSign_November_2021_Board_Minutes.pdf
 - /pdfs/Domestic_Partner_Petition_Template_2024.pdf
 - /pdfs/EOI_and_Life_Claims-Presentation-edit.pdf
-- /pdfs/EXECUTED_2025_2026_MOC_P028_Property_Automobile_Physical_Damage_Crime_Cyber_Coverage_(wcag_checked_100825).pdf
+- /pdfs/EXECUTED*2025_2026_MOC_P028_Property_Automobile_Physical_Damage_Crime_Cyber_Coverage*(wcag_checked_100825).pdf
 - /pdfs/Embark_Driver_Services_Program_FAQ.pdf
 - /pdfs/Employers_Guide_Taxation_IncomeReplacementBenefits.pdf
 - /pdfs/End of Covid Cost Sharing.pdf
@@ -195,15 +195,15 @@
 - /pdfs/Healthy-Lunches-School-Fuel-for-Kids-Rack-Card_1.pdf
 - /pdfs/Healthy_Choices_Make_a_Big_Difference.pdf
 - /pdfs/Healthy_eating_infographic.pdf
-- /pdfs/Impaired_Dependent_Certification_(revised).pdf
+- /pdfs/Impaired*Dependent_Certification*(revised).pdf
 - /pdfs/International_Employee_Benefits_Enrollment.pdf
 - /pdfs/July_2024_CVS_Formulary/07_2024_Advanced_Control_Specialty_Formulary.pdf
 - /pdfs/July_2024_CVS_Formulary/07_2024_Performance_Drug_List_Standard_Control.pdf
 - /pdfs/July_2024_CVS_Formulary/Formulary_Changes_July_2024.pdf
-- /pdfs/July_29,_2021_Board_Minutes_-_Final.pdf
+- /pdfs/July*29,\_2021_Board_Minutes*-\_Final.pdf
 - /pdfs/June 6 2024 Minutes.pdf
 - /pdfs/June_25,2020_Approved_Board_Minutes_Signed.pdf
-- /pdfs/June_3,_2021_Virtual_Board_Minutes_Approved.pdf
+- /pdfs/June_3,\_2021_Virtual_Board_Minutes_Approved.pdf
 - /pdfs/June_4,2020_Approved_Board_Minutes_Signed.pdf
 - /pdfs/KC_Smoothies_and_Sweet_Endings.pdf
 - /pdfs/Keys to Mastering Your Mobility.pdf
@@ -231,10 +231,10 @@
 - /pdfs/NM Group Retail Social Media Overview Member Flier - English.pdf
 - /pdfs/NM-Group-QIP-Adult-Wellness-Member-Guidelines.pdf
 - /pdfs/NM-Group-QIP-Childrens-Wellness-Member-Guidelines.pdf
-- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20High%20Option.111025_JS%2011.14.2025.pdf
-- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20Low%20Option.111025_JS%2011.14.2025.pdf
-- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20PRES%20High%20Option.111025_JS%2011.14.2025.pdf
-- /pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20PRES%20Low%20Option.111025%20JS%2011.14.2025.pdf
+- /pdfs/NMPSIA*2026_SBCs/NMPSIA*%202026%20SBC%20for%20BCBS%20High%20Option.111025_JS%2011.14.2025.pdf
+- /pdfs/NMPSIA*2026_SBCs/NMPSIA*%202026%20SBC%20for%20BCBS%20Low%20Option.111025_JS%2011.14.2025.pdf
+- /pdfs/NMPSIA*2026_SBCs/NMPSIA*%202026%20SBC%20for%20PRES%20High%20Option.111025_JS%2011.14.2025.pdf
+- /pdfs/NMPSIA*2026_SBCs/NMPSIA*%202026%20SBC%20for%20PRES%20Low%20Option.111025%20JS%2011.14.2025.pdf
 - /pdfs/NMPSIA_Board_Minutes_11.7.19.pdf
 - /pdfs/NMPSIA_Board_Minutes_5.2.19.pdf
 - /pdfs/NMPSIA_Board_Minutes_6.27.19.pdf
@@ -277,7 +277,7 @@
 - /pdfs/Notice_of_Accident_Form.pdf
 - /pdfs/Nov 2025 Board Minutes Final.pdf
 - /pdfs/November_2025_Board_meeting_packet.pdf
-- /pdfs/November_5,_2020_Virtual_Board_Minutes-Approved.pdf
+- /pdfs/November_5,\_2020_Virtual_Board_Minutes-Approved.pdf
 - /pdfs/Nutrition_Program_Selection_NoomGMHC.pdf
 - /pdfs/OTC_COVID-19_No_Cost_Home_Test_Kits_Letter_to_Members_1-31-2022-2.pdf
 - /pdfs/OTC_COVID-19_No_Cost_Home_Test_Kits_Memo_to_Members-4.pdf
@@ -303,7 +303,7 @@
 - /pdfs/Poms-Summer-2023-Newsletter.pdf
 - /pdfs/Poms_Ergonomics_Program_Sheet.pdf
 - /pdfs/Poms_NMPSIA_Newsletter_Summer2022_r3a.pdf
-- /pdfs/Practicing_Social_Distancing_and_Following_all_Personal_Protective_Equipment_(PPE)_Directives.pdf
+- /pdfs/Practicing*Social_Distancing_and_Following_all_Personal_Protective_Equipment*(PPE)\_Directives.pdf
 - /pdfs/Pregnancy_Benefits_High_Option_Rev_2019.pdf
 - /pdfs/Premium_Billing_Bill_Reconciliation_Presentation_2024_READER.pdf
 - /pdfs/Presbyterian_Flu_Prevention_2024.pdf
@@ -342,7 +342,7 @@
 - /pdfs/Virtual_Ergonomics.pdf
 - /pdfs/WC-Report-of-Injury-2023.pdf
 - /pdfs/WC_News_Feb2025.pdf
-- /pdfs/WINTER_2025_NEWSLETTER.pdf
+- /pdfs/Spring_2026_Newsletter_reduced.pdf
 - /pdfs/Ways_to_Love_Your_Heart_Flier.pdf
 - /pdfs/annual_notifications/COMPLY_04581_NMPSIA_Important_Compliance_Notices_and_Information_for_Enrollment_2024.pdf
 - /pdfs/bcbs_galileo_flyer_2025.pdf
@@ -431,7 +431,7 @@
 - PDFs/Flooding_Emergency_Order_Chavez_County_Letter_to_Members_11_2024.pdf
 - PDFs/enrollmentTraining/Employer_Send_Feedback_FINAL.pdf
 - PDFs/wildfire-relief/Affect_of_Wildfire_Executive_Order_6172025.pdf
-- PDFs/wildfire-relief/Extension_ Salt_and_South_Fork_EO_Letter_to_Members_111524.pdf
+- PDFs/wildfire-relief/Extension\_ Salt_and_South_Fork_EO_Letter_to_Members_111524.pdf
 - PDFs/wildfire-relief/Wildfire_Emergency_Order_Letter_to_Members_06172025.pdf
 - PDFs/wildfire-relief/Wildfire_Emergency_Order_Letter_to_Members_062824.pdf
 - https://nmpsia.com/PDFs/HB533%20Employer%20Contributions%20Effective%207-1-2023.pdf

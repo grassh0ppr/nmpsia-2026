@@ -1,9 +1,10 @@
 # PDF Links (excluding download center and board meeting materials)
 
 ## Carrier PDFs
-/pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20PRES%20High%20Option.111025_JS%2011.14.2025.pdf
-/pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20PRES%20Low%20Option.111025%20JS%2011.14.2025.pdf
-/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_PRES_High_Option_final.pdf
+
+/pdfs/NMPSIA*2026_SBCs/NMPSIA*%202026%20SBC%20for%20PRES%20High%20Option.111025*JS%2011.14.2025.pdf
+/pdfs/NMPSIA_2026_SBCs/NMPSIA*%202026%20SBC%20for%20PRES%20Low%20Option.111025%20JS%2011.14.2025.pdf
+/pdfs/2025*SBCs/NMPSIA_2025_SBC_for_PRES_High_Option_final.pdf
 /pdfs/2024_SBCs/NMPSIA_2024_SBC_for_PRES_High_Option_Final_TH_Update_062124.pdf
 /pdfs/PHP-Cost_Estimator_12-2021.pdf
 /pdfs/Video_Visit_Member_Flyer_2016-06-30.pdf
@@ -17,8 +18,8 @@
 /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_PPO_Member_Flier.pdf
 /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_Teledentistry_Member_Flier.pdf
 /pdfs/carriers/blueCare_dental/Enhanced_benefit_BlueCare.pdf
-/pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20High%20Option.111025_JS%2011.14.2025.pdf
-/pdfs/NMPSIA_2026_SBCs/NMPSIA_%202026%20SBC%20for%20BCBS%20Low%20Option.111025_JS%2011.14.2025.pdf
+/pdfs/NMPSIA_2026_SBCs/NMPSIA*%202026%20SBC%20for%20BCBS%20High%20Option.111025*JS%2011.14.2025.pdf
+/pdfs/NMPSIA_2026_SBCs/NMPSIA*%202026%20SBC%20for%20BCBS%20Low%20Option.111025*JS%2011.14.2025.pdf
 /pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_High_Option_final.pdf
 /pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_Low_Option_final.pdf
 /pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BluePreferred_EPO_Plan_final.pdf
@@ -30,7 +31,7 @@
 /pdfs/Pregnancy_Benefits_High_Option_Rev_2019.pdf
 /pdfs/medical_claim_nm_bcbsmed.pdf
 /pdfs/medical_claim_nm_spanish_bcbsmed.pdf
-/pdfs/Impaired_Dependent_Certification_(revised).pdf
+/pdfs/Impaired_Dependent_Certification*(revised).pdf
 /pdfs/VirtualCheckup_Launch-Flyer_9.28.pdf
 /pdfs/Blue_Cross_and_Blue_Shield_of_New_Mexico_Health_Advocacy_Solutions_Take_the_Call_Member_Flier.pdf
 /pdfs/Carriers_Important_Benefit_Info/College_Tuition_Benefit_Member_Flyer.pdf
@@ -76,6 +77,7 @@
 /pdfs/DDNM_2024_Teledentistry_Flyer_FINAL.pdf
 
 ## Wellness PDFs
+
 /pdfs/davis_vision_nmpsia_summary_of_plan_description.pdf
 /pdfs/Healthy_eating_infographic.pdf
 /pdfs/NMPSIA_Mental_Well-Being_Skill_Builder.pdf
@@ -133,6 +135,7 @@
 /pdfs/UCDental_Value_of_Going_infographic-2022.pdf
 
 ## Risk PDFs
+
 /pdfs/NMPSIA_School_Safety_Partnership_Program.pdf
 /pdfs/poms-risk-docs/Poms_Child-Abuse-Prevention-Flier-NMPSIA-combined.pdf
 /pdfs/CCMSI_Workbook_for_NMPSIA_Member_20180823_2.pdf
@@ -154,6 +157,7 @@
 /pdfs/poms-risk-docs/NMPSIA-Website-Contact-List-New-8-23-23.pdf
 
 ## Life/LTD PDFs
+
 /pdfs/NMPSIA_Filing_a_Life_Claim.pdf
 /pdfs/BeneficiaryDesignationQuestion.pdf
 /pdfs/Options_for_Continuing_Life_Insurance_8.2020-1.pdf
@@ -162,6 +166,7 @@
 /pdfs/Employers_Guide_Taxation_IncomeReplacementBenefits.pdf
 
 ## Forms/Enrollment PDFs
+
 /pdfs/Enrollment_Change_Form_01012026.pdf
 /pdfs/sample-part-time-resolution-form.pdf
 /pdfs/Sample_Loss_of_Coverage_Notice_Form.pdf
@@ -170,6 +175,7 @@
 /pdfs/Retiree_Application_2024_01.pdf
 
 ## Domestic Partner Imputed Income PDFs
+
 /pdfs/domestic_partner_imputed_income_2024/NMPSIA_2024_2025_Imputed_Income_Two_Party_and_DPs_Effective_October1_2024.pdf
 /pdfs/domestic_partner_imputed_income_2024/NMPSIA_2024_2025_Imputed_Income_Family_and_DPs_Effective_October1_2024.pdf
 /pdfs/imputed_incomes_2023/c_NMPSIA_2023_2024_Imputed_Income_Family_DPs_Effective_October_1_2023.pdf
@@ -178,6 +184,7 @@
 /pdfs/Any_salary_previously_employee_plus_one_coverage_20_80_Effective_October_1_2022.pdf
 
 ## Rules/Transmittal PDFs
+
 /pdfs/06_050_combo_rules_regulations_nmpsia_2025.pdf
 /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.1.pdf
 /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.2.pdf
@@ -201,14 +208,16 @@
 ## HTML Page PDFs (from static HTML files)
 
 ### index.html
+
 /pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf
 /pdfs/2025_Program_Guide_wcag_remed.pdf
 /pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf
-/pdfs/WINTER_2025_NEWSLETTER.pdf
+/pdfs/Spring_2026_Newsletter_reduced.pdf
 /pdfs/poms-risk-docs/HB_128_2021.pdf
 /pdfs/annual_notifications/COMPLY_04581_NMPSIA_Important_Compliance_Notices_and_Information_for_Enrollment_2024.pdf
 
 ### employer-enrollment.html
+
 /pdfs/NMPSIA_Enabling_Statute_2017-05.pdf
 /pdfs/Domestic_Partner_Petition_Template_2024.pdf
 /pdfs/LTD-Claim-Packet-2023.pdf
@@ -216,15 +225,18 @@
 /pdfs/WC-Report-of-Injury-2023.pdf
 
 ### employee-enrollment.html
+
 /pdfs/LTD-Claim-Packet-2023.pdf
 /pdfs/LIFE-CLAIM-PACKET-2023.pdf
 
 ### district-contacts.html
+
 https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.pdf
 
 ### covid-19.html
+
 /pdfs/UPDATE-End-of-Covid-Cost-Sharing-62023.pdf
-/pdfs/Express_Scripts_Member_COVID-19_OTC_Test_Information.pdf
+/pdfs/Express*Scripts_Member_COVID-19_OTC_Test_Information.pdf
 /pdfs/Sample_Highlighted_ESI_Covid-19_OTC_Test_Reimbursement_Claim_Form.pdf
 /pdfs/2022-ESI_Covid-19_OTC_Test_Reimbursement_Claim_Form.pdf
 /pdfs/OTC_COVID-19_No_Cost_Home_Test_Kits_Memo_to_Members-4.pdf
@@ -235,7 +247,7 @@ https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.
 /pdfs/Covid_19_Member_Resource_Guide_ASO_proof_1.pdf
 /pdfs/Toothbrush_flyer_Mar24.pdf
 /pdfs/Best_Practices_Cleaning_and_Disinfecting_for_Bus_Personnel_Contractors_NMPSIA.pdf
-/pdfs/Practicing_Social_Distancing_and_Following_all_Personal_Protective_Equipment_(PPE)_Directives.pdf
+/pdfs/Practicing_Social_Distancing_and_Following_all_Personal_Protective_Equipment*(PPE)\_Directives.pdf
 /pdfs/Guidelines_for_technology_and_social_media_use_REVISED3.pdf
 /pdfs/3.2020_Voluntary_Extension_Ending_Notice(ER).pdf
 /pdfs/3.2020_Voluntary_Extension_Ending_Notice(COBRA).pdf
@@ -243,6 +255,7 @@ https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.
 /pdfs/3.13.2020_NMPSIA_Announces_No-Cost_Sharing_for_COVID-19_Testing.pdf
 
 ### enrollment-tutorials.html
+
 /pdfs/2024_New_Hire_Deck_General_Presentation.pdf
 /pdfs/NMPSIA_py2025_OpenSwitch_Presentation.pdf
 /pdfs/enrollmentTraining/Employee_NEW_HIRE_ADD_COVERAGE_ADD_DEPENDENT_FINAL_091324.pdf
@@ -252,13 +265,15 @@ https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.
 /pdfs/enrollmentTraining/2024_Switch_Enrollment_Tutorial_FINAL_91324.pdf
 
 ### benefits.html
+
 /pdfs/Important-Employee-Benefit-Program-Notices-2023.pdf
 /pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2021_Audit_FINAL.pdf
 /pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2020_Audit_Final.pdf
 /pdfs/342_New_Mexico_Public_Schools_Insurance_Authority_FY2019_Final.pdf
 
 ### employer-trainings.html
-/pdfs/Accurate_and_Timely_Reporting_Presentation_2024_READER.pdf
+
+/pdfs/Accurate*and_Timely_Reporting_Presentation_2024_READER.pdf
 /pdfs/Back_to_Basics_Training_Presentation_2024_READER.pdf
 /pdfs/Qualifying_Events_Presentation_Deck_2024_READER.pdf
 /pdfs/EOI_and_Life_Claims-Presentation-edit.pdf
@@ -266,10 +281,11 @@ https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.
 /pdfs/International_Employee_Benefits_Enrollment.pdf
 /pdfs/Leave_Of_Absence_Presentation_2024_READER.pdf
 /pdfs/Premium_Billing_Bill_Reconciliation_Presentation_2024_READER.pdf
-/PDFs/enrollmentTraining/Employer_NEW_HIRE_BASIC_LIFE_(single)_FINAL.pdf
-/PDFs/enrollmentTraining/Employer_NEW_HIRE_Basic_Life_Only_(batch)_FINAL.pdf
+/PDFs/enrollmentTraining/Employer_NEW_HIRE_BASIC_LIFE*(single)_FINAL.pdf
+/PDFs/enrollmentTraining/Employer_NEW_HIRE_Basic_Life_Only_(batch)\_FINAL.pdf
 
 ### behavioral-health.html
+
 /pdfs/SB317_Behavioral_Health_Letter_to_NMPSIA_Members.pdf
 /pdfs/Behavioral_Health_Services_Option_Final_2022.pdf
 /pdfs/Strong_Habits_Strong_Brains_all_agencies.pdf
@@ -278,18 +294,21 @@ https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.
 /pdfs/Magellan_On_to_Better_Health-Virtual_Care_Solutions_Flyer_FINAL.pdf
 
 ### support.html
+
 /pdfs/Promotional-Flyer-Support.pdf
 
 ### plan.html
+
 /pdfs/SAMPLE_Employer_ACA_Notice_Cover_Letter_2026.pdf
 /pdfs/2026_Employer_Health_Insurance_Marketplace_Coverage_Options_Notice.pdf
 
 ### risk.html
-/pdfs/Embark_Driver_Services_Program_FAQ.pdf
+
+/pdfs/Embark*Driver_Services_Program_FAQ.pdf
 /pdfs/Claim_Investigaion_Overview.pdf
 /pdfs/2014_Incident_Procedure_Recommendations.pdf
 /pdfs/2025_2026_MOC_L028_General_and_Automobile_Liability_corrected_footer_102425.pdf
-/pdfs/EXECUTED_2025_2026_MOC_P028_Property_Automobile_Physical_Damage_Crime_Cyber_Coverage_(wcag_checked_100825).pdf
+/pdfs/EXECUTED_2025_2026_MOC_P028_Property_Automobile_Physical_Damage_Crime_Cyber_Coverage*(wcag_checked_100825).pdf
 /pdfs/Defensible_Space_Fire_Zones.pdf
 /pdfs/Kitchen_Safety_Checklist_2023.pdf
 /pdfs/poms-risk-docs/Winter-Weather-Checklist-New.pdf
@@ -307,6 +326,7 @@ https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.
 /pdfs/NMSBA_Boundaries_Policy_July_2018.pdf
 
 ### premiums.html
+
 /pdfs/premium-rates-2025/10_1_2025_Premium_Rates_24_Payroll_Deductions_CORRECTION.pdf
 /pdfs/premium-rates-2024/10012024_Premium_Rates_24_Payroll_Deductions_2.pdf
 /pdfs/premium-rates-2024/10012024_COBRA_Premium_Rates.pdf
@@ -314,6 +334,7 @@ https://nmpsia.com/pdfs/forms/Fillable_Contact_Form_updated_with_signature_line.
 https://nmpsia.com/PDFs/HB533%20Employer%20Contributions%20Effective%207-1-2023.pdf
 
 ### archived-premiums.html
+
 /pdfs/premium-rates-2023/COBRA-102-rates.pdf
 /pdfs/premium-rates-2023/COBRA-150-rates.pdf
 /pdfs/10_1_2022_Premium_Rates_24.pdf
@@ -342,4 +363,5 @@ https://nmpsia.com/PDFs/HB533%20Employer%20Contributions%20Effective%207-1-2023.
 /pdfs/2019-10_COBRA_Disability_Monthly_Premium_Rates_2.12.19.pdf
 
 ### mobile-app.html
+
 /pdfs/NMPSIA_Mobile_app_condensed_presentation_pdf.pdf
