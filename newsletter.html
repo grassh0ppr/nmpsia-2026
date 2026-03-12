@@ -11,6 +11,11 @@
 
     <!-- Same hero background as rest of site (image + gradient) -->
     <link rel="stylesheet" href="css/main.css" />
+    <!-- Boxicons icon font (used for inline icons in this newsletter) -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="preload"
       as="image"
@@ -110,6 +115,23 @@
         margin: 0.5rem 0 1rem;
       }
 
+      .heading-with-icon {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+      }
+
+      .heading-with-icon i {
+        font-size: 2rem;
+        color: #6dbf57;
+      }
+
+      .heading-with-icon h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #222f39;
+      }
+
       .download-link {
         display: inline-block;
         padding: 0.6rem 1rem;
@@ -125,6 +147,24 @@
       .download-link:hover,
       .download-link:focus-visible {
         background-color: #5aa347;
+        text-decoration: none;
+      }
+
+      .external-promo-link {
+        display: inline-block;
+        padding: 0.6rem 1rem;
+        background-color: #006a9c;
+        color: #fff;
+        border-radius: 999px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 0.95rem;
+        margin-top: 0.75rem;
+      }
+
+      .external-promo-link:hover,
+      .external-promo-link:focus-visible {
+        background-color: #005a8c;
         text-decoration: none;
       }
 
@@ -166,6 +206,30 @@
       .highlight-box {
         background-color: #f4fbf0;
         border-left: 4px solid #6dbf57;
+      }
+
+      .grass-green-text {
+        color: #549243;
+      }
+
+      #debunk-heading {
+        margin-top: 0.5rem;
+      }
+
+      /* Spring green gradient accent panels used throughout newsletter */
+      .spring-green-panel {
+        background: linear-gradient(135deg, #cdeeb6 0%, #e6f2bc 100%);
+        border-radius: 0.75rem;
+        padding: 1.25rem 1.5rem;
+        margin-top: 1.25rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+      .spring-green-panel h2,
+      .spring-green-panel h3,
+      .spring-green-panel p,
+      .spring-green-panel li,
+      .spring-green-panel .small-text {
+        color: #1a1a1a;
       }
 
       /* Table contrast: dark text on light backgrounds for WCAG AA */
@@ -243,6 +307,9 @@
       .subheading {
         font-weight: 700;
         margin-top: 0.6rem;
+        color: #222f39;
+        font-size: 1.05rem;
+        font-style: italic;
       }
 
       .small-text {
@@ -263,6 +330,16 @@
         border-collapse: collapse;
         font-size: 0.9rem;
         margin: 0.75rem 0 0.5rem;
+      }
+
+      /* Horizontal scroll helper for wide tables on small screens */
+      .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .table-scroll table {
+        min-width: 480px;
       }
 
       th,
@@ -290,6 +367,36 @@
         font-size: 0.8rem;
         color: #7b8790;
         margin-bottom: 0.25rem;
+      }
+
+      .recipe-image {
+        margin-top: 1rem;
+        border-radius: 0.75rem;
+        overflow: hidden;
+      }
+
+      .recipe-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: inherit;
+      }
+
+      @media (min-width: 900px) {
+        .recipe-layout {
+          display: flex;
+          flex-wrap: nowrap;
+          gap: 1.25rem;
+        }
+
+        .recipe-layout > * {
+          flex: 1 1 0;
+          min-width: 0;
+        }
+
+        .recipe-layout .recipe-image {
+          margin-top: 0;
+        }
       }
     </style>
   </head>
@@ -395,6 +502,13 @@
             to boost your motivation, enjoy the fresh spring vibes, and maybe
             even win some awesome prizes.
           </p>
+          <!-- link here -->
+          <a
+            href="https://nmpsia.springintomotiontoday.com/#/welcome"
+            target="_blank"
+            class="external-promo-link"
+            >Register for Spring into Motion &rarr;</a
+          >
         </aside>
 
         <section
@@ -407,7 +521,7 @@
             within enrollment deadlines. Meeting these deadlines can be the
             difference between coverage and no coverage for yourself and your
             dependents. Take some time to read the
-            <a href="/pdfs/PROGRAM_GUIDE_PLACEHOLDER.pdf">program guide</a>
+            <a href="./pdfs/2025_Program_Guide_wcag_remed.pdf">program guide</a>
             and save it or bookmark the web page.
           </p>
         </section>
@@ -439,10 +553,10 @@
             Benefits 101: Preventive Care &mdash; Be in the Know
           </h3>
           <p>
-            Preventive care is covered at 100% when you use an in‑network
+            Preventive care is covered at 100% when you use an in-network
             provider and receive services billed as preventive. Whether you are
             on the High Option or Low Option medical plan, preventive care is
-            covered when you follow the rules for in‑network preventive visits.
+            covered when you follow the rules for in-network preventive visits.
           </p>
 
           <div class="two-column">
@@ -450,16 +564,17 @@
               <p class="subheading">To do this week</p>
               <ul>
                 <li>
-                  Check the calendar. If it&rsquo;s been more than a year since
-                  your last physical, it might be time to schedule.
+                  <b class="grass-green-text">Check the calendar</b>. If it's
+                  been more than a year since your last physical, it might be
+                  time to schedule.
                 </li>
                 <li>
-                  Find a provider. Stay in‑network so your preventive care is
-                  covered under the plan.
+                  <b class="grass-green-text">Find a provider</b>. Stay
+                  in-network so your preventive care is covered under the plan.
                 </li>
                 <li>
-                  Ask questions. Confirm which screenings are right for you
-                  based on age and health history.
+                  <b class="grass-green-text">Ask questions</b>. Confirm which
+                  screenings are right for you based on age and health history.
                 </li>
               </ul>
 
@@ -474,6 +589,12 @@
             </div>
 
             <div>
+              <div class="heading-with-icon">
+                <i class="bx bx-bulb"></i>
+                <h4>
+                  To keep your visit 100% covered, keep these tips in mind:
+                </h4>
+              </div>
               <p class="subheading">Be specific when scheduling</p>
               <p>
                 When calling, clearly state that you want to schedule a
@@ -498,35 +619,41 @@
               to your medical plan benefits.
             </p>
 
-            <table>
-              <caption>
-                Example cost sharing when a visit is not preventive
-              </caption>
-              <thead>
-                <tr>
-                  <th scope="col">Type of visit</th>
-                  <th scope="col">High Option plan</th>
-                  <th scope="col">Low Option plan</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Telehealth / virtual &mdash; non‑urgent</th>
-                  <td>Copay according to your plan</td>
-                  <td>Copay according to your plan</td>
-                </tr>
-                <tr>
-                  <th scope="row">Primary care</th>
-                  <td>Office visit copay</td>
-                  <td>Office visit copay or deductible/coinsurance</td>
-                </tr>
-                <tr>
-                  <th scope="row">Specialist / outpatient services</th>
-                  <td>Specialist copay / coinsurance</td>
-                  <td>Deductible and coinsurance may apply</td>
-                </tr>
-              </tbody>
-            </table>
+            <div
+              class="table-scroll"
+              role="region"
+              aria-label="Example cost sharing when a visit is not preventive"
+            >
+              <table>
+                <caption>
+                  Example cost sharing when a visit is not preventive
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Type of visit</th>
+                    <th scope="col">High Option plan</th>
+                    <th scope="col">Low Option plan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Telehealth / virtual &mdash; non‑urgent</th>
+                    <td>Copay according to your plan</td>
+                    <td>Copay according to your plan</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Primary care</th>
+                    <td>Office visit copay</td>
+                    <td>Office visit copay or deductible/coinsurance</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Specialist / outpatient services</th>
+                    <td>Specialist copay / coinsurance</td>
+                    <td>Deductible and coinsurance may apply</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
             <p class="small-text">
               For full details, refer to your plan documents or contact your
@@ -556,7 +683,7 @@
           </p>
         </article>
 
-        <article aria-labelledby="debunk-heading">
+        <article class="spring-green-panel" aria-labelledby="debunk-heading">
           <h3 id="debunk-heading">
             Debunk Preventive Screenings Misconceptions
           </h3>
@@ -729,12 +856,12 @@
           </p>
         </aside>
 
-        <article aria-labelledby="recipe-heading">
+        <article class="spring-green-panel" aria-labelledby="recipe-heading">
           <h2 id="recipe-heading">
             Recipe: Arugula, Watermelon and Feta Salad
           </h2>
 
-          <div class="two-column">
+          <div class="two-column recipe-layout">
             <div>
               <h3>For the Vinaigrette</h3>
               <ul>
@@ -759,6 +886,12 @@
                 <li>1 cup (4 ounces) whole fresh mint leaves, julienned</li>
               </ul>
             </div>
+            <figure class="recipe-image">
+              <img
+                src="https://images.unsplash.com/photo-1564348453772-9e0ff906ea52?q=80&amp;w=1985&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.1.0&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Fresh salad with watermelon, greens, and cheese in a bowl"
+              />
+            </figure>
           </div>
 
           <h3>Directions</h3>
@@ -795,7 +928,10 @@
           Practice Self‑Care by Taking Time to Stretch
         </h2>
 
-        <article aria-labelledby="stretch-intro-heading">
+        <article
+          class="spring-green-panel"
+          aria-labelledby="stretch-intro-heading"
+        >
           <h3 id="stretch-intro-heading">Why Stretching Matters at Work</h3>
           <p>
             Spring is a time of renewal, and it can also be a good time to build
@@ -874,7 +1010,10 @@
             <p>Keep your palms open and bend your elbows slightly.</p>
           </article>
 
-          <article aria-labelledby="trainings-heading">
+          <article
+            class="spring-green-panel"
+            aria-labelledby="trainings-heading"
+          >
             <h3 id="trainings-heading">Training Opportunities</h3>
             <p>
               A full list of available trainings is offered through
