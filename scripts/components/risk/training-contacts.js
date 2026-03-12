@@ -20,295 +20,243 @@ class TrainingContacts extends HTMLElement {
   </p>
 
   <!-- contacts with their headshots -->
-  <div id="lossPrevContacts" class="my-2">
+  <div id="lossPrevContacts" class="loss-prev-contact-cards my-2">
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/Julia_Garcia.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/Julia_Garcia.jpg');
+          background-image: url('images/poms-risk-contacts/Julia_Garcia.jpg');
         "
       ></div>
-      <span>Julie Garcia, Regional Director</span>
-      <span><a href="tel:15052496824">505-249-6824</a></span>
-      <span
-        ><a href="mailto:jgarcia@pomsassoc.com"
-          >jgarcia@pomsassoc.com</a
-        ></span
-      >
-      <span>HR/Civil Rights</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Julie Garcia, Regional Director</span>
+        <span class="contact-card-phone"><a href="tel:15052496824">505-249-6824</a></span>
+        <span class="contact-card-email"><a href="mailto:jgarcia@pomsassoc.com">jgarcia@pomsassoc.com</a></span>
+        <span class="contact-card-dept">HR/Civil Rights</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/TamiePargas.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/TamiePargas.jpg');
+          background-image: url('images/poms-risk-contacts/TamiePargas.jpg');
         "
       ></div>
-      <span>Tamie Pargas, Consultant</span>
-      <span><a href="tel:5052497973">505-249-7973</a></span>
-      <span
-        ><a href="mailto:tpargas@pomsassoc.com"
-          >tpargas@pomsassoc.com</a
-        ></span
-      >
-      <span>HR/Civil Rights</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Tamie Pargas, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:5052497973">505-249-7973</a></span>
+        <span class="contact-card-email"><a href="mailto:tpargas@pomsassoc.com">tpargas@pomsassoc.com</a></span>
+        <span class="contact-card-dept">HR/Civil Rights</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/Steve-Meilleur-REV.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/Steve-Meilleur-REV.jpg');
+          background-image: url('images/poms-risk-contacts/Steve-Meilleur-REV.jpg');
         "
       ></div>
-      <span>Steve Meilleur, Sr. VP</span>
-      <span><a href="tel:5054010942">505-401-0942</a></span>
-      <span
-        ><a href="mailto:smeilleur@pomsassoc.com"
-          >smeilleur@pomsassoc.com</a
-        ></span
-      >
-      <span>HR/Employment Practices</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Steve Meilleur, Sr. VP</span>
+        <span class="contact-card-phone"><a href="tel:5054010942">505-401-0942</a></span>
+        <span class="contact-card-email"><a href="mailto:smeilleur@pomsassoc.com">smeilleur@pomsassoc.com</a></span>
+        <span class="contact-card-dept">HR/Employment Practices</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="/images/poms-training-contacts/JamesVautier.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('/images/poms-training-contacts/JamesVautier.jpg');
+          background-image: url('images/poms-risk-contacts/JamesVautier.jpg');
         "
       ></div>
-      <span>James Vautier, Sr. Manager</span>
-      <span><a href="tel:5054801175">505-480-1175</a></span>
-      <span
-        ><a href="mailto:jvautier@pomsassoc.com"
-          >jvautier@pomsassoc.com</a
-        ></span
-      >
-      <span>Safety & Security</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">James Vautier, Sr. Manager</span>
+        <span class="contact-card-phone"><a href="tel:5054801175">505-480-1175</a></span>
+        <span class="contact-card-email"><a href="mailto:jvautier@pomsassoc.com">jvautier@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Safety & Security</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/DarronWalter.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/DarronWalter.jpg');
+          background-image: url('images/poms-risk-contacts/DarronWalter.jpg');
         "
       ></div>
-      <span>Darron Walter, Consultant</span>
-      <span
-        ><a href="mailto:dwalter@pomsassoc.com"
-          >dwalter@pomsassoc.com</a
-        ></span
-      >
-      <span><a href="tel:7207750031">720-775-0031</a></span>
-      <span>Safety & Security</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Darron Walter, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:7207750031">720-775-0031</a></span>
+        <span class="contact-card-email"><a href="mailto:dwalter@pomsassoc.com">dwalter@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Safety & Security</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/Grant-Banash-150x150.png" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/Grant-Banash-150x150.png');
+          background-image: url('images/poms-risk-contacts/Grant-Banash-150x150.png');
         "
       ></div>
-      <span>Grant Banash, Sr. Mgr.</span>
-      <span
-        ><a href="mailto:gbanash@pomsassoc.com"
-          >gbanash@pomsassoc.com</a
-        ></span
-      >
-      <span><a href="tel:5059336187">505-933-6187</a></span>
-      <span>Cybersecurity/Technology</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Grant Banash, Sr. Mgr.</span>
+        <span class="contact-card-phone"><a href="tel:5059336187">505-933-6187</a></span>
+        <span class="contact-card-email"><a href="mailto:gbanash@pomsassoc.com">gbanash@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Cybersecurity/Technology</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/Karen Mestas Harris.png" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/KarenMestasHarris.png');
+          background-image: url('images/poms-risk-contacts/KarenMestasHarris.png');
         "
       ></div>
-      <span>Karen Mestas-Harris, Sr. Mgr.</span>
-      <span
-        ><a href="mailto:kmestas@pomsassoc.com"
-          >kmestas@pomsassoc.com</a
-        ></span
-      >
-      <span><a href="tel:5756933655">575-693-3655</a></span>
-      <span>Ergonomics</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Karen Mestas-Harris, Sr. Mgr.</span>
+        <span class="contact-card-phone"><a href="tel:5756933655">575-693-3655</a></span>
+        <span class="contact-card-email"><a href="mailto:kmestas@pomsassoc.com">kmestas@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Ergonomics</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/Erin Brannan.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/ErinBrannan.jpg');
+          background-image: url('images/poms-risk-contacts/ErinBrannan.jpg');
         "
       ></div>
-      <span>Erin Brannan, Consultant</span>
-      <span
-        ><a href="mailto:abrannan@pomsassoc.com"
-          >abrannan@pomsassoc.com</a
-        ></span
-      >
-      <span><a href="tel:6122271898">612-227-1898</a></span>
-      <span>Ergonomics</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Erin Brannan, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:6122271898">612-227-1898</a></span>
+        <span class="contact-card-email"><a href="mailto:abrannan@pomsassoc.com">abrannan@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Ergonomics</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="images/poms-training-contacts/LarryVigil.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/LarryVigil.jpg');
+          background-image: url('images/poms-risk-contacts/LarryVigil.jpg');
         "
       ></div>
-      <span>Larry Vigil, Sr. Mgr.</span>
-      <span><a href="tel:5052055620">505-205-5620</a></span>
-      <span
-        ><a href="mailto:lvigil@pomsassoc.com"
-          >lvigil@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Larry Vigil, Sr. Mgr.</span>
+        <span class="contact-card-phone"><a href="tel:5052055620">505-205-5620</a></span>
+        <span class="contact-card-email"><a href="mailto:lvigil@pomsassoc.com">lvigil@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="https://images.hellomagazine.com/horizon/landscape/8ba659046a86-myspace-tom-now-t.jpg?tx=c_fill,w_1280" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('https://media1.popsugar-assets.com/files/thumbor/47QvOgrcJal4MD9a2xOWS-DdlNM/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/users/0/88/11_2007/72659691/i/Antonio-Banderas.jpg');
+          background-image: url('images/poms-risk-contacts/avatar-placeholder.svg');
         "
       ></div>
-      <span>Andrew Trujillo, Consultant</span>
-      <span><a href="tel:5053060981">505-306-0981</a></span>
-      <span
-        ><a href="mailto:atrujillo@pomsassoc.com"
-          >atrujillo@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Andrew Trujillo, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:5053060981">505-306-0981</a></span>
+        <span class="contact-card-email"><a href="mailto:atrujillo@pomsassoc.com">atrujillo@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="/images/poms-training-contacts/RafaelVelasquez.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/RafaelVelasquez.jpg');
+          background-image: url('images/poms-risk-contacts/RafaelVelasquez.jpg');
         "
       ></div>
-      <span>Rafael Velasquez, Consultant</span>
-      <span><a href="tel:5054018976">505-401-8976</a></span>
-      <span
-        ><a href="mailto:atrujillo@pomsassoc.com"
-          >atrujillo@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Rafael Velasquez, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:5054018976">505-401-8976</a></span>
+        <span class="contact-card-email"><a href="mailto:atrujillo@pomsassoc.com">atrujillo@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="/images/poms-training-contacts/BrendaBarela.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/BrendaBarela.jpg');
+          background-image: url('images/poms-risk-contacts/BrendaBarela.jpg');
         "
       ></div>
-      <span>Brenda Barela, Consultant</span>
-      <span><a href="tel:5052280533">505-228-0533</a></span>
-      <span
-        ><a href="mailto:bbarela@pomsassoc.com"
-          >bbarela@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Brenda Barela, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:5052280533">505-228-0533</a></span>
+        <span class="contact-card-email"><a href="mailto:bbarela@pomsassoc.com">bbarela@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="/images/poms-training-contacts/AlbertMuniz.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/AlbertMuniz.jpg');
+          background-image: url('images/poms-risk-contacts/AlbertMuniz.jpg');
         "
       ></div>
-      <span>Albert Muniz, Consultant</span>
-      <span><a href="tel:5053394248">505-339-4248</a></span>
-      <span
-        ><a href="mailto:amuniz@pomsassoc.com"
-          >amuniz@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Albert Muniz, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:5053394248">505-339-4248</a></span>
+        <span class="contact-card-email"><a href="mailto:amuniz@pomsassoc.com">amuniz@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="/images/poms-training-contacts/John Bauler.jpeg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/JohnBauler.jpeg');
+          background-image: url('images/poms-risk-contacts/JohnBauler.jpeg');
         "
       ></div>
-      <span>John Bauler, Consultant</span>
-      <span><a href="tel:5055042968">505-504-2968</a></span>
-      <span
-        ><a href="mailto:jbauler@pomsassoc.com"
-          >jbauler@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">John Bauler, Consultant</span>
+        <span class="contact-card-phone"><a href="tel:5055042968">505-504-2968</a></span>
+        <span class="contact-card-email"><a href="mailto:jbauler@pomsassoc.com">jbauler@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="https://images.hellomagazine.com/horizon/landscape/8ba659046a86-myspace-tom-now-t.jpg?tx=c_fill,w_1280" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTk3MjUxOTE4Njc2ODk0OTk3/ray-romano-somewhere-in-queens.jpg');
+          background-image: url('images/poms-risk-contacts/avatar-placeholder.svg');
         "
       ></div>
-      <span>Raymond Ross, Consultant</span>
-      <!-- <span><a href="tel:5055042968">505-504-2968</a></span> -->
-      <span
-        ><a href="mailto:rross@pomsassoc.com"
-          >rross@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Raymond Ross, Consultant</span>
+        <span class="contact-card-email"><a href="mailto:rross@pomsassoc.com">rross@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="https://m.media-amazon.com/images/M/MV5BMTY0OTY3ODA3OV5BMl5BanBnXkFtZTcwMzMyMzQ1NQ@@._V1_FMjpg_UX1000_.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/user-rectangle-solid-24.png');
+          background-image: url('images/poms-risk-contacts/avatar-placeholder.svg');
         "
       ></div>
-      <span>Susan Baca-Garcia, Office Mgr.</span>
-      <span><a href="tel:5055733950">505-573-3950</a></span>
-      <span
-        ><a href="mailto:sbaca-garcia@pomsassoc.com"
-          >sbaca-garcia@pomsassoc.com</a
-        ></span
-      >
-      <span>Loss Prevention Assistant</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Susan Baca-Garcia, Office Mgr.</span>
+        <span class="contact-card-phone"><a href="tel:5055733950">505-573-3950</a></span>
+        <span class="contact-card-email"><a href="mailto:sbaca-garcia@pomsassoc.com">sbaca-garcia@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Loss Prevention Assistant</span>
+      </div>
     </div>
     <div class="contact-card">
-      <!-- <img src="/images/poms-training-contacts/KevinMcDonald.jpg" alt="headshot" width="200px"> -->
       <div
         class="contact-image"
         style="
-          background-image: url('images/poms-training-contacts/KevinMcDonald.jpg');
+          background-image: url('images/poms-risk-contacts/KevinMcDonald.jpg');
         "
       ></div>
-      <span>Kevin McDonald</span>
-      <span><a href="tel:5056046153">505-604-6153</a></span>
-      <span
-        ><a href="mailto:kmcdonald@pomsassoc.com"
-          >kmcdonald@pomsassoc.com</a
-        ></span
-      >
-      <span>Media Manager</span>
+      <div class="contact-card-body">
+        <span class="contact-card-name">Kevin McDonald</span>
+        <span class="contact-card-phone"><a href="tel:5056046153">505-604-6153</a></span>
+        <span class="contact-card-email"><a href="mailto:kmcdonald@pomsassoc.com">kmcdonald@pomsassoc.com</a></span>
+        <span class="contact-card-dept">Media Manager</span>
+      </div>
     </div>
   </div>
 

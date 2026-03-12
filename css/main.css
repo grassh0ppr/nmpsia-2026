@@ -4349,3 +4349,82 @@ body.modern-body::after {
     gap: 0.5rem;
   }
 }
+
+/* ===== LOSS PREVENTION CONTACT CARDS (risk.html Training Contact List) ===== */
+.loss-prev-contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.loss-prev-contact-cards .contact-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(12, 59, 105, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.loss-prev-contact-cards .contact-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.loss-prev-contact-cards .contact-card .contact-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-color: #e8eef4;
+  flex-shrink: 0;
+  margin-top: 1.25rem;
+}
+
+.loss-prev-contact-cards .contact-card .contact-card-body {
+  padding: 1rem 1.25rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  text-align: center;
+}
+
+.loss-prev-contact-cards .contact-card .contact-card-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #0c3b69;
+  line-height: 1.3;
+  margin-bottom: 0.15rem;
+}
+
+.loss-prev-contact-cards .contact-card .contact-card-phone,
+.loss-prev-contact-cards .contact-card .contact-card-email {
+  font-size: 0.9rem;
+}
+
+.loss-prev-contact-cards .contact-card .contact-card-phone a,
+.loss-prev-contact-cards .contact-card .contact-card-email a {
+  color: #0c3b69;
+  text-decoration: none;
+}
+
+.loss-prev-contact-cards .contact-card .contact-card-phone a:hover,
+.loss-prev-contact-cards .contact-card .contact-card-email a:hover {
+  text-decoration: underline;
+}
+
+.loss-prev-contact-cards .contact-card .contact-card-dept {
+  font-size: 0.85rem;
+  color: #5a6c7d;
+  margin-top: 0.25rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(12, 59, 105, 0.08);
+}
