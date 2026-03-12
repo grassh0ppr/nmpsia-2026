@@ -1,5 +1,71 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "March 2026": [
+    {
+      name: "Wellness Communication - March 2026",
+      url: "/wellness/march_2026/Wellness Communication March 2026.pdf",
+    },
+    {
+      name: "March 2026 Observance - The Inflammation Situation",
+      url: "/wellness/march_2026/03_March Observance_2026 - The Inflammation Situation.pdf",
+    },
+    {
+      name: "March 2026 Observance (Spanish)",
+      url: "/wellness/march_2026/03_March Observance_2026 SP.pdf",
+    },
+    {
+      name: "March 17, 2026 Webinar - Trending in Nutrition",
+      url: "/wellness/march_2026/3-17-2026 Webinar Trending in Nutrition.pdf",
+    },
+    {
+      name: "March 18, 2026 Webinar - TheSolutionsGroup Well-Being 2026",
+      url: "/wellness/march_2026/3-18-2026 TheSolutionsGroup Well-Being 2026 Webinars.pdf",
+    },
+    {
+      name: "March 25, 2026 Webinar - The Power of Prevention",
+      url: "/wellness/march_2026/3-25-2026 Webinar - The Power of Prevention.pdf",
+    },
+    {
+      name: "March 26, 2026 Cooking Show - Noodle Your Way to a Balanced Plate",
+      url: "/wellness/march_2026/3-26-2026 Cooking Show - Noodle Your Way to a Balanced Plate.pdf",
+    },
+    {
+      name: "March 30, 2026 Webinar - Colorectal Cancer Awareness",
+      url: "/wellness/march_2026/3-30-2026 Webinar - Colorectal Cancer Awareness.pdf",
+    },
+    {
+      name: "Catapult 5 Steps VirtualCheckup for All - Flyer",
+      url: "/wellness/march_2026/Catapult 5 Steps VirtualCheckup For All Flyer.pdf",
+    },
+    {
+      name: "Life on Mindfulness 2025 - NMPSIA",
+      url: "/wellness/march_2026/Life on Mindfulness - 2025 - NMPSIA.pdf",
+    },
+    {
+      name: "Mindfulness for Better Sleep - NMPSIA",
+      url: "/wellness/march_2026/Mindfulness for Better Sleep - NMPSIA.pdf",
+    },
+    {
+      name: "NMPSIA Health Quest Flyer",
+      url: "/wellness/march_2026/NMPSIA Health Quest Flyer.pdf",
+    },
+    {
+      name: "NMPSIA Home Test Kits Flyer 2026",
+      url: "/wellness/march_2026/NMPSIA Home Test Kits Flyer 2026.pdf",
+    },
+    {
+      name: "NMPSIA March 2026 Work and Well Being Newsletter",
+      url: "/wellness/march_2026/NMPSIA March 2026 Work and Well Being Newsletter.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Calendar - March 2026",
+      url: "/wellness/march_2026/NMPSIA Wellness Calendar March 2026.pdf",
+    },
+    {
+      name: "Preventive Health Screenings by Age - Flyer",
+      url: "/wellness/march_2026/Preventive Health Screenings by Age Flyer.pdf",
+    },
+  ],
   "February 2026": [
     {
       name: "Fitness Program Feb 2026 - Waived Enrollment with Points Member Flyer",

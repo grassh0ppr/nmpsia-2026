@@ -76,6 +76,68 @@ const homepageNews = [
     linkHref: "/nmpsiadownload/202603/Board_Meeting_Agenda.pdf",
     linkText: "View agenda",
   },
+  // March 2026 Wellness Webinars & Events
+  {
+    date: {
+      day: "17",
+      month: "Mar",
+    },
+    title: "March 17, 2026 Webinar – Trending in Nutrition",
+    description:
+      "Learn about the latest trends in nutrition and how to apply them to your daily routine.",
+    linkHref:
+      "/wellness/march_2026/3-17-2026 Webinar Trending in Nutrition.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "18",
+      month: "Mar",
+    },
+    title: "March 18, 2026 Webinar – TheSolutionsGroup Well-Being 2026",
+    description:
+      "Join The Solutions Group for a well-being webinar focused on supporting your health in 2026.",
+    linkHref:
+      "/wellness/march_2026/3-18-2026 TheSolutionsGroup Well-Being 2026 Webinars.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "25",
+      month: "Mar",
+    },
+    title: "March 25, 2026 Webinar – The Power of Prevention",
+    description:
+      "Discover practical strategies to prevent illness and support long-term wellness.",
+    linkHref:
+      "/wellness/march_2026/3-25-2026 Webinar - The Power of Prevention.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "26",
+      month: "Mar",
+    },
+    title:
+      "March 26, 2026 Cooking Show – Noodle Your Way to a Balanced Plate",
+    description:
+      "Watch a live cooking show and learn how to build a balanced plate with noodle-based recipes.",
+    linkHref:
+      "/wellness/march_2026/3-26-2026 Cooking Show - Noodle Your Way to a Balanced Plate.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "30",
+      month: "Mar",
+    },
+    title: "March 30, 2026 Webinar – Colorectal Cancer Awareness",
+    description:
+      "Learn important information about colorectal cancer prevention, screening, and early detection.",
+    linkHref:
+      "/wellness/march_2026/3-30-2026 Webinar - Colorectal Cancer Awareness.pdf",
+    linkText: "View flyer",
+  },
 
   // Kitchen Confidence (4-week email series)
   {
