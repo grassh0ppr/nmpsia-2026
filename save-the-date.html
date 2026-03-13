@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Save the date for the 2026 NMPSIA Regional Trainings. Practical, engaging training designed for NMPSIA Benefits Specialists and HR Professionals."
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      2026 Regional Trainings | New Mexico Public Schools Insurance Authority
+    </title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="css/main.css?v=1" />
+    <link rel="stylesheet" href="css/queries.css?v=1" />
+
+    <!-- components -->
+    <script src="./scripts/components/navbar/webflow-navbar-component.js"></script>
+    <script src="./scripts/components/footer/footer-sitemap.js"></script>
+
+    <style>
+      /* Reuse training page card styles */
+      .training-category-card {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 2rem;
+      }
+
+      .training-category-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #ecf0f1;
+      }
+
+      .training-category-header i {
+        font-size: 2.5rem;
+        color: #667eea;
+      }
+
+      .training-category-header h2 {
+        margin: 0;
+        font-weight: 600;
+        color: #2c3e50;
+        font-size: 1.5rem;
+      }
+
+      .subsection-title {
+        color: #667eea;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 1.5rem 0 1rem 0;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #e9ecef;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .subsection-title:first-child {
+        margin-top: 0;
+      }
+
+      /* Sidebar Navigation */
+      .training-sidebar {
+        background: white;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 2rem;
+        height: fit-content;
+      }
+
+      .sidebar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sidebar-nav li {
+        margin-bottom: 0.5rem;
+      }
+
+      .sidebar-nav a {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+        color: #495057;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+      }
+
+      .sidebar-nav a:hover {
+        background: #f8f9fa;
+        color: #667eea;
+        text-decoration: none;
+      }
+
+      .sidebar-nav a i {
+        font-size: 1.2rem;
+        min-width: 1.2rem;
+      }
+
+      /* Event date cards */
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+        gap: 1.25rem;
+        margin-top: 1rem;
+      }
+
+      .event-card {
+        background: #f8f9fa;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: center;
+        border: 1px solid #e9ecef;
+        transition: all 0.3s ease;
+      }
+
+      .event-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      }
+
+      .event-card.virtual .card-top {
+        background: linear-gradient(135deg, #2c3e6b 0%, #3a5998 100%);
+      }
+
+      .card-top {
+        background: linear-gradient(135deg, #c0392b 0%, #d35400 100%);
+        color: #fff;
+        padding: 0.85rem 1rem 0.6rem;
+        position: relative;
+      }
+
+      .card-top::before,
+      .card-top::after {
+        content: "";
+        position: absolute;
+        top: -5px;
+        width: 12px;
+        height: 12px;
+        background: #888;
+        border-radius: 50%;
+      }
+
+      .card-top::before {
+        left: 25%;
+      }
+
+      .card-top::after {
+        right: 25%;
+      }
+
+      .card-month {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+
+      .card-day {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.1;
+      }
+
+      .card-body-content {
+        padding: 0.75rem 0.75rem 1rem;
+      }
+
+      .card-time {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin-bottom: 0.25rem;
+      }
+
+      .card-location {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #2c3e50;
+        font-style: italic;
+      }
+
+      /* CTA button */
+      .cta-section {
+        text-align: center;
+        margin: 1.5rem 0 0;
+      }
+
+      .cta-btn {
+        display: inline-block;
+        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
+        color: #fff;
+        font-size: 1.15rem;
+        font-weight: 700;
+        padding: 0.85rem 2.25rem;
+        border-radius: 50px;
+        text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+        box-shadow: 0 4px 16px rgba(102, 126, 234, 0.35);
+      }
+
+      .cta-btn:hover {
+        transform: scale(1.04);
+        box-shadow: 0 8px 28px rgba(102, 126, 234, 0.45);
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Sneak peek list */
+      .sneak-peek-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sneak-peek-list li {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.6rem 0;
+        font-size: 1rem;
+        color: #495057;
+      }
+
+      .sneak-peek-list li i {
+        color: #667eea;
+        font-size: 1.25rem;
+        min-width: 1.25rem;
+      }
+
+      /* Flyer + Contact card */
+      .info-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #495057;
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef;
+      }
+
+      .info-link:hover {
+        background: #e9ecef;
+        color: #667eea;
+        text-decoration: none;
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .info-link i {
+        font-size: 1.5rem;
+        color: #667eea;
+        min-width: 1.5rem;
+      }
+
+      .info-link-content {
+        flex: 1;
+      }
+
+      .info-link-title {
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      .info-link-description {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin: 0;
+      }
+
+      /* Responsive */
+      @media (max-width: 992px) {
+        .training-sidebar {
+          margin-bottom: 1rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .events-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .training-category-card {
+          padding: 1.5rem;
+        }
+
+        .training-category-header {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .events-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .training-category-card {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="modern-body">
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item">
+          <a href="employer-trainings.html">Employer Trainings</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          2026 Regional Trainings
+        </li>
+      </ol>
+    </div>
+
+    <main>
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1 class="hero-title">2026 NMPSIA Regional Trainings</h1>
+            <p class="hero-subtitle">
+              Expect training that's practical, engaging, and useful. Designed
+              specifically for NMPSIA Benefits Specialists and HR Professionals.
+            </p>
+          </div>
+          <div class="hero-logo">
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="logo"
+            />
+          </div>
+        </section>
+
+        <div class="row">
+          <!-- Sidebar Navigation -->
+          <div class="col-lg-3">
+            <div class="training-sidebar">
+              <h2 class="mb-3" style="font-size: 1.5rem">
+                <i class="bx bx-menu me-2" aria-hidden="true"></i>Quick
+                Navigation
+              </h2>
+              <nav>
+                <ul class="sidebar-nav">
+                  <li>
+                    <a href="#dates-locations"
+                      ><i class="bx bx-calendar" aria-hidden="true"></i>Dates
+                      &amp; Locations</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#sneak-peek"
+                      ><i class="bx bx-star" aria-hidden="true"></i>Sneak
+                      Peek</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://forms.gle/SoL1Ds1KvddP9jsc9"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Register for the regional trainings (opens registration form in new tab)"
+                      ><i class="bx bx-edit" aria-hidden="true"></i>Register</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#resources"
+                      ><i class="bx bx-info-circle" aria-hidden="true"></i
+                      >Resources</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Main Content -->
+          <div class="col-lg-9">
+            <!-- Dates & Locations -->
+            <section id="dates-locations" class="training-category-card">
+              <div class="training-category-header">
+                <i class="bx bx-calendar" aria-hidden="true"></i>
+                <h2>Dates &amp; Locations</h2>
+              </div>
+
+              <p class="mb-3">
+                All sessions run from <strong>8:00 AM to 1:00 PM</strong>.
+                Choose the location nearest you, or attend virtually on June 23.
+              </p>
+
+              <div class="events-grid" role="list">
+                <div
+                  class="event-card"
+                  role="listitem"
+                  aria-label="June 8, 8 AM to 1 PM, Los Lunas"
+                >
+                  <div class="card-top">
+                    <div class="card-month">June</div>
+                    <div class="card-day">8</div>
+                  </div>
+                  <div class="card-body-content">
+                    <div class="card-time">8 AM - 1 PM</div>
+                    <div class="card-location">Los Lunas</div>
+                  </div>
+                </div>
+
+                <div
+                  class="event-card"
+                  role="listitem"
+                  aria-label="June 9, 8 AM to 1 PM, Santa Fe"
+                >
+                  <div class="card-top">
+                    <div class="card-month">June</div>
+                    <div class="card-day">9</div>
+                  </div>
+                  <div class="card-body-content">
+                    <div class="card-time">8 AM - 1 PM</div>
+                    <div class="card-location">Santa Fe</div>
+                  </div>
+                </div>
+
+                <div
+                  class="event-card"
+                  role="listitem"
+                  aria-label="June 15, 8 AM to 1 PM, Las Cruces"
+                >
+                  <div class="card-top">
+                    <div class="card-month">June</div>
+                    <div class="card-day">15</div>
+                  </div>
+                  <div class="card-body-content">
+                    <div class="card-time">8 AM - 1 PM</div>
+                    <div class="card-location">Las Cruces</div>
+                  </div>
+                </div>
+
+                <div
+                  class="event-card"
+                  role="listitem"
+                  aria-label="June 16, 8 AM to 1 PM, Roswell"
+                >
+                  <div class="card-top">
+                    <div class="card-month">June</div>
+                    <div class="card-day">16</div>
+                  </div>
+                  <div class="card-body-content">
+                    <div class="card-time">8 AM - 1 PM</div>
+                    <div class="card-location">Roswell</div>
+                  </div>
+                </div>
+
+                <div
+                  class="event-card"
+                  role="listitem"
+                  aria-label="June 17, 8 AM to 1 PM, Taos"
+                >
+                  <div class="card-top">
+                    <div class="card-month">June</div>
+                    <div class="card-day">17</div>
+                  </div>
+                  <div class="card-body-content">
+                    <div class="card-time">8 AM - 1 PM</div>
+                    <div class="card-location">Taos</div>
+                  </div>
+                </div>
+
+                <div
+                  class="event-card virtual"
+                  role="listitem"
+                  aria-label="June 23, 8 AM to 1 PM, Virtual"
+                >
+                  <div class="card-top">
+                    <div class="card-month">June</div>
+                    <div class="card-day">23</div>
+                  </div>
+                  <div class="card-body-content">
+                    <div class="card-time">8 AM - 1 PM</div>
+                    <div class="card-location">Virtual</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div id="register" class="cta-section">
+                <a
+                  href="https://forms.gle/SoL1Ds1KvddP9jsc9"
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn"
+                  aria-label="Reserve your spot today (opens registration form in new tab)"
+                  >Reserve your spot today!</a
+                >
+              </div>
+            </section>
+
+            <!-- Sneak Peek -->
+            <section id="sneak-peek" class="training-category-card">
+              <div class="training-category-header">
+                <i class="bx bx-star" aria-hidden="true"></i>
+                <h2>Regional Training Sneak Peek</h2>
+              </div>
+
+              <p class="mb-3">
+                <em>In-person events only</em> &mdash; here's what to look
+                forward to:
+              </p>
+
+              <ul class="sneak-peek-list" role="list">
+                <li>
+                  <i class="bx bx-coffee" aria-hidden="true"></i>
+                  Appreciation Breakfast
+                </li>
+                <li>
+                  <i class="bx bx-conversation" aria-hidden="true"></i>
+                  Break Out Sessions with Practical Topics
+                </li>
+                <li>
+                  <i class="bx bx-user-voice" aria-hidden="true"></i>
+                  Special Guest: Tyler Technologies
+                </li>
+                <li>
+                  <i class="bx bx-help-circle" aria-hidden="true"></i>
+                  Q&amp;A with a Panel of Benefits Professionals
+                </li>
+              </ul>
+            </section>
+
+            <!-- Resources & Contact -->
+            <section id="resources" class="training-category-card">
+              <div class="training-category-header">
+                <i class="bx bx-info-circle" aria-hidden="true"></i>
+                <h2>Resources &amp; Contact</h2>
+              </div>
+
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(
+                    auto-fit,
+                    minmax(min(280px, 100%), 1fr)
+                  );
+                  gap: 1.25rem;
+                "
+              >
+                <a
+                  href="/pdfs/2026_Regional_Trainings_Flyer.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="info-link"
+                  aria-label="Printable Flyer (PDF, opens in new tab)"
+                >
+                  <i class="bx bxs-file-pdf" aria-hidden="true"></i>
+                  <div class="info-link-content">
+                    <div class="info-link-title">Printable Flyer (PDF)</div>
+                    <div class="info-link-description">
+                      Download and post at your location
+                    </div>
+                  </div>
+                </a>
+
+                <a
+                  href="tel:1-800-233-3164"
+                  class="info-link"
+                  aria-label="Call NMPSIA at 1-800-233-3164"
+                >
+                  <i class="bx bx-phone" aria-hidden="true"></i>
+                  <div class="info-link-content">
+                    <div class="info-link-title">Still have questions?</div>
+                    <div class="info-link-description">
+                      Contact us at 1-800-233-3164
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Google search bar functionality -->
+    <script
+      async
+      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
+    ></script>
+
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>
