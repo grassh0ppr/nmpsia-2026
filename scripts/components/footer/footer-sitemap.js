@@ -58,7 +58,7 @@ class FooterSitemap extends HTMLElement {
               <li><a href="contact-us.html">Contact us</a></li>
               <li><a href="auth-release-health-info.html">Release of Health Information Authorization</a></li>
               <li><a href="natural-disaster-aid.html">Apply for natural disaster relief assistance</a></li>
-              <li><a href="IPRA.html">Request Inspection of Public Records (IPRA)</a></li>
+              <li><a href="plan.html#IPRArequest">Request Inspection of Public Records (IPRA)</a></li>
             </ul>
           </div>
         </div>
