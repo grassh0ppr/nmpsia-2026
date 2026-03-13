@@ -1,0 +1,134 @@
+/* Cache Help Modal Styles */
+.cache-help-trigger {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.cache-help-trigger:hover {
+  color: #ccdcff;
+  text-decoration: underline;
+}
+
+.cache-help-trigger i {
+  margin-right: 4px;
+  font-size: 0.85rem;
+  vertical-align: middle;
+}
+
+/* Modal content */
+.cache-help-modal .modal-header {
+  background: linear-gradient(135deg, #20439a 0%, #261665 100%);
+  color: #fff;
+  border-bottom: none;
+}
+
+.cache-help-modal .modal-header .btn-close {
+  filter: invert(1);
+}
+
+.cache-help-modal .modal-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.cache-help-modal .modal-subtitle {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+.cache-help-modal .modal-body {
+  padding: 1.5rem;
+}
+
+.cache-help-modal .intro-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+
+/* Platform accordion */
+.cache-help-modal .accordion-button {
+  font-weight: 600;
+  font-size: 0.95rem;
+  gap: 0.5rem;
+}
+
+.cache-help-modal .accordion-button:not(.collapsed) {
+  background-color: #eef2fb;
+  color: #20439a;
+}
+
+.cache-help-modal .accordion-button i {
+  font-size: 1.2rem;
+}
+
+.cache-help-modal .accordion-body {
+  padding: 1rem 1.25rem;
+}
+
+.cache-help-modal .browser-section {
+  margin-bottom: 1.25rem;
+}
+
+.cache-help-modal .browser-section:last-child {
+  margin-bottom: 0;
+}
+
+.cache-help-modal .browser-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #20439a;
+  margin-bottom: 0.4rem;
+}
+
+.cache-help-modal .browser-steps {
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.7;
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+.cache-help-modal .browser-steps li {
+  margin-bottom: 0.25rem;
+}
+
+.cache-help-modal kbd {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 1px 5px;
+  font-size: 0.8rem;
+  color: #333;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cache-help-modal .shortcut-tip {
+  background: #f0f4ff;
+  border-left: 3px solid #20439a;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.82rem;
+  color: #444;
+  margin-top: 0.5rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.cache-help-modal .still-stuck {
+  background: #fff8e6;
+  border: 1px solid #f0d670;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.cache-help-modal .still-stuck strong {
+  color: #333;
+}

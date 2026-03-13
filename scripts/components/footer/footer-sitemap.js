@@ -8,7 +8,15 @@ class FooterSitemap extends HTMLElement {
       document.head.appendChild(link);
     }
 
+    // Load the cache help modal component
+    if (!document.querySelector('script[src*="cache-help-modal.js"]')) {
+      const script = document.createElement("script");
+      script.src = "./scripts/components/cache-help/cache-help-modal.js";
+      document.body.appendChild(script);
+    }
+
     this.innerHTML = /*html*/ `
+      <cache-help-modal></cache-help-modal>
       <footer class="footer-sitemap">
         <div class="footer-sitemap-container">
           <div class="footer-column">
@@ -56,6 +64,9 @@ class FooterSitemap extends HTMLElement {
         </div>
         
         <div class="footer-copyright">
+          <a href="#" class="cache-help-trigger" data-bs-toggle="modal" data-bs-target="#cacheHelpModal">
+            <i class="bx bx-help-circle"></i>Page not displaying correctly?
+          </a>
           <p>Copyright 2026 <a href="#" class="copyright-link">EASI Edu Incorporated</a></p>
         </div>
       </footer>
