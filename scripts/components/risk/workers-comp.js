@@ -169,21 +169,21 @@ class WorkersComp extends HTMLElement {
                   <ul class="grid-layout-docs">
                     <li>
                       <i class="bx bx-folder"></i>
-                      <a href="#supervisorsWCKit" class="sidenav-link"
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#supervisorsWCKitModal" class="sidenav-link"
                         >Supervisors' WC Grab-N-Go Kit</a
                       >
                     </li>
 
                     <li>
                       <i class="bx bx-folder"></i>
-                      <a href="#workersWCKit" class="sidenav-link"
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#workersWCKitModal" class="sidenav-link"
                         >Workers' WC Grab-N-Go Toolkit</a
                       >
                     </li>
 
                     <li>
                       <i class="bx bx-folder"></i>
-                      <a href="#employersWCKit" class="sidenav-link"
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#employersWCKitModal" class="sidenav-link"
                         >Employers' WC Grab-N-Go Toolkit</a
                       >
                     </li>
