@@ -10,20 +10,16 @@ class SearchEngine {
   }
 
   /**
-   * Load the search index from JSON file
+   * Load the search index from the global SEARCH_INDEX variable
+   * (loaded via script tag from search-index.js)
    */
-  async loadIndex() {
-    try {
-      const response = await fetch('./scripts/data/search-index.json');
-      if (!response.ok) {
-        throw new Error('Failed to load search index');
-      }
-      this.index = await response.json();
+  loadIndex() {
+    if (typeof SEARCH_INDEX !== 'undefined' && Array.isArray(SEARCH_INDEX)) {
+      this.index = SEARCH_INDEX;
       return true;
-    } catch (error) {
-      console.error('Error loading search index:', error);
-      return false;
     }
+    console.error('Error loading search index: SEARCH_INDEX not found');
+    return false;
   }
 
   /**
@@ -195,9 +191,9 @@ class SearchEngine {
 }
 
 // Initialize search engine when DOM is ready
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
   const searchEngine = new SearchEngine();
-  const loaded = await searchEngine.loadIndex();
+  const loaded = searchEngine.loadIndex();
 
   if (!loaded) {
     console.error('Failed to load search index');
