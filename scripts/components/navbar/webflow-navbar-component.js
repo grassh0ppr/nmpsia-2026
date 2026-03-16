@@ -67,6 +67,9 @@ class WebflowNavbar extends HTMLElement {
                   <div>Employers</div>
                 </div>
                 <nav class="dropdown-list w-dropdown-list">
+                  <a href="./save-the-date.html" class="dropdown-link w-dropdown-link"
+                    >2026 NMPSIA Regional Trainings</a
+                  >
                   <a href="./support.html" class="dropdown-link w-dropdown-link"
                     >Request NMPSIA Support</a
                   >
