@@ -1703,13 +1703,14 @@ body.modern-body::after {
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 1rem 2rem;
-  /* margin: 1rem 0; */
+  padding: 1rem 1rem;
   margin-top: 0;
 }
 
 .modern-breadcrumb .breadcrumb {
-  margin-bottom: 0;
+  margin: 0 auto !important;
+  max-width: 1300px;
+  padding-left: 4px;
 }
 
 .modern-breadcrumb .breadcrumb-item a {
