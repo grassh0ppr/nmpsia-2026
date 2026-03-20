@@ -63,6 +63,14 @@ class CybersecurityInfo extends HTMLElement {
         >Incident Response Playbook - Ransomware</a
       >
     </li>
+    <li>
+      <i class="bx bxs-file-pdf"></i>
+      <a
+        href="/pdfs/poms-risk-docs/25_26_Cyber_Claim_Reporting_Instructions.pdf"
+        target="_blank"
+        >2026 Cyber Claim Reporting Instructions</a
+      >
+    </li>
     
   </ul>
     `;
