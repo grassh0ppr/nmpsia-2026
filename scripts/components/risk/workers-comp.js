@@ -316,20 +316,6 @@ class WorkersComp extends HTMLElement {
               </tr>
 
               <tr>
-                <td>Carrie Barnes</td>
-                <td>
-                  O: <a href="tel:15054319281">(505) 431-9281</a> <br />
-                  F: (217) 477-5426
-                </td>
-                <td>
-                  <a href="mailto:carrie.barnes@ccmsi.com"
-                    >carrie.barnes@ccmsi.com</a
-                  >
-                </td>
-                <td>NMPSIA Claims Representative</td>
-              </tr>
-
-              <tr>
                 <td>Elka Espinoza-Medina</td>
                 <td>
                   O: <a href="tel:15054319274">(505) 431-9274</a> <br />
@@ -354,6 +340,20 @@ class WorkersComp extends HTMLElement {
               </tr>
 
               <tr>
+                <td>Natasha Orona</td>
+                <td>
+                  P: <a href="tel:15054319283">(505) 431-9283</a> <br />
+                  F: (217) 477-7462
+                </td>
+                <td>
+                  <a href="mailto:natasha.orona@ccmsi.com"
+                    >natasha.orona@ccmsi.com</a
+                  >
+                </td>
+                <td>NMPSIA Claims Representative</td>
+              </tr>
+
+              <tr>
                 <td>Nicole Lujan</td>
                 <td>
                   O: <a href="tel:15054319275">(505) 431-9275</a> <br />
@@ -368,14 +368,14 @@ class WorkersComp extends HTMLElement {
               </tr>
 
               <tr>
-                <td>Matt Galfano</td>
+                <td>Sharon Griego</td>
                 <td>
-                  O: <a href="tel:15054319280">(505) 431-9280</a> <br />
-                  F: (217) 477-7296
+                  O: <a href="tel:15058378713">(505) 837-8713</a> <br />
+                  F: (217) 477-6812
                 </td>
                 <td>
-                  <a href="mailto:matt.galfano@ccmsi.com"
-                    >matt.galfano@ccmsi.com</a
+                  <a href="mailto:sharon.griego@ccmsi.com"
+                    >sharon.griego@ccmsi.com</a
                   >
                 </td>
                 <td>NMPSIA Claims Representative</td>
