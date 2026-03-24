@@ -11,7 +11,6 @@ nmpsia-2026/
 │
 ├── HTML Pages
 │   ├── index.html                    # Homepage
-│   ├── about.html
 │   ├── accessibility.html
 │   ├── archived-premiums.html
 │   ├── auth-release-health-info.html
@@ -105,7 +104,7 @@ nmpsia-2026/
 │   │       ├── wellness-ambassador.js
 │   │       └── wellness-by-carrier.js
 │   ├── data/                         # Data files
-│   │   └── search-index.json         # Search index data
+│   │   └── search-index.js         # Search index data
 │   ├── downloadCenter.js
 │   ├── health-info.js
 │   ├── homepage-news.js

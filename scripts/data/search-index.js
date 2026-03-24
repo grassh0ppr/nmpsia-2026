@@ -5,10 +5,11 @@
 // eslint-disable-next-line no-unused-vars
 var SEARCH_INDEX = [
   {
-    "url": "index.html",
-    "title": "Home | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "index.html",
+    title: "Home | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "home",
       "main",
       "landing",
@@ -16,34 +17,49 @@ var SEARCH_INDEX = [
       "new mexico",
       "public schools",
       "insurance",
-      "authority"
-    ]
+      "authority",
+      "news",
+    ],
   },
   {
-    "url": "about.html",
-    "title": "About NMPSIA | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["about", "nmpsia", "authority", "information", "overview"]
+    url: "plan.html#about",
+    title: "About NMPSIA | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
+      "about",
+      "nmpsia",
+      "authority",
+      "information",
+      "overview",
+      "history",
+      "mission",
+      "vision",
+      "values",
+      "goals",
+    ],
   },
   {
-    "url": "benefits.html",
-    "title": "Benefits | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "benefits.html",
+    title: "Benefits | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "benefits",
       "coverage",
       "insurance",
       "health",
       "dental",
       "vision",
-      "carriers"
-    ]
+      "carriers",
+    ],
   },
   {
-    "url": "pdfs/2025_Program_Guide_wcag_remed.pdf",
-    "title": "2025 Program Guide | NMPSIA Benefits",
-    "description": "Complete guide to all benefit programs, coverage details, and enrollment information. Comprehensive information about all benefit programs and coverage options.",
-    "keywords": [
+    url: "pdfs/2025_Program_Guide_wcag_remed.pdf",
+    title: "2025 Program Guide | NMPSIA Benefits",
+    description:
+      "Complete guide to all benefit programs, coverage details, and enrollment information. Comprehensive information about all benefit programs and coverage options.",
+    keywords: [
       "program guide",
       "program guide 2025",
       "2025 program guide",
@@ -54,14 +70,16 @@ var SEARCH_INDEX = [
       "pdf",
       "document",
       "handbook",
-      "manual"
-    ]
+      "manual",
+      "current program guide",
+    ],
   },
   {
-    "url": "pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf",
-    "title": "Medical Plan Comparison Chart | NMPSIA Benefits",
-    "description": "Compare medical plan options side-by-side to find the best coverage for your needs. Detailed comparison of deductibles, copays, and coverage levels across all medical plans.",
-    "keywords": [
+    url: "pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf",
+    title: "Medical Plan Comparison Chart | NMPSIA Benefits",
+    description:
+      "Compare medical plan options side-by-side to find the best coverage for your needs. Detailed comparison of deductibles, copays, and coverage levels across all medical plans.",
+    keywords: [
       "comparison chart",
       "comparison",
       "plan comparison",
@@ -73,318 +91,339 @@ var SEARCH_INDEX = [
       "coverage comparison",
       "chart",
       "pdf",
-      "2026 comparison"
-    ]
+      "2026 comparison",
+    ],
   },
   {
-    "url": "benefits.html#carriers",
-    "title": "Carrier Contacts | NMPSIA Benefits",
-    "description": "Contact information for all benefit carriers and administrative services. Download carrier contacts chart PDF.",
-    "keywords": [
+    url: "benefits.html#carriers",
+    title: "Carrier Contacts | NMPSIA Benefits",
+    description:
+      "Contact information for all benefit carriers and administrative services. Download carrier contacts chart PDF.",
+    keywords: [
       "carrier contacts",
       "carriers",
       "contact",
       "phone numbers",
       "carrier information",
       "provider contacts",
-      "administrative services"
-    ]
+      "administrative services",
+    ],
   },
   {
-    "url": "wellness.html",
-    "title": "Wellness Programs | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "wellness.html",
+    title: "Wellness Programs | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "wellness",
       "programs",
       "health",
       "fitness",
       "prevention",
-      "wellness ambassador"
-    ]
+      "wellness ambassador",
+    ],
   },
   {
-    "url": "behavioral-health.html",
-    "title": "Behavioral Health Resources | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "behavioral-health.html",
+    title:
+      "Behavioral Health Resources | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "behavioral health",
       "mental health",
       "counseling",
       "therapy",
       "support",
-      "resources"
-    ]
+      "resources",
+    ],
   },
   {
-    "url": "risk.html",
-    "title": "Risk Division | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "risk.html",
+    title: "Risk Division | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "risk",
       "liability",
       "workers compensation",
       "property",
       "cybersecurity",
       "training",
-      "certificates"
-    ]
+      "certificates",
+    ],
   },
   {
-    "url": "contact-us.html",
-    "title": "Contact NMPSIA | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "contact-us.html",
+    title: "Contact NMPSIA | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "contact",
       "phone",
       "email",
       "address",
       "location",
       "support",
-      "help"
-    ]
+      "help",
+    ],
   },
   {
-    "url": "employee-enrollment.html",
-    "title": "Employee Enrollment | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "employee-enrollment.html",
+    title:
+      "Employee Enrollment | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "employee",
       "enrollment",
       "forms",
       "resources",
       "sign up",
-      "register"
-    ]
+      "register",
+    ],
   },
   {
-    "url": "employer-enrollment.html",
-    "title": "Employer Enrollment | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "employer-enrollment.html",
+    title:
+      "Employer Enrollment | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "employer",
       "enrollment",
       "forms",
       "resources",
       "district",
-      "school"
-    ]
+      "school",
+    ],
   },
   {
-    "url": "enrollment-tutorials.html",
-    "title": "Enrollment Tutorials | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "enrollment-tutorials.html",
+    title:
+      "Enrollment Tutorials | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "tutorials",
       "enrollment",
       "videos",
       "guides",
       "how to",
-      "instructions"
-    ]
+      "instructions",
+    ],
   },
   {
-    "url": "employer-trainings.html",
-    "title": "Employer Trainings | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "employer-trainings.html",
+    title: "Employer Trainings | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "training",
       "employer",
       "tutorials",
       "videos",
       "education",
-      "workshops"
-    ]
+      "workshops",
+    ],
   },
   {
-    "url": "premiums.html",
-    "title": "Benefit Premiums | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["premiums", "pricing", "cost", "rates", "payments", "billing"]
+    url: "premiums.html",
+    title: "Benefit Premiums | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["premiums", "pricing", "cost", "rates", "payments", "billing"],
   },
   {
-    "url": "archived-premiums.html",
-    "title": "Archived Premiums | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "archived-premiums.html",
+    title: "Archived Premiums | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "archived",
       "premiums",
       "historical",
       "past",
       "previous",
-      "rates"
-    ]
+      "rates",
+    ],
   },
   {
-    "url": "procurements.html",
-    "title": "Procurements | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "procurements.html",
+    title: "Procurements | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "procurements",
       "bids",
       "rfp",
       "requests",
       "contracts",
-      "vendors"
-    ]
+      "vendors",
+    ],
   },
   {
-    "url": "board-login.html",
-    "title": "Board Login | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["board", "login", "members", "meetings", "minutes", "packets"]
+    url: "board-login.html",
+    title: "Board Login | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["board", "login", "members", "meetings", "minutes", "packets"],
   },
   {
-    "url": "plan.html",
-    "title": "Plan Information | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "plan.html",
+    title: "Plan Information | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "plan",
       "information",
       "details",
       "ipra",
       "public records",
-      "transparency"
-    ]
+      "transparency",
+    ],
   },
   {
-    "url": "support.html",
-    "title": "Request NMPSIA Support | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "support.html",
+    title:
+      "Request NMPSIA Support | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "support",
       "request",
       "help",
       "assistance",
       "contact",
-      "service"
-    ]
+      "service",
+    ],
   },
   {
-    "url": "download-center.html",
-    "title": "Download Center | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "download-center.html",
+    title: "Download Center | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "download",
       "files",
       "documents",
       "forms",
       "resources",
-      "center"
-    ]
+      "center",
+    ],
   },
   {
-    "url": "district-contacts.html",
-    "title": "District Contacts | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
-      "district",
-      "contacts",
-      "directory",
-      "phone",
-      "email",
-      "school"
-    ]
+    url: "district-contacts.html",
+    title: "District Contacts | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["district", "contacts", "directory", "phone", "email", "school"],
   },
   {
-    "url": "mobile-app.html",
-    "title": "Mobile App | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["mobile", "app", "application", "ios", "android", "download"]
+    url: "mobile-app.html",
+    title: "Mobile App | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["mobile", "app", "application", "ios", "android", "download"],
   },
   {
-    "url": "mobile-app-privacy.html",
-    "title": "Mobile App Privacy | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["privacy", "mobile app", "policy", "data", "protection"]
+    url: "mobile-app-privacy.html",
+    title: "Mobile App Privacy | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["privacy", "mobile app", "policy", "data", "protection"],
   },
   {
-    "url": "transparency-rule.html",
-    "title": "Transparency Rule | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["transparency", "rule", "regulation", "policy", "compliance"]
+    url: "transparency-rule.html",
+    title: "Transparency Rule | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["transparency", "rule", "regulation", "policy", "compliance"],
   },
   {
-    "url": "natural-disaster-aid.html",
-    "title": "Natural Disaster Aid | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "natural-disaster-aid.html",
+    title:
+      "Natural Disaster Aid | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "disaster",
       "aid",
       "relief",
       "natural",
       "emergency",
-      "assistance"
-    ]
+      "assistance",
+    ],
   },
   {
-    "url": "wildfire-relief.html",
-    "title": "Wildfire Relief | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "wildfire-relief.html",
+    title: "Wildfire Relief | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "wildfire",
       "relief",
       "disaster",
       "aid",
       "emergency",
-      "assistance"
-    ]
+      "assistance",
+    ],
   },
   {
-    "url": "flood-relief.html",
-    "title": "Flood Relief | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
-      "flood",
-      "relief",
-      "disaster",
-      "aid",
-      "emergency",
-      "assistance"
-    ]
+    url: "flood-relief.html",
+    title: "Flood Relief | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["flood", "relief", "disaster", "aid", "emergency", "assistance"],
   },
   {
-    "url": "accessibility.html",
-    "title": "Accessibility | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "accessibility.html",
+    title: "Accessibility | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "accessibility",
       "ada",
       "compliance",
       "disability",
-      "accommodation"
-    ]
+      "accommodation",
+    ],
   },
   {
-    "url": "change-password.html",
-    "title": "Change Password | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["password", "change", "reset", "security", "account"]
+    url: "change-password.html",
+    title: "Change Password | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["password", "change", "reset", "security", "account"],
   },
   {
-    "url": "reset-password.html",
-    "title": "Reset Password | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": ["password", "reset", "forgot", "recovery", "account"]
+    url: "reset-password.html",
+    title: "Reset Password | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: ["password", "reset", "forgot", "recovery", "account"],
   },
   {
-    "url": "auth-release-health-info.html",
-    "title": "Authorization to Release Health Information | New Mexico Public Schools Insurance Authority",
-    "description": "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
-    "keywords": [
+    url: "auth-release-health-info.html",
+    title:
+      "Authorization to Release Health Information | New Mexico Public Schools Insurance Authority",
+    description:
+      "Learn more about the benefits and coverage offered to you through the New Mexico Public Schools Insurance Authority",
+    keywords: [
       "authorization",
       "release",
       "health",
       "information",
       "hipaa",
-      "medical records"
-    ]
+      "medical records",
+    ],
   },
   {
-    "url": "benefits.html#resources",
-    "title": "Important Employee Benefit Program Notices | NMPSIA Benefits",
-    "description": "Essential notices and disclosures for employee benefit programs. Important documents and resources for benefit management.",
-    "keywords": [
+    url: "benefits.html#resources",
+    title: "Important Employee Benefit Program Notices | NMPSIA Benefits",
+    description:
+      "Essential notices and disclosures for employee benefit programs. Important documents and resources for benefit management.",
+    keywords: [
       "important notices",
       "employee notices",
       "benefit notices",
@@ -392,35 +431,37 @@ var SEARCH_INDEX = [
       "disclosures",
       "annual notices",
       "compliance",
-      "required notices"
-    ]
+      "required notices",
+    ],
   },
   {
-    "url": "benefits.html#life-disability",
-    "title": "Life & Disability Insurance | NMPSIA Benefits",
-    "description": "Comprehensive life insurance and disability coverage through The Standard. Life insurance and long-term disability coverage.",
-    "keywords": [
+    url: "benefits.html#life-disability",
+    title: "Life & Disability Insurance | NMPSIA Benefits",
+    description:
+      "Comprehensive life insurance and disability coverage through The Standard. Life insurance and long-term disability coverage.",
+    keywords: [
       "life insurance",
       "disability",
       "the standard",
       "life and disability",
       "long term disability",
       "ltd",
-      "beneficiary"
-    ]
+      "beneficiary",
+    ],
   },
   {
-    "url": "download-center.html",
-    "title": "Download Center | New Mexico Public Schools Insurance Authority",
-    "description": "Download forms, documents, and resources. Access important files and documents.",
-    "keywords": [
+    url: "download-center.html",
+    title: "Download Center | New Mexico Public Schools Insurance Authority",
+    description:
+      "Download forms, documents, and resources. Access important files and documents.",
+    keywords: [
       "download",
       "download center",
       "forms",
       "documents",
       "files",
       "resources",
-      "pdf downloads"
-    ]
-  }
+      "pdf downloads",
+    ],
+  },
 ];
