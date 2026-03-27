@@ -15,128 +15,66 @@ const homepageNews = [
     linkText: "Log into Well onTarget",
   },
 
-  // notice of public meetings - MARCH 2026
+  // notice of public meetings - APRIL 2026
   {
     date: {
-      day: "27",
-      month: "Feb",
+      day: "",
+      month: "Apr",
     },
-    title: "Notice of Public Meetings March 4 & 5, 2026",
+    title: "Notice of Public Meetings April 1 & 2, 2026",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
     linkHref:
-      "https://nmpsia.com/nmpsiadownload/202603/notice_of_public_meetings.pdf",
+      "https://nmpsia.com/nmpsiadownload/202604/notice_of_public_meetings.pdf",
     linkText: "View notice",
   },
   // BAC Meeting
   {
     date: {
-      day: "04",
-      month: "Mar",
+      day: "01",
+      month: "Apr",
     },
     title: "Benefits Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202603/BAC_Meeting_Agenda.pdf",
+    linkHref: "/nmpsiadownload/202604/BAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // RAC meeting
   {
     date: {
-      day: "04",
-      month: "Mar",
+      day: "01",
+      month: "Apr",
     },
     title: "Risk Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202603/RAC_Meeting_Agenda.pdf",
+    linkHref: "/nmpsiadownload/202604/RAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // IFR meeting
   {
     date: {
-      day: "05",
-      month: "Mar",
+      day: "02",
+      month: "Apr",
     },
     title: "Internal Fiscal Review Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202603/IFR_Meeting_Agenda.pdf",
+    linkHref: "/nmpsiadownload/202604/IFR_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // Board meeting
   {
     date: {
-      day: "05",
-      month: "Mar",
+      day: "02",
+      month: "Apr",
     },
     title: "Board of Directors Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202603/Board_Meeting_Agenda.pdf",
+    linkHref: "/nmpsiadownload/202604/Board_Meeting_agenda.pdf",
     linkText: "View agenda",
-  },
-  // March 2026 Wellness Webinars & Events
-  {
-    date: {
-      day: "17",
-      month: "Mar",
-    },
-    title: "March 17, 2026 Webinar – Trending in Nutrition",
-    description:
-      "Learn about the latest trends in nutrition and how to apply them to your daily routine.",
-    linkHref:
-      "/wellness/march_2026/3-17-2026 Webinar Trending in Nutrition.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "18",
-      month: "Mar",
-    },
-    title: "March 18, 2026 Webinar – TheSolutionsGroup Well-Being 2026",
-    description:
-      "Join The Solutions Group for a well-being webinar focused on supporting your health in 2026.",
-    linkHref:
-      "/wellness/march_2026/3-18-2026 TheSolutionsGroup Well-Being 2026 Webinars.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "25",
-      month: "Mar",
-    },
-    title: "March 25, 2026 Webinar – The Power of Prevention",
-    description:
-      "Discover practical strategies to prevent illness and support long-term wellness.",
-    linkHref:
-      "/wellness/march_2026/3-25-2026 Webinar - The Power of Prevention.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "26",
-      month: "Mar",
-    },
-    title:
-      "March 26, 2026 Cooking Show – Noodle Your Way to a Balanced Plate",
-    description:
-      "Watch a live cooking show and learn how to build a balanced plate with noodle-based recipes.",
-    linkHref:
-      "/wellness/march_2026/3-26-2026 Cooking Show - Noodle Your Way to a Balanced Plate.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "30",
-      month: "Mar",
-    },
-    title: "March 30, 2026 Webinar – Colorectal Cancer Awareness",
-    description:
-      "Learn important information about colorectal cancer prevention, screening, and early detection.",
-    linkHref:
-      "/wellness/march_2026/3-30-2026 Webinar - Colorectal Cancer Awareness.pdf",
-    linkText: "View flyer",
   },
 
   // Kitchen Confidence (4-week email series)

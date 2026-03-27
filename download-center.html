@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -78,7 +78,7 @@
         document
           .querySelector(".welcome")
           .append(
-            '<p style="color:red;margin-top:-10px">We suggest you change your password.</p>',
+            '<p style="color:red;margin-top:-10px">We suggest you change your password.</p>'
           );
       }
     </script>
@@ -507,6 +507,7 @@
             aria-labelledby="heading-2026"
           >
             <div class="accordion-body">
+              <a href="#202604" data-section="202604">April</a>
               <a href="#202603" data-section="202603">March</a>
               <a href="#202602" data-section="202602">February</a>
             </div>
@@ -776,7 +777,7 @@
       </aside>
 
       <!-- Main Content -->
-      <main class="download-main" data-default-section="202603">
+      <main class="download-main" data-default-section="202604">
         <!-- Hero Section -->
         <section class="download-hero-section">
           <div class="download-hero-content">
@@ -798,6 +799,8 @@
         <!-- SELECTED MEETING FILES -->
         <!-- these are like containers for the main content; they all have a matching id in the aside -->
         <!-- 2026 -->
+
+        <div id="202604" class="section mt-3"></div>
         <div id="202603" class="section mt-3"></div>
         <div id="202602" class="section mt-3"></div>
         <!-- 2025 -->
@@ -971,7 +974,7 @@
           .querySelectorAll("#downloadSidebar .accordion-body a")
           .forEach((a) => a.classList.remove("active"));
         const defaultLink = document.querySelector(
-          `#downloadSidebar .accordion-body a[data-section="${defaultSection}"]`,
+          `#downloadSidebar .accordion-body a[data-section="${defaultSection}"]`
         );
         if (defaultLink) defaultLink.classList.add("active");
 
