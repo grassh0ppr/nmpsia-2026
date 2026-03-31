@@ -53,7 +53,9 @@ class CarrierContacts extends HTMLElement {
                     <a href="tel:18002333164" class="carrier-phone">
                       <i class="bx bx-phone"></i>1-800-233-3164
                     </a>
-                 
+                    <a href="mailto:sf@easitpa.com" class="carrier-website">
+                      <i class="bx bx-envelope"></i>sf@easitpa.com
+                    </a>
                   </div>
                 </div>
               </div>
