@@ -62,7 +62,17 @@
     <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"></script>
     <script src="./scripts/components/footer/footer-sitemap.js?v=1.2"></script>
     <style>
-      /* Consistent max-width for all sections */
+      input:focus::placeholder,
+      textarea:focus::placeholder {
+        opacity: 0;
+        transition: opacity 0.2s ease;
+      }
+
+      main {
+        background-color: transparent;
+        max-width: none;
+      }
+      /* Consistent max-width for all sections — override Bootstrap .container */
       .hero-intro-section,
       .contact-guide-section,
       .new-form-container {
@@ -523,18 +533,18 @@
         }
       }
 
-      /* Large desktop: 4 across for very wide screens */
-      @media (min-width: 1440px) {
+      /* Desktop: 4 across */
+      @media (min-width: 1200px) {
         .contact-guide-grid {
           grid-template-columns: repeat(4, 1fr);
-          gap: 1.75rem;
+          gap: 0.5rem;
         }
       }
 
       .contact-guide-card {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         border-radius: 12px;
-        padding: 2rem;
+        padding: 1.5rem;
         color: #ffffff;
         box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
         transition: all 0.3s ease;
@@ -793,141 +803,141 @@
 
     <main id="main-content" tabindex="-1">
       <!-- Hero Intro Section -->
-      <div class="container">
-        <div class="hero-intro-section">
-          <div class="hero-intro-header">
-            <div class="hero-intro-content">
-              <h2 class="hero-intro-title">Reach out to us!</h2>
-              <p class="hero-intro-subtitle">
-                Requests can be directed to us through the form below.
-              </p>
-            </div>
-            <img
-              src="images/NMPSIA-Logo-transparent-2023.png"
-              class="hero-intro-logo"
-              alt="NMPSIA logo"
-            />
+      <div class="hero-intro-section">
+        <div class="hero-intro-header">
+          <div class="hero-intro-content">
+            <h2 class="hero-intro-title">Reach out to us!</h2>
+            <p class="hero-intro-subtitle">
+              Requests can be directed to us through the form below.
+            </p>
           </div>
+          <img
+            src="images/NMPSIA-Logo-transparent-2023.png"
+            class="hero-intro-logo"
+            alt="NMPSIA logo"
+          />
         </div>
       </div>
 
       <!-- Quick Contact Guide Section -->
-      <div class="container">
-        <div class="contact-guide-section">
-          <div class="contact-guide-header">
-            <i class="bx bx-phone-call contact-guide-icon"></i>
-            <h2 class="contact-guide-title">
-              Who You Gonna Call? Your Quick Contact Guide
-            </h2>
-          </div>
+      <div class="contact-guide-section">
+        <div class="contact-guide-header">
+          <i class="bx bx-phone-call contact-guide-icon"></i>
+          <h2 class="contact-guide-title">
+            Who You Gonna Call? Your Quick Contact Guide
+          </h2>
+        </div>
 
-          <p class="contact-guide-intro">
-            Not sure who to contact? Use this guide to find the right department
-            for your inquiry.
-          </p>
+        <p class="contact-guide-intro">
+          Not sure who to contact? Use this guide to find the right department
+          for your inquiry.
+        </p>
 
-          <div
-            class="contact-guide-important-note display-flex align-items-center gap-2"
+        <div
+          class="contact-guide-important-note display-flex align-items-center gap-2"
+        >
+          <i class="bx bx-error-circle"></i>
+          <span
+            >Important note: The <b>EMPLOYER</b> is always your first point of
+            contact.</span
           >
-            <i class="bx bx-error-circle"></i>
-            <span
-              >Important note: The <b>EMPLOYER</b> is always your first point of
-              contact.</span
-            >
-          </div>
+        </div>
 
-          <div class="contact-guide-grid">
-            <!-- Employer Section -->
-            <a
-              href="district-contacts.html"
-              class="contact-guide-card employer-card"
-              style="text-decoration: none; color: inherit"
-            >
-              <h3 class="contact-guide-card-title">Employer</h3>
-              <ul class="contact-guide-list">
-                <li>All general inquiries</li>
-                <li>Enrollment questions</li>
-                <li>Benefit questions</li>
-                <li>Eligibility verification</li>
-                <li>Premium payment issues</li>
-                <li>Forms and documentation</li>
-              </ul>
-            </a>
+        <div class="contact-guide-grid">
+          <!-- Employer Section -->
+          <a
+            href="district-contacts.html"
+            title="View district contact information"
+            class="contact-guide-card employer-card"
+            style="text-decoration: none; color: inherit"
+          >
+            <h3 class="contact-guide-card-title">Employer</h3>
+            <ul class="contact-guide-list">
+              <li>All general inquiries</li>
+              <li>Enrollment questions</li>
+              <li>Benefit questions</li>
+              <li>Eligibility verification</li>
+              <li>Premium payment issues</li>
+              <li>Forms and documentation</li>
+            </ul>
+          </a>
 
-            <!-- Erisa Section -->
-            <a
-              href="plan.html#carriers"
-              class="contact-guide-card erisa-card"
-              style="text-decoration: none; color: inherit"
-            >
-              <h3 class="contact-guide-card-title">Erisa</h3>
-              <p class="contact-guide-card-subtitle">
-                NMPSIA Eligibility Administrative Office
-              </p>
-              <ul class="contact-guide-list">
-                <li>Enrollment issues</li>
-                <li>Eligibility questions</li>
-                <li>Premium billing</li>
-                <li>Premium collection</li>
-                <li>COBRA Continuation (medical, dental, or vision)</li>
-                <li>Retiree life continuation</li>
-                <li>Other administrative inquiries</li>
-              </ul>
-            </a>
-
-            <!-- Carrier Section -->
-            <a
-              href="plan.html#carriers"
-              class="contact-guide-card carrier-card"
-              style="text-decoration: none; color: inherit"
-            >
-              <h3 class="contact-guide-card-title">Carrier</h3>
-              <p class="contact-guide-card-subtitle">Insurance Providers</p>
-              <ul class="contact-guide-list">
-                <li>Claim submissions</li>
-                <li>Claim status inquiries</li>
-                <li>Provider network questions</li>
-                <li>Coverage benefits clarification</li>
-                <li>ID card requests</li>
-                <li>Pre-authorization requests</li>
-                <li>Plan-specific questions</li>
-              </ul>
-            </a>
-
-            <!-- NMPSIA Section -->
-            <a
-              href="plan.html#carriers"
-              class="contact-guide-card nmpsia-card"
-              style="text-decoration: none; color: inherit"
-            >
-              <h3 class="contact-guide-card-title">NMPSIA</h3>
-              <p class="contact-guide-card-subtitle">
-                New Mexico Public Schools Insurance Authority
-              </p>
-              <ul class="contact-guide-list">
-                <li>Benefit questions</li>
-                <li>Risk questions</li>
-                <li>Program information</li>
-                <li>Policy inquiries</li>
-                <li>General NMPSIA information</li>
-              </ul>
-            </a>
-          </div>
-
-          <div class="contact-guide-footer-note">
-            <p>
-              <strong>Retirement & Pension Questions:</strong>For questions
-              regarding retirement benefits or pension, please contact your
-              employer or New Mexico Retiree Health Care
-              <a href="tel:18002332576">1-800-233-2576</a> or New Mexico
-              Educational Retirement Board
-              <a href="tel:18006631919">1-800-663-1919</a>.
+          <!-- Erisa Section -->
+          <a
+            href="plan.html#carriers"
+            title="View Erisa carrier contact information"
+            class="contact-guide-card erisa-card"
+            style="text-decoration: none; color: inherit"
+          >
+            <h3 class="contact-guide-card-title">Erisa</h3>
+            <p class="contact-guide-card-subtitle">
+              NMPSIA Eligibility Administrative Office
             </p>
-          </div>
+            <ul class="contact-guide-list">
+              <li>Enrollment issues</li>
+              <li>Eligibility questions</li>
+              <li>Premium billing</li>
+              <li>Premium collection</li>
+              <li>COBRA Continuation (medical, dental, or vision)</li>
+              <li>Retiree life continuation</li>
+              <li>Other administrative inquiries</li>
+            </ul>
+          </a>
+
+          <!-- Carrier Section -->
+          <a
+            href="plan.html#carriers"
+            title="View insurance carrier contact information"
+            class="contact-guide-card carrier-card"
+            style="text-decoration: none; color: inherit"
+          >
+            <h3 class="contact-guide-card-title">Carrier</h3>
+            <p class="contact-guide-card-subtitle">Insurance Providers</p>
+            <ul class="contact-guide-list">
+              <li>Claim submissions</li>
+              <li>Claim status inquiries</li>
+              <li>Provider network questions</li>
+              <li>Coverage benefits clarification</li>
+              <li>ID card requests</li>
+              <li>Pre-authorization requests</li>
+              <li>Plan-specific questions</li>
+            </ul>
+          </a>
+
+          <!-- NMPSIA Section -->
+          <a
+            href="plan.html#carriers"
+            title="View NMPSIA contact information"
+            class="contact-guide-card nmpsia-card"
+            style="text-decoration: none; color: inherit"
+          >
+            <h3 class="contact-guide-card-title">NMPSIA</h3>
+            <p class="contact-guide-card-subtitle">
+              New Mexico Public Schools Insurance Authority
+            </p>
+            <ul class="contact-guide-list">
+              <li>Benefit questions</li>
+              <li>Risk questions</li>
+              <li>Program information</li>
+              <li>Policy inquiries</li>
+              <li>General NMPSIA information</li>
+            </ul>
+          </a>
+        </div>
+
+        <div class="contact-guide-footer-note">
+          <p>
+            <strong>Retirement & Pension Questions:</strong>For questions
+            regarding retirement benefits or pension, please contact your
+            employer or New Mexico Retiree Health Care
+            <a href="tel:18002332576">1-800-233-2576</a> or New Mexico
+            Educational Retirement Board
+            <a href="tel:18006631919">1-800-663-1919</a>.
+          </p>
         </div>
       </div>
 
-      <div class="container new-form-container p-5">
+      <div class="new-form-container p-5">
         <div class="contact-guide-header">
           <i class="bx bx-phone-call contact-guide-icon"></i>
           <h2 class="contact-guide-title">Contact Form</h2>
