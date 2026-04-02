@@ -77,6 +77,76 @@ const homepageNews = [
     linkText: "View agenda",
   },
 
+  // Wellness — April 2026 upcoming events
+  {
+    date: {
+      day: "01",
+      month: "Apr",
+    },
+    title:
+      "2026 Spring into Motion Registration is Open (challenge begins April 13th)",
+    description:
+      "Registration is open for the Spring into Motion program. The challenge begins April 13. Open the SIM flyer for details.",
+    linkHref: "/wellness/april_2026/NMPSIA SIM Flyer '26.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "15",
+      month: "Apr",
+    },
+    title: "Bone Deep: Strength for Every Body (Webinar)",
+    description:
+      "April 15 webinar. See the April TSG wellness webinars PDF for topic details and how to join.",
+    linkHref: "/wellness/april_2026/Wellness 2026 Webinars TSG_04.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "21",
+      month: "Apr",
+    },
+    title: "Preventing Lifting and Back Injuries (Webinar)",
+    description:
+      "April 21 webinar on safe lifting and back injury prevention. Open the flyer for more information.",
+    linkHref: "/wellness/april_2026/Preventing Lifting and Back Injuries.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "23",
+      month: "Apr",
+    },
+    title:
+      "Cooking Show: Garden Glow & Chocolate Flow: Stress Relief & Mindful Indulgence",
+    description:
+      "April 23 cooking show. View the April cooking show PDF for details.",
+    linkHref: "/wellness/april_2026/04_April Cooking Show_2026.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "27",
+      month: "Apr",
+    },
+    title: "Healthy Bones and Joints (Webinar)",
+    description:
+      "April 27 webinar. See the healthy bones and joints flyer for details.",
+    linkHref: "/wellness/april_2026/Healthy Bones and Joints.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "29",
+      month: "Apr",
+    },
+    title: "Everyday Back Health (Webinar)",
+    description:
+      "April 29 webinar on everyday back health. Open the flyer for more information.",
+    linkHref: "/wellness/april_2026/Everyday Back Health.pdf",
+    linkText: "View flyer",
+  },
+
   // Kitchen Confidence (4-week email series)
   {
     date: {

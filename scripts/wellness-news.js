@@ -1,5 +1,95 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "April 2026": [
+    {
+      name: "Wellness Communication - April 2026",
+      url: "/wellness/april_2026/April 2026 Wellness Communication.pdf",
+    },
+    {
+      name: "April 2026 Observance",
+      url: "/wellness/april_2026/04_April Observance_2026.pdf",
+    },
+    {
+      name: "April 2026 Observance (Spanish)",
+      url: "/wellness/april_2026/04_April Observance_2026 SP.pdf",
+    },
+    {
+      name: "NMPSIA April 2026 Newsletter",
+      url: "/wellness/april_2026/NMPSIA April 2026 Newsletter.pdf",
+    },
+    {
+      name: "April 2026 Email Prompt",
+      url: "/wellness/april_2026/April Email Prompt.docx",
+    },
+    {
+      name: "NMPSIA Wellness Calendar - April 2026",
+      url: "/wellness/april_2026/NMPSIA Wellness Calendar April 2026.pdf",
+    },
+    {
+      name: "April 2026 Cooking Show",
+      url: "/wellness/april_2026/04_April Cooking Show_2026.pdf",
+    },
+    {
+      name: "TSG Well-Being 2026 Webinars - April",
+      url: "/wellness/april_2026/Wellness 2026 Webinars TSG_04.pdf",
+    },
+    {
+      name: "NMPSIA Home Test Kits Flyer 2026",
+      url: "/wellness/april_2026/NMPSIA HTK Flyer 2026.pdf",
+    },
+    {
+      name: "NMPSIA SIM Flyer 2026",
+      url: "/wellness/april_2026/NMPSIA SIM Flyer '26.pdf",
+    },
+    {
+      name: "NMPSIA SIM Mobile App",
+      url: "/wellness/april_2026/NMPSIA SIM Mobile App.pdf",
+    },
+    {
+      name: "Catapult 5 Steps VirtualCheckup for All - Flyer",
+      url: "/wellness/april_2026/Catapult 5 Steps VirtualCheckup For All Flyer.pdf",
+    },
+    {
+      name: "NMPSIA Health Quest Flyer",
+      url: "/wellness/april_2026/NMPSIA Health Quest Flyer.pdf",
+    },
+    {
+      name: "Preventive Health Screening Flyer",
+      url: "/wellness/april_2026/Preventive Health Screening Flyer.pdf",
+    },
+    {
+      name: "Preventing Lifting and Back Injuries",
+      url: "/wellness/april_2026/Preventing Lifting and Back Injuries.pdf",
+    },
+    {
+      name: "Everyday Back Health",
+      url: "/wellness/april_2026/Everyday Back Health.pdf",
+    },
+    {
+      name: "Full Body Workplace Stretching Program",
+      url: "/wellness/april_2026/Full Body Workplace Stretching Program.pdf",
+    },
+    {
+      name: "Healthy Bones and Joints",
+      url: "/wellness/april_2026/Healthy Bones and Joints.pdf",
+    },
+    {
+      name: "Building Muscle",
+      url: "/wellness/april_2026/Building Muscle.pdf",
+    },
+    {
+      name: "Ageless Mobility",
+      url: "/wellness/april_2026/Ageless Mobility.pdf",
+    },
+    {
+      name: "Life on Mindfulness 2026 - NMPSIA",
+      url: "/wellness/april_2026/Life on Mindfulness - 2026 - NMPSIA.pdf",
+    },
+    {
+      name: "Mindful Blood Pressure Reduction - NMPSIA",
+      url: "/wellness/april_2026/Mindful Blood Pressure Reduction - NMPSIA.pdf",
+    },
+  ],
   "March 2026": [
     {
       name: "Wellness Communication - March 2026",
