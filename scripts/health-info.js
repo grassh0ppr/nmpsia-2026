@@ -36,7 +36,7 @@ async function showConfirmation() {
   if (!recaptchaToken) {
     showStatusMessage(
       "Please complete the reCAPTCHA at the bottom of the form to proceed.",
-      "warning"
+      "warning",
     );
     return;
   }
@@ -47,7 +47,7 @@ async function showConfirmation() {
   ) {
     showStatusMessage(
       "Please provide the patient's signature and date to continue.",
-      "warning"
+      "warning",
     );
     return;
   }
@@ -57,15 +57,15 @@ async function showConfirmation() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   let formData = new FormData(document.getElementById("healthInfoForm"));
-  formData.append("g-recaptcha-response", recaptchaToken);
+  formData.append("t", recaptchaToken);
 
   let reviewContent = `
         <p><strong>Policy holder name:</strong> ${formData.get(
-          "policyHolderName"
+          "policyHolderName",
         )}</p>
         <p><strong>Patient name:</strong> ${formData.get("patientName")}</p>
         <p><strong>Point of contact:</strong> ${formData.get(
-          "authorizedEntity"
+          "authorizedEntity",
         )}</p>
         <p><strong>Authorized organization(s):</strong> ${getSelectedCarriers()}</p>
         <p><strong>Provider name:</strong> ${formData.get("providerName")}</p>
@@ -73,7 +73,7 @@ async function showConfirmation() {
         <p><strong>Provider email:</strong> ${formData.get("providerEmail")}</p>
         <p><strong>Claim details:</strong> ${formData.get("claimDetails")}</p>
         <p><strong>Purpose of request:</strong> ${formData.get(
-          "purposeOfReq"
+          "purposeOfReq",
         )}</p>
         <p><strong>Right to revoke:</strong> ${
           formData.get("rightToRevoke") ? "Agreed" : "Not agreed"
@@ -82,19 +82,19 @@ async function showConfirmation() {
           formData.get("understandDisclosureAndCopy") ? "Agreed" : "Not agreed"
         }</p>
         <p><strong>Personal representative:</strong> ${formData.get(
-          "personalRepName"
+          "personalRepName",
         )}</p>
         <p><strong>Representative contact:</strong> ${formData.get(
-          "personalRepContactInfo"
+          "personalRepContactInfo",
         )}</p>
         <p><strong>Patient signature:</strong> ${formData.get(
-          "signaturePatient"
+          "signaturePatient",
         )} (Date: ${formData.get("patientSigDate")})</p>
         <p><strong>Policyholder signature:</strong> ${formData.get(
-          "signaturePolicyholder"
+          "signaturePolicyholder",
         )} (Date: ${formData.get("policyholderSigDate")})</p>
         <p><strong>Personal rep signature:</strong> ${formData.get(
-          "signaturePersonalRep"
+          "signaturePersonalRep",
         )} (Date: ${formData.get("personalRepSigDate")})</p>
     `;
 
@@ -105,7 +105,7 @@ async function showConfirmation() {
     fileNames.push(fileInput.files[i].name);
   }
   reviewContent += `<p><strong>Supporting documents:</strong> ${fileNames.join(
-    ", "
+    ", ",
   )}</p>`;
 
   document.getElementById("reviewYourStuff").innerHTML = reviewContent;
@@ -134,7 +134,7 @@ async function submitForm() {
   clearStatusMessage();
   showStatusMessage(
     "Submitting your form. This may take a few moments, please do not close this page.",
-    "info"
+    "info",
   );
 
   // Disable go back button and submit button
@@ -173,13 +173,13 @@ async function submitForm() {
     const pdfFile = new File(
       [generatedPDFBlob],
       `Authorization Form ${formData.get("patientName")}.pdf`,
-      { type: "application/pdf" }
+      { type: "application/pdf" },
     );
 
     formData.append(
       "supportingDocs",
       pdfFile,
-      `Authorization_Form_${formData.get("patientName")}.pdf`
+      `Authorization_Form_${formData.get("patientName")}.pdf`,
     );
 
     // Submit form data via fetch
@@ -194,7 +194,7 @@ async function submitForm() {
       const downloadLink = document.createElement("a");
       downloadLink.href = pdfURL;
       downloadLink.download = `Authorization_Form_${formData.get(
-        "patientName"
+        "patientName",
       )}_${new Date().toLocaleString()}.pdf`;
       downloadLink.click();
 
@@ -237,7 +237,7 @@ async function submitForm() {
     console.error("Error generating PDF or submitting the form:", error);
     showStatusMessage(
       "There was an unexpected error generating the PDF or submitting your form. Please try again.",
-      "danger"
+      "danger",
     );
   } finally {
     // Re-enable buttons and hide the loading indicator
@@ -315,11 +315,11 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   // Handle long text for "Claim details" using splitTextToSize
   let claimDetails = (formData.get("claimDetails") || "N/A").replace(
     /\r?\n|\r/g,
-    " "
+    " ",
   );
   let claimDetailsLines = doc.splitTextToSize(
     `Claim details: ${claimDetails}`,
-    180
+    180,
   ); // 180 is the width of the text block
   doc.text(claimDetailsLines, x, y);
   y += claimDetailsLines.length * lineHeight;
@@ -327,11 +327,11 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   // Handle long text for "Purpose of request" using splitTextToSize
   let purposeOfRequest = (formData.get("purposeOfReq") || "N/A").replace(
     /\r?\n|\r/g,
-    " "
+    " ",
   );
   let purposeOfRequestLines = doc.splitTextToSize(
     `Purpose of request: ${purposeOfRequest}`,
-    180
+    180,
   );
   doc.text(purposeOfRequestLines, x, y);
   y += purposeOfRequestLines.length * lineHeight;
@@ -342,7 +342,7 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
       formData.get("rightToRevoke") ? "Agreed" : "Not agreed"
     }`,
     x,
-    y
+    y,
   );
   y += lineHeight;
   doc.text(
@@ -350,7 +350,7 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
       formData.get("understandDisclosureAndCopy") ? "Agreed" : "Not agreed"
     }`,
     x,
-    y
+    y,
   );
   y += lineHeight;
   doc.text(`Personal representative: ${formData.get("personalRepName")}`, x, y);
@@ -358,7 +358,7 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   doc.text(
     `Representative contact: ${formData.get("personalRepContactInfo")}`,
     x,
-    y
+    y,
   );
   y += lineHeight;
 
@@ -366,26 +366,26 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   // Signatures
   doc.text(
     `Patient signature: ${formData.get(
-      "signaturePatient"
+      "signaturePatient",
     )} (Date: ${formData.get("patientSigDate")})`,
     x,
-    y
+    y,
   );
   y += lineHeight;
   doc.text(
     `Policyholder signature: ${formData.get(
-      "signaturePolicyholder"
+      "signaturePolicyholder",
     )} (Date: ${formData.get("policyholderSigDate")})`,
     x,
-    y
+    y,
   );
   y += lineHeight;
   doc.text(
     `Personal rep signature: ${formData.get(
-      "signaturePersonalRep"
+      "signaturePersonalRep",
     )} (Date: ${formData.get("personalRepSigDate")})`,
     x,
-    y
+    y,
   );
   y += lineHeight;
 
@@ -393,7 +393,7 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   let authorizationStatement = `By signing and submitting this form electronically, I (Patient, Policy Holder and/or Personal Representative) confirm that I am the individual identified in this document and that I have read, understood, and agree to the terms and conditions outlined herein. My electronic signature is equivalent to my handwritten signature and is intended to have the same legal effect as a physical signature. I understand that I am providing consent to use my electronic signature in connection with this document and that I have the right to withdraw my consent at any time. If I am signing on behalf of another person/entity represented in this form, I certify that I am legally authorized to do so.`;
   let authorizationStatementLines = doc.splitTextToSize(
     `Authorization statement: ${authorizationStatement}`,
-    180
+    180,
   );
   doc.text(authorizationStatementLines, x, y);
   y += authorizationStatementLines.length * lineHeight;
