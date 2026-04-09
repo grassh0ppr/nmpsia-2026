@@ -32,14 +32,6 @@ function showStatusMessage(message, type = "info") {
 async function showConfirmation() {
   clearStatusMessage();
 
-  let recaptchaToken = grecaptcha.getResponse();
-  if (!recaptchaToken) {
-    showStatusMessage(
-      "Please complete the reCAPTCHA at the bottom of the form to proceed.",
-      "warning",
-    );
-    return;
-  }
   // if patient signature empty, alert user
   if (
     !document.getElementById("signaturePatient").value ||
@@ -57,7 +49,6 @@ async function showConfirmation() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 
   let formData = new FormData(document.getElementById("healthInfoForm"));
-  formData.append("t", recaptchaToken);
 
   let reviewContent = `
         <p><strong>Policy holder name:</strong> ${formData.get(
@@ -159,10 +150,20 @@ async function submitForm() {
 
   // add the attachments string to the formData
   formData.append("attachments", attachmentsStr);
-  console.log("Form data being sent off:", formData);
-  console.log(attachmentsStr);
 
-  // console.log(fileInput.files);
+  // Capture the reCAPTCHA token fresh from the confirmation page
+  let recaptchaToken = grecaptcha.getResponse();
+  if (!recaptchaToken) {
+    showStatusMessage(
+      "Please complete the reCAPTCHA before submitting.",
+      "warning",
+    );
+    goBackBtn.disabled = false;
+    submitBtn.disabled = false;
+    document.getElementById("loading").style.display = "none";
+    return;
+  }
+  formData.append("t", recaptchaToken);
 
   try {
     generatedPDFBlob = await generatePDF(formData); // Store the generated PDF blob

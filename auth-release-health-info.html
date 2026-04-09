@@ -231,7 +231,40 @@
         style="display: none"
       ></div>
 
-      <form id="healthInfoForm" method="post" enctype="multipart/form-data">
+      <!-- this form is under construction -->
+      <div class="alert alert-warning" role="alert">
+        <p style="max-width: 800px; font-weight: 600">
+          This page is under construction! If you need to submit a release of
+          health information form, please download the fillable PDF version. The
+          online form will be fully functional soon; we apologize for the
+          inconvenience.
+        </p>
+        <p style="font-style: italic">
+          Further instructions can be found in the PDF.
+        </p>
+        <div class="d-flex gap-2 mt-4">
+          <a
+            href="/pdfs/Release_of_Health_Information_2025_fillable.pdf"
+            class="btn btn-outline-primary"
+            download
+            >Download Fillable PDF</a
+          >
+          <!-- view in browser -->
+          <a
+            href="/pdfs/Release_of_Health_Information_2025_fillable.pdf"
+            class="btn btn-outline-primary"
+            target="_blank"
+            >Open in Browser</a
+          >
+        </div>
+      </div>
+
+      <form
+        id="healthInfoForm"
+        method="post"
+        enctype="multipart/form-data"
+        style="display: none"
+      >
         <!-- INTRO SECTION -->
         <div class="row">
           <div class="col-12 col-md-6 mb-3">
@@ -629,10 +662,6 @@
                 <a id="pdfDownload" href="#" class="btn btn-outline-primary" download="Authorization_Form.pdf">Download
                     PDF</a>
             </div> -->
-        <div
-          class="g-recaptcha"
-          data-sitekey="6LfpXjcrAAAAACotrwzfqsS_CjW4Hjsqh9iWMAXe"
-        ></div>
         <!-- next button to trigger confirmation section -->
         <button type="button" class="btn btn-primary" id="reviewBtn">
           Review and Submit
@@ -660,6 +689,7 @@
           form, I certify that I am legally authorized to do so.
         </p>
 
+        <div class="g-recaptcha mb-3" data-sitekey="V2_SITE_KEY_HERE"></div>
         <button class="btn btn-secondary" type="button" id="goBack">
           Go back
         </button>
