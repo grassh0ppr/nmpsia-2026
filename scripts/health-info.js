@@ -5,7 +5,9 @@ const statusMessageEl = document.getElementById("formStatusMessage");
 
 reviewBtn.addEventListener("click", showConfirmation);
 goBackBtn.addEventListener("click", goBack);
-submitBtn.addEventListener("click", submitForm);
+// Note: submitBtn is wired up via reCAPTCHA's data-callback="submitForm"
+// (see auth-release-health-info.html). reCAPTCHA intercepts the click,
+// runs its challenge, then calls submitForm(token) with the fresh token.
 
 let storedFormData = null;
 let generatedPDFBlob;
@@ -121,7 +123,7 @@ function goBack() {
   storedFormData = null;
 }
 
-async function submitForm() {
+window.submitForm = async function submitForm(recaptchaToken) {
   clearStatusMessage();
   showStatusMessage(
     "Submitting your form. This may take a few moments, please do not close this page.",
@@ -151,11 +153,11 @@ async function submitForm() {
   // add the attachments string to the formData
   formData.append("attachments", attachmentsStr);
 
-  // Capture the reCAPTCHA token fresh from the confirmation page
-  let recaptchaToken = grecaptcha.getResponse();
+  // The reCAPTCHA token is passed in by reCAPTCHA's data-callback on the
+  // Confirm button. If it's missing for any reason, bail out.
   if (!recaptchaToken) {
     showStatusMessage(
-      "Please complete the reCAPTCHA before submitting.",
+      "reCAPTCHA verification failed. Please try again.",
       "warning",
     );
     goBackBtn.disabled = false;
@@ -248,7 +250,7 @@ async function submitForm() {
   }
 
   console.log(formData);
-}
+};
 
 function generatePDF(formData) {
   return new Promise((resolve, reject) => {

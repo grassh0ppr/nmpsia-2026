@@ -683,14 +683,17 @@
           form, I certify that I am legally authorized to do so.
         </p>
 
-        <div
-          class="g-recaptcha mb-3"
-          data-sitekey="6LftQ9QkAAAAACRTTGhZIGU8KJ_finlm3mkelulx"
-        ></div>
         <button class="btn btn-secondary" type="button" id="goBack">
           Go back
         </button>
-        <button class="btn btn-primary" type="button" id="submitBtn">
+        <button
+          class="btn btn-primary g-recaptcha"
+          type="button"
+          id="submitBtn"
+          data-sitekey="6LftQ9QkAAAAACRTTGhZIGU8KJ_finlm3mkelulx"
+          data-callback="submitForm"
+          data-action="submit"
+        >
           Confirm
         </button>
         <!-- <div class="loading">Submitting...</div> -->
