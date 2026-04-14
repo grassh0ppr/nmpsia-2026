@@ -89,9 +89,6 @@ async function showConfirmation() {
         <p><strong>Policyholder signature:</strong> ${formData.get(
           "signaturePolicyholder",
         )} (Date: ${formData.get("policyholderSigDate")})</p>
-        <p><strong>Personal rep signature:</strong> ${formData.get(
-          "signaturePersonalRep",
-        )} (Date: ${formData.get("personalRepSigDate")})</p>
     `;
 
   // display selected supporting documents
@@ -384,14 +381,6 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
     `Policyholder signature: ${formData.get(
       "signaturePolicyholder",
     )} (Date: ${formData.get("policyholderSigDate")})`,
-    x,
-    y,
-  );
-  y += lineHeight;
-  doc.text(
-    `Personal rep signature: ${formData.get(
-      "signaturePersonalRep",
-    )} (Date: ${formData.get("personalRepSigDate")})`,
     x,
     y,
   );
