@@ -57,8 +57,11 @@ async function showConfirmation() {
           "policyHolderName",
         )}</p>
         <p><strong>Patient name:</strong> ${formData.get("patientName")}</p>
-        <p><strong>Point of contact:</strong> ${formData.get(
+        <p><strong>Contact email:</strong> ${formData.get(
           "authorizedEntity",
+        )}</p>
+        <p><strong>Contact phone:</strong> ${formData.get(
+          "contactPhone",
         )}</p>
         <p><strong>Authorized organization(s):</strong> ${getSelectedCarriers()}</p>
         <p><strong>Provider name:</strong> ${formData.get("providerName")}</p>
@@ -304,7 +307,9 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   y += lineHeight;
   doc.text(`Patient name: ${formData.get("patientName")}`, x, y);
   y += lineHeight;
-  doc.text(`Point of contact: ${formData.get("authorizedEntity")}`, x, y);
+  doc.text(`Contact email: ${formData.get("authorizedEntity")}`, x, y);
+  y += lineHeight;
+  doc.text(`Contact phone: ${formData.get("contactPhone")}`, x, y);
   y += lineHeight;
   doc.text(`Authorized organization(s): ${getSelectedCarriers()}`, x, y);
   y += lineHeight;
