@@ -56,7 +56,7 @@
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="css/main.css?v=1" />
     <link rel="stylesheet" href="css/queries.css?v=1" />
-    <link rel="stylesheet" href="css/form.css?v=2" />
+    <link rel="stylesheet" href="css/form.css?v=2.1" />
 
     <!-- components -->
     <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"></script>
@@ -86,11 +86,6 @@
         body .new-form-container {
           padding: 1.5rem 1rem;
         }
-      }
-
-      /* Purple gradient accents for header */
-      body .new-form-container .main-section-header {
-        border-bottom: 3px solid #667eea;
       }
 
       /* Purple gradient accents for form fields - using :focus-visible for better specificity */
@@ -215,14 +210,20 @@
     </div>
 
     <main class="container new-form-container p-3">
-      <div class="main-section-header">
-        <img
-          src="images/NMPSIA-Logo-transparent-2023.png"
-          class="logo"
-          alt="NMPSIA logo"
-        />
-        <h2>Authorization for Release of Health Information</h2>
-      </div>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Authorization for Release of Health Information
+          </h1>
+        </div>
+        <div class="hero-logo">
+          <img
+            src="images/nmpsia_logo_2024.png"
+            alt="NMPSIA logo"
+            class="logo"
+          />
+        </div>
+      </section>
 
       <div
         id="formStatusMessage"
@@ -231,32 +232,20 @@
         style="display: none"
       ></div>
 
-      <!-- this form is under construction -->
-      <!-- <div class="alert alert-warning" role="alert">
-        <p style="max-width: 800px; font-weight: 600">
-          This page is under construction! If you need to submit a release of
-          health information form, please download the fillable PDF version. The
-          online form will be fully functional soon; we apologize for the
-          inconvenience.
+      <div class="form-intro-blurb">
+        <p>
+          Use this form to authorize NMPSIA to access and share your health
+          information with your insurance carrier on your behalf. This is
+          typically needed when you need help resolving a claim dispute,
+          reviewing a denied procedure, or requesting a prescription cost
+          reduction.
         </p>
-        <p style="font-style: italic">
-          Further instructions can be found in the PDF.
+        <p>
+          Once submitted, NMPSIA will review your request and follow up at the
+          contact information you provide. A PDF copy of your completed form
+          will be downloaded to your device for your records.
         </p>
-        <div class="d-flex gap-2 mt-4">
-          <a
-            href="/pdfs/Release_of_Health_Information_2025_fillable.pdf"
-            class="btn btn-outline-primary"
-            download
-            >Download Fillable PDF</a
-          >
-          <a
-            href="/pdfs/Release_of_Health_Information_2025_fillable.pdf"
-            class="btn btn-outline-primary"
-            target="_blank"
-            >Open in Browser</a
-          >
-        </div>
-      </div> -->
+      </div>
 
       <form id="healthInfoForm" method="post" enctype="multipart/form-data">
         <!-- SECTION 1: PERSONAL INFORMATION -->
@@ -275,6 +264,7 @@
                 class="form-control"
                 id="policyHolderName"
                 name="policyHolderName"
+                placeholder="e.g. Jane Smith"
               />
             </div>
 
@@ -285,6 +275,7 @@
                 class="form-control"
                 id="patientName"
                 name="patientName"
+                placeholder="e.g. John Smith"
               />
             </div>
           </div>
@@ -301,7 +292,7 @@
                 type="email"
                 class="form-control"
                 id="authorizedEntity"
-                placeholder="Email address"
+                placeholder="e.g. jane.smith@email.com"
                 name="authorizedEntity"
                 required
               />
@@ -429,6 +420,7 @@
                 class="form-control"
                 id="providerName"
                 name="providerName"
+                placeholder="e.g. Dr. Maria Garcia"
               />
             </div>
             <div class="col-12 col-md-6">
@@ -474,6 +466,7 @@
                 class="form-control"
                 id="providerPhone"
                 name="providerPhone"
+                placeholder="(555) 555-5555"
               />
             </div>
             <div class="col-12 col-md-6">
@@ -485,6 +478,7 @@
                 class="form-control"
                 id="providerEmail"
                 name="providerEmail"
+                placeholder="e.g. provider@clinic.com"
               />
             </div>
           </div>
@@ -508,6 +502,7 @@
               id="claimDetails"
               rows="3"
               name="claimDetails"
+              placeholder="e.g. On 03/15/2026 I had a procedure (knee MRI) at ABC Imaging Center. The claim was denied stating it was not pre-authorized..."
             ></textarea>
 
             <p class="mb-1 mt-3">Please include any supporting documents</p>
@@ -531,6 +526,7 @@
               id="purposeOfReq"
               rows="3"
               name="purposeOfReq"
+              placeholder="e.g. I am requesting assistance with this denied claim. I would like the claim reviewed and reprocessed..."
             ></textarea>
           </div>
         </div>
@@ -611,6 +607,7 @@
                   class="form-control"
                   id="personalRepName"
                   name="personalRepName"
+                  placeholder="If applicable"
                 />
               </div>
 
@@ -623,6 +620,7 @@
                   class="form-control"
                   id="personalRepContactInfo"
                   name="personalRepContactInfo"
+                  placeholder="Phone or email"
                 />
               </div>
             </div>
@@ -638,6 +636,7 @@
                 class="form-control"
                 id="signaturePatient"
                 name="signaturePatient"
+                placeholder="Type your full legal name"
                 required
               />
             </div>
@@ -662,6 +661,7 @@
                 class="form-control"
                 id="signaturePolicyholder"
                 name="signaturePolicyholder"
+                placeholder="Type your full legal name"
               />
             </div>
             <div class="mb-3 col-4">
