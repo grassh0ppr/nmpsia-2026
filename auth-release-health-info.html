@@ -259,403 +259,410 @@
       </div> -->
 
       <form id="healthInfoForm" method="post" enctype="multipart/form-data">
-        <!-- INTRO SECTION -->
-        <div class="row">
-          <div class="col-12 col-md-6 mb-3">
-            <label for="policyHolderName" class="form-label"
-              >Policy holder name</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="policyHolderName"
-              name="policyHolderName"
-            />
-          </div>
-
-          <div class="col-12 col-md-6 mb-3">
-            <label for="patientName" class="form-label">Patient name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="patientName"
-              name="patientName"
-            />
-          </div>
-        </div>
-        <!-- <p class="my-3"><strong>I, <span id="patientNameInline"></span> (patient name), hereby authorize New Mexico
-                    Public Schools
-                    Insurance
-                    Authority the
-                    use or disclosure of my health information as described in this authorization.</strong>
-            </p> -->
-        <!-- SECTION A AUTHORIZED ENTITY & CARRIERS -->
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="authorizedEntity" class="form-label">
-              &nbsp;Who may we respond to about this authorization?:
-            </label>
-            <input
-              type="email"
-              class="form-control"
-              id="authorizedEntity"
-              placeholder="Email address"
-              name="authorizedEntity"
-              required
-            />
-          </div>
-        </div>
-        <!-- CARRIERS SELECTION -->
-        <p class="mb-4 mt-2">
-          A. &nbsp;Specific organization(s) authorized to provide the
-          information <strong>(please select all that apply):</strong>
-        </p>
-        <div class="row mb-3">
-          <div class="col-12">
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="carrier-checkbox form-check-input"
-                id="checkBCBS"
-                name="carrierSelection"
-                value="BlueCross BlueShield"
-              />
-              <label for="checkBCBS" class="form-label"
-                >BlueCross BlueShield</label
-              >
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="carrier-checkbox form-check-input"
-                id="checkPresbyterian"
-                value="Presbyterian"
-                name="carrierSelection"
-              />
-              <label for="checkPresbyterian" class="form-label"
-                >Presbyterian</label
-              >
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="carrier-checkbox form-check-input"
-                id="checkCVS"
-                value="CVS"
-                name="carrierSelection"
-              />
-              <label for="checkCVS" class="form-label">CVS</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="carrier-checkbox form-check-input"
-                id="checkDavis"
-                value="Davis Vision"
-                name="carrierSelection"
-              />
-              <label for="checkDavis" class="form-label">Davis Vision</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="carrier-checkbox form-check-input"
-                id="checkBCBSDental"
-                value="BlueCare Dental"
-                name="carrierSelection"
-              />
-              <label for="checkBCBSDental" class="form-label"
-                >BlueCare Dental</label
-              >
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="carrier-checkbox form-check-input"
-                id="checkDeltaDental"
-                value="Delta Dental"
-                name="carrierSelection"
-              />
-              <label for="checkDeltaDental" class="form-label"
-                >Delta Dental</label
-              >
-            </div>
-            <div class="form-check form-check-inline">
-              <input
-                type="checkbox"
-                class="carrier-checkbox form-check-input"
-                id="checkUnitedConcordia"
-                value="United Concordia"
-                name="carrierSelection"
-              />
-              <label for="checkUnitedConcordia" class="form-label"
-                >United Concordia</label
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- PROVIDER NAME -->
-        <div class="row mb-3">
-          <div class="col-12 col-md-6">
-            <label for="providerName" class="form-label"
-              >Name of provider:
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="providerName"
-              name="providerName"
-            />
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="mb-3">
-              <label class="form-label">Network selection:</label>
-              <div>
-                <input
-                  type="radio"
-                  id="inNetwork"
-                  name="In-network"
-                  value="true"
-                  class="form-check-input"
-                  required
-                />
-                <label for="inNetwork" class="form-check-label"
-                  >In network</label
-                >
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="outNetwork"
-                  name="In-network"
-                  value="false"
-                  class="form-check-input"
-                  required
-                />
-                <label for="outNetwork" class="form-check-label"
-                  >Out of network</label
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- PROVIDER PHONE & EMAIL -->
-        <div class="row mb-3">
-          <div class="col-12 col-md-6">
-            <label for="providerPhone" class="form-label"
-              >Provider phone number:</label
-            >
-            <input
-              type="tel"
-              class="form-control"
-              id="providerPhone"
-              name="providerPhone"
-            />
-          </div>
-          <div class="col-12 col-md-6">
-            <label for="providerEmail" class="form-label"
-              >Provider email:</label
-            >
-            <input
-              type="email"
-              class="form-control"
-              id="providerEmail"
-              name="providerEmail"
-            />
-          </div>
-        </div>
-
-        <!-- SECTION B CLAIM DETAILS -->
-        <div class="mb-3">
-          <label for="claimDetails" class="form-label">
-            B. &nbsp;Information Regarding Your Claim- Please provide detailed
-            information of what your issue is. Include date of service and names
-            of prescriptions or procedures you would like reviewed.
-          </label>
-          <textarea
-            class="form-control"
-            id="claimDetails"
-            rows="3"
-            name="claimDetails"
-          ></textarea>
-
-          <!-- SUPPORTING DOCUMENTS -->
-          <p class="mb-1 mt-1">Please include any supporting documents</p>
-          <input
-            type="file"
-            name="supportingDocs"
-            id="supportingDocs"
-            multiple
-          />
-          <div id="fileList"></div>
-        </div>
-
-        <!-- SECTION C PURPOSE OF REQUEST -->
-        <div class="mb-3">
-          <label for="purposeOfReq" class="form-label">
-            C. &nbsp;Please describe the purpose of your request (e.g.,
-            "assistance with claim," "prescription cost reduction," etc.) and
-            specify the desired outcome.
-          </label>
-          <textarea
-            class="form-control"
-            id="purposeOfReq"
-            rows="3"
-            name="purposeOfReq"
-          ></textarea>
-        </div>
-
-        <!-- SECTION D RIGHT TO REVOKE -->
-        <div class="mb-3">
-          <p class="mb-1 mt-1">
-            D. &nbsp;Right to revoke. I understand that I have the right to
-            revoke this authorization at any time by notifying NMPSIA in writing
-            at 410 Old Taos Highway, Santa Fe, NM 87501. I understand that the
-            revocation is only effective after it is received and logged by
-            NMPSIA. I understand that any use or disclosure made prior to the
-            revocation under this authorization will not be affected by a
-            revocation.
-          </p>
-          <input
-            class="ms-4"
-            type="checkbox"
-            name="rightToRevoke"
-            id="rightToRevoke"
-          />
-          <label for="rightToRevoke" class="form-label"
-            >I agree to the above statement</label
-          >
-        </div>
-
-        <!-- SECTION E DISCLOSURE -->
-        <div class="mb-3">
-          <p class="mb-1 mt-1">
-            E. &nbsp;I understand that after this information is disclosed,
-            federal law might not protect it and the recipient might redisclose
-            it. I understand that I am entitled to receive a copy of this
-            authorization. I understand that this authorization will expire when
-            my inquiry or appeal has been acted upon by NMPSIA.
-          </p>
-          <input
-            class="ms-4"
-            type="checkbox"
-            name="understandDisclosureAndCopy"
-            id="understandDisclosureAndCopy"
-          />
-          <label for="understandDisclosureAndCopy" class="form-label"
-            >I agree to the above statement</label
-          >
-        </div>
-
-        <hr />
-        <!-- SECTION F | PERSONAL REPRESENTATIVE -->
-        <div class="mb-3">
-          <p class="mb-1 mt-1">
-            F. &nbsp;Personal representative section: If a personal
-            representative executes this form, that Representative warrants that
-            he or she has authority to sign this form.
-          </p>
+        <!-- SECTION 1: PERSONAL INFORMATION -->
+        <div class="form-section">
+          <h3 class="form-section-heading">
+            <span class="form-section-number">1</span>
+            Personal Information
+          </h3>
           <div class="row">
             <div class="col-12 col-md-6 mb-3">
-              <label for="personalRepName" class="form-label"
-                >Representative name</label
+              <label for="policyHolderName" class="form-label"
+                >Policy holder name</label
               >
               <input
                 type="text"
                 class="form-control"
-                id="personalRepName"
-                name="personalRepName"
+                id="policyHolderName"
+                name="policyHolderName"
               />
             </div>
 
             <div class="col-12 col-md-6 mb-3">
-              <label for="personalRepContactInfo" class="form-label"
-                >Representative phone/email</label
-              >
+              <label for="patientName" class="form-label">Patient name</label>
               <input
                 type="text"
                 class="form-control"
-                id="personalRepContactInfo"
-                name="personalRepContactInfo"
+                id="patientName"
+                name="patientName"
+              />
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="authorizedEntity" class="form-label">
+                Contact email for correspondence
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                id="authorizedEntity"
+                placeholder="Email address"
+                name="authorizedEntity"
+                required
+              />
+              <small class="text-muted"
+                >Who may we respond to about this authorization?</small
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2: INSURANCE & PROVIDER DETAILS -->
+        <div class="form-section">
+          <h3 class="form-section-heading">
+            <span class="form-section-number">2</span>
+            Insurance &amp; Provider Details
+          </h3>
+
+          <p class="mb-3">
+            Specific organization(s) authorized to provide the information
+            <strong>(please select all that apply): </strong
+            ><b style="color: red">*</b>
+          </p>
+          <div class="row mb-3">
+            <div class="col-12">
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  class="carrier-checkbox form-check-input"
+                  id="checkBCBS"
+                  name="carrierSelection"
+                  value="BlueCross BlueShield"
+                />
+                <label for="checkBCBS" class="form-label"
+                  >BlueCross BlueShield</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  class="carrier-checkbox form-check-input"
+                  id="checkPresbyterian"
+                  value="Presbyterian"
+                  name="carrierSelection"
+                />
+                <label for="checkPresbyterian" class="form-label"
+                  >Presbyterian</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  class="carrier-checkbox form-check-input"
+                  id="checkCVS"
+                  value="CVS"
+                  name="carrierSelection"
+                />
+                <label for="checkCVS" class="form-label">CVS</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  class="carrier-checkbox form-check-input"
+                  id="checkDavis"
+                  value="Davis Vision"
+                  name="carrierSelection"
+                />
+                <label for="checkDavis" class="form-label">Davis Vision</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  class="carrier-checkbox form-check-input"
+                  id="checkBCBSDental"
+                  value="BlueCare Dental"
+                  name="carrierSelection"
+                />
+                <label for="checkBCBSDental" class="form-label"
+                  >BlueCare Dental</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  class="carrier-checkbox form-check-input"
+                  id="checkDeltaDental"
+                  value="Delta Dental"
+                  name="carrierSelection"
+                />
+                <label for="checkDeltaDental" class="form-label"
+                  >Delta Dental</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  class="carrier-checkbox form-check-input"
+                  id="checkUnitedConcordia"
+                  value="United Concordia"
+                  name="carrierSelection"
+                />
+                <label for="checkUnitedConcordia" class="form-label"
+                  >United Concordia</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <label for="providerName" class="form-label"
+                >Name of provider:
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="providerName"
+                name="providerName"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Network selection:</label>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    id="inNetwork"
+                    name="In-network"
+                    value="true"
+                    class="form-check-input"
+                    required
+                  />
+                  <label for="inNetwork" class="form-check-label"
+                    >In network</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    id="outNetwork"
+                    name="In-network"
+                    value="false"
+                    class="form-check-input"
+                    required
+                  />
+                  <label for="outNetwork" class="form-check-label"
+                    >Out of network</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <label for="providerPhone" class="form-label"
+                >Provider phone number:</label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="providerPhone"
+                name="providerPhone"
+              />
+            </div>
+            <div class="col-12 col-md-6">
+              <label for="providerEmail" class="form-label"
+                >Provider email:</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="providerEmail"
+                name="providerEmail"
               />
             </div>
           </div>
         </div>
-        <hr />
-        <!-- SIGNATURES -->
-        <div class="row">
-          <div class="mb-3 col-8">
-            <label for="signaturePatient" class="form-label"
-              >Signature of patient (18+)</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="signaturePatient"
-              name="signaturePatient"
-              required
-            />
-          </div>
-          <div class="mb-3 col-4">
-            <label for="patientSigDate" class="form-label">Date</label>
-            <input
-              type="date"
-              class="form-control"
-              id="patientSigDate"
-              name="patientSigDate"
-              required
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="mb-3 col-8">
-            <label for="signaturePolicyholder" class="form-label"
-              >Signature of policyholder</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="signaturePolicyholder"
-              name="signaturePolicyholder"
-            />
-          </div>
-          <div class="mb-3 col-4">
-            <label for="policyholderSigDate" class="form-label">Date</label>
-            <input
-              type="date"
-              class="form-control"
-              id="policyholderSigDate"
-              name="policyholderSigDate"
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="mb-3 col-8">
-            <label for="signaturePersonalRep" class="form-label">
-              Signature of personal representative (if patient is under 18)
+
+        <!-- SECTION 3: CLAIM DETAILS -->
+        <div class="form-section">
+          <h3 class="form-section-heading">
+            <span class="form-section-number">3</span>
+            Claim Details
+          </h3>
+
+          <div class="mb-3">
+            <label for="claimDetails" class="form-label">
+              Please provide detailed information of what your issue is. Include
+              date of service and names of prescriptions or procedures you would
+              like reviewed.
             </label>
-            <input
-              type="text"
+            <textarea
               class="form-control"
-              id="signaturePersonalRep"
-              name="signaturePersonalRep"
+              id="claimDetails"
+              rows="3"
+              name="claimDetails"
+            ></textarea>
+
+            <p class="mb-1 mt-3">Please include any supporting documents</p>
+            <input
+              type="file"
+              name="supportingDocs"
+              id="supportingDocs"
+              multiple
             />
+            <div id="fileList"></div>
           </div>
-          <div class="mb-3 col-4">
-            <label for="personalRepSigDate" class="form-label">Date</label>
-            <input
-              type="date"
+
+          <div class="mb-3">
+            <label for="purposeOfReq" class="form-label">
+              Please describe the purpose of your request (e.g., "assistance
+              with claim," "prescription cost reduction," etc.) and specify the
+              desired outcome.
+            </label>
+            <textarea
               class="form-control"
-              id="personalRepSigDate"
-              name="personalRepSigDate"
-            />
+              id="purposeOfReq"
+              rows="3"
+              name="purposeOfReq"
+            ></textarea>
           </div>
         </div>
-        <!-- <div id="downloadLink" style="display: none" class="my-3">
-                <a id="pdfDownload" href="#" class="btn btn-outline-primary" download="Authorization_Form.pdf">Download
-                    PDF</a>
-            </div> -->
+
+        <!-- SECTION 4: TERMS & CONDITIONS -->
+        <div class="form-section">
+          <h3 class="form-section-heading">
+            <span class="form-section-number">4</span>
+            Terms &amp; Conditions
+          </h3>
+
+          <div class="mb-3">
+            <p class="mb-1 mt-1">
+              <strong>Right to revoke.</strong> I understand that I have the
+              right to revoke this authorization at any time by notifying NMPSIA
+              in writing at 410 Old Taos Highway, Santa Fe, NM 87501. I
+              understand that the revocation is only effective after it is
+              received and logged by NMPSIA. I understand that any use or
+              disclosure made prior to the revocation under this authorization
+              will not be affected by a revocation.
+            </p>
+            <div class="form-check ms-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="rightToRevoke"
+                id="rightToRevoke"
+              />
+              <label for="rightToRevoke" class="form-label"
+                >I agree to the above statement</label
+              >
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <p class="mb-1 mt-1">
+              <strong>Disclosure.</strong> I understand that after this
+              information is disclosed, federal law might not protect it and the
+              recipient might redisclose it. I understand that I am entitled to
+              receive a copy of this authorization. I understand that this
+              authorization will expire when my inquiry or appeal has been acted
+              upon by NMPSIA.
+            </p>
+            <div class="form-check ms-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="understandDisclosureAndCopy"
+                id="understandDisclosureAndCopy"
+              />
+              <label for="understandDisclosureAndCopy" class="form-label"
+                >I agree to the above statement</label
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 5: SIGNATURES -->
+        <div class="form-section">
+          <h3 class="form-section-heading">
+            <span class="form-section-number">5</span>
+            Signatures
+          </h3>
+
+          <div class="mb-4">
+            <p class="mb-2 text-muted">
+              <strong>Personal representative:</strong> If a personal
+              representative executes this form, that Representative warrants
+              that he or she has authority to sign this form.
+            </p>
+            <div class="row">
+              <div class="col-12 col-md-6 mb-3">
+                <label for="personalRepName" class="form-label optional"
+                  >Representative name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="personalRepName"
+                  name="personalRepName"
+                />
+              </div>
+
+              <div class="col-12 col-md-6 mb-3">
+                <label for="personalRepContactInfo" class="form-label optional"
+                  >Representative phone/email</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="personalRepContactInfo"
+                  name="personalRepContactInfo"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-8">
+              <label for="signaturePatient" class="form-label"
+                >Signature of patient (18+)</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="signaturePatient"
+                name="signaturePatient"
+                required
+              />
+            </div>
+            <div class="mb-3 col-4">
+              <label for="patientSigDate" class="form-label">Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="patientSigDate"
+                name="patientSigDate"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="mb-3 col-8">
+              <label for="signaturePolicyholder" class="form-label"
+                >Signature of policyholder</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="signaturePolicyholder"
+                name="signaturePolicyholder"
+              />
+            </div>
+            <div class="mb-3 col-4">
+              <label for="policyholderSigDate" class="form-label">Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="policyholderSigDate"
+                name="policyholderSigDate"
+              />
+            </div>
+          </div>
+        </div>
+
         <!-- next button to trigger confirmation section -->
         <button type="button" class="btn btn-primary" id="reviewBtn">
           Review and Submit
