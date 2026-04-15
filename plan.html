@@ -735,7 +735,6 @@
               data-sitekey="6LftQ9QkAAAAACRTTGhZIGU8KJ_finlm3mkelulx"
               data-callback="sendMessage"
               data-action="submit"
-              data-bs-dismiss="modal"
             >
               Send message
             </button>
@@ -846,30 +845,40 @@
           if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
               var res = xhr.responseText;
-
               console.log(res);
-              document.getElementById("alertModalLabel").innerHTML =
-                "Submitted ✅";
-              // document.getElementById("result").innerHTML = res;
-              document.getElementById("result").innerHTML =
-                "We received your request and will be in touch!";
 
-              document.querySelector("#ipraModal").classList.remove("show");
-              document.querySelector("#ipraModal").classList.add("hide");
+              if (res.toLowerCase().includes("failed")) {
+                document.getElementById("alertModalLabel").innerHTML =
+                  "Submission Error ⛔";
+                document.getElementById("result").innerHTML =
+                  "Sorry, there was a problem processing your request. Please contact NMPSIA directly at 800-548-3724, ext. 1002.";
+              } else {
+                document.getElementById("alertModalLabel").innerHTML =
+                  "Submitted ✅";
+                document.getElementById("result").innerHTML =
+                  "We received your request and will be in touch!";
+              }
 
-              document.querySelector("#alertModal").classList.remove("hide");
-              document.querySelector("#alertModal").classList.add("show");
+              var ipraModalEl = document.getElementById("ipraModal");
+              var alertModalEl = document.getElementById("alertModal");
+              var ipraModal = bootstrap.Modal.getInstance(ipraModalEl) || new bootstrap.Modal(ipraModalEl);
+              var alertModal = new bootstrap.Modal(alertModalEl);
+              ipraModal.hide();
+              alertModal.show();
             } else {
               var res = xhr.statusText;
               console.error("Error:", res);
               document.getElementById("alertModalLabel").innerHTML =
                 "Whoops, something went wrong. ⛔";
               document.getElementById("result").innerHTML =
-                "Sorry, there was an error submitting your request!";
-              document.querySelector("#ipraModal").classList.remove("show");
-              document.querySelector("#ipraModal").classList.add("hide");
-              document.querySelector("#alertModal").classList.remove("hide");
-              document.querySelector("#alertModal").classList.add("show");
+                "Sorry, there was an error submitting your request. Please contact NMPSIA directly at 800-548-3724, ext. 1002.";
+
+              var ipraModalEl = document.getElementById("ipraModal");
+              var alertModalEl = document.getElementById("alertModal");
+              var ipraModal = bootstrap.Modal.getInstance(ipraModalEl) || new bootstrap.Modal(ipraModalEl);
+              var alertModal = new bootstrap.Modal(alertModalEl);
+              ipraModal.hide();
+              alertModal.show();
             }
           }
         };
@@ -877,18 +886,7 @@
         document.getElementById("sendMsgButton").disabled = true;
       }
 
-      var dismissButton = document.querySelector("#alertModal .btn-close");
-      var closeButton = document.querySelector("#alertModal .btn-secondary");
-
-      dismissButton.addEventListener("click", function () {
-        document.querySelector("#alertModal").classList.remove("show");
-        document.querySelector("#alertModal").classList.add("hide");
-      });
-
-      closeButton.addEventListener("click", function () {
-        document.querySelector("#alertModal").classList.remove("show");
-        document.querySelector("#alertModal").classList.add("hide");
-      });
+      // Alert modal close buttons use data-bs-dismiss="modal" so Bootstrap handles them automatically.
     </script>
 
     <!-- <script src="/JavaScript/mobileSidenav.js"></script> -->
