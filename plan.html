@@ -67,7 +67,7 @@
     <script src="./scripts/components/board-meeting-packets.js?v=3.1"></script>
     <script src="./scripts/components/rules-component.js"></script>
     <script src="./scripts/components/stat-reporting-component.js"></script>
-    <script src="./scripts/components/carrier-contacts-component.js?v=1.1"></script>
+    <script src="./scripts/components/carrier-contacts-component.js?v=1.2"></script>
     <script src="./scripts/components/webflow-navbar-component.js?v=1.1"></script>
 
     <style>
@@ -861,7 +861,9 @@
 
               var ipraModalEl = document.getElementById("ipraModal");
               var alertModalEl = document.getElementById("alertModal");
-              var ipraModal = bootstrap.Modal.getInstance(ipraModalEl) || new bootstrap.Modal(ipraModalEl);
+              var ipraModal =
+                bootstrap.Modal.getInstance(ipraModalEl) ||
+                new bootstrap.Modal(ipraModalEl);
               var alertModal = new bootstrap.Modal(alertModalEl);
               ipraModal.hide();
               alertModal.show();
@@ -875,7 +877,9 @@
 
               var ipraModalEl = document.getElementById("ipraModal");
               var alertModalEl = document.getElementById("alertModal");
-              var ipraModal = bootstrap.Modal.getInstance(ipraModalEl) || new bootstrap.Modal(ipraModalEl);
+              var ipraModal =
+                bootstrap.Modal.getInstance(ipraModalEl) ||
+                new bootstrap.Modal(ipraModalEl);
               var alertModal = new bootstrap.Modal(alertModalEl);
               ipraModal.hide();
               alertModal.show();

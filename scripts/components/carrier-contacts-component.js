@@ -284,7 +284,7 @@ class CarrierContacts extends HTMLElement {
                       <i class="bx bx-phone"></i>1-888-609-9763 Ext. 0957
                     </a>
                     <a
-                      href="./TheStandard.html"
+                      href="https://www.standard.com/"
                       class="carrier-website"
                       target="_blank"
                     >
