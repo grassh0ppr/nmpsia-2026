@@ -248,141 +248,113 @@ class WorkersComp extends HTMLElement {
               </div>
             </div>
           </div>
-          <!-- table -->
-          <div class="table-responsive-wrapper">
-          <table id="ccmsi-wc-contacts" class="table table-striped mt-5 my-2">
-            <caption class="visually-hidden">CCMSI Workers' Compensation team contact information</caption>
-            <thead>
-              <tr>
-                <th scope="col">Team Member</th>
-                <th scope="col">Direct Phone &amp; Fax</th>
-                <th scope="col">Email</th>
-                <th scope="col">Title</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- <tr>
-    
-                  <td>Jerry Mayo</td>
-                  <td>
-                    O: <a href="tel:15058378730">(505) 837-8730</a><br />
-                    F: (217) 477-6330
-                  </td>
-    
-                  <td>
-                    <a href="mailto:jmayo@ccmsi.com">jmayo@ccmsi.com</a>
-                  </td>
-                  <td>NMPSIA Claims Supervisor</td>
-                </tr> -->
-              <tr>
-                <td>Cindy Carrillo</td>
-                <td>
-                  O: <a href="tel:15054319287">(505) 431-9287</a> <br />
-                  F: (217) 477-6342
-                </td>
-                <td>
-                  <a href="mailto:cindy.carrillo@ccmsi.com"
-                    >cindy.carrillo@ccmsi.com</a
-                  >
-                </td>
-                <td>NMPSIA Claims Supervisor</td>
-              </tr>
+          <!-- CCMSI Workers' Compensation team contact cards -->
+          <h5 class="subheading mt-5 mb-3">CCMSI Workers' Compensation Team</h5>
+          <ul class="wc-contact-cards" aria-label="CCMSI Workers' Compensation team contact information">
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Cindy Carrillo</h6>
+              <p class="wc-contact-title">NMPSIA Claims Supervisor</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Office</span></dt>
+                <dd><a href="tel:15054319287">(505) 431-9287</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-6342</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:cindy.carrillo@ccmsi.com">cindy.carrillo@ccmsi.com</a></dd>
+              </dl>
+            </li>
 
-              <tr>
-                <td>Renee Cobb</td>
-                <td>
-                  O: <a href="tel:15058378711">(505) 837-8711</a> <br />
-                  F: (217) 477-5924
-                </td>
-                <td>
-                  <a href="mailto:renee.cobb@ccmsi.com"
-                    >renee.cobb@ccmsi.com</a
-                  >
-                </td>
-                <td>NMPSIA Claims Supervisor</td>
-              </tr>
-              <tr>
-                <td>Audrey Perea</td>
-                <td>
-                  O: <a href="tel:15058378714">(505) 837-8714</a> <br />
-                  F: (217) 477-3118
-                </td>
-                <td>
-                  <a href="mailto:audrey.perea@ccmsi.com"
-                    >audrey.perea@ccmsi.com</a
-                  >
-                </td>
-                <td>NMPSIA Claims Representative</td>
-              </tr>
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Renee Cobb</h6>
+              <p class="wc-contact-title">NMPSIA Claims Supervisor</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Office</span></dt>
+                <dd><a href="tel:15058378711">(505) 837-8711</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-5924</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:renee.cobb@ccmsi.com">renee.cobb@ccmsi.com</a></dd>
+              </dl>
+            </li>
 
-              <tr>
-                <td>Elka Espinoza-Medina</td>
-                <td>
-                  O: <a href="tel:15054319274">(505) 431-9274</a> <br />
-                  F: (217) 477-5470
-                </td>
-                <td>
-                  <a href="mailto:emedina@ccmsi.com">emedina@ccmsi.com</a>
-                </td>
-                <td>NMPSIA Claims Representative</td>
-              </tr>
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Audrey Perea</h6>
+              <p class="wc-contact-title">NMPSIA Claims Representative</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Office</span></dt>
+                <dd><a href="tel:15058378714">(505) 837-8714</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-3118</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:audrey.perea@ccmsi.com">audrey.perea@ccmsi.com</a></dd>
+              </dl>
+            </li>
 
-              <tr>
-                <td>Haley Magwood</td>
-                <td>
-                  O: <a href="tel:15055442288">(505) 544-2288</a> <br />
-                  F: (217) 477-5948
-                </td>
-                <td>
-                  <a href="mailto:hmagwood@ccmsi.com">hmagwood@ccmsi.com</a>
-                </td>
-                <td>NMPSIA Claims Representative</td>
-              </tr>
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Elka Espinoza-Medina</h6>
+              <p class="wc-contact-title">NMPSIA Claims Representative</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Office</span></dt>
+                <dd><a href="tel:15054319274">(505) 431-9274</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-5470</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:emedina@ccmsi.com">emedina@ccmsi.com</a></dd>
+              </dl>
+            </li>
 
-              <tr>
-                <td>Natasha Orona</td>
-                <td>
-                  P: <a href="tel:15054319283">(505) 431-9283</a> <br />
-                  F: (217) 477-7462
-                </td>
-                <td>
-                  <a href="mailto:natasha.orona@ccmsi.com"
-                    >natasha.orona@ccmsi.com</a
-                  >
-                </td>
-                <td>NMPSIA Claims Representative</td>
-              </tr>
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Haley Magwood</h6>
+              <p class="wc-contact-title">NMPSIA Claims Representative</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Office</span></dt>
+                <dd><a href="tel:15055442288">(505) 544-2288</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-5948</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:hmagwood@ccmsi.com">hmagwood@ccmsi.com</a></dd>
+              </dl>
+            </li>
 
-              <tr>
-                <td>Nicole Lujan</td>
-                <td>
-                  O: <a href="tel:15054319275">(505) 431-9275</a> <br />
-                  F: (217) 477-6705
-                </td>
-                <td>
-                  <a href="mailto:nicole.lujan@ccmsi.com"
-                    >nicole.lujan@ccmsi.com</a
-                  >
-                </td>
-                <td>NMPSIA Claims Representative</td>
-              </tr>
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Natasha Orona</h6>
+              <p class="wc-contact-title">NMPSIA Claims Representative</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Phone</span></dt>
+                <dd><a href="tel:15054319283">(505) 431-9283</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-7462</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:natasha.orona@ccmsi.com">natasha.orona@ccmsi.com</a></dd>
+              </dl>
+            </li>
 
-              <tr>
-                <td>Sharon Griego</td>
-                <td>
-                  O: <a href="tel:15058378713">(505) 837-8713</a> <br />
-                  F: (217) 477-6812
-                </td>
-                <td>
-                  <a href="mailto:sharon.griego@ccmsi.com"
-                    >sharon.griego@ccmsi.com</a
-                  >
-                </td>
-                <td>NMPSIA Claims Representative</td>
-              </tr>
-            </tbody>
-          </table>
-          </div>
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Nicole Lujan</h6>
+              <p class="wc-contact-title">NMPSIA Claims Representative</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Office</span></dt>
+                <dd><a href="tel:15054319275">(505) 431-9275</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-6705</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:nicole.lujan@ccmsi.com">nicole.lujan@ccmsi.com</a></dd>
+              </dl>
+            </li>
+
+            <li class="wc-contact-card">
+              <h6 class="wc-contact-name">Sharon Griego</h6>
+              <p class="wc-contact-title">NMPSIA Claims Representative</p>
+              <dl class="wc-contact-details">
+                <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Office</span></dt>
+                <dd><a href="tel:15058378713">(505) 837-8713</a></dd>
+                <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
+                <dd>(217) 477-6812</dd>
+                <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
+                <dd><a href="mailto:sharon.griego@ccmsi.com">sharon.griego@ccmsi.com</a></dd>
+              </dl>
+            </li>
+          </ul>
     `;
   }
 }

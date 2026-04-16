@@ -4475,3 +4475,100 @@ body.modern-body::after {
   padding-top: 0.5rem;
   border-top: 1px solid rgba(12, 59, 105, 0.08);
 }
+
+/* ===== WORKERS' COMP CONTACT CARDS (risk.html CCMSI team) ===== */
+.wc-contact-cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.content-section .wc-contact-cards > .wc-contact-card,
+.wc-contact-card {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(12, 59, 105, 0.1);
+  padding: 1.25rem 1.5rem;
+  gap: 0;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.wc-contact-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.wc-contact-card .wc-contact-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #0c3b69;
+  margin: 0 0 0.15rem;
+  line-height: 1.3;
+}
+
+.wc-contact-card .wc-contact-title {
+  font-size: 0.9rem;
+  color: #5a6c7d;
+  margin: 0 0 0.85rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid rgba(12, 59, 105, 0.08);
+}
+
+.wc-contact-card .wc-contact-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  row-gap: 0.5rem;
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.wc-contact-card .wc-contact-details dt {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 500;
+  color: #5a6c7d;
+}
+
+.wc-contact-card .wc-contact-details dt .bx {
+  font-size: 1.1rem;
+  color: #0c3b69;
+}
+
+.wc-contact-card .wc-contact-details dd {
+  margin: 0;
+  color: #222;
+  word-break: break-word;
+}
+
+.wc-contact-card .wc-contact-details dd a {
+  color: #0c3b69;
+  text-decoration: none;
+}
+
+.wc-contact-card .wc-contact-details dd a:hover,
+.wc-contact-card .wc-contact-details dd a:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .wc-contact-card {
+    padding: 1rem 1.1rem;
+  }
+
+  .wc-contact-card .wc-contact-details {
+    grid-template-columns: 1fr;
+    row-gap: 0.15rem;
+  }
+
+  .wc-contact-card .wc-contact-details dd {
+    margin-bottom: 0.4rem;
+    padding-left: 1.55rem;
+  }
+}
