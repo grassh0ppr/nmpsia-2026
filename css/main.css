@@ -3290,7 +3290,8 @@ body.modern-body::after {
   width: 100%;
   margin-bottom: 1.5rem;
   background-color: #fff;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
 .content-section .table thead {
@@ -3304,6 +3305,8 @@ body.modern-body::after {
   padding: 1rem;
   text-align: left;
   border: none;
+  border-top: none;
+  border-bottom: none;
 }
 
 .content-section .table thead th:first-child {
@@ -3338,8 +3341,15 @@ body.modern-body::after {
 }
 
 /* General table header styling */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
 .table thead th {
   border: none;
+  border-top: none;
+  border-bottom: none;
 }
 
 .table thead th:first-child {
