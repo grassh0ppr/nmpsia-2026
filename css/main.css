@@ -562,6 +562,27 @@
   padding: 1rem 2rem;
 }
 
+.modal-footer .btn-secondary {
+  background-color: #204f9a;
+  border-color: #204f9a;
+  color: white;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #183d78;
+  border-color: #183d78;
+}
+
+.modal-footer .btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
+  border: none;
+  color: white;
+}
+
+.modal-footer .btn-primary:hover {
+  background: linear-gradient(135deg, #5a6fd6 0%, #433f8f 100%);
+}
+
 /* ===== BODY STYLES ===== */
 body.modern-body {
   background-image:

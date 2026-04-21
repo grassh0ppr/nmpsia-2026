@@ -78,6 +78,38 @@
       #alertModal {
         z-index: 10000;
       }
+
+      #alertModal .modal-backdrop,
+      #alertModal {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+
+      .ipra-loading-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.85);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        border-radius: 15px;
+      }
+
+      .ipra-loading-overlay .spinner-border {
+        width: 3rem;
+        height: 3rem;
+        color: #667eea;
+      }
+
+      .ipra-loading-overlay p {
+        margin-top: 1rem;
+        font-weight: 600;
+        color: #2c3e50;
+      }
     </style>
   </head>
 
@@ -749,6 +781,8 @@
       tabindex="-1"
       aria-labelledby="alertModalLabel"
       aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
     >
       <div class="modal-dialog">
         <div class="modal-content">
@@ -838,11 +872,24 @@
           t: token,
         };
 
+        // Show loading overlay on the IPRA modal
+        var modalContent = document.querySelector("#ipraModal .modal-content");
+        var loadingOverlay = document.createElement("div");
+        loadingOverlay.className = "ipra-loading-overlay";
+        loadingOverlay.innerHTML =
+          '<div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div><p>Submitting your request...</p>';
+        modalContent.style.position = "relative";
+        modalContent.appendChild(loadingOverlay);
+
         var xhr = new XMLHttpRequest();
         xhr.open("POST", "/nmpsiaapi/Api/EmailServer/SendIPRA", true);
         xhr.setRequestHeader("Content-Type", "application/json;charset=utf8");
         xhr.onreadystatechange = function () {
           if (xhr.readyState === XMLHttpRequest.DONE) {
+            // Remove loading overlay
+            if (loadingOverlay.parentNode) {
+              loadingOverlay.parentNode.removeChild(loadingOverlay);
+            }
             if (xhr.status === 200) {
               var res = xhr.responseText;
               console.log(res);
@@ -857,6 +904,7 @@
                   "Submitted ✅";
                 document.getElementById("result").innerHTML =
                   "We received your request and will be in touch!";
+                document.querySelector("#ipraModal form").reset();
               }
 
               var ipraModalEl = document.getElementById("ipraModal");
