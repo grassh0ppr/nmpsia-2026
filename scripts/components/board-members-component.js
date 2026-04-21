@@ -6,10 +6,10 @@ class BoardMembersTbl extends HTMLElement {
             <img src="images/nmpsia_logo_2024.png" alt="nmpsia logo">
         </div>
         <hr>
-        <div class="table-responsive">
+        <div class="table-responsive-wrapper">
         <table class="table table-bordered">
             <caption class="visually-hidden">List of NMPSIA Board Members and their representing organizations</caption>
-            <thead style="box-shadow: none; background-color: #204f9a; color: #fff">
+            <thead>
                 <tr>
                     <!-- <th scope="col">#</th> -->
                     <th scope="col">Name</th>

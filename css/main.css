@@ -3295,7 +3295,9 @@ body.modern-body::after {
 }
 
 .content-section .table thead {
-  background-color: #f8f9fa;
+  background-color: #667eea;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
 }
 
 .content-section .table thead th {
@@ -3305,16 +3307,6 @@ body.modern-body::after {
   padding: 1rem;
   text-align: left;
   border: none;
-  border-top: none;
-  border-bottom: none;
-}
-
-.content-section .table thead th:first-child {
-  border-radius: 8px 0 0 0;
-}
-
-.content-section .table thead th:last-child {
-  border-radius: 0 8px 0 0;
 }
 
 .content-section .table tbody td {
@@ -3346,18 +3338,13 @@ body.modern-body::after {
   border-spacing: 0;
 }
 
+.table thead {
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+
 .table thead th {
   border: none;
-  border-top: none;
-  border-bottom: none;
-}
-
-.table thead th:first-child {
-  border-radius: 8px 0 0 0;
-}
-
-.table thead th:last-child {
-  border-radius: 0 8px 0 0;
 }
 
 /* Responsive table wrapper - allows horizontal scroll on mobile */
