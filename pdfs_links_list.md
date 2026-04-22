@@ -3,7 +3,7 @@
 - ./pdfs/2025_Program_Guide_wcag_remed.pdf
 - ./pdfs/Important-Employee-Benefit-Program-Notices-2023.pdf
 - ./pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf
-- ./pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf
+- /PDFs/Updated_2026_NMPSIA_Side_by_Side_Comparison_v2.pdf
 - /PDFs/2023_OpenSwitch_Enrollment/NMPSIA Virtual Benefits Fair 2023-2024 - Printable.pdf
 - /PDFs/Board_Packet_August_30_2023.pdf
 - /PDFs/DDNM Toothbrush care RC 2024-061-DDNM-MKT.pdf
@@ -375,7 +375,7 @@
 - /pdfs/march_2025/WC_News_Mar2025.pdf
 - /pdfs/medical_claim_nm_bcbsmed.pdf
 - /pdfs/medical_claim_nm_spanish_bcbsmed.pdf
-- /pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf
+- /PDFs/Updated_2026_NMPSIA_Side_by_Side_Comparison_v2.pdf
 - /pdfs/pastPackets/2021/April_8_2021_Board_Meeting_Materials.pdf
 - /pdfs/pastPackets/2021/August_19_2021_Board_Meeting_Materials.pdf
 - /pdfs/pastPackets/2021/December_2_2021_Board_Meeting_Materials.pdf

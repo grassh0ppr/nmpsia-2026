@@ -211,7 +211,7 @@
 
 /pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf
 /pdfs/2025_Program_Guide_wcag_remed.pdf
-/pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf
+/PDFs/Updated_2026_NMPSIA_Side_by_Side_Comparison_v2.pdf
 /pdfs/Spring_2026_Newsletter_reduced.pdf
 /pdfs/poms-risk-docs/HB_128_2021.pdf
 /pdfs/annual_notifications/COMPLY_04581_NMPSIA_Important_Compliance_Notices_and_Information_for_Enrollment_2024.pdf

@@ -75,7 +75,7 @@ var SEARCH_INDEX = [
     ],
   },
   {
-    url: "pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf",
+    url: "PDFs/Updated_2026_NMPSIA_Side_by_Side_Comparison_v2.pdf",
     title: "Medical Plan Comparison Chart | NMPSIA Benefits",
     description:
       "Compare medical plan options side-by-side to find the best coverage for your needs. Detailed comparison of deductibles, copays, and coverage levels across all medical plans.",
