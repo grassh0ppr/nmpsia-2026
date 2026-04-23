@@ -161,7 +161,7 @@ const carriersData = [
       phone: "1-888-609-9763 Ext. 0957",
       phoneLink: "tel:18886099763",
       groupNumbers: "645549",
-      website: "https://www.standard.com/",
+      website: "https://www.standard.com/my-benefits/nmpsia",
       websiteText: "Visit Website",
     },
     providerSearch: null,
