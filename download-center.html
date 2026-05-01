@@ -354,6 +354,24 @@
         .download-main {
           order: 1;
         }
+
+        .download-sidebar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          width: 320px;
+          max-width: 320px;
+          z-index: 9999;
+          overflow-y: auto;
+          transform: translateX(-100%);
+          transition: transform 0.3s ease;
+          border-radius: 0;
+        }
+
+        .download-sidebar.sidebar-open {
+          transform: translateX(0);
+        }
       }
 
       @media (max-width: 900px) {
@@ -419,7 +437,7 @@
 
     <div class="download-center-layout">
       <!-- Side Navigation -->
-      <aside class="download-sidebar benefits-sidebar" id="downloadSidebar">
+      <aside class="download-sidebar" id="downloadSidebar">
         <h3><i class="bx bx-calendar me-2"></i>Meeting Files</h3>
 
         <!-- 2026 Accordion -->
@@ -733,7 +751,7 @@
         <!-- SELECTED MEETING FILES -->
         <!-- these are like containers for the main content; they all have a matching id in the aside -->
         <!-- 2026 -->
-
+        <div id="202605" class="section mt-3"></div>
         <div id="202604" class="section mt-3"></div>
         <div id="202603" class="section mt-3"></div>
         <div id="202602" class="section mt-3"></div>
