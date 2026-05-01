@@ -15,65 +15,65 @@ const homepageNews = [
     linkText: "Log into Well onTarget",
   },
 
-  // notice of public meetings - APRIL 2026
+  // notice of public meetings - MAY 2026
   {
     date: {
       day: "",
-      month: "Apr",
+      month: "May",
     },
-    title: "Notice of Public Meetings April 1 & 2, 2026",
+    title: "Notice of Public Meetings May 6 & 7, 2026",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
     linkHref:
-      "https://nmpsia.com/nmpsiadownload/202604/notice_of_public_meetings.pdf",
+      "https://nmpsia.com/nmpsiadownload/202605/notice_of_public_meetings.pdf",
     linkText: "View notice",
   },
   // BAC Meeting
   {
     date: {
-      day: "01",
-      month: "Apr",
+      day: "06",
+      month: "May",
     },
     title: "Benefits Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202604/BAC_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202605/BAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // RAC meeting
   {
     date: {
-      day: "01",
-      month: "Apr",
+      day: "06",
+      month: "May",
     },
     title: "Risk Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202604/RAC_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202605/RAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // IFR meeting
   {
     date: {
-      day: "02",
-      month: "Apr",
+      day: "07",
+      month: "May",
     },
     title: "Internal Fiscal Review Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202604/IFR_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202605/IFR_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // Board meeting
   {
     date: {
-      day: "02",
-      month: "Apr",
+      day: "07",
+      month: "May",
     },
     title: "Board of Directors Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202604/Board_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202605/Board_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
 
