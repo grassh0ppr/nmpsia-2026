@@ -1,5 +1,71 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "May 2026": [
+    {
+      name: "Wellness Newsletter - May 2026",
+      url: "/wellness/May_2026/Wellness Communication May 2026.pdf",
+    },
+    {
+      name: "NMPSIA May 2026 Work and Well-Being Newsletter",
+      url: "/wellness/May_2026/NMPSIA May 2026 Newsletter.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Events Calendar - May 2026",
+      url: "/wellness/May_2026/NMPSIA Wellness Calendar May 2026.pdf",
+    },
+    {
+      name: "May 2026 Observance Poster (English) - Feed Your Feeds: Protecting Your Mental Bandwidth",
+      url: "/wellness/May_2026/05_May Observance_2026.pdf",
+    },
+    {
+      name: "May 2026 Observance Poster (Español) - Alimenta tus Feeds: Proteger tu Ancho de Banda Mental",
+      url: "/wellness/May_2026/05_May Observance_2026 SP.pdf",
+    },
+    {
+      name: "May 2026 Cooking Show - Greens, Beans, & Berry Dreams",
+      url: "/wellness/May_2026/05_May Cooking Show_2026.pdf",
+    },
+    {
+      name: "TSG Wellness Webinar - Feed Your Feeds: Rewriting Your Digital Environment",
+      url: "/wellness/May_2026/May Wellness 2026 Webinars TSG_05.pdf",
+    },
+    {
+      name: "Well-Balanced Newsletter - May 2026: Better Sleep Month",
+      url: "/wellness/May_2026/wa2613740-well-balanced-may-26_fnl.pdf",
+    },
+    {
+      name: "Life on Mindfulness - Guided meditations, teachings, and mindfulness practices",
+      url: "/wellness/May_2026/Life on Mindfulness - 2026 - NMPSIA.pdf",
+    },
+    {
+      name: "The Mindful Center - Mindful Blood Pressure Reduction Program",
+      url: "/wellness/May_2026/Mindful Blood Pressure Reduction - NMPSIA.pdf",
+    },
+    {
+      name: "BCBS Learn to Live Digital Mental Health - Retrain Your Brain",
+      url: "/wellness/May_2026/NM Learn to Live Digital Mental Health Member Flier.pdf",
+    },
+    {
+      name: "Tue. May 12, 2026 Webinar - Brain Health",
+      url: "/wellness/May_2026/Brain Health.pdf",
+    },
+    {
+      name: "Mon. May 18, 2026 Webinar - Resilience: Rising Strong",
+      url: "/wellness/May_2026/Resilience- Rising Strong.pdf",
+    },
+    {
+      name: "Wed. May 20, 2026 Webinar - Understanding Burnout",
+      url: "/wellness/May_2026/Understanding Burnout.pdf",
+    },
+    {
+      name: "PHP Talkspace for Behavioral Health - Messaging Therapy",
+      url: "/wellness/May_2026/Talkspace Flyer Updated.pdf",
+    },
+    {
+      name: "Feeling Stiff? Full Body Workplace Stretching 6-Week Program",
+      url: "/wellness/May_2026/Full Body Workplace Stretching Program.pdf",
+    },
+  ],
   "April 2026": [
     {
       name: "Wellness Communication - April 2026",

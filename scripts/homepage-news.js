@@ -77,73 +77,49 @@ const homepageNews = [
     linkText: "View agenda",
   },
 
-  // Wellness — April 2026 upcoming events
+  // Wellness — May 2026 upcoming events
   {
     date: {
-      day: "01",
-      month: "Apr",
+      day: "12",
+      month: "May",
     },
-    title:
-      "2026 Spring into Motion Registration is Open (challenge begins April 13th)",
+    title: "Brain Health (Webinar)",
     description:
-      "Registration is open for the Spring into Motion program. The challenge begins April 13. Open the SIM flyer for details.",
-    linkHref: "/wellness/april_2026/NMPSIA SIM Flyer '26.pdf",
+      "May 12 webinar on brain health. Open the flyer for more information.",
+    linkHref: "/wellness/May_2026/Brain Health.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "15",
-      month: "Apr",
+      day: "18",
+      month: "May",
     },
-    title: "Bone Deep: Strength for Every Body (Webinar)",
+    title: "Resilience: Rising Strong (Webinar)",
     description:
-      "April 15 webinar. See the April TSG wellness webinars PDF for topic details and how to join.",
-    linkHref: "/wellness/april_2026/Wellness 2026 Webinars TSG_04.pdf",
+      "May 18 webinar on resilience. Open the flyer for more information.",
+    linkHref: "/wellness/May_2026/Resilience- Rising Strong.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "21",
-      month: "Apr",
+      day: "20",
+      month: "May",
     },
-    title: "Preventing Lifting and Back Injuries (Webinar)",
+    title: "Understanding Burnout (Webinar)",
     description:
-      "April 21 webinar on safe lifting and back injury prevention. Open the flyer for more information.",
-    linkHref: "/wellness/april_2026/Preventing Lifting and Back Injuries.pdf",
+      "May 20 webinar on understanding burnout. Open the flyer for more information.",
+    linkHref: "/wellness/May_2026/Understanding Burnout.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "23",
-      month: "Apr",
+      day: "28",
+      month: "May",
     },
-    title:
-      "Cooking Show: Garden Glow & Chocolate Flow: Stress Relief & Mindful Indulgence",
+    title: "Cooking Show: Greens, Beans, & Berry Dreams",
     description:
-      "April 23 cooking show. View the April cooking show PDF for details.",
-    linkHref: "/wellness/april_2026/04_April Cooking Show_2026.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "27",
-      month: "Apr",
-    },
-    title: "Healthy Bones and Joints (Webinar)",
-    description:
-      "April 27 webinar. See the healthy bones and joints flyer for details.",
-    linkHref: "/wellness/april_2026/Healthy Bones and Joints.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "29",
-      month: "Apr",
-    },
-    title: "Everyday Back Health (Webinar)",
-    description:
-      "April 29 webinar on everyday back health. Open the flyer for more information.",
-    linkHref: "/wellness/april_2026/Everyday Back Health.pdf",
+      "May 28 cooking show. View the May cooking show PDF for details.",
+    linkHref: "/wellness/May_2026/05_May Cooking Show_2026.pdf",
     linkText: "View flyer",
   },
 
