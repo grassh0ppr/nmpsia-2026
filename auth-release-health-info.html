@@ -236,12 +236,11 @@
         <p>
           Use this form to authorize NMPSIA to access and share your health
           information with your insurance carrier on your behalf. This is
-          typically needed when you need help resolving a claim dispute,
-          reviewing a denied procedure, or requesting a prescription cost
-          reduction.
+          typically needed when you need help resolving a medical/prescription,
+          dental, or vision claim dispute or reviewing a denied procedure.
         </p>
         <p>
-          Once submitted, NMPSIA will review your request and follow up at the
+          Once submitted, NMPSIA will review your request and follow up via the
           contact information you provide. A PDF copy of your completed form
           will be downloaded to your device for your records.
         </p>
@@ -493,9 +492,9 @@
 
           <div class="mb-3">
             <label for="claimDetails" class="form-label">
-              Please provide detailed information of what your issue is. Include
-              date of service and names of prescriptions or procedures you would
-              like reviewed.
+              Please provide detailed information of your matter. Include date
+              of service and names of medication or procedures you would like
+              reviewed and specify the desired outcome.
             </label>
             <textarea
               class="form-control"
@@ -505,7 +504,12 @@
               placeholder="e.g. On 03/15/2026 I had a procedure (knee MRI) at ABC Imaging Center. The claim was denied stating it was not pre-authorized..."
             ></textarea>
 
-            <p class="mb-1 mt-3">Please include any supporting documents</p>
+            <p class="mb-1 mt-3">
+              Please attach any supporting documents, such as Explanation of
+              Benefits (EOB), Bills, provider letters, denial notices, letter of
+              medical necessity or prescription information to assist with the
+              review.
+            </p>
             <input
               type="file"
               name="supportingDocs"
@@ -513,21 +517,6 @@
               multiple
             />
             <div id="fileList"></div>
-          </div>
-
-          <div class="mb-3">
-            <label for="purposeOfReq" class="form-label">
-              Please describe the purpose of your request (e.g., "assistance
-              with claim," "prescription cost reduction," etc.) and specify the
-              desired outcome.
-            </label>
-            <textarea
-              class="form-control"
-              id="purposeOfReq"
-              rows="3"
-              name="purposeOfReq"
-              placeholder="e.g. I am requesting assistance with this denied claim. I would like the claim reviewed and reprocessed..."
-            ></textarea>
           </div>
         </div>
 
@@ -556,7 +545,7 @@
                 id="rightToRevoke"
               />
               <label for="rightToRevoke" class="form-label"
-                >I agree to the above statement</label
+                >I agree to the above statement <b style="color: red">*</b></label
               >
             </div>
           </div>
@@ -578,8 +567,68 @@
                 id="understandDisclosureAndCopy"
               />
               <label for="understandDisclosureAndCopy" class="form-label"
+                >I agree to the above statement <b style="color: red">*</b></label
+              >
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <p class="mb-1 mt-1">
+              <strong>Personal representative.</strong> I authorize NMPSIA to
+              communicate with the individual listed above regarding my request
+              and to disclose only the minimum necessary information needed to
+              assist with this matter. This authorization applies only to this
+              request and may be revoked at any time in writing. Revocation will
+              not apply to actions already taken.
+            </p>
+            <div class="form-check ms-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="personalRepAuthorization"
+                id="personalRepAuthorization"
+              />
+              <label for="personalRepAuthorization" class="form-label"
                 >I agree to the above statement</label
               >
+            </div>
+            <div class="row mt-3" id="personalRepFields" style="display: none">
+              <div class="col-12 col-md-4 mb-3">
+                <label for="personalRepName" class="form-label"
+                  >Representative name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="personalRepName"
+                  name="personalRepName"
+                  placeholder="e.g. Jane Smith"
+                />
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <label for="personalRepPhone" class="form-label"
+                  >Representative phone</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="personalRepPhone"
+                  name="personalRepPhone"
+                  placeholder="(555) 555-5555"
+                />
+              </div>
+              <div class="col-12 col-md-4 mb-3">
+                <label for="personalRepEmail" class="form-label"
+                  >Representative email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="personalRepEmail"
+                  name="personalRepEmail"
+                  placeholder="email@example.com"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -591,45 +640,22 @@
             Signatures
           </h3>
 
-          <div class="mb-4">
-            <p class="mb-2 text-muted">
-              <strong>Personal representative:</strong> If a personal
-              representative executes this form, that Representative warrants
-              that he or she has authority to sign this form.
-            </p>
-            <div class="row">
-              <div class="col-12 col-md-6 mb-3">
-                <label for="personalRepName" class="form-label optional"
-                  >Representative name</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="personalRepName"
-                  name="personalRepName"
-                  placeholder="If applicable"
-                />
-              </div>
-
-              <div class="col-12 col-md-6 mb-3">
-                <label for="personalRepContactInfo" class="form-label optional"
-                  >Representative phone/email</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="personalRepContactInfo"
-                  name="personalRepContactInfo"
-                  placeholder="Phone or email"
-                />
-              </div>
-            </div>
-          </div>
+          <p class="text-muted mb-3">
+            I acknowledge and agree that by typing my name and today's date in
+            the designated boxes in this form and clicking "Review and Submit" I
+            am electronically signing this release, which will have the same
+            legal effect as the execution of this document by a written
+            signature and shall be valid evidence of my intent and agreement to
+            be bound by its terms. I understand that by choosing to
+            electronically sign this release form, this release will be securely
+            stored. I also understand that if I do not electronically sign this
+            release form, it will not be submitted successfully.
+          </p>
 
           <div class="row">
             <div class="mb-3 col-8">
               <label for="signaturePatient" class="form-label"
-                >Signature of patient (18+)</label
+                ><strong>Signature of Patient or Legal Guardian (if patient is under the age of 18)</strong></label
               >
               <input
                 type="text"
@@ -641,36 +667,13 @@
               />
             </div>
             <div class="mb-3 col-4">
-              <label for="patientSigDate" class="form-label">Date</label>
+              <label for="patientSigDate" class="form-label"><strong>Date</strong></label>
               <input
                 type="date"
                 class="form-control"
                 id="patientSigDate"
                 name="patientSigDate"
                 required
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-3 col-8">
-              <label for="signaturePolicyholder" class="form-label"
-                >Signature of policyholder</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="signaturePolicyholder"
-                name="signaturePolicyholder"
-                placeholder="Type your full legal name"
-              />
-            </div>
-            <div class="mb-3 col-4">
-              <label for="policyholderSigDate" class="form-label">Date</label>
-              <input
-                type="date"
-                class="form-control"
-                id="policyholderSigDate"
-                name="policyholderSigDate"
               />
             </div>
           </div>

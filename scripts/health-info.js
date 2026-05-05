@@ -9,6 +9,17 @@ goBackBtn.addEventListener("click", goBack);
 // (see auth-release-health-info.html). reCAPTCHA intercepts the click,
 // runs its challenge, then calls submitForm(token) with the fresh token.
 
+// Default the signature date to today
+const patientSigDate = document.getElementById("patientSigDate");
+patientSigDate.value = new Date().toISOString().split("T")[0];
+
+// Toggle personal representative contact fields
+const personalRepCheckbox = document.getElementById("personalRepAuthorization");
+const personalRepFields = document.getElementById("personalRepFields");
+personalRepCheckbox.addEventListener("change", function () {
+  personalRepFields.style.display = this.checked ? "flex" : "none";
+});
+
 let storedFormData = null;
 let generatedPDFBlob;
 
@@ -77,18 +88,21 @@ async function showConfirmation() {
         <p><strong>Disclosure agreement:</strong> ${
           formData.get("understandDisclosureAndCopy") ? "Agreed" : "Not agreed"
         }</p>
-        <p><strong>Personal representative:</strong> ${formData.get(
+        <p><strong>Personal representative authorization:</strong> ${
+          formData.get("personalRepAuthorization") ? "Agreed" : "Not agreed"
+        }</p>
+        <p><strong>Representative name:</strong> ${formData.get(
           "personalRepName",
-        )}</p>
-        <p><strong>Representative contact:</strong> ${formData.get(
-          "personalRepContactInfo",
-        )}</p>
-        <p><strong>Patient signature:</strong> ${formData.get(
+        ) || "N/A"}</p>
+        <p><strong>Representative phone:</strong> ${formData.get(
+          "personalRepPhone",
+        ) || "N/A"}</p>
+        <p><strong>Representative email:</strong> ${formData.get(
+          "personalRepEmail",
+        ) || "N/A"}</p>
+        <p><strong>Signature:</strong> ${formData.get(
           "signaturePatient",
         )} (Date: ${formData.get("patientSigDate")})</p>
-        <p><strong>Policyholder signature:</strong> ${formData.get(
-          "signaturePolicyholder",
-        )} (Date: ${formData.get("policyholderSigDate")})</p>
     `;
 
   // display selected supporting documents
@@ -358,10 +372,28 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
     y,
   );
   y += lineHeight;
-  doc.text(`Personal representative: ${formData.get("personalRepName")}`, x, y);
+  doc.text(
+    `Personal representative authorization: ${
+      formData.get("personalRepAuthorization") ? "Agreed" : "Not agreed"
+    }`,
+    x,
+    y,
+  );
   y += lineHeight;
   doc.text(
-    `Representative contact: ${formData.get("personalRepContactInfo")}`,
+    `Representative name: ${formData.get("personalRepName") || "N/A"}`,
+    x,
+    y,
+  );
+  y += lineHeight;
+  doc.text(
+    `Representative phone: ${formData.get("personalRepPhone") || "N/A"}`,
+    x,
+    y,
+  );
+  y += lineHeight;
+  doc.text(
+    `Representative email: ${formData.get("personalRepEmail") || "N/A"}`,
     x,
     y,
   );
@@ -370,17 +402,9 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   // Add the signature fields
   // Signatures
   doc.text(
-    `Patient signature: ${formData.get(
+    `Signature: ${formData.get(
       "signaturePatient",
     )} (Date: ${formData.get("patientSigDate")})`,
-    x,
-    y,
-  );
-  y += lineHeight;
-  doc.text(
-    `Policyholder signature: ${formData.get(
-      "signaturePolicyholder",
-    )} (Date: ${formData.get("policyholderSigDate")})`,
     x,
     y,
   );
