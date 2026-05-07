@@ -139,17 +139,13 @@ function goBack() {
 
 window.submitForm = async function submitForm(recaptchaToken) {
   clearStatusMessage();
-  showStatusMessage(
-    "Submitting your form. This may take a few moments, please do not close this page.",
-    "info",
-  );
+
+  // Show overlay modal
+  document.getElementById("submittingOverlay").style.display = "flex";
 
   // Disable go back button and submit button
   goBackBtn.disabled = true;
   submitBtn.disabled = true;
-
-  // Show loading indicator
-  document.getElementById("loading").style.display = "block";
 
   let formData = new FormData(document.getElementById("healthInfoForm"));
   let attachmentsStr = "(n/a)";
@@ -257,10 +253,10 @@ window.submitForm = async function submitForm(recaptchaToken) {
       "danger",
     );
   } finally {
-    // Re-enable buttons and hide the loading indicator
+    // Re-enable buttons and hide the overlay
     goBackBtn.disabled = false;
     submitBtn.disabled = false;
-    document.getElementById("loading").style.display = "none";
+    document.getElementById("submittingOverlay").style.display = "none";
   }
 
   console.log(formData);
