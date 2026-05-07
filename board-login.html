@@ -392,8 +392,16 @@
       });
 
       function loginFun() {
-        let user = userName.value;
+        let user = userName.value.trim();
         let pw = pwd.value;
+
+        if (!user || !pw) {
+          whole.textContent =
+            "Please enter both your username and password.";
+          return;
+        }
+
+        whole.textContent = "";
 
         let params = {
           loginName: user,
@@ -429,9 +437,10 @@
           })
           .catch((error) => {
             console.log("Error: ", error);
-            whole.style.visibility = "visible";
-            whole.style.innerText =
+            whole.textContent =
               "Sorry, there was an error. Please try again.";
+            loginBtn.style.display = "block";
+            document.getElementById("loading").style.display = "none";
           });
       }
 
