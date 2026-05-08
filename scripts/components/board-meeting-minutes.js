@@ -21,7 +21,7 @@ class BoardMeetingMinutes extends HTMLElement {
                          <ul class="content-list">
                              <li>
                                  <i class="bx bxs-file-pdf"></i>
-                                 <a target="_blank" href="/PDFs/April_Board_Minutes_Draft_MQ_AcceptedChanges.pdf">
+                                 <a target="_blank" href="/nmpsiadownload/202604/minutes/Board_meeting_minutes.pdf">
                                      April 2026</a>
                              </li>
                              <li>
