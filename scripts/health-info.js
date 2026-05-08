@@ -71,17 +71,12 @@ async function showConfirmation() {
         <p><strong>Contact email:</strong> ${formData.get(
           "authorizedEntity",
         )}</p>
-        <p><strong>Contact phone:</strong> ${formData.get(
-          "contactPhone",
-        )}</p>
+        <p><strong>Contact phone:</strong> ${formData.get("contactPhone")}</p>
         <p><strong>Authorized organization(s):</strong> ${getSelectedCarriers()}</p>
         <p><strong>Provider name:</strong> ${formData.get("providerName")}</p>
         <p><strong>Provider phone:</strong> ${formData.get("providerPhone")}</p>
         <p><strong>Provider email:</strong> ${formData.get("providerEmail")}</p>
         <p><strong>Claim details:</strong> ${formData.get("claimDetails")}</p>
-        <p><strong>Purpose of request:</strong> ${formData.get(
-          "purposeOfReq",
-        )}</p>
         <p><strong>Right to revoke:</strong> ${
           formData.get("rightToRevoke") ? "Agreed" : "Not agreed"
         }</p>
@@ -91,15 +86,15 @@ async function showConfirmation() {
         <p><strong>Personal representative authorization:</strong> ${
           formData.get("personalRepAuthorization") ? "Agreed" : "Not agreed"
         }</p>
-        <p><strong>Representative name:</strong> ${formData.get(
-          "personalRepName",
-        ) || "N/A"}</p>
-        <p><strong>Representative phone:</strong> ${formData.get(
-          "personalRepPhone",
-        ) || "N/A"}</p>
-        <p><strong>Representative email:</strong> ${formData.get(
-          "personalRepEmail",
-        ) || "N/A"}</p>
+        <p><strong>Representative name:</strong> ${
+          formData.get("personalRepName") || "N/A"
+        }</p>
+        <p><strong>Representative phone:</strong> ${
+          formData.get("personalRepPhone") || "N/A"
+        }</p>
+        <p><strong>Representative email:</strong> ${
+          formData.get("personalRepEmail") || "N/A"
+        }</p>
         <p><strong>Signature:</strong> ${formData.get(
           "signaturePatient",
         )} (Date: ${formData.get("patientSigDate")})</p>
@@ -156,7 +151,7 @@ window.submitForm = async function submitForm(recaptchaToken) {
   }
 
   // if the user uploads any files, set the attachments string to say "See attached"
-  if (fileInput.files.length > 0) {
+  if (fileInput.files.length > 1) {
     attachmentsStr = "See attached!";
   }
 
@@ -338,18 +333,6 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   ); // 180 is the width of the text block
   doc.text(claimDetailsLines, x, y);
   y += claimDetailsLines.length * lineHeight;
-
-  // Handle long text for "Purpose of request" using splitTextToSize
-  let purposeOfRequest = (formData.get("purposeOfReq") || "N/A").replace(
-    /\r?\n|\r/g,
-    " ",
-  );
-  let purposeOfRequestLines = doc.splitTextToSize(
-    `Purpose of request: ${purposeOfRequest}`,
-    180,
-  );
-  doc.text(purposeOfRequestLines, x, y);
-  y += purposeOfRequestLines.length * lineHeight;
 
   // Continue with other form fields
   doc.text(
