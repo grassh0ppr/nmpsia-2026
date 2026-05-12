@@ -13,6 +13,24 @@ goBackBtn.addEventListener("click", goBack);
 const patientSigDate = document.getElementById("patientSigDate");
 patientSigDate.value = new Date().toISOString().split("T")[0];
 
+// Auto-format phone number inputs as (XXX) XXX-XXXX
+function formatPhoneInput(input) {
+  input.addEventListener("input", function () {
+    let digits = this.value.replace(/\D/g, "").substring(0, 10);
+    if (digits.length === 0) {
+      this.value = "";
+    } else if (digits.length <= 3) {
+      this.value = `(${digits}`;
+    } else if (digits.length <= 6) {
+      this.value = `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+    } else {
+      this.value = `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+    }
+  });
+}
+
+document.querySelectorAll("#contactPhone, #providerPhone, #personalRepPhone").forEach(formatPhoneInput);
+
 // Toggle personal representative contact fields
 const personalRepCheckbox = document.getElementById("personalRepAuthorization");
 const personalRepFields = document.getElementById("personalRepFields");
