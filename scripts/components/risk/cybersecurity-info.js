@@ -19,7 +19,7 @@ class CybersecurityInfo extends HTMLElement {
     <li>
       <i class="bx bxs-file-pdf"></i>
       <a
-        href="https://nmpsia.com/pdfs/poms-risk-docs/2025_NM_OCS_No_Cost_Cybersecurity_Services_for_K_12_and_Higher_Education_Institutions.pdf"
+        href="https://nmpsia.com/pdfs/poms-risk-docs/OCS_K_-_12_Flye_Cybersecurity.pdf"
         target="_blank"
         >OCS No-Cost Cybersecurity Services and Solutions</a
       >
@@ -49,26 +49,26 @@ class CybersecurityInfo extends HTMLElement {
         in New Mexico</a
       >
     </li>
-    <!-- <li>
-      <i class="bx bxs-file-pdf"></i>
-      <a href="/pdfs/POMS_Cyber_Security_Message.pdf" target="_blank"
-        >POMS Cyber Security Message</a
-      >
-    </li> -->
     <li>
-      <i class="bx bxs-file-pdf"></i>
-      <a
-        href="/pdfs/poms-risk-docs/Ransomware_Playbook.pdf"
-        target="_blank"
-        >Incident Response Playbook - Ransomware</a
-      >
+    <i class="bx bxs-file-pdf"></i>
+    <a
+    href="/pdfs/poms-risk-docs/Ransomware_Playbook.pdf"
+    target="_blank"
+    >Incident Response Playbook - Ransomware</a
+    >
+    </li>
+    <li>
+    <i class="bx bxs-file-pdf"></i>
+    <a
+    href="/pdfs/poms-risk-docs/25_26_Cyber_Claim_Reporting_Instructions.pdf"
+    target="_blank"
+    >2026 Cyber Claim Reporting Instructions</a
+    >
     </li>
     <li>
       <i class="bx bxs-file-pdf"></i>
-      <a
-        href="/pdfs/poms-risk-docs/25_26_Cyber_Claim_Reporting_Instructions.pdf"
-        target="_blank"
-        >2026 Cyber Claim Reporting Instructions</a
+      <a href="/pdfs/poms-risk-docs/MS_ISAC_Onboarding_Flyer_OCS.pdf" target="_blank"
+        >OCS MS-ISAC Membership</a
       >
     </li>
     
