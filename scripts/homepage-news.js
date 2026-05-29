@@ -15,113 +15,69 @@ const homepageNews = [
     linkText: "Log into Well onTarget",
   },
 
-  // notice of public meetings - MAY 2026
+  // notice of public meetings - JUNE 3 & 4, 2026
   {
     date: {
-      day: "",
+      day: "29",
       month: "May",
     },
-    title: "Notice of Public Meetings May 6 & 7, 2026",
+    title: "Notice of Public Meetings June 3 & 4, 2026",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
     linkHref:
-      "https://nmpsia.com/nmpsiadownload/202605/notice_of_public_meetings.pdf",
+      "https://nmpsia.com/nmpsiadownload/202606/notice_of_public_meetings.pdf",
     linkText: "View notice",
   },
   // BAC Meeting
   {
     date: {
-      day: "06",
-      month: "May",
+      day: "03",
+      month: "June",
     },
     title: "Benefits Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202605/BAC_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202606/BAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // RAC meeting
   {
     date: {
       day: "06",
-      month: "May",
+      month: "June",
     },
     title: "Risk Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202605/RAC_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202606/RAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // IFR meeting
   {
     date: {
       day: "07",
-      month: "May",
+      month: "June",
     },
     title: "Internal Fiscal Review Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202605/IFR_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202606/IFR_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // Board meeting
   {
     date: {
       day: "07",
-      month: "May",
+      month: "June",
     },
     title: "Board of Directors Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202605/Board_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202606/Board_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
 
-  // Wellness — May 2026 upcoming events
-  {
-    date: {
-      day: "12",
-      month: "May",
-    },
-    title: "Brain Health (Webinar)",
-    description:
-      "May 12 webinar on brain health. Open the flyer for more information.",
-    linkHref: "/wellness/May_2026/Brain Health.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "18",
-      month: "May",
-    },
-    title: "Resilience: Rising Strong (Webinar)",
-    description:
-      "May 18 webinar on resilience. Open the flyer for more information.",
-    linkHref: "/wellness/May_2026/Resilience- Rising Strong.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "20",
-      month: "May",
-    },
-    title: "Understanding Burnout (Webinar)",
-    description:
-      "May 20 webinar on understanding burnout. Open the flyer for more information.",
-    linkHref: "/wellness/May_2026/Understanding Burnout.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "28",
-      month: "May",
-    },
-    title: "Cooking Show: Greens, Beans, & Berry Dreams",
-    description:
-      "May 28 cooking show. View the May cooking show PDF for details.",
-    linkHref: "/wellness/May_2026/05_May Cooking Show_2026.pdf",
-    linkText: "View flyer",
-  },
+  //Wellness events go here
 
   // Kitchen Confidence (4-week email series)
   {
