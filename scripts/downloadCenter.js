@@ -14,7 +14,7 @@
 // use js to render the html
 
 // Updated Meeting Data
-import { meetings } from "./meetingsData.js?v=1.2";
+import { meetings } from "./meetingsData.js?v=1.3";
 
 // Function to dynamically generate URLs
 function generateDocumentURL(monthId, committee, type) {
@@ -40,8 +40,8 @@ function generateMeetingHTML(monthId, committee, data) {
       type === "agenda"
         ? "bx bx-list-ol"
         : type === "packet"
-        ? "bx bxs-file"
-        : "bx bx-link-external";
+          ? "bx bxs-file"
+          : "bx bx-link-external";
     documentsHTML += `
       <li>
         <i class="${icon}"></i>
@@ -70,7 +70,7 @@ function generateInfoHTML(info) {
         <i class="bx bx-link-external"></i>
         <a href="${item.url}" target="_blank">${item.textContent}</a>
       </li>
-    `
+    `,
     )
     .join("");
 }
@@ -82,14 +82,14 @@ function renderMeetings(monthId) {
 
   const { monthTitle, committees, info } = meetings[monthId];
   let html = `<h3 class="display-5">${monthTitle}</h3>`;
-  
+
   // Wrap meetings in a grid container
   html += `<div class="meetings-grid">`;
 
   for (const [committee, data] of Object.entries(committees)) {
     html += generateMeetingHTML(monthId, committee, data);
   }
-  
+
   html += `</div>`;
 
   // Conditionally render additional info if it exists
