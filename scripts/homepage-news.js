@@ -43,7 +43,7 @@ const homepageNews = [
   // RAC meeting
   {
     date: {
-      day: "06",
+      day: "03",
       month: "June",
     },
     title: "Risk Advisory Committee Meeting",
@@ -55,7 +55,7 @@ const homepageNews = [
   // IFR meeting
   {
     date: {
-      day: "07",
+      day: "04",
       month: "June",
     },
     title: "Internal Fiscal Review Committee Meeting",
@@ -67,7 +67,7 @@ const homepageNews = [
   // Board meeting
   {
     date: {
-      day: "07",
+      day: "04",
       month: "June",
     },
     title: "Board of Directors Meeting",
