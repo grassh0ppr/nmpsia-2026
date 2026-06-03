@@ -58,13 +58,17 @@ function showStatusMessage(message, type = "info") {
 async function showConfirmation() {
   clearStatusMessage();
 
-  // if patient signature empty, alert user
-  if (
-    !document.getElementById("signaturePatient").value ||
-    !document.getElementById("patientSigDate").value
-  ) {
+  // Require at least one signature (patient or authority)
+  const hasPatientSig =
+    document.getElementById("signaturePatient").value &&
+    document.getElementById("patientSigDate").value;
+  const hasAuthoritySig =
+    document.getElementById("signatureAuthority").value &&
+    document.getElementById("authoritySigDate").value;
+
+  if (!hasPatientSig && !hasAuthoritySig) {
     showStatusMessage(
-      "Please provide the patient's signature and date to continue.",
+      "Please provide either the patient's signature or the authority signature (with date) to continue.",
       "warning",
     );
     return;
