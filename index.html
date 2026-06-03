@@ -719,11 +719,11 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- for happening now news content -->
-    <script src="./scripts/homepage-news.js?v=4.8"></script>
+    <script src="./scripts/homepage-news.js?v=4.9"></script>
 
     <!-- Wellness newsletters and health kits component -->
     <script src="./scripts/components/wellness/newsletters-healthkits.js"></script>
-    <script src="./scripts/wellness-news.js?v=4.3"></script>
+    <script src="./scripts/wellness-news.js?v=4.4"></script>
 
     <!-- <script src="./js/main.js"></script> -->
 
@@ -754,24 +754,20 @@
               ? `${newsItem.date.month} ${newsItem.date.day}`
               : "Ongoing";
 
+          const cardAttrs = newsItem.modalTrigger
+            ? `href="${newsItem.linkHref}" data-bs-toggle="modal" data-bs-target="${newsItem.linkHref}"`
+            : `href="${newsItem.linkHref}" target="_blank"`;
+
           newsHTML += `
             <div class="swiper-slide">
-              <div class="news-card">
+              <a ${cardAttrs} class="news-card" draggable="false">
                 <div class="news-date">${dateText}</div>
                 <h3 class="news-card-title">${newsItem.title}</h3>
                 <p class="news-card-description">${newsItem.description}</p>
-                <a href="${newsItem.linkHref}" 
-                   ${
-                     newsItem.modalTrigger
-                       ? 'data-bs-toggle="modal" data-bs-target="' +
-                         newsItem.linkHref +
-                         '"'
-                       : 'target="_blank"'
-                   }
-                   class="news-card-link">
+                <span class="news-card-link">
                   ${newsItem.linkText} <i class="bx bx-right-arrow-alt"></i>
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
           `;
         }

@@ -1,5 +1,75 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "June 2026": [
+    {
+      name: "Wellness Communications - June 2026",
+      url: "/wellness/June_2026/Wellness Communication June 2026.pdf",
+    },
+    {
+      name: "NMPSIA June 2026 Work and Well-Being Newsletter",
+      url: "/wellness/June_2026/NMPSIA June 2026 Newsletter.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Events Calendar - June 2026",
+      url: "/wellness/June_2026/NMPSIA Wellness Calendar June 2025.pdf",
+    },
+    {
+      name: "June 2026 Observance Poster (English)",
+      url: "/wellness/June_2026/06_June Observance_2026.pdf",
+    },
+    {
+      name: "June 2026 Observance Poster (Español)",
+      url: "/wellness/June_2026/06_June Observance_2026 SP.pdf",
+    },
+    {
+      name: "June 2026 Cooking Show - Stacking Pancakes and Sipping Smarts: Fuel for Muscles and Minds",
+      url: "/wellness/June_2026/06_June Cooking Show_2026.pdf",
+    },
+    {
+      name: "TSG Wellness Webinar - The Silent Storm: Spotting Metabolic Syndrome Early",
+      url: "/wellness/June_2026/June Wellness 2026 Webinars TSG_06.pdf",
+    },
+    {
+      name: "Nutrition for Workouts - June 2026 Article",
+      url: "/wellness/June_2026/NN June 2026  Article- Nutrition for Workouts.pdf",
+    },
+    {
+      name: "Nutrition and Heart Health",
+      url: "/wellness/June_2026/Nutrition and Heart Health.pdf",
+    },
+    {
+      name: "Webinar - Trending in Nutrition",
+      url: "/wellness/June_2026/Trending in Nutrition.pdf",
+    },
+    {
+      name: "Navigating the Grocery Store",
+      url: "/wellness/June_2026/Navigating the Grocery Store.pdf",
+    },
+    {
+      name: "Life on Mindfulness - Guided meditations, teachings, and mindfulness practices",
+      url: "/wellness/June_2026/Life on Mindfulness - 2026 - NMPSIA.pdf",
+    },
+    {
+      name: "The Mindful Center - Mindful Blood Pressure Reduction Program",
+      url: "/wellness/June_2026/Mindful Blood Pressure Reduction - NMPSIA.pdf",
+    },
+    {
+      name: "Wondr Health Enrollment Member Flyer",
+      url: "/wellness/June_2026/NM_Group_Wondr_Health_Enrollment_Member_Flier.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Ambassador Flyer 2026-27",
+      url: "/wellness/June_2026/NMPSIA Wellness Ambassador Flyer 26-27.pdf",
+    },
+    {
+      name: "Feeling Stiff? Full Body Workplace Stretching 6-Week Program",
+      url: "/wellness/June_2026/Full Body Workplace Stretching Program.pdf",
+    },
+    {
+      name: "Find the Right Nutrition Program for You - Presbyterian",
+      url: "/wellness/June_2026/Qualtrics Survey- Presbyterian.pdf",
+    },
+  ],
   "May 2026": [
     {
       name: "Wellness Newsletter - May 2026",

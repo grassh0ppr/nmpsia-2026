@@ -1,20 +1,5 @@
 // object holding news items to be rendered to the page
 const homepageNews = [
-  // Well onTarget Health Assessment
-  {
-    date: {
-      day: "",
-      month: "",
-    },
-    title:
-      "Well onTarget Health Assessment - Blue Cross and Blue Shield Members",
-    description:
-      "It's time to take your health assessment and earn an additional 2500 blue points! It is important to take the health assessment because this will determine your personal wellness report, identify specific wellness goals, and recommend activities for you. The health assessment takes 10-15 minutes to complete and is confidential. Log into Well onTarget to complete.",
-    linkHref:
-      "https://account.wellontarget.com/login/?goto=https%3A%2F%2Fcim.wellontarget.com%3A443%2Fam%2Foauth2%2Fmembers%2Fauthorize%3Fclient_id%3Doauth_mma_wot_APP00046856%26scope%3Dopenid%2520profile%26redirect_uri%3Dhttps%3A%2F%2Fwellontarget.onlifehealth.com%2FHome%2FLoginCallback%26response_type%3Dcode%26state%3DlvxXs0_4smsc0nS_5G7eRuRlHuz0p3bkQtyaiwDdpq8%26code_challenge%3D_6qUrUaOUTl6ttQ1OBjV98k6c47zYfUtPjIPhNsg3CQ%26code_challenge_method%3DS256%26service%3Dhcsc-members-mma-mfa%26locale%3Dwot&realm=/members&service=hcsc-members-mma-mfa",
-    linkText: "Log into Well onTarget",
-  },
-
   // notice of public meetings - JUNE 3 & 4, 2026
   {
     date: {
@@ -79,45 +64,127 @@ const homepageNews = [
 
   //Wellness events go here
 
-  // Kitchen Confidence (4-week email series)
+  // Wellness Events Calendar - June 2026
   {
     date: {
       day: "",
       month: "",
     },
-    title: "Kitchen Confidence (4-week email series)",
+    title: "NMPSIA Wellness Events Calendar - June 2026",
     description:
-      "Register to receive weekly emails with video demonstrations, recipes, a challenge, practical tips, and resources to level up your kitchen skills for you and your family.",
+      "View the full calendar of NMPSIA wellness events and activities for June 2026.",
+    linkHref: "/wellness/June_2026/NMPSIA Wellness Calendar June 2025.pdf",
+    linkText: "View calendar",
+  },
+  // Navigating the Grocery Store - June 16
+  {
+    date: {
+      day: "16",
+      month: "June",
+    },
+    title: "Navigating the Grocery Store",
+    description:
+      "Join us for a wellness webinar on how to navigate the grocery store for healthier choices.",
+    linkHref: "/wellness/June_2026/Navigating the Grocery Store.pdf",
+    linkText: "View flyer",
+  },
+  // TSG Wellness Webinar - June 17
+  {
+    date: {
+      day: "17",
+      month: "June",
+    },
+    title:
+      "TSG Wellness Webinar - The Silent Storm: Spotting Metabolic Syndrome Early",
+    description: "Join the TSG monthly wellness webinar for June 2026.",
+    linkHref: "/wellness/June_2026/June Wellness 2026 Webinars TSG_06.pdf",
+    linkText: "View flyer",
+  },
+  // Nutrition and Heart Health - June 17
+  {
+    date: {
+      day: "17",
+      month: "June",
+    },
+    title: "Nutrition and Heart Health",
+    description:
+      "Join us for a wellness webinar on nutrition and heart health.",
+    linkHref: "/wellness/June_2026/Nutrition and Heart Health.pdf",
+    linkText: "View flyer",
+  },
+  // Trending in Nutrition - June 22
+  {
+    date: {
+      day: "22",
+      month: "June",
+    },
+    title: "Webinar - Trending in Nutrition",
+    description:
+      "Join us for a wellness webinar on the latest trends in nutrition.",
+    linkHref: "/wellness/June_2026/Trending in Nutrition.pdf",
+    linkText: "View flyer",
+  },
+  // June 2026 Cooking Show - June 25
+  {
+    date: {
+      day: "25",
+      month: "June",
+    },
+    title:
+      "June 2026 Cooking Show - Stacking Pancakes and Sipping Smarts: Fuel for Muscles and Minds",
+    description: "Join us for the June 2026 wellness cooking show.",
+    linkHref: "/wellness/June_2026/06_June Cooking Show_2026.pdf",
+    linkText: "View flyer",
+  },
+  // Ongoing wellness promotions
+  {
+    date: {
+      day: "",
+      month: "",
+    },
+    title: "The Mindful Center - Mindful Blood Pressure Reduction Program",
+    description:
+      "Learn about the Mindful Blood Pressure Reduction Program offered through The Mindful Center.",
     linkHref:
-      "https://solutionsbiz.us7.list-manage.com/subscribe?u=2329664a7d85671709714e0d4&id=d23bdf9f19",
-    linkText: "Register",
+      "/wellness/June_2026/Mindful Blood Pressure Reduction - NMPSIA.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "",
+      month: "",
+    },
+    title: "Feeling Stiff? Full Body Workplace Stretching 6-Week Program",
+    description:
+      "Join the 6-week full body workplace stretching program to improve flexibility and reduce stiffness.",
+    linkHref: "/wellness/June_2026/Full Body Workplace Stretching Program.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "",
+      month: "",
+    },
+    title: "Find the Right Nutrition Program for You - Presbyterian",
+    description:
+      "Take the Presbyterian survey to find the right nutrition program for you.",
+    linkHref: "/wellness/June_2026/Qualtrics Survey- Presbyterian.pdf",
+    linkText: "View flyer",
   },
 
-  // Life on Mindfulness
+  // ongoing promotions
   {
     date: {
       day: "",
       month: "",
     },
-    title: "Life on Mindfulness (On-demand platform)",
+    title:
+      "Well onTarget Health Assessment - Blue Cross and Blue Shield Members",
     description:
-      "On-demand, online platform that gives users a clear and dynamic roadmap toward a life of greater health, well-being and a lot less stress through mindfulness. Access daily live drop-in meditations with Michelle DuVal, MA, plus a 300+ library of guided meditations.",
-    linkHref: "https://nmspiaregistration1.themindfulcenter.com",
-    linkText: "Register",
-  },
-
-  // On-Demand Mindfulness Program: 21-Day Meditation Challenge
-  {
-    date: {
-      day: "",
-      month: "",
-    },
-    title: "On-Demand Mindfulness: 21-Day Meditation Challenge",
-    description:
-      "A 3-week online challenge with short daily video teachings from Michelle DuVal to guide you through a curated order of meditations and work through common obstacles.",
+      "It's time to take your health assessment and earn an additional 2500 blue points! It is important to take the health assessment because this will determine your personal wellness report, identify specific wellness goals, and recommend activities for you. The health assessment takes 10-15 minutes to complete and is confidential. Log into Well onTarget to complete.",
     linkHref:
-      "https://themindful-e-center.com/courses/0000009d-000b-4489-52b1-00000000014c/checkout/price-2HJLm5wNyLDRVJ-vfynYjA",
-    linkText: "Start challenge",
+      "https://account.wellontarget.com/login/?goto=https%3A%2F%2Fcim.wellontarget.com%3A443%2Fam%2Foauth2%2Fmembers%2Fauthorize%3Fclient_id%3Doauth_mma_wot_APP00046856%26scope%3Dopenid%2520profile%26redirect_uri%3Dhttps%3A%2F%2Fwellontarget.onlifehealth.com%2FHome%2FLoginCallback%26response_type%3Dcode%26state%3DlvxXs0_4smsc0nS_5G7eRuRlHuz0p3bkQtyaiwDdpq8%26code_challenge%3D_6qUrUaOUTl6ttQ1OBjV98k6c47zYfUtPjIPhNsg3CQ%26code_challenge_method%3DS256%26service%3Dhcsc-members-mma-mfa%26locale%3Dwot&realm=/members&service=hcsc-members-mma-mfa",
+    linkText: "Log into Well onTarget",
   },
 
   // modal trigger for poms Premium Credit and Deductible Programs for Sexual/Ethical Misconduct Claims
