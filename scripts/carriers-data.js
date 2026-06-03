@@ -59,7 +59,7 @@ const carriersData = [
   {
     id: "express-scripts",
     name: "Express Scripts",
-    logo: "images/carriers/express_rx.svg",
+    logo: "images/carriers/express evernorth.png",
     benefitTypes: ["Pharmacy"],
     badge: "Effective 7/1/2026",
     contact: {

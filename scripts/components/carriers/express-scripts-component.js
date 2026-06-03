@@ -4,7 +4,7 @@ class ExpressScriptsInfo extends HTMLElement {
     <div class="heading-and-element-flexbox">
       <h2 class="display-4">Express Scripts</h2>
       <a href="https://www.express-scripts.com/frontend/commercial-open-enrollment/nmpsia" target="_blank" title="Visit carrier website">
-        <img class="my-4 mx-3" src="images/carriers/express_rx.svg" alt="Express Scripts logo" style="max-height: 80px;">
+        <img class="my-4 mx-3" src="images/carriers/express evernorth.png" alt="Express Scripts logo" style="max-height: 80px;">
       </a>
     </div>
 
