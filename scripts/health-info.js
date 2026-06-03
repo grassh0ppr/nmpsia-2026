@@ -6,12 +6,12 @@ const statusMessageEl = document.getElementById("formStatusMessage");
 reviewBtn.addEventListener("click", showConfirmation);
 goBackBtn.addEventListener("click", goBack);
 // Note: submitBtn is wired up via reCAPTCHA's data-callback="submitForm"
-// (see auth-release-health-info.html). reCAPTCHA intercepts the click,
+// (see auth-test.html). reCAPTCHA intercepts the click,
 // runs its challenge, then calls submitForm(token) with the fresh token.
 
-// Default the signature date to today
-const patientSigDate = document.getElementById("patientSigDate");
-patientSigDate.value = new Date().toISOString().split("T")[0];
+// Default the signature dates to today
+const today = new Date().toISOString().split("T")[0];
+document.getElementById("patientSigDate").value = today;
 
 // Auto-format phone number inputs as (XXX) XXX-XXXX
 function formatPhoneInput(input) {
@@ -29,14 +29,9 @@ function formatPhoneInput(input) {
   });
 }
 
-document.querySelectorAll("#contactPhone, #providerPhone, #personalRepPhone").forEach(formatPhoneInput);
-
-// Toggle personal representative contact fields
-const personalRepCheckbox = document.getElementById("personalRepAuthorization");
-const personalRepFields = document.getElementById("personalRepFields");
-personalRepCheckbox.addEventListener("change", function () {
-  personalRepFields.style.display = this.checked ? "flex" : "none";
-});
+document
+  .querySelectorAll("#contactPhone, #providerPhone")
+  .forEach(formatPhoneInput);
 
 let storedFormData = null;
 let generatedPDFBlob;
@@ -63,13 +58,17 @@ function showStatusMessage(message, type = "info") {
 async function showConfirmation() {
   clearStatusMessage();
 
-  // if patient signature empty, alert user
-  if (
-    !document.getElementById("signaturePatient").value ||
-    !document.getElementById("patientSigDate").value
-  ) {
+  // Require at least one signature (patient or authority)
+  const hasPatientSig =
+    document.getElementById("signaturePatient").value &&
+    document.getElementById("patientSigDate").value;
+  const hasAuthoritySig =
+    document.getElementById("signatureAuthority").value &&
+    document.getElementById("authoritySigDate").value;
+
+  if (!hasPatientSig && !hasAuthoritySig) {
     showStatusMessage(
-      "Please provide the patient's signature and date to continue.",
+      "Please provide either the patient's signature or the authority signature (with date) to continue.",
       "warning",
     );
     return;
@@ -101,22 +100,19 @@ async function showConfirmation() {
         <p><strong>Disclosure agreement:</strong> ${
           formData.get("understandDisclosureAndCopy") ? "Agreed" : "Not agreed"
         }</p>
-        <p><strong>Personal representative authorization:</strong> ${
-          formData.get("personalRepAuthorization") ? "Agreed" : "Not agreed"
-        }</p>
-        <p><strong>Representative name:</strong> ${
-          formData.get("personalRepName") || "N/A"
-        }</p>
-        <p><strong>Representative phone:</strong> ${
-          formData.get("personalRepPhone") || "N/A"
-        }</p>
-        <p><strong>Representative email:</strong> ${
-          formData.get("personalRepEmail") || "N/A"
-        }</p>
         <p><strong>Signature:</strong> ${formData.get(
           "signaturePatient",
         )} (Date: ${formData.get("patientSigDate")})</p>
     `;
+
+  // Show authority signature if provided
+  let authoritySignature = formData.get("signatureAuthority");
+  if (authoritySignature) {
+    reviewContent += `
+        <p><strong>Authority signature:</strong> ${authoritySignature} (Date: ${formData.get("authoritySigDate") || "N/A"})</p>
+        <p><strong>Basis of authority/relationship:</strong> ${formData.get("basisOfAuthority") || "N/A"}</p>
+    `;
+  }
 
   // display selected supporting documents
   let fileInput = document.getElementById("supportingDocs");
@@ -223,9 +219,6 @@ window.submitForm = async function submitForm(recaptchaToken) {
         "patientName",
       )}_${new Date().toLocaleString()}.pdf`;
       downloadLink.click();
-
-      // Open the PDF in a new tab
-      // window.open(pdfURL, '_blank');
 
       // Show thank you message
       document.getElementById("confirmationSection").style.display = "none";
@@ -369,35 +362,8 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
     y,
   );
   y += lineHeight;
-  doc.text(
-    `Personal representative authorization: ${
-      formData.get("personalRepAuthorization") ? "Agreed" : "Not agreed"
-    }`,
-    x,
-    y,
-  );
-  y += lineHeight;
-  doc.text(
-    `Representative name: ${formData.get("personalRepName") || "N/A"}`,
-    x,
-    y,
-  );
-  y += lineHeight;
-  doc.text(
-    `Representative phone: ${formData.get("personalRepPhone") || "N/A"}`,
-    x,
-    y,
-  );
-  y += lineHeight;
-  doc.text(
-    `Representative email: ${formData.get("personalRepEmail") || "N/A"}`,
-    x,
-    y,
-  );
-  y += lineHeight;
 
-  // Add the signature fields
-  // Signatures
+  // Patient signature
   doc.text(
     `Signature: ${formData.get(
       "signaturePatient",
@@ -407,8 +373,25 @@ function addPDFContent(doc, formData, x, y, lineHeight) {
   );
   y += lineHeight;
 
+  // Authority signature (if provided)
+  let authoritySignature = formData.get("signatureAuthority");
+  if (authoritySignature) {
+    doc.text(
+      `Authority signature: ${authoritySignature} (Date: ${formData.get("authoritySigDate") || "N/A"})`,
+      x,
+      y,
+    );
+    y += lineHeight;
+    doc.text(
+      `Basis of authority/relationship: ${formData.get("basisOfAuthority") || "N/A"}`,
+      x,
+      y,
+    );
+    y += lineHeight;
+  }
+
   // handle long text for authorization statement
-  let authorizationStatement = `By signing and submitting this form electronically, I (Patient, Policy Holder and/or Personal Representative) confirm that I am the individual identified in this document and that I have read, understood, and agree to the terms and conditions outlined herein. My electronic signature is equivalent to my handwritten signature and is intended to have the same legal effect as a physical signature. I understand that I am providing consent to use my electronic signature in connection with this document and that I have the right to withdraw my consent at any time. If I am signing on behalf of another person/entity represented in this form, I certify that I am legally authorized to do so.`;
+  let authorizationStatement = `By signing and submitting this form electronically, I (Patient, Policy Holder and/or Authorized Representative) confirm that I am the individual identified in this document and that I have read, understood, and agree to the terms and conditions outlined herein. My electronic signature is equivalent to my handwritten signature and is intended to have the same legal effect as a physical signature. I understand that I am providing consent to use my electronic signature in connection with this document and that I have the right to withdraw my consent at any time. If I am signing on behalf of another person/entity represented in this form, I certify that I am legally authorized to do so.`;
   let authorizationStatementLines = doc.splitTextToSize(
     `Authorization statement: ${authorizationStatement}`,
     180,

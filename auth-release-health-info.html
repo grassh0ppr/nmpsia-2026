@@ -580,8 +580,8 @@
               information is disclosed, federal law might not protect it and the
               recipient might redisclose it. I understand that I am entitled to
               receive a copy of this authorization. I understand that this
-              authorization will expire when my inquiry or appeal has been acted
-              upon by NMPSIA.
+              authorization will expire as of the date of determination by
+              NMPSIA.
             </p>
             <div class="form-check ms-4">
               <input
@@ -596,74 +596,13 @@
               >
             </div>
           </div>
-
-          <div class="mb-3">
-            <p class="mb-1 mt-1">
-              <strong>Personal representative.</strong> I authorize NMPSIA to
-              communicate with the individual listed here as my personal
-              representative regarding my request and to disclose only the
-              minimum necessary information needed to assist with this matter.
-              This authorization applies only to this request and may be revoked
-              at any time in writing. Revocation will not apply to actions
-              already taken.
-            </p>
-            <div class="form-check ms-4">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                name="personalRepAuthorization"
-                id="personalRepAuthorization"
-              />
-              <label for="personalRepAuthorization" class="form-label"
-                >I agree to the above statement</label
-              >
-            </div>
-            <div class="row mt-3" id="personalRepFields" style="display: none">
-              <div class="col-12 col-md-4 mb-3">
-                <label for="personalRepName" class="form-label"
-                  >Representative name</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="personalRepName"
-                  name="personalRepName"
-                  placeholder="e.g. Jane Smith"
-                />
-              </div>
-              <div class="col-12 col-md-4 mb-3">
-                <label for="personalRepPhone" class="form-label"
-                  >Representative phone</label
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="personalRepPhone"
-                  name="personalRepPhone"
-                  placeholder="(555) 555-5555"
-                />
-              </div>
-              <div class="col-12 col-md-4 mb-3">
-                <label for="personalRepEmail" class="form-label"
-                  >Representative email</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="personalRepEmail"
-                  name="personalRepEmail"
-                  placeholder="email@example.com"
-                />
-              </div>
-            </div>
-          </div>
         </div>
 
         <!-- SECTION 5: SIGNATURES -->
         <div class="form-section">
           <h3 class="form-section-heading">
             <span class="form-section-number">5</span>
-            Signature
+            Signatures
           </h3>
 
           <p class="text-muted mb-3">
@@ -681,10 +620,7 @@
           <div class="row">
             <div class="mb-3 col-8">
               <label for="signaturePatient" class="form-label"
-                ><strong
-                  >Signature of Patient or Legal Guardian (if patient is under
-                  the age of 18)</strong
-                ></label
+                ><strong>Signature of Patient/Plan Member</strong></label
               >
               <input
                 type="text"
@@ -706,6 +642,64 @@
                 name="patientSigDate"
                 required
               />
+            </div>
+          </div>
+
+          <hr />
+
+          <p class="text-muted mb-3">
+            <strong>Signing on behalf of the Patient/Plan Member?</strong>
+            Complete the fields below. To safeguard privacy and ensure no one
+            other than the person whom the Member designates to receive
+            Protected Health Information, this request must be accompanied with
+            appropriate supporting legal documentation.
+          </p>
+
+          <div class="row">
+            <div class="mb-3 col-8">
+              <label for="signatureAuthority" class="form-label"
+                ><strong
+                  >Signature of Authority to sign on behalf of Patient/Plan
+                  Member</strong
+                ></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="signatureAuthority"
+                name="signatureAuthority"
+                placeholder="Type your full legal name"
+              />
+            </div>
+            <div class="mb-3 col-4">
+              <label for="authoritySigDate" class="form-label"
+                ><strong>Date</strong></label
+              >
+              <input
+                type="date"
+                class="form-control"
+                id="authoritySigDate"
+                name="authoritySigDate"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3 col-12 col-md-6">
+              <label for="basisOfAuthority" class="form-label"
+                ><strong>Basis of Authority/Relationship</strong></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="basisOfAuthority"
+                name="basisOfAuthority"
+                placeholder="Type your relationship or authority"
+              />
+              <div class="form-text">
+                e.g. Parent of a minor, legal guardian, court order, power of
+                attorney, etc.
+              </div>
             </div>
           </div>
         </div>
@@ -831,6 +825,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
     <script src="./scripts/main.js"></script>
-    <script src="./scripts/health-info.js?v=2.1"></script>
+    <script src="./scripts/health-info.js?v=2.3"></script>
   </body>
 </html>
