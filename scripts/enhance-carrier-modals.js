@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', function() {
             <span>${carrierData.contact.groupNumbers}</span>
           </div>
           ` : ''}
+          ${carrierData.contact.phoneTTY ? `
+          <div class="contact-item">
+            <strong>TTY:</strong>
+            <a href="tel:${carrierData.contact.phoneTTY.replace(/[^0-9]/g, '')}" class="contact-link">
+              <i class="bx bx-phone"></i> ${carrierData.contact.phoneTTY}
+            </a>
+          </div>
+          ` : ''}
           ${carrierData.contact.note ? `
           <div class="contact-item">
             <strong>Note:</strong>
@@ -42,6 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
               <i class="bx bx-link-external"></i> ${carrierData.contact.websiteText}
             </a>
           </div>
+          ${carrierData.contact.memberPortal ? `
+          <div class="contact-item">
+            <strong>Member Portal:</strong>
+            <a href="${carrierData.contact.memberPortal}" target="_blank" class="contact-link">
+              <i class="bx bx-link-external"></i> Login
+            </a>
+          </div>
+          ` : ''}
         </div>
       </div>
       ${carrierData.providerSearch ? `

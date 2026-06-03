@@ -86,6 +86,7 @@ class CarriersGrid extends HTMLElement {
         <div class="carrier-card-content">
           <h4 class="carrier-card-name">${carrier.name}</h4>
           <p class="carrier-card-types">${carrier.benefitTypes.join(', ')}</p>
+          ${carrier.badge ? `<span class="carrier-card-badge">${carrier.badge}</span>` : ''}
           <div class="carrier-card-actions">
             <button class="btn-view-details" type="button">
               View Details

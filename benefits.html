@@ -65,6 +65,7 @@
     <script src="./scripts/components/carriers/bcbs-dental-component.js"></script>
     <script src="./scripts/components/carriers/bcbsmed-component.js?v=1.1"></script>
     <script src="./scripts/components/carriers/cvscaremark-component.js?v=1.4"></script>
+    <script src="./scripts/components/carriers/express-scripts-component.js"></script>
     <script src="./scripts/components/carriers/pres-component.js?v=1.3"></script>
     <script src="./scripts/components/carriers/lantern-component.js"></script>
     <script src="./scripts/components/carriers/delta-component.js?v=1.1"></script>
@@ -76,7 +77,7 @@
     <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"></script>
     <script src="./scripts/components/stat-reporting-component.js"></script>
     <!-- Carrier data and grid component -->
-    <script src="./scripts/carriers-data.js?v=1.2"></script>
+    <script src="./scripts/carriers-data.js?v=1.3"></script>
     <script src="./scripts/components/carriers-grid-component.js"></script>
     <script src="./scripts/enhance-carrier-modals.js"></script>
   </head>
@@ -588,6 +589,41 @@
           </div>
           <div class="modal-body">
             <caremark-info></caremark-info>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Express Scripts Modal -->
+    <div
+      class="modal fade"
+      id="expressScriptsModal"
+      tabindex="-1"
+      aria-labelledby="expressScriptsModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex align-items-center gap-3">
+              <img
+                src="images/carriers/express_rx.svg"
+                alt="Express Scripts logo"
+                class="modal-header-logo"
+              />
+              <h5 class="modal-title mb-0" id="expressScriptsModalLabel">
+                Express Scripts Pharmacy
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <express-scripts-info></express-scripts-info>
           </div>
         </div>
       </div>

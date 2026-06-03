@@ -1420,6 +1420,17 @@ body.modern-body::after {
   text-transform: capitalize;
 }
 
+.carrier-card-badge {
+  display: inline-block;
+  background-color: #dc3545;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
 .carrier-card-actions {
   display: flex;
   flex-direction: column;
