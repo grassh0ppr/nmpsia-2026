@@ -17,7 +17,7 @@ export const meetings = {
       },
       Board: {
         date: "04",
-        documents: ["agenda"],
+        documents: ["agenda", "packet"],
       },
     },
   },
