@@ -141,12 +141,44 @@ class CarrierContacts extends HTMLElement {
                 <div class="carrier-card">
                   <div class="carrier-header">
                     <img
+                      src="images/carriers/express evernorth.png"
+                      alt="Express Scripts"
+                    />
+                    <h5>Express Scripts</h5>
+                  </div>
+                  <div class="carrier-details">
+                    <span class="carrier-card-badge">Effective 7/1/2026</span>
+                    <p>
+                      <strong>RxBIN:</strong> 003858<br />
+                      <strong>RxPCN:</strong> A4<br />
+                      <strong>RxGrp:</strong> NMPSRX1
+                    </p>
+                    <a href="tel:18008189281" class="carrier-phone">
+                      <i class="bx bx-phone"></i>1-800-818-9281
+                    </a>
+                    <a href="tel:18007163231" class="carrier-phone">
+                      <i class="bx bx-phone"></i>TTY: 1-800-716-3231
+                    </a>
+                    <a
+                      href="https://www.express-scripts.com/frontend/commercial-open-enrollment/nmpsia"
+                      class="carrier-website"
+                      target="_blank"
+                    >
+                      <i class="bx bx-link-external"></i>Visit Website
+                    </a>
+                  </div>
+                </div>
+
+                <div class="carrier-card">
+                  <div class="carrier-header">
+                    <img
                       src="images/CVS_Caremark_logo.jpg"
                       alt="CVS Caremark"
                     />
                     <h5>CVS Caremark</h5>
                   </div>
                   <div class="carrier-details">
+                    <span class="carrier-card-badge">Ending 6/30/2026</span>
                     <p>
                       <strong>RxBIN:</strong> 004336<br />
                       <strong>RxPCN:</strong> ADV<br />
