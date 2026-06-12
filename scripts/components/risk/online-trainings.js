@@ -38,45 +38,51 @@ class OnlineTrainings extends HTMLElement {
   </table>
   </div>
 
-  <ul class="content-list">
-    <li>
-      <a
-        href="/pdfs/poms-risk-docs/Poms_Child-Abuse-Prevention-Flier-NMPSIA-combined.pdf"
-        target="_blank"
-        >Child Sexual Abuse Prevention in Schools</a
-      >
-    </li>
-    <p>
-      Recognizing and Reporting Child Abuse training is required when an
-      employee first starts employment at a district.
-    </p>
-    <li>
-      <a href="https://www.pomsassoc.com/webinars" target="_blank"
-        >Webinar Library</a
-      >
-    </li>
-    <p>
-      Poms keeps an extensive
-      <a href="https://www.pomsassoc.com/webinars" target="_blank"
-        >library</a
-      >
-      of recorded webinars on a variety of human resources and risk
-      control topics.
-    </p>
+  <style>
+    online-trainings .link-icon {
+      width: 42px;
+      height: 42px;
+      margin-bottom: 0.5rem;
+    }
+    online-trainings .link-icon i {
+      font-size: 1.2rem;
+    }
+  </style>
 
-    <li>
-      <a href="https://vimeo.com/showcase/9806690" target="_blank"
-        >Title IX Training</a
-      >
-    </li>
-    <p>
-      This Vimeo playlist contains
-      <a href="https://vimeo.com/showcase/9806690" target="_blank"
-        >training videos</a
-      >
-      regarding the new Title IX regulations
-    </p>
-  </ul>
+  <div class="links-grid">
+    <a href="/PDFs/poms-risk-docs/NMPSIA_Poms_CSAP_and_Safety_Compliance_Training_Flyer_12012025.pdf" target="_blank" class="link-card">
+      <div class="link-icon">
+        <i class="bx bxs-file-pdf"></i>
+      </div>
+      <h4>Child Sexual Abuse Prevention in Schools</h4>
+      <p>
+        Recognizing and Reporting Child Abuse training is required when an
+        employee first starts employment at a district.
+      </p>
+    </a>
+
+    <a href="https://www.pomsassoc.com/webinars" target="_blank" class="link-card">
+      <div class="link-icon">
+        <i class="bx bx-video"></i>
+      </div>
+      <h4>Webinar Library</h4>
+      <p>
+        Poms keeps an extensive library of recorded webinars on a variety
+        of human resources and risk control topics.
+      </p>
+    </a>
+
+    <a href="https://vimeo.com/showcase/9806690" target="_blank" class="link-card">
+      <div class="link-icon">
+        <i class="bx bx-book-reader"></i>
+      </div>
+      <h4>Title IX Training</h4>
+      <p>
+        This Vimeo playlist contains training videos regarding the new
+        Title IX regulations.
+      </p>
+    </a>
+  </div>
     `;
   }
 }
