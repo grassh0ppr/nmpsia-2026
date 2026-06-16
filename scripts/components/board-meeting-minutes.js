@@ -19,6 +19,11 @@ class BoardMeetingMinutes extends HTMLElement {
                      data-bs-parent="#accordionBMM">
                      <div class="accordion-body">
                          <ul class="content-list">
+                         <li>
+                                 <i class="bx bxs-file-pdf"></i>
+                                 <a target="_blank" href="/nmpsiadownload/202606/minutes/June 2026 Minutes Draft - Accepted Track Changes.pdf">
+                                     June 2026</a>
+                             </li>
                              <li>
                                  <i class="bx bxs-file-pdf"></i>
                                  <a target="_blank" href="/nmpsiadownload/202605/minutes/Board_meeting_minutes.pdf">
