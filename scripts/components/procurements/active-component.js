@@ -18,6 +18,13 @@ class ActiveProcurements extends HTMLElement {
           </thead>
           <tbody>
           <tr>
+          <td>07/08/2026</td>
+          <td>RFQ</td>
+          <td>
+            <a href="/docs/Life and LTD RFQ Project Manager -Final.pdf" target="_blank">RFQ - PROJECT MANAGER TO ADMINISTER THE LIFE AND LONG-TERM DISABILITY INSURANCE REQUEST FOR PROPOSALS</a>
+          </td>
+        </tr>
+          <tr>
           <td>&mdash;</td>
           <td>RFP# 342-2026-03</td>
           <td>
