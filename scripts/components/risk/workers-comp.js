@@ -317,15 +317,15 @@ class WorkersComp extends HTMLElement {
             </li>
 
             <li class="wc-contact-card">
-              <h6 class="wc-contact-name">Natasha Orona</h6>
+              <h6 class="wc-contact-name">Samantha Turnbaugh</h6>
               <p class="wc-contact-title">NMPSIA Claims Representative</p>
               <dl class="wc-contact-details">
                 <dt><i class="bx bx-phone" aria-hidden="true"></i><span class="wc-contact-label">Phone</span></dt>
-                <dd><a href="tel:15054319283">(505) 431-9283</a></dd>
+                <dd><a href="tel:15058378728">(505) 837-8728</a></dd>
                 <dt><i class="bx bx-printer" aria-hidden="true"></i><span class="wc-contact-label">Fax</span></dt>
-                <dd>(217) 477-7462</dd>
+                <dd>(217) 477-6609</dd>
                 <dt><i class="bx bx-envelope" aria-hidden="true"></i><span class="wc-contact-label">Email</span></dt>
-                <dd><a href="mailto:natasha.orona@ccmsi.com">natasha.orona@ccmsi.com</a></dd>
+                <dd><a href="mailto:samantha.turnbaugh@ccmsi.com">samantha.turnbaugh@ccmsi.com</a></dd>
               </dl>
             </li>
 
