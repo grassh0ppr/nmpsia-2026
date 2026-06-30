@@ -59,6 +59,7 @@
     <!-- components -->
     <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"></script>
     <script src="./scripts/components/footer/footer-sitemap.js?v=1.2"></script>
+    <script src="./scripts/components/enrollment-checklist-modal.js"></script>
 
     <style>
       /* Training-specific styles */
@@ -379,7 +380,7 @@
                     <i class="bx bxs-file-pdf"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        2. Benefits Specialist Guide to Enrollment
+                        Benefits Specialist Guide to Enrollment
                       </div>
                       <div class="training-link-description">
                         Guide for benefits specialists
@@ -387,22 +388,62 @@
                     </div>
                     <span class="year-badge">2026</span>
                   </a>
-                  <a
-                    href="/PDFs/2026_Regional_Training_Toolkit/3_Employee_Guide_to_Enrollment.pdf"
-                    target="_blank"
-                    class="training-link"
+                  <div
+                    style="display: flex; flex-direction: column; gap: 0.4rem"
                   >
-                    <i class="bx bxs-file-pdf"></i>
-                    <div class="training-link-content">
-                      <div class="training-link-title">
-                        3. Employee Guide to Enrollment
+                    <button
+                      type="button"
+                      class="training-link"
+                      data-bs-toggle="modal"
+                      data-bs-target="#enrollmentChecklistModal"
+                      style="
+                        background: none;
+                        border: 1px solid #e9ecef;
+                        text-align: left;
+                        width: 100%;
+                        cursor: pointer;
+                        min-height: 110px;
+                      "
+                    >
+                      <i
+                        class="bx bx-list-check"
+                        style="
+                          font-size: 1.5rem;
+                          color: #667eea;
+                          min-width: 1.5rem;
+                        "
+                      ></i>
+                      <div class="training-link-content">
+                        <div class="training-link-title">
+                          Employee Guide to Enrollment
+                        </div>
+                        <div class="training-link-description">
+                          Interactive enrollment checklist
+                        </div>
                       </div>
-                      <div class="training-link-description">
-                        Enrollment guide for employees
-                      </div>
-                    </div>
-                    <span class="year-badge">2026</span>
-                  </a>
+                      <span class="year-badge">2026</span>
+                    </button>
+                    <a
+                      href="/PDFs/2026_Regional_Training_Toolkit/3_Employee_Guide_to_Enrollment.pdf"
+                      target="_blank"
+                      style="
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 0.4rem;
+                        font-size: 0.8rem;
+                        color: #6c757d;
+                        text-decoration: none;
+                        padding: 0.25rem 0.5rem;
+                        border-radius: 6px;
+                        transition: color 0.2s ease;
+                      "
+                      onmouseover="this.style.color = '#667eea'"
+                      onmouseout="this.style.color = '#6c757d'"
+                    >
+                      <i class="bx bxs-file-pdf" style="font-size: 1rem"></i>
+                      Download PDF to print
+                    </a>
+                  </div>
                   <a
                     href="/PDFs/2026_Regional_Training_Toolkit/4_Wellness_Ambassasdor.pdf"
                     target="_blank"
@@ -410,9 +451,7 @@
                   >
                     <i class="bx bxs-file-pdf"></i>
                     <div class="training-link-content">
-                      <div class="training-link-title">
-                        4. Wellness Ambassador
-                      </div>
+                      <div class="training-link-title">Wellness Ambassador</div>
                       <div class="training-link-description">
                         Wellness ambassador resources
                       </div>
@@ -427,7 +466,7 @@
                     <i class="bx bxs-file"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        4. 2026 New Hire Template
+                        2026 New Hire Template
                       </div>
                       <div class="training-link-description">
                         PowerPoint template for new hires
@@ -443,7 +482,7 @@
                     <i class="bx bxs-file-pdf"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        5. Program Guide Access
+                        Program Guide Access
                       </div>
                       <div class="training-link-description">
                         How to access program guides
@@ -459,7 +498,7 @@
                     <i class="bx bxs-file-pdf"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        6. Welcome to the MyBenefits Portal
+                        Welcome to the MyBenefits Portal
                       </div>
                       <div class="training-link-description">
                         MyBenefits Portal introduction
@@ -474,9 +513,7 @@
                   >
                     <i class="bx bxs-file-doc"></i>
                     <div class="training-link-content">
-                      <div class="training-link-title">
-                        7. Benefits Summary
-                      </div>
+                      <div class="training-link-title">Benefits Summary</div>
                       <div class="training-link-description">
                         Summary of NMPSIA benefits
                       </div>
@@ -491,7 +528,7 @@
                     <i class="bx bxs-file-doc"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        8. Employer/Employee Acknowledgment Form
+                        Employer/Employee Acknowledgment Form
                       </div>
                       <div class="training-link-description">
                         Acknowledgment form for employers and employees
@@ -507,7 +544,7 @@
                     <i class="bx bxs-file-pdf"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        9. Filing a Life Claim for Districts — For Employee Use
+                        Filing a Life Claim for Districts — For Employee Use
                       </div>
                       <div class="training-link-description">
                         Life claim filing guide for employees
@@ -523,7 +560,7 @@
                     <i class="bx bxs-file-pdf"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        10. Filing a Life Claim — For Employer Use
+                        Filing a Life Claim — For Employer Use
                       </div>
                       <div class="training-link-description">
                         Life claim filing guide for employers
@@ -792,5 +829,7 @@
     ></script>
 
     <script src="./scripts/main.js"></script>
+
+    <enrollment-checklist-modal></enrollment-checklist-modal>
   </body>
 </html>
