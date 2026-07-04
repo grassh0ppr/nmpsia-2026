@@ -1,5 +1,80 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "July 2026": [
+    {
+      name: "Wellness Communications - July 2026",
+      url: "/wellness/july_2026/Wellness_Communication_July_2026.pdf",
+    },
+    {
+      name: "NMPSIA July 2026 Work and Well-Being Newsletter",
+      url: "/wellness/july_2026/NMPSIA_Work_WellBeing_July_'26_Newsletter.pdf",
+    },
+    {
+      name: "July 14, 2026: Virtual Well-onTarget Member Overview",
+      url: "/wellness/july_2026/Virtual_Well_onTarget_Member_Overview.pdf",
+    },
+    {
+      name: "July 15, 2026: Webinar - Sugar Smarts: Modern Strategies to Outsmart Diabetes",
+      url: "/wellness/july_2026/TSG_Wellness_Webinar_Sugar_Smarts_Diabetes.pdf",
+    },
+    {
+      name: "July 21, 2026: Webinar - Diabetes 101",
+      url: "/wellness/july_2026/BCBS_Webinar_Diabetes_101.pdf",
+    },
+    {
+      name: "July 23, 2026: Cooking Show - Grillin' and Chillin' for Heart Healthy Thrills",
+      url: "/wellness/july_2026/07_July_Cooking_Show_2026.pdf",
+    },
+    {
+      name: "July 27, 2026: Webinar - Living Well with Diabetes",
+      url: "/wellness/july_2026/BCBS_Webinar_Living_Well_with_Diabetes.pdf",
+    },
+    {
+      name: "July 29, 2026 Webinar - Nutrition and Diabetes",
+      url: "/wellness/july_2026/BCBS_Nutrition_and_Diabetes_Webinar.pdf",
+    },
+    {
+      name: "Nations Nutrition Registered Dietician Tricks for a Fourth of July Menu",
+      url: "/wellness/july_2026/Nations_Nutrition_Registered_Dietician_Tricks_Fourth_of_July.pdf",
+    },
+    {
+      name: "July 2026 Observance Poster - Sugar Smarts (English)",
+      url: "/wellness/july_2026/07_July_Observance_2026_Sugar_Smarts.pdf",
+    },
+    {
+      name: "July 2026 Observance Poster - Sobre el Azúcar (Español)",
+      url: "/wellness/july_2026/07_July_Observance_2026_Sobre_el_Azucar_SP.pdf",
+    },
+    {
+      name: "Feeling Stiff? Full Body Workplace Stretching 6-Week Program",
+      url: "/wellness/july_2026/Full_Body_Workplace_Stretching_Program.pdf",
+    },
+    // Presbyterian Fitness Pass flyer
+    {
+      name: "Presbyterian Fitness Pass Flyer",
+      url: "/wellness/july_2026/Presbyterian_Fitness_Pass.pdf",
+    },
+    // Life on Mindfulness program flyer
+    {
+      name: "Life on Mindfulness Program Flyer",
+      url: "/wellness/july_2026/Life_on_Mindfulness_2026_NMPSIA.pdf",
+    },
+    // mindful eating program flyer
+    {
+      name: "Mindful Eating Program Flyer",
+      url: "/wellness/july_2026/NMPSIA_Mindful_Eating_Program.pdf",
+    },
+    // Welcoa WellBalanced Diabetes Prevention program flyer
+    {
+      name: "Welcoa WellBalanced Diabetes Prevention Program Flyer",
+      url: "/wellness/july_2026/Welcoa_WellBalanced_Diabetes_Prevention.pdf",
+    },
+    // NMPSIA Wellness Ambassador Flyer 2026-27 flyer
+    {
+      name: "NMPSIA Wellness Ambassador Flyer 2026-27",
+      url: "/wellness/july_2026/NMPSIA_Wellness_Ambassador_Flyer_26_27.pdf",
+    },
+  ],
   "June 2026": [
     {
       name: "Wellness Communications - June 2026",

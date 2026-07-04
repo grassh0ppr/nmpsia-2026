@@ -1,139 +1,142 @@
 // object holding news items to be rendered to the page
 const homepageNews = [
   // notice of public meetings - JUNE 3 & 4, 2026
-  {
-    date: {
-      day: "29",
-      month: "May",
-    },
-    title: "Notice of Public Meetings June 3 & 4, 2026",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
-    linkHref:
-      "https://nmpsia.com/nmpsiadownload/202606/notice_of_public_meetings.pdf",
-    linkText: "View notice",
-  },
+  // {
+  //   date: {
+  //     day: "29",
+  //     month: "May",
+  //   },
+  //   title: "Notice of Public Meetings June 3 & 4, 2026",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
+  //   linkHref:
+  //     "https://nmpsia.com/nmpsiadownload/202606/notice_of_public_meetings.pdf",
+  //   linkText: "View notice",
+  // },
   // BAC Meeting
-  {
-    date: {
-      day: "03",
-      month: "June",
-    },
-    title: "Benefits Advisory Committee Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202606/BAC_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "03",
+  //     month: "June",
+  //   },
+  //   title: "Benefits Advisory Committee Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202606/BAC_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
   // RAC meeting
-  {
-    date: {
-      day: "03",
-      month: "June",
-    },
-    title: "Risk Advisory Committee Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202606/RAC_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "03",
+  //     month: "June",
+  //   },
+  //   title: "Risk Advisory Committee Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202606/RAC_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
   // IFR meeting
-  {
-    date: {
-      day: "04",
-      month: "June",
-    },
-    title: "Internal Fiscal Review Committee Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202606/IFR_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "04",
+  //     month: "June",
+  //   },
+  //   title: "Internal Fiscal Review Committee Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202606/IFR_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
   // Board meeting
-  {
-    date: {
-      day: "04",
-      month: "June",
-    },
-    title: "Board of Directors Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202606/Board_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "04",
+  //     month: "June",
+  //   },
+  //   title: "Board of Directors Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202606/Board_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
 
   //Wellness events go here
 
-  // Wellness Events Calendar - June 2026
+  // Well-onTarget Member Overview - July 14
   {
     date: {
-      day: "",
-      month: "",
+      day: "14",
+      month: "July",
     },
-    title: "NMPSIA Wellness Events Calendar - June 2026",
+    title: "July 14, 2026: Virtual Well-onTarget Member Overview",
     description:
-      "View the full calendar of NMPSIA wellness events and activities for June 2026.",
-    linkHref: "/wellness/June_2026/NMPSIA Wellness Calendar June 2025.pdf",
-    linkText: "View calendar",
-  },
-  // Navigating the Grocery Store - June 16
-  {
-    date: {
-      day: "16",
-      month: "June",
-    },
-    title: "Navigating the Grocery Store",
-    description:
-      "Join us for a wellness webinar on how to navigate the grocery store for healthier choices.",
-    linkHref: "/wellness/June_2026/Navigating the Grocery Store.pdf",
+      "Join us for a virtual well-onTarget member overview. Learn how to get started on the portal and app, how to create your own personal wellness journey, access the wellness activities and resources, and even earn Blue Points at the online shopping mall.",
+    linkHref: "/wellness/july_2026/Virtual_Well_onTarget_Member_Overview.pdf",
     linkText: "View flyer",
   },
-  // TSG Wellness Webinar - June 17
+  // Webinar - Sugar Smarts: Modern Strategies to Outsmart Diabetes - July 15
   {
     date: {
-      day: "17",
-      month: "June",
+      day: "15",
+      month: "July",
     },
     title:
-      "TSG Wellness Webinar - The Silent Storm: Spotting Metabolic Syndrome Early",
-    description: "Join the TSG monthly wellness webinar for June 2026.",
-    linkHref: "/wellness/June_2026/June Wellness 2026 Webinars TSG_06.pdf",
-    linkText: "View flyer",
-  },
-  // Nutrition and Heart Health - June 17
-  {
-    date: {
-      day: "17",
-      month: "June",
-    },
-    title: "Nutrition and Heart Health",
+      "July 15, 2026: Webinar - Sugar Smarts: Modern Strategies to Outsmart Diabetes",
     description:
-      "Join us for a wellness webinar on nutrition and heart health.",
-    linkHref: "/wellness/June_2026/Nutrition and Heart Health.pdf",
+      "Diabetes prevention is about so much more than sugar. This session reveals the hidden drivers of blood sugar imbalance—including low muscle mass, poor sleep, and chronic stress—and demonstrates how small, consistent changes can have a significant impact. Participants will leave with real-world strategies for building resilience against diabetes.",
+    linkHref:
+      "/wellness/july_2026/TSG_Wellness_Webinar_Sugar_Smarts_Diabetes.pdf",
     linkText: "View flyer",
   },
-  // Trending in Nutrition - June 22
+  // Webinar - Diabetes 101 - July 21
   {
     date: {
-      day: "22",
-      month: "June",
+      day: "21",
+      month: "July",
     },
-    title: "Webinar - Trending in Nutrition",
+    title: "July 21, 2026: Webinar - Diabetes 101",
     description:
-      "Join us for a wellness webinar on the latest trends in nutrition.",
-    linkHref: "/wellness/June_2026/Trending in Nutrition.pdf",
+      "Join BCBS for a wellness webinar on understanding diabetes. We will learn about the basics of diabetes, the different types of diabetes, the symptoms of diabetes, and daily steps you can take for prevention and management.",
+    linkHref: "/wellness/july_2026/BCBS_Webinar_Diabetes_101.pdf",
     linkText: "View flyer",
   },
-  // June 2026 Cooking Show - June 25
+  // Cooking Show - Grillin' and Chillin' - July 23
   {
     date: {
-      day: "25",
-      month: "June",
+      day: "23",
+      month: "July",
     },
     title:
-      "June 2026 Cooking Show - Stacking Pancakes and Sipping Smarts: Fuel for Muscles and Minds",
-    description: "Join us for the June 2026 wellness cooking show.",
-    linkHref: "/wellness/June_2026/06_June Cooking Show_2026.pdf",
+      "July 23, 2026: Cooking Show - Grillin' and Chillin' for Heart Healthy Thrills",
+    description:
+      "July is grilling season, and these recipes prove that summer flavors can be both bold and nourishing. With lean proteins, antioxidant-rich vegetables, and heart-healthy fats, this month celebrates vitality and safe sun living. Each dish is designed to fuel long summer days while keeping wellness at the forefront",
+    linkHref: "/wellness/july_2026/07_July_Cooking_Show_2026.pdf",
+    linkText: "View flyer",
+  },
+  // Webinar - Living Well with Diabetes - July 27
+  {
+    date: {
+      day: "27",
+      month: "July",
+    },
+    title: "July 27, 2026: Webinar - Living Well with Diabetes",
+    description:
+      "Learn about symptoms of diabetes, various medications, and lifestyle changes to manage diabetes.",
+    linkHref: "/wellness/july_2026/BCBS_Webinar_Living_Well_with_Diabetes.pdf",
+    linkText: "View flyer",
+  },
+  // Webinar - Nutrition and Diabetes - July 29
+  {
+    date: {
+      day: "29",
+      month: "July",
+    },
+    title: "July 29, 2026: Webinar - Nutrition and Diabetes",
+    description:
+      "Learn about how nutition affects diabetes, how to set up a healthy plate, the best carbs to consume, and healthy snacking ideas.",
+    linkHref: "/wellness/july_2026/BCBS_Nutrition_and_Diabetes_Webinar.pdf",
     linkText: "View flyer",
   },
   // Ongoing wellness promotions
@@ -142,11 +145,54 @@ const homepageNews = [
       day: "",
       month: "",
     },
-    title: "The Mindful Center - Mindful Blood Pressure Reduction Program",
+    title: "Presbyterian Fitness Pass",
     description:
-      "Learn about the Mindful Blood Pressure Reduction Program offered through The Mindful Center.",
-    linkHref:
-      "/wellness/June_2026/Mindful Blood Pressure Reduction - NMPSIA.pdf",
+      "Learn about the Presbyterian Fitness Pass and how to access participating fitness facilities.",
+    linkHref: "/wellness/july_2026/Presbyterian_Fitness_Pass.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "",
+      month: "",
+    },
+    title: "Life on Mindfulness Program",
+    description:
+      "Explore guided meditations, teachings, and mindfulness practices through the Life on Mindfulness program.",
+    linkHref: "/wellness/july_2026/Life_on_Mindfulness_2026_NMPSIA.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "",
+      month: "",
+    },
+    title: "Mindful Eating Program",
+    description:
+      "Learn about the NMPSIA Mindful Eating Program and how to enroll.",
+    linkHref: "/wellness/july_2026/NMPSIA_Mindful_Eating_Program.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "",
+      month: "",
+    },
+    title: "Welcoa WellBalanced Diabetes Prevention Program",
+    description:
+      "Learn about the Welcoa WellBalanced Diabetes Prevention Program.",
+    linkHref: "/wellness/july_2026/Welcoa_WellBalanced_Diabetes_Prevention.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "",
+      month: "",
+    },
+    title: "NMPSIA Wellness Ambassador Program 2026-27",
+    description:
+      "Learn about the NMPSIA Wellness Ambassador Program for 2026-27 and how to get involved.",
+    linkHref: "/wellness/july_2026/NMPSIA_Wellness_Ambassador_Flyer_26_27.pdf",
     linkText: "View flyer",
   },
   {
@@ -157,18 +203,7 @@ const homepageNews = [
     title: "Feeling Stiff? Full Body Workplace Stretching 6-Week Program",
     description:
       "Join the 6-week full body workplace stretching program to improve flexibility and reduce stiffness.",
-    linkHref: "/wellness/June_2026/Full Body Workplace Stretching Program.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "",
-      month: "",
-    },
-    title: "Find the Right Nutrition Program for You - Presbyterian",
-    description:
-      "Take the Presbyterian survey to find the right nutrition program for you.",
-    linkHref: "/wellness/June_2026/Qualtrics Survey- Presbyterian.pdf",
+    linkHref: "/wellness/july_2026/Full_Body_Workplace_Stretching_Program.pdf",
     linkText: "View flyer",
   },
 
