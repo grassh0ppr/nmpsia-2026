@@ -39,8 +39,23 @@ body {
   background-color: #006b9f;
   padding: 0.5rem 1rem;
   font-size: 2rem;
-  text-align: right;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edition-pdf-link {
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.edition-pdf-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: #fff;
 }
 
 .edition span {
