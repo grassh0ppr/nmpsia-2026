@@ -7,7 +7,7 @@ const monthlyNewsKits = {
     },
     {
       name: "NMPSIA July 2026 Work and Well-Being Newsletter",
-      url: "/wellness/july_2026/NMPSIA_Work_WellBeing_July_'26_Newsletter.pdf",
+      url: "/monthly/news/monthly-news.html",
     },
     {
       name: "July 14, 2026: Virtual Well-onTarget Member Overview",
