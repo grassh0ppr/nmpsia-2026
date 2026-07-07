@@ -67,7 +67,7 @@ const carriersData = [
       phoneLink: "tel:18008189281",
       phoneTTY: "1-800-716-3231",
       groupNumbers: "RxBIN: 003858, RxPCN: A4, RxGrp: NMPSRX1",
-      website: "https://www.express-scripts.com/frontend/commercial-open-enrollment/nmpsia",
+      website: "https://www.express-scripts.com/",
       websiteText: "Visit Website",
       memberPortal: "https://www.express-scripts.com/login?routingpage=/consumer/mybenefits/pl.jsp&CID=se:bob:pharmacyrx1:Bing2025:B:RT0&msclkid=77814cbed3ea17dbe5e026b982e64012&gclid=77814cbed3ea17dbe5e026b982e64012&gclsrc=3p.ds",
     },

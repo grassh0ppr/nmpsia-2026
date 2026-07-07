@@ -3,7 +3,7 @@ class ExpressScriptsInfo extends HTMLElement {
     this.innerHTML = /*html*/ `
     <div class="heading-and-element-flexbox">
       <h2 class="display-4">Express Scripts</h2>
-      <a href="https://www.express-scripts.com/frontend/commercial-open-enrollment/nmpsia" target="_blank" title="Visit carrier website">
+      <a href="https://www.express-scripts.com/" target="_blank" title="Visit carrier website">
         <img class="my-4 mx-3" src="images/carriers/express evernorth.png" alt="Express Scripts logo" style="max-height: 80px;">
       </a>
     </div>

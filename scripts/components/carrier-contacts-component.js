@@ -160,7 +160,7 @@ class CarrierContacts extends HTMLElement {
                       <i class="bx bx-phone"></i>TTY: 1-800-716-3231
                     </a>
                     <a
-                      href="https://www.express-scripts.com/frontend/commercial-open-enrollment/nmpsia"
+                      href="https://www.express-scripts.com/"
                       class="carrier-website"
                       target="_blank"
                     >
