@@ -1,18 +1,18 @@
 // object holding news items to be rendered to the page
 const homepageNews = [
-  // notice of public meetings - JUNE 3 & 4, 2026
-  // {
-  //   date: {
-  //     day: "29",
-  //     month: "May",
-  //   },
-  //   title: "Notice of Public Meetings June 3 & 4, 2026",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
-  //   linkHref:
-  //     "https://nmpsia.com/nmpsiadownload/202606/notice_of_public_meetings.pdf",
-  //   linkText: "View notice",
-  // },
+  // notice of public meetings - JULY 20 & 21, 2026
+  {
+    date: {
+      day: "15",
+      month: "July",
+    },
+    title: "Notice of Public Meetings July 20 & 21, 2026",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
+    linkHref:
+      "https://nmpsia.com/nmpsiadownload/202607/notice_of_public_meetings.pdf",
+    linkText: "View notice",
+  },
   // BAC Meeting
   // {
   //   date: {
@@ -64,18 +64,6 @@ const homepageNews = [
 
   //Wellness events go here
 
-  // Well-onTarget Member Overview - July 14
-  {
-    date: {
-      day: "14",
-      month: "July",
-    },
-    title: "July 14, 2026: Virtual Well-onTarget Member Overview",
-    description:
-      "Join us for a virtual well-onTarget member overview. Learn how to get started on the portal and app, how to create your own personal wellness journey, access the wellness activities and resources, and even earn Blue Points at the online shopping mall.",
-    linkHref: "/wellness/july_2026/Virtual_Well_onTarget_Member_Overview.pdf",
-    linkText: "View flyer",
-  },
   // Webinar - Sugar Smarts: Modern Strategies to Outsmart Diabetes - July 15
   {
     date: {
