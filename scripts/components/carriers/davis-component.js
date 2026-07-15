@@ -79,7 +79,7 @@ class DavisVision extends HTMLElement {
        
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="pdfs/NMPSIA_STUDENT_VISION_VOUCHER_FORM_2025-2026.pdf">2025 - 2026
+          <a target="_blank" href="pdfs/NMPSIA_STUDENT_VISION_VOUCHER_FORM_2026-2027.pdf">2026 - 2027
             Davis Vision Student
             Eye Exam and Eyeglass Voucher</a>
         </li>
@@ -88,6 +88,10 @@ class DavisVision extends HTMLElement {
           <a target="_blank" href="pdfs/Why_Children_Need_Regular_Vision_Screenings_and_Eye_Exams.pdf">
             Why Children Need Regular
             Vision Screenings and Eye Exams</a>
+        </li>
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="pdfs/DV_Letter_to_Nurses_2026-2027.pdf">A Note to NM Public School Nurses on Vision Care and Vouchers</a>
         </li>
         <h4 class="mt-4 mb-3">Davis Vision Hearing Benefit</h4>
         <li>
