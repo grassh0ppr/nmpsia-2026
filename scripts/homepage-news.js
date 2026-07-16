@@ -14,70 +14,56 @@ const homepageNews = [
     linkText: "View notice",
   },
   // BAC Meeting
-  // {
-  //   date: {
-  //     day: "03",
-  //     month: "June",
-  //   },
-  //   title: "Benefits Advisory Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202606/BAC_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "20",
+      month: "July",
+    },
+    title: "Benefits Advisory Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202607/BAC_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
   // RAC meeting
-  // {
-  //   date: {
-  //     day: "03",
-  //     month: "June",
-  //   },
-  //   title: "Risk Advisory Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202606/RAC_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "20",
+      month: "July",
+    },
+    title: "Risk Advisory Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202607/RAC_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
   // IFR meeting
-  // {
-  //   date: {
-  //     day: "04",
-  //     month: "June",
-  //   },
-  //   title: "Internal Fiscal Review Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202606/IFR_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "21",
+      month: "July",
+    },
+    title: "Internal Fiscal Review Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202607/IFR_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
   // Board meeting
-  // {
-  //   date: {
-  //     day: "04",
-  //     month: "June",
-  //   },
-  //   title: "Board of Directors Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202606/Board_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "21",
+      month: "July",
+    },
+    title: "Board of Directors Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202607/Board_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
 
   //Wellness events go here
 
-  // Webinar - Sugar Smarts: Modern Strategies to Outsmart Diabetes - July 15
-  {
-    date: {
-      day: "15",
-      month: "July",
-    },
-    title:
-      "July 15, 2026: Webinar - Sugar Smarts: Modern Strategies to Outsmart Diabetes",
-    description:
-      "Diabetes prevention is about so much more than sugar. This session reveals the hidden drivers of blood sugar imbalance—including low muscle mass, poor sleep, and chronic stress—and demonstrates how small, consistent changes can have a significant impact. Participants will leave with real-world strategies for building resilience against diabetes.",
-    linkHref:
-      "/wellness/july_2026/TSG_Wellness_Webinar_Sugar_Smarts_Diabetes.pdf",
-    linkText: "View flyer",
-  },
   // Webinar - Diabetes 101 - July 21
   {
     date: {
