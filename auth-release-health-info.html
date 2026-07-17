@@ -192,6 +192,25 @@
         margin-bottom: 2rem;
       }
 
+      /* Skip link */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #667eea;
+        color: white;
+        padding: 0.5rem 1rem;
+        z-index: 10000;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 0 0 4px 0;
+        transition: top 0.2s;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+
       /* Success card after submission */
       .submission-success-card {
         text-align: center;
@@ -222,6 +241,7 @@
   </head>
 
   <body class="modern-body">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <webflow-navbar-component></webflow-navbar-component>
     <div class="modern-breadcrumb" aria-label="breadcrumb">
       <ol class="ms-4 breadcrumb">
@@ -235,7 +255,7 @@
       </ol>
     </div>
 
-    <main class="container new-form-container p-3">
+    <main id="main-content" class="container new-form-container p-3">
       <section class="hero-section">
         <div class="hero-content">
           <h1 class="hero-title">
@@ -275,10 +295,10 @@
       <form id="healthInfoForm" method="post" enctype="multipart/form-data">
         <!-- SECTION 1: PERSONAL INFORMATION -->
         <div class="form-section">
-          <h3 class="form-section-heading">
+          <h2 class="form-section-heading">
             <span class="form-section-number">1</span>
             Personal Information
-          </h3>
+          </h2>
           <div class="row">
             <div class="col-12 col-md-6 mb-3">
               <label for="policyHolderName" class="form-label"
@@ -340,10 +360,10 @@
 
         <!-- SECTION 2: INSURANCE & PROVIDER DETAILS -->
         <div class="form-section">
-          <h3 class="form-section-heading">
+          <h2 class="form-section-heading">
             <span class="form-section-number">2</span>
             Insurance &amp; Provider Details
-          </h3>
+          </h2>
 
           <p class="mb-3">
             Specific organization(s) authorized to provide the information
@@ -384,7 +404,9 @@
                   value="Express Scripts"
                   name="carrierSelection"
                 />
-                <label for="checkExpressScripts" class="form-label">Express Scripts</label>
+                <label for="checkExpressScripts" class="form-label"
+                  >Express Scripts</label
+                >
               </div>
               <div class="form-check form-check-inline">
                 <input
@@ -521,10 +543,10 @@
 
         <!-- SECTION 3: CLAIM DETAILS -->
         <div class="form-section">
-          <h3 class="form-section-heading">
+          <h2 class="form-section-heading">
             <span class="form-section-number">3</span>
             Claim Details
-          </h3>
+          </h2>
 
           <div class="mb-3">
             <label for="claimDetails" class="form-label">
@@ -540,12 +562,12 @@
               placeholder="e.g. On 03/15/2026 I had a procedure (knee MRI) at ABC Imaging Center. The claim was denied stating it was not pre-authorized..."
             ></textarea>
 
-            <p class="mb-1 mt-3">
+            <label for="supportingDocs" class="form-label mb-1 mt-3">
               Please attach any supporting documents, such as Explanation of
               Benefits (EOB), Bills, provider letters, denial notices, letter of
               medical necessity or prescription information to assist with the
               review.
-            </p>
+            </label>
             <input
               type="file"
               name="supportingDocs"
@@ -558,10 +580,10 @@
 
         <!-- SECTION 4: TERMS & CONDITIONS -->
         <div class="form-section">
-          <h3 class="form-section-heading">
+          <h2 class="form-section-heading">
             <span class="form-section-number">4</span>
             Terms &amp; Conditions
-          </h3>
+          </h2>
 
           <div class="mb-3">
             <p class="mb-1 mt-1">
@@ -613,10 +635,10 @@
 
         <!-- SECTION 5: SIGNATURES -->
         <div class="form-section">
-          <h3 class="form-section-heading">
+          <h2 class="form-section-heading">
             <span class="form-section-number">5</span>
             Signatures
-          </h3>
+          </h2>
 
           <p class="text-muted mb-3">
             I acknowledge and agree that by typing my name and today's date in
@@ -724,7 +746,7 @@
       </form>
 
       <div id="confirmationSection" style="display: none">
-        <h3 class="mb-2 text-center">Review your submission</h3>
+        <h2 class="mb-2 text-center">Review your submission</h2>
         <p class="text-center">
           Please confirm the information below is correct.
         </p>
@@ -828,16 +850,9 @@
       </div>
     </div>
 
-    <!-- Google search bar -->
-    <script
-      async
-      src="https://cse.google.com/cse.js?cx=1a04339760c2f9046"
-    ></script>
-
     <!-- jsPDF cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-    <script src="./scripts/main.js"></script>
     <script src="./scripts/health-info.js?v=2.3"></script>
   </body>
 </html>

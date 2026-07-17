@@ -256,14 +256,6 @@ class WebflowNavbar extends HTMLElement {
   }
 
   initializeSearch() {
-    // Load Google Custom Search Engine script
-    if (!document.querySelector('script[src*="cse.google.com"]')) {
-      const gcseScript = document.createElement("script");
-      gcseScript.src = "https://cse.google.com/cse.js?cx=1a04339760c2f9046";
-      gcseScript.async = true;
-      document.head.appendChild(gcseScript);
-    }
-
     // Initialize search toggle functionality
     this.setupSearchFunctionality();
 
