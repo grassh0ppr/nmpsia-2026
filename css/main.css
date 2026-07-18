@@ -586,6 +586,24 @@
   background: linear-gradient(135deg, #5a6fd6 0%, #433f8f 100%);
 }
 
+/* Document-style modals: lengthy, wordy content (e.g. PDF notices
+   translated to accessible HTML). Navy header differentiates them from
+   other modals, and they get extra width below the lg breakpoint since
+   the default/lg dialog widths feel cramped for this much text. */
+.document-modal .modal-header {
+  background: linear-gradient(135deg, #0f2d5c 0%, #183d78 100%);
+}
+
+.document-modal .modal-title {
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .document-modal {
+    max-width: 90%;
+  }
+}
+
 /* ===== BODY STYLES ===== */
 body.modern-body {
   background-image:

@@ -129,8 +129,9 @@
               and protected under HIPAA regulations.
             </p>
             <a
-              href="/pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf"
-              target="_blank"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#hipaaNoticeModal"
               class="quick-action-btn"
             >
               View Notice
@@ -643,6 +644,9 @@
       </div>
     </div>
 
+    <!-- HIPAA Notice of Privacy Practices Modal -->
+    <hipaa-notice-modal></hipaa-notice-modal>
+
     <!-- Wellness Monthly News Modal -->
     <div
       class="modal fade"
@@ -715,6 +719,9 @@
     <!-- Wellness newsletters and health kits component -->
     <script src="./scripts/components/wellness/newsletters-healthkits.js"></script>
     <script src="./scripts/wellness-news.js?v=4.6"></script>
+
+    <!-- HIPAA Notice of Privacy Practices modal -->
+    <script src="./scripts/components/hipaa-notice-modal.js"></script>
 
     <!-- <script src="./js/main.js"></script> -->
 
