@@ -35,6 +35,19 @@ document
 
 let storedFormData = null;
 let generatedPDFBlob;
+let recaptchaScriptLoaded = false;
+
+// Loaded on demand (once the user reaches the review step) rather than on
+// page load, so reCAPTCHA doesn't set cookies for visitors who never submit.
+function loadRecaptchaScript() {
+  if (recaptchaScriptLoaded) return;
+  recaptchaScriptLoaded = true;
+  const script = document.createElement("script");
+  script.src = "https://www.google.com/recaptcha/api.js";
+  script.async = true;
+  script.defer = true;
+  document.head.appendChild(script);
+}
 
 function clearStatusMessage() {
   if (!statusMessageEl) return;
@@ -75,6 +88,7 @@ async function showConfirmation() {
   }
   document.getElementById("healthInfoForm").style.display = "none";
   document.getElementById("confirmationSection").style.display = "block";
+  loadRecaptchaScript();
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -181,7 +195,6 @@ window.submitForm = async function submitForm(recaptchaToken) {
     );
     goBackBtn.disabled = false;
     submitBtn.disabled = false;
-    document.getElementById("loading").style.display = "none";
     return;
   }
   formData.append("t", recaptchaToken);
@@ -264,8 +277,6 @@ window.submitForm = async function submitForm(recaptchaToken) {
     submitBtn.disabled = false;
     document.getElementById("submittingOverlay").style.display = "none";
   }
-
-  console.log(formData);
 };
 
 function generatePDF(formData) {
