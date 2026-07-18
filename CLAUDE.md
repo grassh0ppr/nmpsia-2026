@@ -113,3 +113,11 @@ Components in `scripts/components/` are grouped by domain:
 - External links include `target="_blank"`
 - Bootstrap modals are used for archived content popups
 - Component HTML uses `/*html*/` pragma for syntax highlighting in editors
+
+### PDF-to-HTML Conversions
+
+Lengthy legal/compliance PDFs (privacy notices, disclosures, etc.) that need to be WCAG compliant are converted to semantic HTML and presented in a modal rather than linked as a raw PDF, following the pattern in `scripts/components/hipaa-notice-modal.js`:
+- Built as its own Web Component (e.g. `<hipaa-notice-modal>`), triggered via `data-bs-toggle="modal"` from a card/button, same as any other modal.
+- The modal's `.modal-dialog` gets the shared `document-modal` class (defined in `css/main.css`), which gives it a navy header—to visually distinguish "document" modals from regular content modals—and extra width below the `lg` breakpoint (~990px), since Bootstrap's default/`modal-lg` widths feel cramped for this much text.
+- The original PDF is still linked (e.g. "Download PDF") in the modal footer for anyone who wants it.
+- Content is marked up with real headings (`h3`+, nested under the modal's `h2` title), `ul`/`ol` lists, and `<address>` for contact blocks—don't flatten it into a wall of `<p>` tags.
