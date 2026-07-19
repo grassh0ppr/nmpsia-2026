@@ -36,6 +36,7 @@ document
 let storedFormData = null;
 let generatedPDFBlob;
 let recaptchaScriptLoaded = false;
+let jsPDFScriptPromise = null;
 
 // Loaded on demand (once the user reaches the review step) rather than on
 // page load, so reCAPTCHA doesn't set cookies for visitors who never submit.
@@ -47,6 +48,23 @@ function loadRecaptchaScript() {
   script.async = true;
   script.defer = true;
   document.head.appendChild(script);
+}
+
+// Loaded on demand (once the user reaches the review step) rather than on
+// page load, so the ~360KB jsPDF library doesn't block every visitor who
+// never gets to submitting the form. Kicked off in parallel with the
+// reCAPTCHA script so it's already warm by the time the user hits Confirm.
+function loadJsPDFScript() {
+  if (jsPDFScriptPromise) return jsPDFScriptPromise;
+  jsPDFScriptPromise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src =
+      "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error("Failed to load jsPDF"));
+    document.head.appendChild(script);
+  });
+  return jsPDFScriptPromise;
 }
 
 function clearStatusMessage() {
@@ -89,6 +107,7 @@ async function showConfirmation() {
   document.getElementById("healthInfoForm").style.display = "none";
   document.getElementById("confirmationSection").style.display = "block";
   loadRecaptchaScript();
+  loadJsPDFScript();
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -280,43 +299,46 @@ window.submitForm = async function submitForm(recaptchaToken) {
 };
 
 function generatePDF(formData) {
-  return new Promise((resolve, reject) => {
-    const { jsPDF } = window.jspdf;
-    let doc = new jsPDF();
-    let x = 10; // Starting x position
-    let y = 40; // Starting y position
-    let lineHeight = 10; // Line height for regular text
+  return loadJsPDFScript().then(
+    () =>
+      new Promise((resolve, reject) => {
+        const { jsPDF } = window.jspdf;
+        let doc = new jsPDF();
+        let x = 10; // Starting x position
+        let y = 40; // Starting y position
+        let lineHeight = 10; // Line height for regular text
 
-    // Add logo
-    const logoPath = "images/nmpsia_logo_2024.png";
-    const img = new Image();
+        // Add logo
+        const logoPath = "images/nmpsia_logo_2024.png";
+        const img = new Image();
 
-    img.onload = function () {
-      const logoWidth = 32;
-      const logoHeight = (img.height * logoWidth) / img.width;
+        img.onload = function () {
+          const logoWidth = 32;
+          const logoHeight = (img.height * logoWidth) / img.width;
 
-      // Add logo when the image is loaded
-      doc.addImage(img, "png", 10, 10, logoWidth, logoHeight);
+          // Add logo when the image is loaded
+          doc.addImage(img, "png", 10, 10, logoWidth, logoHeight);
 
-      // Add the PDF content
-      addPDFContent(doc, formData, x, y, lineHeight);
+          // Add the PDF content
+          addPDFContent(doc, formData, x, y, lineHeight);
 
-      try {
-        // Convert the document to a blob and resolve the promise with it
-        const pdfBlob = doc.output("blob");
-        resolve(pdfBlob);
-      } catch (error) {
-        reject(error);
-      }
-    };
+          try {
+            // Convert the document to a blob and resolve the promise with it
+            const pdfBlob = doc.output("blob");
+            resolve(pdfBlob);
+          } catch (error) {
+            reject(error);
+          }
+        };
 
-    img.onerror = function () {
-      reject(new Error("Failed to load logo image"));
-    };
+        img.onerror = function () {
+          reject(new Error("Failed to load logo image"));
+        };
 
-    // Set the image source to start loading
-    img.src = logoPath;
-  });
+        // Set the image source to start loading
+        img.src = logoPath;
+      }),
+  );
 }
 
 function addPDFContent(doc, formData, x, y, lineHeight) {

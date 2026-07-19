@@ -42,11 +42,6 @@
       Release of Health Info Authorization | New Mexico Public Schools Insurance
       Authority
     </title>
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/87331b3d9e.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- Boxicons styles, used as a font -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
@@ -851,9 +846,10 @@
       </div>
     </div>
 
-    <!-- jsPDF cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- jsPDF is loaded on demand (see loadJsPDFScript in health-info.js) once
+         the user reaches the review step, rather than blocking every page
+         load with a ~360KB library most visitors never need. -->
 
-    <script src="./scripts/health-info.js?v=2.3"></script>
+    <script src="./scripts/health-info.js?v=2.4"></script>
   </body>
 </html>
