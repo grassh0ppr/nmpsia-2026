@@ -1,0 +1,145 @@
+.w-layout-blockcontainer {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.w-layout-layout {
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  padding: 20px;
+}
+
+.w-layout-cell {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  .w-layout-blockcontainer {
+    max-width: 728px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .w-layout-blockcontainer {
+    max-width: none;
+  }
+}
+
+body {
+  color: #333;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h1 {
+  color: #236f98;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Oswald, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.banner {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.cell {
+  justify-content: center;
+  align-items: center;
+}
+
+.div-block {
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+
+.image {
+  max-width: 50%;
+}
+
+.heading {
+  color: #236f98;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+}
+
+.subheading {
+  color: #d54006;
+  text-transform: uppercase;
+  font-family: Oswald, sans-serif;
+}
+
+.link {
+  color: #236f98;
+}
+
+.container {
+  padding-bottom: 65px;
+}
+
+.body {
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .cell {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-block {
+    margin-top: 32px;
+  }
+
+  .body {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .subheading {
+    letter-spacing: -1px;
+  }
+
+  .heading-2 {
+    font-size: 40px;
+    line-height: 38px;
+  }
+
+  .list {
+    padding-left: 20px;
+  }
+
+  .text-block {
+    margin-top: 16px;
+  }
+}
+
+#w-node-daface03-2dc2-7301-43cc-1c55fd8d9f30-3803b20b {
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-daface03-2dc2-7301-43cc-1c55fd8d9f30-3803b20b {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+
