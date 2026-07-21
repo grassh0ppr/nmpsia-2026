@@ -4,7 +4,7 @@ class CarrierContacts extends HTMLElement {
           <div class="d-flex justify-content-between align-items-center mb-3">
             <h3><i class="bx bx-building-house me-2"></i>Carrier Contacts</h3>
             <a
-              href="/pdfs/carriers/carrier_contacts_chart_2025.pdf"
+              href="/pdfs/carriers/carrier-contacts-table.pdf"
               class="btn btn-primary"
               target="_blank"
             >

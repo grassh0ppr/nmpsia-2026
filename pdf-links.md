@@ -13,7 +13,7 @@
 /pdfs/Disabled_Dep_Questionnaire.pdf
 /pdfs/Notice_of_Nondiscrimination_and_Accessibility.pdf
 /pdfs/Presbyterian_RN_Flyer_2024.pdf
-/pdfs/carriers/carrier_contacts_chart_2025.pdf
+/pdfs/carriers/carrier-contacts-table.pdf
 /pdfs/carriers/blueCare_dental/High_Low_option_Highlights.pdf
 /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_PPO_Member_Flier.pdf
 /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_Teledentistry_Member_Flier.pdf

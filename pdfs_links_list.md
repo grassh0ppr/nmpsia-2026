@@ -357,7 +357,7 @@
 - /pdfs/carriers/blueCare_dental/High_Low_option_Highlights.pdf
 - /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_PPO_Member_Flier.pdf
 - /pdfs/carriers/blueCare_dental/NM_Group_BlueCare_Dental_Teledentistry_Member_Flier.pdf
-- /pdfs/carriers/carrier_contacts_chart_2025.pdf
+- /pdfs/carriers/carrier-contacts-table.pdf
 - /pdfs/carriers/davis-vision/Davis_Estimator_Tool_Flyer_2024.pdf
 - /pdfs/carriers/davis-vision/Davis_Vision_2025_OON_Claims_Flyer.pdf
 - /pdfs/davis_vision_nmpsia_summary_of_plan_description.pdf
