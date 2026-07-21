@@ -1,6 +1,6 @@
 # PDF links
 
-- ./pdfs/2025_Program_Guide_wcag_remed.pdf
+- ./pdfs/2026-NMPSIA-Program-Guide.pdf
 - ./pdfs/Important-Employee-Benefit-Program-Notices-2023.pdf
 - ./pdfs/NMPSIA_HIPAA_Notice_of_Privacy_Practices_2026_v3.pdf
 - /PDFs/Updated_2026_NMPSIA_Side_by_Side_Comparison_v2.pdf
@@ -437,7 +437,7 @@
 - https://nmpsia.com/PDFs/HB533%20Employer%20Contributions%20Effective%207-1-2023.pdf
 - https://nmpsia.com/pdfs/04_2026_Advanced_Control_Specialty_Formulary.pdf
 - https://nmpsia.com/pdfs/04_2026_PDL_SC_ACSF.pdf
-- https://nmpsia.com/pdfs/2025_Program_Guide_wcag_remed.pdf
+- https://nmpsia.com/pdfs/2026-NMPSIA-Program-Guide.pdf
 - https://nmpsia.com/pdfs/490973.0325 NM Group Behavioral Health Mental Health Hub Core Toolkit Member Flier.pdf
 - https://nmpsia.com/pdfs/Advanced Control Specialty Formulary April 2025.pdf
 - https://nmpsia.com/pdfs/CVS_Letter_to_NMPSIA_Members.pdf

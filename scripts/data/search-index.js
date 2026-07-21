@@ -55,7 +55,7 @@ var SEARCH_INDEX = [
     ],
   },
   {
-    url: "pdfs/2025_Program_Guide_wcag_remed.pdf",
+    url: "pdfs/2026-NMPSIA-Program-Guide.pdf",
     title: "2025 Program Guide | NMPSIA Benefits",
     description:
       "Complete guide to all benefit programs, coverage details, and enrollment information. Comprehensive information about all benefit programs and coverage options.",
