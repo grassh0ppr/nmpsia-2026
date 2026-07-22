@@ -62,6 +62,10 @@
 
     <style>
       /* Support page specific */
+      .content-section h2.h3 {
+        font-size: 1.75rem;
+        font-weight: 700;
+      }
       .support-card {
         background: white;
         border-radius: 15px;
@@ -96,6 +100,12 @@
         font-size: 2rem;
         color: #667eea;
       }
+      /* Ensure inline contact links have a 44px touch target */
+      .support-card a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+      }
       .support-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -115,6 +125,183 @@
       @media (max-width: 768px) {
         .support-gallery {
           grid-template-columns: 1fr 1fr;
+        }
+        .tips-flex {
+          flex-direction: column;
+        }
+      }
+      .tips-list {
+        list-style: disc;
+        padding-left: 1.5rem;
+      }
+      .tips-list li {
+        display: list-item;
+      }
+
+      /* ===== Promotional Flyer - Accessible HTML Version ===== */
+      .promo-flyer-wrap {
+        background: #006d77;
+        border-radius: 20px;
+        padding: 1.25rem;
+        margin-bottom: 2rem;
+      }
+      .pf-inner {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .pf-header {
+        text-align: center;
+        padding: 1.75rem 2rem 1.5rem;
+        border-bottom: 4px solid #fff3cd;
+      }
+      .pf-badge {
+        display: inline-block;
+        background: #c44d00;
+        color: white;
+        font-weight: 700;
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.35rem 1.25rem;
+        border-radius: 4px;
+        margin-bottom: 0.875rem;
+      }
+      .pf-title {
+        color: #c44d00;
+        font-weight: 900;
+        font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+        line-height: 1.15;
+        margin: 0;
+        font-style: italic;
+      }
+      .pf-intro {
+        background: #fff3cd;
+        padding: 1.25rem 2rem;
+      }
+      .pf-intro ul {
+        margin: 0;
+        padding-left: 1.5rem;
+        list-style: disc;
+      }
+      .pf-intro li {
+        color: #3d1f00;
+        font-weight: 600;
+        font-style: italic;
+        margin-bottom: 0.4rem;
+        font-size: 1.05rem;
+      }
+      .pf-cols {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1.25rem;
+        background: white;
+      }
+      .pf-col {
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #e9ecef;
+      }
+      .pf-col-head {
+        background: #c44d00;
+        color: white;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 0.6rem 0.75rem;
+        text-align: center;
+        margin: 0;
+      }
+      .pf-col-body {
+        list-style: disc;
+        padding: 0.75rem 0.75rem 0.75rem 1.75rem;
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      .pf-col-body li {
+        color: #2d2d2d;
+        margin-bottom: 0.3rem;
+      }
+      .pf-bottom {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+        padding: 0 1.25rem 1.25rem;
+        background: white;
+      }
+      .pf-cta {
+        background: #fff3cd;
+        border-radius: 10px;
+        padding: 1.25rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+      }
+      .pf-cta-heading {
+        color: #c44d00;
+        font-size: 1rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 1.3;
+        margin: 0;
+      }
+      .pf-cta-contact {
+        font-size: 0.85rem;
+        color: #3d1f00;
+        margin: 0;
+      }
+      .pf-cta-contact a {
+        color: #3d1f00;
+        font-weight: 600;
+      }
+      .pf-ideas {
+        background: #e6f3f4;
+        border-radius: 10px;
+        padding: 1rem 1.25rem;
+      }
+      .pf-ideas-heading {
+        color: #006d77;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 0.625rem;
+      }
+      .pf-ideas p {
+        font-size: 0.9rem;
+        color: #1a3e42;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+      }
+      .pf-ideas p:last-child {
+        margin-bottom: 0;
+      }
+      .pf-footer {
+        border-top: 1px solid #e9ecef;
+        padding: 0.75rem 1.25rem;
+        text-align: center;
+      }
+      .pf-footer a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        min-height: 44px;
+        padding: 0 0.75rem;
+        color: #006d77;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .pf-footer a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 860px) {
+        .pf-cols {
+          grid-template-columns: 1fr;
+        }
+        .pf-bottom {
+          grid-template-columns: 1fr;
         }
       }
     </style>
@@ -156,7 +343,9 @@
           <div class="col-lg-8">
             <!-- Call to Action -->
             <section class="content-section">
-              <h3><i class="bx bx-support me-2"></i>How to Request Support</h3>
+              <h2 class="h3">
+                <i class="bx bx-support me-2"></i>How to Request Support
+              </h2>
               <p>
                 Complete the brief request form and our team will coordinate
                 details with you. For help with the form, contact
@@ -182,17 +371,6 @@
                   </div>
                 </a>
                 <a
-                  href="/pdfs/Promotional-Flyer-Support.pdf"
-                  target="_blank"
-                  class="support-card"
-                >
-                  <i class="bx bxs-file-pdf"></i>
-                  <div>
-                    <div class="fw-bold">Promotional Flyer (PDF)</div>
-                    <div class="text-muted">Share with your staff</div>
-                  </div>
-                </a>
-                <a
                   href="/ppts/Announcment-Flyer-Templates.pptx"
                   target="_blank"
                   class="support-card"
@@ -203,6 +381,19 @@
                     <div class="text-muted">Ready-to-edit event templates</div>
                   </div>
                 </a>
+              </div>
+
+              <div class="d-flex tips-flex mt-4">
+                <h3 class="h4 mt-4 mb-2">
+                  <i class="bx bx-bulb me-2"></i>Helpful Tips
+                </h3>
+                <ul class="mb-0 tips-list">
+                  <li>Submit requests at least 2–3 weeks in advance</li>
+                  <li>
+                    Include venue, expected attendance, and preferred dates
+                  </li>
+                  <li>Attach any school or district promotional materials</li>
+                </ul>
               </div>
             </section>
 
@@ -260,7 +451,7 @@
           <div class="col-lg-4">
             <!-- Contact Card -->
             <section class="content-section">
-              <h3><i class="bx bx-user-voice me-2"></i>Contact</h3>
+              <h2 class="h3"><i class="bx bx-user-voice me-2"></i>Contact</h2>
               <div class="support-card" style="align-items: flex-start">
                 <i class="bx bx-user-circle"></i>
                 <div>
@@ -279,18 +470,135 @@
                 </div>
               </div>
             </section>
-
-            <!-- Tips -->
-            <section class="content-section">
-              <h3><i class="bx bx-bulb me-2"></i>Helpful Tips</h3>
-              <ul class="mb-0">
-                <li>Submit requests at least 2–3 weeks in advance</li>
-                <li>Include venue, expected attendance, and preferred dates</li>
-                <li>Attach any school or district promotional materials</li>
-              </ul>
-            </section>
           </div>
         </div>
+
+        <!-- Promotional Flyer - Accessible HTML Version -->
+        <section aria-labelledby="pf-title">
+          <div class="promo-flyer-wrap">
+            <div class="pf-inner">
+              <!-- Header -->
+              <div class="pf-header">
+                <div class="pf-badge">NMPSIA Training Available Now</div>
+                <h2 id="pf-title" class="pf-title">
+                  Health Fair &bull; Benefits Fair &bull; On-Site Training
+                </h2>
+              </div>
+
+              <!-- Intro questions -->
+              <div class="pf-intro">
+                <ul>
+                  <li>
+                    Do your employees have trouble understanding their coverage
+                    and how to utilize their benefits?
+                  </li>
+                  <li>
+                    Would your employees benefit from learning more about the
+                    NMPSIA Wellness Programs?
+                  </li>
+                  <li>
+                    Are you looking for fresh ways to encourage your employees
+                    to take their health and wellness seriously?
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Three columns -->
+              <div class="pf-cols">
+                <div class="pf-col">
+                  <h3 class="pf-col-head">
+                    Perks for you &amp; your Employees
+                  </h3>
+                  <ul class="pf-col-body">
+                    <li>Special gift for Host</li>
+                    <li>Giveaways</li>
+                    <li>Door Prizes</li>
+                    <li>
+                      One-on-One time with NMPSIA &amp; Erisa staff for
+                      questions
+                    </li>
+                    <li>Customized Presentations to keep for future use</li>
+                  </ul>
+                </div>
+                <div class="pf-col">
+                  <h3 class="pf-col-head">Topics that can be discussed</h3>
+                  <ul class="pf-col-body">
+                    <li>NMPSIA Benefit Overview</li>
+                    <li>NMPSIA Wellness Overview</li>
+                    <li>Guided Meditations</li>
+                    <li>Holistic/Resilience Coaching</li>
+                    <li>Prescription Benefits</li>
+                    <li>Focused Topics your population would benefit from</li>
+                    <li>Website and Online Access Overview</li>
+                  </ul>
+                </div>
+                <div class="pf-col">
+                  <h3 class="pf-col-head">Carriers that can attend</h3>
+                  <ul class="pf-col-body">
+                    <li>NMPSIA</li>
+                    <li>NMPSIA Wellness</li>
+                    <li>Erisa Admin. Services</li>
+                    <li>Presbyterian</li>
+                    <li>BCBS Medical</li>
+                    <li>Delta Dental</li>
+                    <li>United Concordia Dental</li>
+                    <li>BlueCare Dental</li>
+                    <li>Lantern (SurgeryPlus)</li>
+                    <li>Davis Vision</li>
+                    <li>CVS Caremark</li>
+                    <li>The Standard</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Bottom: CTA + Fair Ideas -->
+              <div class="pf-bottom">
+                <div class="pf-cta">
+                  <p class="pf-cta-heading">Make a Training or Fair Request</p>
+                  <a
+                    href="https://www.surveymonkey.com/r/J3VTFDN"
+                    target="_blank"
+                    class="btn btn-warning fw-bold"
+                    >Submit Request Form</a
+                  >
+                  <p class="pf-cta-contact">
+                    Questions? Contact<br />
+                    <strong>Leslie Martinez</strong><br />
+                    <a href="mailto:leslie.martinez@psia.nm.gov"
+                      >leslie.martinez@psia.nm.gov</a
+                    >
+                  </p>
+                </div>
+                <div class="pf-ideas">
+                  <h3 class="pf-ideas-heading">Fair Ideas:</h3>
+                  <p>
+                    <strong>Walk &amp; Talk Event:</strong> Goal focused topic
+                    with option to walk and talk to NMPSIA &amp; Erisa booths.
+                  </p>
+                  <p>
+                    <strong>Wellness Passport:</strong> Wellness and
+                    participation focused with interactive stops along the way
+                    and prizes for participation.
+                  </p>
+                  <p>
+                    <strong>Whole Health Hub:</strong> On-site screenings with
+                    benefit utilization &amp; wellness focused topics +
+                    Interactive stops along the way &amp; giveaways.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Footer: download link -->
+              <div class="pf-footer">
+                <a href="/pdfs/Promotional-Flyer-Support.pdf" target="_blank">
+                  <i class="bx bxs-file-pdf"></i> Download as PDF
+                </a>
+              </div>
+            </div>
+            <!-- /.pf-inner -->
+          </div>
+          <!-- /.promo-flyer-wrap -->
+        </section>
       </div>
     </main>
 
@@ -320,7 +628,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
 
     <script src="./scripts/main.js"></script>
   </body>
