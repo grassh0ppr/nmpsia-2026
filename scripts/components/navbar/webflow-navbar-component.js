@@ -172,37 +172,8 @@ class WebflowNavbar extends HTMLElement {
   }
 
   initializeWebflow() {
-    // Load Boxicons CSS if not already loaded
-    if (!document.querySelector('link[href*="boxicons"]')) {
-      const boxiconsCSS = document.createElement("link");
-      boxiconsCSS.href =
-        "https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css";
-      boxiconsCSS.rel = "stylesheet";
-      document.head.appendChild(boxiconsCSS);
-    }
-
-    // Load Webflow CSS if not already loaded
-    if (!document.querySelector('link[href*="webflow-navbar.css"]')) {
-      const normalizeCSS = document.createElement("link");
-      normalizeCSS.href = "css/webflow_navbar/css/normalize.css";
-      normalizeCSS.rel = "stylesheet";
-      normalizeCSS.type = "text/css";
-      document.head.appendChild(normalizeCSS);
-
-      const webflowCSS = document.createElement("link");
-      webflowCSS.href = "css/webflow_navbar/css/webflow.css";
-      webflowCSS.rel = "stylesheet";
-      webflowCSS.type = "text/css";
-      document.head.appendChild(webflowCSS);
-
-      const navbarCSS = document.createElement("link");
-      navbarCSS.href = "css/webflow_navbar/css/webflow-navbar.css";
-      navbarCSS.rel = "stylesheet";
-      navbarCSS.type = "text/css";
-      document.head.appendChild(navbarCSS);
-    }
-
     // Load jQuery if not already loaded
+    // (Boxicons and Webflow CSS are loaded via static <link> tags in each page's <head>)
     if (typeof jQuery === "undefined") {
       const jqueryScript = document.createElement("script");
       jqueryScript.src =
