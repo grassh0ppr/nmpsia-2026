@@ -60,7 +60,7 @@ class CybersecurityInfo extends HTMLElement {
     <li>
     <i class="bx bxs-file-pdf"></i>
     <a
-    href="/pdfs/poms-risk-docs/25_26_Cyber_Claim_Reporting_Instructions.pdf"
+    href="/pdfs/poms-risk-docs/2026_2027_Cyber_Claim_Reporting_Instructions.pdf"
     target="_blank"
     >2026 Cyber Claim Reporting Instructions</a
     >
