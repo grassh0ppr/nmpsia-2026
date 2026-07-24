@@ -79,13 +79,13 @@ class StopItContent extends HTMLElement {
 
   <div class="banner container">
     <a
-      href="/pdfs/NMPSIA_School_Safety_Partnership_Program.pdf"
+      href="/PDFs/poms-risk-docs/STOPit!_Lightspeed_Flyer_072026.pdf"
       class="text-center"
       target="_blank"
     >
       <img
         class="flyer-img"
-        src="/images/NMPSIA_School_Safety_Partnership_Program_Page_1.png"
+        src="/images/STOPit!_Lightspeed_Flyer_072026.png"
         alt="Lightspeed STOPit ARS flyer"
       />
     </a>

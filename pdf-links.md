@@ -136,7 +136,7 @@
 
 ## Risk PDFs
 
-/pdfs/NMPSIA_School_Safety_Partnership_Program.pdf
+/PDFs/poms-risk-docs/STOPit!\_Lightspeed_Flyer_072026.pdf
 /pdfs/poms-risk-docs/Poms_Child-Abuse-Prevention-Flier-NMPSIA-combined.pdf
 /pdfs/CCMSI_Workbook_for_NMPSIA_Member_20180823_2.pdf
 /pdfs/poms-risk-docs/Student_Incident_Report.pdf

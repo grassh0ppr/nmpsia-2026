@@ -267,7 +267,7 @@
 - /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.7.pdf
 - /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.8.pdf
 - /pdfs/NMPSIA_Rules_Changes_2024/transmittals/NMAC_Transmittal_Form_6.50.9.pdf
-- /pdfs/NMPSIA_School_Safety_Partnership_Program.pdf
+- /PDFs/poms-risk-docs/STOPit!\_Lightspeed_Flyer_072026.pdf
 - /pdfs/NMPSIA_Winter_2023_Safety_Newsletter.pdf
 - /pdfs/NMPSIA_py2025_OpenSwitch_Presentation.pdf
 - /pdfs/NMSBA_Boundaries_Policy_July_2018.pdf
