@@ -77,6 +77,8 @@ class StopItContent extends HTMLElement {
     </div>
   </div>
 
+  <p>For more information or to schedule a demo, please contact Annie Martinez at <a href="mailto:amartinez@lightspeedsystems.com">amartinez@lightspeedsystems.com</a></p>
+
   <div class="banner container">
     <a
       href="/PDFs/poms-risk-docs/STOPit!_Lightspeed_Flyer_072026.pdf"
