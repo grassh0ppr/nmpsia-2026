@@ -21,7 +21,11 @@
     <!-- Preconnect to CDN domains for faster resource loading -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://unpkg.com" />
-    <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://d3e54v103j8qbb.cloudfront.net"
+      crossorigin
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -59,7 +63,7 @@
       rel="stylesheet"
     />
 
-        <!-- Webflow navbar styles (load before main.css so main.css can override) -->
+    <!-- Webflow navbar styles (load before main.css so main.css can override) -->
     <link
       href="css/webflow_navbar/css/normalize.css"
       rel="stylesheet"
@@ -81,8 +85,14 @@
     <link rel="stylesheet" href="css/queries.css?v=1" />
 
     <!-- components -->
-    <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1" defer></script>
-    <script src="./scripts/components/footer/footer-sitemap.js?v=1.2" defer></script>
+    <script
+      src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"
+      defer
+    ></script>
+    <script
+      src="./scripts/components/footer/footer-sitemap.js?v=1.2"
+      defer
+    ></script>
     <script src="./scripts/components/balance-billing-modal.js"></script>
 
     <style>
@@ -145,10 +155,8 @@
           <h3><i class="bx bx-file me-2"></i>Compliance Notices</h3>
           <ul class="content-list">
             <li>
-              <i class="bx bxs-file-pdf"></i>
-              <a
-                href="/pdfs/NMPSIA_Important_Compliance_Notices_and_Information_for_Enrollment_2026_corrected.pdf"
-                target="_blank"
+              <i class="bx bx-file me-1"></i>
+              <a href="/compliance-notices.html"
                 >Compliance Notices and Information for Enrollment 2026</a
               >
             </li>
@@ -164,10 +172,12 @@
               <button
                 type="button"
                 class="btn btn-link p-0 text-start"
-                style="font-size: 1.2rem; line-height: 1.5;"
+                style="font-size: 1.2rem; line-height: 1.5"
                 data-bs-toggle="modal"
                 data-bs-target="#balanceBillingModal"
-              >Balance Billing Notice</button>
+              >
+                Balance Billing Notice
+              </button>
             </li>
           </ul>
         </section>
