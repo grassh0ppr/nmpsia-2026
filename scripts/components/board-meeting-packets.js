@@ -20,6 +20,13 @@ class BoardMeetingPackets extends HTMLElement {
                 aria-labelledby="headingBMP2026" data-bs-parent="#accordionBMP">
                 <div class="accordion-body">
                     <ul class="content-list">
+                        <!-- July 2026 -->
+                        <li>
+                            <i class="bx bxs-file-pdf"></i>
+                            <a href="/PDFs/Board Packet July-R.pdf"
+                                target="_blank">
+                                July 2026</a>
+                        </li>
                         <!-- June 2026 -->
                         <li>
                             <i class="bx bxs-file-pdf"></i>
