@@ -1,0 +1,1416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Preconnect to CDN domains for faster resource loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Download meeting materials and documents from the New Mexico Public Schools Insurance Authority"
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+
+    <!-- Google Search Console meta tag for verification -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      Open/Switch Enrollment | New Mexico Public Schools Insurance Authority
+    </title>
+
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Webflow navbar styles (load before main.css so main.css can override) -->
+    <link
+      href="css/webflow_navbar/css/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/webflow_navbar/css/webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/webflow_navbar/css/webflow-navbar.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="css/main.css?v=1" />
+    <link rel="stylesheet" href="css/queries.css?v=1" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- components in semi alphabetical order -->
+    <script src="./scripts/components/find-a-provider.js" defer></script>
+    <script src="./scripts/components/footer/footer-sitemap.js?v=1.2" defer></script>
+    <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1" defer></script>
+
+    <style>
+      /* this isn't doing anything */
+      /* #benefitsSidebar {
+        overflow-x: hidden;
+      } */
+
+      .sidebar-nav {
+        overflow-x: hidden;
+        margin-bottom: 1rem;
+      }
+      #findAProvider .heading-and-element-flexbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .heading-and-element-flexbox img {
+        width: 120px;
+      }
+
+      .content-section .btn:link {
+        color: #fff;
+      }
+
+      .list-styled li {
+        list-style: disc;
+      }
+
+      .content-section a[target="_blank"]:after {
+        display: none;
+      }
+
+      /* Custom aligned list styles */
+      .aligned-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .aligned-list li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+      }
+
+      .aligned-list li .icon {
+        flex-shrink: 0;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.75rem;
+        margin-top: 0.1rem;
+        color: #667eea;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .aligned-list li .text {
+        flex: 1;
+        line-height: 1.5;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+      }
+
+      .aligned-list li .text a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .aligned-list li .text a:hover {
+        text-decoration: underline;
+        color: #586ed0;
+      }
+
+      /* Enrollment closed modal styling */
+      #enrollmentClosedModal .modal-content {
+        border-radius: 12px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+      }
+
+      #enrollmentClosedModal .modal-header {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        padding: 1.25rem;
+        border-radius: 12px 12px 0 0;
+      }
+
+      #enrollmentClosedModal .modal-header .modal-title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+      }
+
+      #enrollmentClosedModal .modal-header .bx-info-circle {
+        font-size: 1.5rem;
+      }
+
+      #enrollmentClosedModal .modal-body {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+
+      #enrollmentClosedModal .modal-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1rem 1.25rem;
+        border-radius: 0 0 12px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      #enrollmentClosedModal .modal-footer .btn-primary {
+        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
+        border: none;
+        border-radius: 8px;
+        padding: 0.5rem 1.5rem;
+        font-weight: 600;
+        transition: opacity 0.2s ease;
+      }
+
+      #enrollmentClosedModal .modal-footer .btn-primary:hover {
+        opacity: 0.9;
+        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
+      }
+
+      #enrollmentClosedModal .redirect-countdown {
+        display: flex;
+        align-items: center;
+      }
+
+      #enrollmentClosedModal .redirect-countdown small {
+        font-size: 0.875rem;
+        color: #6c757d;
+      }
+
+      #enrollmentClosedModal #countdownTimer {
+        font-weight: 600;
+        color: #667eea;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+
+  <body class="modern-body">
+    <!-- <navbar-component></navbar-component> -->
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <!-- breadcrumb banner -->
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Open/Switch Enrollment
+        </li>
+      </ol>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button
+      class="sidebar-toggle"
+      id="sidebarToggle"
+      aria-label="Toggle navigation menu"
+    >
+      <i class="bx bx-menu"></i>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="sidebar-layout">
+      <!-- Modern Sidebar -->
+      <aside class="benefits-sidebar" id="benefitsSidebar">
+        <div class="sidebar-header">
+          <h3><i class="bx bx-menu"></i> Quick Navigation</h3>
+          <button
+            class="close-sidebar"
+            id="closeSidebar"
+            aria-label="Close navigation menu"
+          >
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#welcomeOpenSwitch" class="nav-item"
+            ><i class="bx bx-home-alt"></i><span>Welcome!</span></a
+          >
+          <a href="#openSwitchInstructions" class="nav-item"
+            ><i class="bx bx-book-open"></i><span>Instructions</span></a
+          >
+          <a href="#lettersAndAnnouncements" class="nav-item"
+            ><i class="bx bxs-file-pdf"></i><span>Announcements</span></a
+          >
+          <a href="#oeNMPSIAPresentation" class="nav-item"
+            ><i class="bx bxs-movie-play"></i
+            ><span>NMPSIA Presentation</span></a
+          >
+          <a href="#carrierPresentations" class="nav-item"
+            ><i class="bx bx-building-house"></i
+            ><span>Carrier Presentations</span></a
+          >
+          <a href="#findAProvider" class="nav-item"
+            ><i class="bx bx-search-alt"></i><span>Find a Provider</span></a
+          >
+          <a href="#comparePlans" class="nav-item"
+            ><i class="bx bx-bar-chart-alt-2"></i><span>Compare Plans</span></a
+          >
+          <a
+            href="https://nmpsia.com/pdfs/2025_Program_Guide_wcag_remed.pdf"
+            target="_blank"
+            class="nav-item"
+            ><i class="bx bx-file"></i><span>2025 Program Guide</span></a
+          >
+          <a
+            href="https://nmpsia.com/premiums-er.html#premium-rates"
+            class="nav-item"
+            target="_blank"
+            ><i class="bx bx-dollar"></i><span>Premium Rates</span></a
+          >
+          <a href="#openSwitchFAQs" class="nav-item"
+            ><i class="bx bx-help-circle"></i><span>FAQs</span></a
+          >
+          <a
+            href="https://nmpsiaonline.nmpsia.com/"
+            target="_blank"
+            class="nav-item"
+            ><i class="bx bx-log-in"></i><span>Ready to Enroll? Log In</span></a
+          >
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="benefits-main">
+        <!-- Default info displayed on page load (has active class) -->
+        <section id="welcomeOpenSwitch" class="content-section">
+          <div class="">
+            <h3 class="">NMPSIA Open/Switch Enrollment</h3>
+          </div>
+          <div class="banner-container">
+            <p style="color: #1c77df; font-weight: 600; font-size: 18px">
+              It’s That Time of Year: The start of the NMPSIA's Open/Switch
+              Enrollment Period for Plan Year 2026! Now is the time to review
+              your current benefits and prepare to make changes, if needed. This
+              year’s enrollment period runs from
+              <span class="text-danger"
+                >October 1 &ndash; October 31, 2025</span
+              >
+              and any changes are effective on
+              <span class="text-success">January 1, 2026</span>.
+            </p>
+            <p>
+              Please refer to the information panel on the left for more
+              resources coming soon. If you have questions, please contact your
+              employer’s benefits department
+              <a href="district-contacts.html" target="_blank">HERE</a>.
+            </p>
+          </div>
+        </section>
+
+        <!-- Open/Switch Enrollment Training -->
+        <section id="openSwitchInstructions" class="content-section">
+          <h3 class="">Online System Open/Switch Enrollment Instructions</h3>
+          <ul class="aligned-list">
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  target="_blank"
+                  href="https://nmpsia.com/PDFs/open-enrollment-2026/presentations/NMPSIA_Open_Enrollment_Tutorial.pdf"
+                  class="sidenav-link"
+                  >Open Enrollment - Add Coverage or Dependents</a
+                >
+              </div>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  target="_blank"
+                  href="https://nmpsia.com/PDFs/open-enrollment-2026/presentations/NMPSIA_Switch_Enrollment_Tutorial.pdf"
+                  class="sidenav-link"
+                  >Switch Enrollment - Change Carrier or Plan</a
+                >
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- section for letters to all members, letter to employees, and letter to employers -->
+        <section id="lettersAndAnnouncements" class="content-section">
+          <h3>Open/Switch Enrollment Announcements</h3>
+          <ul class="aligned-list">
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/Letter_to_All_Members_2026_open_switch.pdf"
+                  target="_blank"
+                  >Letter to All Members</a
+                >
+              </div>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/2026_EmployEE_Announcement.pdf"
+                  target="_blank"
+                  >Announcement for Employees - Open/Switch Enrollment for Plan
+                  Year 2026</a
+                >
+              </div>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/2026_EmployER_Announcement.pdf"
+                  target="_blank"
+                  >Announcement for Employers - Open/Switch Enrollment for Plan
+                  Year 2026</a
+                >
+              </div>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/Discontinuation_of_BCBS_EPO_Employee.pdf"
+                  target="_blank"
+                  >Announcement for Employees - BCBSNM EPO Discontinuation</a
+                >
+              </div>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/Discontinuation_of_BCBS_EPO_Employer.pdf"
+                  target="_blank"
+                  >Announcement for Employers - BCBSNM EPO Discontinuation</a
+                >
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- NMPSIA Open/Switch presentations -->
+        <section id="oeNMPSIAPresentation" class="content-section">
+          <h3 class="display-5">NMPSIA Open/Switch Enrollment Presentations</h3>
+          <p>
+            Access NMPSIA's official presentations and tutorials for the 2025
+            Open/Switch Enrollment period.
+          </p>
+          <ul class="aligned-list">
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  class="sidenav-link"
+                  href="/pdfs/open-enrollment-2026/presentations/NMPSIA_OE_Slides.pdf"
+                  target="_blank"
+                >
+                  2025 Open/Switch Enrollment Slides
+                </a>
+              </div>
+            </li>
+            <li>
+              <i class="bx bxs-movie-play icon"></i>
+              <div class="text">
+                <a
+                  class="sidenav-link"
+                  href="/pdfs/open-enrollment-2026/presentations/NMPSIA_OE_Video.mp4"
+                  target="_blank"
+                >
+                  2025 Open/Switch Enrollment Video
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- CARRIER PRESENTATIONS (list of carriers, when clicked, corresponding div with content appears) -->
+        <section id="carrierPresentations" class="content-section">
+          <h3 class="display-5">
+            Open/Switch Enrollment - Carrier Presentations
+          </h3>
+
+          <!-- CARRIER PRESENTATIONS -->
+          <div class="accordion" id="accordionCarrierPresentations">
+            <!-- Presbyterian -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-presbyterianPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-presbyterianPresentations"
+                >
+                  <img
+                    class="logo-image-accordion"
+                    src="https://nmpsia.com/images/PRES.jpg"
+                    alt="Presbyterian logo"
+                  />
+                  Presbyterian
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-presbyterianPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="list-of-resources">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/Presbyterian_OE_slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/Presbyterian_OE_Video.mp4"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- BlueCross BlueShield -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-bcbsnmPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-bcbsnmPresentations"
+                >
+                  <img
+                    class="logo-image-accordion"
+                    src="https://nmpsia.com/images/BCBS.jpg"
+                    alt="BlueCross BlueShield of New Mexico logo"
+                  />
+                  Blue Cross Blue Shield of New Mexico
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-bcbsnmPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="list-of-resources">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/BCBSNM_OE_Slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://players.brightcove.net/1084781253001/default_default/index.html?videoId=6379959023112"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- CVS CAREMARK -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-cvsPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-cvsPresentations"
+                >
+                  <img
+                    src="https://nmpsia.com/images/CVS_Caremark_logo.jpg"
+                    alt="CVS Caremark logo"
+                    class="logo-image-accordion"
+                  />
+                  CVS Caremark
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-cvsPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="list-of-resources">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/CVS_OE_slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/CVS_OE_Video.mp4"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- BCBS DENTAL -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-bcbsDentalPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-bcbsDentalPresentations"
+                >
+                  <img
+                    class="logo-image-accordion"
+                    src="https://nmpsia.com/images/BCBS.jpg"
+                    alt="Blue Cross Blue Shield of New Mexico logo"
+                  />
+                  BCBS Dental
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-bcbsDentalPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="list-of-resources">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/BlueDental_OE_slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- DELTA DENTAL -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-deltaPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-deltaPresentations"
+                >
+                  <img
+                    class="logo-image-accordion"
+                    src="https://nmpsia.com/images/delta_logo.jpg"
+                    alt="Delta Dental logo"
+                  />
+                  Delta Dental
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-deltaPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="list-of-resources">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/DeltaDental_OE_slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/DeltaDental_OE_Video.mp4"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- UNITED CONCORDIA -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-ucciPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-ucciPresentations"
+                >
+                  <img
+                    src="https://nmpsia.com/images/UCD_logo_2024.jpg"
+                    class="logo-image-accordion"
+                    alt="united concordia logo"
+                  />
+                  United Concordia
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-ucciPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="grid-layout-docs">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/UCCI_OE_Slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/UCCI_OE_Video.mp4"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Davis Vision -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-davisPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-davisPresentations"
+                >
+                  <img
+                    src="images/carriers/logo2.png"
+                    alt="Davis vision logo"
+                    class="logo-image-accordion"
+                  />
+                  Davis Vision
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-davisPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="grid-layout-docs">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/Davis_OE_slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/Davis_OE_Video.mp4"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Lantern -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-lanternPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-lanternPresentations"
+                >
+                  <img
+                    src="images/lantern_logo.png"
+                    class="logo-image-accordion"
+                    alt="Lantern logo"
+                  />
+                  Lantern
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-lanternPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="grid-layout-docs">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/Lantern_OE_Slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/Lantern_OE_Video.mp4"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- The Standard Life and LTD -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-theStandardPresentations"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-theStandardPresentations"
+                >
+                  <img
+                    src="/images/carriers/logo5.png"
+                    class="logo-image-accordion"
+                    alt="The Standard Life and LTD logo"
+                  />
+                  The Standard Life and LTD
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-theStandardPresentations"
+                class="accordion-collapse collapse"
+              >
+                <div class="accordion-body">
+                  <ul class="grid-layout-docs">
+                    <li>
+                      <i class="bx bxs-file-pdf"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/NMPSIA_Life_and_LTD_Slides.pdf"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Presentation Slides (PDF)</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bx bxs-movie-play"></i>
+                      <a
+                        href="https://nmpsia.com/pdfs/open-enrollment-2026/presentations/NMPSIA_Life_and_LTD_Video.mp4"
+                        class="sidenav-link"
+                        target="_blank"
+                        >Video Presentation</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- fap -->
+        <section id="findAProvider" class="content-section">
+          <find-a-provider></find-a-provider>
+        </section>
+
+        <!-- Compare Plans -->
+        <section id="comparePlans" class="content-section">
+          <h3 class="display-5">Compare Plans</h3>
+          <p>
+            Review the plan comparison documents to help you make informed
+            decisions about your benefits for 2026.
+          </p>
+          <ul class="aligned-list">
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/2026_NMPSIA_Side_by_Side_Comparison.pdf"
+                  target="_blank"
+                  class="sidenav-link"
+                  >2026 NMPSIA Side by Side Comparison</a
+                >
+              </div>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/plan_design_changes.pdf"
+                  target="_blank"
+                  class="sidenav-link"
+                  >Plan Design Changes</a
+                >
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- FAQs -->
+        <section id="openSwitchFAQs" class="content-section">
+          <h3 class="display-5">Frequently Asked Questions (FAQs)</h3>
+          <ul class="aligned-list">
+            <li>
+              <i class="bx bxs-file-pdf icon"></i>
+              <div class="text">
+                <a
+                  target="_blank"
+                  href="https://nmpsia.com/pdfs/open-enrollment-2026/FAQ_2026_Open_Switch.pdf"
+                  class="sidenav-link"
+                  >Frequently Asked Questions (FAQs)</a
+                >
+              </div>
+            </li>
+          </ul>
+
+          <div class="accordion" id="faqAccordion">
+            <!-- 1. When is Open/Switch Enrollment? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  WHEN is Open/Switch Enrollment?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  The NMPSIA Open/Switch Enrollment is October 1 &ndash; 31,
+                  2025. Benefit elections during this time will be effective
+                  January 1, 2026.
+                </div>
+              </div>
+            </div>
+            <!-- 2. What is Open/Switch Enrollment? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  WHAT is Open/Switch Enrollment?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Open/Switch Enrollment is the period each fall during which
+                  eligible employees may elect to:
+                  <ul class="list-styled">
+                    <li>
+                      <strong>Enroll</strong> in one of the medical, dental, and
+                      or/vision plans offered by NMPSIA
+                    </li>
+                    <li>
+                      <strong>Add</strong> eligible dependents on the medical,
+                      dental or vision coverage (2-year lock-in rule applies to
+                      vision coverage)
+                    </li>
+                    <li>
+                      <strong>Change</strong> medical and/or dental carrier
+                      and/or medical and/or dental plan options
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 3. When do the benefits I choose during Open/Switch Enrollment begin? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  WHEN do the benefits I choose during Open/Switch Enrollment
+                  begin?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Benefits you elect during Open/Switch Enrollment will begin
+                  January 1, 2026.
+                </div>
+              </div>
+            </div>
+            <!-- 4. How do I enroll or make changes? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  HOW do I enroll or make changes?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Employees must enroll and/or make changes online. You can
+                  learn how to do so by visiting the NMPSIA online enrollment
+                  tutorials available
+                  <a href="enrollmentTutorials.html" target="_blank">HERE</a> at
+                  the employee online enrollment tutorial page.
+                  <br />
+                  <strong>Note: </strong>If you are adding an eligible dependent
+                  to your medical, dental or vision plan during Open/Switch
+                  Enrollment, you will need to submit supporting documentation:
+                  marriage certificate to add spouse and birth certificate(s) to
+                  add child(ren). If your employer offers domestic partner
+                  coverage, a completed Domestic Partner Affidavit is required
+                  to add a qualified domestic partner or domestic partner’s
+                  children.
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. What if I decide to make a change after I have submitted my Open/Switch enrollment? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  WHAT if I decide to make a change after I have submitted my
+                  Open/Switch enrollment?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Please carefully consider your options before you submit your
+                  Open/Switch enrollment changes. Once the Open/Switch
+                  Enrollment period ends your elections are locked in. You will
+                  not be able to make a change to your benefits unless a
+                  Qualifying Event is reported timely.
+                </div>
+              </div>
+            </div>
+            <!-- 6. How will I know which medical plan option is right for me? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  HOW will I know which medical plan option is right for me?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  To assist employees in making this decision, we strongly
+                  suggest employees visit the
+                  <a
+                    href="https://nmpsia.com/open-enrollment.html#carrierPresentations"
+                    >NMPSIA Open/Switch Enrollment webpage</a
+                  >
+                  to view the carrier recorded or slide presentations. The
+                  presentations include an overview of the plans of Blue Cross
+                  Blue Shield of New Mexico (BCBSNM), Presbyterian Health Plan,
+                  Delta Dental, United Concordia, Blue Cross Blue Shield (BCBS)
+                  Dental and Davis Vision.
+                </div>
+              </div>
+            </div>
+            <!-- 7. What if I was hired in the last few months and signed up for benefits as a new hire. Do I have to enroll again for 2026? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="collapseSeven"
+                >
+                  I was hired in the last few months and signed up for benefits
+                  as a new hire. Do I have to enroll again for 2025?
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  If you do not wish to change plans or carriers, you do not
+                  need to enroll again.
+                </div>
+              </div>
+            </div>
+
+            <!-- 8. How do i know my Open/Switch Enrollment changes were successful? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight"
+                  aria-expanded="false"
+                  aria-controls="collapseEight"
+                >
+                  How do I know my Open/Switch Enrollment changes were
+                  successful?
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  You will receive an email confirmation from NMPSIA confirming
+                  your Open/Switch Enrollment changes. This flowchart
+                  demonstrates the Open/Switch Enrollment process:
+                  <a href="/images/OE_process_flowchart.png" target="_blank">
+                    <img
+                      src="/images/OE_process_flowchart.png"
+                      alt="Open/Switch Enrollment Process Flowchart"
+                      class="img-fluid"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Are there changes to the benefits for 2026? -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseNine"
+                  aria-expanded="false"
+                  aria-controls="collapseNine"
+                >
+                  ARE there changes to the benefits for 2025?
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  The primary plan design remains unchanged. There are slight
+                  premium increases for Medical, Dental and Vision plans. A new
+                  dental carrier option, Blue Cross Blue Shield (BCBS) Dental,
+                  is a new offering along with Delta Dental and United Concordia
+                  Dental. Our Vision plan year is now July 1st through June 30th
+                  and now offers frames on an annual basis. The in-network
+                  allowance has increased to $150 and $200 at Visionworks.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="my-3 ms-2">
+            <span class="bold">Reminder</span>: When you elect a medical plan,
+            you automatically receive prescription drug coverage through
+            <a
+              href="https://www.caremark.com/welcome-center.html"
+              target="_blank"
+              >CVS Caremark</a
+            >
+            and Musculoskeletal surgical services through
+            <a
+              href="https://lanterncare.com/for-members/surgery-journeys/"
+              target="_blank"
+              >Lantern</a
+            >.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- ********************************* -->
+    <!-- MODAL WINDOWS  -->
+    <!-- ********************************* -->
+
+    <!-- MODAL WINDOW FOR EMPLOYER TOOLKIT -->
+    <div
+      class="modal fade"
+      id="openEnrollmentToolkit"
+      tabindex="-1"
+      aria-labelledby="openEnrollmentToolkitLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="openEnrollmentToolkitLabel">
+              Employer Toolkit: 2023 Open/Switch Enrollment
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body matchd-content">
+            <ul class="grid-layout-docs">
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/2023_OpenSwitch_Enrollment/OS_Email_Flyers_to_Employees_2024_FINAL.pdf"
+                  class="sidenav-link"
+                  target="_blank"
+                  >Promotional Flyers</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/2023_OpenSwitch_Enrollment/EMPLOYEE_Announcement_Open_Switch_FINAL.pdf"
+                  class="sidenav-link"
+                  target="_blank"
+                  >Letter to Employees</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/2023_OpenSwitch_Enrollment/FAQ_2024_Open_Switch_Enrollment_FINAL.pdf"
+                  class="sidenav-link"
+                  target="_blank"
+                  >Frequently Asked Questions</a
+                >
+              </li>
+              <li>
+                <i class="bx bxs-file-pdf"></i>
+                <a
+                  href="/pdfs/2023_OpenSwitch_Enrollment/Letter_to_All_Members_Email_FINAL.pdf"
+                  class="sidenav-link"
+                  target="_blank"
+                  >Letter to All Members</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL WINDOW FOR ENROLLMENT PERIOD CLOSED -->
+    <div
+      class="modal fade"
+      id="enrollmentClosedModal"
+      tabindex="-1"
+      aria-labelledby="enrollmentClosedModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="enrollmentClosedModalLabel">
+              <i class="bx bx-info-circle me-2"></i>Open Enrollment Period
+              Closed
+            </h5>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0">
+              The open enrollment period has closed; you are being redirected to
+              the Benefit Carriers Information page.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <div class="redirect-countdown me-3">
+              <small class="text-muted">
+                Redirecting automatically in
+                <span id="countdownTimer">10</span> seconds
+              </small>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- smooth scroll polyfill -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+      integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./scripts/sidebar-navigation.js"></script>
+
+    <!-- Alert and redirect for closed enrollment period -->
+    <!-- <script>
+      // Wait for page and Bootstrap to be fully loaded
+      window.addEventListener("load", function () {
+        const modalElement = document.getElementById("enrollmentClosedModal");
+        const modal = new bootstrap.Modal(modalElement, {
+          backdrop: "static",
+          keyboard: false,
+        });
+
+        // Show the modal
+        modal.show();
+
+        // Countdown timer
+        let countdown = 10;
+        const countdownElement = document.getElementById("countdownTimer");
+        let redirectTimer;
+
+        function updateCountdown() {
+          if (countdown > 0) {
+            countdownElement.textContent = countdown;
+            countdown--;
+          } else {
+            clearInterval(redirectTimer);
+            window.location.href = "BenefitCarriers.html";
+          }
+        }
+
+        // Start countdown
+        redirectTimer = setInterval(updateCountdown, 1000);
+
+        // Redirect when modal is hidden (either by button click or timeout)
+        modalElement.addEventListener("hidden.bs.modal", function () {
+          clearInterval(redirectTimer);
+          window.location.href = "BenefitCarriers.html";
+        });
+      });
+    </script> -->
+  </body>
+</html>
