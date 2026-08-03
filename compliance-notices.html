@@ -76,6 +76,7 @@
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="css/main.css?v=1" />
     <link rel="stylesheet" href="css/queries.css?v=1" />
+    <link rel="stylesheet" href="css/official-letter.css?v=1" />
     <!-- components -->
     <script
       src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"
@@ -91,210 +92,6 @@
 
     <style>
       /* ── Compliance Notices document styles ── */
-
-      .compliance-doc {
-        font-size: 1.05rem;
-        line-height: 1.75;
-        color: #333;
-        max-width: 960px;
-      }
-
-      /* Section headings: bold, navy, uppercase — matching the PDF style */
-      .compliance-doc h2 {
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: #3f70c0;
-        text-transform: uppercase;
-        letter-spacing: 0.01em;
-        border-bottom: 2px solid #104aa797;
-        padding-bottom: 0.3rem;
-        margin-top: 2.25rem;
-        margin-bottom: 1rem;
-        line-height: 1.25;
-      }
-
-      .compliance-doc h3 {
-        font-size: 1.05rem;
-        font-weight: 700;
-        color: #2c3e50;
-        margin-top: 1.25rem;
-        margin-bottom: 0.4rem;
-      }
-
-      /* Bordered callout box — Medicare reminder, Important Notice, creditable
-         coverage box, etc. */
-      .compliance-doc .notice-box {
-        border: 2px solid #0f2d5c;
-        border-radius: 4px;
-        padding: 1.1rem 1.4rem;
-        margin: 1.25rem 0;
-      }
-
-      .compliance-doc .notice-box.red {
-        border-color: #dc3545;
-        background-color: #f8d7da;
-      }
-
-      .compliance-doc .notice-box.blue {
-        border-color: #0d6efd;
-        background-color: #cfe2ff;
-      }
-
-      /* When a notice-box is at the very top of a section, tighten the gap */
-      .compliance-doc section > .notice-box:first-child {
-        margin-top: 0;
-      }
-
-      /* notice-box heading: no bottom border, centered */
-      .compliance-doc .notice-box > h2,
-      .compliance-doc .notice-box > h3 {
-        border-bottom: none;
-        margin-top: 0;
-        text-align: center;
-        text-transform: uppercase;
-      }
-
-      /* Spanish-language notice — visually separated with horizontal rules */
-      .compliance-doc .lang-es-notice {
-        font-style: italic;
-        color: #555;
-        border-top: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        padding: 0.55rem 0;
-        margin: 1rem 0 1.75rem;
-      }
-
-      /* Blockquote used for the "snapshot" of the Marketplace notice */
-      .compliance-doc blockquote {
-        border: 1px solid #adb5bd;
-        border-radius: 4px;
-        padding: 1.25rem 1.5rem;
-        margin: 1rem 0 0;
-        background: #f8f9fa;
-      }
-
-      .compliance-doc blockquote h3 {
-        color: #0f2d5c;
-        font-size: 1.05rem;
-        margin-top: 0;
-      }
-
-      .compliance-doc blockquote h4 {
-        color: #0f2d5c;
-        font-size: 1rem;
-        font-weight: 700;
-        margin-top: 1rem;
-        margin-bottom: 0.35rem;
-      }
-
-      /* Lists */
-      .compliance-doc ul,
-      .compliance-doc ol {
-        padding-left: 1.6rem;
-        margin-bottom: 0.75rem;
-      }
-
-      .compliance-doc li {
-        margin-bottom: 0.35rem;
-      }
-
-      /* Intro paragraph */
-      .compliance-intro {
-        font-style: italic;
-        color: #495057;
-      }
-
-      .compliance-doc .states-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        background-color: #f8f9fa;
-      }
-
-      .compliance-doc .state-card {
-        border: 1px solid #0f2d5c;
-        border-radius: 4px;
-        padding: 1.1rem 1.4rem;
-        margin: 1.25rem 0;
-        flex: 1;
-        min-width: 300px;
-        max-width: 600px;
-        background-color: #fff;
-      }
-
-      .compliance-doc .state-card h3 {
-        font-size: 1rem;
-        font-weight: 700;
-        color: #0f2d5c;
-        margin-top: 0;
-      }
-
-      .compliance-doc .state-card p {
-        line-height: 1.5;
-      }
-
-      .compliance-doc .state-card a {
-        overflow-wrap: break-word;
-      }
-
-      .compliance-doc .contact-grid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      .compliance-doc .contact-card {
-        border: 1px solid #0f2d5c;
-        border-radius: 4px;
-        padding: 1.1rem 1.4rem;
-        margin: 1.25rem 0;
-        flex: 1;
-        min-width: 300px;
-        max-width: 600px;
-        background-color: #fff;
-      }
-
-      .compliance-doc .contact-card p {
-        line-height: 1.25;
-      }
-
-      .compliance-doc .contact-card a {
-        overflow-wrap: break-word;
-      }
-
-      .compliance-doc ul li.red {
-        color: #dc3545;
-        font-weight: 700;
-      }
-
-      .options-grid {
-        display: flex;
-        gap: 1.5rem;
-        align-items: flex-start;
-      }
-
-      .options-grid .option-block {
-        flex: 1;
-        min-width: 0;
-      }
-
-      .medicare-notice-details address {
-        text-align: center;
-      }
-
-      @media (max-width: 700px) {
-        .options-grid {
-          flex-direction: column;
-        }
-      }
-
-      /* Override the overflow-x: hidden on .sidebar-layout from main.css —
-         that property breaks position: sticky on children in most browsers. */
-      @media (min-width: 1001px) {
-        .sidebar-layout {
-          overflow: visible;
-        }
-      }
     </style>
   </head>
 
@@ -439,7 +236,7 @@
 
           <div class="benefits-main">
             <!-- Document content -->
-            <div class="main-content compliance-doc">
+            <div class="main-content official-letter-doc">
               <p class="compliance-intro">
                 This document contains important employee benefit program
                 notices of interest to you and your family. Please share this
@@ -2543,18 +2340,21 @@
                   prescribed treatment plan.
                 </p>
                 <p>
-                  The NMPSIA Wellness Program also offers <strong>incentives</strong>
-                  for participation such as for completing a Health Risk Appraisal
-                  questionnaire and incentives if you positively change behavior
-                  such as increasing activity. Only employees enrolled in one of
-                  our medical plan options at a NMPSIA participating employer
-                  have the opportunity to qualify for NMPSIA Wellness Program
-                  incentives. Incentives are able to be achieved at least
+                  The NMPSIA Wellness Program also offers
+                  <strong>incentives</strong>
+                  for participation such as for completing a Health Risk
+                  Appraisal questionnaire and incentives if you positively
+                  change behavior such as increasing activity. Only employees
+                  enrolled in one of our medical plan options at a NMPSIA
+                  participating employer have the opportunity to qualify for
+                  NMPSIA Wellness Program incentives. Incentives are able to be
+                  achieved at least
                   <strong>once a year</strong>. The
-                  <strong>time commitment required to achieve incentives in
-                  our NMPSIA Wellness Program is reasonable</strong>. More
-                  information about our NMPSIA Wellness Program incentives are
-                  described at
+                  <strong
+                    >time commitment required to achieve incentives in our
+                    NMPSIA Wellness Program is reasonable</strong
+                  >. More information about our NMPSIA Wellness Program
+                  incentives are described at
                   <a
                     href="https://nmpsia.com/wellnessWellBeing.html"
                     target="_blank"
@@ -2598,11 +2398,15 @@
                   Notice Regarding the Wellness Program
                 </h2>
                 <p>
-                  The NMPSIA Wellness Program is a <strong>voluntary</strong>
-                  wellness <strong>program available to only employees enrolled
-                  in a NMPSIA medical plan and is designed to promote health or
-                  prevent disease.</strong> The program is administered according
-                  to <strong>federal rules permitting employer</strong>-sponsored
+                  The NMPSIA Wellness Program is a
+                  <strong>voluntary</strong> wellness
+                  <strong
+                    >program available to only employees enrolled in a NMPSIA
+                    medical plan and is designed to promote health or prevent
+                    disease.</strong
+                  >
+                  The program is administered according to
+                  <strong>federal rules permitting employer</strong>-sponsored
                   wellness programs that seek to improve employee health or
                   prevent disease, including the Americans with Disabilities Act
                   of 1990, the Genetic Information Nondiscrimination Act of
@@ -2611,19 +2415,19 @@
                 </p>
                 <p>
                   If you choose to participate in the NMPSIA Wellness Program
-                  you may be asked to complete a voluntary health risk assessment
-                  or "HRA" that asks a series of questions about your
-                  health-related activities and behaviors and whether you have or
-                  had certain medical conditions, e.g., cancer, diabetes, or
+                  you may be asked to complete a voluntary health risk
+                  assessment or "HRA" that asks a series of questions about your
+                  health-related activities and behaviors and whether you have
+                  or had certain medical conditions, e.g., cancer, diabetes, or
                   heart disease. You are not required to complete the HRA
                   questionnaire, or to work with a health coach.
                 </p>
                 <p>
                   However, employees who choose to participate in the NMPSIA
-                  Wellness Program will receive an incentive as described by your
-                  medical plan. Although you are not required to complete the HRA
-                  or participate in health coaching, only employees who do so
-                  will receive the incentives.
+                  Wellness Program will receive an incentive as described by
+                  your medical plan. Although you are not required to complete
+                  the HRA or participate in health coaching, only employees who
+                  do so will receive the incentives.
                 </p>
                 <p>
                   Additional incentives offered by your medical plan may be
@@ -2631,9 +2435,9 @@
                   health-related activities as described by your medical plan or
                   achieve certain health outcomes as described by your medical
                   plan. If you are unable to participate in any of the
-                  health-related activities or achieve any of the health outcomes
-                  required to earn an incentive, you may be entitled to a
-                  reasonable accommodation or an alternative standard. You may
+                  health-related activities or achieve any of the health
+                  outcomes required to earn an incentive, you may be entitled to
+                  a reasonable accommodation or an alternative standard. You may
                   request a reasonable accommodation or an alternative standard
                   by contacting the NMPSIA Benefits &amp; Wellness team at (800)
                   548-3724.
@@ -2659,14 +2463,15 @@
                   the NMPSIA Wellness Program and may use aggregate information
                   it collects to design a program based on identified health
                   risks, the NMPSIA Wellness Program and your medical plan will
-                  never disclose any of your personal information either publicly
-                  or to the employer, except as necessary to respond to a request
-                  from you for a reasonable accommodation needed to participate
-                  in the NMPSIA Wellness Program, or as expressly permitted by
-                  law. Medical information that personally identifies you that is
-                  provided in connection with the NMPSIA Wellness Program will
-                  not be provided to anyone at your employer and may never be
-                  used to make decisions regarding your employment.
+                  never disclose any of your personal information either
+                  publicly or to the employer, except as necessary to respond to
+                  a request from you for a reasonable accommodation needed to
+                  participate in the NMPSIA Wellness Program, or as expressly
+                  permitted by law. Medical information that personally
+                  identifies you that is provided in connection with the NMPSIA
+                  Wellness Program will not be provided to anyone at your
+                  employer and may never be used to make decisions regarding
+                  your employment.
                 </p>
                 <p>
                   Your health information will not be sold, exchanged,
@@ -2675,37 +2480,37 @@
                   the NMPSIA Wellness Program, and you will not be asked or
                   required to waive the confidentiality of your health
                   information as a condition of participating in the NMPSIA
-                  Wellness Program or receiving an incentive. Anyone who receives
-                  your information for purposes of providing you services as part
-                  of the NMPSIA Wellness Program will abide by the same
-                  confidentiality requirements. The only individual(s) who will
-                  receive your personally identifiable health information is
-                  (are) your medical plan in order to provide you with services
-                  under the NMPSIA Wellness Program.
+                  Wellness Program or receiving an incentive. Anyone who
+                  receives your information for purposes of providing you
+                  services as part of the NMPSIA Wellness Program will abide by
+                  the same confidentiality requirements. The only individual(s)
+                  who will receive your personally identifiable health
+                  information is (are) your medical plan in order to provide you
+                  with services under the NMPSIA Wellness Program.
                 </p>
                 <p>
                   In addition, all medical information obtained through the
                   NMPSIA Wellness Program will be maintained by your medical
                   plan, and no information you provide as part of the NMPSIA
                   Wellness Program will be used in making any employment
-                  decision. Appropriate precautions will be taken by your medical
-                  plan to avoid any data breach, and in the event a HIPAA data
-                  breach occurs involving information you provide in connection
-                  with the NMPSIA Wellness Program, your elected medical plan
-                  will notify you immediately.
+                  decision. Appropriate precautions will be taken by your
+                  medical plan to avoid any data breach, and in the event a
+                  HIPAA data breach occurs involving information you provide in
+                  connection with the NMPSIA Wellness Program, your elected
+                  medical plan will notify you immediately.
                 </p>
                 <p>
                   You may not be discriminated against in employment because of
-                  the medical information you provide as part of participating in
-                  the Wellness Program, nor may you be subjected to retaliation
-                  if you choose not to participate. If you have questions or
-                  concerns regarding this notice, or about protections against
-                  discrimination and retaliation, please contact NMPSIA Benefits
-                  &amp; Wellness team at (800) 548-3724.
+                  the medical information you provide as part of participating
+                  in the Wellness Program, nor may you be subjected to
+                  retaliation if you choose not to participate. If you have
+                  questions or concerns regarding this notice, or about
+                  protections against discrimination and retaliation, please
+                  contact NMPSIA Benefits &amp; Wellness team at (800) 548-3724.
                 </p>
               </section>
             </div>
-            <!-- /.compliance-doc -->
+            <!-- /.official-letter-doc -->
           </div>
           <!-- /.benefits-main -->
         </div>

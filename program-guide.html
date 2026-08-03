@@ -1,0 +1,2553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K650CFV8ZV"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K650CFV8ZV");
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <!-- Preconnect to CDN domains for faster resource loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link
+      rel="preconnect"
+      href="https://d3e54v103j8qbb.cloudfront.net"
+      crossorigin
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NMPSIA 2026 Employee Benefits Program Guide — plan information, carrier details, and important notices for New Mexico Public Schools Insurance Authority members."
+    />
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon-1.png" />
+    <!-- Google Search Console meta tag for verification on Search Console -->
+    <meta
+      name="google-site-verification"
+      content="rqcincgiDm3fmRsAl4P-ef0nL-Q1i1yO_FKW3X5J8Us"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>
+      2026 Program Guide | New Mexico Public Schools Insurance Authority
+    </title>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Boxicons styles, used as a font -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Webflow navbar styles (load before main.css so main.css can override) -->
+    <link
+      href="css/webflow_navbar/css/normalize.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/webflow_navbar/css/webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="css/webflow_navbar/css/webflow-navbar.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="css/main.css?v=1" />
+    <link rel="stylesheet" href="css/queries.css?v=1" />
+    <link rel="stylesheet" href="css/official-letter.css?v=1" />
+    <!-- components -->
+    <script
+      src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"
+      defer
+    ></script>
+    <script
+      src="./scripts/components/footer/footer-sitemap.js?v=1.2"
+      defer
+    ></script>
+    <script
+      src="./scripts/components/program-guide/participating-employers.js?v=1.0"
+      defer
+    ></script>
+
+    <style>
+      /* ── Participating Employers modal ── */
+
+      /* Sticky search bar at the top of the scrollable modal body */
+      .pg-employers__search-wrap {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding: 0.875rem 1rem;
+        border-bottom: 1px solid #dee2e6;
+      }
+
+      .pg-employers__count {
+        margin: 0;
+        font-size: 0.875rem;
+        color: #6c757d;
+        white-space: nowrap;
+      }
+
+      .pg-employers__table thead th {
+        background-color: #0f2d5c;
+        color: #fff;
+        white-space: nowrap;
+        vertical-align: middle;
+      }
+
+      .pg-employers__table tbody tr:hover {
+        background-color: #e8f0fe;
+      }
+
+      /* ── Eligible Dependents table ── */
+
+      .dep-table {
+        font-size: 0.975rem;
+        line-height: 1.5;
+      }
+
+      .dep-table thead th {
+        background-color: #0f2d5c;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 0.03em;
+        vertical-align: middle;
+        border-left: none;
+        border-right: none;
+      }
+
+      .dep-table tbody td {
+        vertical-align: top;
+        border-left: none;
+        border-right: none;
+        border-top: 1.5px solid #6c757d;
+        border-bottom: none;
+      }
+
+      .dep-table tbody tr:first-child td {
+        border-top: none;
+      }
+
+      .dep-table tfoot td {
+        text-align: center;
+        font-size: 0.9rem;
+        background-color: #f8f9fa;
+        border-left: none;
+        border-right: none;
+        border-top: 1.5px solid #6c757d;
+      }
+
+      .dep-type {
+        color: #1a5fa8;
+      }
+
+      /* Override the overflow-x: hidden on .sidebar-layout from main.css —
+         that property breaks position: sticky on children in most browsers. */
+      @media (min-width: 1001px) {
+        .sidebar-layout {
+          overflow: visible;
+        }
+      }
+    </style>
+    <!-- components -->
+    <script
+      src="./scripts/components/trainings/mybenefits-portal-howto.js?v=1.0"
+      defer
+    ></script>
+    <script src="./scripts/components/carrier-contacts-component.js?v=1.4"></script>
+    <script src="./scripts/components/compliance-notices-component.js?v=1.0"></script>
+  </head>
+
+  <body class="modern-body">
+    <a href="#main-content" class="skip-to-main-content"
+      >Skip to main content</a
+    >
+    <webflow-navbar-component></webflow-navbar-component>
+
+    <div class="modern-breadcrumb" aria-label="breadcrumb">
+      <ol class="ms-4 breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Program Guide
+        </li>
+      </ol>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button
+      class="sidebar-toggle"
+      id="sidebarToggle"
+      aria-label="Toggle navigation menu"
+    >
+      <i class="bx bx-menu"></i>
+    </button>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main id="main-content">
+      <div class="container document">
+        <!-- Hero -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1 class="hero-title">2026 Employee Benefits Program Guide</h1>
+            <p class="hero-subtitle">
+              New Mexico Public Schools Insurance Authority
+            </p>
+          </div>
+          <div class="hero-logo">
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="logo"
+            />
+          </div>
+        </section>
+
+        <div class="sidebar-layout document">
+          <aside class="benefits-sidebar" id="benefitsSidebar">
+            <div class="sidebar-header">
+              <h3><i class="bx bx-list-ul"></i> Contents</h3>
+              <button
+                class="close-sidebar"
+                id="closeSidebar"
+                aria-label="Close navigation menu"
+              >
+                <i class="bx bx-x"></i>
+              </button>
+            </div>
+            <nav class="sidebar-nav" aria-label="Document table of contents">
+              <a href="#carriers-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Important Contact Information</span>
+              </a>
+              <a href="#letter-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>2026 Letter from NMPSIA</span>
+              </a>
+              <a href="#employers-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Participating Employers</span>
+              </a>
+              <a href="#enrollment-guidelines-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Benefit Enrollment Guidelines</span>
+              </a>
+              <a href="#late-reporting-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Late Reporting Consequences</span>
+              </a>
+              <a href="#enrollment-key-details" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Important Tips for Successful Enrollment</span>
+              </a>
+              <a href="#smart-consumer-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Cost-Effective Benefits &amp; Access</span>
+              </a>
+              <a href="#mybenefits-portal-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Welcome to the MyBenefits Portal!</span>
+              </a>
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/standard-blf-adl-ltd-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Life Insurance & Long-Term Disability Plans</span>
+              </a>
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/standard-EOI-pgpage.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Standard EOI</span>
+              </a>
+              <a href="#right-care-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Where to Seek Care: PCP, Urgent Care &amp; ER</span>
+              </a>
+              <!-- BlueCross BlueShield NM Health Plan -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/bcbs-med-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>BlueCross BlueShield NM Health Plan</span>
+              </a>
+
+              <!-- Presbyterian Health Plan -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/pres-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Presbyterian Health Plan</span>
+              </a>
+              <!-- Schedule of Summary of Benefits -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/schedule-of-summary-of-benefits-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Schedule of Summary Medical Benefits</span>
+              </a>
+
+              <!-- Medical Plan Exclusions & Limitations -->
+              <a href="#medical-exclusions-section" class="nav-item">
+                <i class="bx bx-chevron-right"></i>
+                <span>Medical Plan Exclusions &amp; Limitations</span>
+              </a>
+
+              <!-- Lantern Specialty Care -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/lantern-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Lantern Specialty Care</span>
+              </a>
+
+              <!-- Express Scripts by Evernorth RX Plan -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/express-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Express Scripts by Evernorth RX Plan</span>
+              </a>
+
+              <!-- BlueCare Dental -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/blueCare-dental-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>BlueCare Dental</span>
+              </a>
+
+              <!-- Delta Dental -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/delta-dental-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Delta Dental</span>
+              </a>
+
+              <!-- United Concordia -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/united-concordia-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>United Concordia</span>
+              </a>
+              <!-- Davis Vision -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/davis-vision-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Davis Vision</span>
+              </a>
+              <!-- Montly Premium Rates -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/monthly-premium-rates-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Monthly Premium Rates</span>
+              </a>
+
+              <!-- Employer Contribution Schedules (Public Schools and Charters) -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/contributions-schools-and-charters-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Cost Sharing (Public Schools and Charters)</span>
+              </a>
+              <!-- Employer Contribution Schedules (Higher Ed and Other entities) -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/contributions-higher-ed-and-others-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Cost Sharing (Higher Ed and Other entities)</span>
+              </a>
+              <!-- Additional Life & Long-Term Disability Rates (p 98) -->
+              <a
+                href="https://nmpsia.com/PDFs/program-guide/ADL-and-LTD-rates-pgpages.pdf"
+                class="nav-item"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bx bx-chevron-right"></i>
+                <span>Additional Life & Long-Term Disability Rates</span>
+              </a>
+              <!-- Important Employee Benefit Program Notices (p 99) -->
+              <!-- compliance notices component can go here -->
+              <compliance-notices></compliance-notices>
+              <!-- Add more nav items here as sections are added -->
+            </nav>
+          </aside>
+
+          <!-- MAIN CONTENT STARTS HERE -->
+          <div class="benefits-main">
+            <!-- Document content -->
+            <div class="main-content official-letter-doc">
+              <!-- Plan Information & Carriers Link -->
+              <section id="carriers-section" aria-labelledby="carriers-heading">
+                <h2 id="carriers-heading">NMPSIA Carriers and Consultants</h2>
+
+                <carrier-contacts></carrier-contacts>
+              </section>
+
+              <!-- 2026 Letter from NMPSIA -->
+              <section
+                class="section"
+                id="letter-section"
+                aria-labelledby="letter-heading"
+              >
+                <h2 id="letter-heading">2026 Letter from NMPSIA</h2>
+
+                <div class="letter-header">
+                  <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
+                  <div class="letter-header-text">
+                    <p class="letter-org">
+                      New Mexico Public Schools Insurance Authority
+                    </p>
+                    <p class="letter-title">2026 Letter from NMPSIA</p>
+                  </div>
+                </div>
+
+                <p>Greetings from NMPSIA,</p>
+
+                <p>
+                  The New Mexico Public Schools Insurance Authority (NMPSIA) was
+                  created by the New Mexico Legislature in 1986 to serve as a
+                  purchasing agency for public school districts, post-secondary
+                  educational entities, charter schools and other educational
+                  entities at large. Through NMPSIA, member schools are able to
+                  offer comprehensive medical, pharmacy, dental, vision, life
+                  and long-term disability benefits to approximately 41,800
+                  employees and 79,300 total members.
+                </p>
+
+                <p>
+                  NMPSIA offers both <strong>High Option</strong> and
+                  <strong>Low Option</strong> medical plans, administered by
+                  BlueCross BlueShield of New Mexico and Presbyterian Health
+                  Plan. These options are designed to give members meaningful
+                  choice when selecting coverage that best fits their needs. As
+                  of January 2026, NMPSIA introduced plan design changes to
+                  better align with this approach. While the
+                  <strong>Low Option plan</strong> has a lower monthly premium,
+                  it requires members to pay more out of pocket when they
+                  receive care. Out-of-network benefits are still available;
+                  however, the updated plan design encourages members to use
+                  in-network providers whenever possible to help manage costs.
+                </p>
+
+                <p>
+                  We are proud to introduce the new Pharmacy Benefits Manager,
+                  Express Scripts by Evernorth. Members will continue to have
+                  access to <strong>High Option</strong> and
+                  <strong>Low Option</strong> prescription drug plans which
+                  correspond with their medical plan enrollment. High and Low
+                  Option dental plans are offered through BlueCare Dental, Delta
+                  Dental and United Concordia Dental. NMPSIA offers a Premier
+                  vision plan through Davis Vision, and Life and Disability
+                  plans through The Standard.
+                </p>
+
+                <p>
+                  Since 2024, NMPSIA has partnered with Lantern to offer a
+                  unique benefit designed to
+                  <strong>eliminate member's cost-share</strong> for
+                  musculoskeletal-related surgery or pain management. Members
+                  will be automatically enrolled with Lantern when they elect
+                  any one of our medical plans.
+                </p>
+
+                <p>
+                  Employees have access to a comprehensive wellness program as
+                  part of their benefits package, providing no-cost digital
+                  health management programs and personalized nutrition coaching
+                  with licensed healthcare professionals. Watch for monthly
+                  communications, which include helpful health resources such
+                  as: fitness, weight management, and mental health support,
+                  along with reminders to help you stay on track with your
+                  personal health goals. No matter what your health goal or
+                  condition, NMPSIA offers wellness and benefit programs
+                  designed to support your needs. For more details, visit
+                  <a href="./wellness.html" target="_blank" rel="noopener"
+                    >nmpsia.com/wellness</a
+                  >.
+                </p>
+
+                <p>
+                  NMPSIA also encourages members to be informed and engaged in
+                  their benefit choices. Understanding your selected plans is
+                  the best way to get the most value from the benefits you pay
+                  for each month. To help ensure you receive important updates
+                  and guidance, please:
+                </p>
+
+                <ul>
+                  <li>
+                    <strong>Provide a personal email address</strong> (not a
+                    work email) through the
+                    <a href="#" target="_blank" rel="noopener"
+                      >MyBenefits Portal</a
+                    >
+                    <!-- TODO: replace # with the actual MyBenefits Portal URL -->
+                    so you don't miss important communications.
+                  </li>
+                  <li>
+                    <strong
+                      >Schedule your free in-network preventive care</strong
+                    >, including annual physicals, routine screenings (such as
+                    colonoscopies and mammograms), immunizations, family
+                    planning services, well-child care, routine vision or
+                    hearing screenings through age 19, and preventive dental
+                    checkups. For non-routine tests or procedures, be sure to
+                    obtain prior authorization and understand your plan's
+                    deductible, copays, and coinsurance. Please note that
+                    virtual visits with your primary care or specialist provider
+                    are billed at the standard office or specialist visit copay.
+                    To receive virtual care at <u>no cost to you</u>, use your
+                    carrier's designated virtual visit platform to access the
+                    national network of providers for non-emergency medical and
+                    behavioral health needs.
+                  </li>
+                  <li>
+                    <strong>Partner with your healthcare providers</strong> to
+                    plan cost-effective care, treatments, and medications. Ask
+                    about prior authorizations for services and medications,
+                    share quarterly formulary updates before filling
+                    prescriptions, and discuss whether generic alternatives are
+                    available to help reduce out-of-pocket costs.
+                  </li>
+                </ul>
+
+                <p>
+                  To assist you in deciding the benefits that meet your health
+                  and wellness needs, we strongly encourage you to carefully
+                  read all information in this guide and visit each carrier's
+                  website. Compare medical plans by viewing a side-by-side
+                  comparison chart, available on the home page of
+                  <a href="https://nmpsia.com/" target="_blank" rel="noopener"
+                    >nmpsia.com</a
+                  >.
+                </p>
+
+                <p>
+                  <em
+                    ><strong
+                      >Always visit your employer's
+                      <a
+                        href="./district-contacts.html"
+                        target="_blank"
+                        rel="noopener"
+                        >benefits office</a
+                      >
+                      FIRST for guidance on enrolling, disenrolling, or making
+                      timely changes to your coverages.</strong
+                    ></em
+                  >
+                </p>
+
+                <p>Thank you for participating in NMPSIA's benefits.</p>
+
+                <p>NMPSIA Benefits Team</p>
+              </section>
+
+              <!-- Participating Employers -->
+              <section
+                id="employers-section"
+                aria-labelledby="employers-heading"
+              >
+                <participating-employers></participating-employers>
+              </section>
+
+              <!-- Add more sections here -->
+
+              <section
+                id="enrollment-guidelines-section"
+                aria-labelledby="enrollment-guidelines-heading"
+              >
+                <h2 id="enrollment-guidelines-heading">
+                  Enrollment Guidelines
+                </h2>
+                <p>
+                  This guide gives you an overview to help you understand your
+                  eligibility requirements, enrollment guidelines, and
+                  qualifying events for enrolling in benefit coverages and
+                  wellness programs. The following pages include a summary of
+                  the benefits and wellness programs offered for medical,
+                  prescription, dental, vision, disability, and life options.
+                  Through its benefits and wellness programs, NMPSIA offers
+                  options to select health coverages with delivery systems to
+                  support your healthcare needs while managing your health,
+                  healthcare costs and stabilizing NMPSIA’s self-funded claims.
+                  Wellness programs are at no-cost to enrolled members.
+                </p>
+                <h3>Benefit Enrollment Guidelines</h3>
+                <h4>You are eligible for benefits if:</h4>
+                <ul>
+                  <li>
+                    Your employer has informed you that you are eligible for
+                    benefits.
+                  </li>
+                  <li>
+                    You work the minimum qualifying number of hours per week
+                    established by your employer.
+                  </li>
+                </ul>
+                <h4>NMPSIA Requirements</h4>
+                <ul>
+                  <li>
+                    You must work 15 hours or more per week to receive basic
+                    life insurance.
+                  </li>
+                  <li>
+                    You must work 20 hours or more per week to enroll in all
+                    other lines of coverage.
+                  </li>
+                  <ul>
+                    <li>
+                      Note: If you work fewer than 20 hours per week, but at
+                      least 15 hours per week, you may be eligible to
+                      participate if your employer has adopted an annual
+                      part-time employee resolution that has been approved by
+                      the NMPSIA Board of Directors.
+                    </li>
+                  </ul>
+                  <li>
+                    You are a one-bus owner operator, designated as a bus
+                    employee.
+                  </li>
+                  <li>
+                    You are an international employee on a work visa in the U.S.
+                  </li>
+                  <li>
+                    You are a variable hour or seasonal employee (or
+                    substitute), as determined by your employer, eligible for
+                    medical coverage only, as stated in the Affordable Care Act
+                    guidelines
+                  </li>
+                </ul>
+                <h4>You are not eligible for benefits if:</h4>
+                <ul>
+                  <li>
+                    You are an employee of an independent contractor or fleet
+                    bus driver.
+                  </li>
+                </ul>
+
+                <h3>Benefit Enrollment Begins Here!</h3>
+                <h4>Automatic Basic Life Enrollment</h4>
+                <p>Your employer will:</p>
+                <ul>
+                  <li>
+                    Enroll you in the basic life benefit amount offered to you.
+                    Basic life coverage is effective the first day of the month
+                    following your date of hire (date scheduled to report to
+                    work).
+                  </li>
+                </ul>
+
+                <h3>Guidelines on How to Apply for Your Benefit Options</h3>
+                <p>
+                  Your employer will provide you with the benefit options
+                  available to you, or you can find this information by looking
+                  for your employer in the
+                  <a href="#employers-section">participating employers table</a>
+                  of this guide.
+                </p>
+                <p>
+                  You must provide a Social Security Number (SSN) or Individual
+                  Taxpayer Identification Number (ITIN).
+                </p>
+                <ul>
+                  <li>
+                    An international employee must also provide a copy of a
+                    passport <strong>and</strong> work visa.
+                  </li>
+                </ul>
+                <small
+                  >Note: If your SSN or ITIN has not been received by the time
+                  benefits are scheduled to start, a temporary ID number will be
+                  provided by the NMPSIA Benefits Administrator. (Contact your
+                  <a
+                    href="./district-contacts.html"
+                    target="_blank"
+                    rel="noopener"
+                    >benefits office</a
+                  >
+                  for details.)</small
+                >
+
+                <h4>31-Day Enrollment Period</h4>
+                <ul>
+                  <li>
+                    You have 31 days from your date of hire (date scheduled to
+                    report to work) to apply for all other benefits offered by
+                    your employer.
+                  </li>
+                  <li>
+                    You have 31 days from the date of a qualifying event to
+                    apply for other benefits offered by your employer. (See How
+                    to Report a Change of Status section on page 14 for
+                    details.)
+                  </li>
+                </ul>
+                <p class="text-center">
+                  To apply you must complete, digitally sign, and submit
+                  requested enrollment and upload required supportive
+                  documentation via the MyBenefits Portal.
+                </p>
+                <p class="red">
+                  REMEMBER: The effective date for all other lines of coverage
+                  is determined by you and your employer, provided NMPSIA rules
+                  of enrollment have been met and you have authorized payroll
+                  deductions in writing. <br />Coverage can never go into effect
+                  retroactively and will never be effective sooner than the
+                  first day of the month following your first day you report to
+                  work.
+                </p>
+                <p>
+                  Once enrolled, you may switch medical and dental carriers
+                  and/or medical and dental plans during the annual switch
+                  enrollment period in the fall, and coverage will start January
+                  1st of the next year. Coverage ends on the last day of the
+                  month that your employer deducts premium from your payroll
+                  check. This end date is determined by NMPSIA rules and set by
+                  your employer.
+                </p>
+
+                <h3>Active Eligible Board Member Enrollment Process:</h3>
+                <p>
+                  You may qualify for benefits as a board member if you are
+                  actively serving as a (publicly elected) board member of a
+                  participating school district, appointed charter school
+                  governing council member, or an appointed/elected board of
+                  regents at a participating college/university.
+                </p>
+
+                <ul>
+                  <li>
+                    You have <strong>31 days</strong> from being appointed or
+                    elected into office <strong>to apply</strong> for benefits.
+                  </li>
+                  <li>
+                    You are eligible to enroll in benefit plans offered at the
+                    entity you represent (except for basic life and long-term
+                    disability coverage).
+                  </li>
+                  <li>
+                    Any additional life insurance amounts available are equal to
+                    the basic life insurance amount offered to active employees
+                    at the entity.
+                  </li>
+                  <li>You pay 100% of the premiums.</li>
+                  <li>
+                    Coverage ends on <strong>December 31st</strong> of the year
+                    in which your governing body position term expires
+                  </li>
+                </ul>
+
+                <h3>Benefit Enrollment Guidelines for Eligible Dependents</h3>
+                <p>
+                  Dependents must meet one of the following definitions of
+                  eligible dependent, and you must provide all required
+                  documentation to prove your dependent’s eligibility. When
+                  enrolling dependents, coverage may not be greater than that of
+                  the employee.
+                </p>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered dep-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Eligible Dependent</th>
+                        <th scope="col">Supportive Documentation Required</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Legal Spouse</strong></td>
+                        <td>
+                          Original official state publicly filed marriage
+                          certificate from the County Clerk’s Office or from the
+                          Bureau of Vital Statistics
+                          <em>(Chapel certificate is also acceptable)</em>.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <strong>Domestic Partner</strong>
+                          <em>(Only if offered by the Employer)</em>
+                        </td>
+                        <td>Notarized affidavit of domestic partnership.</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>Child <u>UNDER the age of 26</u> as follows:</p>
+                          <span class="dep-type mb-0">
+                            <strong>Natural Child or Stepchild</strong>
+                          </span>
+                        </td>
+                        <td>
+                          Original official state publicly filed birth
+                          certificate from the Bureau of Vital Statistics
+                          <em
+                            >(hospital birth registration form is also
+                            acceptable for newborns in lieu of an official birth
+                            certificate)</em
+                          >.
+                          <span class="dep-type"
+                            >For children of international employees,
+                            <u>also provide</u> a copy of a passport
+                            <em>and</em> U.S. visa.</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="dep-type"
+                            ><u>Legally adopted</u> child</span
+                          >
+                        </td>
+                        <td>
+                          Evidence of placement by a state licensed agency,
+                          governmental agency, or a court order/decree
+                          <em
+                            ><strong
+                              >(notarized statement and power of attorney are
+                              not acceptable)</strong
+                            ></em
+                          >.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Child for whom you have obtained
+                          <span class="dep-type"
+                            ><u>legal guardianship</u></span
+                          >
+                          and who is primarily dependent on the eligible
+                          employee for maintenance and support.
+                        </td>
+                        <td>
+                          Legal Guardianship Document if evidenced in a court
+                          order or decree
+                          <strong
+                            >(notarized statement and power of attorney
+                            documents, or conservatorship documents are not
+                            acceptable)</strong
+                          >. NMAC 6.50.1.7.P.3.e
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="dep-type"
+                            ><strong>Foster child</strong></span
+                          >
+                          living in the same household as a result of placement
+                          by a state licensed placement agency, provided that
+                          the foster home is appropriately licensed.
+                        </td>
+                        <td>Placement order AND foster home license.</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Dependent child with
+                          <strong class="dep-type"
+                            >Qualified Medical Child Support Order or National
+                            Child Support Order.</strong
+                          >
+                        </td>
+                        <td>
+                          Qualified Medical Child Support Order or National
+                          Child Support Order.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p>
+                            Child enrolled in the NMPSIA Group Plan who reaches
+                            age 26
+                            <u>while covered under the NMPSIA Group Plan</u>*,
+                            who is
+                            <strong
+                              >impaired and relies completely on the eligible
+                              employee</strong
+                            >
+                            for maintenance and support, who is incapable of
+                            self-sustaining employment because of mental or
+                            physical impairment.
+                          </p>
+                          <p class="mb-0">
+                            <em
+                              >*If your child is not enrolled and covered under
+                              the NMPSIA Group Plan
+                              <u>prior to reaching age 26</u>, your child is not
+                              an eligible dependent.</em
+                            >
+                          </p>
+                        </td>
+                        <td>
+                          <p>
+                            Evidence of impairment and dependency in the form of
+                            a physician statement indicating diagnosis and
+                            prognosis along with your request to continue this
+                            child’s coverage
+                            <strong
+                              >must be provided to your employer
+                              <u>31 days</u> before the child reaches age
+                              26</strong
+                            >
+                            or within <u>31 days</u> from the date the child
+                            becomes impaired
+                            <strong
+                              >while covered under the NMPSIA Group Plan</strong
+                            >.
+                          </p>
+                          <p class="mb-0">
+                            Final determination is made by the insurance
+                            carrier. For Dental and Vision only enrollees, the
+                            final determination is made by NMPSIA.
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tfoot>
+                      <tr>
+                        <td colspan="2">
+                          Visit the Vital Records website to obtain required
+                          documentation<br />
+                          <a
+                            href="https://www.nmhealth.org/about/erd/bvrhs/vrp/"
+                            target="_blank"
+                            rel="noopener"
+                            >https://www.nmhealth.org/about/erd/bvrhs/vrp/</a
+                          >
+                        </td>
+                      </tr>
+                    </tfoot>
+                  </table>
+                </div>
+
+                <h3>
+                  Your Dependent is <u>Ineligible</u> for Benefits if they are:
+                </h3>
+                <ul>
+                  <li>
+                    Ex-spouses (even if specified in a final divorce decree) or
+                    terminated domestic partners
+                  </li>
+                  <li>
+                    Common Law relationships which are not recognized by New
+                    Mexico Law
+                  </li>
+                  <li>Children that are age 26 or older</li>
+                  <li>
+                    Children left in the care of an eligible employee without
+                    evidence of legal guardianship
+                  </li>
+                  <li>
+                    Parents, aunts, uncles, brothers, sisters, or any other
+                    person not defined as an eligible dependent under the NMPSIA
+                    Rules or Benefit Enrollment Guidelines for Eligible
+                    Dependents on page 10
+                  </li>
+                  <li>
+                    Domestic partners <u>unless</u> your employer has elected
+                    this option
+                  </li>
+                </ul>
+
+                <h3>
+                  Guidelines on How to Apply for Your Dependent’s Benefit
+                  Options:
+                </h3>
+                <ul>
+                  <li>
+                    You have <u>31 days</u> from your date of hire
+                    <span class="text-note italic"
+                      >(date scheduled to report to work)</span
+                    >
+                    to apply for eligible dependent benefits offered by your
+                    employer
+                  </li>
+                  <li>
+                    You have <u>31 days</u> from the date of a qualifying event
+                    to apply for eligible dependent benefits offered by your
+                    employer. (See
+                    <a
+                      href="./program-guide.html#how-to-report-change-of-status"
+                      class="text-link italic bold"
+                      >How to Report a Change of Status</a
+                    >
+                    section further down this page for details.)
+                  </li>
+                </ul>
+                <p class="text-center text-note">
+                  To apply you must complete, digitally sign, submit requested
+                  enrollment, and upload required supportive documentation via
+                  the
+                  <a
+                    href="https://nmpsiaonline.nmpsia.com"
+                    class="text-link bold"
+                    target="_blank"
+                    rel="noopener"
+                    >MyBenefits Portal</a
+                  >
+                  for employer approval.
+                </p>
+
+                <p>
+                  If you apply to enroll one eligible dependent, you
+                  <strong>MUST enroll all eligible dependents</strong>
+                  <span class="text-note"
+                    >(NMAC 6.50.10.8.B and 6.50.10.8.C.8)</span
+                  >, unless one of the following applies:
+                </p>
+                <ol>
+                  <li>
+                    The eligible dependent you are requesting to exclude from a
+                    particular line of NMPSIA coverage is covered for that
+                    particular line of coverage under another plan.
+                  </li>
+                  <li>
+                    Your enrollment meets the requirements of a Special
+                    Enrollment event for adding medical coverage only. (See
+                    Guidelines for a Special Enrollment Event section on page 15
+                    for details) or,
+                  </li>
+                  <li>
+                    A final divorce decree states that the ex-spouse is to
+                    provide a particular coverage for a dependent child.
+                  </li>
+                </ol>
+                <p>
+                  <strong
+                    >Supportive documentation in the form of a letter from the
+                    other plan is required when #1 above applies.</strong
+                  >
+                  <span class="italic"
+                    >(A <u>current</u> insurance identification card is an
+                    acceptable form of supportive documentation if it lists the
+                    dependent’s name and the type of coverage.)</span
+                  >
+                </p>
+
+                <p>
+                  <strong
+                    >Supportive documentation, as determined by NMPSIA, is
+                    required when #2 or #3 above applies.</strong
+                  >
+                </p>
+                <ul>
+                  <li>
+                    You must provide an SSN or ITIN for
+                    <strong><u>all</u> enrolled dependents</strong>. <br />
+                    <span class="text-note">Note:</span> For international
+                    dependents - if SSN or ITIN has not been received by the
+                    time benefits are scheduled to start, a temporary ID number
+                    will be provided by the NMPSIA Benefits Administrator.
+                    (Visit your benefits office for details.)
+                  </li>
+                  <li class="text-note">
+                    A copy of the required dependent supportive documentation
+                    must accompany your requested enrollment and be uploaded via
+                    the
+                    <a
+                      href="https://nmpsiaonline.nmpsia.com"
+                      class="text-link bold"
+                      target="_blank"
+                      rel="noopener"
+                      >MyBenefits Portal</a
+                    >
+                    for employer approval prior to coverage becoming effective
+                  </li>
+                  <ul>
+                    <li>
+                      All required documents must be submitted within
+                      <strong>61 days</strong> of your new hire coverage
+                      effective date or the date of a qualifying event.
+                    </li>
+                  </ul>
+                  <li>
+                    Coverage for your dependent(s) becomes effective the first
+                    day of the month following the day you turn in the required
+                    documents to your employer’s benefits office,
+                    <span class="text-note italic"
+                      >(provided you have applied on time and met the
+                      <strong><u>61-day</u></strong> deadline for required
+                      documentation of the qualifying event)</span
+                    >.
+                  </li>
+                  <li>
+                    <span class="text-note"
+                      >Your dependent(s) benefits will never be effective any
+                      sooner than your effective date of coverage.</span
+                    >
+                  </li>
+                </ul>
+                <p class="bold">
+                  If you miss the <u>31-day</u> enrollment period to add
+                  eligible dependents, decline dependent coverage, or you
+                  <u>did not meet the 61-day deadline</u> to provide required
+                  dependent documents:
+                </p>
+                <ul>
+                  <li>
+                    You must wait until the annual open enrollment period in the
+                    fall to apply for dependent Medical/Prescription Drug
+                    Coverage, Dental Coverage, Vision Coverage. Dependent
+                    coverage will start January 1st of the next year.
+                  </li>
+                  <li>
+                    You may apply for Dependent Life coverage at any time,
+                    provided you are already covered on Additional Life.
+                    Dependent Life coverage for spouse is not guaranteed.
+                  </li>
+                  <li>
+                    Life Coverages can be added at anytime during the year by
+                    enrolling at MyBenefits Portal. (Refer to page 24 for
+                    Connected EOI process).
+                  </li>
+                  <ul>
+                    <li>
+                      Your spouse may apply for Dependent Life coverage by
+                      providing satisfactory evidence of insurability
+                      <span class="text-note">(not required for children)</span
+                      >. Coverage will start the 1st of the month after approval
+                      by the Life Carrier.
+                    </li>
+                  </ul>
+                  <li>
+                    Your dependent’s coverage ends on the last day of the month
+                    in which the eligible dependent becomes ineligible.
+                  </li>
+                </ul>
+
+                <div class="subsection">
+                  <div class="d-flex align-items-center gap-2">
+                    <img
+                      src="./images/nmpsia-wellness-logo.jpg"
+                      alt="NMPSIA Wellness and Well-Being Logo"
+                      class="img-fluid w-25"
+                      style="max-width: 100px"
+                    />
+                    <h4 class="text-uppercase">Did you know?</h4>
+                  </div>
+                  <p class="green-text">
+                    NMPSIA’s Wellness and Well-Being programs promote a culture
+                    of wellness, build supportive networks, and grow engagement
+                    and personal responsibility. Participation in wellness
+                    programs improves overall health, promotes well- being,
+                    prevents future diseases, and manages current conditions
+                    while balancing work and home.
+                  </p>
+                  <h5>Take advantage of the No-Cost Programs listed below:</h5>
+                  <div class="d-flex align-items-start gap-3">
+                    <ul class="small-text green-text">
+                      <li>
+                        24/7 Nurse Advice Line & Virtual Health/Video Visits
+                      </li>
+                      <li>
+                        $0 Behavioral Health Programs (for in-network services)
+                      </li>
+                      <li>
+                        Diabetes Prevention and Weight Management Programs
+                      </li>
+                      <li>$0 for diabetes supplies from Approved Formulary</li>
+                      <li>$0 blood pressure cuffs</li>
+                      <li>Health Coaching</li>
+                      <li>Incentive & Rewards Programs</li>
+                      <li>Mindfulness Based Stress Reduction Programs</li>
+                      <li>Monthly Communication & Topics</li>
+                      <li>Monthly Skill Builders</li>
+                      <li>Self-Directed Courses and Self-Help Tools</li>
+                      <li>Tobacco Cessation Programs</li>
+                      <li>Chronic Disease Programs</li>
+                      <li>Wellness Ambassador Program</li>
+                      <li>Health & Wellness Challenges</li>
+                    </ul>
+
+                    <img
+                      src="./images/program-guide/wellness-wheel.png"
+                      alt="Wellness Wheel illustration"
+                      style="width: 280px; flex-shrink: 0; object-fit: contain"
+                    />
+                  </div>
+                </div>
+
+                <div class="subsection">
+                  <h4>
+                    Effective Date Exceptions for Newborns and Adopted Children
+                  </h4>
+
+                  <div class="table-responsive">
+                    <table class="table table-bordered comparison-table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Newborn</th>
+                          <th scope="col">Adopted Children</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            You are granted <strong><u>61 days</u></strong> from
+                            the first of the month following your newborn's
+                            birth to
+                            <strong
+                              >provide appropriate supportive
+                              documentation</strong
+                            >
+                            to your employer's benefits office.
+                          </td>
+                          <td>
+                            You are granted <strong><u>61 days</u></strong> from
+                            the first of the month following your child's date
+                            of placement or adoption
+                            <em>(whichever comes first)</em> to
+                            <strong
+                              >provide appropriate supporting
+                              documentation</strong
+                            >
+                            to your employer's benefits office.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            Coverage for a newborn begins on the
+                            <strong>newborn's date of birth</strong>, provided
+                            you are enrolled in
+                            <strong
+                              >family medical, dental, or vision
+                              coverage</strong
+                            >. Any claims associated with your newborn, cannot
+                            be processed until you apply to enroll your newborn.
+                          </td>
+                          <td>
+                            Coverage for an adopted child begins on date of
+                            placement or adoption
+                            <em>(whichever comes first)</em> provided that you
+                            are enrolled in
+                            <strong
+                              >family medical, dental, or vision
+                              coverage</strong
+                            >. Any claims associated with your adopted child, or
+                            child placed for adoption cannot be processed until
+                            you apply to enroll your child.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            If you are <strong><u>not</u></strong> enrolled in
+                            family medical, dental, or vision coverage, your
+                            newborn will <strong><u>not</u></strong> be
+                            automatically covered from date of birth.
+                          </td>
+                          <td>
+                            If you are <strong><u>not</u></strong> enrolled in
+                            family medical, dental, or vision coverage, your
+                            adopted child or child placed for adoption will
+                            <strong><u>not</u></strong> be automatically covered
+                            from date of adoption or placement.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            You must apply to enroll your newborn within
+                            <strong
+                              >31 days from the newborn's date of birth</strong
+                            >.
+                          </td>
+                          <td>
+                            You must apply to enroll your child within
+                            <strong
+                              >31 days from the date of adoption or date of
+                              placement</strong
+                            >
+                            (whichever comes first).
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            If your newborn is enrolled timely, within 31 days
+                            from birth, <strong>NMPSIA's newborn rule</strong>
+                            allows your newborn's coverage to be effective on
+                            the date of birth.
+                          </td>
+                          <td>
+                            If your adopted or placed child is enrolled timely,
+                            within 31 days from adoption or placement,
+                            <strong
+                              >NMPSIA's adopted or placed child rule</strong
+                            >
+                            allows your adopted or placed child's coverage to be
+                            effective on the date of adoption or placement.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            A premium increase change will become effective the
+                            1<sup>st</sup> of the month after the date of birth.
+                          </td>
+                          <td>
+                            A premium increase change will become effective the
+                            1<sup>st</sup> of the month after the date of
+                            adoption or date of placement.
+                          </td>
+                        </tr>
+                        <tr class="row-callout">
+                          <td>
+                            If you miss the 31 day enrollment period, your
+                            newborn will not be eligible for coverage until
+                            January 1 via application for open enrollment.
+                          </td>
+                          <td>
+                            If you miss the 31-day enrollment period, your child
+                            will not be eligible for coverage until January 1
+                            via application for open enrollment.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <hr />
+                    <!-- to do: add link later -->
+                    <p class="text-note text-center">
+                      If you are <strong>not enrolled</strong> in a
+                      <strong>NMPSIA medical plan</strong>, the birth of your
+                      newborn, placement or adoption may qualify as a Special
+                      Enrollment event. See
+                      <a href="#" class="text-link bold"
+                        >Special Enrollment Event for Medical Coverage Only</a
+                      >
+                      for details.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="subsection">
+                  <h4>How to Report a Change of Status:</h4>
+                  <p>
+                    A change of status due to any qualifying event
+                    <span class="bold text-uppercase"><u>must</u></span> be
+                    reported timely by
+                    <span class="italic text-note"
+                      >completing, digitally signing, and submitting requested
+                      enrollment and upload required supportive documentation
+                      via the</span
+                    >
+                    <a
+                      href="https://nmpsiaonline.nmpsia.com"
+                      class="text-link bold"
+                      target="_blank"
+                      rel="noopener"
+                      >MyBenefits Portal</a
+                    >
+                    for employer approval within
+                    <strong><u>31 days from the qualifying event</u></strong> or
+                    <strong
+                      ><u>60 days from a Special Enrollment event</u> for
+                      <span class="text-note"
+                        >ADDING MEDICAL COVERAGE ONLY</span
+                      ></strong
+                    >.
+                  </p>
+                  <p>
+                    You have <strong><u>61 days</u></strong> from the date of a
+                    qualifying event to upload all required documents via the
+                    <a
+                      href="https://nmpsiaonline.nmpsia.com"
+                      class="text-link bold"
+                      target="_blank"
+                      rel="noopener"
+                      >MyBenefits Portal</a
+                    >
+                    for employer approval. Coverage becomes effective the first
+                    day of the month following the day you upload the required
+                    documents,
+                    <span class="text-note italic"
+                      >(provided you have applied on time and met the
+                      <u>61-day</u> deadline for documentation of the qualifying
+                      event)</span
+                    >.
+                  </p>
+
+                  <h4>
+                    While insured, you may experience a Qualifying Event such
+                    as...
+                  </h4>
+                  <ul>
+                    <li>Birth of a child</li>
+                    <li>Adoption of a child or child placement order</li>
+                    <li>Legal guardianship of a child</li>
+                    <li>
+                      Moving from part-time to a full-time position with a
+                      salary increase
+                    </li>
+                    <li>Marriage or domestic partnership</li>
+                    <li>
+                      Incapacity of a child while covered under the NMPSIA Group
+                      Plan
+                    </li>
+                    <li>
+                      Promotion to a new job classification with a salary
+                      increase
+                    </li>
+                    <li>
+                      Divorce<sup>*</sup>, annulment, or termination of domestic
+                      partnership
+                    </li>
+                  </ul>
+                  <small
+                    ><sup>*</sup>Not a legal separation. A spouse or any
+                    enrolled children cannot be cancelled when a divorce is in
+                    progress. Immediate cancellation of an ex-spouse/partner and
+                    ineligible children is required by the last day of the month
+                    the divorce/partnership becomes final. (See
+                    <a href="#insurance-fraud-section" class="text-link bold"
+                      >Insurance Fraud statement</a
+                    >
+                    for details).</small
+                  >
+
+                  <p>
+                    Involuntary loss of group or individual coverage through no
+                    fault of the person having the group or individual insurance
+                    coverage. Be advised: voluntary cancellation of other
+                    coverage or non-compliance to maintain other coverage is not
+                    considered a qualifying event.
+                  </p>
+
+                  <p>
+                    This may include an <u>involuntary loss</u> of medical,
+                    dental, vision or NMPSIA life insurance due to:
+                  </p>
+                  <ul>
+                    <li>Reduction in hours worked</li>
+                    <li>
+                      Resignation, termination, or retirement from employment
+                    </li>
+                    <li>
+                      Divorce, annulment, or termination of domestic partnership
+                    </li>
+                    <li>
+                      No longer meet eligibility requirements for insurance
+                    </li>
+                    <li>Exhaustion of COBRA</li>
+                    <li>Death</li>
+                  </ul>
+
+                  <h5 class="text-uppercase bold red">
+                    Important: Proof of voluntary loss required
+                  </h5>
+                  <p>
+                    <u>Verifiable proof of involuntary loss</u> is required to
+                    be provided to your employer’s benefits office. A loss of
+                    coverage letter MUST contain the following information: (See
+                    your employer’s benefits office for an example.)
+                  </p>
+                  <ul>
+                    <li>Where was coverage previously held?</li>
+                    <li>Who lost coverage?</li>
+                    <li>When did coverage end?</li>
+                    <li>What lines of coverage were lost?</li>
+                    <li>Why was coverage lost?</li>
+                  </ul>
+
+                  <p>
+                    The following are unacceptable forms of proof of involuntary
+                    loss that do not include information required above:
+                  </p>
+                  <ul>
+                    <li>Certificate of Creditable Coverage</li>
+                    <li>COBRA Qualifying Event Letter</li>
+                    <li>Divorce Decree</li>
+                  </ul>
+
+                  <h4>
+                    Report Basic Information and Beneficiary Designation
+                    Changes:
+                  </h4>
+                  <ul>
+                    <li>
+                      Timely report all changes of address, phone, and personal
+                      email via the MyBenefits Portal for employer approval.
+                    </li>
+                    <li>
+                      A name change requires valid proof in the form of a copy
+                      of Social Security card or driver’s license.
+                    </li>
+                    <li>
+                      Beneficiary designations must be completed via the
+                      <a
+                        href="https://nmpsiaonline.nmpsia.com"
+                        class="text-link bold"
+                        target="_blank"
+                        rel="noopener"
+                        >MyBenefits Portal</a
+                      >
+                      for employer approval.
+                    </li>
+                    <li>
+                      For beneficiary information visit
+                      <a href="#" class="text-link bold"
+                        >Beneficiary Designation Commonly Asked Questions</a
+                      >.
+                    </li>
+                  </ul>
+
+                  <h4>
+                    Guidelines for a Special Enrollment Event for ADDING MEDICAL
+                    COVERAGE ONLY:
+                  </h4>
+                  <p>
+                    Special enrollment, mandated by state and federal law,
+                    allows eligible employees and/or eligible dependents who
+                    previously declined medical coverage, to enroll in medical
+                    coverage or switch medical plans via the
+                    <a
+                      href="https://nmpsiaonline.nmpsia.com"
+                      class="text-link bold"
+                      target="_blank"
+                      rel="noopener"
+                      >MyBenefits Portal</a
+                    >
+                    for employer approval, within
+                    <strong><u>60 days</u></strong> from the occurrence of the
+                    following events:
+                  </p>
+
+                  <ol>
+                    <li>
+                      <a href="#" class="text-link"
+                        ><u>Involuntary loss of eligibility</u></a
+                      >
+                      or loss of employer contributions for other
+                      <u>medical</u> coverage. Some examples of
+                      <a href="#" class="text-link"
+                        ><u>loss of eligibility</u></a
+                      >
+                      for other medical coverage:
+
+                      <div
+                        class="event-pills"
+                        role="list"
+                        aria-label="Examples of loss of eligibility"
+                      >
+                        <span class="event-pill" role="listitem"
+                          >No longer meet eligibility requirements for
+                          insurance</span
+                        >
+                        <span class="event-pill" role="listitem">Death</span>
+                        <span class="event-pill" role="listitem"
+                          >Divorce, annulment, or termination of domestic
+                          partnership</span
+                        >
+                        <span class="event-pill" role="listitem"
+                          >Reduction in hours worked</span
+                        >
+                        <span class="event-pill" role="listitem"
+                          >Resignation, termination, or retirement from
+                          employment</span
+                        >
+                        <span class="event-pill" role="listitem"
+                          >Exhaustion of COBRA</span
+                        >
+                      </div>
+                    </li>
+
+                    <li>
+                      Employees, spouses/domestic partners, and new dependents
+                      are allowed to enroll because of:
+                      <ul>
+                        <li>
+                          Marriage or Notarized Affidavit of Domestic
+                          Partnership
+                        </li>
+                        <li>Birth, adoption, or placement for adoption</li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      Employees or dependents suffer an
+                      <a href="#" class="text-link"
+                        ><u>involuntary loss of eligibility</u></a
+                      >
+                      of Medicaid or CHIP.
+                      <strong
+                        >This event allows enrollment via the
+                        <a
+                          href="https://nmpsiaonline.nmpsia.com"
+                          class="text-link"
+                          target="_blank"
+                          rel="noopener"
+                          >MyBenefits Portal</a
+                        >
+                        for employer approval, within <u>90 days</u> of the
+                        involuntary loss of eligibility of this particular
+                        coverage.</strong
+                      >
+                      <em>(Proof of loss is required.)</em>
+                    </li>
+                  </ol>
+                </div>
+              </section>
+
+              <!-- Late Reporting Consequences -->
+              <div id="late-reporting-section">
+                <h3 id="late-reporting-heading">
+                  What Happens When You Are Late in Reporting a Change of
+                  Status?
+                </h3>
+                <p>
+                  NMPSIA requires timely reporting of enrollments, qualifying
+                  events, changes, and separation of employment along with any
+                  timely submission of required supportive documentation to your
+                  employer's benefits office.
+                </p>
+
+                <div class="late-reporting-layout">
+                  <div class="caution-box" role="note" aria-label="Caution">
+                    <p class="caution-title">Caution</p>
+                    <p class="caution-body">
+                      Not reporting timely may create consequences like&hellip;
+                    </p>
+                    <i class="bx bxs-error caution-icon" aria-hidden="true"></i>
+                  </div>
+
+                  <div
+                    class="consequences-grid"
+                    role="list"
+                    aria-label="Consequences of late reporting"
+                  >
+                    <div class="consequence-item" role="listitem">
+                      Denial of all claims
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      Retroactive termination of benefits
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      Employee being held financially responsible for claims
+                      paid in error
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      Not eligible for COBRA continuation
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      Denial of LTD or ADL coverage if evidence of insurability
+                      is not met
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      Delayed effective dates and benefit access
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      Loss of eligibility for you and your dependents
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      No premium refund for retroactive termination dates
+                    </div>
+                    <div class="consequence-item" role="listitem">
+                      No retroactive effective or termination dates
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /#late-reporting-section -->
+
+              <!-- Insurance Fraud -->
+              <div id="insurance-fraud-section">
+                <p>
+                  <strong
+                    ><a
+                      href="https://www.srca.nm.gov/parts/title06/06.050.0001.htm"
+                      class="text-link"
+                      target="_blank"
+                      rel="noopener"
+                      >The NMPSIA Rules and Regulations</a
+                    >
+                    at this link supersedes any information contained in this
+                    summary document.</strong
+                  >
+                </p>
+
+                <div class="notice-box red">
+                  <p class="mb-0">
+                    <strong><em>INSURANCE FRAUD</em></strong>
+                    <em> (Federal and State Insurance Laws Will Apply) </em>
+                    - Under NMPSIA Rules and Regulations, anyone who knowingly
+                    or willfully makes any false or fraudulent statement or
+                    representation
+                    <strong
+                      ><u
+                        >shall forfeit all employee and dependent rights to
+                        coverage or benefits</u
+                      ></strong
+                    >. In the event of prohibited actions by an official or
+                    employee of a participating school district or other
+                    educational entity, the employer shall take the appropriate
+                    disciplinary action against the offending official or
+                    employee. If such appropriate disciplinary action is not so
+                    taken, NMPSIA reserves the right to terminate coverage for
+                    the participating school district, charter or other
+                    education entity.
+                  </p>
+                </div>
+
+                <p class="dep-type">
+                  <strong
+                    >If you have questions regarding NMPSIA eligibility,
+                    enrollment, or billing, contact your employer's benefits
+                    office or the NMPSIA eligibility administrative office at
+                    1-800-233-3164.</strong
+                  >
+                </p>
+
+                <p class="dep-type">
+                  <strong
+                    >Visit this link
+                    <a
+                      href="https://nmpsia.com/"
+                      class="text-link"
+                      target="_blank"
+                      rel="noopener"
+                      >NMPSIA Website</a
+                    >
+                    to access valuable enrollment and benefits information and
+                    links to contact NMPSIA staff.</strong
+                  >
+                </p>
+              </div>
+              <!-- /#insurance-fraud-section -->
+
+              <!-- Enrollment Key Details Glossary -->
+              <section
+                id="enrollment-key-details"
+                aria-labelledby="key-details-heading"
+              >
+                <h2 id="key-details-heading">Enrollment Key Details</h2>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered glossary-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Key Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Benefits Eligibility</td>
+                        <td>
+                          Enrollment begins based on your employer's local
+                          policies defining a benefits-eligible employee.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Enrollment Deadline</td>
+                        <td>
+                          You have <strong class="dep-type">31 days</strong> to
+                          apply for employee and/or eligible dependent coverage.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>How to &ldquo;Apply&rdquo;</td>
+                        <td>
+                          Complete, digitally sign, submit enrollment, and
+                          upload required documentation in the
+                          <a
+                            href="https://nmpsiaonline.nmpsia.com"
+                            class="text-link bold"
+                            target="_blank"
+                            rel="noopener"
+                            >MyBenefits Portal</a
+                          >
+                          for employer approval.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Documentation Deadline</td>
+                        <td>
+                          You have
+                          <strong class="dep-type">61 days</strong> from the day
+                          your new hire coverage becomes effective or a
+                          qualifying event to submit required supportive
+                          documentation.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Open Enrollment</td>
+                        <td>
+                          Occurs each fall to add medical, dental, vision, or
+                          dependents; coverage effective
+                          <strong class="dep-type">January 1</strong>.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Switch Enrollment</td>
+                        <td>
+                          Occurs each fall and refers to switching
+                          medical/dental carriers or plans; effective
+                          <strong class="dep-type">January 1</strong>.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Vision Enrollment Rule</td>
+                        <td>
+                          Vision coverage has a
+                          <strong class="dep-type"
+                            >two-year minimum enrollment</strong
+                          >
+                          requirement. You may not drop the vision plan until
+                          you and each of your enrolled dependents have been
+                          enrolled for two years.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Double Coverage</td>
+                        <td>
+                          NMPSIA does
+                          <strong class="dep-type">not</strong> allow double
+                          coverage within NMPSIA group plans for the same line
+                          of coverage.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Loss of Coverage Proof</td>
+                        <td>
+                          Involuntary loss of medical, dental, vision or NMPSIA
+                          life coverage qualifying event requires proof of loss
+                          with: a) Where coverage was previously held to
+                          include: name and contact information of employer
+                          and/or entity who maintained the insurance coverage
+                          lost; b) Who lost coverage; c) What type of coverage
+                          was lost; d) When coverage was lost; and e) Why
+                          coverage was lost.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Loss of Medicaid/CHIP</td>
+                        <td>
+                          Involuntary loss of eligibility of Medicaid or CHIP is
+                          a loss of medical, dental and vision coverage.
+                          Eligible employees have
+                          <strong class="dep-type">90 days</strong> to provide
+                          proof of loss.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Return-to-Work Retiree</td>
+                        <td>
+                          Return to work Retiree requires enrollment in NMPSIA
+                          benefits as an active employee. Consult with NMRHCA at
+                          1-800-233-2576 to ensure you are complying with NMRHCA
+                          rules.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Medicare Coordination</td>
+                        <td>
+                          If enrolled in Medicare,
+                          <strong class="dep-type"
+                            >NMPSIA is the primary payer</strong
+                          >
+                          and Medicare is secondary.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Dependent Enrollment Rule</td>
+                        <td>
+                          If you enroll one eligible dependent,
+                          <strong class="dep-type"
+                            ><u
+                              >you MUST enroll all eligible dependents</u
+                            ></strong
+                          >.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Excluding Dependents</td>
+                        <td>
+                          Proof of other coverage is required to exclude an
+                          eligible dependent from a specific coverage line.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Dependents Outside U.S.</td>
+                        <td>
+                          If you have an eligible dependent that does not live
+                          in the U.S., proof of other coverage is not required.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Newborn Coverage</td>
+                        <td>
+                          Newborns may be excluded from
+                          <strong class="dep-type">dental and vision</strong>
+                          coverage.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Additional Life (ADL) Coverage</td>
+                        <td>
+                          If you have ADL coverage, an eligible child may be
+                          added to
+                          <strong class="dep-type">child life</strong> at any
+                          time. No qualifying event required!
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Child Life Auto-Add</td>
+                        <td>
+                          New dependents added to medical/dental/vision are
+                          automatically added to child life (if coverage
+                          exists).
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Dropping Coverage</td>
+                        <td>
+                          Requires employer approval, IRS Section 125 review,
+                          and a valid IRS Qualifying Event.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Enrollment Confirmation</td>
+                        <td>
+                          Confirmations are available for download via the
+                          <a
+                            href="https://nmpsiaonline.nmpsia.com"
+                            class="text-link bold"
+                            target="_blank"
+                            rel="noopener"
+                            >MyBenefits Portal</a
+                          >, mailed and emailed; review promptly and report
+                          errors to your employer's benefits office immediately.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>COBRA Continuation</td>
+                        <td>
+                          Continue NMPSIA medical, dental and vision insurance
+                          via COBRA if you have a reduction in hours worked per
+                          week, resign, retire, or terminate employment. Call
+                          <strong class="dep-type"
+                            >1-800-233-3164 for COBRA</strong
+                          >
+                          assistance; for retirement contact
+                          <strong class="dep-type"
+                            >NMRHCA at 1-800-233-2576</strong
+                          >
+                          for eligibility and enrollment information.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Life Insurance Continuation</td>
+                        <td>
+                          You may be eligible to continue life insurance under
+                          the following options: If disabled, apply for a waiver
+                          of premium or convert to a private policy. If
+                          employment ends or if you retire, apply to port, or
+                          convert to a private policy. If retiring, continue any
+                          ADL with NMPSIA until age 65. If eligible, apply for
+                          NMRHCA Life at 1-800-233-2576 and receive credit for
+                          any NMPSIA coverage lost when enrolling timely.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Employer Contacts</td>
+                        <td>
+                          Contact your employer for
+                          <strong class="dep-type"><u>ALL</u></strong> payroll
+                          questions and benefit changes.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <!-- /#enrollment-key-details -->
+
+              <!-- Be a Smart Consumer -->
+              <section
+                id="smart-consumer-section"
+                aria-labelledby="smart-consumer-heading"
+              >
+                <h2 id="smart-consumer-heading">
+                  Be a Smart Consumer: Cost-Effective Benefits and Access to
+                  Care
+                </h2>
+
+                <!-- Life Insurance -->
+                <div class="benefit-category">
+                  <h3 class="benefit-category-heading">
+                    <i
+                      class="fa-solid fa-shield-halved category-icon"
+                      aria-hidden="true"
+                    ></i>
+                    No-Cost Basic Life Insurance Coverage for the Employee with
+                    additional service features
+                  </h3>
+                </div>
+
+                <!-- Medical Plans -->
+                <div class="benefit-category">
+                  <h3 class="benefit-category-heading">
+                    <i
+                      class="fa-solid fa-stethoscope category-icon"
+                      aria-hidden="true"
+                    ></i>
+                    No-Cost Services Provided by all the Medical Plans
+                  </h3>
+                  <ul>
+                    <li>
+                      <strong>24/7 Nurseline:</strong> a toll-free number for
+                      covered members to access a registered nurse (RN)
+                      answering health questions or concerns to help you decide
+                      whether to make an appointment with a doctor, visit Urgent
+                      Care or Emergency Room.
+                    </li>
+                    <li>
+                      Email access to your providers by creating an online
+                      member account with your selected carrier to communicate
+                      with your care team, request medical advice, prescription
+                      renewals or schedule office or telephone visit.
+                    </li>
+                    <li>
+                      Telehealth video/online visits access is available on your
+                      health plan’s website via the national network of
+                      providers for non-emergency medical and behavioral health
+                      needs.
+                    </li>
+                    <li>
+                      In-Network Provider Care for High and Low Plan Options
+                      for:
+                      <ul>
+                        <li>
+                          Routine Adult Physicals and Gynecological Exams,
+                          Routine Tests (including Pap Tests, Cholesterol tests,
+                          Urinalysis, Human Papillomavirus (HPV) Screening),
+                          Family Planning (including insertion/removal of birth
+                          control devices, surgical sterilization in office,
+                          birth control, and therapeutic injections.), Health
+                          Education Counseling (including diabetic and smoking
+                          cessation counseling), Colonoscopies (one covered at
+                          100% annually regardless of diagnosis when
+                          in-network), Mammograms (no charge or service limit
+                          for breast imaging), Immunizations (including travel
+                          immunizations), Routine Well-Child Care, Routine
+                          vision or hearing screenings through age 19.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Prescription Drug Benefit -->
+                <div class="benefit-category">
+                  <h3 class="benefit-category-heading">
+                    <i
+                      class="fa-solid fa-pills category-icon"
+                      aria-hidden="true"
+                    ></i>
+                    No-Cost Services Provided by the Prescription Drug Benefit
+                  </h3>
+                  <ul>
+                    <li>
+                      Preventive Products under the Patient Protection &amp;
+                      Affordable Care Act
+                    </li>
+                    <li>
+                      Diabetic supplies, Generic &amp; preferred-brand insulin
+                      via retail or home delivery pharmacy
+                    </li>
+                    <li>Immunizations administered by certified pharmacists</li>
+                  </ul>
+                </div>
+
+                <!-- Dental Plans -->
+                <div class="benefit-category">
+                  <h3 class="benefit-category-heading">
+                    <i
+                      class="fa-solid fa-tooth category-icon"
+                      aria-hidden="true"
+                    ></i>
+                    No-Cost Services Provided by the Dental Plans
+                  </h3>
+                  <ul>
+                    <li>
+                      In-Network Provider Care for High and Low Plan Options
+                      for:
+                      <ul>
+                        <li>
+                          Routine/Preventive Services: Routine Oral Exams (twice
+                          every 12 months), Routine Cleanings (twice every 12
+                          months), Periodontal Cleanings with gum disease
+                          diagnosis (twice every 12 months), X-rays (complete
+                          mouth) once every 5 years, Bitewings (twice every 12
+                          months through age 13, once every 12 months
+                          thereafter), Sealants through age 15 (permanent first
+                          and second molars only), Emergency Treatment for
+                          Relief of Pain, Fluoride Treatment (twice every 12
+                          months through age 19)
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Vision Plan -->
+                <div class="benefit-category">
+                  <h3 class="benefit-category-heading">
+                    <i
+                      class="fa-solid fa-glasses category-icon"
+                      aria-hidden="true"
+                    ></i>
+                    Low-Cost Services Provided by the Vision Plan
+                  </h3>
+                  <ul>
+                    <li>
+                      In-Network Provider Care
+                      <ul>
+                        <li>
+                          Eye Examination every 12 months, covered in full after
+                          a $10 copayment, Spectacle Lense benefit renews every
+                          July 1<sup>st</sup> for standard single-vision, lined
+                          bifocal, or trifocal lenses after a $15 copayment,
+                          Frames every 12 months with $0 or low-cost options,
+                          Contact Lenses in lieu of eyeglasses with $0 or
+                          low-cost options.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Wellness Programs -->
+                <div class="benefit-category">
+                  <h3 class="benefit-category-heading">
+                    <i
+                      class="fa-solid fa-person-walking category-icon"
+                      aria-hidden="true"
+                    ></i>
+                    <span
+                      >No-Cost Services Offered by all the Benefit Plans found
+                      at
+                      <a
+                        href="./wellness.html"
+                        class="text-link"
+                        target="_blank"
+                        rel="noopener"
+                        >NMPSIA Wellness &amp; Well Being Programs</a
+                      ></span
+                    >
+                  </h3>
+                  <ul>
+                    <li>
+                      Behavioral Health and Mindfulness-Based Stress Reduction
+                      Programs
+                    </li>
+                    <li>
+                      Carrier Customized Web Portals for access to self-directed
+                      and self-help health, wellness tools and topics
+                    </li>
+                    <li>
+                      Chronic Condition Management for asthma, chronic
+                      obstructive pulmonary disease, congestive heart failure,
+                      coronary artery disease, depression, diabetes, low back
+                      pain
+                    </li>
+                    <li>
+                      Health Coaching and Consulting to create your own
+                      customized wellness plan
+                    </li>
+                    <li>Incentive and Reward Programs</li>
+                    <li>
+                      Lifestyle Management Programs for blood pressure, weight
+                      loss, diabetes, stress, asthma and more
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <!-- /#smart-consumer-section -->
+
+              <!-- component for mybenefits portal graphic -->
+              <section
+                class="section"
+                id="mybenefits-portal-section"
+                aria-labelledby="mybenefits-portal-heading"
+              >
+                <h2 id="mybenefits-portal-heading">MyBenefits Portal</h2>
+                <p>
+                  The MyBenefits Portal is a secure online portal that allows
+                  you to manage your benefits and enroll in new benefits.
+                </p>
+                <mybenefits-portal-howto></mybenefits-portal-howto>
+              </section>
+
+              <!-- Right Care, Right Time, Right Place -->
+              <section
+                id="right-care-section"
+                aria-labelledby="right-care-heading"
+              >
+                <div class="right-care-hero">
+                  <img
+                    src="images/nmpsia_logo_2024.png"
+                    alt="NMPSIA logo"
+                    class="right-care-hero__logo"
+                  />
+                  <h2 id="right-care-heading">
+                    Right Care, Right Time, Right Place
+                  </h2>
+                  <p class="right-care-hero__subtitle">
+                    Knowing where to go for care helps you receive the right
+                    treatment, avoid long wait times, and reduces out-of-pocket
+                    costs.
+                  </p>
+                </div>
+
+                <div class="care-where-banner" role="heading" aria-level="3">
+                  Where Should I Go When I Need Care?
+                </div>
+
+                <div class="care-options-grid">
+                  <div class="care-option">
+                    <h3 class="care-option__title">
+                      <i
+                        class="fa-solid fa-stethoscope care-option__icon"
+                        aria-hidden="true"
+                      ></i>
+                      <span>Primary Care Provider (PCP)</span>
+                    </h3>
+                    <p class="care-option__cost">$</p>
+                    <p>
+                      Go to your PCP for: Preventive care, annual exams,
+                      immunizations, routine screenings, medication management,
+                      and ongoing conditions such as asthma, diabetes, or high
+                      blood pressure.
+                    </p>
+                  </div>
+
+                  <div class="care-option">
+                    <h3 class="care-option__title">
+                      <i
+                        class="fa-solid fa-bandage care-option__icon"
+                        aria-hidden="true"
+                      ></i
+                      ><span>Urgent Care</span>
+                    </h3>
+                    <p class="care-option__cost">$$</p>
+                    <p>
+                      Use for non-life-threatening conditions when your PCP is
+                      unavailable, including minor illnesses, infections,
+                      sprains, minor burns, rashes, fever, nausea, or minor
+                      broken bones.
+                    </p>
+                  </div>
+
+                  <div class="care-option">
+                    <h3 class="care-option__title">
+                      <i
+                        class="fa-solid fa-truck-medical care-option__icon"
+                        aria-hidden="true"
+                      ></i>
+                      <span>Emergency Room (ER)</span>
+                    </h3>
+                    <p class="care-option__cost">$$$$</p>
+                    <p>
+                      Use the ER for serious or life threatening conditions such
+                      as chest pain, stroke symptoms, trouble breathing, severe
+                      bleeding, head injuries, major broken bones, or sudden
+                      confusion.
+                    </p>
+                  </div>
+                </div>
+
+                <p class="care-network-note">
+                  In <strong>NON-EMERGENT</strong> cases, be sure to verify
+                  provider network status before receiving care to avoid
+                  unexpected charges. See below to find In-Network Care:
+                </p>
+
+                <div class="table-responsive">
+                  <table class="table table-bordered network-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Presbyterian Health Plan</th>
+                        <th scope="col">Blue Cross Blue Shield</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <ul>
+                            <li>
+                              Visit
+                              <a
+                                href="https://www.phs.org"
+                                class="text-link"
+                                target="_blank"
+                                rel="noopener"
+                                >phs.org</a
+                              >
+                              and select Find a Doctor
+                            </li>
+                            <li>
+                              PresRN is a 24/7/365 Nurse Advice Line.
+                              Presbyterian members may call PresRN at no cost to
+                              speak with a registered nurse any time of day at
+                              <strong>1-866-221-9679</strong>
+                            </li>
+                            <li>
+                              Call Presbyterian Customer Service
+                              <strong>1-888-275-7737</strong>
+                            </li>
+                            <li>
+                              Virtual visits are available! Schedule on the
+                              myPRES app's national network.
+                            </li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>
+                              Visit
+                              <a
+                                href="https://www.bcbsnm.com"
+                                class="text-link"
+                                target="_blank"
+                                rel="noopener"
+                                >bcbsnm.com</a
+                              >
+                              and select Find a Doctor
+                            </li>
+                            <li>
+                              BCBS 24/7/365 Nurse Advice Line. BCBS members may
+                              call at no cost to speak with a registered nurse
+                              any time of day at
+                              <strong>1-800-892-2803</strong>
+                            </li>
+                            <li>
+                              Call BCBS Customer Service
+                              <strong>1-888-966-7742</strong>
+                            </li>
+                            <li>
+                              Virtual visits are available! Schedule via MDLIVE.
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <p class="care-emergency-note">
+                  If you need emergency care, call 911 immediately.
+                </p>
+              </section>
+              <!-- /#right-care-section -->
+
+              <!-- Medical Plan Exclusions & Limitations -->
+              <section
+                class="section"
+                id="medical-exclusions-section"
+                aria-labelledby="medical-exclusions-heading"
+              >
+                <h2 id="medical-exclusions-heading">
+                  Medical Plan Exclusions &amp; Limitations
+                </h2>
+
+                <h3 class="text-center">
+                  Medical Plan Exclusions and Limitations that are common to
+                  BlueCross BlueShield of New Mexico and Presbyterian Health
+                  Plans
+                </h3>
+
+                <p>
+                  The information below is only a high-level summary of general
+                  plan exclusions that are similar in the Medical Plans
+                  administered by BlueCross BlueShield of NM and Presbyterian
+                  Health Plan. Refer to the Plan documents located at
+                  <a
+                    href="https://nmpsia.com/"
+                    class="text-link"
+                    target="_blank"
+                    rel="noopener"
+                    >www.nmpsia.com</a
+                  >
+                  for a complete list and detailed information about covered and
+                  excluded benefits of the medical Plan.
+                </p>
+
+                <ul>
+                  <li>
+                    Portion of inpatient treatment provided before member's
+                    effective date
+                  </li>
+                  <li>Charges in excess of Plan limits</li>
+                  <li>
+                    Charges in Excess of Medicare Allowable Amounts from
+                    out-of-network providers
+                  </li>
+                  <li>Experimental or Investigational services/treatment</li>
+                  <li>Medically Unnecessary Services</li>
+                  <li>Work-related injuries or illnesses</li>
+                  <li>Cosmetic Surgery</li>
+                  <li>Complications related to non-covered benefits</li>
+                  <li>
+                    Contact lenses or eyeglasses, Radial Keratotomy, LASIK, and
+                    other eye refractive surgeries
+                  </li>
+                  <li>Non-medical Convalescent care, or Custodial care</li>
+                  <li>
+                    Dental Services, unless related to an Accidental Injury of
+                    the Teeth
+                  </li>
+                  <li>Duplicate Expenses</li>
+                  <li>
+                    Hair Loss Treatment including wigs and hair transplants
+                  </li>
+                  <li>
+                    Late Filed Claims; Claims with no Legal payment obligations
+                  </li>
+                  <li>Missed appointments</li>
+                  <li>
+                    Modifications to home, vehicle, or workplace to accommodate
+                    a condition
+                  </li>
+                  <li>Nutritional Supplements (unless required by law)</li>
+                  <li>
+                    Over the Counter (non-prescription) medications unless
+                    required by law
+                  </li>
+                  <li>Private-duty nursing</li>
+                  <li>
+                    Services/membership at a spa, health club or other similar
+                    facilities
+                  </li>
+                  <li>
+                    Thermography (a technique that photographically represents
+                    the surface temperature of the body)
+                  </li>
+                  <li>
+                    Travel and transportation expenses not covered under
+                    Ambulance Services or Transplant
+                  </li>
+                  <li>
+                    Veterans Administration facility services for
+                    service-related disability or while member is active
+                    military
+                  </li>
+                  <li>War-related injuries or illnesses</li>
+                </ul>
+              </section>
+              <!-- /#medical-exclusions-section -->
+            </div>
+            <!-- /.official-letter-doc -->
+          </div>
+          <!-- /.benefits-main -->
+        </div>
+        <!-- /.sidebar-layout.document -->
+      </div>
+    </main>
+
+    <footer-sitemap></footer-sitemap>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- IONICONS FOR NAVBAR -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/sidebar-navigation.js"></script>
+    <script>
+      new SidebarNavigation({
+        sidebarId: "benefitsSidebar",
+        sidebarToggleId: "sidebarToggle",
+        closeSidebarId: "closeSidebar",
+        overlayId: "sidebarOverlay",
+        sidebarLinksSelector: ".benefits-sidebar .nav-item",
+        hideMode: false,
+        scrollBehavior: "auto",
+      });
+    </script>
+  </body>
+</html>

@@ -744,6 +744,11 @@ body.modern-body::after {
 }
 
 /* ===== HERO SECTIONS ===== */
+
+.hero-section {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 .hero-section,
 .contacts-hero-section,
 .covid-hero-section,
@@ -1814,7 +1819,8 @@ body.modern-body::after {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   box-sizing: border-box;
 }
 
@@ -2504,6 +2510,7 @@ body.modern-body::after {
     width: min(300px, calc(100vw - 2rem));
     top: 0.5rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     box-sizing: border-box;
   }
 

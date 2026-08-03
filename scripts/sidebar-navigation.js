@@ -26,6 +26,7 @@ class SidebarNavigation {
       mobileBreakpoint: 1000,
       hideMode: false, // When true, shows/hides sections instead of scrolling
       defaultSection: null, // Default section to show in hide mode
+      scrollBehavior: "smooth", // "smooth" or "auto" (instant)
       ...options,
     };
 
@@ -300,18 +301,10 @@ class SidebarNavigation {
     if (targetSection) {
       const targetPosition = targetSection.offsetTop - this.config.scrollOffset;
 
-      // iOS Safari smooth scrolling fix
-      if (this.isIOS && this.isSafari) {
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "auto",
-        });
-      } else {
-        window.scrollTo({
-          top: targetPosition,
-          behavior: "smooth",
-        });
-      }
+      // iOS Safari does not support smooth scrolling; also respect config
+      const behavior =
+        this.isIOS && this.isSafari ? "auto" : this.config.scrollBehavior;
+      window.scrollTo({ top: targetPosition, behavior });
     }
   }
 

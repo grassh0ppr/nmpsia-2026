@@ -1,0 +1,671 @@
+.text-center {
+  text-align: center;
+}
+.text-note {
+  color: #4175a5;
+}
+.text-link {
+  color: #007bff;
+}
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+.section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.official-letter-doc .red {
+  color: #dc3545;
+}
+
+.official-letter-doc .green-text {
+  color: #008000;
+}
+
+.official-letter-doc p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.container.document {
+  max-width: 1400px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.sidebar-layout.document {
+  padding: 0;
+}
+
+.official-letter-doc {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #333;
+  max-width: 960px;
+  margin-top: 0.5rem;
+}
+
+/* Section headings: bold, navy, uppercase — matching the PDF style */
+.official-letter-doc h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #3f70c0;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  border-bottom: 2px solid #104aa7b1;
+  padding-bottom: 0.3rem;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+}
+
+.official-letter-doc h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #104aa7b1;
+  padding-bottom: 0.2rem;
+}
+
+.official-letter-doc h4 {
+  display: inline-block;
+  border-bottom: 1px solid #104aa7b1;
+  font-size: 1.025rem;
+}
+
+/* Bordered callout box — Medicare reminder, Important Notice, creditable
+     coverage box, etc. */
+.official-letter-doc .notice-box {
+  border: 2px solid #0f2d5c;
+  border-radius: 4px;
+  padding: 1.1rem 1.4rem;
+  margin: 1.25rem 0;
+}
+
+.official-letter-doc .notice-box.red {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.official-letter-doc .notice-box.blue {
+  border-color: #0d6efd;
+  background-color: #cfe2ff;
+}
+
+/* When a notice-box is at the very top of a section, tighten the gap */
+.official-letter-doc section > .notice-box:first-child {
+  margin-top: 0;
+}
+
+/* notice-box heading: no bottom border, centered */
+.official-letter-doc .notice-box > h2,
+.official-letter-doc .notice-box > h3 {
+  border-bottom: none;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Spanish-language notice — visually separated with horizontal rules */
+.official-letter-doc .lang-es-notice {
+  font-style: italic;
+  color: #555;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0.55rem 0;
+  margin: 1rem 0 1.75rem;
+}
+
+/* Blockquote used for the "snapshot" of the Marketplace notice */
+.official-letter-doc blockquote {
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0 0;
+  background: #f8f9fa;
+}
+
+.official-letter-doc blockquote h3 {
+  color: #0f2d5c;
+  font-size: 1.05rem;
+  margin-top: 0;
+}
+
+.official-letter-doc blockquote h4 {
+  color: #0f2d5c;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+/* Lists */
+.official-letter-doc ul,
+.official-letter-doc ol {
+  padding-left: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.official-letter-doc .small-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.official-letter-doc li {
+  margin-bottom: 0.35rem;
+}
+
+/* Intro paragraph */
+.compliance-intro {
+  font-style: italic;
+  color: #495057;
+}
+
+.official-letter-doc .states-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f8f9fa;
+}
+
+.official-letter-doc .state-card {
+  border: 1px solid #0f2d5c;
+  border-radius: 4px;
+  padding: 1.1rem 1.4rem;
+  margin: 1.25rem 0;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.official-letter-doc .state-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f2d5c;
+  margin-top: 0;
+}
+
+.official-letter-doc .state-card p {
+  line-height: 1.5;
+}
+
+.official-letter-doc .state-card a {
+  overflow-wrap: break-word;
+}
+
+.official-letter-doc .contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.official-letter-doc .contact-card {
+  border: 1px solid #0f2d5c;
+  border-radius: 4px;
+  padding: 1.1rem 1.4rem;
+  margin: 1.25rem 0;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.official-letter-doc .contact-card p {
+  line-height: 1.25;
+}
+
+.official-letter-doc .contact-card a {
+  overflow-wrap: break-word;
+}
+
+.official-letter-doc ul li.red {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.options-grid {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.options-grid .option-block {
+  flex: 1;
+  min-width: 0;
+}
+
+.medicare-notice-details address {
+  text-align: center;
+}
+
+/* ── Letter from NMPSIA styles ── */
+
+.letter-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #0f2d5c;
+  margin-bottom: 1.25rem;
+}
+
+.letter-header img {
+  width: 72px;
+  flex-shrink: 0;
+}
+
+.letter-header-text {
+  line-height: 1.3;
+}
+
+.letter-header-text .letter-org {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0f2d5c;
+  margin: 0;
+}
+
+.letter-header-text .letter-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3f70c0;
+  margin: 0;
+}
+
+/* ── Subsection ── */
+/* visually groups content that lives inside a larger section */
+
+.subsection {
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.subsection h4,
+.subsection h5 {
+  color: #0f2d5c;
+  margin-top: 0;
+}
+
+/* ── Two-column comparison table (e.g. Newborn vs. Adopted Children) ── */
+
+.comparison-table {
+  font-size: 0.975rem;
+  line-height: 1.55;
+  table-layout: fixed;
+  width: 100%;
+  background-color: #f0f6fb;
+}
+
+.comparison-table thead th {
+  background-color: #4a7fb5;
+  color: #fff;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-left: none;
+  border-right: none;
+  padding: 0.6rem 1rem;
+}
+
+.comparison-table tbody td {
+  vertical-align: top;
+  border-left: none;
+  border-right: none;
+  border-top: 1.5px solid #adb5bd;
+  border-bottom: none;
+  padding: 0.65rem 1rem;
+}
+
+.comparison-table tbody tr:first-child td {
+  border-top: none;
+}
+
+.comparison-table tbody tr.row-callout td {
+  color: #1a5fa8;
+  font-weight: 700;
+}
+
+/* ── Event pill grid (Special Enrollment examples) ── */
+
+.event-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0.85rem 0 0.25rem;
+}
+
+.event-pill {
+  flex: 1 1 calc(33.33% - 0.6rem);
+  min-width: 180px;
+  background-color: #1a6b7c;
+  color: #fff;
+  border: 2px solid #b35c1a;
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.35;
+}
+
+/* ── Late-reporting caution layout ── */
+
+.late-reporting-layout {
+  display: flex;
+  gap: 1.25rem;
+  align-items: stretch;
+  margin-top: 1rem;
+}
+
+.caution-box {
+  flex: 0 0 175px;
+  background-color: #fffbeb;
+  border: 3px solid #b91c1c;
+  border-radius: 12px;
+  padding: 1rem 0.85rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.caution-box .caution-title {
+  font-weight: 900;
+  font-size: 1.05rem;
+  color: #b91c1c;
+  margin: 0;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.caution-box .caution-body {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.caution-box .caution-icon {
+  font-size: 2.75rem;
+  color: #b91c1c;
+}
+
+.consequences-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.consequence-item {
+  border: 2px solid #d97706;
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #9b2335;
+  line-height: 1.35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .late-reporting-layout {
+    flex-direction: column;
+  }
+
+  .caution-box {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .consequences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Glossary / Key Details table ── */
+
+.glossary-table {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.glossary-table thead th {
+  background-color: #4a7fb5;
+  color: #fff;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  padding: 0.6rem 1rem;
+  border-left: none;
+  border-right: none;
+}
+
+.glossary-table thead th:first-child {
+  width: 28%;
+  text-align: center;
+}
+
+.glossary-table tbody td {
+  vertical-align: top;
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #dee2e6;
+  border-bottom: none;
+  padding: 0.65rem 1rem;
+}
+
+.glossary-table tbody td:first-child {
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.glossary-table tbody tr:first-child td {
+  border-top: none;
+}
+
+/* ── Be a Smart Consumer: benefit category subsections ── */
+
+.benefit-category {
+  margin-top: 1.5rem;
+}
+
+.benefit-category-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #1a6b7c;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-category-heading .category-icon {
+  font-size: 1.35rem;
+  color: #1a6b7c;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+/* ── Right Care, Right Time, Right Place ── */
+
+.right-care-hero {
+  background-color: #0f2d5c;
+  border-radius: 8px;
+  padding: 1.75rem 1.5rem 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+}
+
+.right-care-hero h2 {
+  color: #fff !important;
+  border-bottom: none !important;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.right-care-hero__logo {
+  width: 72px;
+}
+
+.right-care-hero__subtitle {
+  color: #f0f4f8;
+  margin: 0 auto;
+  max-width: 520px;
+  font-size: 0.975rem;
+  line-height: 1.55;
+}
+
+.care-where-banner {
+  background-color: #0f2d5c;
+  color: #fff;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.main-content.official-letter-doc .right-care-hero__subtitle {
+  color: #c2c2c2;
+}
+
+.care-options-grid {
+  padding: 1.5rem;
+  padding-top: 0;
+  background-color: #f0f4f8;
+}
+.care-option__title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  line-height: 1.05;
+}
+
+.care-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.care-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.care-option__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f2d5c;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0.15rem;
+}
+
+.care-option__cost {
+  font-weight: 700;
+  color: #1a6b7c;
+  margin: 0 0 0.5rem;
+}
+
+.care-option__icon {
+  display: block;
+  font-size: 2rem;
+  color: #4a7fb5;
+  margin-top: auto;
+  /* padding-top: 1rem; */
+}
+
+.care-network-note {
+  text-align: center;
+  font-size: 0.95rem;
+  margin: 1rem 0 1.25rem;
+}
+
+.network-table {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  width: 100%;
+}
+
+.network-table thead th {
+  background-color: #0f2d5c;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.65rem 1rem;
+}
+
+.network-table tbody td {
+  vertical-align: top;
+  padding: 0.85rem 1.1rem;
+  width: 50%;
+}
+
+.network-table ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.network-table li {
+  margin-bottom: 0.6rem;
+}
+
+.network-table li:last-child {
+  margin-bottom: 0;
+}
+
+.care-emergency-note {
+  text-align: center;
+  color: #1a6b7c;
+  font-weight: 600;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .care-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Media queries ── */
+@media (max-width: 700px) {
+  .options-grid {
+    flex-direction: column;
+  }
+}
+
+/* Override the overflow-x: hidden on .sidebar-layout from main.css —
+     that property breaks position: sticky on children in most browsers. */
+@media (min-width: 1001px) {
+  .sidebar-layout {
+    overflow: visible;
+  }
+}
