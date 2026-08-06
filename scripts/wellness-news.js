@@ -1,5 +1,87 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "August 2026": [
+    {
+      name: "Wellness Communications - August 2026",
+      url: "/wellness/august_2026/August 2026 Wellness Communication.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Calendar - August 2026",
+      url: "/wellness/august_2026/NMPSIA Wellness Calendar April 2026.pdf",
+    },
+    {
+      name: "August 11, 2026: BCBS Webinar - Living Financially Well",
+      url: "/wellness/august_2026/BCBS Webinar - Living Financially Well.pdf",
+    },
+    {
+      name: "August 18, 2026: BCBS Webinar - Food as Medicine",
+      url: "/wellness/august_2026/BCBS Webinar - Food as Medicine.pdf",
+    },
+    {
+      name: "August 19, 2026: TSG Webinar - Gut Instincts",
+      url: "/wellness/august_2026/TSG Webinar - Gut Instincts.pdf",
+    },
+    {
+      name: "August 24, 2026: BCBS Webinar - Setting the Table for Healthy Eating",
+      url: "/wellness/august_2026/BCBS Webinar - Setting the Table for Healthy Eating.pdf",
+    },
+    {
+      name: "August 26, 2026: BCBS Webinar - Trust Your Gut and Support a Healthy Microbiome",
+      url: "/wellness/august_2026/BCBS Webinar - Trust Your Gut and Support a Healthy Microbiome.pdf",
+    },
+    {
+      name: "August 27, 2026: August Cooking Show",
+      url: "/wellness/august_2026/08_August Cooking Show_2026.pdf",
+    },
+    {
+      name: "NMPSIA August 2026 Work and Well-Being Newsletter",
+      url: "/wellness/august_2026/NMPSIA August 2026 WWB Newsletter.pdf",
+    },
+    {
+      name: "Well-Balanced August 2026 Newsletter",
+      url: "/wellness/august_2026/wa2614488-well-balanced-august-26_fnl.pdf",
+    },
+    {
+      name: "Nations Nutrition August 2026 Article - Packing Snacks",
+      url: "/wellness/august_2026/NN August 2026  Article - Packing Snacks_NMPSIA.pdf",
+    },
+    {
+      name: "Feeling Stiff? Full Body Workplace Stretching 6-Week Program",
+      url: "/wellness/august_2026/Full Body Workplace Stretching Program.pdf",
+    },
+    {
+      name: "Life on Mindfulness Program Flyer",
+      url: "/wellness/august_2026/Life on Mindfulness - NMPSIA.pdf",
+    },
+    {
+      name: "NM Group Well onTarget BAM Login Member Flyer",
+      url: "/wellness/august_2026/NM Group Well onTarget BAM Login Member Flyer.pdf",
+    },
+    {
+      name: "Mindful Eating Program Flyer",
+      url: "/wellness/august_2026/NMPSIA - Mindful Eating Program.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Ambassador Flyer 2026-27",
+      url: "/wellness/august_2026/NMPSIA Wellness Ambassador Flyer 26-27.pdf",
+    },
+    {
+      name: "August 2026 Observance Poster (Español)",
+      url: "/wellness/august_2026/08_August Observance_2026 SP.pdf",
+    },
+    {
+      name: "August 2026 Observance Poster (English)",
+      url: "/wellness/august_2026/08_August Observance_2026.pdf",
+    },
+    {
+      name: "MyPRES Member Portal Flyer - Medicare and Commercial (Español)",
+      url: '/wellness/august_2026/2026 MYPRES Member Portal FLYER MEDICARE AND "COMMERCIAL_SPANISH.pdf',
+    },
+    {
+      name: "MyPRES Member Portal Flyer - Medicare and Commercial",
+      url: "/wellness/august_2026/2026 MYPRES Member Portal FLYER_MEDICARE AND COMMERCIAL.pdf",
+    },
+  ],
   "July 2026": [
     {
       name: "Wellness Communications - July 2026",
