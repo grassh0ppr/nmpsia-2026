@@ -7,7 +7,7 @@ const monthlyNewsKits = {
     },
     {
       name: "NMPSIA Wellness Calendar - August 2026",
-      url: "/wellness/august_2026/NMPSIA Wellness Calendar April 2026.pdf",
+      url: "/wellness/august_2026/NMPSIA Wellness Calendar August 2026.pdf",
     },
     {
       name: "August 11, 2026: BCBS Webinar - Living Financially Well",
