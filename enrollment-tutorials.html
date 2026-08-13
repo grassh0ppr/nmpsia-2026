@@ -95,7 +95,6 @@
       defer
     ></script>
     <script src="./scripts/components/enrollment-checklist-modal.js"></script>
-    <script src="./scripts/components/trainings/mybenefits-made-easier-session.js"></script>
 
     <style>
       .training-links-grid {
@@ -211,8 +210,8 @@
             <span>Overview</span>
           </a>
           <a href="#presentations" class="nav-item">
-            <i class="bx bx-slideshow"></i>
-            <span>Benefits/Wellness Presentations</span>
+            <i class="bx bx-devices"></i>
+            <span>MyBenefits Portal Resources</span>
           </a>
           <!-- <a href="#printable-tutorials" class="nav-item">
             <i class="bx bxs-file-pdf"></i>
@@ -226,11 +225,6 @@
           <a href="#new-hire-resources" class="nav-item">
             <i class="bx bx-user-plus"></i>
             <span>New Hire Resources</span>
-          </a>
-
-          <a href="#resources" class="nav-item">
-            <i class="bx bx-file"></i>
-            <span>Additional Resources</span>
           </a>
         </nav>
       </aside>
@@ -287,97 +281,83 @@
           </div> -->
         </section>
 
-        <!-- Benefits Presentations Section -->
+        <!-- MyBenefits Portal Section -->
         <section id="presentations" class="content-section">
-          <h3><i class="bx bx-slideshow me-2"></i>Benefits Presentations</h3>
+          <h3><i class="bx bx-devices me-2"></i>MyBenefits Portal Resources</h3>
+          <p>
+            Access your benefits enrollment system to make changes, view
+            coverage, and manage your account.
+          </p>
 
-          <mybenefits-made-easier-session></mybenefits-made-easier-session>
+          <div class="highlight-box">
+            <p>
+              Log into your personal benefits portal to view your current
+              coverage, make changes during open enrollment, update personal
+              information, and access important benefit documents. The system is
+              available 24/7 for your convenience.
+            </p>
+            <a
+              href="https://nmpsiaonline.nmpsia.com/"
+              class="btn btn-outline-light"
+              target="_blank"
+            >
+              <i class="bx bx-right-arrow-alt"></i>MyBenefits Poral Login
+            </a>
+          </div>
 
-          <!-- <div class="plans-grid">
-            <div class="plan-card">
-              <div class="plan-header">
-                <i
-                  class="bx bxs-file-pdf"
-                  style="font-size: 2rem; color: #667eea"
-                ></i>
-                <h4>2024 Benefits Orientation</h4>
-              </div>
-              <div class="plan-details">
-                <p>
-                  Complete overview of NMPSIA benefits for new employees and
-                  those needing a refresher.
-                </p>
-                <ul>
-                  <li>Printable PDF version available</li>
-                  <li>Video presentation included</li>
-                  <li>Comprehensive benefits overview</li>
-                </ul>
-                <div class="tutorial-links">
-                  <a
-                    href="/pdfs/2024_New_Hire_Deck_General_Presentation.pdf"
-                    class="btn btn-outline-primary btn-sm"
-                    target="_blank"
-                  >
-                    <i class="bx bxs-file-pdf"></i>PDF Version
-                  </a>
-                  <a
-                    href="/movies/2024_New_Hire_Deck_General_Presentation.mp4"
-                    class="btn btn-primary btn-sm"
-                    target="_blank"
-                  >
-                    <i class="bx bxs-movie-play"></i>Watch Video
-                  </a>
+          <h4
+            style="
+              color: #667eea;
+              font-size: 1.1rem;
+              font-weight: 600;
+              margin: 1.5rem 0 0 0;
+              padding-bottom: 0.5rem;
+              border-bottom: 1px solid #e9ecef;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+            "
+          >
+            <i class="bx bx-play-circle"></i>Tutorials
+          </h4>
+          <div class="training-links-grid">
+            <a
+              href="/trainings/2026/EMPLOYEE Login Process.pptx"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">Employee — Log In Process</div>
+                <div class="training-link-description">
+                  Step-by-step guide to logging into the MyBenefits portal
                 </div>
               </div>
-            </div>
-
-            <div class="plan-card">
-              <div class="plan-header">
-                <i
-                  class="bx bxs-file-pdf"
-                  style="font-size: 2rem; color: #667eea"
-                ></i>
-                <h4>2024 Open/Switch Enrollment</h4>
-              </div>
-              <div class="plan-details">
-                <p>
-                  Detailed guide for open enrollment and switching between
-                  benefit plans.
-                </p>
-                <ul>
-                  <li>Printable PDF version available</li>
-                  <li>Video presentation included</li>
-                  <li>Step-by-step enrollment process</li>
-                </ul>
-                <div class="tutorial-links">
-                  <a
-                    href="/pdfs/NMPSIA_py2025_OpenSwitch_Presentation.pdf"
-                    class="btn btn-outline-primary btn-sm"
-                    target="_blank"
-                  >
-                    <i class="bx bxs-file-pdf"></i>PDF Version
-                  </a>
-                  <a
-                    href="/movies/NMPSIA_OPEN_SWITCH_Enrollment_Recorded_Presentation_final.mp4"
-                    class="btn btn-primary btn-sm"
-                    target="_blank"
-                  >
-                    <i class="bx bxs-movie-play"></i>Watch Video
-                  </a>
+            </a>
+            <a
+              href="https://nmpsia.com/trainings/regional/2026/MyBenefits_Portal_FAQ_2026_v2.pdf"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">MyBenefits Portal FAQ</div>
+                <div class="training-link-description">
+                  Frequently asked questions about the MyBenefits portal
                 </div>
               </div>
-            </div>
-          </div> -->
+            </a>
+          </div>
         </section>
 
-        <!-- New Hire Resources Section -->
+        <!-- Employee Additional Resources Section -->
         <section id="new-hire-resources" class="content-section">
-          <h3><i class="bx bx-user-plus me-2"></i>New Hire Resources</h3>
+          <h3>
+            <i class="bx bx-user-plus me-2"></i>Employee Additional Resources
+          </h3>
           <p>
-            Essential documents and tools for employees enrolling in NMPSIA
-            benefits for the first time. Use the interactive checklist to guide
-            you through the enrollment process, then explore the supporting
-            materials below.
+            Additional documents and tools for employees managing their
+            benefits.
           </p>
 
           <div class="training-links-grid">
@@ -402,7 +382,9 @@
                   style="font-size: 1.5rem; color: #667eea; min-width: 1.5rem"
                 ></i>
                 <div class="training-link-content">
-                  <div class="training-link-title">Employee Guide to Enrollment</div>
+                  <div class="training-link-title">
+                    Employee Guide to Enrollment
+                  </div>
                   <div class="training-link-description">
                     Interactive enrollment checklist
                   </div>
@@ -447,38 +429,6 @@
               </div>
             </a>
 
-            <!-- Benefits Summary -->
-            <a
-              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/7_Benefits_Summary.docx"
-              target="_blank"
-              class="training-link"
-            >
-              <i class="bx bxs-file-doc"></i>
-              <div class="training-link-content">
-                <div class="training-link-title">Benefits Summary</div>
-                <div class="training-link-description">
-                  Summary of NMPSIA benefits
-                </div>
-              </div>
-            </a>
-
-            <!-- Acknowledgment Form -->
-            <a
-              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/8_Employer_Employee_Acknowledgment_Form.docx"
-              target="_blank"
-              class="training-link"
-            >
-              <i class="bx bxs-file-doc"></i>
-              <div class="training-link-content">
-                <div class="training-link-title">
-                  Employer/Employee Acknowledgment Form
-                </div>
-                <div class="training-link-description">
-                  Acknowledgment form for employers and employees
-                </div>
-              </div>
-            </a>
-
             <!-- Filing a Life Claim — Employee Use -->
             <a
               href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/9_Filing_a_Life_Claim_for_Districts_-_For_Employee_Use.pdf"
@@ -496,280 +446,71 @@
               </div>
             </a>
 
-            <!-- Employee Qualifying Events -->
+            <!-- 2026 Benefits Presentation -->
             <a
-              href="https://nmpsia.com/pdfs/Qualifying_Events_Presentation_Deck_2024_READER.pdf"
+              href="/trainings/2026/2026-Benefits-Presentation-NMPSIA.pdf"
               target="_blank"
               class="training-link"
             >
-              <i class="bx bx-calendar-event"></i>
+              <i class="bx bxs-file-pdf"></i>
               <div class="training-link-content">
-                <div class="training-link-title">Employee Qualifying Events</div>
+                <div class="training-link-title">
+                  2026 Benefits Presentation
+                </div>
                 <div class="training-link-description">
-                  Qualifying events presentation and resources
+                  NMPSIA benefits overview presentation
+                </div>
+              </div>
+            </a>
+
+            <!-- Qualifying Events Employee Deck -->
+            <a
+              href="/trainings/2026/NMPSIA-Qualifying-Events-(QE)-Employee-Deck.pptx"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Qualifying Events — Employee Deck
+                </div>
+                <div class="training-link-description">
+                  Guide to qualifying life events for employees
                 </div>
               </div>
             </a>
           </div>
-        </section>
 
-        <!-- Printable Tutorials Section -->
-        <!-- <section id="printable-tutorials" class="content-section">
-          <h3><i class="bx bxs-file-pdf me-2"></i>Printable Tutorials</h3>
-          <p>
-            Step-by-step PDF guides for common enrollment tasks and benefit
-            management.
-          </p>
-
-          <div class="tutorials-grid">
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-file-pdf"></i>
-              </div>
-              <h4>New Hire - Adding Coverage/Dependents</h4>
-              <p>
-                Complete guide for new employees enrolling in benefits and
-                adding family members.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/Employee_NEW_HIRE_ADD_COVERAGE_ADD_DEPENDENT_FINAL_091324.pdf"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-download"></i>Download Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-file-pdf"></i>
-              </div>
-              <h4>Add/Change Beneficiary</h4>
-              <p>
-                How to add or update beneficiary information for life insurance
-                and other benefits.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/Add_or_Change_Beneficiary.pdf"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-download"></i>Download Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-file-pdf"></i>
-              </div>
-              <h4>Change Basic Information</h4>
-              <p>
-                Guide for updating personal information such as address, phone
-                number, and email.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/Change_Basic_Information.pdf"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-download"></i>Download Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-file-pdf"></i>
-              </div>
-              <h4>Open Enrollment - Adding Coverage/Dependents</h4>
-              <p>
-                Step-by-step process for making changes during the annual open
-                enrollment period.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/2024_Open_Enrollment_Tutorial_FINAL_91324.pdf"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-download"></i>Download Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-file-pdf"></i>
-              </div>
-              <h4>Switch Enrollment</h4>
-              <p>How to switch between different benefit plans and carriers.</p>
-              <a
-                href="/pdfs/enrollmentTraining/2024_Switch_Enrollment_Tutorial_FINAL_91324.pdf"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-download"></i>Download Tutorial
-              </a>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- Video Tutorials Section -->
-        <!-- <section id="video-tutorials" class="content-section">
-          <h3><i class="bx bxs-movie-play me-2"></i>Video Tutorials</h3>
-          <p>
-            Voice-recorded video tutorials with step-by-step visual guidance for
-            enrollment tasks.
-          </p>
-
-          <div class="tutorials-grid">
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-movie-play"></i>
-              </div>
-              <h4>New Hire - Adding Coverage/Dependents</h4>
-              <p>
-                Video guide for new employees enrolling in benefits and adding
-                family members.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/Employee_NEW_HIRE_ADD_COVERAGE_and_ADD_DEPENDENT_FINAL.mp4"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-play"></i>Watch Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-movie-play"></i>
-              </div>
-              <h4>Add/Change Beneficiary</h4>
-              <p>
-                Video tutorial for adding or updating beneficiary information.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/Add_or_Change_Beneficiary_FINAL_Voice_recording.mp4"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-play"></i>Watch Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-movie-play"></i>
-              </div>
-              <h4>Change Basic Information</h4>
-              <p>
-                Video guide for updating personal information in the system.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/Change_Basic_Information_1012024_voice_recording.mp4"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-play"></i>Watch Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-movie-play"></i>
-              </div>
-              <h4>Open Enrollment - Adding Coverage/Dependents</h4>
-              <p>
-                Video tutorial for making changes during open enrollment period.
-              </p>
-              <a
-                href="/pdfs/enrollmentTraining/2024_Open_Enrollment_Recorded_Tutorial_Final.mp4"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-play"></i>Watch Tutorial
-              </a>
-            </div>
-
-            <div class="tutorial-card">
-              <div class="tutorial-icon">
-                <i class="bx bxs-movie-play"></i>
-              </div>
-              <h4>Switch Enrollment</h4>
-              <p>Video guide for switching between different benefit plans.</p>
-              <a
-                href="/pdfs/enrollmentTraining/2024_Switch_Enrollment_Final_Voice.mp4"
-                class="btn btn-primary"
-                target="_blank"
-              >
-                <i class="bx bxs-play"></i>Watch Tutorial
-              </a>
-            </div>
-          </div>
-        </section> -->
-
-        <!-- Online System Access Section -->
-        <section id="online-system" class="content-section">
-          <h3>
-            <i class="bx bx-log-in-circle me-2"></i>Online Benefits System
-          </h3>
-          <p>
-            Access your benefits enrollment system to make changes, view
-            coverage, and manage your account.
-          </p>
-
-          <div class="highlight-box">
-            <h4>
-              <i class="bx bx-link-external me-2"></i>NMPSIA Online Benefits
-              System
-            </h4>
-            <p>
-              Log into your personal benefits portal to view your current
-              coverage, make changes during open enrollment, update personal
-              information, and access important benefit documents. The system is
-              available 24/7 for your convenience.
-            </p>
-            <a
-              href="https://nmpsiaonline.nmpsia.com/"
-              class="btn btn-outline-light"
-              target="_blank"
-            >
-              <i class="bx bx-right-arrow-alt"></i>Access Online System
-            </a>
-          </div>
-        </section>
-
-        <!-- Additional Resources Section -->
-        <section id="resources" class="content-section">
-          <h3><i class="bx bx-file me-2"></i>Additional Resources</h3>
-          <p>
-            Helpful resources and contact information for enrollment support.
-          </p>
-
-          <div class="resources-grid">
-            <a href="./benefits.html" class="resource-card">
+          <div class="training-links-grid mt-4">
+            <a href="./benefits.html" class="training-link">
               <i class="bx bx-list-ul"></i>
-              <h4>Benefits Information</h4>
-              <p>
-                Comprehensive overview of all available benefits and coverage
-                options
-              </p>
+              <div class="training-link-content">
+                <div class="training-link-title">Benefits Information</div>
+                <div class="training-link-description">
+                  Comprehensive overview of all available benefits and coverage
+                  options
+                </div>
+              </div>
             </a>
 
-            <a href="./contact-us.html" class="resource-card">
+            <a href="./contact-us.html" class="training-link">
               <i class="bx bx-envelope"></i>
-              <h4>Contact Support</h4>
-              <p>Get help with enrollment questions and technical support</p>
+              <div class="training-link-content">
+                <div class="training-link-title">Contact Support</div>
+                <div class="training-link-description">
+                  Get help with enrollment questions and technical support
+                </div>
+              </div>
             </a>
 
-            <a href="./employer-enrollment.html" class="resource-card">
-              <i class="bx bx-building-house"></i>
-              <h4>Employer Enrollment</h4>
-              <p>Information for employers about the enrollment process</p>
-            </a>
-
-            <a href="./employee-enrollment.html" class="resource-card">
+            <a href="./employee-enrollment.html" class="training-link">
               <i class="bx bx-user-check"></i>
-              <h4>Employee Enrollment</h4>
-              <p>General enrollment information and requirements</p>
+              <div class="training-link-content">
+                <div class="training-link-title">Employee Enrollment</div>
+                <div class="training-link-description">
+                  General enrollment information and requirements
+                </div>
+              </div>
             </a>
           </div>
         </section>
