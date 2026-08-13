@@ -21,7 +21,11 @@
     <!-- Preconnect to CDN domains for faster resource loading -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://unpkg.com" />
-    <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://d3e54v103j8qbb.cloudfront.net"
+      crossorigin
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -57,7 +61,7 @@
       rel="stylesheet"
     />
 
-        <!-- Webflow navbar styles (load before main.css so main.css can override) -->
+    <!-- Webflow navbar styles (load before main.css so main.css can override) -->
     <link
       href="css/webflow_navbar/css/normalize.css"
       rel="stylesheet"
@@ -79,8 +83,14 @@
     <link rel="stylesheet" href="css/queries.css?v=1" />
 
     <!-- components -->
-    <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1" defer></script>
-    <script src="./scripts/components/footer/footer-sitemap.js?v=1.2" defer></script>
+    <script
+      src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"
+      defer
+    ></script>
+    <script
+      src="./scripts/components/footer/footer-sitemap.js?v=1.2"
+      defer
+    ></script>
     <script src="./scripts/components/enrollment-checklist-modal.js"></script>
     <script src="./scripts/components/trainings/mybenefits-made-easier-session.js"></script>
 
@@ -444,7 +454,8 @@
                 <div class="session-block">
                   <div class="session-title">
                     <i class="bx bx-package"></i>
-                    Organize, Inform, Empower: Building Your Annual Employee Packet
+                    Organize, Inform, Empower: Building Your Annual Employee
+                    Packet
                   </div>
 
                   <figure class="mb-3">
@@ -467,8 +478,15 @@
                       />
                       Your browser does not support the video element.
                     </video>
-                    <figcaption style="font-size: 0.82rem; color: #6c757d; margin-top: 0.5rem;">
-                      <i class="bx bx-video me-1"></i>Session recording with English captions
+                    <figcaption
+                      style="
+                        font-size: 0.82rem;
+                        color: #6c757d;
+                        margin-top: 0.5rem;
+                      "
+                    >
+                      <i class="bx bx-video me-1"></i>Session recording with
+                      English captions
                     </figcaption>
                   </figure>
                   <script>
@@ -482,7 +500,10 @@
                       if (video.readyState >= 1) {
                         enableCaptions();
                       } else {
-                        video.addEventListener("loadedmetadata", enableCaptions);
+                        video.addEventListener(
+                          "loadedmetadata",
+                          enableCaptions,
+                        );
                       }
                     })();
                   </script>
@@ -495,7 +516,9 @@
                     >
                       <i class="bx bxs-file-pdf"></i>
                       <div class="training-link-content">
-                        <div class="training-link-title">Session Slide Deck</div>
+                        <div class="training-link-title">
+                          Session Slide Deck
+                        </div>
                         <div class="training-link-description">
                           Presentation slides — Organize, Inform, Empower
                         </div>
@@ -504,8 +527,12 @@
                     </a>
                   </div>
 
-                  <p class="mt-3 mb-2" style="font-size: 0.85rem; font-weight: 600; color: #495057;">
-                    <i class="bx bx-folder-open me-1" style="color: #667eea;"></i>Toolkit Materials
+                  <p
+                    class="mt-3 mb-2"
+                    style="font-size: 0.85rem; font-weight: 600; color: #495057"
+                  >
+                    <i class="bx bx-folder-open me-1" style="color: #667eea"></i
+                    >Toolkit Materials
                   </p>
                   <div class="training-links-grid">
                     <a
@@ -587,7 +614,9 @@
                     >
                       <i class="bx bxs-file-pdf"></i>
                       <div class="training-link-content">
-                        <div class="training-link-title">Wellness Ambassador</div>
+                        <div class="training-link-title">
+                          Wellness Ambassador
+                        </div>
                         <div class="training-link-description">
                           Wellness ambassador resources
                         </div>
@@ -621,7 +650,7 @@
                           Program Guide Access
                         </div>
                         <div class="training-link-description">
-                          How to access program guides
+                          Get the PDF benefits program guide
                         </div>
                       </div>
                       <span class="year-badge">2026</span>
@@ -634,10 +663,10 @@
                       <i class="bx bxs-file-pdf"></i>
                       <div class="training-link-content">
                         <div class="training-link-title">
-                          Welcome to the MyBenefits Portal
+                          MyBenefits Portal Introduction
                         </div>
                         <div class="training-link-description">
-                          MyBenefits Portal introduction
+                          Formerly known as the "Online System"
                         </div>
                       </div>
                       <span class="year-badge">2026</span>
@@ -734,13 +763,22 @@
                       />
                       Your browser does not support the video element.
                     </video>
-                    <figcaption style="font-size: 0.82rem; color: #6c757d; margin-top: 0.5rem;">
-                      <i class="bx bx-video me-1"></i>Session recording with English captions
+                    <figcaption
+                      style="
+                        font-size: 0.82rem;
+                        color: #6c757d;
+                        margin-top: 0.5rem;
+                      "
+                    >
+                      <i class="bx bx-video me-1"></i>Session recording with
+                      English captions
                     </figcaption>
                   </figure>
                   <script>
                     (function () {
-                      var video = document.getElementById("billing-accuracy-video");
+                      var video = document.getElementById(
+                        "billing-accuracy-video",
+                      );
                       function enableCaptions() {
                         if (video.textTracks && video.textTracks.length > 0) {
                           video.textTracks[0].mode = "showing";
@@ -749,7 +787,10 @@
                       if (video.readyState >= 1) {
                         enableCaptions();
                       } else {
-                        video.addEventListener("loadedmetadata", enableCaptions);
+                        video.addEventListener(
+                          "loadedmetadata",
+                          enableCaptions,
+                        );
                       }
                     })();
                   </script>
@@ -762,7 +803,9 @@
                     >
                       <i class="bx bxs-file-pdf"></i>
                       <div class="training-link-content">
-                        <div class="training-link-title">Session Slide Deck</div>
+                        <div class="training-link-title">
+                          Session Slide Deck
+                        </div>
                         <div class="training-link-description">
                           Presentation slides — Building Billing Accuracy
                         </div>
@@ -774,7 +817,6 @@
 
                 <!-- Session 3: MyBenefits Made Easier -->
                 <mybenefits-made-easier-session></mybenefits-made-easier-session>
-
               </div>
             </section>
 
@@ -892,14 +934,14 @@
                       </div>
                     </a>
                     <a
-                      href="https://nmpsia.com/pdfs/Leave_Of_Absence_Presentation_2024_READER.pdf"
+                      href="/trainings/2026/EMPLOYER - LOA Reporting.pptx"
                       target="_blank"
                       class="training-link"
                     >
-                      <i class="bx bx-calendar-minus"></i>
+                      <i class="fa-solid fa-file-powerpoint"></i>
                       <div class="training-link-content">
                         <div class="training-link-title">
-                          Leave of Absence (LOA)
+                          Leave of Absence (LOA) Reporting
                         </div>
                         <div class="training-link-description">
                           LOA reporting training
@@ -933,30 +975,30 @@
                 </h4>
 
                 <div class="training-links-grid">
-                  <a
-                    href="https://nmpsia.com/pdfs/Online Benefit System Introductory Guide.pdf"
+                  <!-- <a
+                    href="/trainings/2026/Employer - Log In Process.pptx"
                     target="_blank"
                     class="training-link"
                   >
-                    <i class="bx bxs-file-pdf"></i>
+                    <i class="fa-solid fa-file-powerpoint"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        Online Benefits System Guide
+                        Employer — Log In Process
                       </div>
                       <div class="training-link-description">
-                        Introductory guide to the system
+                        Employer portal login walkthrough
                       </div>
                     </div>
-                  </a>
+                  </a> -->
                   <a
-                    href="https://nmpsia.com/PDFs/enrollmentTraining/Employer_NEW_HIRE_BASIC_LIFE_(single)_FINAL.pdf"
+                    href="/trainings/2026/Employer - New Hire Single Entry.pptx"
                     target="_blank"
                     class="training-link"
                   >
-                    <i class="bx bxs-file-pdf"></i>
+                    <i class="fa-solid fa-file-powerpoint"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        New Hire Basic Life - Single Entry
+                        New Hire — Single Entry
                       </div>
                       <div class="training-link-description">
                         Single employee enrollment
@@ -964,14 +1006,14 @@
                     </div>
                   </a>
                   <a
-                    href="https://nmpsia.com/PDFs/enrollmentTraining/Employer_NEW_HIRE_Basic_Life_Only_(batch)_FINAL.pdf"
+                    href="/trainings/2026/Employer - New Hire Batch Multiple Entries.pptx"
                     target="_blank"
                     class="training-link"
                   >
-                    <i class="bx bxs-file-pdf"></i>
+                    <i class="fa-solid fa-file-powerpoint"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
-                        New Hire Basic Life - Batch Entry
+                        New Hire — Batch Multiple Entries
                       </div>
                       <div class="training-link-description">
                         Multiple employee enrollment
@@ -979,17 +1021,30 @@
                     </div>
                   </a>
                   <a
-                    href="https://nmpsia.com/PDFs/enrollmentTraining/Employer_Send_Feedback_FINAL.pdf"
+                    href="/trainings/2026/EMPLOYER - Send Feedback.pptx"
                     target="_blank"
                     class="training-link"
                   >
-                    <i class="bx bxs-file-pdf"></i>
+                    <i class="fa-solid fa-file-powerpoint"></i>
                     <div class="training-link-content">
                       <div class="training-link-title">
                         Send Feedback on Employee
                       </div>
                       <div class="training-link-description">
                         Employee feedback process
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="/trainings/2026/EMPLOYER - Cancel Employee.pptx"
+                    target="_blank"
+                    class="training-link"
+                  >
+                    <i class="fa-solid fa-file-powerpoint"></i>
+                    <div class="training-link-content">
+                      <div class="training-link-title">Cancel Employee</div>
+                      <div class="training-link-description">
+                        How to cancel an employee in the system
                       </div>
                     </div>
                   </a>
@@ -1027,7 +1082,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
 
     <script src="./scripts/main.js"></script>
 

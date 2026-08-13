@@ -167,9 +167,6 @@ class MyBenefitsMadeEasierSession extends HTMLElement {
           <span>Slide deck not available — this session was conducted as a live portal demo.</span>
         </div>
 
-        <p class="mt-3 mb-2" style="font-size: 0.85rem; font-weight: 600; color: #495057;">
-          <i class="bx bx-lock-alt me-1" style="color: #667eea;"></i>MFA Secured Login Resources
-        </p>
         <div class="training-links-grid">
           <a
             href="https://nmpsia.com/trainings/regional/2026/MyBenefits_Portal_FAQ_2026_v2.pdf"
@@ -185,16 +182,36 @@ class MyBenefitsMadeEasierSession extends HTMLElement {
             </div>
             <span class="year-badge">2026</span>
           </a>
+        </div>
+
+        <p class="mt-3 mb-2" style="font-size: 0.85rem; font-weight: 600; color: #495057;">
+          <i class="bx bx-lock-alt me-1" style="color: #667eea;"></i>MFA Secured Login Resources
+        </p>
+        <div class="training-links-grid">
           <a
-            href="https://nmpsia.com/trainings/regional/2026/MFA_PORTAL_LOGIN_TUTORIAL_KJ.pptx"
+            href="/trainings/2026/Employer - Log In Process.pptx"
             target="_blank"
             class="training-link"
           >
             <i class="fa-solid fa-file-powerpoint"></i>
             <div class="training-link-content">
-              <div class="training-link-title">MFA Portal Login Tutorial</div>
+              <div class="training-link-title">Employer — Log In Process</div>
               <div class="training-link-description">
-                PowerPoint presentation — walkthrough of the new MFA login process
+                Employer portal login walkthrough
+              </div>
+            </div>
+            <span class="year-badge">2026</span>
+          </a>
+          <a
+            href="/trainings/2026/EMPLOYEE Login Process.pptx"
+            target="_blank"
+            class="training-link"
+          >
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <div class="training-link-content">
+              <div class="training-link-title">Employee — Log In Process</div>
+              <div class="training-link-description">
+                Employee portal login walkthrough
               </div>
             </div>
             <span class="year-badge">2026</span>
