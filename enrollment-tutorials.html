@@ -51,8 +51,7 @@
       crossorigin="anonymous"
     />
     <title>
-      Employee Enrollment Tutorials | New Mexico Public Schools Insurance
-      Authority
+      Enrollment Tutorials | New Mexico Public Schools Insurance Authority
     </title>
     <!-- font awesome -->
     <script
@@ -95,6 +94,77 @@
       src="./scripts/components/footer/footer-sitemap.js?v=1.2"
       defer
     ></script>
+    <script src="./scripts/components/enrollment-checklist-modal.js"></script>
+
+    <style>
+      .training-links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+        gap: 1.25rem;
+        align-items: stretch;
+        grid-auto-rows: 1fr;
+        margin-top: 1rem;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+
+      .training-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #495057;
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef;
+        height: 100%;
+        min-height: 110px;
+        min-width: 0;
+        overflow-wrap: break-word;
+      }
+
+      .training-link:hover {
+        background: #e9ecef;
+        color: #667eea;
+        text-decoration: none;
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .training-link i {
+        font-size: 1.5rem;
+        color: #667eea;
+        min-width: 1.5rem;
+      }
+
+      .training-link-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .training-link-title {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+      }
+
+      .training-link-description {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .training-links-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
 
   <body class="modern-body enrollment-modern">
@@ -151,6 +221,11 @@
             <i class="bx bxs-movie-play"></i>
             <span>Video Tutorials</span>
           </a> -->
+
+          <a href="#new-hire-resources" class="nav-item">
+            <i class="bx bx-user-plus"></i>
+            <span>New Hire Resources</span>
+          </a>
 
           <a href="#resources" class="nav-item">
             <i class="bx bx-file"></i>
@@ -294,6 +369,134 @@
               </div>
             </div>
           </div> -->
+        </section>
+
+        <!-- New Hire Resources Section -->
+        <section id="new-hire-resources" class="content-section">
+          <h3><i class="bx bx-user-plus me-2"></i>New Hire Resources</h3>
+          <p>
+            Essential documents and tools for employees enrolling in NMPSIA
+            benefits for the first time. Use the interactive checklist to guide
+            you through the enrollment process, then explore the supporting
+            materials below.
+          </p>
+
+          <div class="training-links-grid">
+            <!-- Enrollment Checklist (interactive modal) -->
+            <div style="display: flex; flex-direction: column; gap: 0.4rem">
+              <button
+                type="button"
+                class="training-link"
+                data-bs-toggle="modal"
+                data-bs-target="#enrollmentChecklistModal"
+                style="
+                  background: none;
+                  border: 1px solid #e9ecef;
+                  text-align: left;
+                  width: 100%;
+                  cursor: pointer;
+                  min-height: 110px;
+                "
+              >
+                <i
+                  class="bx bx-list-check"
+                  style="font-size: 1.5rem; color: #667eea; min-width: 1.5rem"
+                ></i>
+                <div class="training-link-content">
+                  <div class="training-link-title">Employee Guide to Enrollment</div>
+                  <div class="training-link-description">
+                    Interactive enrollment checklist
+                  </div>
+                </div>
+              </button>
+              <a
+                href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/3_Employee_Guide_to_Enrollment.pdf"
+                target="_blank"
+                style="
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 0.4rem;
+                  font-size: 0.8rem;
+                  color: #6c757d;
+                  text-decoration: none;
+                  padding: 0.25rem 0.5rem;
+                  border-radius: 6px;
+                  transition: color 0.2s ease;
+                "
+                onmouseover="this.style.color = '#667eea'"
+                onmouseout="this.style.color = '#6c757d'"
+              >
+                <i class="bx bxs-file-pdf" style="font-size: 1rem"></i>
+                Download PDF to print
+              </a>
+            </div>
+
+            <!-- Welcome to the MyBenefits Portal -->
+            <a
+              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/6_Welcome_to_the_MyBenefits_Portal.pdf"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Welcome to the MyBenefits Portal
+                </div>
+                <div class="training-link-description">
+                  MyBenefits Portal introduction
+                </div>
+              </div>
+            </a>
+
+            <!-- Benefits Summary -->
+            <a
+              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/7_Benefits_Summary.docx"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-doc"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">Benefits Summary</div>
+                <div class="training-link-description">
+                  Summary of NMPSIA benefits
+                </div>
+              </div>
+            </a>
+
+            <!-- Acknowledgment Form -->
+            <a
+              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/8_Employer_Employee_Acknowledgment_Form.docx"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-doc"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Employer/Employee Acknowledgment Form
+                </div>
+                <div class="training-link-description">
+                  Acknowledgment form for employers and employees
+                </div>
+              </div>
+            </a>
+
+            <!-- Filing a Life Claim — Employee Use -->
+            <a
+              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/9_Filing_a_Life_Claim_for_Districts_-_For_Employee_Use.pdf"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Filing a Life Claim for Districts — For Employee Use
+                </div>
+                <div class="training-link-description">
+                  Life claim filing guide for employees
+                </div>
+              </div>
+            </a>
+          </div>
         </section>
 
         <!-- Printable Tutorials Section -->
@@ -558,6 +761,8 @@
         </section>
       </main>
     </div>
+
+    <enrollment-checklist-modal></enrollment-checklist-modal>
 
     <footer-sitemap></footer-sitemap>
 
