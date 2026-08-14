@@ -213,18 +213,15 @@
             <i class="bx bx-devices"></i>
             <span>MyBenefits Portal Resources</span>
           </a>
-          <!-- <a href="#printable-tutorials" class="nav-item">
-            <i class="bx bxs-file-pdf"></i>
-            <span>Printable Tutorials</span>
-          </a>
-          <a href="#video-tutorials" class="nav-item">
-            <i class="bx bxs-movie-play"></i>
-            <span>Video Tutorials</span>
-          </a> -->
 
           <a href="#new-hire-resources" class="nav-item">
             <i class="bx bx-user-plus"></i>
-            <span>Employee Additional Resources</span>
+            <span>Employee Enrollment Resources</span>
+          </a>
+
+          <a href="#docsForms" class="nav-item">
+            <i class="bx bx-folder"></i>
+            <span>Important Documents &amp; Forms</span>
           </a>
         </nav>
       </aside>
@@ -234,10 +231,9 @@
         <!-- Hero Section -->
         <section class="benefits-hero-section">
           <div class="benefits-hero-content">
-            <h1 class="benefits-hero-title">Employee Enrollment Tutorials</h1>
+            <h1 class="benefits-hero-title">Employee Enrollment Resources</h1>
             <p class="benefits-hero-subtitle">
-              Comprehensive training materials and guides for navigating your
-              benefits enrollment
+              Comprehensive resources for navigating your benefits enrollment
             </p>
           </div>
           <div class="benefits-hero-logo">
@@ -350,64 +346,45 @@
           </div>
         </section>
 
-        <!-- Employee Additional Resources Section -->
+        <!-- Employee Enrollment Resources Section -->
         <section id="new-hire-resources" class="content-section">
           <h3>
             <i class="bx bx-user-plus me-2"></i>Employee Enrollment Resources
           </h3>
-          <p>Documents and tools for employees managing their benefits.</p>
+          <p>
+            Instructions, tools, and resources for employees managing their
+            benefits.
+          </p>
 
           <div class="training-links-grid">
             <!-- Enrollment Checklist (interactive modal) -->
-            <div style="display: flex; flex-direction: column; gap: 0.4rem">
-              <button
-                type="button"
-                class="training-link"
-                data-bs-toggle="modal"
-                data-bs-target="#enrollmentChecklistModal"
-                style="
-                  background: none;
-                  border: 1px solid #e9ecef;
-                  text-align: left;
-                  width: 100%;
-                  cursor: pointer;
-                  min-height: 110px;
-                "
-              >
-                <i
-                  class="bx bx-list-check"
-                  style="font-size: 1.5rem; color: #667eea; min-width: 1.5rem"
-                ></i>
-                <div class="training-link-content">
-                  <div class="training-link-title">
-                    Employee Guide to Enrollment
-                  </div>
-                  <div class="training-link-description">
-                    Interactive enrollment checklist
-                  </div>
+            <button
+              type="button"
+              class="training-link"
+              data-bs-toggle="modal"
+              data-bs-target="#enrollmentChecklistModal"
+              style="
+                background: none;
+                border: 1px solid #e9ecef;
+                text-align: left;
+                width: 100%;
+                cursor: pointer;
+                min-height: 110px;
+              "
+            >
+              <i
+                class="bx bx-list-check"
+                style="font-size: 1.5rem; color: #667eea; min-width: 1.5rem"
+              ></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Employee Guide to Enrollment
                 </div>
-              </button>
-              <a
-                href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/3_Employee_Guide_to_Enrollment.pdf"
-                target="_blank"
-                style="
-                  display: inline-flex;
-                  align-items: center;
-                  gap: 0.4rem;
-                  font-size: 0.8rem;
-                  color: #6c757d;
-                  text-decoration: none;
-                  padding: 0.25rem 0.5rem;
-                  border-radius: 6px;
-                  transition: color 0.2s ease;
-                "
-                onmouseover="this.style.color = '#667eea'"
-                onmouseout="this.style.color = '#6c757d'"
-              >
-                <i class="bx bxs-file-pdf" style="font-size: 1rem"></i>
-                Download PDF to print
-              </a>
-            </div>
+                <div class="training-link-description">
+                  Interactive enrollment checklist
+                </div>
+              </div>
+            </button>
 
             <!-- Welcome to the MyBenefits Portal -->
             <a
@@ -435,7 +412,7 @@
               <i class="bx bxs-file-pdf"></i>
               <div class="training-link-content">
                 <div class="training-link-title">
-                  Filing a Life Claim for Districts
+                  Filing a Life Insurance Claim
                 </div>
                 <div class="training-link-description">
                   Life claim filing guide for employees
@@ -513,18 +490,129 @@
               </div>
             </a>
 
-            <a href="./employee-enrollment.html" class="training-link">
+            <a href="#docsForms" class="training-link">
               <i class="bx bx-user-check"></i>
               <div class="training-link-content">
                 <div class="training-link-title">
-                  Employee Forms and Resources
+                  Important Documents &amp; Forms
                 </div>
                 <div class="training-link-description">
-                  General enrollment information and requirements
+                  Important documents and forms for employee enrollment
                 </div>
               </div>
             </a>
           </div>
+        </section>
+
+        <!-- IMPORTANT DOCUMENTS AND FORMS -->
+        <section id="docsForms" class="content-section">
+          <h3>Important Documents and Forms</h3>
+          <ul class="list-unstyled">
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Enrollment_Change_Form_01012026.pdf"
+                target="_blank"
+                class="sidenav-link"
+                >1-1-2026 Enrollment Change Form</a
+              >
+            </li>
+
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Sample_Loss_of_Coverage_Notice_Form.pdf"
+                target="_blank"
+                class="sidenav-link"
+              >
+                Sample Loss of Coverage Form
+              </a>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="./auth-release-health-info.html"
+                target="_blank"
+                class="sidenav-link"
+              >
+                Release of Health Information
+              </a>
+            </li>
+
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Updated_Fillable_Affidavit_for_Domestic_Partnership_4.9.19.pdf"
+                target="_blank"
+                class="sidenav-link"
+              >
+                Affidavit for Domestic Partner
+              </a>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Updated_Fillable_Termination_of_Domestic_Partnership_4.9.19.pdf"
+                target="_blank"
+                class="sidenav-link"
+              >
+                Termination of Domestic Partner
+              </a>
+            </li>
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/LTD-Claim-Packet-2023.pdf"
+                target="_blank"
+                class="sidenav-link"
+              >
+                LTD Claim Packet
+              </a>
+            </li>
+
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Retiree_Application_2024_01.pdf"
+                target="_blank"
+                class="sidenav-link"
+              >
+                Retiree Life Insurance Application (under age 65)
+              </a>
+            </li>
+
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/Options_for_Continuing_Life_Insurance_Due_to_Retirement_8.2020-1.pdf"
+                target="_blank"
+                class="sidenav-link"
+              >
+                Options for Continuing Life Insurance Due to Retirement
+              </a>
+            </li>
+
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="/pdfs/LIFE-CLAIM-PACKET-2023.pdf"
+                target="_blank"
+                class="sidenav-link"
+              >
+                Life Claim Packet
+              </a>
+            </li>
+
+            <li>
+              <i class="bx bxs-file-pdf"></i>
+              <a
+                href="pdfs/Board_Member_Enrollment_Application_2024_07.pdf"
+                target="_blank"
+                class="sidenav-link"
+                >Board Member Enrollment Application</a
+              >
+            </li>
+          </ul>
         </section>
       </main>
     </div>

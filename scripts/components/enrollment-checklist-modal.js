@@ -263,6 +263,14 @@ class EnrollmentChecklistModal extends HTMLElement {
                 automatically in your browser.
               </p>
 
+              <a
+                href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/3_Employee_Guide_to_Enrollment.pdf"
+                target="_blank"
+                style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.85rem; color: #667eea; text-decoration: none; margin-bottom: 1.25rem;"
+              >
+                <i class="bx bxs-file-pdf"></i>Download PDF to print
+              </a>
+
               <div class="progress-bar-wrapper" aria-live="polite">
                 <div class="progress-label">
                   <span id="ecl-progress-text">0 of ${totalItems} tasks completed</span>
