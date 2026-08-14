@@ -21,7 +21,11 @@
     <!-- Preconnect to CDN domains for faster resource loading -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://unpkg.com" />
-    <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://d3e54v103j8qbb.cloudfront.net"
+      crossorigin
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -57,7 +61,7 @@
       rel="stylesheet"
     />
 
-        <!-- Webflow navbar styles (load before main.css so main.css can override) -->
+    <!-- Webflow navbar styles (load before main.css so main.css can override) -->
     <link
       href="css/webflow_navbar/css/normalize.css"
       rel="stylesheet"
@@ -81,8 +85,14 @@
 
     <!-- components -->
     <script src="./scripts/components/dom-partner-imputed-income.js?v=1.2"></script>
-    <script src="./scripts/components/footer/footer-sitemap.js?v=1.2" defer></script>
-    <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1" defer></script>
+    <script
+      src="./scripts/components/footer/footer-sitemap.js?v=1.2"
+      defer
+    ></script>
+    <script
+      src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"
+      defer
+    ></script>
 
     <style>
       /* Premiums-specific styles */
@@ -161,7 +171,7 @@
       }
 
       /* Tools Grid */
-      .tools-grid {
+      .resources-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1.5rem;
@@ -212,7 +222,7 @@
       /* Responsive adjustments */
       @media (max-width: 768px) {
         .premium-rates-grid,
-        .tools-grid {
+        .resources-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -261,9 +271,9 @@
             <i class="bx bxs-file-pdf"></i>
             <span>Premium Rates</span>
           </a>
-          <a href="#tools" class="nav-item">
+          <a href="#resources" class="nav-item">
             <i class="bx bxs-calculator"></i>
-            <span>Tools & Calculators</span>
+            <span>Calculators & Resources</span>
           </a>
           <a href="#domestic-partner" class="nav-item">
             <i class="bx bxs-user-detail"></i>
@@ -295,14 +305,33 @@
         <!-- Premium Rates Section -->
         <section id="premium-rates" class="content-section">
           <h3><i class="bx bxs-file-pdf me-2"></i>Premium Rates</h3>
-          <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem">
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 1rem;
+            "
+          >
             <p style="margin-bottom: 0; flex: 1">
               Access current premium rates for all benefit plans. Rates are
               updated periodically and effective from the specified dates.
             </p>
-            <p style="margin-bottom: 0; flex-shrink: 0; font-size: 0.9rem; color: #6c757d; max-width: 300px; text-align: right">
+            <p
+              style="
+                margin-bottom: 0;
+                flex-shrink: 0;
+                font-size: 0.9rem;
+                color: #6c757d;
+                max-width: 300px;
+                text-align: right;
+              "
+            >
               Need older premium documents? Submit an
-              <a href="https://nmpsia.com/plan.html#IPRArequest">IPRA request</a>.
+              <a href="https://nmpsia.com/plan.html#IPRArequest">IPRA request</a
+              >.
             </p>
           </div>
 
@@ -496,15 +525,15 @@
           </div>
         </section>
 
-        <!-- Tools Section -->
-        <section id="tools" class="content-section">
-          <h3><i class="bx bxs-calculator me-2"></i>Tools & Calculators</h3>
+        <!-- Resources Section -->
+        <section id="resources" class="content-section">
+          <h3><i class="bx bxs-calculator me-2"></i>Calculators & Resources</h3>
           <p>
             Use these tools to calculate premiums and access additional
             resources.
           </p>
 
-          <div class="tools-grid">
+          <div class="resources-grid">
             <a
               href="https://nmpsiaonline.nmpsia.com/EROnline/PremiumCal/ViewPremiumCal"
               target="_blank"
@@ -523,6 +552,25 @@
               <i class="bx bxs-file-doc"></i>
               <h4>HB533 Employer Contributions</h4>
               <p>View employer contribution requirements</p>
+            </a>
+
+            <a
+              href="/PDFs/HB47/HB47 Employer Contributions 2026.pdf"
+              target="_blank"
+              class="tool-card"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <h4>HB47 Employer Contributions</h4>
+              <p>View employer contribution requirements</p>
+            </a>
+            <a
+              href="/PDFs/HB47/HB47 Employer Participation Waivers 2026.pdf"
+              target="_blank"
+              class="tool-card"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <h4>HB47 Employer Participation Waivers</h4>
+              <p>View employer participation waiver requirements</p>
             </a>
           </div>
         </section>
@@ -569,7 +617,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
 
     <script src="./js/main.js"></script>
     <script src="./scripts/sidebar-navigation.js"></script>
