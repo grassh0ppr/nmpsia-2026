@@ -178,7 +178,7 @@ class CarrierContacts extends HTMLElement {
                     <h5>CVS Caremark</h5>
                   </div>
                   <div class="carrier-details">
-                    <span class="carrier-card-badge">Ending 6/30/2026</span>
+                    <span class="carrier-card-badge">Discontinued 6/30/2026</span>
                     <p>
                       <strong>RxBIN:</strong> 004336<br />
                       <strong>RxPCN:</strong> ADV<br />

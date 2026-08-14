@@ -69,7 +69,8 @@ const carriersData = [
       groupNumbers: "RxBIN: 003858, RxPCN: A4, RxGrp: NMPSRX1",
       website: "https://www.express-scripts.com/",
       websiteText: "Visit Website",
-      memberPortal: "https://www.express-scripts.com/login?routingpage=/consumer/mybenefits/pl.jsp&CID=se:bob:pharmacyrx1:Bing2025:B:RT0&msclkid=77814cbed3ea17dbe5e026b982e64012&gclid=77814cbed3ea17dbe5e026b982e64012&gclsrc=3p.ds",
+      memberPortal:
+        "https://www.express-scripts.com/login?routingpage=/consumer/mybenefits/pl.jsp&CID=se:bob:pharmacyrx1:Bing2025:B:RT0&msclkid=77814cbed3ea17dbe5e026b982e64012&gclid=77814cbed3ea17dbe5e026b982e64012&gclsrc=3p.ds",
     },
     providerSearch: null,
     modalId: "expressScriptsModal",
@@ -80,7 +81,7 @@ const carriersData = [
     name: "CVS Caremark",
     logo: "images/CVS_Caremark_logo.jpg",
     benefitTypes: ["Pharmacy"],
-    badge: "Ending 6/30/2026",
+    badge: "Discontinued 6/30/2026",
     contact: {
       phone: "1-877-787-0652",
       phoneLink: "tel:18777870652",
