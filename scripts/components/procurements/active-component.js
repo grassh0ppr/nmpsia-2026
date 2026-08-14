@@ -18,6 +18,13 @@ class ActiveProcurements extends HTMLElement {
           </thead>
           <tbody>
           <tr>
+            <td>09/10/2026</td>
+            <td>RFI</td>
+            <td>
+              <a href="/docs/RFI_for_PSIA_and_HCA_HB47_STUDY_WITH_LINK.pdf" target="_blank">RFI - Actuarial Study of NM Health Care Authority State Health Benefits and NMPSIA Health Benefits Consolidation Study</a>
+            </td>
+          </tr>
+          <tr>
             <td>&mdash;</td>
             <td>RFI</td>
             <td>
