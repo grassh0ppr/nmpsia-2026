@@ -108,31 +108,19 @@
       </ol>
     </nav>
     <main class="no-sidenav container new-form-container">
-      <!-- OVERVIEW, WELCOME! -->
       <div class="container">
-        <div class="heading-and-element-flexbox">
-          <h2 class="display-4">
-            Need financial assistance after a natural disaster?
-          </h2>
-          <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
-        </div>
-        <hr />
-        <p>
-          We can help you get through it! Requests can be directed to us through
-          the forms below.
-        </p>
-        <div class="big-links-container">
-          <a href="./wildfire-relief.html" class="big-box-link">
-            <i class="bx bxs-hot"></i>
-            <span>Wildfire Relief Request Form</span>
-          </a>
-          <a href="./flood-relief.html" class="big-box-link">
-            <i class="bx bx-water"></i>
-            <span>Flood Relief Request Form</span>
-          </a>
+        <div class="alert alert-warning" role="alert">
+          <strong>There are no emergency orders in effect at this time.</strong>
+          You are being redirected back to the home page.
         </div>
       </div>
     </main>
+
+    <script>
+      setTimeout(function () {
+        window.location.replace("./index.html");
+      }, 4000);
+    </script>
     <footer-sitemap></footer-sitemap>
 
     <!-- Bootstrap Bundle with Popper -->

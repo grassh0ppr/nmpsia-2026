@@ -87,6 +87,19 @@
   <body class="modern-body">
     <webflow-navbar-component></webflow-navbar-component>
 
+    <div class="container mt-3">
+      <div class="alert alert-warning" role="alert">
+        <strong>There are no emergency orders in effect at this time.</strong>
+        You are being redirected back to the home page.
+      </div>
+    </div>
+
+    <script>
+      setTimeout(function () {
+        window.location.replace("./index.html");
+      }, 4000);
+    </script>
+
     <!-- Modern breadcrumb -->
     <nav class="modern-breadcrumb" aria-label="breadcrumb">
       <ol class="ms-4 pt-2 breadcrumb">
