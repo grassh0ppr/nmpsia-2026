@@ -4,13 +4,47 @@ class DomesticPtnrImputedIncome extends HTMLElement {
       <div class="accordion pb-3 mb-3" id="accordionExample">
                     
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading2025">
+                      <h2 class="accordion-header" id="heading2026">
                         <button class="accordion-button " type="button" data-bs-toggle="collapse"
-                          data-bs-target="#collapseOctober2025" aria-expanded="true" aria-controls="collapseOctober2025">
+                          data-bs-target="#collapseOctober2026" aria-expanded="true" aria-controls="collapseOctober2026">
+                          + 10/1/2026 & 1/1/2027 3-Tier Standard Contributions Schedule Rates
+                        </button>
+                      </h2>
+                      <div id="collapseOctober2026" class="accordion-collapse show" aria-labelledby="heading2026"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>
+                              <a target="_blank" class="dropdown-item"
+                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Imputed Income - EE Only and DPs - Effective October 1 2026.pdf"><i
+                                  class="bx bxs-file-pdf"></i> Any salary, previously
+                                employee only coverage (effective 10/1/2026 & 1/1/2027)</a>
+                            </li>
+                            <li>
+                              <a target="_blank" class="dropdown-item"
+                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Imputed Income - Two Party and DPs - Effective October 1 2026.pdf"><i
+                                  class="bx bxs-file-pdf"></i> Any salary, previously
+                                employee plus one coverage (effective 10/1/2026 & 1/1/2027)</a>
+                            </li>
+                            <li>
+                              <a target="_blank" class="dropdown-item"
+                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Imputed Income - Family and DPs - Effective October 1 2026.pdf"><i
+                                  class="bx bxs-file-pdf"></i> Any salary, previously
+                                family coverage (effective 10/1/2026 & 1/1/2027)</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading2025">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOctober2025" aria-expanded="false" aria-controls="collapseOctober2025">
                           + 10/1/2025 & 1/1/2026 3-Tier Standard Contributions Schedule Rates
                         </button>
                       </h2>
-                      <div id="collapseOctober2025" class="accordion-collapse show" aria-labelledby="heading2025"
+                      <div id="collapseOctober2025" class="accordion-collapse collapse" aria-labelledby="heading2025"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                           <ul>
