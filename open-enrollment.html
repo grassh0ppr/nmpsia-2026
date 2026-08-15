@@ -1318,6 +1318,48 @@
       </div>
     </div>
 
+    <!-- STAGING NOTICE MODAL -->
+    <div
+      class="modal fade"
+      id="stagingNoticeModal"
+      tabindex="-1"
+      aria-labelledby="stagingNoticeModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="stagingNoticeModalLabel">
+              <i class="bx bx-construction me-2"></i>Staging Page &mdash; Not Yet Active
+            </h5>
+          </div>
+          <div class="modal-body">
+            <p>
+              This page is being prepared for the upcoming Open/Switch Enrollment period,
+              which has not yet begun.
+            </p>
+            <p class="mb-0">
+              <strong>The content currently displayed is carried over from the prior
+              enrollment year and is not relevant to or representative of the upcoming
+              enrollment period.</strong> Updated materials will be published here when
+              Open/Switch Enrollment opens.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-bs-dismiss="modal"
+            >
+              I understand &mdash; continue to page
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- MODAL WINDOW FOR ENROLLMENT PERIOD CLOSED -->
     <div
       class="modal fade"
@@ -1387,6 +1429,15 @@
     ></script>
 
     <script src="./scripts/sidebar-navigation.js"></script>
+
+    <!-- Staging notice modal on page load -->
+    <script>
+      window.addEventListener("load", function () {
+        new bootstrap.Modal(
+          document.getElementById("stagingNoticeModal")
+        ).show();
+      });
+    </script>
 
     <!-- Alert and redirect for closed enrollment period -->
     <!-- <script>
