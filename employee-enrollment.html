@@ -21,12 +21,19 @@
     <!-- Preconnect to CDN domains for faster resource loading -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://unpkg.com" />
-    <link rel="preconnect" href="https://d3e54v103j8qbb.cloudfront.net" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://d3e54v103j8qbb.cloudfront.net"
+      crossorigin
+    />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <meta
       name="description"
-      content="Access important enrollment documents, forms, and resources for NMPSIA employee enrollment. Find enrollment change forms, beneficiary information, and more."
+      content="Employee enrollment resources for the New Mexico Public Schools Insurance Authority"
     />
     <!-- Favicon -->
     <link rel="icon" href="images/favicon-1.png" />
@@ -46,14 +53,18 @@
     <title>
       Employee Enrollment | New Mexico Public Schools Insurance Authority
     </title>
-
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/87331b3d9e.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Boxicons styles, used as a font -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-        <!-- Webflow navbar styles (load before main.css so main.css can override) -->
+    <!-- Webflow navbar styles (load before main.css so main.css can override) -->
     <link
       href="css/webflow_navbar/css/normalize.css"
       rel="stylesheet"
@@ -71,22 +82,92 @@
     />
 
     <!-- custom stylesheets -->
-    <!-- <link rel="stylesheet" href="css/footer.css?v=1" /> -->
     <link rel="stylesheet" href="css/main.css?v=1" />
     <link rel="stylesheet" href="css/queries.css?v=1" />
 
-    <!-- font awesome -->
+    <!-- components -->
     <script
-      src="https://kit.fontawesome.com/87331b3d9e.js"
-      crossorigin="anonymous"
+      src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1"
+      defer
     ></script>
+    <script
+      src="./scripts/components/footer/footer-sitemap.js?v=1.2"
+      defer
+    ></script>
+    <script src="./scripts/components/enrollment-checklist-modal.js"></script>
 
-    <!-- components in semi alphabetical order -->
-    <script src="./scripts/components/footer/footer-sitemap.js?v=1.2" defer></script>
-    <script src="./scripts/components/navbar/webflow-navbar-component.js?v=1.1" defer></script>
+    <style>
+      .training-links-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+        gap: 1.25rem;
+        align-items: stretch;
+        grid-auto-rows: 1fr;
+        margin-top: 1rem;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+
+      .training-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #495057;
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef;
+        height: 100%;
+        min-height: 110px;
+        min-width: 0;
+        overflow-wrap: break-word;
+      }
+
+      .training-link:hover {
+        background: #e9ecef;
+        color: #667eea;
+        text-decoration: none;
+        transform: translateX(5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .training-link i {
+        font-size: 1.5rem;
+        color: #667eea;
+        min-width: 1.5rem;
+      }
+
+      .training-link-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .training-link-title {
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
+      }
+
+      .training-link-description {
+        font-size: 0.85rem;
+        color: #6c757d;
+        margin: 0;
+      }
+
+      @media (max-width: 768px) {
+        .training-links-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
 
-  <body class="modern-body">
+  <body class="modern-body enrollment-modern">
     <webflow-navbar-component></webflow-navbar-component>
 
     <div class="modern-breadcrumb" aria-label="breadcrumb">
@@ -111,7 +192,7 @@
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
     <div class="sidebar-layout">
-      <!-- Modern Sidebar -->
+      <!-- Side Navigation -->
       <aside class="benefits-sidebar" id="benefitsSidebar">
         <div class="sidebar-header">
           <h3><i class="bx bx-menu"></i> Quick Navigation</h3>
@@ -124,24 +205,292 @@
           </button>
         </div>
         <nav class="sidebar-nav">
-          <a href="#docsForms" class="nav-item">
-            <i class="bx bxs-file"></i>
-            <span>Important Documents and Forms</span>
+          <a href="#overview" class="nav-item">
+            <i class="bx bx-home-alt"></i>
+            <span>Overview</span>
+          </a>
+          <a href="#presentations" class="nav-item">
+            <i class="bx bx-devices"></i>
+            <span>MyBenefits Portal Resources</span>
           </a>
 
-          <!-- move to ER dropdown in navbar and name it "Contact Your Employer" -->
-          <!-- <a href="./district-contacts.html" target="_blank" class="nav-item">
-            <i class="bx bx-building-house"></i>
-            <span>NMPSIA Participating Employer Contact Database</span>
-          </a> -->
+          <a href="#enrollment-resources" class="nav-item">
+            <i class="bx bx-user-plus"></i>
+            <span>Employee Enrollment Resources</span>
+          </a>
+
+          <a href="#docsForms" class="nav-item">
+            <i class="bx bx-folder"></i>
+            <span>Important Documents &amp; Forms</span>
+          </a>
         </nav>
       </aside>
 
       <!-- Main Content -->
       <main class="benefits-main">
+        <!-- Hero Section -->
+        <section class="benefits-hero-section">
+          <div class="benefits-hero-content">
+            <h1 class="benefits-hero-title">Employee Enrollment Resources</h1>
+            <p class="benefits-hero-subtitle">
+              Comprehensive resources for navigating your benefits enrollment
+            </p>
+          </div>
+          <div class="benefits-hero-logo">
+            <img
+              src="images/nmpsia_logo_2024.png"
+              alt="NMPSIA logo"
+              class="benefits-logo"
+            />
+          </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+          <h3><i class="bx bx-info-circle me-2"></i>Overview</h3>
+          <p>
+            <span class="lead">
+              Welcome to NMPSIA's comprehensive enrollment information center.
+            </span>
+            Whether you're a new hire enrolling for the first time, making
+            changes during open enrollment, or need to update your information,
+            we have the resources to help you navigate the process smoothly.
+          </p>
+        </section>
+
+        <!-- MyBenefits Portal Section -->
+        <section id="presentations" class="content-section">
+          <h3><i class="bx bx-devices me-2"></i>MyBenefits Portal Resources</h3>
+          <p>
+            Access your benefits enrollment system to make changes, view
+            coverage, and manage your account.
+          </p>
+
+          <div class="highlight-box">
+            <p>
+              Log into your personal benefits portal to view your current
+              coverage, make changes during open enrollment, update personal
+              information, and access important benefit documents. The system is
+              available 24/7 for your convenience.
+            </p>
+            <a
+              href="https://nmpsiaonline.nmpsia.com/"
+              class="btn btn-outline-light"
+              target="_blank"
+            >
+              <i class="bx bx-right-arrow-alt"></i>MyBenefits Portal Login
+            </a>
+          </div>
+
+          <h4
+            style="
+              color: #667eea;
+              font-size: 1.1rem;
+              font-weight: 600;
+              margin: 1.5rem 0 0 0;
+              padding-bottom: 0.5rem;
+              border-bottom: 1px solid #e9ecef;
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+            "
+          >
+            <i class="bx bx-play-circle"></i>Tutorials
+          </h4>
+          <div class="training-links-grid">
+            <a
+              href="/trainings/2026/EMPLOYEE Login Process.pptx"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">Employee — Log In Process</div>
+                <div class="training-link-description">
+                  Step-by-step guide to logging into the MyBenefits portal
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://nmpsia.com/trainings/regional/2026/MyBenefits_Portal_FAQ_2026_v2.pdf"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">MyBenefits Portal FAQ</div>
+                <div class="training-link-description">
+                  Frequently asked questions about the MyBenefits portal
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Employee Enrollment Resources Section -->
+        <section id="enrollment-resources" class="content-section">
+          <h3>
+            <i class="bx bx-user-plus me-2"></i>Employee Enrollment Resources
+          </h3>
+          <p>
+            Step-by-step guides for enrollment, qualifying events, beneficiary
+            updates, and related benefit tasks.
+          </p>
+
+          <div class="training-links-grid">
+            <!-- Enrollment Checklist (interactive modal) -->
+            <button
+              type="button"
+              class="training-link"
+              data-bs-toggle="modal"
+              data-bs-target="#enrollmentChecklistModal"
+              style="
+                background: none;
+                border: 1px solid #e9ecef;
+                text-align: left;
+                width: 100%;
+                cursor: pointer;
+                min-height: 110px;
+              "
+            >
+              <i
+                class="bx bx-list-check"
+                style="font-size: 1.5rem; color: #667eea; min-width: 1.5rem"
+              ></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Employee Guide to Enrollment
+                </div>
+                <div class="training-link-description">
+                  Interactive enrollment checklist
+                </div>
+              </div>
+            </button>
+
+            <!-- Welcome to the MyBenefits Portal -->
+            <a
+              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/6_Welcome_to_the_MyBenefits_Portal.pdf"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Get to Know the MyBenefits Portal
+                </div>
+                <div class="training-link-description">
+                  MyBenefits Portal introduction and overview
+                </div>
+              </div>
+            </a>
+
+            <!-- Filing a Life Claim — Employee Use -->
+            <a
+              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/9_Filing_a_Life_Claim_for_Districts_-_For_Employee_Use.pdf"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Filing a Life Insurance Claim
+                </div>
+                <div class="training-link-description">
+                  Life claim filing guide for employees
+                </div>
+              </div>
+            </a>
+
+            <!-- 2026 Benefits Presentation -->
+            <a
+              href="/trainings/2026/2026-Benefits-Presentation-NMPSIA.pdf"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="bx bxs-file-pdf"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  2026 Benefits Presentation
+                </div>
+                <div class="training-link-description">
+                  NMPSIA benefits overview presentation
+                </div>
+              </div>
+            </a>
+
+            <!-- Qualifying Events Employee Deck -->
+            <a
+              href="/trainings/2026/NMPSIA-Qualifying-Events-(QE)-Employee-Deck.pptx"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">Qualifying Events</div>
+                <div class="training-link-description">
+                  Guide to qualifying life events for employees
+                </div>
+              </div>
+            </a>
+
+            <!-- Employee - Change Beneficiary -->
+            <a
+              href="/trainings/2026/EMPLOYEE - Change Beneficiary 2026.pptx"
+              target="_blank"
+              class="training-link"
+            >
+              <i class="fa-solid fa-file-powerpoint"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">Change Beneficiary</div>
+                <div class="training-link-description">
+                  Employee guide to changing your beneficiary for life insurance
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="training-links-grid mt-4">
+            <a href="./benefits.html" class="training-link">
+              <i class="bx bx-list-ul"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">Benefits Information</div>
+                <div class="training-link-description">
+                  Comprehensive overview of all available benefits and coverage
+                  options
+                </div>
+              </div>
+            </a>
+
+            <a href="./contact-us.html" class="training-link">
+              <i class="bx bx-envelope"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">Contact Support</div>
+                <div class="training-link-description">
+                  Get help with enrollment questions and technical support
+                </div>
+              </div>
+            </a>
+
+            <a href="#docsForms" class="training-link">
+              <i class="bx bx-folder"></i>
+              <div class="training-link-content">
+                <div class="training-link-title">
+                  Important Documents &amp; Forms
+                </div>
+                <div class="training-link-description">
+                  Important documents and forms for employee enrollment
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
         <!-- IMPORTANT DOCUMENTS AND FORMS -->
         <section id="docsForms" class="content-section">
-          <h3>Important Documents and Forms</h3>
+          <h3>
+            <i class="bx bx-folder me-2"></i>Important Documents and Forms
+          </h3>
+          <p>Important documents and forms for employee enrollment.</p>
           <ul class="list-unstyled">
             <li>
               <i class="bx bxs-file-pdf"></i>
@@ -252,6 +601,8 @@
       </main>
     </div>
 
+    <enrollment-checklist-modal></enrollment-checklist-modal>
+
     <footer-sitemap></footer-sitemap>
 
     <!-- Bootstrap Bundle with Popper -->
@@ -279,7 +630,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./scripts/main.js"></script>
     <script src="./scripts/sidebar-navigation.js"></script>
   </body>
 </html>

@@ -91,9 +91,6 @@ class WebflowNavbar extends HTMLElement {
                   <div>Employees</div>
                 </div>
                 <nav class="dropdown-list w-dropdown-list">
-                  <a href="./enrollment-tutorials.html" class="dropdown-link w-dropdown-link"
-                    >Employee Enrollment Tutorials</a
-                  >
                   <a href="./employee-enrollment.html" class="dropdown-link w-dropdown-link"
                     >Enrollment, Forms, and Resources</a
                   >
