@@ -21,8 +21,8 @@ class FindAProvider extends HTMLElement {
         text: "Presbyterian Health Plan",
       },
       {
-        url: "https://www.caremark.com/wps/portal/.cmd/el?id=s7a4i9un3m_1&cmxtarget=FRAMED_LOCAL_PHARMACY&newLogin=yes&returnURL=http://www.caremark.com/framedLogoff.html",
-        text: "CVS Caremark",
+        url: "https://www.express-scripts.com/tools-resources",
+        text: "Express Scripts by Evernorth",
       },
       {
         url: "https://www.bcbsnm.com/find-care/providers-in-your-network/find-a-dentist",
