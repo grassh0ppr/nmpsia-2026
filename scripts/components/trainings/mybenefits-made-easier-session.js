@@ -131,14 +131,9 @@ class MyBenefitsMadeEasierSession extends HTMLElement {
       document.head.appendChild(style);
     }
 
-    this.innerHTML = /*html*/ `
-      <div class="session-block">
-        <div class="session-title">
-          <i class="bx bx-devices"></i>
-          MyBenefits Made Easier: What's Changed
-        </div>
 
-        <figure class="mb-3">
+    this.innerHTML = /*html*/ `
+      <figure class="mb-3">
           <video
             controls
             style="width: 100%; border-radius: 8px; background: #000"
@@ -217,7 +212,6 @@ class MyBenefitsMadeEasierSession extends HTMLElement {
             <span class="year-badge">2026</span>
           </a>
         </div>
-      </div>
     `;
 
     // Enable captions on the video after innerHTML is set

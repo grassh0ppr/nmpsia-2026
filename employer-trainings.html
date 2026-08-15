@@ -348,6 +348,44 @@
         flex-shrink: 0;
         color: #f59e0b;
       }
+
+      /* Regional Trainings Accordion */
+      #regional-trainings-accordion .accordion-item {
+        background: #f8f9ff;
+        border-radius: 10px !important;
+        border: 1px solid #e0e4f8;
+        overflow: hidden;
+        margin-bottom: 1rem;
+      }
+
+      #regional-trainings-accordion .accordion-item:last-child {
+        margin-bottom: 0;
+      }
+
+      #regional-trainings-accordion .accordion-button {
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: white;
+        background: linear-gradient(135deg, #667eea 0%, #4e4ba2 100%);
+        gap: 0.6rem;
+        box-shadow: none !important;
+      }
+
+      #regional-trainings-accordion .accordion-button:not(.collapsed) {
+        color: white;
+        background: linear-gradient(135deg, #5a6fd8 0%, #413e8a 100%);
+        box-shadow: none;
+      }
+
+      #regional-trainings-accordion .accordion-button::after {
+        filter: brightness(0) invert(1);
+      }
+
+      #regional-trainings-accordion .accordion-body {
+        padding: 1.25rem 1.5rem;
+      }
     </style>
   </head>
 
@@ -393,13 +431,23 @@
               <nav>
                 <ul class="sidebar-nav">
                   <li>
-                    <a href="#benefits-wellness"
-                      ><i class="bx bx-heart"></i>Benefits/Wellness</a
+                    <a href="#spring-budget"
+                      ><i class="bx bx-calendar"></i>Spring Budget Workshops</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#regional-trainings"
+                      ><i class="bx bx-map"></i>Regional Trainings</a
                     >
                   </li>
                   <li>
                     <a href="#training-library"
-                      ><i class="bx bx-library"></i>Training Library</a
+                      ><i class="bx bx-library"></i>Employer Enrollment Resources</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#portal-tutorials"
+                      ><i class="bx bx-laptop"></i>Portal Enrollment Tutorials</a
                     >
                   </li>
                 </ul>
@@ -417,7 +465,7 @@
               </div>
 
               <!-- Spring Budget Workshops -->
-              <div class="training-subsection">
+              <div class="training-subsection" id="spring-budget">
                 <h4 class="subsection-title">
                   <i class="bx bx-calendar"></i>
                   Spring Budget Workshops
@@ -444,379 +492,441 @@
               </div>
 
               <!-- Regional Benefits Trainings -->
-              <div class="training-subsection">
+              <div class="training-subsection" id="regional-trainings">
                 <h4 class="subsection-title">
                   <i class="bx bx-map"></i>
                   Regional Benefits Trainings
                 </h4>
 
-                <!-- Session 1: Organize, Inform, Empower -->
-                <div class="session-block">
-                  <div class="session-title">
-                    <i class="bx bx-package"></i>
-                    Organize, Inform, Empower: Building Your Annual Employee
-                    Packet
-                  </div>
+                <div class="accordion" id="regional-trainings-accordion">
 
-                  <figure class="mb-3">
-                    <video
-                      id="oie-packet-video"
-                      controls
-                      style="width: 100%; border-radius: 8px; background: #000"
-                      aria-label="Organize, Inform, Empower: Building Your Annual Employee Packet — Session Recording"
-                    >
-                      <source
-                        src="https://nmpsia.com/trainings/regional/2026/ORGANIZE_INFORM_EMPOWER_BUILD_PACKET_VIDEO.mp4"
-                        type="video/mp4"
-                      />
-                      <track
-                        kind="captions"
-                        src="https://nmpsia.com/trainings/regional/2026/captions-organize-inform-empower-kaylei.vtt"
-                        srclang="en"
-                        label="English"
-                        default
-                      />
-                      Your browser does not support the video element.
-                    </video>
-                    <figcaption
-                      style="
-                        font-size: 0.82rem;
-                        color: #6c757d;
-                        margin-top: 0.5rem;
-                      "
-                    >
-                      <i class="bx bx-video me-1"></i>Session recording with
-                      English captions
-                    </figcaption>
-                  </figure>
-                  <script>
-                    (function () {
-                      var video = document.getElementById("oie-packet-video");
-                      function enableCaptions() {
-                        if (video.textTracks && video.textTracks.length > 0) {
-                          video.textTracks[0].mode = "showing";
-                        }
-                      }
-                      if (video.readyState >= 1) {
-                        enableCaptions();
-                      } else {
-                        video.addEventListener(
-                          "loadedmetadata",
-                          enableCaptions,
-                        );
-                      }
-                    })();
-                  </script>
-
-                  <div class="training-links-grid">
-                    <a
-                      href="https://nmpsia.com/trainings/regional/2026/ORGANIZE_INFORM_EMPOWER_BUILD_PACKET_SLIDES.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Session Slide Deck
-                        </div>
-                        <div class="training-link-description">
-                          Presentation slides — Organize, Inform, Empower
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                  </div>
-
-                  <p
-                    class="mt-3 mb-2"
-                    style="font-size: 0.85rem; font-weight: 600; color: #495057"
-                  >
-                    <i class="bx bx-folder-open me-1" style="color: #667eea"></i
-                    >Toolkit Materials
-                  </p>
-                  <div class="training-links-grid">
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/2_Benefits_Specialist_Guide_to_Enrollment.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Benefits Specialist Guide to Enrollment
-                        </div>
-                        <div class="training-link-description">
-                          Guide for benefits specialists
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <div
-                      style="display: flex; flex-direction: column; gap: 0.4rem"
-                    >
+                  <!-- Session 1: Organize, Inform, Empower -->
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="session-oie-heading">
                       <button
+                        class="accordion-button collapsed"
                         type="button"
-                        class="training-link"
-                        data-bs-toggle="modal"
-                        data-bs-target="#enrollmentChecklistModal"
-                        style="
-                          background: none;
-                          border: 1px solid #e9ecef;
-                          text-align: left;
-                          width: 100%;
-                          cursor: pointer;
-                          min-height: 110px;
-                        "
+                        data-bs-toggle="collapse"
+                        data-bs-target="#session-oie-collapse"
+                        aria-expanded="false"
+                        aria-controls="session-oie-collapse"
                       >
-                        <i
-                          class="bx bx-list-check"
-                          style="
-                            font-size: 1.5rem;
-                            color: #667eea;
-                            min-width: 1.5rem;
-                          "
-                        ></i>
-                        <div class="training-link-content">
-                          <div class="training-link-title">
-                            Employee Guide to Enrollment
-                          </div>
-                          <div class="training-link-description">
-                            Interactive enrollment checklist
-                          </div>
-                        </div>
-                        <span class="year-badge">2026</span>
+                        <i class="bx bx-package"></i>
+                        Organize, Inform, Empower: Building Your Annual Employee Packet
                       </button>
-                      <a
-                        href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/3_Employee_Guide_to_Enrollment.pdf"
-                        target="_blank"
-                        style="
-                          display: inline-flex;
-                          align-items: center;
-                          gap: 0.4rem;
-                          font-size: 0.8rem;
-                          color: #6c757d;
-                          text-decoration: none;
-                          padding: 0.25rem 0.5rem;
-                          border-radius: 6px;
-                          transition: color 0.2s ease;
-                        "
-                        onmouseover="this.style.color = '#667eea'"
-                        onmouseout="this.style.color = '#6c757d'"
-                      >
-                        <i class="bx bxs-file-pdf" style="font-size: 1rem"></i>
-                        Download PDF to print
-                      </a>
+                    </h5>
+                    <div
+                      id="session-oie-collapse"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="session-oie-heading"
+                    >
+                      <div class="accordion-body">
+
+                        <figure class="mb-3">
+                          <video
+                            id="oie-packet-video"
+                            controls
+                            style="width: 100%; border-radius: 8px; background: #000"
+                            aria-label="Organize, Inform, Empower: Building Your Annual Employee Packet — Session Recording"
+                          >
+                            <source
+                              src="https://nmpsia.com/trainings/regional/2026/ORGANIZE_INFORM_EMPOWER_BUILD_PACKET_VIDEO.mp4"
+                              type="video/mp4"
+                            />
+                            <track
+                              kind="captions"
+                              src="https://nmpsia.com/trainings/regional/2026/captions-organize-inform-empower-kaylei.vtt"
+                              srclang="en"
+                              label="English"
+                              default
+                            />
+                            Your browser does not support the video element.
+                          </video>
+                          <figcaption
+                            style="
+                              font-size: 0.82rem;
+                              color: #6c757d;
+                              margin-top: 0.5rem;
+                            "
+                          >
+                            <i class="bx bx-video me-1"></i>Session recording with
+                            English captions
+                          </figcaption>
+                        </figure>
+                        <script>
+                          (function () {
+                            var video = document.getElementById("oie-packet-video");
+                            function enableCaptions() {
+                              if (video.textTracks && video.textTracks.length > 0) {
+                                video.textTracks[0].mode = "showing";
+                              }
+                            }
+                            if (video.readyState >= 1) {
+                              enableCaptions();
+                            } else {
+                              video.addEventListener(
+                                "loadedmetadata",
+                                enableCaptions,
+                              );
+                            }
+                          })();
+                        </script>
+
+                        <div class="training-links-grid">
+                          <a
+                            href="https://nmpsia.com/trainings/regional/2026/ORGANIZE_INFORM_EMPOWER_BUILD_PACKET_SLIDES.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Session Slide Deck
+                              </div>
+                              <div class="training-link-description">
+                                Presentation slides — Organize, Inform, Empower
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                        </div>
+
+                        <p
+                          class="mt-3 mb-2"
+                          style="font-size: 0.85rem; font-weight: 600; color: #495057"
+                        >
+                          <i class="bx bx-folder-open me-1" style="color: #667eea"></i
+                          >Toolkit Materials
+                        </p>
+                        <div class="training-links-grid">
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/2_Benefits_Specialist_Guide_to_Enrollment.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Benefits Specialist Guide to Enrollment
+                              </div>
+                              <div class="training-link-description">
+                                Guide for benefits specialists
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <div
+                            style="display: flex; flex-direction: column; gap: 0.4rem"
+                          >
+                            <button
+                              type="button"
+                              class="training-link"
+                              data-bs-toggle="modal"
+                              data-bs-target="#enrollmentChecklistModal"
+                              style="
+                                background: none;
+                                border: 1px solid #e9ecef;
+                                text-align: left;
+                                width: 100%;
+                                cursor: pointer;
+                                min-height: 110px;
+                              "
+                            >
+                              <i
+                                class="bx bx-list-check"
+                                style="
+                                  font-size: 1.5rem;
+                                  color: #667eea;
+                                  min-width: 1.5rem;
+                                "
+                              ></i>
+                              <div class="training-link-content">
+                                <div class="training-link-title">
+                                  Employee Guide to Enrollment
+                                </div>
+                                <div class="training-link-description">
+                                  Interactive enrollment checklist
+                                </div>
+                              </div>
+                              <span class="year-badge">2026</span>
+                            </button>
+                            <a
+                              href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/3_Employee_Guide_to_Enrollment.pdf"
+                              target="_blank"
+                              style="
+                                display: inline-flex;
+                                align-items: center;
+                                gap: 0.4rem;
+                                font-size: 0.8rem;
+                                color: #6c757d;
+                                text-decoration: none;
+                                padding: 0.25rem 0.5rem;
+                                border-radius: 6px;
+                                transition: color 0.2s ease;
+                              "
+                              onmouseover="this.style.color = '#667eea'"
+                              onmouseout="this.style.color = '#6c757d'"
+                            >
+                              <i class="bx bxs-file-pdf" style="font-size: 1rem"></i>
+                              Download PDF to print
+                            </a>
+                          </div>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/4_Wellness_Ambassasdor.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Wellness Ambassador
+                              </div>
+                              <div class="training-link-description">
+                                Wellness ambassador resources
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/4_2026_NH_Template.pptx"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="fa-solid fa-file-powerpoint"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                2026 New Hire Template
+                              </div>
+                              <div class="training-link-description">
+                                PowerPoint template for new hires
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/5_Program_Guide_Access.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Program Guide Access
+                              </div>
+                              <div class="training-link-description">
+                                Get the PDF benefits program guide
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/6_Welcome_to_the_MyBenefits_Portal.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                MyBenefits Portal Introduction
+                              </div>
+                              <div class="training-link-description">
+                                Formerly known as the "Online System"
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/7_Benefits_Summary.docx"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-doc"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">Benefits Summary</div>
+                              <div class="training-link-description">
+                                Summary of NMPSIA benefits
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/8_Employer_Employee_Acknowledgment_Form.docx"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-doc"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Employer/Employee Acknowledgment Form
+                              </div>
+                              <div class="training-link-description">
+                                Acknowledgment form for employers and employees
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/9_Filing_a_Life_Claim_for_Districts_-_For_Employee_Use.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Filing a Life Claim for Districts — For Employee Use
+                              </div>
+                              <div class="training-link-description">
+                                Life claim filing guide for employees
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                          <a
+                            href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/10_Filing_a_Life_Claim_-_For_Employer_Use.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Filing a Life Claim — For Employer Use
+                              </div>
+                              <div class="training-link-description">
+                                Life claim filing guide for employers
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                        </div>
+
+                      </div>
                     </div>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/4_Wellness_Ambassasdor.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Wellness Ambassador
-                        </div>
-                        <div class="training-link-description">
-                          Wellness ambassador resources
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/4_2026_NH_Template.pptx"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="fa-solid fa-file-powerpoint"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          2026 New Hire Template
-                        </div>
-                        <div class="training-link-description">
-                          PowerPoint template for new hires
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/5_Program_Guide_Access.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Program Guide Access
-                        </div>
-                        <div class="training-link-description">
-                          Get the PDF benefits program guide
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/6_Welcome_to_the_MyBenefits_Portal.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          MyBenefits Portal Introduction
-                        </div>
-                        <div class="training-link-description">
-                          Formerly known as the "Online System"
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/7_Benefits_Summary.docx"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-doc"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">Benefits Summary</div>
-                        <div class="training-link-description">
-                          Summary of NMPSIA benefits
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/8_Employer_Employee_Acknowledgment_Form.docx"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-doc"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Employer/Employee Acknowledgment Form
-                        </div>
-                        <div class="training-link-description">
-                          Acknowledgment form for employers and employees
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/9_Filing_a_Life_Claim_for_Districts_-_For_Employee_Use.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Filing a Life Claim for Districts — For Employee Use
-                        </div>
-                        <div class="training-link-description">
-                          Life claim filing guide for employees
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                    <a
-                      href="https://nmpsia.com/PDFs/2026_Regional_Training_Toolkit/10_Filing_a_Life_Claim_-_For_Employer_Use.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Filing a Life Claim — For Employer Use
-                        </div>
-                        <div class="training-link-description">
-                          Life claim filing guide for employers
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
                   </div>
+
+                  <!-- Session 2: Building Billing Accuracy -->
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="session-billing-heading">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#session-billing-collapse"
+                        aria-expanded="false"
+                        aria-controls="session-billing-collapse"
+                      >
+                        <i class="bx bx-receipt"></i>
+                        Building Billing Accuracy — The Life of a Bill
+                      </button>
+                    </h5>
+                    <div
+                      id="session-billing-collapse"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="session-billing-heading"
+                    >
+                      <div class="accordion-body">
+
+                        <figure class="mb-3">
+                          <video
+                            id="billing-accuracy-video"
+                            controls
+                            style="width: 100%; border-radius: 8px; background: #000"
+                            aria-label="Building Billing Accuracy: The Life of a Bill — Session Recording"
+                          >
+                            <source
+                              src="https://nmpsia.com/trainings/regional/2026/BUILDING_BILLING_ACCURACY_THE_LIFE_OF_A_BILL_VIDEO.mp4"
+                              type="video/mp4"
+                            />
+                            <track
+                              kind="captions"
+                              src="https://nmpsia.com/trainings/regional/2026/captions-billing-accuracy-leslie.vtt"
+                              srclang="en"
+                              label="English"
+                              default
+                            />
+                            Your browser does not support the video element.
+                          </video>
+                          <figcaption
+                            style="
+                              font-size: 0.82rem;
+                              color: #6c757d;
+                              margin-top: 0.5rem;
+                            "
+                          >
+                            <i class="bx bx-video me-1"></i>Session recording with
+                            English captions
+                          </figcaption>
+                        </figure>
+                        <script>
+                          (function () {
+                            var video = document.getElementById(
+                              "billing-accuracy-video",
+                            );
+                            function enableCaptions() {
+                              if (video.textTracks && video.textTracks.length > 0) {
+                                video.textTracks[0].mode = "showing";
+                              }
+                            }
+                            if (video.readyState >= 1) {
+                              enableCaptions();
+                            } else {
+                              video.addEventListener(
+                                "loadedmetadata",
+                                enableCaptions,
+                              );
+                            }
+                          })();
+                        </script>
+
+                        <div class="training-links-grid">
+                          <a
+                            href="https://nmpsia.com/trainings/regional/2026/BUILDING_BILLING_ACCURACY_THE_LIFE_OF_A_BILL_SLIDES.pdf"
+                            target="_blank"
+                            class="training-link"
+                          >
+                            <i class="bx bxs-file-pdf"></i>
+                            <div class="training-link-content">
+                              <div class="training-link-title">
+                                Session Slide Deck
+                              </div>
+                              <div class="training-link-description">
+                                Presentation slides — Building Billing Accuracy
+                              </div>
+                            </div>
+                            <span class="year-badge">2026</span>
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Session 3: MyBenefits Made Easier -->
+                  <div class="accordion-item">
+                    <h5 class="accordion-header" id="session-mybenefits-heading">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#session-mybenefits-collapse"
+                        aria-expanded="false"
+                        aria-controls="session-mybenefits-collapse"
+                      >
+                        <i class="bx bx-devices"></i>
+                        MyBenefits Made Easier: What's Changed
+                      </button>
+                    </h5>
+                    <div
+                      id="session-mybenefits-collapse"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="session-mybenefits-heading"
+                    >
+                      <div class="accordion-body">
+                        <mybenefits-made-easier-session></mybenefits-made-easier-session>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
-
-                <!-- Session 2: Building Billing Accuracy -->
-                <div class="session-block">
-                  <div class="session-title">
-                    <i class="bx bx-receipt"></i>
-                    Building Billing Accuracy — The Life of a Bill
-                  </div>
-
-                  <figure class="mb-3">
-                    <video
-                      id="billing-accuracy-video"
-                      controls
-                      style="width: 100%; border-radius: 8px; background: #000"
-                      aria-label="Building Billing Accuracy: The Life of a Bill — Session Recording"
-                    >
-                      <source
-                        src="https://nmpsia.com/trainings/regional/2026/BUILDING_BILLING_ACCURACY_THE_LIFE_OF_A_BILL_VIDEO.mp4"
-                        type="video/mp4"
-                      />
-                      <track
-                        kind="captions"
-                        src="https://nmpsia.com/trainings/regional/2026/captions-billing-accuracy-leslie.vtt"
-                        srclang="en"
-                        label="English"
-                        default
-                      />
-                      Your browser does not support the video element.
-                    </video>
-                    <figcaption
-                      style="
-                        font-size: 0.82rem;
-                        color: #6c757d;
-                        margin-top: 0.5rem;
-                      "
-                    >
-                      <i class="bx bx-video me-1"></i>Session recording with
-                      English captions
-                    </figcaption>
-                  </figure>
-                  <script>
-                    (function () {
-                      var video = document.getElementById(
-                        "billing-accuracy-video",
-                      );
-                      function enableCaptions() {
-                        if (video.textTracks && video.textTracks.length > 0) {
-                          video.textTracks[0].mode = "showing";
-                        }
-                      }
-                      if (video.readyState >= 1) {
-                        enableCaptions();
-                      } else {
-                        video.addEventListener(
-                          "loadedmetadata",
-                          enableCaptions,
-                        );
-                      }
-                    })();
-                  </script>
-
-                  <div class="training-links-grid">
-                    <a
-                      href="https://nmpsia.com/trainings/regional/2026/BUILDING_BILLING_ACCURACY_THE_LIFE_OF_A_BILL_SLIDES.pdf"
-                      target="_blank"
-                      class="training-link"
-                    >
-                      <i class="bx bxs-file-pdf"></i>
-                      <div class="training-link-content">
-                        <div class="training-link-title">
-                          Session Slide Deck
-                        </div>
-                        <div class="training-link-description">
-                          Presentation slides — Building Billing Accuracy
-                        </div>
-                      </div>
-                      <span class="year-badge">2026</span>
-                    </a>
-                  </div>
-                </div>
-
-                <!-- Session 3: MyBenefits Made Easier -->
-                <mybenefits-made-easier-session></mybenefits-made-easier-session>
               </div>
             </section>
 
@@ -968,7 +1078,7 @@
               </div>
 
               <!-- Online System Training -->
-              <div class="training-subsection">
+              <div class="training-subsection" id="portal-tutorials">
                 <h4 class="subsection-title">
                   <i class="bx bx-laptop"></i>
                   Employer MyBenefits Portal Enrollment Tutorials
