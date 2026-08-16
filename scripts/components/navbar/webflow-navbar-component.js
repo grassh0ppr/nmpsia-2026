@@ -1,355 +1,255 @@
-class WebflowNavbar extends HTMLElement {
+class SiteNavbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
       <a href="#main-content" class="skip-to-main-content">Skip to main content</a>
-      <section style="margin-bottom: 0;">
-        <div
-          data-animation="default"
-          data-collapse="medium"
-          data-duration="400"
-          data-easing="ease-in-out"
-          data-easing2="ease-in-out"
-          data-doc-height="1"
-          role="banner"
-          class="navbar w-nav"
-        >
-          <div class="nav-container w-container">
-            <a href="./index.html" class="brand w-nav-brand">
-              <img
-                src="css/webflow_navbar/images/NMPSIA-logo-white.png"
-                loading="lazy"
-                style="max-width: 205px; width: 100%; height: auto;"
-                alt="NMPSIA Logo"
-                class="image"
-              />
-            </a>
-            <nav role="navigation" class="nav-menu w-nav-menu" id="nav-menu">
-              <div data-hover="false" data-delay="100" class="w-dropdown">
-                <div class="navlink w-dropdown-toggle">
-                  <div class="w-icon-dropdown-toggle"></div>
-                  <div>NMPSIA</div>
-                </div>
-                <nav class="dropdown-list w-dropdown-list">
-                <a href="./plan.html" class="dropdown-link w-dropdown-link"
-                    >NMPSIA &ndash; About the Authority</a
-                  >
-                  <a href="./board-login.html" class="dropdown-link w-dropdown-link">NMPSIA &ndash; Board Login</a>
+      <header class="site-header" style="margin-bottom: 0;">
+        <div class="nav-container">
+          <a href="./index.html" class="nav-brand">
+            <img
+              src="css/webflow_navbar/images/NMPSIA-logo-white.png"
+              loading="lazy"
+              style="max-width: 205px; width: 100%; height: auto;"
+              alt="NMPSIA Logo"
+            />
+          </a>
 
-                  <a href="./benefits.html" class="dropdown-link w-dropdown-link"
-                    >NMPSIA &ndash; Benefits Division</a
-                  >
-                  <a href="./wellness.html" class="dropdown-link w-dropdown-link"
-                    >NMPSIA &ndash; Wellness Programs Division</a
-                  >
-                  <a href="./behavioral-health.html" class="dropdown-link w-dropdown-link"
-                  >NMPSIA &ndash; Behavioral Health Resources</a
-                >
-                  <a href="./risk.html" class="dropdown-link w-dropdown-link"
-                    >NMPSIA &ndash; Risk Division</a
-                  >
-                  <a href="./procurements.html" class="dropdown-link w-dropdown-link"
-                    >NMPSIA &ndash; Procurements</a
-                  >
-                  <a href="./plan.html#IPRArequest" class="dropdown-link w-dropdown-link"
-                    >Request Inspection of Public Records (IPRA)</a
-                  >
-                
-                  <a href="./transparency-rule.html" class="dropdown-link w-dropdown-link"
-                    >Transparency Rule</a
-                  >
-                </nav>
+          <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+            <!-- NMPSIA dropdown -->
+            <div class="nav-dropdown">
+              <button class="navlink nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                NMPSIA
+                <i class="bx bx-chevron-down nav-dropdown-arrow" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-list" role="menu">
+                <a href="./plan.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; About the Authority</a>
+                <a href="./board-login.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Board Login</a>
+                <a href="./benefits.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Benefits Division</a>
+                <a href="./wellness.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Wellness Programs Division</a>
+                <a href="./behavioral-health.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Behavioral Health Resources</a>
+                <a href="./risk.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Risk Division</a>
+                <a href="./procurements.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Procurements</a>
+                <a href="./plan.html#IPRArequest" class="dropdown-link" role="menuitem">Request Inspection of Public Records (IPRA)</a>
+                <a href="./transparency-rule.html" class="dropdown-link" role="menuitem">Transparency Rule</a>
               </div>
-              <div data-hover="false" data-delay="100" class="w-dropdown">
-                <div class="navlink w-dropdown-toggle">
-                  <div class="w-icon-dropdown-toggle"></div>
-                  <div>Employers</div>
-                </div>
-                <nav class="dropdown-list w-dropdown-list">
-                  <a href="./support.html" class="dropdown-link w-dropdown-link"
-                    >Request NMPSIA Support</a
-                  >
-                  <a href="./employer-trainings.html" class="dropdown-link w-dropdown-link"
-                    >Training Tutorials and Videos</a
-                  >
-                  <a href="./employer-enrollment.html" class="dropdown-link w-dropdown-link"
-                    >Enrollment, Forms, and Resources</a
-                  >
-                  <a href="./benefits.html" class="dropdown-link w-dropdown-link"
-                    >Carrier Benefits Information</a
-                  >
-                  <a href="./premiums.html" class="dropdown-link w-dropdown-link"
-                    >Benefit Premiums</a
-                  >
-               
-                 
-                
-                </nav>
+            </div>
+
+            <!-- Employers dropdown -->
+            <div class="nav-dropdown">
+              <button class="navlink nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Employers
+                <i class="bx bx-chevron-down nav-dropdown-arrow" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-list" role="menu">
+                <a href="./support.html" class="dropdown-link" role="menuitem">Request NMPSIA Support</a>
+                <a href="./employer-trainings.html" class="dropdown-link" role="menuitem">Training Tutorials and Videos</a>
+                <a href="./employer-enrollment.html" class="dropdown-link" role="menuitem">Enrollment, Forms, and Resources</a>
+                <a href="./benefits.html" class="dropdown-link" role="menuitem">Carrier Benefits Information</a>
+                <a href="./premiums.html" class="dropdown-link" role="menuitem">Benefit Premiums</a>
               </div>
-              <div data-hover="false" data-delay="100" class="w-dropdown">
-                <div class="navlink w-dropdown-toggle">
-                  <div class="w-icon-dropdown-toggle"></div>
-                  <div>Employees</div>
-                </div>
-                <nav class="dropdown-list w-dropdown-list">
-                  <a href="./employee-enrollment.html" class="dropdown-link w-dropdown-link"
-                    >Enrollment, Forms, and Resources</a
-                  >
-                  <a href="./benefits.html" class="dropdown-link w-dropdown-link"
-                    >Carrier Benefits Information</a
-                  >
-                  <a href="./premiums.html" class="dropdown-link w-dropdown-link"
-                    >Benefit Premiums</a
-                  >
-               
-                </nav>
+            </div>
+
+            <!-- Employees dropdown -->
+            <div class="nav-dropdown">
+              <button class="navlink nav-dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Employees
+                <i class="bx bx-chevron-down nav-dropdown-arrow" aria-hidden="true"></i>
+              </button>
+              <div class="dropdown-list" role="menu">
+                <a href="./employee-enrollment.html" class="dropdown-link" role="menuitem">Enrollment, Forms, and Resources</a>
+                <a href="./benefits.html" class="dropdown-link" role="menuitem">Carrier Benefits Information</a>
+                <a href="./premiums.html" class="dropdown-link" role="menuitem">Benefit Premiums</a>
               </div>
-              <a href="./contact-us.html" class="navlink w-nav-link">Contact</a>
-              <a href="https://nmpsiaonline.nmpsia.com/" class="navlink w-nav-link">Benefits Portal Login</a>
-              <a href="#" class="search-toggle navlink w-nav-link" id="searchToggle">
-                <i class="bx bx-search" style="color: #fff;font-size: 1.2rem;"></i>
-              </a>
-            </nav>
-            <button class="menu-button w-nav-button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-              <div class="w-icon-nav-menu"></div>
+            </div>
+
+            <a href="./contact-us.html" class="navlink nav-link">Contact</a>
+            <a href="https://nmpsiaonline.nmpsia.com/" class="navlink nav-link" target="_blank" rel="noopener">Benefits Portal Login</a>
+            <button class="navlink search-toggle" id="searchToggle" aria-label="Open site search">
+              <i class="bx bx-search" style="color: #fff; font-size: 1.2rem;" aria-hidden="true"></i>
             </button>
-          </div>
+          </nav>
+
+          <button
+            class="nav-hamburger"
+            id="navToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <i class="bx bx-menu" style="font-size: 24px; color: #fff;" aria-hidden="true"></i>
+          </button>
         </div>
-      </section>
-      
+      </header>
+
       <!-- Search Modal -->
-      <div class="search-modal" id="searchModal">
+      <div class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-label="Site search">
         <div class="search-modal-backdrop" id="searchModalBackdrop"></div>
         <div class="search-modal-content">
           <div class="search-modal-header">
             <h3>Search NMPSIA</h3>
             <button class="search-modal-close" id="searchModalClose" aria-label="Close search">
-              <i class="bx bx-x" style="color: #fff;font-size: 1.5rem;"></i>
+              <i class="bx bx-x" style="color: #fff; font-size: 1.5rem;" aria-hidden="true"></i>
             </button>
           </div>
           <form class="search-modal-form" action="search.html" method="GET">
             <div class="search-input-wrapper">
-              <input 
-                type="text" 
-                name="q" 
-                class="search-modal-input" 
-                placeholder="Enter your search terms..." 
+              <input
+                type="search"
+                name="q"
+                class="search-modal-input"
+                placeholder="Enter your search terms..."
                 id="searchModalInput"
                 autocomplete="off"
+                aria-label="Search query"
                 required
               />
               <button type="submit" class="search-modal-submit" aria-label="Submit search">
-                <i class="bx bx-search" style="color: #fff;font-size: 1.2rem;"></i>
+                <i class="bx bx-search" style="color: #fff; font-size: 1.2rem;" aria-hidden="true"></i>
                 Search
               </button>
             </div>
           </form>
         </div>
       </div>
-        `;
+    `;
 
-    // Initialize Webflow functionality after component is loaded
-    this.initializeWebflow();
-
-    // Initialize search functionality
-    this.initializeSearch();
-
-    // Initialize skip link target on the main element
-    this.initializeSkipLink();
+    this._initSkipLink();
+    this._initNav();
+    this._initSearch();
   }
 
-  initializeSkipLink() {
-    // Find the main element and add id for skip link target
-    const mainElement = document.querySelector("main");
-    if (mainElement && !mainElement.id) {
-      mainElement.id = "main-content";
-      mainElement.setAttribute("tabindex", "-1");
+  _initSkipLink() {
+    const main = document.querySelector("main");
+    if (main && !main.id) {
+      main.id = "main-content";
+      main.setAttribute("tabindex", "-1");
     }
   }
 
-  initializeWebflow() {
-    // Load jQuery if not already loaded
-    // (Boxicons and Webflow CSS are loaded via static <link> tags in each page's <head>)
-    if (typeof jQuery === "undefined") {
-      const jqueryScript = document.createElement("script");
-      jqueryScript.src =
-        "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68926bee194567c80801ac68";
-      jqueryScript.integrity =
-        "sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=";
-      jqueryScript.crossOrigin = "anonymous";
-      jqueryScript.onload = () => {
-        this.loadWebflowJS();
-      };
-      document.head.appendChild(jqueryScript);
-    } else {
-      this.loadWebflowJS();
-    }
-  }
+  _initNav() {
+    const hamburger = this.querySelector("#navToggle");
+    const navMenu = this.querySelector("#nav-menu");
+    const dropdowns = [...this.querySelectorAll(".nav-dropdown")];
 
-  loadWebflowJS() {
-    // Load Webflow JS if not already loaded
-    if (!document.querySelector('script[src*="webflow.js"]')) {
-      const webflowScript = document.createElement("script");
-      webflowScript.src = "css/webflow_navbar/js/webflow.js";
-      webflowScript.type = "text/javascript";
-      webflowScript.onload = () => {
-        this.initializeWebflowComponents();
-      };
-      document.head.appendChild(webflowScript);
-    } else {
-      this.initializeWebflowComponents();
-    }
-  }
+    // Hamburger toggle
+    hamburger.addEventListener("click", () => {
+      const isOpen = navMenu.classList.toggle("open");
+      hamburger.setAttribute("aria-expanded", String(isOpen));
+      // Close all dropdowns when collapsing the menu
+      if (!isOpen) dropdowns.forEach((d) => this._closeDropdown(d));
+    });
 
-  initializeWebflowComponents() {
-    // Initialize Webflow components for this navbar instance
-    const navbar = this.querySelector(".w-nav");
-    if (navbar && window.Webflow) {
-      // Re-initialize Webflow components for this specific navbar
-      window.Webflow.push(() => {
-        // Force re-initialization of dropdowns and navigation
-        const dropdowns = navbar.querySelectorAll(".w-dropdown");
-        dropdowns.forEach((dropdown) => {
-          if (window.Webflow && window.Webflow.require) {
-            try {
-              window.Webflow.require("ix2").init();
-            } catch (e) {
-              console.log("Webflow components initialized");
-            }
-          }
-        });
+    dropdowns.forEach((dropdown) => {
+      const toggle = dropdown.querySelector(".nav-dropdown-toggle");
+      let hoverTimer;
+
+      // Desktop: hover to open
+      dropdown.addEventListener("mouseenter", () => {
+        if (window.innerWidth > 992) {
+          clearTimeout(hoverTimer);
+          dropdowns.forEach((d) => { if (d !== dropdown) this._closeDropdown(d); });
+          this._openDropdown(dropdown);
+        }
       });
-    }
+      dropdown.addEventListener("mouseleave", () => {
+        if (window.innerWidth > 992) {
+          hoverTimer = setTimeout(() => this._closeDropdown(dropdown), 100);
+        }
+      });
+
+      // Click: toggle (mobile + keyboard)
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const wasOpen = dropdown.classList.contains("open");
+        dropdowns.forEach((d) => this._closeDropdown(d));
+        if (!wasOpen) this._openDropdown(dropdown);
+      });
+
+      // Escape key inside dropdown
+      dropdown.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          this._closeDropdown(dropdown);
+          toggle.focus();
+        }
+      });
+    });
+
+    // Close nav + dropdowns on outside click
+    document.addEventListener("click", (e) => {
+      if (!this.contains(e.target)) {
+        navMenu.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+        dropdowns.forEach((d) => this._closeDropdown(d));
+      }
+    });
+
+    // Close nav + dropdowns on Escape (global)
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        navMenu.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+        dropdowns.forEach((d) => this._closeDropdown(d));
+      }
+    });
   }
 
-  initializeSearch() {
-    // Initialize search toggle functionality
-    this.setupSearchFunctionality();
-
-    // Re-initialize search when mobile menu opens (for Webflow navigation)
-    this.setupMobileMenuHandler();
+  _openDropdown(dropdown) {
+    dropdown.classList.add("open");
+    dropdown.querySelector(".nav-dropdown-toggle").setAttribute("aria-expanded", "true");
   }
 
-  setupSearchFunctionality() {
+  _closeDropdown(dropdown) {
+    dropdown.classList.remove("open");
+    dropdown.querySelector(".nav-dropdown-toggle").setAttribute("aria-expanded", "false");
+  }
+
+  _initSearch() {
     const searchToggle = this.querySelector("#searchToggle");
     const searchModal = this.querySelector("#searchModal");
     const searchModalBackdrop = this.querySelector("#searchModalBackdrop");
     const searchModalClose = this.querySelector("#searchModalClose");
     const searchModalInput = this.querySelector("#searchModalInput");
 
-    if (searchToggle && searchModal) {
-      // Remove any existing event listeners to prevent duplicates
-      if (this.handleSearchToggle) {
-        searchToggle.removeEventListener("click", this.handleSearchToggle);
+    if (!searchToggle || !searchModal) return;
+
+    searchToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      this._openSearch();
+    });
+
+    searchModalBackdrop.addEventListener("click", () => this._closeSearch());
+    searchModalClose.addEventListener("click", () => this._closeSearch());
+
+    // Focus input after transition
+    searchModal.addEventListener("transitionend", () => {
+      if (searchModal.classList.contains("active")) {
+        searchModalInput.focus();
       }
+    });
 
-      // Store the handler as a property so we can remove it later
-      this.handleSearchToggle = (e) => {
-        e.preventDefault();
-        e.stopPropagation(); // Prevent navbar menu from closing
-        this.openSearchModal();
-      };
-
-      // Add the event listener
-      searchToggle.addEventListener("click", this.handleSearchToggle);
-
-      // Close modal handlers
-      const closeModal = () => {
-        this.closeSearchModal();
-      };
-
-      // Backdrop click
-      if (searchModalBackdrop) {
-        searchModalBackdrop.addEventListener("click", closeModal);
+    // Escape closes search (registered separately from nav Escape handler)
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && searchModal.classList.contains("active")) {
+        this._closeSearch();
       }
-
-      // Close button
-      if (searchModalClose) {
-        searchModalClose.addEventListener("click", closeModal);
-      }
-
-      // Escape key
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && searchModal.classList.contains("active")) {
-          closeModal();
-        }
-      });
-
-      // Focus input when modal opens
-      if (searchModalInput) {
-        searchModal.addEventListener("transitionend", () => {
-          if (searchModal.classList.contains("active")) {
-            searchModalInput.focus();
-          }
-        });
-      }
-    }
+    });
   }
 
-  openSearchModal() {
+  _openSearch() {
     const searchModal = this.querySelector("#searchModal");
     if (searchModal) {
       searchModal.classList.add("active");
-      document.body.style.overflow = "hidden"; // Prevent background scrolling
+      document.body.style.overflow = "hidden";
     }
   }
 
-  closeSearchModal() {
+  _closeSearch() {
     const searchModal = this.querySelector("#searchModal");
     if (searchModal) {
       searchModal.classList.remove("active");
-      document.body.style.overflow = ""; // Restore scrolling
+      document.body.style.overflow = "";
     }
-  }
-
-  setupMobileMenuHandler() {
-    // Wait for Webflow to be ready
-    if (window.Webflow) {
-      window.Webflow.push(() => {
-        this.observeMobileMenu();
-      });
-    } else {
-      // Fallback: observe the navbar for changes
-      setTimeout(() => {
-        this.observeMobileMenu();
-      }, 1000);
-    }
-  }
-
-  observeMobileMenu() {
-    const navbar = this.querySelector(".w-nav");
-    if (!navbar) return;
-
-    // Use MutationObserver to watch for class changes on the navbar
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (
-          mutation.type === "attributes" &&
-          mutation.attributeName === "class"
-        ) {
-          const navMenu = navbar.querySelector(".w-nav-menu");
-          const menuButton = navbar.querySelector(".w-nav-button");
-          const isOpen = navMenu && navMenu.classList.contains("w--open");
-
-          // Update aria-expanded state on hamburger button
-          if (menuButton) {
-            menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
-          }
-
-          if (isOpen) {
-            // Mobile menu is open, re-setup search functionality
-            setTimeout(() => {
-              this.setupSearchFunctionality();
-            }, 100);
-          }
-        }
-      });
-    });
-
-    observer.observe(navbar, {
-      attributes: true,
-      attributeFilter: ["class"],
-    });
   }
 }
 
-customElements.define("webflow-navbar-component", WebflowNavbar);
+customElements.define("webflow-navbar-component", SiteNavbar);
