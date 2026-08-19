@@ -1817,7 +1817,7 @@ body.modern-body::after {
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 1.5rem 1.5rem 1.5rem 0.75rem;
+  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
   max-height: calc(100vh - 4rem);
   min-height: 0;
   position: sticky;
@@ -1907,15 +1907,15 @@ body.modern-body::after {
   align-items: flex-start;
   gap: 0.5rem;
   /* padding: 1rem 1.25rem; */
-  padding: 0.5rem 1rem 0.5rem 0.75rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   color: #495057;
   text-decoration: none;
   border-radius: 10px;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
-  font-weight: 500;
-  min-height: 48px;
+  /* font-weight: 500; */
+  /* min-height: 48px; */
   cursor: pointer;
   position: relative;
   z-index: 1;
@@ -1927,7 +1927,7 @@ body.modern-body::after {
 
 @media screen and (min-width: 480px) {
   .nav-item {
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
