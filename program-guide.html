@@ -160,6 +160,29 @@
           overflow: visible;
         }
       }
+
+      /* ── Per-section card layout ──
+         Strip the single big card from the .main-content wrapper and
+         give each top-level <section> its own floating card instead,
+         so navigating between sections feels distinct. */
+      .main-content.official-letter-doc {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .main-content.official-letter-doc > section,
+      .main-content.official-letter-doc > div[id] {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 2.5rem;
+        margin: 2rem 0;
+      }
     </style>
     <!-- components -->
     <script
