@@ -24,8 +24,7 @@ class SiteNavbar extends HTMLElement {
                 <a href="./plan.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; About the Authority</a>
                 <a href="./board-login.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Board Login</a>
                 <a href="./benefits.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Benefits Division</a>
-                <a href="./wellness.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Wellness Programs Division</a>
-                <a href="./behavioral-health.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Behavioral Health Resources</a>
+               
                 <a href="./risk.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Risk Division</a>
                 <a href="./procurements.html" class="dropdown-link" role="menuitem">NMPSIA &ndash; Procurements</a>
                 <a href="./plan.html#IPRArequest" class="dropdown-link" role="menuitem">Request Inspection of Public Records (IPRA)</a>
@@ -45,6 +44,8 @@ class SiteNavbar extends HTMLElement {
                 <a href="./employer-enrollment.html" class="dropdown-link" role="menuitem">Enrollment, Forms, and Resources</a>
                 <a href="./benefits.html" class="dropdown-link" role="menuitem">Carrier Benefits Information</a>
                 <a href="./premiums.html" class="dropdown-link" role="menuitem">Benefit Premiums</a>
+                <a href="./wellness.html" class="dropdown-link" role="menuitem">Wellness and Well-Being Resources</a>
+                <a href="./behavioral-health.html" class="dropdown-link" role="menuitem">Behavioral Health Resources</a>
               </div>
             </div>
 
@@ -58,6 +59,8 @@ class SiteNavbar extends HTMLElement {
                 <a href="./employee-enrollment.html" class="dropdown-link" role="menuitem">Enrollment, Forms, and Resources</a>
                 <a href="./benefits.html" class="dropdown-link" role="menuitem">Carrier Benefits Information</a>
                 <a href="./premiums.html" class="dropdown-link" role="menuitem">Benefit Premiums</a>
+                <a href="./wellness.html" class="dropdown-link" role="menuitem">Wellness and Well-Being Resources</a>
+                <a href="./behavioral-health.html" class="dropdown-link" role="menuitem">Behavioral Health Resources</a>
               </div>
             </div>
 
@@ -146,7 +149,9 @@ class SiteNavbar extends HTMLElement {
       dropdown.addEventListener("mouseenter", () => {
         if (window.innerWidth > 992) {
           clearTimeout(hoverTimer);
-          dropdowns.forEach((d) => { if (d !== dropdown) this._closeDropdown(d); });
+          dropdowns.forEach((d) => {
+            if (d !== dropdown) this._closeDropdown(d);
+          });
           this._openDropdown(dropdown);
         }
       });
@@ -194,12 +199,16 @@ class SiteNavbar extends HTMLElement {
 
   _openDropdown(dropdown) {
     dropdown.classList.add("open");
-    dropdown.querySelector(".nav-dropdown-toggle").setAttribute("aria-expanded", "true");
+    dropdown
+      .querySelector(".nav-dropdown-toggle")
+      .setAttribute("aria-expanded", "true");
   }
 
   _closeDropdown(dropdown) {
     dropdown.classList.remove("open");
-    dropdown.querySelector(".nav-dropdown-toggle").setAttribute("aria-expanded", "false");
+    dropdown
+      .querySelector(".nav-dropdown-toggle")
+      .setAttribute("aria-expanded", "false");
   }
 
   _initSearch() {
