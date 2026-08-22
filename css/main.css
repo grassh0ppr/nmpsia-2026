@@ -766,15 +766,22 @@ body.modern-body::after {
   gap: 2rem;
 }
 
-.hero-heading-container {
+.hero-title-row {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.hero-heading-container .hero-logo {
-  height: 120px;
+.hero-title-row h1 {
+  margin-bottom: 0;
+}
+
+.hero-title-row img {
+  height: 80px;
+  width: auto;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .hero-content,
@@ -1817,7 +1824,7 @@ body.modern-body::after {
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.75rem 0.75rem 0.75rem 0.75rem;
+  padding: 1.25rem 0.75rem 0.75rem 0.75rem;
   max-height: calc(100vh - 4rem);
   min-height: 0;
   position: sticky;
@@ -3133,15 +3140,8 @@ body.modern-body::after {
 }
 
 @media (max-width: 992px) {
-  .hero-heading-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .hero-heading-container .hero-logo {
-    height: 100px;
+  .hero-title-row img {
+    height: 65px;
   }
 
   .hero-title,

@@ -207,29 +207,31 @@
         margin: 2rem 0;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .download-hero-title-row {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 2rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
       }
 
-      .download-hero-content {
-        flex: 1;
-        text-align: left;
+      .download-hero-title-row h1 {
+        margin-bottom: 0;
       }
 
-      .download-hero-logo {
+      .download-hero-title-row .download-logo {
+        height: 80px;
+        width: auto;
         flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
       }
 
       .download-hero-title {
         font-size: 3.5rem;
         font-weight: 700;
         color: #2c3e50;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         line-height: 1.2;
       }
 
@@ -238,13 +240,6 @@
         color: #7f8c8d;
         margin-bottom: 2rem;
         line-height: 1.6;
-      }
-
-      .download-logo {
-        max-height: 120px;
-        width: auto;
-        margin: 1rem 0;
-        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
       }
 
       /* Meeting Sections */
@@ -397,9 +392,17 @@
 
       @media (max-width: 768px) {
         .download-hero-section {
-          flex-direction: column;
-          text-align: center;
           padding: 2rem 1.5rem;
+        }
+
+        .download-hero-title-row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .download-hero-title-row .download-logo {
+          height: 60px;
         }
 
         .download-hero-title {
@@ -408,10 +411,6 @@
 
         .download-hero-subtitle {
           font-size: 1.1rem;
-        }
-
-        .download-logo {
-          max-height: 80px;
         }
 
         .section {
@@ -748,18 +747,18 @@
         <!-- Hero Section -->
         <section class="download-hero-section">
           <div class="download-hero-content">
-            <h1 class="download-hero-title">Download Center</h1>
+            <div class="download-hero-title-row">
+              <img
+                src="images/nmpsia_logo_2024.png"
+                alt="NMPSIA logo"
+                class="download-logo"
+              />
+              <h1 class="download-hero-title">Download Center</h1>
+            </div>
             <p class="download-hero-subtitle">
               Access meeting materials, agendas, and packets from NMPSIA board
               and committee meetings
             </p>
-          </div>
-          <div class="download-hero-logo">
-            <img
-              src="images/nmpsia_logo_2024.png"
-              alt="NMPSIA logo"
-              class="download-logo"
-            />
           </div>
         </section>
 
