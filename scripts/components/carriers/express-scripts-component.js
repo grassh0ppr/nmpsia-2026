@@ -16,6 +16,23 @@ class ExpressScriptsInfo extends HTMLElement {
           href="https://www.express-scripts.com/login?routingpage=/consumer/mybenefits/pl.jsp&CID=se:bob:pharmacyrx1:Bing2025:B:RT0&msclkid=77814cbed3ea17dbe5e026b982e64012&gclid=77814cbed3ea17dbe5e026b982e64012&gclsrc=3p.ds">
           Member Portal Login</a>
       </li>
+      <li>
+        <i class="bx bxs-file-pdf"></i>
+        <a target="_blank" href="/PDFs/How_To_Portal_Express_Scripts.pdf">
+          How to Register - Express Scripts Portal</a>
+      </li>
+
+      <h4 class="mt-4 mb-3">Omada</h4>
+      <li>
+        <i class="bx bx-link-external"></i>
+        <a target="_blank" href="https://app.omadahealth.com/login">
+          Omada Portal Login</a>
+      </li>
+      <li>
+        <i class="bx bx-link-external"></i>
+        <a target="_blank" href="https://app.omadahealth.com/registration/v2?attribution_session_id=d23f27b3-a4bb-4170-9159-d9cafd148a88&deployment_code=esi_standard&landing_page_digest=387c447c4e9503163ed092be997cadddfd4c8682a7d222ef29e8b24122015662&landing_slug=express-scripts&possible_conditions_at_entry%5B%5D=prevention&possible_conditions_at_entry%5B%5D=hypertension&possible_conditions_at_entry%5B%5D=type2_diabetes&possible_conditions_at_entry%5B%5D=type1_diabetes">
+          Omada Portal - Create an Account</a>
+      </li>
 
       <h4 class="mt-4 mb-3">Contact Information</h4>
       <li>
