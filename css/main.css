@@ -1399,18 +1399,18 @@ body.modern-body::after {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 1.5rem;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   min-height: 280px;
 }
-
+/* 
 .carrier-info-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
   border-color: #667eea;
-}
+} */
 
 .carrier-info-card:focus {
   outline: 2px solid #667eea;
@@ -2099,7 +2099,7 @@ body.modern-body::after {
 .accordion-button {
   line-height: 1.25;
   gap: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #204f9a;
   font-weight: 700;
 }
@@ -4299,15 +4299,22 @@ body.modern-body::after {
   box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
-.grid-layout-docs li .bxs-file-pdf {
+.grid-layout-docs li .bxs-file-pdf,
+.grid-layout-docs li .bxs-movie-play {
   color: #204f9a;
   font-size: 1.5rem;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
-.grid-layout-docs li:hover .bxs-file-pdf {
+.grid-layout-docs li:hover .bxs-file-pdf,
+.grid-layout-docs li:hover .bxs-movie-play {
   transform: scale(1.1);
+}
+
+.carrier-info-card .grid-layout-docs {
+  grid-template-columns: 1fr;
+  margin: auto 0 0 0;
 }
 
 .grid-layout-docs li a {
