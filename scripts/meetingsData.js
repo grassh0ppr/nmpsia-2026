@@ -9,7 +9,7 @@ export const meetings = {
       },
       RAC: {
         date: "02",
-        documents: ["agenda"],
+        documents: ["agenda", "packet"],
       },
       IFR: {
         date: "03",
@@ -17,7 +17,7 @@ export const meetings = {
       },
       Board: {
         date: "03",
-        documents: ["agenda"],
+        documents: ["agenda", "packet"],
       },
     },
   },
