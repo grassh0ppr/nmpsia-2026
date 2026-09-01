@@ -9,8 +9,7 @@ const homepageNews = [
     title: "Notice of Public Meetings September 2 & 3, 2026",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
-    linkHref:
-      "/nmpsiadownload/202609/notice_of_public_meetings.pdf",
+    linkHref: "/nmpsiadownload/202609/notice_of_public_meetings.pdf",
     linkText: "View notice",
   },
   // BAC Meeting
@@ -120,15 +119,90 @@ const homepageNews = [
   //   linkHref: "/wellness/august_2026/BCBS Webinar - Trust Your Gut and Support a Healthy Microbiome.pdf",
   //   linkText: "View flyer",
   // },
+
+  // September wellness events
   {
     date: {
-      day: "27",
-      month: "August",
+      day: "14",
+      month: "September",
     },
-    title: "August 2026 Cooking Show",
+    title: "Walktober Registration Opens!",
     description:
-      "Join us for this month's wellness cooking show. View the flyer for details and registration information.",
-    linkHref: "/wellness/august_2026/08_August Cooking Show_2026.pdf",
+      "Registration is now open for the NMPSIA Walktober walking challenge, starting October 1. View the flyer for details on how to sign up and participate.",
+    linkHref:
+      "https://nmpsia.com/wellness/september_2026/NMPSIA Walktober Coming Soon '26.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "16",
+      month: "September",
+    },
+    title: "TSG Webinar - Strong is the New Long: Muscle for Longevity",
+    description:
+      "Join The Solutions Group for a wellness webinar on building muscle for long-term health and longevity. 12:00 p.m. — recording available. View the flyer for details and registration information.",
+    linkHref:
+      "https://nmpsia.com/wellness/september_2026/September Wellness 2026 Webinars TSG_09.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "22",
+      month: "September",
+    },
+    title: "Caregiver Support Webinar",
+    description:
+      "Join us for a webinar on caregiver support resources and strategies for balancing caregiving with your own well-being. 3:30 p.m. View the flyer for details and registration information.",
+    linkHref:
+      "https://nmpsia.com/wellness/september_2026/Caregiver Support Webinar.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "24",
+      month: "September",
+    },
+    title: "TSG Cooking Show - Golden Grains & Gentle Gains",
+    description:
+      "Join The Solutions Group for this month's wellness cooking show featuring whole grains and strength-building nutrition. 12:00 p.m. — recording available. View the flyer for details.",
+    linkHref:
+      "https://nmpsia.com/wellness/september_2026/09_September Cooking Show_2026.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "28",
+      month: "September",
+    },
+    title: "Breast Cancer Awareness Webinar",
+    description:
+      "Join us for a brief but important webinar on breast cancer awareness, screenings, and early detection. Sessions at 8:30 a.m. & 3:45 p.m. — only 15 minutes! View the flyer for details and registration information.",
+    linkHref:
+      "https://nmpsia.com/wellness/september_2026/Breast Cancer Awareness Webinar.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "30",
+      month: "September",
+    },
+    title: "Webinar - Important Wellness Screenings As We Age",
+    description:
+      "Learn which preventive screenings matter most at every stage of life. Sessions at 8:30 a.m. & 3:45 p.m. — only 15 minutes! View the flyer for details and registration information.",
+    linkHref:
+      "https://nmpsia.com/wellness/september_2026/Important Wellness Screenings As We Age.pdf",
+    linkText: "View flyer",
+  },
+  {
+    date: {
+      day: "1",
+      month: "October",
+    },
+    title: "Walktober Begins!",
+    description:
+      "The NMPSIA Walktober walking challenge kicks off today! View the flyer for details on how to participate and earn wellness rewards throughout October.",
+    linkHref:
+      "https://nmpsia.com/wellness/september_2026/NMPSIA Walktober Coming Soon '26.pdf",
     linkText: "View flyer",
   },
 

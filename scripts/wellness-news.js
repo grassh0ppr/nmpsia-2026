@@ -1,5 +1,83 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "September 2026": [
+    {
+      name: "Wellness Communications - September 2026",
+      url: "https://nmpsia.com/wellness/september_2026/Wellness Communication.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Calendar - September 2026",
+      url: "https://nmpsia.com/wellness/september_2026/NMPSIA Wellness Calendar September 2026.pdf",
+    },
+    {
+      name: "NMPSIA September 2026 Newsletter",
+      url: "https://nmpsia.com/wellness/september_2026/NMPSIA September Newsletter.pdf",
+    },
+    {
+      name: "TSG Well-Being 2026 Webinars - September",
+      url: "https://nmpsia.com/wellness/september_2026/September Wellness 2026 Webinars TSG_09.pdf",
+    },
+    {
+      name: "September 2026 Cooking Show",
+      url: "https://nmpsia.com/wellness/september_2026/09_September Cooking Show_2026.pdf",
+    },
+    {
+      name: "September 2026 Observance Poster (English)",
+      url: "https://nmpsia.com/wellness/september_2026/09_September Observance_2026.pdf",
+    },
+    {
+      name: "September 2026 Observance Poster (Español)",
+      url: "https://nmpsia.com/wellness/september_2026/09_September Observance_2026 SP.pdf",
+    },
+    {
+      name: "Well-Balanced September 2026 Newsletter",
+      url: "https://nmpsia.com/wellness/september_2026/wa2614804-well-balanced-september-26_fnl.pdf",
+    },
+    {
+      name: "Life on Mindfulness Program Flyer",
+      url: "https://nmpsia.com/wellness/september_2026/Life on Mindfulness - NMPSIA.pdf",
+    },
+    {
+      name: "Nations Nutrition - Guide to Seasonal Eating",
+      url: "https://nmpsia.com/wellness/september_2026/Nations Nutrition- Guide to Seasonal Eating.pdf",
+    },
+    {
+      name: "Mindful Eating Program Flyer",
+      url: "https://nmpsia.com/wellness/september_2026/NMPSIA - Mindful Eating Program.pdf",
+    },
+    {
+      name: "NMPSIA Walktober - Coming Soon",
+      url: "https://nmpsia.com/wellness/september_2026/NMPSIA Walktober Coming Soon '26.pdf",
+    },
+    {
+      name: "Preventive Health Screening Flyer",
+      url: "https://nmpsia.com/wellness/september_2026/Preventive Health Screening Flyer.pdf",
+    },
+    {
+      name: "MyPRES Member Portal Flyer - Medicare and Commercial",
+      url: "https://nmpsia.com/wellness/september_2026/2026 MYPRES FLYER_MEDICARE AND COMMERCIAL.pdf",
+    },
+    {
+      name: "MyPRES Member Portal Flyer - Medicare and Commercial (Español)",
+      url: "https://nmpsia.com/wellness/september_2026/2026 MYPRES FLYER MEDICARE AND COMMERCIAL_SPANISH.pdf",
+    },
+    {
+      name: "Breast Cancer Awareness Webinar",
+      url: "https://nmpsia.com/wellness/september_2026/Breast Cancer Awareness Webinar.pdf",
+    },
+    {
+      name: "Caregiver Support Webinar",
+      url: "https://nmpsia.com/wellness/september_2026/Caregiver Support Webinar.pdf",
+    },
+    {
+      name: "Feeling Stiff? Full Body Workplace Stretching 6-Week Program",
+      url: "https://nmpsia.com/wellness/september_2026/Full Body Workplace Stretching Program.pdf",
+    },
+    {
+      name: "Important Wellness Screenings As We Age",
+      url: "https://nmpsia.com/wellness/september_2026/Important Wellness Screenings As We Age.pdf",
+    },
+  ],
   "August 2026": [
     {
       name: "Wellness Communications - August 2026",
