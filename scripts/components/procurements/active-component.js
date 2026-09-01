@@ -18,6 +18,13 @@ class ActiveProcurements extends HTMLElement {
           </thead>
           <tbody>
           <tr>
+          <td>09/25/2026</td>
+          <td>RFP# 342-2027-01</td>
+          <td>
+            <a href="/docs/Insurance_Broker_Consulting_Administrative_Services_and_Loss_Prevention_Services_Amendment_1_POST.pdf" target="_blank">Amendment #1 - Insurance Broker, Consulting, Administration Services and Loss Prevention Services</a>
+          </td>
+        </tr>
+          <tr>
             <td>09/25/2026</td>
             <td>RFP# 342-2027-01</td>
             <td>
