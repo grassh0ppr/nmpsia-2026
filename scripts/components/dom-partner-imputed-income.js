@@ -16,19 +16,19 @@ class DomesticPtnrImputedIncome extends HTMLElement {
                           <ul>
                             <li>
                               <a target="_blank" class="dropdown-item"
-                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Imputed Income - EE Only and DPs - Effective October 1 2026.pdf"><i
+                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Inputed Income - EE Only and DPs - Effective October 1 2026.pdf"><i
                                   class="bx bxs-file-pdf"></i> Any salary, previously
                                 employee only coverage (effective 10/1/2026 & 1/1/2027)</a>
                             </li>
                             <li>
                               <a target="_blank" class="dropdown-item"
-                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Imputed Income - Two Party and DPs - Effective October 1 2026.pdf"><i
+                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Inputed Income - Two Party and DPs - Effective October 1 2026.pdf"><i
                                   class="bx bxs-file-pdf"></i> Any salary, previously
                                 employee plus one coverage (effective 10/1/2026 & 1/1/2027)</a>
                             </li>
                             <li>
                               <a target="_blank" class="dropdown-item"
-                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Imputed Income - Family and DPs - Effective October 1 2026.pdf"><i
+                                href="/PDFs/imputed_income/2026/NMPSIA - 2026-2027 Inputed Income - Family and DPs - Effective October 1 2026.pdf"><i
                                   class="bx bxs-file-pdf"></i> Any salary, previously
                                 family coverage (effective 10/1/2026 & 1/1/2027)</a>
                             </li>
@@ -345,5 +345,5 @@ class DomesticPtnrImputedIncome extends HTMLElement {
 }
 customElements.define(
   "domestic-partner-imputed-income",
-  DomesticPtnrImputedIncome
+  DomesticPtnrImputedIncome,
 );
