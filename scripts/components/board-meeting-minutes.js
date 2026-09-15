@@ -19,10 +19,15 @@ class BoardMeetingMinutes extends HTMLElement {
                      data-bs-parent="#accordionBMM">
                      <div class="accordion-body">
                          <ul class="content-list">
-                         <li>
+                            <li>
+                                <i class="bx bxs-file-pdf"></i>
+                                <a target="_blank" href="/nmpsiadownload/202609/minutes/Sept Board Minutes-DRAFT accepted changes CR.pdf">
+                                    September 2026 (Draft)</a>
+                            </li>
+                            <li>
                                  <i class="bx bxs-file-pdf"></i>
-                                 <a target="_blank" href="/PDFs/July_2026_Board_Minutes_DRAFT_073026.pdf">
-                                     July 2026 (Draft)</a>
+                                 <a target="_blank" href="/nmpsiadownload/202607/minutes/Jul 2026 Board Minutes.pdf">
+                                     July 2026</a>
                              </li>
                              <li>
                                  <i class="bx bxs-file-pdf"></i>
