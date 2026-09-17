@@ -13,11 +13,11 @@ class DiabetesMgmt extends HTMLElement {
         />
       </div>
 
-      <h3 class="sub-heading">CVS Caremark</h3>
+      <h3 class="sub-heading">Express Scripts by Evernorth</h3>
       <ul class="content-list">
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a href="/pdfs/Diabetic Meter Program (2).pdf" target="_blank"
+          <a href="./pdfs/Evernorth_Client_Led_Toolkit_2026_Multi_Product_PVN_DM_HTN_with_CGM_Flyer.pdf" target="_blank"
             >The No-Cost Diabetic Meter Program</a
           >
         </li>
