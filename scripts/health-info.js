@@ -341,6 +341,121 @@ function generatePDF(formData) {
   );
 }
 
+// ─── DEV HELPER ──────────────────────────────────────────────────────────────
+// Run pdfTest() in the browser console to enter test mode:
+//   - Pre-fills the form with dummy data
+//   - Advances to the review/confirmation step
+//   - Injects a "Test PDF Gen" button that generates and downloads the PDF
+//     without submitting to the endpoint or requiring reCAPTCHA
+console.log(
+  "%c[health-info] Dev helper available: run pdfTest() in the console to test PDF generation without submitting the form.",
+  "color: #667eea; font-weight: bold;",
+);
+
+window.pdfTest = async function pdfTest() {
+  const fill = (id, value) => {
+    const el = document.getElementById(id);
+    if (el) el.value = value;
+  };
+
+  // Pre-fill with dummy data
+  fill("policyHolderName", "Jane Smith (TEST)");
+  fill("patientName", "John Smith (TEST)");
+  fill("authorizedEntity", "test@example.com");
+  fill("contactPhone", "(505) 555-1234");
+  fill("providerName", "Dr. Maria Garcia (TEST)");
+  fill("providerPhone", "(505) 555-9876");
+  fill("providerEmail", "provider@testclinic.com");
+  fill(
+    "claimDetails",
+    "TEST SUBMISSION — On 03/15/2026 a knee MRI at ABC Imaging Center was denied. Desired outcome: claim approved.",
+  );
+  fill("signaturePatient", "Jane Smith");
+  fill("patientSigDate", new Date().toISOString().split("T")[0]);
+
+  const checkBCBS = document.getElementById("checkBCBS");
+  if (checkBCBS) checkBCBS.checked = true;
+
+  const inNetwork = document.getElementById("inNetwork");
+  if (inNetwork) inNetwork.checked = true;
+
+  const rightToRevoke = document.getElementById("rightToRevoke");
+  if (rightToRevoke) rightToRevoke.checked = true;
+
+  const disclosure = document.getElementById("understandDisclosureAndCopy");
+  if (disclosure) disclosure.checked = true;
+
+  // Advance to the review step (same as clicking "Review and Submit")
+  await showConfirmation();
+
+  // Inject test buttons once, right after the "Go back" button
+  if (!document.getElementById("testPdfPreviewBtn")) {
+    const generateAndRun = async (action, btn, label) => {
+      btn.disabled = true;
+      btn.textContent = "Generating…";
+      try {
+        const formData = new FormData(document.getElementById("healthInfoForm"));
+        const blob = await generatePDF(formData);
+        const url = URL.createObjectURL(blob);
+        action(url, blob);
+        btn.textContent = label;
+        console.log("[pdfTest] PDF generated successfully.");
+      } catch (err) {
+        console.error("[pdfTest] PDF generation failed:", err);
+        btn.textContent = "Error — see console";
+      } finally {
+        btn.disabled = false;
+      }
+    };
+
+    // Preview button — opens PDF in a new browser tab
+    const previewBtn = document.createElement("button");
+    previewBtn.id = "testPdfPreviewBtn";
+    previewBtn.type = "button";
+    previewBtn.className = "btn btn-warning ms-2";
+    previewBtn.textContent = "Test PDF (preview)";
+    previewBtn.title = "Dev only — opens the generated PDF in a new browser tab";
+    previewBtn.addEventListener("click", () =>
+      generateAndRun(
+        (url) => window.open(url, "_blank"),
+        previewBtn,
+        "Test PDF (preview)",
+      ),
+    );
+
+    // Download button — downloads PDF to device (opens in Acrobat etc.)
+    const downloadBtn = document.createElement("button");
+    downloadBtn.id = "testPdfDownloadBtn";
+    downloadBtn.type = "button";
+    downloadBtn.className = "btn btn-warning ms-2";
+    downloadBtn.textContent = "Test PDF (download)";
+    downloadBtn.title = "Dev only — downloads the generated PDF without submitting";
+    downloadBtn.addEventListener("click", () =>
+      generateAndRun(
+        (url) => {
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = `TEST_AuthRelease_${Date.now()}.pdf`;
+          a.click();
+          URL.revokeObjectURL(url);
+        },
+        downloadBtn,
+        "Test PDF (download)",
+      ),
+    );
+
+    const goBackBtn = document.getElementById("goBack");
+    goBackBtn.insertAdjacentElement("afterend", downloadBtn);
+    goBackBtn.insertAdjacentElement("afterend", previewBtn);
+  }
+
+  console.log(
+    '%c[pdfTest] Test mode active. Click the "Test PDF Gen" button on the page.',
+    "color: orange; font-weight: bold;",
+  );
+};
+// ─────────────────────────────────────────────────────────────────────────────
+
 function addPDFContent(doc, formData, x, y, lineHeight) {
   // Add the heading
   doc.setFontSize(18);
