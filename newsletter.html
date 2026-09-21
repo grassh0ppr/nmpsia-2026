@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>NMPSIA Spring 2026 Newsletter</title>
+    <title>NMPSIA Fall 2026 Newsletter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="NMPSIA Spring 2026 Newsletter with benefits information, wellness resources, and risk management tips."
+      content="NMPSIA Seasonal Newsletter with benefits information, wellness resources, and risk management tips."
     />
 
     <!-- Same hero background as rest of site (image + gradient) -->
@@ -29,6 +29,19 @@
       media="(max-width: 768px)"
     />
 
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <!-- redirect to /PDFs/Newsletters/Summer_2026_Newsletter_NMPSIA.pdf -->
     <!-- <meta
       http-equiv="refresh"
@@ -38,6 +51,15 @@
       rel="canonical"
       href="/PDFs/Newsletters/Summer_2026_Newsletter_NMPSIA.pdf"
     /> -->
+
+    <!-- NEWSLETTER CRAZY FONT(S) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       /* Newsletter-specific overrides; body background comes from main.css via .modern-body */
       body {
@@ -56,21 +78,143 @@
         margin-bottom: 2rem;
       }
 
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      .montserrat-heading {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        color: #0a3258;
+      }
+
+      .montserrat {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #041524;
+      }
+
+      .muted {
+        color: #5c6b74;
+      }
+
       #newsletter-title {
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         text-transform: uppercase;
-        font-size: 3rem;
+        text-align: center;
+        font-size: 9rem;
         font-weight: 600;
         color: #3d4446;
         margin-bottom: 1rem;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.055rem;
+        line-height: 1;
       }
 
       .newsletter-page {
-        max-width: 980px;
+        box-sizing: border-box;
+        max-width: 816px;
         margin: 0 auto;
         padding: 1.5rem 1rem 3rem;
         background-color: #fff;
+      }
+
+      .cover-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 0.5rem;
+      }
+
+      .cover-photo-text-box {
+        background-color: #aab6d6;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+
+      #mybenefits-login-link {
+        width: 100%;
+        background-image:
+          linear-gradient(
+            to bottom,
+            rgba(209, 232, 240, 0.715),
+            rgba(174, 193, 202, 0.649)
+          ),
+          url("./images/newsletters/igor-lolatto-TdwYsTmA2Bc-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2.4rem;
+        padding: 2.4rem;
+      }
+
+      #mybenefits-login-link h5 {
+        font-size: 2rem;
+      }
+
+      #mybenefits-login-link h5 a:link,
+      #mybenefits-login-link h5 a:visited {
+        color: #0a3258;
+      }
+
+      .blurb {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .blurb.custom-border {
+        border: 4px solid #d4bea5;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+
+      .column h4 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      .benefits-corner-image {
+        width: 50%;
+        border-radius: 0.5rem;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .text-column {
+        width: 50%;
+      }
+
+      .heading-flex {
+        display: flex;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
+
+      .heading-flex h4 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      .heading-flex img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .testimonial,
+      .testimonial .small-text {
+        background-color: #4a72be;
+        color: #fff;
       }
 
       @media (min-width: 768px) {
@@ -101,6 +245,10 @@
 
       h3 {
         font-size: 1.2rem;
+      }
+
+      .bonus-box h4.montserrat {
+        margin-top: 0;
       }
 
       p {
@@ -197,7 +345,7 @@
       }
 
       .newsletter-section {
-        margin-top: 2rem;
+        margin-top: 1.2rem;
       }
 
       .newsletter-section:first-of-type {
@@ -231,8 +379,14 @@
       }
 
       .callout {
-        background-image: linear-gradient(135deg, #ffeeb3 0%, #fdfcf9 100%);
-        border-left: 4px solid #f3c09a;
+        background-image: linear-gradient(135deg, #db9249 0%, #ffb486 100%);
+        border-left: 4px solid #723c16;
+
+        padding: 1rem 1.25rem;
+        border-radius: 0.5rem;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
       }
 
       .reminder {
@@ -241,8 +395,8 @@
       }
 
       .bonus-box {
-        background-color: #fff8d9;
-        border-left: 4px solid #8b5e3c;
+        background-color: #c8cdda;
+        border-left: 4px solid #0b3ea5;
         padding: 1rem 1.25rem;
         border-radius: 0.5rem;
       }
@@ -363,6 +517,8 @@
 
       .small-text {
         font-size: 0.88rem;
+        line-height: 1;
+        color: #5c6b74;
       }
 
       .page-number {
@@ -472,6 +628,14 @@
         margin-bottom: 0.25rem;
       }
 
+      .section-label.large {
+        font-size: 4rem;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        letter-spacing: 0;
+        margin: 0 auto;
+        line-height: 1;
+      }
+
       .recipe-image {
         margin-top: 1rem;
         border-radius: 0.75rem;
@@ -519,6 +683,68 @@
         border: 0;
       }
 
+      .tips {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .tip-card {
+        border-radius: 1.2rem;
+        padding: 1.2rem;
+      }
+
+      .tip-card h3 {
+        margin-top: 0;
+      }
+
+      .dreamsicle {
+        background-color: #ffb486;
+      }
+      .daisy {
+        background-color: #ffedbd;
+      }
+      .earth {
+        background-color: #bda494;
+      }
+      .sage {
+        background-color: #d0d7b5;
+      }
+      .apple {
+        background-color: #f7d3c7;
+      }
+
+      .fall-background-image {
+        background-image:
+          linear-gradient(#fef6f6db, #fff9f5d9),
+          url("./images/newsletters/fall-leaves-custom.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        padding: 2.5rem;
+        border-radius: 1.2rem;
+      }
+
+      .news-grid-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* two columns */
+        grid-template-rows: 1fr 1fr; /* two rows */
+        gap: 1rem;
+      }
+
+      .a.blurb {
+        grid-row: span 2; /* occupy both rows */
+        /* background-color: chartreuse; */
+      }
+
+      .blurb.image-background {
+        background-image:
+          linear-gradient(#fef6f6db, #fff9f5d9),
+          url("./images/newsletters/wonderlane-zXxPr5eeGVk-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
       @media (min-width: 900px) {
         .recipe-layout {
           display: flex;
@@ -539,9 +765,10 @@
   </head>
   <body class="modern-body">
     <main class="newsletter-page" aria-labelledby="newsletter-title">
+      <!------------ COVER PAGE -------------->
       <header class="newsletter-header">
-        <p class="newsletter-kicker">Newsletter &middot; Summer 2026</p>
-        <h1 id="newsletter-title">NMPSIA Summer 2026 Newsletter</h1>
+        <p class="newsletter-kicker">Newsletter &middot; Fall 2026</p>
+        <h1 id="newsletter-title">Newsletter</h1>
 
         <div class="newsletter-meta">
           <span>New Mexico Public Schools Insurance Authority</span>
@@ -550,37 +777,39 @@
 
         <a
           class="download-link"
-          href="/PDFs/Newsletters/Summer_2026_Newsletter_NMPSIA.pdf"
+          href="/PDFs/Newsletters/Fall_2026_Seasonal_Newsletter.pdf"
         >
-          Download the Summer 2026 newsletter (PDF)
+          Download the Fall 2026 newsletter (PDF)
         </a>
 
-        <p class="small-text" style="margin-top: 0.75rem">
+        <p class="italic muted my-4 ms-2" style="margin-top: 0.75rem">
+          <i class="fa-solid fa-info-circle"></i>
           This accessible HTML version presents the same information as the
           printed newsletter in a screen reader and mobile‑friendly format.
         </p>
 
         <div class="two-column">
-          <div>
+          <div class="cover-photo-text-box">
             <p>
-              Thank you to everyone who entered the Surprise Spring Raffle! The
-              1st place winner is featured here on the cover! 2nd and 3rd place
-              winners will be featured on the next two newsletters.
+              Thank you to everyone who entered the Surprise Spring Raffle!
+              <br />
+              The 2nd place photo is featured here on the cover!
             </p>
-            <p>Enjoy this piece of New Mexico from a fellow NMPSIA member!</p>
-            <small
-              >Photo was captured while on a walk near Tiger Park in Aztec, NM.
-              Photo credit: Betsy K.</small
+            <p>Enjoy this piece of New Mexico from a fellow NMPSIA member.</p>
+            <small class="bold"
+              >Photo was captured in the Sierra Blanca Mountains, Ruidoso, NM.
+              <br />Photo credit: K. Chamberlin</small
             >
           </div>
           <img
-            src="./images/newsletters/egret-on-rock.png"
-            alt="A picture of an egret on a rock out in Aztec, New Mexico during sunset"
-            style="width: 100%; height: 100%; object-fit: cover; display: block"
+            src="./images/newsletters/winningphoto.jpeg"
+            alt="Scenic view of the Sierra Blanca Mountains, Ruidoso, NM"
+            class="cover-photo"
           />
         </div>
       </header>
 
+      <!------------ STILL ON COVER PAGE -------------->
       <!-- What's Inside / Page 1 content summary -->
       <section
         class="newsletter-section newsletter-intro-list"
@@ -588,85 +817,121 @@
       >
         <div class="two-column">
           <div>
-            <h2 id="whats-inside-heading">What&rsquo;s Inside</h2>
+            <h2 id="whats-inside-heading">What's Inside</h2>
             <ul>
               <li>
+                <a href="#benefits-corner-heading"
+                  ><strong>Benefits Corner</strong>: It's Open/Switch Season!</a
+                >
+              </li>
+              <li>
                 <a href="#benefits-101-heading"
-                  ><strong>Benefits 101</strong>: Basic Life Coverage and Why it
-                  Matters</a
+                  ><strong>Benefits 101</strong>: Open/Switch - Making a Choice
+                  That Fits Your Lifestyle</a
                 >
               </li>
               <li>
-                <a href="#summer-check-in-heading"
-                  >Summer Check-In for Your Check-Ups</a
+                <a href="#added-value-heading"
+                  >Added Value to Your Benefits: No-Cost Programs</a
                 >
               </li>
               <li>
-                <a href="#out-of-state-travel-heading"
-                  >Out-of-State Travel? You're Covered!</a
+                <a href="#open-enrollment-webpage"
+                  >NMPSIA Open/Switch Enrollment Webpage</a
                 >
               </li>
               <li>
                 <a href="#mybenefits-portal-heading"
-                  >MyBenefits Portal: Update Your Information!</a
-                >
-              </li>
-              <li>
-                <a href="#getting-the-most"
-                  >Get the Most Out of Your Benefits: Massage Therapy</a
+                  >NMPSIA MyBenefits Portal Login</a
                 >
               </li>
               <li>
                 <a href="#wellness-spotlight-heading"
-                  ><strong>Wellness Spotlight</strong>: Your Mental Health
-                  Matters</a
+                  ><strong>Wellness Spotlight</strong>: Embrace Fall</a
                 >
               </li>
               <li>
-                <a href="#self-check-in-heading"
-                  >Try this 30-Second Self Check-In</a
+                <a href="#embrace-the-season-section"
+                  >Embracing Fall Tips and Tools</a
                 >
               </li>
               <li>
-                <a href="#dolce-far-niente-heading"
-                  >Summer Challenge: Dolce Far Niente</a
+                <a href="#walktober-heading"
+                  >Don’t Miss Walktober, NMPSIA Annual Walking Event!</a
                 >
               </li>
+
               <li>
-                <a href="#recipe-heading">Recipe: Zucchini Ribbon Skewers</a>
+                <a href="#recipe-heading"
+                  >Recipe: Pumpkin Date Cookie (Dairy Free, Vegan & Easy)</a
+                >
               </li>
               <li>
                 <a href="#risk-resource-heading"
-                  ><strong>Risk Resource</strong>: Summer Risk Round-Up</a
+                  ><strong>Risk Resource</strong>: Poms & Associates'
+                  Restorative Practices Program</a
+                >
+              </li>
+              <li>
+                <a href="#no-cost-training-heading"
+                  >No-Cost, Regional Cybersecurity Tabletop Exercise Training</a
                 >
               </li>
             </ul>
           </div>
 
           <aside class="callout" aria-labelledby="mark-calendar-heading">
-            <h2 id="mark-calendar-heading">
-              🎉 40 Years of Supporting New Mexico Educators
-            </h2>
-            <p>
-              Since 1986, we've worked alongside school districts, educators,
-              and staff to provide access to quality, affordable benefits. While
-              much has changed over the years, one thing has remained the same:
-              our commitment to serving all school employees. From expanding
-              networks and benefits to enhancing wellness resources, NMPSIA
-              continues to evolve to meet the needs of today's NMPSIA members.
-            </p>
-            <p>We are proud to support New Mexico's public school employees!</p>
+            <div style="display: flex; align-items: center; gap: 0.5rem">
+              <img
+                src="./images/newsletters/megaphone-transparent.png"
+                alt="Megaphone icon, decorative"
+                style="width: 2rem; height: 2rem"
+              />
+              <h2 id="mark-calendar-heading" style="color: #fff">
+                Mark Your Calendar!
+              </h2>
+            </div>
+            <div
+              style="
+                background-color: #ffedbd;
+                color: #723c16;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                margin-top: 1.75rem;
+                font-size: 1.2rem;
+              "
+            >
+              <p>
+                <strong>Open/Switch Enrollment Period</strong>: October 1 -
+                October 30, 2026
+              </p>
+              <p>Benefits elected are effective January 1, 2027</p>
+            </div>
           </aside>
         </div>
 
-        <p class="small-text">
-          We would love to feature your photo in the next NMPSIA newsletter! You
-          can submit landscape photos taken in New Mexico for a chance to win
-          prizes and have your photo featured. Email your pictures to
-          <a href="mailto:KAYLYNN.ROYBAL@PSIA.NM.GOV"
-            >KAYLYNN.ROYBAL@PSIA.NM.GOV</a
-          >.
-        </p>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+          "
+        >
+          <img
+            src="./images/newsletters/camera-icon.png"
+            alt="Camera icon, decorative"
+            style="width: 2.5rem; height: 2.5rem; object-fit: contain"
+          />
+          <p class="small-text">
+            We would love to feature your photo in the next NMPSIA newsletter!
+            You can submit landscape photos taken in New Mexico for a chance to
+            win prizes and have your photo featured. Email your pictures to
+            <a href="mailto:KAYLYNN.ROYBAL@PSIA.NM.GOV"
+              >KAYLYNN.ROYBAL@PSIA.NM.GOV</a
+            >.
+          </p>
+        </div>
 
         <p class="page-number" aria-hidden="true">Page 1</p>
       </section>
@@ -676,404 +941,339 @@
         class="newsletter-section"
         aria-labelledby="benefits-corner-heading"
       >
-        <p class="section-label">Benefits Corner</p>
-        <h2 id="benefits-corner-heading">Benefits 101: Basic Life Coverage</h2>
-
+        <p class="section-label large">Benefits Corner</p>
+        <h2 id="benefits-corner-heading">It's Open/Switch Enrollment</h2>
+        <img
+          src="./images/newsletters/open-enrollment-block-letters-custom.png"
+          alt="Open Enrollment block letters, decorative image"
+          class="img-fluid"
+        />
         <article aria-labelledby="benefits-101-heading">
-          <h3 id="benefits-101-heading">
-            A Benefit You Might Overlook but Your Family Won't
+          <h3 id="benefits-101-heading" class="montserrat-heading">
+            Open/Switch is October 1 - October 30, 2026
           </h3>
-          <p>
-            <strong
-              >As part of your benefits, every eligible employee receives 100%
-              employer-paid Basic Life coverage</strong
-            >. This coverage ranges from $10,000 to $50,000. Each district or
-            charter selects the coverage level, but no matter the amount,
-            <strong>it's a meaningful benefit provided at no cost to you</strong
-            >. At first glance, $10,000 or even $50,000 might not seem like a
-            lot, especially when you think about long-term financial needs. But
-            that's not what this benefit is meant to do.
+          <p class="bold italic montserrat text-danger">
+            Benefits elected are effective January 1, 2027.
+          </p>
+          <p class="my-3 montserrat">
+            <strong>Note:</strong> Employer contribution is 80% regardless of
+            salary for school districts and charter schools.
+          </p>
+          <p class="my-3 montserrat">
+            Before you choose to keep your elections as is and move on with your
+            day, take a few extra minutes to make sure your benefits still fit
+            your life.
           </p>
           <div class="bonus-box">
-            <p>
+            <h4 class="montserrat-heading">The Coffee Test</h4>
+            <p class="montserrat">
               <strong
-                >Having this benefit in place means your loved ones won't have
-                to figure out how to pay for your arrangements. That cost burden
-                is taken care of at no cost to you.</strong
+                >You wouldn't buy a year's worth of coffee without thinking
+                about it, right? Well, Open/Switch enrollment is deciding how
+                you'll pay for healthcare for the next 12 months.</strong
               >
             </p>
-            <h4 class="subheading">This coverage can help your family:</h4>
-            <ul>
-              <li>Pay for funeral and burial expenses</li>
-              <li>Cover immediate household bills</li>
-              <li>Reduce financial stress during an already difficult time</li>
-              <li>Provide space to grieve without urgent financial pressure</li>
-            </ul>
+            <div class="d-flex gap-3 align-items-start">
+              <img
+                src="./images/newsletters/coffee-by-davey-gravy.png"
+                alt="Coffee in a mug"
+                class="benefits-corner-image"
+              />
+              <div class="text-column">
+                <h4 class="bold montserrat">
+                  Imagine your favorite coffee shop offers two ways to pay...
+                </h4>
+                <p><b>Option 1</b>: Pay $6 every time you order a coffee.</p>
+                <p><b>Option 2</b>: Pay $30 a month for 7 cups of coffee.</p>
+              </div>
+            </div>
+            <div class="blurb">
+              <div class="heading-flex">
+                <img
+                  src="./images/newsletters/lightbulb-on-24.svg"
+                  alt="Lightbulb icon, decorative"
+                />
+                <h4 class="bold">Which option is better?</h4>
+              </div>
+              <p class="ms-2">
+                The answer depends on how often you drink coffee. If you only
+                stop in once or twice a month, paying as you go probably makes
+                sense. But if you're there every weekday, the monthly option
+                could save you money.
+              </p>
+            </div>
+            <div class="blurb">
+              <div class="heading-flex">
+                <img
+                  src="./images/newsletters/scale-balanced-24.svg"
+                  alt="Scale balanced icon, decorative"
+                />
+                <h4 class="bold">
+                  Choosing a medical plan works much the same way.
+                </h4>
+              </div>
+              <p class="ms-2">
+                A <strong>lower-premium</strong> plan may be a great fit if you
+                don't expect to use many healthcare services.
+              </p>
+              <p class="ms-2">
+                A <strong>higher-premium</strong> plan may cost more each
+                paycheck, but it can reduce what you pay when you visit the
+                doctor, fill prescriptions, or need other medical care
+              </p>
+            </div>
+            <div class="blurb">
+              <div class="heading-flex">
+                <img
+                  src="./images/newsletters/bullseye-arrow-24.svg"
+                  alt="Bullseye arrow icon, decorative"
+                />
+                <p class="mt-0 ms-2">
+                  <a
+                    href="https://nmpsia.com/PDFs/Updated_2027_NMPSIA_Side_by_Side_Comparison.pdf"
+                    target="_blank"
+                    >The best choice for you isn't necessarily the one with the
+                    lowest premium. It's the one that best matches how you
+                    expect to use your benefits in the coming year.</a
+                  >
+                </p>
+              </div>
+            </div>
           </div>
 
-          <p class="bonus-text">
-            <strong>This is where YOU come in.</strong> <br />A benefit only
-            works if the right people know about it and can access it when
-            needed. Take a few minutes today to make sure you understand your
-            coverage amount with your employer and ensure your loved ones are
-            informed.
-          </p>
-
+          <!------------- Added Value to your Benefits -------------->
           <div class="two-column">
-            <div>
-              <p class="subheading" style="margin-top: 0">To do this week</p>
-              <ul style="margin-top: 0rem; list-style: none; padding-left: 0">
-                <li style="display: flex; gap: 0.5rem; align-items: baseline">
-                  <span style="flex-shrink: 0">✓</span>
-                  <span
-                    ><b class="burnt-sienna-text"
-                      >Name (or update) your beneficiary</b
-                    >.</span
-                  >
-                </li>
-                <li style="display: flex; gap: 0.5rem; align-items: baseline">
-                  <span style="flex-shrink: 0">✓</span>
-                  <span
-                    ><b class="burnt-sienna-text"
-                      >Keep a copy of your life insurance policy accessible</b
-                    >.</span
-                  >
-                </li>
-                <li style="display: flex; gap: 0.5rem; align-items: baseline">
-                  <span style="flex-shrink: 0">✓</span>
-                  <span
-                    ><b class="burnt-sienna-text"
-                      >Let your family (or beneficiary) know that this benefit
-                      exists</b
-                    >.</span
-                  >
-                </li>
+            <div class="column blurb custom-border p-3">
+              <h4 class="montserrat-heading" id="added-value-heading">
+                <span class="uppercase">Added value to your benefits</span>:
+                No-Cost Programs
+              </h4>
+              <ul>
+                <li>24/7 Nurse Advice Line</li>
+                <li>$0 Behavioral Health Programs (for innetwork services)</li>
+                <li>Customized Wellness Plan</li>
+                <li>Diabetes Prevention and Weight Management Programs</li>
+                <li>$0 for diabetes supplies from Approved Formulary</li>
+                <li>$0 blood pressure cuffs</li>
+                <li>Health Coaching</li>
+                <li>Incentive & Rewards Programs</li>
+                <li>Mindfulness Based Stress Reduction Programs</li>
+                <li>Monthly Communication & Topics</li>
+                <li>Monthly Skill Builders</li>
+                <li>Self-Directed Courses and Self-Help Tools</li>
+                <li>Tobacco Cessation Programs</li>
+                <li>Chronic Disease Programs</li>
+                <li>Wellness Ambassador Program</li>
+                <li>Health & Wellness Challenges</li>
+              </ul>
+            </div>
+            <div class="column blurb custom-border p-3" style="height: auto">
+              <h4 class="montserrat-heading" id="open-enrollment-webpage">
+                <span class="uppercase"
+                  >Visit the NMPSIA Open/Switch Enrollment Page for</span
+                >:
+              </h4>
+              <ul>
+                <li>Carrier Benefit Video Presentations</li>
+                <li>$0 Behavioral Health Programs (for innetwork services)</li>
+                <li>Summary of Benefits</li>
+                <li>Rate Sheets</li>
+                <li>Wellness Offerings</li>
+                <li>List of Documents you need to enroll</li>
+                <li>dependents (Program Guide)</li>
+                <li>Added Value Benefits And More!</li>
               </ul>
             </div>
           </div>
-        </article>
-
-        <article aria-labelledby="summer-check-in-heading">
-          <h3 id="summer-check-in-heading" class="heading-with-icon">
-            <!-- checkmark icon -->
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-check-circle"
-              aria-hidden="true"
-            >
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-              <path d="M22 4 12 14.01l-3-3" />
-            </svg>
-            <span>Summer Check-In for Your Check-Ups</span>
-          </h3>
-          <div style="margin-left: 2rem">
-            <h4 class="heading-with-icon">
-              <!-- empty check box icon -->
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-square"
-                aria-hidden="true"
+          <div id="mybenefits-login-link" class="blurb custom-border">
+            <h5 class="montserrat-heading" id="mybenefits-portal-heading">
+              <a href="https://nmpsiaonline.nmpsia.com/" target="_blank"
+                >MyBenefits Portal Login</a
               >
-                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-              </svg>
-              <span>Have you had your annual check up?</span>
-            </h4>
-            <p>It's not too late to get your annual check up!</p>
-            <h4 class="heading-with-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-square"
-                aria-hidden="true"
-              >
-                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-              </svg>
-              Completed your blood work? Vision and Dental exams?
-            </h4>
-            <p>It's important to keep up with all of your tests!</p>
-            <h4 class="heading-with-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="lucide lucide-square"
-                aria-hidden="true"
-              >
-                <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-              </svg>
-              Are you scheduled for preventative care next year?
-            </h4>
-            <p>Make sure you and your family get on the calendar for 2027!</p>
+            </h5>
+            <p class="bold p-3" style="background-color: #e08516cb">
+              Reminder: If you have any issues logging into your MyBenefits
+              Portal please reach out to EASI Edu at 1-800-233-3164
+            </p>
           </div>
-        </article>
-
-        <article
-          class="seasonal-color-panel"
-          aria-labelledby="out-of-state-travel-heading"
-        >
-          <h3 id="out-of-state-travel-heading" class="heading-with-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-              fill="currentColor"
-              width="40"
-              height="36"
-              style="
-                transform: scaleX(-1) rotate(-25deg);
-                display: inline-block;
-              "
-              aria-hidden="true"
-            >
-              <path
-                d="M480 192H365.71L260.61 8.06A16.014 16.014 0 0 0 246.71 0h-65.5c-10.63 0-18.3 10.17-15.38 20.39L214.86 192H112l-43.2-57.6c-3.02-4.03-7.77-6.4-12.8-6.4H16.01C5.6 128-2.04 137.78.49 147.88L32 256 .49 364.12C-2.04 374.22 5.6 384 16.01 384H56c5.04 0 9.78-2.37 12.8-6.4L112 320h102.86l-49.03 171.6c-2.92 10.22 4.75 20.4 15.38 20.4h65.5c5.74 0 11.04-3.08 13.9-8.06L365.71 320H480c35.35 0 96-28.65 96-64s-60.65-64-96-64z"
-              />
-            </svg>
-            Summer travel plans? Worried about out of state coverage?
-          </h3>
-
-          <p>
-            Our Medical carriers offer access to nationwide in-network
-            providers, so you and your family can get care no matter where you
-            are. To find an in-network provider, simply use the provider search
-            tools on your carrier's website or give them a call directly.
-          </p>
-          <p>
-            Don't forget, telehealth is available 24/7! It's a convenient way to
-            get care while on the go, whether your child wakes up with a cold or
-            needs a quick check for a sunburn. With telehealth, expert guidance
-            is just a call or click away, wherever your travels take you.
-          </p>
-        </article>
-
-        <article aria-labelledby="mybenefits-portal-heading">
-          <h3 id="mybenefits-portal-heading">
-            Update your Address, Phone Number, Email, Beneficiary, and More!
-          </h3>
-          <a href="https://nmpsiaonline.nmpsia.com/" target="_blank"
-            >Update in MyBenefits Portal<span class="visually-hidden">
-              (opens in new tab)</span
-            ></a
-          >
-        </article>
-
-        <article aria-labelledby="getting-the-most">
-          <h3 id="getting-the-most">
-            Getting the Most Out of Your Benefits: Massage & Acupuncture
-          </h3>
-          <p>
-            Your plan includes coverage for massage therapy and acupuncture when
-            medically necessary. These services can help with stress, chronic
-            pain, headaches, and more!
-          </p>
-
-          <p>
-            <strong>You can receive up to 30 combined visits per year</strong>
-            for massage therapy or acupuncture (in-network).
-          </p>
-          <p><strong>High plan:</strong> $50 copay per visit</p>
-          <p><strong>Low plan:</strong> 40% coinsurance after deductible</p>
         </article>
 
         <p class="page-number" aria-hidden="true">Page 2</p>
       </section>
 
-      <!-- Wellness Spotlight - Page 3 -->
+      <!-------------- Wellness Spotlight - Page 3 ------------------>
       <section
         class="newsletter-section"
         aria-labelledby="wellness-spotlight-heading"
       >
-        <p class="section-label">Wellness Spotlight</p>
-        <h2 id="wellness-spotlight-heading">
-          Mental Health Matters. More importantly, YOUR mental health matters.
-          Your thoughts may be quietly draining you.
-        </h2>
+        <p class="section-label large">Wellness Spotlight</p>
 
-        <article aria-labelledby="mental-health-intro-heading">
-          <h3 id="mental-health-intro-heading">We all do it...</h3>
-          <p class="burnt-sienna-text">
-            "I should be more productive!" <br />
-            "I should have more energy..." <br />"I should be more present."
-          </p>
-          <p>
-            But "should" often adds pressure without support. It can turn an
-            already busy day into something that feels like you're falling short
-            on everything. This summer, try noticing when that word shows up and
-            gently shift it!
-          </p>
-
-          <div class="inner-rounded-box try-this-box">
-            <h4>Try this when you notice a "should" pop up in your head:</h4>
-
-            <span>
-              <p class="text-strikethrough">"I should be more productive."</p>
-              <p class="good-text">
-                &rarr; What's one thing I can realistically accomplish today?
-              </p>
-            </span>
-
-            <span>
-              <p class="text-strikethrough">"I should have more energy."</p>
-              <p class="good-text">
-                &rarr; What might help me feel even a little more rested?
-              </p>
-            </span>
-
-            <span>
-              <p class="text-strikethrough">"I should be more present."</p>
-              <p class="good-text">
-                &rarr; What's one small way I can connect with this moment?
-              </p>
-            </span>
-          </div>
-        </article>
-
-        <article aria-labelledby="self-check-in-heading">
-          <h3 id="self-check-in-heading">30-Second Self Check-In</h3>
-          <p>
-            Taking care of your mental health isn't a luxury. It's essential.
-          </p>
-          <div class="three-column">
-            <div class="step-card">
-              <h4>Ask</h4>
+        <article aria-labelledby="embrace-the-season-section">
+          <div class="fall-background-image" id="embrace-the-season-section">
+            <div class="">
+              <h2 id="wellness-spotlight-heading">Embrace the Fall Season!</h2>
               <p>
-                What do I need right now? (rest, connection, movement, quiet)
+                Fall isn't just pumpkin spice latte season (no matter how
+                delicious they are), <b>it's also brain-boosting season</b>.
+                <br />As daylight shifts and temperatures drop, your nervous
+                system gets a gentle nudge to recalibrate. Cooler air wakes up
+                your senses, changing light patterns spark creativity, and those
+                crunchy leaves? They offer free stress relief, courtesy of
+                sensory grounding! This fall do the things you love, that bring
+                you joy and that support your health and wellness!
               </p>
             </div>
-            <div class="step-card">
-              <h4>Rate</h4>
-              <p>
-                Rate your mood 1-10. 1 being not great and 10 being amazing.
-              </p>
-            </div>
-            <div class="step-card">
-              <h4>Name</h4>
-              <p>
-                Name one feeling. Not just "stressed" but try tired,
-                overwhelmed, bored, etc.
-              </p>
-            </div>
-          </div>
-        </article>
-
-        <aside class="highlight-box" aria-labelledby="dolce-far-niente-heading">
-          <h3 id="dolce-far-niente-heading">
-            Dolce Far Niente &mdash; Italian for "The sweetness of doing
-            nothing"
-          </h3>
-          <small>(dole-chay far nee-en-tay)</small>
-          <div class="two-column">
-            <p class="">
-              Summer is a reminder that rest is productive, too.
-              <strong>Dolce Far Niente encourages us to slow down</strong>,
-              enjoy simple moments, and recharge mentally and physically.
-              Whether it's sitting outside with your morning coffee, taking a
-              walk without your phone, or enjoying dinner with family, small
-              pauses can help reduce stress and improve overall wellbeing.
-            </p>
             <div>
-              <h4 style="font-style: italic; color: #ea9b8e">
-                Try it this summer:
-              </h4>
-              <ul>
-                <li>Eat one meal without distractions</li>
-                <li>Spend 10 minutes outside each day</li>
-                <li>Take a break without multitasking</li>
-                <li>Enjoy a simple moment just because it feels good</li>
-              </ul>
+              <h2>Try these ideas to help</h2>
+              <div class="tips">
+                <div class="tip-card dreamsicle">
+                  <h3>Step outside and crunch leaves</h3>
+                  <p>
+                    Sensory grounding like this helps reduce stress and bring
+                    your mind back to the present moment.
+                  </p>
+                </div>
+                <div class="tip-card daisy">
+                  <h3>Create Something Seasonal</h3>
+                  <p>
+                    If it makes you smile, lean into it. Carve a pumpkin with
+                    friends or family, decorate your space with fall colors, or
+                    make a simple DIY craft. Creative expression supports mood
+                    regulation and strengthens social connection
+                  </p>
+                </div>
+                <div class="tip-card earth">
+                  <h3>Enjoy a Fall Treat Without Overthinking It</h3>
+                  <p>
+                    Grab a caramel apple, sip a warm drink, or enjoy a seasonal
+                    soup. Nourishing yourself with foods tied to comfort and
+                    tradition can boost emotional wellbeing.
+                  </p>
+                </div>
+                <div class="tip-card sage">
+                  <h3>Build Micro‑Routines for Calm</h3>
+                  <p>
+                    Tiny habits can have an outsized impact this time of year.
+                    Try an evening wind‑down routine, five minutes of
+                    journaling, sit outside while focusing on your breathing or
+                    a short gratitude moment while you watch the leaves change.
+                  </p>
+                </div>
+                <div class="tip-card apple">
+                  <h3>Bring Community Into Your Wellness</h3>
+                  <p>
+                    Walk with a neighbor, visit a local fall festival, or share
+                    a fall recipe with a friend. Across global health
+                    traditions, community engagement is one of the most powerful
+                    protective factors for mental wellness
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </aside>
+        </article>
+
+        <article aria-labelledby="walktober-heading">
+          <h3 id="walktober-heading">You won't want to miss WALKTOBER!</h3>
+
+          <div class="three-column">
+            <div class="">
+              <p>
+                Mark your calendar, lace up your walking shoes, rally your
+                favorite co-workers!
+              </p>
+              <a href="https://nmpsia.walktober.com/welcome" target="_blank"
+                >Get more information HERE.</a
+              >
+            </div>
+            <div class="">
+              <p class="text-center">
+                This year’s event is packed with weekly challenges, prizes,
+                friendly competition, and tons of feel‑good inspiration. And
+                returning this year is the highly successful "<b
+                  >Walking Mindfully</b
+                >" with Michelle Duval! This is a way to turn your daily steps
+                into moments of calm, rest, and reset.
+              </p>
+            </div>
+            <div class="">
+              <img
+                src="./images/newsletters/walking-in-the-fall-yall.png"
+                alt="Decorative image of person walking on a trail in autumn"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </article>
 
         <article class="seasonal-color-panel" aria-labelledby="recipe-heading">
-          <h2 id="recipe-heading">Recipe: Zucchini Ribbon Skewers</h2>
+          <h2 id="recipe-heading">
+            Pumpkin Date Cookies (Dairy Free and Vegan)
+          </h2>
 
           <div class="two-column recipe-layout">
             <div>
               <ul>
-                <li>
-                  2 medium zucchini (Use a vegetable peeler or mandolin to slice
-                  into thin ribbons)
-                </li>
-                <li>
-                  2 medium summer squash (Use a vegetable peeler or mandolin to
-                  slice into thin ribbons)
-                </li>
-                <li>3 tbsp fresh or dried parsley</li>
+                <li>3/4 cup whole wheat flour</li>
+                <li>1 1/2 cups old fashioned rolled oats</li>
+                <li>1/4 cup ground flaxseed</li>
+                <li>1 tsp pumpkin pie spice</li>
+                <li>1/2 tsp sea salt</li>
+                <li>1/2 tsp baking soda</li>
               </ul>
             </div>
             <div>
-              <h3>Lemon sauce</h3>
               <ul>
-                <li>6 oz unsalted butter or extra virgin olive oil</li>
-                <li>2 tsp lemon juice (more, if desired)</li>
-                <li>3 garlic cloves, minced</li>
-                <li>1/4 tsp red pepper flakes</li>
-                <li>pinch of salt and pepper</li>
+                <li>1 cup canned pureed pumpkin</li>
+                <li>1/2 cup maple syrup</li>
+                <li>1/3 cup walnuts, roughly chopped</li>
+                <li>
+                  1/3 cup dates (about 4 dates), pits removed and roughly
+                  chopped into large pieces
+                </li>
+                <li>1/3 cup unsweetened shredded coconut</li>
               </ul>
             </div>
             <figure class="recipe-image">
               <img
-                src="./images/newsletters/zucchini ribbon skewers.png"
-                alt="Zucchini ribbon skewers with lemon sauce"
+                src="./images/newsletters/cookies.jpeg"
+                alt="Pumpkin date cookies"
               />
             </figure>
           </div>
 
           <h3>Directions</h3>
-          <p class="italic">Preheat grill to medium-high heat.</p>
-          <ul class="recipe-directions">
+          <ol>
             <li>
-              <strong>Sauce:</strong>
-              Make the lemon sauce by combining all of the ‘sauce’ ingredients
-              (If using butter, melt it first)
+              Preheat oven to 350 degrees. Line a large baking sheet with a
+              sheet of parchment paper.
             </li>
             <li>
-              <strong>Assemble the skewers:</strong>
-              Lightly brush one side of each ribbon with lemon sauce. Fold each
-              ribbon back and forth (like an accordion) and skewer through the
-              center. Add about 8 slices per skewer
+              In a large mixing bowl, mix together with a large spoon the flour,
+              oats, ground flaxseed, pumpkin pie spice, sea salt and baking
+              soda. Set aside.
             </li>
             <li>
-              <strong>Grill:</strong>
-              Brush skewers lightly again with lemon sauce. Grill for 2–3
-              minutes per side, turning 2–3 times, until lightly charred and
-              tender. (Usually, we would never tell a grill master how to grill)
+              In a small bowl, whisk together the pureed pumpkin and maple
+              syrup.
             </li>
             <li>
-              <strong>Finish:</strong>
-              Lightly brush with extra butter (if desired) and sprinkle with
-              parsley. Serve with your choice of protein.
+              Add the pumpkin and maple syrup mixture to the larger bowl with
+              the oats mixture. Mix everything well. Add the chopped walnuts,
+              chopped medjool dates and shredded coconut to the mixture, and mix
+              everything well.
             </li>
-          </ul>
+            <li>
+              Using a tablespoon, place cookie dough on the parchment covered
+              baking sheet, placing about a tablespoon and a half of the dough
+              for each cookie and placing cookies an inch or so apart.
+            </li>
+            <li>
+              Bake for about 18 minutes and remove from the oven. Allow the
+              cookies to cool before storing them in a covered container for up
+              to 5 days.
+            </li>
+          </ol>
         </article>
 
         <p class="page-number" aria-hidden="true">Page 3</p>
@@ -1084,177 +1284,146 @@
         class="newsletter-section"
         aria-labelledby="risk-resource-heading"
       >
-        <p class="section-label">Risk Resource</p>
-        <h2 id="risk-resource-heading">Summer Risk Roundup</h2>
-        <h3>Wildfire Safety: Defensible Fire Zones</h3>
+        <p class="section-label large">Risk Resource</p>
+        <h2 id="risk-resource-heading">
+          Restorative Practices and Stress Reduction
+        </h2>
 
-        <div class="seasonal-color-panel">
-          <div class="two-column">
-            <div>
-              <h3>What is defensible space, and why is it so important?</h3>
-              <p>
-                Defensible space is the buffer zone you create around your
-                school, outbuildings, and other structures. It reduces the risk
-                of fire by managing the plants, brush, trees, and other items in
-                the surrounding area that could ignite.
+        <div class="news-grid-layout">
+          <div class="a blurb custom-border p-2">
+            <div class="d-flex align-items-center py-2">
+              <img
+                src="./images/Logo_POMS.png"
+                alt="Poms & Associates logo"
+                class="img-fluid"
+                style="width: 120px; height: auto"
+              />
+              <h3 class="my-0">Restorative Practices</h3>
+            </div>
+            <p>
+              Did you know, Poms & Associates offers a Restorative Practices
+              Program?
+            </p>
+            <p>
+              In the past, schools primarily focused on traditional
+              “zerotolerance” policies, which rely on exclusionary and punitive
+              disciplinary practices. The disparities this creates can be seen
+              in dropout and graduation rates, referrals to special and gifted
+              education programs, and differences in school funding and
+              resources.
+            </p>
+            <p>
+              Alternatively, Restorative Practices promote inclusiveness,
+              relationship-building, and problem-solving through methods such as
+              circle conversations for teaching and conflict resolution, and
+              conferences that bring victims, offenders, and their supporters
+              together to address wrongdoing. Instead of punishment, students
+              are encouraged to reflect on and take responsibility for their
+              actions and develop plans to repair harm.
+            </p>
+            <p>
+              Another key component is ensuring every student has a trusted
+              adult at school, which strengthens safety, wellbeing, and academic
+              success.
+            </p>
+            <p class="italic">
+              Poms & Associates works with districts throughout our state to
+              implement Restorative Practices.
+            </p>
+            <p class="testimonial text-center p-2 bold">
+              "This work has strengthened our school culture by providing
+              students with opportunities to reflect on their actions, take
+              responsibility, repair relationships, and remain engaged in their
+              learning..."
+              <br />
+              <span class="small-text italic">
+                - Penasco Superintendent Michelle Gonzales</span
+              >
+            </p>
+            <div class="blurb image-background p-3">
+              <p class="small-text">
+                Because of Restorative Practices, schools across our state have
+                seen success, including the following:
               </p>
-
-              <h3>What are defensible space fire zones?</h3>
+              <p>Taos Middle School: 42% decrease in discipline referrals</p>
               <p>
-                Defensible space fire zones are strategically maintained areas
-                around schools, homes, and communities that reduce wildfire risk
-                by buffering structures from surrounding vegetation. These
-                zones, including the 100-foot area around property green spaces
-                and nearby wildlands, slow fire spread and improve firefighting
-                conditions. Properly maintained defensible space significantly
-                increases a school’s chances of surviving a wildfire.
+                Dexter Middle School: 60% reduction in physical aggression or
+                fighting
+              </p>
+              <a
+                href="https://nmpsia.com/PDFs/poms-risk-docs/Restorative%20Practices%20Flyer%20Poms%202026.pdf"
+                target="_blank"
+                >Download the flyer to learn more</a
+              >
+              <p>
+                OR contact
+                <a href="mailto:dwalter@pomsassoc.com" target="_blank"
+                  >Darron Walter</a
+                >, Safety and Security Consultant.
               </p>
             </div>
-            <img
-              src="./images/newsletters/defensible-space-fire-zones.png"
-              alt="Defensible space fire zones"
-            />
           </div>
-          <div class="three-column fire-zones-list">
-            <span>
-              <h4 class="italic underlined">Zone 1 (0-5 feet)</h4>
-              <p>
-                This includes the structure or other outside space, as well as
-                fencing attached to the school and immediate landscaping from
-                the building to 5 feet away.
-              </p>
-              <ul>
-                <li>
-                  Remove all combustible materials from the roofs and gutters,
-                  such as wood mulches, dead or dry vegetation, leaves, and pine
-                  needles. Trim tree branches that hang over the roof, eaves,
-                  and chimney.
-                </li>
-              </ul>
-            </span>
-            <span>
-              <h4 class="italic underlined">Zone 2 (5-30 feet)</h4>
-              <p>
-                This includes the area from 5 feet to 30 feet away from the
-                school, including the property and all outbuildings.
-              </p>
-              <ul>
-                <li>
-                  Maintain this area by pruning and removing dead and dying
-                  branches from well-spaced bushes and trees. Make sure to keep
-                  this area well-maintained and watered during a hot, dry
-                  summer.
-                </li>
-              </ul>
-            </span>
-            <span>
-              <h4 class="italic underlined">Zone 3 (30-100 feet)</h4>
-              <p>
-                This area is farthest from the school, extending from Zone 2 to
-                your property's boundary, which is 30 to 100 feet.
-              </p>
-              <ul>
-                <li>
-                  Reduce fuels by thinning and spacing vegetation vertically and
-                  lining up trees horizontally to interrupt the fire's path and
-                  keep flames small and on the ground.
-                </li>
-              </ul>
-            </span>
-          </div>
-        </div>
-
-        <div
-          class=""
-          aria-label="Key areas to focus on for preventative maintenance"
-        >
-          <article aria-labelledby="preventative-maintenance-heading">
-            <h3 id="preventative-maintenance-heading">
-              Summer is Perfect for Preventative Maintenance
+          <div class="blurb custom-border p-3">
+            <h3 class="my-0" id="no-cost-training-heading">
+              Sign up today! No-Cost, Regional Cybersecurity Tabletop Exercise
+              Training
             </h3>
             <p>
-              With students out, summer is the best opportunity to address
-              facility needs before they become disruptions during the school
-              year.
+              Poms and Associates in partnership with NMPSIA and other state
+              agencies will hold
+              <strong>6 Cybersecurity Tabletop Exercise trainings</strong>. The
+              trainings will be held in
+              <strong>each region of the state</strong>, throughout the month of
+              <strong>October</strong>. The training includes a hands-on,
+              scenario-based cybersecurity tabletop exercise designed
+              specifically for higher education, public, and charter schools.
+              Register today, and select the location and date you would like to
+              attend. The address and other details will be sent in a follow up
+              email closer to the event.
             </p>
-            <h4>Key areas to focus on:</h4>
+            <a
+              href="https://forms.monday.com/forms/b21f085822c955adcb46bed4eb351c33?r=use1"
+              target="_blank"
+              >Register here!</a
+            >
+          </div>
+          <div class="blurb custom-border p-2">
+            <div class="d-flex align-items-center py-2 justify-content-between">
+              <h3 class="my-0">Reducing Stress</h3>
+              <img
+                src="./images/newsletters/stress.jpeg"
+                alt="decorative icon"
+                class="img-fluid"
+                style="width: 40px; height: auto"
+              />
+            </div>
+            <p>
+              The beginning of a new school year can be a stressful time for
+              school staff. While stress can give you a rush of energy when it’s
+              needed most, if it lasts a long time, a condition known as chronic
+              stress can become harmful rather than helpful. The National
+              Institutes of Health published the list below to help you relieve
+              some stress.
+            </p>
             <ul>
+              <li>Get enough sleep</li>
+              <li>Exercise regularly</li>
+              <li>Build a social support network</li>
+              <li>Set priorities</li>
+              <li>Think positive</li>
+              <li>Try relaxation methods like meditation or deep breathing</li>
               <li>
-                <strong>HVAC Systems:</strong> Inspect, clean, and replace
-                filters to ensure reliable cooling and air quality
-              </li>
-              <li>
-                <strong>Playgrounds & Outdoor Areas:</strong> Check for hazards,
-                loose equipment, and surface wear
-              </li>
-              <li>
-                <strong>Electrical Systems</strong>: Inspect panels, lighting,
-                and emergency systems for safety and reliability
-              </li>
-              <li>
-                <strong>Plumbing</strong>: Check for leaks, test water systems,
-                and service restrooms and kitchens
-              </li>
-              <li>
-                <strong>Life Safety Systems:</strong> Test fire alarms,
-                extinguishers, and emergency exit
-              </li>
-              <li>
-                <strong>Building Interiors:</strong> Address flooring, trip
-                hazards, and general wear and tear
-              </li>
-              <li>
-                <strong>Preventative Roof Maintenance:</strong> Clean gutters,
-                remove debris, and inspect flashing to extend roof life and
-                prevent leaks
+                <strong>Most importantly, don’t be afraid to seek help.</strong>
               </li>
             </ul>
-            <p>
-              Prioritizing these areas helps reduce unexpected issues, improve
-              safety, and ensure schools are ready for a smooth start to the
-              year.
-            </p>
-          </article>
-        </div>
 
-        <article
-          class="seasonal-color-panel"
-          aria-labelledby="trainings-heading"
-        >
-          <h3 id="trainings-heading">Training Opportunities</h3>
-          <p>
-            A full list of available trainings can be found on the
-            <a
-              href="https://nmpsia.com/pdfs/poms-risk-docs/Poms-Associates-Training-Catalog-Abbreviated-August-2023.pdf"
-              target="_blank"
-              >NMPSIA website<span class="visually-hidden">
-                (opens in new tab)</span
-              ></a
-            >. Topics may include:
-          </p>
-          <ul>
-            <li>
-              Diversity, Equity, and Inclusion Practices: Staff-to- Student
-            </li>
-            <li>Confidentiality of Student Records (FERPA)</li>
-            <li>Hazing Prevention in K‑12 Environments</li>
-            <li>HIPAA Overview</li>
-            <li>Playground Maintenance and Inspection</li>
-            <li>Sexual Harassment Prevention: Staff-to-Staff</li>
-            <li>Student Alcohol and Substance Abuse</li>
-            <li>Bloodborne Pathogen Exposure Prevention</li>
-            <li>Cybersecurity Overview</li>
-            <li>
-              Cybersecurity Awareness for Employees: End-User Best Practices
-            </li>
-            <li>
-              Cybersecurity Awareness for Employees: Security Awareness
-              Essentials
-            </li>
-            <li>Cybersecurity Awareness for Employees: Social Engineering</li>
-            <li>Diversity, Equity, and Inclusion Practices: Staff-to-Staff</li>
-          </ul>
-        </article>
+            <p>
+              Your mental health is important! <strong>988</strong> connects
+              people in crisis to trained behavioral health counselors. This
+              service is available in New Mexico.
+            </p>
+          </div>
+        </div>
 
         <p class="page-number" aria-hidden="true">Page 4</p>
       </section>
