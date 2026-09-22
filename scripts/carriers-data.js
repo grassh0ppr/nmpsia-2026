@@ -44,6 +44,7 @@ const carriersData = [
     name: "Lantern",
     logo: "images/lantern_logo.png",
     benefitTypes: ["Medical"],
+    badge: "Service ends February 2027 ",
     contact: {
       phone: "855-204-3922",
       phoneLink: "tel:18552043922",
@@ -61,7 +62,6 @@ const carriersData = [
     name: "Express Scripts",
     logo: "images/carriers/express evernorth.png",
     benefitTypes: ["Pharmacy"],
-    badge: "Effective 7/1/2026",
     contact: {
       phone: "1-800-818-9281",
       phoneLink: "tel:18008189281",

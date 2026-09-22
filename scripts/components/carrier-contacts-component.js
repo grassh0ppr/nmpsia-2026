@@ -169,33 +169,7 @@ class CarrierContacts extends HTMLElement {
                   </div>
                 </div>
 
-                <div class="carrier-card">
-                  <div class="carrier-header">
-                    <img
-                      src="images/CVS_Caremark_logo.jpg"
-                      alt="CVS Caremark"
-                    />
-                    <h5>CVS Caremark</h5>
-                  </div>
-                  <div class="carrier-details">
-                    <span class="carrier-card-badge">Discontinued 6/30/2026</span>
-                    <p>
-                      <strong>RxBIN:</strong> 004336<br />
-                      <strong>RxPCN:</strong> ADV<br />
-                      <strong>RxGRP:</strong> RX22AS
-                    </p>
-                    <a href="tel:18777870652" class="carrier-phone">
-                      <i class="bx bx-phone"></i>1-877-787-0652
-                    </a>
-                    <a
-                      href="https://www.caremark.com/"
-                      class="carrier-website"
-                      target="_blank"
-                    >
-                      <i class="bx bx-link-external"></i>Visit Website
-                    </a>
-                  </div>
-                </div>
+                
               </div>
             </div>
 
