@@ -39,58 +39,34 @@ class UnitedConcordia extends HTMLElement {
             Option</a>
         </li>
         <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="pdfs/Carriers_Important_Benefit_Info/Network_Flyer Alliance.pdf"> Find
+          <i class="bx bx-link-external"></i>
+          <a target="_blank" href="https://www.unitedconcordia.com/find-a-dentist/#/"> Find
             an In-Network Dentist</a>
         </li>
         <li>
-          <i class="bx bxs-file-pdf"></i>
+          <i class="bx bx-link-external"></i>
           <a target="_blank" href="https://www.unitedconcordia.com/login"> Member
             Portal Login</a>
         </li>
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="/pdfs/2024 Teledentistry Rebrand final.pdf">
-            Teledentistry Services
-            from
-            Dental.com</a>
+          <a target="_blank" href="/PDFs/carriers/United_Concordia/UCD_Teledentistry_Member_Flyer_09102026_high.pdf">
+            United Concordia Teledentistry Services
+          </a>
+        </li>
+        <li>
+          <i class="bx bx-link-external"></i>
+          <a target="_blank" href="/PDFs/carriers/United_Concordia/2026 UCD_Perks_Member_Flyer.pdf"> Introducing United Concordia Perks</a>
         </li>
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a href="https://www.brainshark.com/1/player/ucci?fb=0&r3f1=79433d6e626f372575264639697b7d2369352504&custom=mydentalbenefits_overview"
-            target="_blank"> Accessing My Dental
-            Benefits</a>
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="pdfs/Carriers_Important_Benefit_Info/Cost_Feature_Flyer_2023.pdf"> Cost
+          <a target="_blank" href="/pdfs/Carriers_Important_Benefit_Info/Cost_Feature_Flyer_2023.pdf"> Cost
             Feature Flyer</a>
         </li>
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a target="_blank"
-            href="/pdfs/Carriers_Important_Benefit_Info/College_Tuition_Benefit_Member_Flyer.pdf"> College
-            Tuition Benefit
-            Information</a>
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank"
-            href="https://www.brainshark.com/1/player/ucci?fb=0&r3f1=0b314f1c101d45570754344b1b090f511b475776&custom=member_ctb_overview">
-            How to Enroll in College
-            Tuition Benefits</a>
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank" href="https://nmpsia.com/pdfs/United_Concordia_Claim_Form.pdf"> United
+          <a target="_blank" href="/PDFs/carriers/United_Concordia/2026_UCD_Claim_Form.pdf"> United
             Concordia Claim Form</a>
-        </li>
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a target="_blank"
-            href="https://nmpsia.com/pdfs/College_Tuition_Benefit_Member_Flyer_01282022_high.pdf"> College
-            Tuition Benefit
-            Scholarship Opportunity</a>
         </li>
       </ul>
     `;
