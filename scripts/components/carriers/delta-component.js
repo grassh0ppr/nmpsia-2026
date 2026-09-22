@@ -9,15 +9,15 @@ class DeltaDental extends HTMLElement {
       </div>
       <ul class="content-list">
         <!-- <img style="max-height: 60px" class="my-4 mx-3" src="images/delta_logo.jpg" alt="Delta Dental logo" /> -->
-        <h4 class="mt-4 mb-3">2025 Open Enrollment Presentations</h4>
+        <h4 class="mt-4 mb-3">2026 Open Enrollment Presentations</h4>
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Delta/NMPSIA - Delta Dental of NM - OE Fall Presentation - October 2024 (002).pdf"
+          <a href="/PDFs/open-enrollment/PY_2027/carriers/Delta_Dental_OEPresentation_Slides.pdf"
             target="_blank">Open/Switch Enrollment Slideshow Presentation</a>
         </li>
         <li>
           <i class="bx bxs-movie-play"></i>
-          <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Delta/2024 NMPSIA OE video.FINAL.mp4"
+          <a href="/PDFs/open-enrollment/PY_2027/carriers/Delta_Dental_OEPresentation_Video.mp4"
             target="_blank">Open/Switch Enrollment Recorded Presentation</a>
         </li>
         

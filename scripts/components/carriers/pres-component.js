@@ -12,34 +12,20 @@ class PresbyterianHealthPlan extends HTMLElement {
         </a>
       </div>
       <ul class="content-list">
-                      <h4 class="mt-4 mb-3">2025 Open Enrollment Presentations</h4>
+                      <h4 class="mt-4 mb-3">2026 Open Enrollment Presentations</h4>
                       <li>
                         <i class="bx bxs-file-pdf"></i>
-                        <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Presbyterian/PHP2024 NMPSIA Open Switch Meetings 2 with voice.pdf"
+                        <a href="/PDFs/open-enrollment/PY_2027/carriers/Presbyterian_OEPresentation_Slides.pdf"
                           class="sidenav-link" target="_blank">Open/Switch Enrollment
                           Slideshow Presentation</a>
                       </li>
                       <li>
                         <i class="bx bxs-movie-play"></i>
-                        <a href="/pdfs/Open_Switch_Enrollment_fPY2025/Presbyterian/PHP2024 NMPSIA Open Switch Meetings 2 with voice.mp4"
+                        <a href="/PDFs/open-enrollment/PY_2027/carriers/Presbyterian_OEPresentation_Video.mp4"
                           class="sidenav-link" target="_blank">Open/Switch Enrollment Recorded
                           Presentation</a>
                       </li>
-                      <h4 class="mt-4 mb-3">2024 Open Enrollment Presentations</h4>
-
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank"
-                          href="/docs/Open-Switch-Enrollment-2024/PHP2023_NMPSIA_Open_Switch_Slides.pdf"
-                          class="">Open/Switch Enrollment Slideshow Presentation</a>
-                      </li>
-                      <li>
-                        <i class="bx bxs-movie-play"></i>
-                        <a target="_blank"
-                          href="/docs/Open-Switch-Enrollment-2024/PHP2023_NMPSIA_Open_Switch_Recording.mp4">Open/Switch
-                          Enrollment
-                          Recorded Presentation</a>
-                      </li>
+                      
 
                       <h4 class="mt-4 mb-3">Member Information</h4>
 

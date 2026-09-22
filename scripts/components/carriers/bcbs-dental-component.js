@@ -11,17 +11,17 @@ class BCBSDental extends HTMLElement {
         </a>
       </div>
       <ul class="content-list">
-        <h4 class="mt-4 mb-3">2025 Open Enrollment Presentations</h4>
+        <h4 class="mt-4 mb-3">2026 Open Enrollment Presentations</h4>
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a target="_blank"
-            href="/pdfs/Open_Switch_Enrollment_fPY2025/BCBS_Dental/BCBS Dental.pdf">Open/Switch
+            href="/PDFs/open-enrollment/PY_2027/carriers/BlueCare_Dental_OEPresentation_Slides.pdf">Open/Switch
             Enrollment Presentation</a>
         </li>
         <li>
           <i class="bx bxs-movie-play"></i>
           <a target="_blank"
-            href="/pdfs/Open_Switch_Enrollment_fPY2025/BCBS_Dental/BCBS Dental.mp4">Open/Switch
+            href="/PDFs/open-enrollment/PY_2027/carriers/BlueCare_Dental_OEPresentation_Video.mp4">Open/Switch
             Enrollment
             Recorded Presentation</a>
         </li>

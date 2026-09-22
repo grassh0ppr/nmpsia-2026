@@ -77,26 +77,6 @@ const carriersData = [
     componentTag: "express-scripts-info",
   },
   {
-    id: "cvs-caremark",
-    name: "CVS Caremark",
-    logo: "images/CVS_Caremark_logo.jpg",
-    benefitTypes: ["Pharmacy"],
-    badge: "Discontinued 6/30/2026",
-    contact: {
-      phone: "1-877-787-0652",
-      phoneLink: "tel:18777870652",
-      groupNumbers: "RxBIN: 004336, RxPCN: ADV, RxGRP: RX22AS",
-      website: "https://www.caremark.com/",
-      websiteText: "Visit Website",
-    },
-    providerSearch: {
-      url: "https://www.caremark.com/wps/portal/.cmd/el?id=s7a4i9un3m_1&cmxtarget=FRAMED_LOCAL_PHARMACY&newLogin=yes&returnURL=http://www.caremark.com/framedLogoff.html",
-      text: "Find a Pharmacy",
-    },
-    modalId: "cvsCaremarkModal",
-    componentTag: "caremark-info",
-  },
-  {
     id: "bcbs-dental",
     name: "BlueCare Dental",
     logo: "images/carriers/BlueCare DentalSM.png",

@@ -10,15 +10,15 @@ class BlueCrossMedical extends HTMLElement {
         </a>
       </div>
       <ul class="content-list">
-        <h4 class="mt-4 mb-3">2025 Open Enrollment Presentations</h4>
+        <h4 class="mt-4 mb-3">2026 Open Enrollment Presentations</h4>
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a href="/pdfs/Open_Switch_Enrollment_fPY2025/BlueCross_BlueShield/2025 NMPSIA Annual Switch Presentation_Final v1.kj.pdf"
+          <a href="/PDFs/open-enrollment/PY_2027/carriers/BCBSNM_Medical_OEPresentation_Slides.pdf"
             target="_blank">Open/Switch Enrollment Slideshow Presentation</a>
         </li>
         <li>
           <i class="bx bxs-movie-play"></i>
-          <a href="/pdfs/Open_Switch_Enrollment_fPY2025/BlueCross_BlueShield/2025 NMPSIA Annual Switch Presentation_Final v1.kj.mp4"
+          <a href="/PDFs/open-enrollment/PY_2027/carriers/BCBSNM_Medical_OEPresentation_Video.mp4"
             target="_blank">Open/Switch Enrollment
             Recorded Presentation</a>
         </li>

@@ -1824,7 +1824,7 @@ body.modern-body::after {
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 1.25rem 0.75rem 0.75rem 0.75rem;
+  padding: 1.5rem 0.75rem;
   max-height: calc(100vh - 4rem);
   min-height: 0;
   position: sticky;
@@ -1843,6 +1843,7 @@ body.modern-body::after {
 
 .sidebar-header {
   flex-shrink: 0;
+  padding: 1rem 1.2rem;
 }
 
 .sidebar-header h3 {
