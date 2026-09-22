@@ -8,7 +8,7 @@ class LanternBenefits extends HTMLElement {
             alt="Lantern (SurgeryPlus rebrand) logo" class="my-4 mx-3" />
         </a>
       </div>
-      <p class="bold ms-4">New name, same trusted team.</p>
+      <p class="text-danger bold ms-4">Service ending February 2027</p>
       <ul class="content-list">
         <h4 class="mt-4 mb-3">2025 Open Enrollment Presentations</h4>
         <li>

@@ -117,7 +117,7 @@ class CarrierContacts extends HTMLElement {
                     <h5>Lantern</h5>
                   </div>
                   <div class="carrier-details">
-                    <p><strong>Formerly known as Surgery Plus</strong></p>
+                    <p class="text-danger bold"><strong>Service ending February 2027</strong></p>
                     <p>Group #: n/a</p>
                     <a href="tel:18552043922" class="carrier-phone">
                       <i class="bx bx-phone"></i>855-204-3922
