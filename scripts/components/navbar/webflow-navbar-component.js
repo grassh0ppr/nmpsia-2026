@@ -46,6 +46,7 @@ class SiteNavbar extends HTMLElement {
                 <a href="./premiums.html" class="dropdown-link" role="menuitem">Benefit Premiums</a>
                 <a href="./wellness.html" class="dropdown-link" role="menuitem">Wellness and Well-Being Resources</a>
                 <a href="./behavioral-health.html" class="dropdown-link" role="menuitem">Behavioral Health Resources</a>
+                <a href="./open-enrollment.html" class="dropdown-link" role="menuitem">2026 Open/Switch Enrollment</a>
               </div>
             </div>
 
@@ -61,6 +62,7 @@ class SiteNavbar extends HTMLElement {
                 <a href="./premiums.html" class="dropdown-link" role="menuitem">Benefit Premiums</a>
                 <a href="./wellness.html" class="dropdown-link" role="menuitem">Wellness and Well-Being Resources</a>
                 <a href="./behavioral-health.html" class="dropdown-link" role="menuitem">Behavioral Health Resources</a>
+                <a href="./open-enrollment.html" class="dropdown-link" role="menuitem">2026 Open/Switch Enrollment</a>
               </div>
             </div>
 
