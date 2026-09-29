@@ -5,7 +5,6 @@ class HypertensionMgmt extends HTMLElement {
         <h2 class="display-4">Hypertension Management</h2>
         <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
       </div>
-      <hr />
       <div class="container banner">
         <img
           src="images/wellness/ahmed-getty-imgs-hypertension.jpg"
@@ -37,7 +36,15 @@ class HypertensionMgmt extends HTMLElement {
           >
         </li>
       </ul>
-    
+      <h3 class="sub-heading">Express Scripts Evernorth - Omada</h3>
+      <ul class="content-list">
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/wellness/2026/Omada Hypertension.pdf"
+            >Omada Hypertension Program Flyer</a
+          >
+        </li>
+      </ul>
         `;
   }
 }

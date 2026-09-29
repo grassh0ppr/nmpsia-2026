@@ -5,7 +5,6 @@ class BehavioralHealth extends HTMLElement {
         <h2 class="display-4">Behavioral Health</h2>
         <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
       </div>
-      <hr />
       <div class="container">
         <img
           style="border-radius: 4px"

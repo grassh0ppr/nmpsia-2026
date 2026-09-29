@@ -5,7 +5,6 @@ class BeYourBestSelf extends HTMLElement {
     <h2 class="display-4">Be Your Best Self Tips/Webinars</h2>
     <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
   </div>
-  <hr />
   <div class="container banner">
     <img
       src="images/wellness/fellipe-ditadi-wellness-by-carrier.jpg"

@@ -91,6 +91,15 @@ class WeightMgmt extends HTMLElement {
           >
         </li>
       </ul>
+      <h3 class="sub-heading">Express Scripts Evernorth - Omada</h3>
+      <ul class="content-list">
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/wellness/2026/Omada Weight Management.pdf"
+            >Omada Weight Management Program Flyer</a
+          >
+        </li>
+      </ul>
         `;
   }
 }

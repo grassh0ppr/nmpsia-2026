@@ -5,7 +5,6 @@ class DiabetesMgmt extends HTMLElement {
             <h2 class="display-4">Diabetes Prevention & Management</h2>
             <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
         </div>
-      <hr />
       <div class="container banner">
         <img
           src="images/wellness/ave-calvar-diabetes-wellness.jpg"
@@ -56,7 +55,15 @@ class DiabetesMgmt extends HTMLElement {
           Dentist</a>
       </li>
       </ul>
-      
+      <h3 class="sub-heading">Express Scripts Evernorth - Omada</h3>
+      <ul class="content-list">
+        <li>
+          <i class="bx bxs-file-pdf"></i>
+          <a target="_blank" href="/wellness/2026/Omada Diabetes.pdf"
+            >Omada Diabetes Program Flyer</a
+          >
+        </li>
+      </ul>
         `;
   }
 }

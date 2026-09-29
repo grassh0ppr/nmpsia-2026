@@ -60,7 +60,7 @@
 
     <!-- custom stylesheets -->
     <link rel="stylesheet" href="css/footer.css?v=2" />
-    <link rel="stylesheet" href="css/main.css?v=2" />
+    <link rel="stylesheet" href="css/main.css?v=2.1" />
     <link rel="stylesheet" href="css/queries.css?v=2" />
 
     <!-- font awesome -->
@@ -79,20 +79,21 @@
       defer
     ></script>
 
-    <script src="./scripts/components/wellness/be-your-best-self.js"></script>
-    <script src="./scripts/components/wellness/behavioral-health.js"></script>
-    <script src="./scripts/components/wellness/dental-health.js"></script>
-    <script src="./scripts/components/wellness/diabetes-mgmt.js?v=1.1"></script>
-    <script src="./scripts/components/wellness/ergonomic-health.js"></script>
-    <script src="./scripts/components/wellness/eye-health.js"></script>
+    <script src="./scripts/components/wellness/be-your-best-self.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/behavioral-health.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/dental-health.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/diabetes-mgmt.js?v=1.2"></script>
+    <script src="./scripts/components/wellness/ergonomic-health.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/eye-health.js?v=1.1"></script>
     <script src="./scripts/components/wellness/go-back-btn.js"></script>
-    <script src="./scripts/components/wellness/gym-membership.js"></script>
-    <script src="./scripts/components/wellness/hypertension-mgmt.js"></script>
-    <script src="./scripts/components/wellness/newsletters-healthkits.js"></script>
-    <script src="./scripts/components/wellness/reproductive-health.js"></script>
-    <script src="./scripts/components/wellness/telehealth-virtual.js"></script>
-    <script src="./scripts/components/wellness/weight-mgmt.js"></script>
-    <script src="./scripts/components/wellness/wellness-ambassador.js"></script>
+    <script src="./scripts/components/wellness/gym-membership.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/hypertension-mgmt.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/newsletters-healthkits.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/reproductive-health.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/telehealth-virtual.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/pain-management.js?v=1"></script>
+    <script src="./scripts/components/wellness/weight-mgmt.js?v=1.1"></script>
+    <script src="./scripts/components/wellness/wellness-ambassador.js?v=1.1"></script>
     <script src="./scripts/components/wellness/wellness-by-carrier.js"></script>
   </head>
 
@@ -193,6 +194,14 @@
           >
             <i class="fa-solid fa-notes-medical"></i>
             <span>Weight Management</span>
+          </a>
+          <a
+            href="#pain-management"
+            class="nav-item"
+            data-section="pain-management"
+          >
+            <i class="fa-solid fa-hand-holding-medical"></i>
+            <span>Pain Management</span>
           </a>
           <a href="#ambassadors" class="nav-item" data-section="ambassadors">
             <i class="fa-solid fa-envelope"></i>
@@ -393,6 +402,12 @@
         <div id="healthy-weight" class="content-section">
           <!-- <go-back-btn></go-back-btn> -->
           <weight-mgmt></weight-mgmt>
+        </div>
+
+        <!-- PAIN MANAGEMENT -->
+        <div id="pain-management" class="content-section">
+          <!-- <go-back-btn></go-back-btn> -->
+          <pain-management></pain-management>
         </div>
 
         <!-- WELLNESS AMBASSADORS -->
