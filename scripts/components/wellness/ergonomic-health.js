@@ -5,7 +5,6 @@ class ErgonomicHealth extends HTMLElement {
             <h2 class="display-4">Ergonomic Health Wellness Offerings</h2>
             <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
           </div>
-          <hr />
           <div class="container banner">
             <img
               src="images/wellness/jason-strull-ergonomics-desk.jpg"

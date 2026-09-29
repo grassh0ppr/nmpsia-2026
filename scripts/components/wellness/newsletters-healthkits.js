@@ -5,7 +5,6 @@ class NewslettersHealthkits extends HTMLElement {
             <h2 class="display-4">Health Kits & Wellness Newsletters</h2>
             <img src="images/nmpsia_logo_2024.png" alt="NMPSIA logo" />
           </div>
-          <hr />
           <div class="container banner">
             <img
               src="images/wellness/roman-kraft-person-reading-news.jpg"
