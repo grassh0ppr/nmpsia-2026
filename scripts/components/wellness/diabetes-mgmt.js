@@ -12,15 +12,7 @@ class DiabetesMgmt extends HTMLElement {
         />
       </div>
 
-      <h3 class="sub-heading">Express Scripts by Evernorth</h3>
-      <ul class="content-list">
-        <li>
-          <i class="bx bxs-file-pdf"></i>
-          <a href="./pdfs/Evernorth_Client_Led_Toolkit_2026_Multi_Product_PVN_DM_HTN_with_CGM_Flyer.pdf" target="_blank"
-            >The No-Cost Diabetic Meter Program</a
-          >
-        </li>
-      </ul>
+      
       <h3 class="sub-heading">Blue Cross Blue Shield of New Mexico</h3>
       <ul class="content-list">
        

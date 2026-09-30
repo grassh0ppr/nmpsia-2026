@@ -21,7 +21,7 @@ class WellnessAmbassador extends HTMLElement {
         </li>
         <li>
           <i class="bx bxs-file-pdf"></i>
-          <a href="/wellness/Website-_Wellness_Page_Updates/NMPSIA Wellness Ambassador Flyer 26-27.pdf" target="_blank"
+          <a href="https://nmpsia.com/wellness/2026/NMPSIA Wellness Ambassador Flyer 26-27.pdf" target="_blank"
             >Wellness Ambassador Program Flyer</a
           >
         </li>
