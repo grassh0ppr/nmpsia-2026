@@ -2294,6 +2294,11 @@ body.modern-body::after {
   overflow-y: auto;
 }
 
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+}
+
 .modal-body .heading-and-element-flexbox,
 .modal-body .go-back {
   display: none;
