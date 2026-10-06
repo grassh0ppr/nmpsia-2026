@@ -1,208 +1,124 @@
 // object holding news items to be rendered to the page
 const homepageNews = [
-  // notice of public meetings - SEPTEMBER 2 & 3, 2026
-  {
-    date: {
-      day: "27",
-      month: "August",
-    },
-    title: "Notice of Public Meetings September 2 & 3, 2026",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
-    linkHref: "/nmpsiadownload/202609/notice_of_public_meetings.pdf",
-    linkText: "View notice",
-  },
+  // notice of public meetings - OCTOBER 14 & 15, 2026
+  // {
+  //   date: {
+  //     day: "10",
+  //     month: "October",
+  //   },
+  //   title: "Notice of Public Meetings October 14 & 15, 2026",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202610/notice_of_public_meetings.pdf",
+  //   linkText: "View notice",
+  // },
   // BAC Meeting
-  {
-    date: {
-      day: "2",
-      month: "September",
-    },
-    title: "Benefits Advisory Committee Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202609/BAC_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "14",
+  //     month: "October",
+  //   },
+  //   title: "Benefits Advisory Committee Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202610/BAC_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
   // RAC meeting
-  {
-    date: {
-      day: "3",
-      month: "September",
-    },
-    title: "Risk Advisory Committee Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202609/RAC_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "14",
+  //     month: "October",
+  //   },
+  //   title: "Risk Advisory Committee Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202610/RAC_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
   // IFR meeting
-  {
-    date: {
-      day: "3",
-      month: "September",
-    },
-    title: "Internal Fiscal Review Committee Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202609/IFR_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "15",
+  //     month: "October",
+  //   },
+  //   title: "Internal Fiscal Review Committee Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202610/IFR_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
   // Board meeting
-  {
-    date: {
-      day: "3",
-      month: "September",
-    },
-    title: "Board of Directors Meeting",
-    description:
-      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202609/Board_Meeting_agenda.pdf",
-    linkText: "View agenda",
-  },
+  // {
+  //   date: {
+  //     day: "15",
+  //     month: "October",
+  //   },
+  //   title: "Board of Directors Meeting",
+  //   description:
+  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
+  //   linkHref: "/nmpsiadownload/202610/Board_Meeting_agenda.pdf",
+  //   linkText: "View agenda",
+  // },
 
   //Wellness events and flyer materials go here
 
-  // August wellness webinars
-  // {
-  //   date: {
-  //     day: "11",
-  //     month: "August",
-  //   },
-  //   title: "BCBS Webinar - Living Financially Well",
-  //   description:
-  //     "Join Blue Cross and Blue Shield for a webinar on strategies for living financially well. View the flyer for details and registration information.",
-  //   linkHref: "/wellness/august_2026/BCBS Webinar - Living Financially Well.pdf",
-  //   linkText: "View flyer",
-  // },
-  // {
-  //   date: {
-  //     day: "18",
-  //     month: "August",
-  //   },
-  //   title: "BCBS Webinar - Food as Medicine",
-  //   description:
-  //     "Join Blue Cross and Blue Shield for a webinar exploring how food choices impact your health and well-being. View the flyer for details and registration information.",
-  //   linkHref: "/wellness/august_2026/BCBS Webinar - Food as Medicine.pdf",
-  //   linkText: "View flyer",
-  // },
-  // {
-  //   date: {
-  //     day: "19",
-  //     month: "August",
-  //   },
-  //   title: "TSG Webinar - Gut Instincts",
-  //   description:
-  //     "Join The Solutions Group for a wellness webinar on gut health and its connection to overall well-being. View the flyer for details and registration information.",
-  //   linkHref: "/wellness/august_2026/TSG Webinar - Gut Instincts.pdf",
-  //   linkText: "View flyer",
-  // },
-  // {
-  //   date: {
-  //     day: "24",
-  //     month: "August",
-  //   },
-  //   title: 'BCBS Webinar - Setting the Table for "Healthy Eating"',
-  //   description:
-  //     "Join Blue Cross and Blue Shield for a webinar on building healthy eating habits and making nutritious choices. View the flyer for details and registration information.",
-  //   linkHref: "/wellness/august_2026/BCBS Webinar - Setting the Table for Healthy Eating.pdf",
-  //   linkText: "View flyer",
-  // },
-  // {
-  //   date: {
-  //     day: "26",
-  //     month: "August",
-  //   },
-  //   title: "BCBS Webinar - Trust Your Gut and Support a Healthy Microbiome",
-  //   description:
-  //     "Join Blue Cross and Blue Shield for a webinar on the microbiome and how to support a healthy gut. View the flyer for details and registration information.",
-  //   linkHref: "/wellness/august_2026/BCBS Webinar - Trust Your Gut and Support a Healthy Microbiome.pdf",
-  //   linkText: "View flyer",
-  // },
-
-  // September wellness events
+  // October wellness webinars
   {
     date: {
-      day: "14",
-      month: "September",
+      day: "20",
+      month: "October",
     },
-    title: "Walktober Registration Opens!",
+    title: "Webinar - Healthy Bones and Joints",
     description:
-      "Registration is now open for the NMPSIA Walktober walking challenge, starting October 1. View the flyer for details on how to sign up and participate.",
-    linkHref:
-      "https://nmpsia.com/wellness/september_2026/NMPSIA Walktober Coming Soon '26.pdf",
+      "Learn how to keep your bones and joints strong and healthy. View the flyer for details and registration information.",
+    linkHref: "/wellness/october_2026/Healthy_Bones_and_Joints.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "16",
-      month: "September",
+      day: "21",
+      month: "October",
     },
-    title: "TSG Webinar - Strong is the New Long: Muscle for Longevity",
+    title: "TSG Webinar - Chair Repair: Undoing the Damage of Sitting",
     description:
-      "Join The Solutions Group for a wellness webinar on building muscle for long-term health and longevity. 12:00 p.m. — recording available. View the flyer for details and registration information.",
+      "Join The Solutions Group for a wellness webinar on reversing the effects of prolonged sitting on your body. View the flyer for details and registration information.",
     linkHref:
-      "https://nmpsia.com/wellness/september_2026/September Wellness 2026 Webinars TSG_09.pdf",
+      "/wellness/october_2026/October_Wellness_2026_Webinars_TSG_10.pdf",
     linkText: "View flyer",
   },
   {
     date: {
       day: "22",
-      month: "September",
+      month: "October",
     },
-    title: "Caregiver Support Webinar",
+    title:
+      "TSG Cooking Show - Chili Today, Calm Tomorrow: Foods for Body & Soul",
     description:
-      "Join us for a webinar on caregiver support resources and strategies for balancing caregiving with your own well-being. 3:30 p.m. View the flyer for details and registration information.",
-    linkHref:
-      "https://nmpsia.com/wellness/september_2026/Caregiver Support Webinar.pdf",
+      "Join The Solutions Group for this month's wellness cooking show featuring foods that nourish both body and mind. View the flyer for details.",
+    linkHref: "/wellness/october_2026/10_October_Cooking_Show_2026.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "24",
-      month: "September",
+      day: "26",
+      month: "October",
     },
-    title: "TSG Cooking Show - Golden Grains & Gentle Gains",
+    title: "Webinar - Hydration and Exercise",
     description:
-      "Join The Solutions Group for this month's wellness cooking show featuring whole grains and strength-building nutrition. 12:00 p.m. — recording available. View the flyer for details.",
-    linkHref:
-      "https://nmpsia.com/wellness/september_2026/09_September Cooking Show_2026.pdf",
+      "Learn how proper hydration supports your workout performance and recovery. View the flyer for details and registration information.",
+    linkHref: "/wellness/october_2026/Hydration_and_Outdoor_Exercise.pdf",
     linkText: "View flyer",
   },
   {
     date: {
       day: "28",
-      month: "September",
-    },
-    title: "Breast Cancer Awareness Webinar",
-    description:
-      "Join us for a brief but important webinar on breast cancer awareness, screenings, and early detection. Sessions at 8:30 a.m. & 3:45 p.m. — only 15 minutes! View the flyer for details and registration information.",
-    linkHref:
-      "https://nmpsia.com/wellness/september_2026/Breast Cancer Awareness Webinar.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "30",
-      month: "September",
-    },
-    title: "Webinar - Important Wellness Screenings As We Age",
-    description:
-      "Learn which preventive screenings matter most at every stage of life. Sessions at 8:30 a.m. & 3:45 p.m. — only 15 minutes! View the flyer for details and registration information.",
-    linkHref:
-      "https://nmpsia.com/wellness/september_2026/Important Wellness Screenings As We Age.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "1",
       month: "October",
     },
-    title: "Walktober Begins!",
+    title: "Webinar - Exercise for a Healthier You",
     description:
-      "The NMPSIA Walktober walking challenge kicks off today! View the flyer for details on how to participate and earn wellness rewards throughout October.",
-    linkHref:
-      "https://nmpsia.com/wellness/september_2026/NMPSIA Walktober Coming Soon '26.pdf",
+      "Discover practical strategies for building an exercise routine that improves your overall health and well-being. View the flyer for details and registration information.",
+    linkHref: "/wellness/october_2026/Exercise_for_a_Healthier_You.pdf",
     linkText: "View flyer",
   },
 
