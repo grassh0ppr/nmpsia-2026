@@ -1,5 +1,79 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "October 2026": [
+    {
+      name: "Wellness Communications - October 2026",
+      url: "/wellness/october_2026/October_2026_Wellness_Communication.pdf",
+    },
+    {
+      name: "NMPSIA Wellness Calendar - October 2026",
+      url: "/wellness/october_2026/NMPSIA_Wellness_Calendar_October_2026.pdf",
+    },
+    {
+      name: "NMPSIA October 2026 Newsletter",
+      url: "/wellness/october_2026/NMPSIA_October_2026_Newsletter.pdf",
+    },
+    {
+      name: "Life on Mindfulness Program Flyer",
+      url: "/wellness/october_2026/Life_on_Mindfulness_NMPSIA.pdf",
+    },
+    {
+      name: "Register for Walking into Mindfulness - 3-Part Online Program",
+      url: "/wellness/october_2026/NMPSIA_Walking_Into_Mindfulness.pdf",
+    },
+    {
+      name: "Register for Walktober for Weekly Prizes!",
+      url: "/wellness/october_2026/NMPSIA_Walktober_Flyer.pdf",
+    },
+    {
+      name: "Portion Power: Your Secret Weapon",
+      url: "/wellness/october_2026/NN_October_2026_Article.pdf",
+    },
+    {
+      name: "Presbyterian Fitness Pass",
+      url: "/wellness/october_2026/Presbyterian_Fitness_Pass.pdf",
+    },
+    {
+      name: "Mental Health Awareness: How to Start the Conversation",
+      url: "/wellness/october_2026/wa2615126_well_balanced_october_26_fnl.pdf",
+    },
+    {
+      name: "Chair Repair - Undoing the Effects of Sitting",
+      url: "/wellness/october_2026/10_October_Observance_2026.pdf",
+    },
+    {
+      name: "Reparacion de Sillas - Revertir los Efectos de estar Sentado",
+      url: "/wellness/october_2026/10_October_Observance_2026_espanol.pdf",
+    },
+    {
+      name: "BCBS Fitness Program",
+      url: "/wellness/october_2026/BCBS_Fitness_Program.pdf",
+    },
+    {
+      name: "Register for this 6-Week Stretching Program",
+      url: "/wellness/october_2026/Full_Body_Workplace_Stretching_Program.pdf",
+    },
+    {
+      name: "October 21 Webinar - Chair Repair: Undoing the Damage of Sitting",
+      url: "/wellness/october_2026/October_Wellness_2026_Webinars_TSG_10.pdf",
+    },
+    {
+      name: "October 22 Cooking Show - Chili Today, Calm Tomorrow: Foods for Body & Soul",
+      url: "/wellness/october_2026/10_October_Cooking_Show_2026.pdf",
+    },
+    {
+      name: "October 20 Webinar - Healthy Bones and Joints",
+      url: "/wellness/october_2026/Healthy_Bones_and_Joints.pdf",
+    },
+    {
+      name: "October 26 Webinar - Hydration and Exercise",
+      url: "/wellness/october_2026/Hydration_and_Outdoor_Exercise.pdf",
+    },
+    {
+      name: "October 28 Webinar - Exercise for a Healthier You",
+      url: "/wellness/october_2026/Exercise_for_a_Healthier_You.pdf",
+    },
+  ],
   "September 2026": [
     {
       name: "Wellness Communications - September 2026",
