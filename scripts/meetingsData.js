@@ -1,4 +1,26 @@
 export const meetings = {
+  // October 14 & 15, 2026 all agendas present
+  202610: {
+    monthTitle: "October 2026",
+    committees: {
+      BAC: {
+        date: "14",
+        documents: ["agenda"],
+      },
+      RAC: {
+        date: "14",
+        documents: ["agenda"],
+      },
+      IFR: {
+        date: "15",
+        documents: ["agenda"],
+      },
+      Board: {
+        date: "15",
+        documents: ["agenda"],
+      },
+    },
+  },
   // September 2 & 3, 2026 all agendas present
   202609: {
     monthTitle: "September 2026",

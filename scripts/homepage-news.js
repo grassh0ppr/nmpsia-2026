@@ -1,65 +1,65 @@
 // object holding news items to be rendered to the page
 const homepageNews = [
   // notice of public meetings - OCTOBER 14 & 15, 2026
-  // {
-  //   date: {
-  //     day: "10",
-  //     month: "October",
-  //   },
-  //   title: "Notice of Public Meetings October 14 & 15, 2026",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202610/notice_of_public_meetings.pdf",
-  //   linkText: "View notice",
-  // },
+  {
+    date: {
+      day: "10",
+      month: "October",
+    },
+    title: "Notice of Public Meetings October 14 & 15, 2026",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
+    linkHref: "/nmpsiadownload/202610/notice_of_public_meetings.pdf",
+    linkText: "View notice",
+  },
   // BAC Meeting
-  // {
-  //   date: {
-  //     day: "14",
-  //     month: "October",
-  //   },
-  //   title: "Benefits Advisory Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202610/BAC_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "14",
+      month: "October",
+    },
+    title: "Benefits Advisory Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202610/BAC_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
   // RAC meeting
-  // {
-  //   date: {
-  //     day: "14",
-  //     month: "October",
-  //   },
-  //   title: "Risk Advisory Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202610/RAC_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "14",
+      month: "October",
+    },
+    title: "Risk Advisory Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202610/RAC_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
   // IFR meeting
-  // {
-  //   date: {
-  //     day: "15",
-  //     month: "October",
-  //   },
-  //   title: "Internal Fiscal Review Committee Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202610/IFR_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "15",
+      month: "October",
+    },
+    title: "Internal Fiscal Review Committee Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202610/IFR_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
   // Board meeting
-  // {
-  //   date: {
-  //     day: "15",
-  //     month: "October",
-  //   },
-  //   title: "Board of Directors Meeting",
-  //   description:
-  //     "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-  //   linkHref: "/nmpsiadownload/202610/Board_Meeting_agenda.pdf",
-  //   linkText: "View agenda",
-  // },
+  {
+    date: {
+      day: "15",
+      month: "October",
+    },
+    title: "Board of Directors Meeting",
+    description:
+      "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
+    linkHref: "/nmpsiadownload/202610/Board_Meeting_agenda.pdf",
+    linkText: "View agenda",
+  },
 
   //Wellness events and flyer materials go here
 
