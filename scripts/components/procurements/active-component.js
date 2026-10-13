@@ -18,6 +18,21 @@ class ActiveProcurements extends HTMLElement {
           </thead>
           <tbody>
           <tr>
+            <td>11/12/2026</td>
+            <td>RFP# 342-2027-03</td>
+            <td>
+              <a href="/docs/Workers’ Compensation Third-Party Dedicated Claims Administration Services Final.pdf" target="_blank">Workers' Compensation Claims Auditing Services</a>
+            </td>
+          </tr>
+          <tr>
+            <td>11/12/2026</td>
+            <td>RFP# 342-2027-03</td>
+            <td>
+              <a href="/docs/Legal Advertisement 342202703.pdf" target="_blank">Notice of RFP for Professional Services:
+              Workers' Compensation Claims Admin Services</a>
+            </td>
+          </tr>
+          <tr>
             <td>09/25/2026</td>
             <td>RFP# 342-2027-01</td>
             <td>
