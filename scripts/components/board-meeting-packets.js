@@ -20,6 +20,20 @@ class BoardMeetingPackets extends HTMLElement {
                 aria-labelledby="headingBMP2026" data-bs-parent="#accordionBMP">
                 <div class="accordion-body">
                     <ul class="content-list">
+                        <!-- October 2026 -->
+                        <li>
+                            <i class="bx bxs-file-pdf"></i>
+                            <a href="/nmpsiadownload/202610/packets/board_meeting_packet.pdf"
+                                target="_blank">
+                                October 2026</a>
+                        </li>
+                        <!-- September 2026 -->
+                        <li>
+                            <i class="bx bxs-file-pdf"></i>
+                            <a href="/nmpsiadownload/202609/packets/board_meeting_packet.pdf"
+                                target="_blank">
+                                September 2026</a>
+                        </li>
                         <!-- July 2026 -->
                         <li>
                             <i class="bx bxs-file-pdf"></i>
