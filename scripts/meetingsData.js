@@ -9,15 +9,15 @@ export const meetings = {
       },
       RAC: {
         date: "14",
-        documents: ["agenda"],
+        documents: ["agenda", "packet"],
       },
       IFR: {
         date: "15",
-        documents: ["agenda"],
+        documents: ["agenda", "packet"],
       },
       Board: {
         date: "15",
-        documents: ["agenda"],
+        documents: ["agenda", "packet"],
       },
     },
   },
