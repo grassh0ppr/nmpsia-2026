@@ -21,7 +21,7 @@ class ActiveProcurements extends HTMLElement {
             <td>11/12/2026</td>
             <td>RFP# 342-2027-03</td>
             <td>
-              <a href="/docs/Workers’ Compensation Third-Party Dedicated Claims Administration Services Final.pdf" target="_blank">Workers' Compensation Claims Auditing Services</a>
+              <a href="/docs/Workers_Compensation_ThirdParty_Dedicated_Claims_Administration_Services_Final.pdf" target="_blank">Workers' Compensation Claims Auditing Services</a>
             </td>
           </tr>
           <tr>
