@@ -35,7 +35,7 @@ class BoardMembersTbl extends HTMLElement {
                     <td>Governor Appointee</td>
                 </tr>
                 <tr>
-                    <td>Tim Crone</td>
+                    <td>Whitney Holland</td>
                     <td>American Federation of Teachers NM</td>
                 </tr>
                 <tr>
@@ -43,19 +43,19 @@ class BoardMembersTbl extends HTMLElement {
                     <td>NM Superintendents Association</td>
                 </tr>
                 <tr>
-                    <td>Pauline Jaramillo</td>
-                    <td>NM School Boards Association</td>
-                </tr>
-                <tr>
-                    <td>Bethany Jarrell</td>
-                    <td>National Education Association NM</td>
-                </tr>
-                <tr>
                     <td>K.T. Manis</td>
                     <td>Public Education Commission</td>
                 </tr>
                 <tr>
                     <td>David Martinez, Jr.</td>
+                    <td>National Education Association NM</td>
+                </tr>
+                <tr>
+                    <td>Margaret Martinez</td>
+                    <td>NM School Boards Association</td>
+                </tr>
+                <tr>
+                    <td>Jennifer Trujillo</td>
                     <td>National Education Association NM</td>
                 </tr>
                 <tr>
