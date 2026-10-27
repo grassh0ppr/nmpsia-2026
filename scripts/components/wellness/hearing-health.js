@@ -19,6 +19,10 @@ class HearingHealth extends HTMLElement {
         <a href="/wellness/hearing/NM ENG Group Blue365 Overview Member Flyer Hearing.pdf" target="_blank">BCBS - Blue365 Hearing Discount Program Flyer</a>
       </li>
       <li>
+        <i class="bx bxs-file-pdf"></i>
+        <a href="/wellness/hearing/Davis Vision Hearing Aid Discount Program.pdf" target="_blank">Davis Vision Hearing Aid Discount Program Flyer</a>
+      </li>
+      <li>
         <i class="bx bx-link-external"></i>
         <a href="https://www.blue365deals.com/BCBSNM/join?destination=%2Foffers%3Fcategory%255Bhearing_aids%255D%3Dh%E2%80%A6" target="_blank">BCBS - Blue365 Hearing Discount Program Information</a>
       </li>
