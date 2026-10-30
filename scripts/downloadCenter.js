@@ -14,7 +14,7 @@
 // use js to render the html
 
 // Updated Meeting Data
-import { meetings } from "./meetingsData.js?v=1.9";
+import { meetings } from "./meetingsData.js?v=2.0";
 
 // Function to dynamically generate URLs
 function generateDocumentURL(monthId, committee, type) {
