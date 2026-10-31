@@ -16,10 +16,18 @@
 // Updated Meeting Data
 import { meetings } from "./meetingsData.js?v=2.0";
 
+// cache-busting versions for agendas replaced after upload, keyed "YYYYMM_Committee"
+const agendaVersions = {
+  "202611_IFR": 2,
+  "202611_Board": 2,
+};
+
 // Function to dynamically generate URLs
 function generateDocumentURL(monthId, committee, type) {
   if (type === "agenda") {
-    return `https://nmpsia.com/nmpsiadownload/${monthId}/${committee}_Meeting_agenda.pdf`;
+    const version = agendaVersions[`${monthId}_${committee}`];
+    const query = version ? `?v=${version}` : "";
+    return `https://nmpsia.com/nmpsiadownload/${monthId}/${committee}_Meeting_agenda.pdf${query}`;
   } else if (type === "packet") {
     return `https://nmpsia.com/nmpsiadownload/${monthId}/packets/${committee}_Meeting_packet.pdf`;
   }

@@ -45,7 +45,7 @@ const homepageNews = [
     title: "Internal Fiscal Review Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/IFR_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202611/IFR_Meeting_agenda.pdf?v=2",
     linkText: "View agenda",
   },
   // Board meeting
@@ -57,7 +57,7 @@ const homepageNews = [
     title: "Board of Directors Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/Board_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202611/Board_Meeting_agenda.pdf?v=2",
     linkText: "View agenda",
   },
 
