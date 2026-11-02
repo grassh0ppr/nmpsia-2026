@@ -19,7 +19,7 @@ import { meetings } from "./meetingsData.js?v=2.0";
 // cache-busting versions for agendas replaced after upload, keyed "YYYYMM_Committee"
 const agendaVersions = {
   "202611_IFR": 2,
-  "202611_Board": 2,
+  "202611_Board": 3,
 };
 
 // Function to dynamically generate URLs

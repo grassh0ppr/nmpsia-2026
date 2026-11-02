@@ -57,7 +57,7 @@ const homepageNews = [
     title: "Board of Directors Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/Board_Meeting_agenda.pdf?v=2",
+    linkHref: "/nmpsiadownload/202611/Board_Meeting_agenda.pdf?v=3",
     linkText: "View agenda",
   },
 
