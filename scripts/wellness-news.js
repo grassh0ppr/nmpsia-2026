@@ -46,24 +46,20 @@ const monthlyNewsKits = {
       url: "/wellness/november_2026/Full Body Workplace Stretching Program.pdf",
     },
     {
-      name: "November Webinars - NMPSIA Wellness 2026",
-      url: "/wellness/november_2026/November Wellness 2026 Webinars TSG.pdf",
+      name: "November 10 - Stress Less, Live More (Webinar)",
+      url: "/wellness/november_2026/Webinar - Stress Less-Live More.pdf",
     },
     {
-      name: "November Cooking Show",
-      url: "/wellness/november_2026/11_November Cooking Show_2026.pdf",
-    },
-    {
-      name: "Webinar - Healthy Holiday Eating",
-      url: "/wellness/november_2026/Webinar - Healthy Holiday Eating.pdf",
-    },
-    {
-      name: "Webinar - Setting the Table for Healthy Eating",
+      name: "November 16 - Setting the Table for Healthy Eating (Webinar)",
       url: "/wellness/november_2026/Webinar - Setting the Table for Healthy Eating.pdf",
     },
     {
-      name: "Webinar - Stress Less, Live More",
-      url: "/wellness/november_2026/Webinar - Stress Less-Live More.pdf",
+      name: "November 18 - Pain, Pain, Go Away: Injury Insights (Webinar)",
+      url: "/wellness/november_2026/November Wellness 2026 Webinars TSG.pdf",
+    },
+    {
+      name: "November 19 - Cooking Show - Gobble Up Goodness: Carbs That Care For You (Webinar)",
+      url: "/wellness/november_2026/11_November Cooking Show_2026.pdf",
     },
   ],
   "October 2026": [

@@ -63,62 +63,60 @@ const homepageNews = [
 
   //Wellness events and flyer materials go here
 
-  // October wellness webinars
+  // November wellness webinars and cooking show
   {
     date: {
-      day: "20",
-      month: "October",
+      day: "10",
+      month: "November",
     },
-    title: "Webinar - Healthy Bones and Joints",
+    title: "Webinar - Stress Less; Live More",
     description:
-      "Learn how to keep your bones and joints strong and healthy. View the flyer for details and registration information.",
-    linkHref: "/wellness/october_2026/Healthy_Bones_and_Joints.pdf",
+      "Join to learn the causes and effects of stress, how your mood and food can affect stress, and stress management tips and techniques to control your stress this holiday season. Tuesday, November 10 at 3:30 p.m. View the flyer for details and registration information.",
+    linkHref: "/wellness/november_2026/Webinar - Stress Less-Live More.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "21",
-      month: "October",
+      day: "16",
+      month: "November",
     },
-    title: "TSG Webinar - Chair Repair: Undoing the Damage of Sitting",
+    title: "Webinar - Setting the Table for Healthy Eating",
     description:
-      "Join The Solutions Group for a wellness webinar on reversing the effects of prolonged sitting on your body. View the flyer for details and registration information.",
-    linkHref:
-      "/wellness/october_2026/October_Wellness_2026_Webinars_TSG_10.pdf",
+      "Join to learn how to read nutrition facts labels, ways to shop smarter and make healthier choices, and making healthier food choices at home and while eating out during the holiday season. Monday, November 16 at 8:30 a.m. and 3:45 p.m. (only 15 minutes!). View the flyer for details and registration information.",
+    linkHref: "/wellness/november_2026/Webinar - Setting the Table for Healthy Eating.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "22",
-      month: "October",
+      day: "16",
+      month: "November",
     },
-    title:
-      "TSG Cooking Show - Chili Today, Calm Tomorrow: Foods for Body & Soul",
+    title: "Webinar - Healthy Holiday Eating",
     description:
-      "Join The Solutions Group for this month's wellness cooking show featuring foods that nourish both body and mind. View the flyer for details.",
-    linkHref: "/wellness/october_2026/10_October_Cooking_Show_2026.pdf",
+      "Join to learn tips for wisely choosing healthier holiday and party foods, preparing mindful meals with suggested serving sizes, and healthier variations for popular holiday meals and beverages. You will also learn tips on how to stretch your holiday food budget. Monday, November 16 at 8:30 a.m. and 3:45 p.m. (only 15 minutes!). View the flyer for details and registration information.",
+    linkHref: "/wellness/november_2026/Healthy_Holiday_Eating_Webinar.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "26",
-      month: "October",
+      day: "18",
+      month: "November",
     },
-    title: "Webinar - Hydration and Exercise",
+    title: "TSG Webinar - Pain, Pain, Go Away: Injury Insights",
     description:
-      "Learn how proper hydration supports your workout performance and recovery. View the flyer for details and registration information.",
-    linkHref: "/wellness/october_2026/Hydration_and_Outdoor_Exercise.pdf",
+      "Pain is one of the most common health complaints, but it doesn't have to be a life sentence. Join for practical strategies to strengthen common areas to reduce risk of injury, healthy movement habits, body awareness, lifestyle factors that influence pain, and when to seek guidance from healthcare professionals. Wednesday, November 18, Noon–1:00 PM. View the flyer for details and registration information.",
+    linkHref: "/wellness/november_2026/November Wellness 2026 Webinars TSG.pdf",
     linkText: "View flyer",
   },
   {
     date: {
-      day: "28",
-      month: "October",
+      day: "19",
+      month: "November",
     },
-    title: "Webinar - Exercise for a Healthier You",
+    title: "TSG Cooking Show - Gobble Up Goodness: Carbs That Care for You",
     description:
-      "Discover practical strategies for building an exercise routine that improves your overall health and well-being. View the flyer for details and registration information.",
-    linkHref: "/wellness/october_2026/Exercise_for_a_Healthier_You.pdf",
+      "November celebrates the grounding power of sweet potatoes while honoring steady blood sugar during Diabetes Awareness Month. These dishes show how complex carbs can be satisfying, stabilizing, and packed with nutrients. Comfort and nourishment come together in recipes that fuel resilience. Thursday, November 19, Noon–1:00 PM. View the flyer for details.",
+    linkHref: "/wellness/november_2026/11_November Cooking Show_2026.pdf",
     linkText: "View flyer",
   },
 
