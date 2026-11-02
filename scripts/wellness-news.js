@@ -3,19 +3,19 @@ const monthlyNewsKits = {
   "November 2026": [
     {
       name: "November 2026 Work and Well-Being Newsletter",
-      url: "/wellness/november_2026/NMPSIA_November_2026_Newsletter_REDUCED.pdf",
+      url: "/wellness/november_2026/NMPSIA November 2026 Newsletter_REDUCED.pdf",
     },
     {
       name: "Wellness Communications - November 2026",
-      url: "/wellness/november_2026/NMPSIA_November_Newsletter_REDUCED.pdf",
+      url: "/wellness/november_2026/NMPSIA November Newsletter_REDUCED.pdf",
     },
     {
       name: "Life on Mindfulness Program Flyer",
-      url: "/wellness/november_2026/Life_on_Mindfulness_-_NMPSIA.pdf",
+      url: "/wellness/november_2026/Life on Mindfulness - NMPSIA.pdf",
     },
     {
       name: "Register for Walking into Mindfulness - 3-Part Online Program",
-      url: "/wellness/november_2026/NMPSIA_Walking_Into_Mindfulness.pdf",
+      url: "/wellness/november_2026/NMPSIA Walking Into Mindfulness.pdf",
     },
     {
       name: "Nations Nutrition Article - Food Focus: Winter Squash",
@@ -23,19 +23,19 @@ const monthlyNewsKits = {
     },
     {
       name: "Presbyterian Fitness Pass",
-      url: "/wellness/november_2026/Presbyterian_Fitness_Pass.pdf",
+      url: "/wellness/november_2026/Presbyterian Fitness Pass.pdf",
     },
     {
       name: "Well Balanced - November 2026",
-      url: "/wellness/november_2026/Well_Balanced_November.pdf",
+      url: "/wellness/november_2026/Well Balanced November.pdf",
     },
     {
       name: "November Observance Poster",
-      url: "/wellness/november_2026/TSG_Observance_Poster_November_ENG.pdf",
+      url: "/wellness/november_2026/TSG Observance Poster November_ENG.pdf",
     },
     {
       name: "November Observance Poster (Español)",
-      url: "/wellness/november_2026/TSG_Observance_Poster_November_SP.pdf",
+      url: "/wellness/november_2026/TSG Observance Poster November_SP.pdf",
     },
     {
       name: "BCBS Fitness Program",
@@ -43,27 +43,27 @@ const monthlyNewsKits = {
     },
     {
       name: "Register for this 6-Week Stretching Program",
-      url: "/wellness/november_2026/Full_Body_Workplace_Stretching_Program.pdf",
+      url: "/wellness/november_2026/Full Body Workplace Stretching Program.pdf",
     },
     {
       name: "November Webinars - NMPSIA Wellness 2026",
-      url: "/wellness/november_2026/November_Wellness_2026_Webinars_TSG.pdf",
+      url: "/wellness/november_2026/November Wellness 2026 Webinars TSG.pdf",
     },
     {
       name: "November Cooking Show",
-      url: "/wellness/november_2026/11_November_Cooking_Show_2026.pdf",
+      url: "/wellness/november_2026/11_November Cooking Show_2026.pdf",
     },
     {
       name: "Webinar - Healthy Holiday Eating",
-      url: "/wellness/november_2026/Webinar_-_Healthy_Holiday_Eating.pdf",
+      url: "/wellness/november_2026/Webinar - Healthy Holiday Eating.pdf",
     },
     {
       name: "Webinar - Setting the Table for Healthy Eating",
-      url: "/wellness/november_2026/Webinar_-_Setting_the_Table_for_Healthy_Eating.pdf",
+      url: "/wellness/november_2026/Webinar - Setting the Table for Healthy Eating.pdf",
     },
     {
       name: "Webinar - Stress Less, Live More",
-      url: "/wellness/november_2026/Webinar_-_Stress_Less-Live_More.pdf",
+      url: "/wellness/november_2026/Webinar - Stress Less-Live More.pdf",
     },
   ],
   "October 2026": [
