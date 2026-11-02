@@ -37,7 +37,7 @@ class HearingHealth extends HTMLElement {
             <ol>
               <li>
                 <strong>Visit the BCBSNM Blue365 website.</strong>
-                <p>Go to <a href="https://blue365deals.com/bcbsnm" target="_blank">blue365deals.com/bcbsnm</a>.</p>
+                <p>Go to blue365deals.com/bcbsnm.</p>
               </li>
               <li>
                 <strong>Sign up for Blue365.</strong>
@@ -65,6 +65,10 @@ class HearingHealth extends HTMLElement {
       <li>
         <i class="bx bxs-file-pdf"></i>
         <a href="/wellness/hearing/Davis Vision Hearing Aid Discount Program.pdf" target="_blank">Davis Vision Hearing Aid Discount Program Flyer</a>
+      </li>
+      <li>
+        <i class="bx bx-link-external"></i>
+        <a href="https://davisvision.yourhearing.com" target="_blank">Davis Vision Hearing Aid Discount Program Information</a>
       </li>
       <li>
         <i class="bx bxs-detail"></i>
@@ -99,6 +103,10 @@ class HearingHealth extends HTMLElement {
       <li>
         <i class="bx bxs-file-pdf"></i>
         <a href="/wellness/hearing/Pres True Hearing Flyer.pdf" target="_blank">Presbyterian TruHearing Flyer</a>
+      </li>
+      <li>
+        <i class="bx bx-link-external"></i>
+        <a href="https://www.shoeboxonline.com/truhearing-presbyterian/" target="_blank">Presbyterian TruHearing Program Information</a>
       </li>
       <li>
         <i class="bx bxs-detail"></i>
