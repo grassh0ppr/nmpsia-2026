@@ -83,18 +83,8 @@ const homepageNews = [
     title: "Webinar - Setting the Table for Healthy Eating",
     description:
       "Join to learn how to read nutrition facts labels, ways to shop smarter and make healthier choices, and making healthier food choices at home and while eating out during the holiday season. Monday, November 16 at 8:30 a.m. and 3:45 p.m. (only 15 minutes!). View the flyer for details and registration information.",
-    linkHref: "/wellness/november_2026/Webinar - Setting the Table for Healthy Eating.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "16",
-      month: "November",
-    },
-    title: "Webinar - Healthy Holiday Eating",
-    description:
-      "Join to learn tips for wisely choosing healthier holiday and party foods, preparing mindful meals with suggested serving sizes, and healthier variations for popular holiday meals and beverages. You will also learn tips on how to stretch your holiday food budget. Monday, November 16 at 8:30 a.m. and 3:45 p.m. (only 15 minutes!). View the flyer for details and registration information.",
-    linkHref: "/wellness/november_2026/Healthy_Holiday_Eating_Webinar.pdf",
+    linkHref:
+      "/wellness/november_2026/Webinar - Setting the Table for Healthy Eating.pdf",
     linkText: "View flyer",
   },
   {
