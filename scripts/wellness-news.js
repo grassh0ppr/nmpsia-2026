@@ -1,5 +1,71 @@
 // Wellness Communications Data object
 const monthlyNewsKits = {
+  "November 2026": [
+    {
+      name: "November 2026 Work and Well-Being Newsletter",
+      url: "/wellness/november_2026/NMPSIA_November_2026_Newsletter_REDUCED.pdf",
+    },
+    {
+      name: "Wellness Communications - November 2026",
+      url: "/wellness/november_2026/NMPSIA_November_Newsletter_REDUCED.pdf",
+    },
+    {
+      name: "Life on Mindfulness Program Flyer",
+      url: "/wellness/november_2026/Life_on_Mindfulness_-_NMPSIA.pdf",
+    },
+    {
+      name: "Register for Walking into Mindfulness - 3-Part Online Program",
+      url: "/wellness/november_2026/NMPSIA_Walking_Into_Mindfulness.pdf",
+    },
+    {
+      name: "Nations Nutrition Article - Food Focus: Winter Squash",
+      url: "/wellness/november_2026/NationsNutrition_FoodFocus_Squash_November2026.pdf",
+    },
+    {
+      name: "Presbyterian Fitness Pass",
+      url: "/wellness/november_2026/Presbyterian_Fitness_Pass.pdf",
+    },
+    {
+      name: "Well Balanced - November 2026",
+      url: "/wellness/november_2026/Well_Balanced_November.pdf",
+    },
+    {
+      name: "November Observance Poster",
+      url: "/wellness/november_2026/TSG_Observance_Poster_November_ENG.pdf",
+    },
+    {
+      name: "November Observance Poster (Español)",
+      url: "/wellness/november_2026/TSG_Observance_Poster_November_SP.pdf",
+    },
+    {
+      name: "BCBS Fitness Program",
+      url: "/wellness/november_2026/BCBS_Fitness_Program.pdf",
+    },
+    {
+      name: "Register for this 6-Week Stretching Program",
+      url: "/wellness/november_2026/Full_Body_Workplace_Stretching_Program.pdf",
+    },
+    {
+      name: "November Webinars - NMPSIA Wellness 2026",
+      url: "/wellness/november_2026/November_Wellness_2026_Webinars_TSG.pdf",
+    },
+    {
+      name: "November Cooking Show",
+      url: "/wellness/november_2026/11_November_Cooking_Show_2026.pdf",
+    },
+    {
+      name: "Webinar - Healthy Holiday Eating",
+      url: "/wellness/november_2026/Webinar_-_Healthy_Holiday_Eating.pdf",
+    },
+    {
+      name: "Webinar - Setting the Table for Healthy Eating",
+      url: "/wellness/november_2026/Webinar_-_Setting_the_Table_for_Healthy_Eating.pdf",
+    },
+    {
+      name: "Webinar - Stress Less, Live More",
+      url: "/wellness/november_2026/Webinar_-_Stress_Less-Live_More.pdf",
+    },
+  ],
   "October 2026": [
     {
       name: "Wellness Communications - October 2026",
