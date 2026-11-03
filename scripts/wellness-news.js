@@ -46,6 +46,10 @@ const monthlyNewsKits = {
       url: "/wellness/november_2026/Full Body Workplace Stretching Program.pdf",
     },
     {
+      name: "The UCD Wellness Connection Newsletter - November 2026",
+      url: "/wellness/november_2026/WC_UCD_News_November2026.pdf",
+    },
+    {
       name: "November 10 - Stress Less, Live More (Webinar)",
       url: "/wellness/november_2026/Webinar - Stress Less-Live More.pdf",
     },
