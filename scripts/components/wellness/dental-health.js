@@ -168,9 +168,9 @@ class DentalHealth extends HTMLElement {
         <li>
           <i class="bx bxs-file-pdf"></i>
           <a
-            href="https://www.unitedconcordia.com/content/dam/ucd/en/commercial/website/docs/email/WC_News_September2025.pdf"
+            href="/wellness/november_2026/WC_UCD_News_November2026.pdf"
             target="_blank"
-            >September 2025 UCD Wellness Connection Newsletter</a
+            >November 2026 UCD Wellness Connection Newsletter</a
           >
         </li>
       </ul>
