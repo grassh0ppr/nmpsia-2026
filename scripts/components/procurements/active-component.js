@@ -18,6 +18,34 @@ class ActiveProcurements extends HTMLElement {
           </thead>
           <tbody>
           <tr>
+            <td>12/09/2026</td>
+            <td>RFP# 342-2027-07</td>
+            <td>
+              <a href="/docs/Anonymous_Reporting_System_POST.pdf" target="_blank">Request for Proposal (RFP) for Professional Services: Anonymous Reporting System</a>
+            </td>
+          </tr>
+          <tr>
+            <td>12/09/2026</td>
+            <td>RFP# 342-2027-07</td>
+            <td>
+              <a href="/docs/Legal_Advertisement_anonymous_reporting.pdf" target="_blank">Notice of Request for Proposal (RFP) for Professional Services: Anonymous Reporting System</a>
+            </td>
+          </tr>
+          <tr>
+            <td>12/09/2026</td>
+            <td>RFP# 342-2027-02</td>
+            <td>
+              <a href="/docs/Driving_Record_Information_Retrieval_and_Dissemination_Services_POST.pdf" target="_blank">Request for Proposal (RFP) for Professional Services: Driving Record Information, Retrieval and Dissemination Services</a>
+            </td>
+          </tr>
+          <tr>
+            <td>12/09/2026</td>
+            <td>RFP# 342-2027-02</td>
+            <td>
+              <a href="/docs/Legal_Advertisement_DRIVING_RECORD_INFORMATION,_RETRIEVAL_AND_DESSEMINATION.pdf" target="_blank">Notice of Request for Proposal (RFP) for Professional Services: Driving Record Information, Retrieval and Dissemination Services</a>
+            </td>
+          </tr>
+          <tr>
             <td>12/03/2026</td>
             <td>RFP# 342-2027-03</td>
             <td>
