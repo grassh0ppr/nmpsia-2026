@@ -198,11 +198,11 @@ class MyBenefitsMadeEasierSession extends HTMLElement {
             <span class="year-badge">2026</span>
           </a>
           <a
-            href="/trainings/2026/EMPLOYEE Login Process.pptx"
+            href="/trainings/2026/EMPLOYEE_Login_Process.pdf"
             target="_blank"
             class="training-link"
           >
-            <i class="fa-solid fa-file-powerpoint"></i>
+            <i class="bx bxs-file-pdf"></i>
             <div class="training-link-content">
               <div class="training-link-title">Employee — Log In Process</div>
               <div class="training-link-description">
