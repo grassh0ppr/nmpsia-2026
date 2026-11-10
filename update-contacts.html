@@ -75,6 +75,10 @@
       src="./scripts/components/footer/footer-sitemap.js?v=1.2"
       defer
     ></script>
+    <script
+      src="./scripts/components/contact-update-notice.js?v=1"
+      defer
+    ></script>
   </head>
 
   <body class="modern-body contacts-modern">
@@ -113,64 +117,7 @@
         </section>
 
         <!-- Update Steps -->
-        <section class="contact-update-notice">
-          <div class="notice-content">
-            <div class="notice-icon">
-              <i class="bx bx-edit"></i>
-            </div>
-            <div class="notice-text">
-              <h2 class="h3">Keep Your Contacts Updated with Two Easy Steps</h2>
-              <ol class="mb-4">
-                <li class="mb-2">
-                  <strong>Step 1:</strong> Download and complete the
-                  <a
-                    href="/PDFs/forms/NMPSIA_CONTACT_form_FINAL.pdf"
-                    target="_blank"
-                    class="text-white text-decoration-underline"
-                    >NMPSIA Contact Form</a
-                  >. If you have more than one contact for the same category,
-                  also complete the
-                  <a
-                    href="/PDFs/forms/NMPSIA_Contact_Sheet_Additional_Contacts.pdf"
-                    target="_blank"
-                    class="text-white text-decoration-underline"
-                    >Additional Contacts Sheet</a
-                  >, using as many copies as needed.
-                </li>
-                <li>
-                  <strong>Step 2:</strong> Email the completed form(s) to
-                  <a
-                    href="mailto:sf@easitpa.com"
-                    class="text-white text-decoration-underline"
-                    >sf@easitpa.com</a
-                  >.
-                </li>
-              </ol>
-              <div class="notice-actions">
-                <a
-                  href="/PDFs/forms/NMPSIA_CONTACT_form_FINAL.pdf"
-                  target="_blank"
-                  class="btn btn-primary"
-                >
-                  <i class="bx bxs-file-pdf"></i>
-                  Contact Form
-                </a>
-                <a
-                  href="/PDFs/forms/NMPSIA_Contact_Sheet_Additional_Contacts.pdf"
-                  target="_blank"
-                  class="btn btn-primary"
-                >
-                  <i class="bx bxs-file-pdf"></i>
-                  Additional Contacts Sheet
-                </a>
-                <a href="mailto:sf@easitpa.com" class="btn btn-outline-primary">
-                  <i class="bx bx-envelope"></i>
-                  Email EASI Edu Incorporated
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+        <contact-update-notice variant="steps"></contact-update-notice>
       </div>
     </main>
 
