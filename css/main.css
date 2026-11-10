@@ -3362,7 +3362,8 @@ body.modern-body::after {
   border: none;
 }
 
-.content-section .table tbody td {
+.content-section .table tbody td,
+.content-section .table tbody th {
   padding: 0.75rem 1rem;
   border: 1px solid #dee2e6;
   vertical-align: top;
@@ -3419,7 +3420,8 @@ body.modern-body::after {
   }
 
   .content-section .table thead th,
-  .content-section .table tbody td {
+  .content-section .table tbody td,
+  .content-section .table tbody th {
     padding: 0.5rem;
   }
 

@@ -8,6 +8,41 @@ class HearingHealth extends HTMLElement {
     <div class="container banner">
       <img src="images/wellness/yunus-tug-hearing-health-unsplash.jpg" alt="Hearing health banner" />
     </div>
+
+    <h3 class="sub-heading">Hearing Aids and Related Services</h3>
+    <p>Coverage under the NMPSIA medical plans: <strong>BlueCross BlueShield of New Mexico</strong> and <strong>Presbyterian Health Plan</strong>.</p>
+    <div class="table-responsive-wrapper">
+      <table class="table table-bordered">
+        <caption class="visually-hidden">Hearing aid and related services coverage under the NMPSIA medical plans, by member age</caption>
+        <thead>
+          <tr>
+            <th scope="col">Member Age</th>
+            <th scope="col">Coverage Details</th>
+            <th scope="col">Benefit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Under age 21</th>
+            <td>
+              <ul class="mb-0">
+                <li>Exams subject to usual cost-sharing by place of service and type of service received.</li>
+                <li>Testing: $0 cost share in-network; out-of-network deductible and coinsurance apply.</li>
+              </ul>
+            </td>
+            <td><strong>No charge up to $2,200 per hearing impaired ear</strong>, thereafter you pay 90% coinsurance in any 36-month period.</td>
+          </tr>
+          <tr>
+            <th scope="row">Age 21 &amp; older</th>
+            <td>Routine exams and testing are not covered.</td>
+            <td><strong>No charge up to $500</strong>, thereafter you pay 90% coinsurance in any 36-month period.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><strong>Members under age 21:</strong> Hearing aids and the evaluation for fitting of hearing aids are covered. The plan pays 100% of the allowed amount up to a maximum of $2,200 every 36 months per hearing impaired ear, thereafter member pays 90% coinsurance. This benefit includes the fitting and dispensing services, including ear molds as necessary to maintain optimal fit.</p>
+    <p><strong>Members age 21 and over:</strong> Hearing aid benefits are limited to a maximum of $500 in benefit payments during any 36-month period, thereafter member pays 90% coinsurance. This benefit does not include coverage for a hearing test or any charge related to the fitting or prescribing of the hearing aid. This benefit does include repair and replacement of hearing aids.</p>
+    <p><strong>About the 36-month period:</strong> The 36-month period is not based on a calendar year. It begins on the date you purchase your first hearing aid and ends 36 months later.</p>
     <h3 class="sub-heading">BlueCross BlueShield of New Mexico</h3>
     <ul class="content-list">
       <li>
