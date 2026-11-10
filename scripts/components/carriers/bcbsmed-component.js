@@ -31,6 +31,21 @@ class BlueCrossMedical extends HTMLElement {
         </li>
 
 
+                      <!-- 2027 Summary of Benefits and Coverage -->
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/PDFs/2027/SBCs/NMPSIA_2027_SBC_for_BCBS_High_Option.pdf"> 2027
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM High Option</a>
+                      </li>
+
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank" href="/PDFs/2027/SBCs/NMPSIA_2027_SBC_for_BCBS_Low_Option_FINAL.pdf"> 2027
+                          NMPSIA Summary of Benefits
+                          and Coverage BCBSNM Low Option</a>
+                      </li>
+
                       <!-- 2026 Summary of Benefits and Coverage -->
                       <li>
                         <i class="bx bxs-file-pdf"></i>
@@ -45,46 +60,7 @@ class BlueCrossMedical extends HTMLElement {
                           NMPSIA Summary of Benefits
                           and Coverage BCBSNM Low Option</a>
                       </li>
-                      <!-- 2025 Summary of Benefits and Coverage -->
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank" href="/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_High_Option_final.pdf"> 2025
-                          NMPSIA Summary of Benefits
-                          and Coverage BCBSNM High Option</a>
-                      </li>
-
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank" href="/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BCBS_Low_Option_final.pdf"> 2025
-                          NMPSIA Summary of Benefits
-                          and Coverage BCBSNM Low Option</a>
-                      </li>
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank" href="/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_BluePreferred_EPO_Plan_final.pdf">
-                          2025 NMPSIA Summary of Benefits
-                          and Coverage BluePreferred EPO Option</a>
-                      </li>
-                      <!-- 2024 SUMMARY OF BENEFITS AND COVERAGE -->
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank" href="/pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BCBS_High_Option_Final.pdf"> 2024
-                          NMPSIA Summary of Benefits
-                          and Coverage BCBSNM High Option</a>
-                      </li>
-
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank" href="/pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BCBS_Low_Option_Final.pdf"> 2024
-                          NMPSIA Summary of Benefits
-                          and Coverage BCBSNM Low Option</a>
-                      </li>
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank" href="/pdfs/2024_SBCs/NMPSIA_2024_SBC_for_BluePreferred_EPO_Plan_Final.pdf">
-                          2024 NMPSIA Summary of Benefits
-                          and Coverage BluePreferred EPO Option</a>
-                      </li>
+                      
                      
                       <li>
                         <i class="bx bxs-file-pdf"></i>

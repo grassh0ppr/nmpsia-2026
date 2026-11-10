@@ -35,6 +35,23 @@ class PresbyterianHealthPlan extends HTMLElement {
                           Member Portal Login</a>
                       </li>
                     
+                      <!-- 2027 SBC -->
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank"
+                          href="/PDFs/2027/SBCs/NMPSIA_2027_SBC_for_PRES_High_Option_FINAL.pdf"> 2027
+                          NMPSIA Summary of Benefits
+                          and Coverage Presbyterian High Option</a>
+                      </li>
+
+                      <li>
+                        <i class="bx bxs-file-pdf"></i>
+                        <a target="_blank"
+                          href="/PDFs/2027/SBCs/NMPSIA_2027_SBC_for_PRES_Low_Option.pdf"> 2027
+                          NMPSIA Summary of Benefits
+                          and Coverage Presbyterian Low Option</a>
+                      </li>
+
                       <!-- 2026 SBC -->
                       <li>
                         <i class="bx bxs-file-pdf"></i>
@@ -51,39 +68,7 @@ class PresbyterianHealthPlan extends HTMLElement {
                           NMPSIA Summary of Benefits
                           and Coverage Presbyterian Low Option</a>
                       </li>
-                      <!-- 2025 SBC -->
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank"
-                          href="/pdfs/2025_SBCs/NMPSIA_2025_SBC_for_PRES_High_Option_final.pdf"> 2025
-                          NMPSIA Summary of Benefits
-                          and Coverage Presbyterian High Option</a>
-                      </li>
-
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank"
-                          href="pdfs/2025_SBCs/NMPSIA_2025_SBC_for_PRES_Low_Option_final.pdf"> 2025
-                          NMPSIA Summary of Benefits
-                          and Coverage Presbyterian Low Option</a>
-                      </li>
-                      <!-- 2024 SBC -->
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank"
-                          href="/pdfs/2024_SBCs/NMPSIA_2024_SBC_for_PRES_High_Option_Final_TH_Update_062124.pdf"> 2024
-                          NMPSIA Summary of Benefits
-                          and Coverage Presbyterian High Option</a>
-                      </li>
-
-                      <li>
-                        <i class="bx bxs-file-pdf"></i>
-                        <a target="_blank"
-                          href="pdfs/2024_SBCs/NMPSIA_2024_SBC_for_PRES_Low_Option_Final_TH_Update_062124.pdf"> 2024
-                          NMPSIA Summary of Benefits
-                          and Coverage Presbyterian Low Option</a>
-                      </li>
-                    
+                     
                       <li>
                         <i class="bx bxs-file-pdf"></i>
                         <a target="_blank" href="/pdfs/PHP-Cost_Estimator_12-2021.pdf">
