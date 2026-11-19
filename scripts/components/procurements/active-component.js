@@ -18,6 +18,20 @@ class ActiveProcurements extends HTMLElement {
           </thead>
           <tbody>
           <tr>
+            <td>&mdash;</td>
+            <td>RFP# 342-2027-07</td>
+            <td>
+              <a href="/docs/Questions_and_Responses_to_RFP_342-2027-07_ARS.docx" target="_blank">RFP# 342-2027-07 Anonymous Reporting System - Questions and Answers</a>
+            </td>
+          </tr>
+          <tr>
+            <td>&mdash;</td>
+            <td>RFP# 342-2027-02</td>
+            <td>
+              <a href="/docs/Questions_and_Responses_for_RFP_342-2027-02_Driving.docx" target="_blank">RFP# 342-2027-02 Driving Record Information, Retrieval and Dissemination Services - Questions and Answers</a>
+            </td>
+          </tr>
+          <tr>
             <td>12/16/2026</td>
             <td>RFP# 342-2027-08</td>
             <td>
