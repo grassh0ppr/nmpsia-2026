@@ -3,112 +3,65 @@ const homepageNews = [
   // notice of public meetings - OCTOBER 14 & 15, 2026
   {
     date: {
-      day: "30",
-      month: "October",
+      day: "25",
+      month: "November",
     },
-    title: "Notice of Public Meetings November 4 & 5, 2026",
+    title: "Notice of Public Meetings December 2 & 3, 2026",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Monthly Meetings held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/notice_of_public_meetings.pdf",
+    linkHref: "/nmpsiadownload/202612/notice_of_public_meetings.pdf",
     linkText: "View notice",
   },
   // BAC Meeting
   {
     date: {
-      day: "4",
-      month: "November",
+      day: "2",
+      month: "December",
     },
     title: "Benefits Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Benefits Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/BAC_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202612/BAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // RAC meeting
   {
     date: {
-      day: "4",
-      month: "November",
+      day: "2",
+      month: "December",
     },
     title: "Risk Advisory Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Risk Advisory Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/RAC_Meeting_agenda.pdf",
+    linkHref: "/nmpsiadownload/202612/RAC_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // IFR meeting
   {
     date: {
-      day: "5",
-      month: "November",
+      day: "3",
+      month: "December",
     },
     title: "Internal Fiscal Review Committee Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's IFR Committee Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/IFR_Meeting_agenda.pdf?v=2",
+    linkHref: "/nmpsiadownload/202612/IFR_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
   // Board meeting
   {
     date: {
-      day: "5",
-      month: "November",
+      day: "3",
+      month: "December",
     },
     title: "Board of Directors Meeting",
     description:
       "Notice is hereby given of the New Mexico Public Schools Insurance Authority's Board of Directors Meeting held in person and virtually...",
-    linkHref: "/nmpsiadownload/202611/Board_Meeting_agenda.pdf?v=3",
+    linkHref: "/nmpsiadownload/202612/Board_Meeting_agenda.pdf",
     linkText: "View agenda",
   },
 
   //Wellness events and flyer materials go here
-
-  // November wellness webinars and cooking show
-  {
-    date: {
-      day: "10",
-      month: "November",
-    },
-    title: "Webinar - Stress Less; Live More",
-    description:
-      "Join to learn the causes and effects of stress, how your mood and food can affect stress, and stress management tips and techniques to control your stress this holiday season. Tuesday, November 10 at 3:30 p.m. View the flyer for details and registration information.",
-    linkHref: "/wellness/november_2026/Webinar - Stress Less-Live More.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "16",
-      month: "November",
-    },
-    title: "Webinar - Setting the Table for Healthy Eating",
-    description:
-      "Join to learn how to read nutrition facts labels, ways to shop smarter and make healthier choices, and making healthier food choices at home and while eating out during the holiday season. Monday, November 16 at 8:30 a.m. and 3:45 p.m. (only 15 minutes!). View the flyer for details and registration information.",
-    linkHref:
-      "/wellness/november_2026/Webinar - Setting the Table for Healthy Eating.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "18",
-      month: "November",
-    },
-    title: "TSG Webinar - Pain, Pain, Go Away: Injury Insights",
-    description:
-      "Pain is one of the most common health complaints, but it doesn't have to be a life sentence. Join for practical strategies to strengthen common areas to reduce risk of injury, healthy movement habits, body awareness, lifestyle factors that influence pain, and when to seek guidance from healthcare professionals. Wednesday, November 18, Noon–1:00 PM. View the flyer for details and registration information.",
-    linkHref: "/wellness/november_2026/November Wellness 2026 Webinars TSG.pdf",
-    linkText: "View flyer",
-  },
-  {
-    date: {
-      day: "19",
-      month: "November",
-    },
-    title: "TSG Cooking Show - Gobble Up Goodness: Carbs That Care for You",
-    description:
-      "November celebrates the grounding power of sweet potatoes while honoring steady blood sugar during Diabetes Awareness Month. These dishes show how complex carbs can be satisfying, stabilizing, and packed with nutrients. Comfort and nourishment come together in recipes that fuel resilience. Thursday, November 19, Noon–1:00 PM. View the flyer for details.",
-    linkHref: "/wellness/november_2026/11_November Cooking Show_2026.pdf",
-    linkText: "View flyer",
-  },
 
   // ongoing promotions
   {
